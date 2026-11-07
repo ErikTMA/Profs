@@ -179,6 +179,18 @@ function S.FormatRoute(ds, route, overrides)
     rows[#rows + 1] = trainRow(training[ti])
     ti = ti + 1
   end
+  if route.stock and next(route.stock) then
+    local tip, n = { "Reagents you already have, used before buying:" }, 0
+    for _, id in ipairs(ns.Util.sortedKeys(route.stock)) do
+      n = n + 1
+      tip[#tip + 1] = ("%d x %s"):format(route.stock[id], itemName(ds, id))
+    end
+    tip[#tip + 1] = "They count at their vendor price (what you give up), not the buy price."
+    rows[#rows + 1] = { kind = "stock", summary = true,
+      text = color(ns.Theme.color.muted, ("Uses %d reagent type%s you have"):format(n, n == 1 and "" or "s")),
+      right = (route.stockSaved or 0) > 0 and color(ns.Theme.color.done, "saves " .. U.money(route.stockSaved)) or nil,
+      tooltip = tip }
+  end
   for _, w in ipairs(route.warnings or {}) do
     rows[#rows + 1] = { kind = "warning", text = color(ns.Theme.color.warn, w) }
   end
@@ -297,6 +309,34 @@ end
 
 function S.ClearCache() S.cache = {} end
 
+-- What the player owns of this profession's reagents (bags, bank, mail, alts: the
+-- same counts the shopping list nets against). The optimizer uses it before buying.
+function S.Owned(ds, prof)
+  local out, seen = {}, {}
+  for _, r in ipairs(ds.recipesByProf[prof] or {}) do
+    for _, rg in ipairs(r.reagents or {}) do
+      local id = rg[1]
+      if not seen[id] then
+        seen[id] = true
+        local n = 0
+        for _, c in pairs(ns.Inventory.Have(id) or {}) do n = n + c end
+        if n > 0 then out[id] = n end
+      end
+    end
+  end
+  return out
+end
+
+-- Using up reagents while following the route is expected and keeps the cached route;
+-- getting more of one (loot, mail, the AH) can make another route cheaper: re-plan.
+function S.StockGrew(before, now)
+  before = before or {}
+  for id, n in pairs(now or {}) do
+    if n > (before[id] or 0) then return true end
+  end
+  return false
+end
+
 -- Recompute the route for the open profession. Returns the state or nil.
 function S.Plan()
   local info = ns.Game.OpenProfession()
@@ -325,15 +365,16 @@ function S.Plan()
   st.mode = opts.mode
   if info.skill >= target then st.route = nil; st.done = true; return st end
   st.done = false
+  opts.owned = S.Owned(ds, prof)
   local key = S.PlanKey(ds, prof, target, opts)
   local c = S.cache[prof]
   if c and c.key == key and info.skill >= c.skill
-      and info.skill <= (c.route.unreachable or c.route.to) then
+      and info.skill <= (c.route.unreachable or c.route.to) and not S.StockGrew(c.owned, opts.owned) then
     st.route = ns.Routes.Remaining(ds, c.route, info.skill, opts.charLevel)
     S.stats.hits = S.stats.hits + 1
   else
     st.route = ns.Optimizer.Plan(ds, prof, info.skill, target, opts)
-    S.cache[prof] = { key = key, route = st.route, skill = info.skill }
+    S.cache[prof] = { key = key, route = st.route, skill = info.skill, owned = opts.owned }
     S.stats.plans = S.stats.plans + 1
   end
   local items = {}

@@ -19,6 +19,10 @@ extra column built into the profession window.
 - **Shopping list** for the whole route, counted against what you already have in
   your bags, bank, mail and on your alts. Intermediates such as cloth bolts are
   crafted when that is cheaper.
+- **Uses what you have first**: reagents you already own count at their vendor
+  price (what you give up), not the auction price, so a route that uses your stock
+  can win over one that is cheaper to buy. The route says which reagents it uses and
+  how much that saves. Looting or receiving more reagents re-plans the route.
 - **What to do with the results**: sell, vendor, disenchant or keep.
 - **Your own choices**: exclude recipes, lock a skill range to a recipe, save and
   load named routes.

@@ -22,6 +22,16 @@
 --             guaranteed vendor value only
 --   fastest   crafts, gold only as a tie-break
 --   balanced  gold + craftValue per craft (default 1s per craft)
+--
+-- Reagents you own (opts.owned = { [itemId] = count }) are used before buying: an owned
+-- unit costs what you give up by using it, its vendor sell price, not the buy price. So
+-- a recipe whose reagents are already in your bags can beat a cheaper-to-buy one.
+-- Stock is finite, which a per-level DP cannot see directly, so O.Plan iterates:
+--   pass 1  every owned item priced at its vendor value
+--   pass 2+ each owned item at the blend its route really pays: the first `owned` units
+--           at vendor value, the rest at the buy price (need from Engine/Shopping)
+-- Every candidate route (and the stock-blind one) is re-costed with the blend for its
+-- OWN needs, and the cheapest wins, so using stock never makes a route worse.
 local _, ns = ...
 local O = ns:NewModule("Optimizer")
 
@@ -140,7 +150,8 @@ function Planner:UnitCost(itemId, k, visiting)
   local hit = byLevel[k]
   if hit then return hit[1], hit[2] end
 
-  local buy = self.pricer:Buy(itemId)
+  local override = self.opts.priceOverride
+  local buy = override and override[itemId] or self.pricer:Buy(itemId)
   local best, via = buy, nil
   if self.opts.intermediates then
     visiting = visiting or {}
@@ -293,19 +304,12 @@ function Planner:Plan(from, to)
     end
   end
 
-  local route = {
-    prof = self.prof, from = from, to = to, mode = self.opts.mode,
-    segments = {}, warnings = {}, totalCrafts = 0, totalCost = 0, acquireCost = 0,
-  }
   local reach = to
   if best[to] == INF then
     reach = from
     for s = to, from, -1 do
       if best[s] < INF then reach = s; break end
     end
-    route.unreachable = reach
-    route.warnings[#route.warnings + 1] =
-      ("No allowed recipe gives points at skill %d; route stops there."):format(reach)
   end
 
   local segs = {}
@@ -321,7 +325,22 @@ function Planner:Plan(from, to)
     local last = merged[#merged]
     if last and last.recipe == s.recipe then last.to = s.to else merged[#merged + 1] = s end
   end
+  return self:Build(merged, from, to, reach)
+end
 
+-- A route from chosen segments { {from, to, recipe = <recipe table>} }, costed with
+-- this planner's prices. Plan builds its own result with it; O.Plan re-costs another
+-- planner's route with it.
+function Planner:Build(merged, from, to, reach)
+  local route = {
+    prof = self.prof, from = from, to = to, mode = self.opts.mode,
+    segments = {}, warnings = {}, totalCrafts = 0, totalCost = 0, acquireCost = 0,
+  }
+  if reach < to then
+    route.unreachable = reach
+    route.warnings[#route.warnings + 1] =
+      ("No allowed recipe gives points at skill %d; route stops there."):format(reach)
+  end
   local learned = {}
   for _, s in ipairs(merged) do
     local r = s.recipe
@@ -365,7 +384,93 @@ function Planner:Plan(from, to)
   return route
 end
 
--- Convenience: one call.
+-- Owned stock -------------------------------------------------------------------
+
+-- Pure: price per unit when `need` units are used and `owned` of them are on hand.
+function O.BlendPrice(need, owned, own, buy)
+  if need <= 0 or owned >= need then return own end
+  owned = math.max(0, owned)
+  return (owned * own + (need - owned) * buy) / need
+end
+
+-- Units of each raw reagent the route consumes (crafted intermediates expanded).
+local function needs(ds, route, pricer)
+  local out = {}
+  for _, l in ipairs(ns.Shopping.Build(ds, route, { pricer = pricer }).items) do out[l.itemId] = l.need end
+  return out
+end
+
+-- Price overrides for owned items, given what a route needs (nil need: pass 1, all
+-- owned units at their vendor value).
+local function stockPrices(owned, need, pricer, unknown)
+  local out = {}
+  for id, n in pairs(owned) do
+    if n > 0 then
+      local own = pricer:VendorSell(id) or 0
+      local buy = pricer:Buy(id) or unknown
+      out[id] = need and O.BlendPrice(need[id] or 0, n, own, buy) or own
+    end
+  end
+  return out
+end
+
+-- Shallow copy with overrides (Util.merge deep-copies its first table: the pricer and
+-- the NPC table must stay shared).
+local function with(opts, extra)
+  local o = {}
+  for k, v in pairs(opts) do o[k] = v end
+  for k, v in pairs(extra or {}) do o[k] = v end
+  return o
+end
+
+local function sameNeeds(a, b)
+  for k, v in pairs(a) do if b[k] ~= v then return false end end
+  for k in pairs(b) do if a[k] == nil then return false end end
+  return true
+end
+
+-- Route `route` re-costed with stock prices for its own needs; records the stock used.
+local function withStock(ds, profId, opts, route)
+  local pricer = opts.pricer
+  local need = needs(ds, route, pricer)
+  local o = with(opts, { priceOverride = stockPrices(opts.owned, need, pricer, opts.unknownPrice) })
+  local merged = {}
+  for _, seg in ipairs(route.segments) do
+    merged[#merged + 1] = { from = seg.from, to = seg.to, recipe = ds.recipes[seg.recipe] }
+  end
+  local out = O.NewPlanner(ds, profId, o):Build(merged, route.from, route.to, route.unreachable or route.to)
+  out.stock, out.stockSaved = {}, 0
+  for id, n in pairs(opts.owned) do
+    local used = math.min(n, need[id] or 0)
+    if used > 0 then
+      out.stock[id] = used
+      local buy = pricer:Buy(id)
+      if buy then out.stockSaved = out.stockSaved + used * (buy - (pricer:VendorSell(id) or 0)) end
+    end
+  end
+  return out, need
+end
+
+-- Each pass is one full DP (60-230 ms in game). The first pass makes the big move
+-- (stock at vendor value); the second corrects for stock running out.
+O.STOCK_PASSES = 2
+
+-- Convenience: one call. With opts.owned, the cheapest route counting owned stock.
 function O.Plan(ds, profId, from, to, opts)
-  return O.NewPlanner(ds, profId, opts):Plan(from, to)
+  opts = ns.Util.merge(O.DEFAULTS, opts or {})
+  local owned = opts.owned
+  if not owned or next(owned) == nil then return O.NewPlanner(ds, profId, opts):Plan(from, to) end
+  opts.pricer = opts.pricer or ns.Pricing.New(ds)
+  local blind = O.NewPlanner(ds, profId, with(opts, { owned = false })):Plan(from, to)
+  local best, need = withStock(ds, profId, opts, blind)
+  local tried = { need } -- a pass that picks the stock-blind route again: stop
+  for pass = 1, O.STOCK_PASSES do
+    local o = with(opts, { priceOverride = stockPrices(owned, pass > 1 and need or nil, opts.pricer, opts.unknownPrice) })
+    local cand, candNeed = withStock(ds, profId, opts, O.NewPlanner(ds, profId, o):Plan(from, to))
+    if cand.totalCost < best.totalCost - 1e-6 then best = cand end
+    for _, t in ipairs(tried) do if sameNeeds(t, candNeed) then return best end end
+    tried[#tried + 1] = candNeed
+    need = candNeed
+  end
+  return best
 end
