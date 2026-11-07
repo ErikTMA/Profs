@@ -71,10 +71,24 @@ function GF.Compute(ds, profs, opts)
       end
     end
   end
+  local pending = {}
   local ups = ns.Gear.Candidates(ds, { profs = profs, level = ctx.me.level, class = ctx.me.class,
     known = ctx.known, weights = ctx.weights, scorer = ctx.scoring.scorer, stats = ns.Game.ItemStats,
-    equipped = ctx.equipped, side = ctx.side, drops = opts.drops ~= false, lookahead = opts.lookahead })
+    equipped = ctx.equipped, side = ctx.side, drops = opts.drops ~= false, lookahead = opts.lookahead,
+    pending = pending })
+  -- items Pawn could not rate yet: the client is loading them (Game.ItemName asked);
+  -- GearColumn re-runs when GET_ITEM_INFO_RECEIVED names one of them
+  for id in pairs(pending) do GF.pending[id] = true end
   return ups, ctx.scoring
+end
+
+GF.pending = {}
+
+-- An item finished loading: true when a gear list was waiting for it.
+function GF.ItemArrived(itemId)
+  if not GF.pending[itemId] then return false end
+  GF.pending[itemId] = nil
+  return true
 end
 
 function GF.Show()

@@ -222,11 +222,16 @@ ns.Events.On("PROFS_LOADED", function()
   local ev = CreateFrame("Frame")
   for _, e in ipairs({ "PLAYER_LOGIN", "ADDON_LOADED", "PLAYER_EQUIPMENT_CHANGED", "PLAYER_LEVEL_UP",
     "SKILL_LINES_CHANGED", "PLAYER_REGEN_ENABLED", "CHARACTER_POINTS_CHANGED", "PLAYER_TALENT_UPDATE",
-    "TRAIT_CONFIG_UPDATED", "ACTIVE_TALENT_GROUP_CHANGED" }) do
+    "TRAIT_CONFIG_UPDATED", "ACTIVE_TALENT_GROUP_CHANGED", "GET_ITEM_INFO_RECEIVED" }) do
     ev:RegisterEvent(e)
   end
-  ev:SetScript("OnEvent", function(_, e)
-    if e == "PLAYER_LOGIN" or e == "ADDON_LOADED" then
+  ev:SetScript("OnEvent", function(_, e, arg1)
+    if e == "GET_ITEM_INFO_RECEIVED" then
+      -- an upgrade Pawn could not rate before its data loaded: show it now (one
+      -- coalesced update for a burst of arrivals)
+      local cf = GC.Frame()
+      if ns.GearFrame.ItemArrived(arg1) and cf and cf:IsShown() then GC.RequestUpdate() end
+    elseif e == "PLAYER_LOGIN" or e == "ADDON_LOADED" then
       hookNative()
     elseif e == "PLAYER_REGEN_ENABLED" then
       local cf = GC.Frame()

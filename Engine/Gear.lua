@@ -155,7 +155,8 @@ end
 -- opts: profs={[profId]=skill}, level, class, weights|nil, scorer(itemId)|nil, known,
 --       stats(itemId)|nil (runtime stat lookup), equipped={[slot]=score},
 --       lookahead (levels above `level` to include, default 3),
---       drops (true: also patterns that drop; candidates carry how = acquisition)
+--       drops (true: also patterns that drop; candidates carry how = acquisition),
+--       pending = {} (filled with items the scorer could not rate yet)
 function G.Candidates(ds, opts)
   local w = opts.weights or G.AutoWeights(opts.class, opts.equippedTotals, opts.spec)
   local out = {}
@@ -169,8 +170,14 @@ function G.Candidates(ds, opts)
         local rl = it.rl or 0
         if rl <= (opts.level or 60) + (opts.lookahead or 3) and G.CanWear(opts.class, opts.level or 60, it) then
           local sc, pct
-          if opts.scorer then sc = opts.scorer(out_id); pct = sc ~= nil end
-          if sc == nil then
+          if opts.scorer then
+            -- Pawn rates in percent; built-in weights in stat points. Never mix the two
+            -- in one list: an item Pawn cannot rate yet (its data is not loaded) is
+            -- left out and noted in opts.pending, and the caller re-runs on arrival.
+            sc = opts.scorer(out_id)
+            pct = sc ~= nil
+            if sc == nil and opts.pending then opts.pending[out_id] = true end
+          else
             local st = it.stats or (opts.stats and opts.stats(out_id))
             sc = st and score(st, w) or nil
           end
