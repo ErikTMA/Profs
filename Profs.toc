@@ -1,0 +1,56 @@
+## Interface: 16001
+## Title: Profs!
+## Notes: Profession leveling routes, shopping lists and guided crafting.
+## Author: Erik Andersen
+## Version: 0.1.0
+## SavedVariables: ProfsDB
+## SavedVariablesPerCharacter: ProfsCharDB
+## OptionalDeps: TradeSkillMaster, Auctionator, Pawn
+## IconTexture: Interface\AddOns\Profs\Media\ProfsIcon
+## AddonCompartmentFunc: Profs_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: Profs_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: Profs_OnAddonCompartmentLeave
+## X-Target: WoW Forever 1.60.x (interface 16001 as reported; verify in game with /dump select(4, GetBuildInfo()))
+
+# Core (pure Lua, no game API)
+Core/Namespace.lua
+Core/Util.lua
+Core/Events.lua
+Core/Media.lua
+
+# Data: schema, registry, static tables, generated datasets
+Data/Schema.lua
+Data/Registry.lua
+Data/Professions.lua
+Data/Disenchant.lua
+Data/Cooldowns.lua
+Data/forever/Dataset.lua
+
+# Engine (pure Lua, unit tested headless)
+Engine/SkillUp.lua
+Engine/AHPrices.lua
+Engine/Pricing.lua
+Engine/Recovery.lua
+Engine/Optimizer.lua
+Engine/Shopping.lua
+Engine/Recommend.lua
+Engine/Gear.lua
+Engine/GearAlert.lua
+Engine/Routes.lua
+
+# Adapters (game and third-party APIs, feature detected)
+Adapters/Game.lua
+Adapters/Inventory.lua
+Adapters/AHScan.lua
+Adapters/PriceSources.lua
+Adapters/Pawn.lua
+
+# UI
+UI/Widgets.lua
+UI/Sidecar.lua
+UI/RecommendFrame.lua
+UI/GearFrame.lua
+UI/AHPanel.lua
+UI/GearToast.lua
+
+Core/Init.lua

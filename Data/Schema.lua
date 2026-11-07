@@ -1,0 +1,96 @@
+-- Dataset schema (version 1). A dataset is the generated profession data for ONE game
+-- flavor (Data/<flavor>/Dataset.lua).
+--
+--   meta        { schema=1, flavor="forever", generated="<iso8601>", source="..." }
+--   recipes     [spellId] = {
+--                 prof     skill-line id (197 Tailoring, 333 Enchanting, ...)
+--                 name     display name (display only; logic keys on ids)
+--                 learn    skill required to learn
+--                 colors   { orange, yellow, green, grey } skill thresholds
+--                 reagents { {itemId, count}, ... }
+--                 creates  { itemId, min, max } or nil (enchants create nothing)
+--                 skillups points per successful skill-up (default 1)
+--                 spec     specialization required (spell id), excluded unless the
+--                          character has it (Optimizer opts.specs)
+--                 sources  { {t="trainer", cost=copper, npcs={...}}
+--                          | {t="vendor", item=recipeItemId, cost=copper, npcs={...}, limited=bool}
+--                          | {t="reputation", item=, faction=, standing=}
+--                          | {t="quest", quest=} | {t="drop", item=} | {t="other"}
+--                          | {t="starter"} granted with the Apprentice rank
+--                          ; unknownCost=true: the source is known, its price is not }
+--   professions [skillLine] = { ranks = { {name, max, cost, charLevel, learnAt}, ... } }
+--               }
+--   items       [itemId] = { n=name, q=quality, il=itemLevel, rl=reqLevel,
+--                            vsell=copper, vbuy=copper (sold by a vendor, unlimited),
+--                            c=classId, sc=subclassId, slot=inventoryType,
+--                            de={ {itemId, chance, min, max}, ... } measured DE yield }
+--   npcs        [npcId]  = { n=name, zone=name, x=percent, y=percent, side="A"|"H"|"B" }
+--
+-- Everything is keyed on ids; names are for display only.
+local _, ns = ...
+local S = ns:NewModule("Schema")
+
+S.VERSION = 1
+
+S.SOURCE_TYPES = {
+  trainer = true, vendor = true, reputation = true, quest = true, drop = true, other = true,
+  starter = true, -- granted with the Apprentice rank
+}
+
+local function isInt(v) return type(v) == "number" and v == math.floor(v) end
+
+-- Returns ok, errors (list of strings). Never throws on bad data.
+function S.Validate(ds)
+  local errs = {}
+  local function err(fmt, ...) errs[#errs + 1] = string.format(fmt, ...) end
+  if type(ds) ~= "table" then return false, { "dataset is not a table" } end
+  if type(ds.meta) ~= "table" then err("meta missing")
+  elseif ds.meta.schema ~= S.VERSION then err("meta.schema %s ~= %d", tostring(ds.meta.schema), S.VERSION) end
+  if type(ds.recipes) ~= "table" then err("recipes missing") end
+  if type(ds.items) ~= "table" then err("items missing") end
+  if #errs > 0 then return false, errs end
+
+  for id, r in pairs(ds.recipes) do
+    local where = "recipe " .. tostring(id)
+    if not isInt(id) then err("%s: key not an integer", where) end
+    if not isInt(r.prof) then err("%s: prof", where) end
+    if type(r.colors) ~= "table" or #r.colors ~= 4 then
+      err("%s: colors must have 4 thresholds", where)
+    else
+      for i = 1, 4 do
+        if not isInt(r.colors[i]) then err("%s: colors[%d]", where, i) end
+      end
+      for i = 2, 4 do
+        if isInt(r.colors[i]) and isInt(r.colors[i - 1]) and r.colors[i] < r.colors[i - 1] then
+          err("%s: colors not ascending", where)
+        end
+      end
+    end
+    if r.learn ~= nil and not isInt(r.learn) then err("%s: learn", where) end
+    if type(r.reagents) ~= "table" then
+      err("%s: reagents", where)
+    else
+      for i, rg in ipairs(r.reagents) do
+        if type(rg) ~= "table" or not isInt(rg[1]) or not isInt(rg[2]) or rg[2] <= 0 then
+          err("%s: reagent %d", where, i)
+        end
+      end
+    end
+    if r.creates ~= nil then
+      local c = r.creates
+      if type(c) ~= "table" or not isInt(c[1]) then err("%s: creates", where) end
+    end
+    if type(r.sources) ~= "table" then
+      err("%s: sources", where)
+    else
+      for i, s in ipairs(r.sources) do
+        if type(s) ~= "table" or not S.SOURCE_TYPES[s.t] then err("%s: source %d type", where, i) end
+      end
+    end
+  end
+  for id, it in pairs(ds.items) do
+    if not isInt(id) then err("item %s: key not an integer", tostring(id)) end
+    if type(it) ~= "table" then err("item %s: not a table", tostring(id)) end
+  end
+  return #errs == 0, errs
+end

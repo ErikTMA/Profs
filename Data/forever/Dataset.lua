@@ -1,0 +1,6890 @@
+-- GENERATED profession data for Profs!. Do not edit.
+-- flavor forever, generated 2026-11-06T23:11:36Z
+local _, ns = ...
+local D = { meta = {flavor="forever",generated="2026-11-06T23:11:36Z",schema=1,source="profession data export"}, recipes = {}, items = {}, npcs = {}, professions = {[164]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[165]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[171]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=45000,learnAt=200,max=300,name="Artisan"}}},[197]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[202]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[333]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}}} }
+local R, I, N = D.recipes, D.items, D.npcs
+;(function()
+R[818]={colors={25,25,50,75},learn=25,name="Basic Campfire",prof=185,reagents={{4470,1}},sources={{t="other"}}}
+R[2149]={colors={1,40,55,70},creates={2302,1,1},learn=1,name="Handstitched Leather Boots",prof=165,reagents={{2318,2},{2320,1}},sources={{t="starter"}}}
+R[2152]={colors={1,30,45,60},creates={2304,1,1},learn=1,name="Light Armor Kit",prof=165,reagents={{2318,1}},sources={{t="starter"}}}
+R[2153]={colors={15,45,60,75},creates={2303,1,1},learn=15,name="Handstitched Leather Pants",prof=165,reagents={{2318,4},{2320,1}},sources={{cost=50,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[2158]={colors={90,95,110,125},creates={2307,1,1},learn=90,name="Fine Leather Boots",prof=165,reagents={{2318,7},{2320,2}},sources={{item=2406,t="drop"}}}
+R[2159]={colors={85,85,85,100},creates={2308,1,1},learn=85,name="Fine Leather Cloak",prof=165,reagents={{2318,10},{2321,2}},sources={{cost=250,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[2160]={colors={40,65,80,95},creates={2300,1,1},learn=40,name="Embossed Leather Vest",prof=165,reagents={{2318,8},{2320,4}},sources={{cost=100,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[2161]={colors={55,80,95,110},creates={2309,1,1},learn=55,name="Embossed Leather Boots",prof=165,reagents={{2318,8},{2320,5}},sources={{cost=100,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[2162]={colors={60,70,85,100},creates={2310,1,1},learn=60,name="Embossed Leather Cloak",prof=165,reagents={{2318,5},{2320,2}},sources={{cost=100,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[2163]={colors={60,70,85,100},creates={2311,1,1},learn=60,name="White Leather Jerkin",prof=165,reagents={{2318,8},{2320,2},{2324,1}},sources={{item=2407,t="drop"}}}
+R[2164]={colors={75,80,95,110},creates={2312,1,1},learn=75,name="Fine Leather Gloves",prof=165,reagents={{4231,1},{2318,4},{2320,2}},sources={{item=2408,t="drop"}}}
+R[2165]={colors={100,100,100,105},creates={2313,1,1},learn=100,name="Medium Armor Kit",prof=165,reagents={{2319,4},{2320,1}},sources={{cost=250,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[2166]={colors={120,120,132,145},creates={2314,1,1},learn=120,name="Toughened Leather Armor",prof=165,reagents={{2319,10},{4231,2},{2321,2}},sources={{cost=450,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[2167]={colors={100,100,112,125},creates={2315,1,1},learn=100,name="Dark Leather Boots",prof=165,reagents={{2319,4},{2321,2},{4340,1}},sources={{cost=350,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[2168]={colors={110,110,122,135},creates={2316,1,1},learn=110,name="Dark Leather Cloak",prof=165,reagents={{2319,8},{2321,1},{4340,1}},sources={{cost=350,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[2169]={colors={100,100,112,125},creates={2317,1,1},learn=100,name="Dark Leather Tunic",prof=165,reagents={{2319,6},{2321,1},{4340,1}},sources={{item=2409,t="drop"}}}
+R[2329]={colors={1,55,75,95},creates={2454,1,1},learn=1,name="Elixir of Minor Strength",prof=171,reagents={{2449,1},{765,1},{3371,1}},sources={{cost=0,npcs={1215,1246,1470,2132,2391,3009,3184,3347},t="trainer"}}}
+R[2331]={colors={25,65,85,105},creates={2455,1,1},learn=25,name="Minor Mana Potion",prof=171,reagents={{785,1},{2447,1},{3371,1}},sources={{cost=100,npcs={1215,1246,1386,1470,2132,2391,3009,3184},t="trainer"}}}
+R[2332]={colors={40,70,90,110},creates={2456,1,1},learn=40,name="Minor Rejuvenation Potion",prof=171,reagents={{785,2},{2447,1},{3371,1}},sources={{cost=150,npcs={1215,1246,1386,1470,2132,2391,3009,3184},t="trainer"}}}
+R[2333]={colors={140,165,185,205},creates={3390,1,1},learn=140,name="Elixir of Lesser Agility",prof=171,reagents={{3355,1},{2452,1},{3372,1}},sources={{item=3396,t="drop"}}}
+R[2334]={colors={50,80,100,120},creates={2458,1,1},learn=50,name="Elixir of Minor Fortitude",prof=171,reagents={{2449,2},{2447,1},{3371,1}},sources={{cost=250,npcs={1215,1246,1386,1470,2132,2391,3009,3184},t="trainer"}}}
+R[2335]={colors={60,90,110,130},creates={2459,1,1},learn=60,name="Swiftness Potion",prof=171,reagents={{2452,1},{2450,1},{3371,1}},sources={{item=2555,t="drop"}}}
+R[2365]={colors={100,100,120,140},learn=100,name="Draught of Tongues",prof=171,reagents={{2449,2},{785,2},{3371,1}},sources={{t="other"}}}
+R[2385]={colors={10,45,57,70},creates={2568,1,1},learn=10,name="Brown Linen Vest",prof=197,reagents={{2996,1},{2320,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2386]={colors={65,65,82,100},creates={2569,1,1},learn=65,name="Linen Boots",prof=197,reagents={{2996,3},{2320,1},{2318,1}},sources={{cost=200,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2387]={colors={1,35,47,60},creates={2570,1,1},learn=1,name="Linen Cloak",prof=197,reagents={{2996,1},{2320,1}},sources={{t="starter"}}}
+R[2389]={colors={40,50,67,85},creates={2572,1,1},learn=40,name="Red Linen Robe",prof=197,reagents={{2996,3},{2320,2},{2604,2}},sources={{item=2598,t="drop"}}}
+R[2392]={colors={40,50,67,85},creates={2575,1,1},learn=40,name="Red Linen Shirt",prof=197,reagents={{2996,2},{2320,1},{2604,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2393]={colors={1,35,47,60},creates={2576,1,1},learn=1,name="White Linen Shirt",prof=197,reagents={{2996,1},{2320,1},{2324,1}},sources={{cost=25,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2394]={colors={40,50,67,85},creates={2577,1,1},learn=40,name="Blue Linen Shirt",prof=197,reagents={{2996,2},{2320,1},{6260,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2395]={colors={70,70,82,100},creates={2578,1,1},learn=70,name="Barbaric Linen Vest",prof=197,reagents={{2996,4},{2318,1},{2321,1}},sources={{cost=300,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2396]={colors={70,70,82,100},creates={2579,1,1},learn=70,name="Green Linen Shirt",prof=197,reagents={{2996,3},{2321,1},{2605,1}},sources={{cost=200,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2397]={colors={60,60,77,95},creates={2580,1,1},learn=60,name="Reinforced Linen Cape",prof=197,reagents={{2996,2},{2320,3}},sources={{cost=200,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2399]={colors={85,85,102,120},creates={2582,1,1},learn=85,name="Green Woolen Vest",prof=197,reagents={{2997,2},{2321,2},{2605,1}},sources={{cost=300,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[2401]={colors={95,95,112,130},creates={2583,1,1},learn=95,name="Woolen Boots",prof=197,reagents={{2997,4},{2321,2},{2318,2}},sources={{cost=300,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[2402]={colors={75,80,97,115},creates={2584,1,1},learn=75,name="Woolen Cape",prof=197,reagents={{2997,1},{2321,1}},sources={{cost=250,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[2403]={colors={105,105,122,140},creates={2585,1,1},learn=105,name="Gray Woolen Robe",prof=197,reagents={{2997,4},{2321,3},{4340,1}},sources={{item=2601,t="drop"}}}
+R[2406]={colors={100,100,100,110},creates={2587,1,1},learn=100,name="Gray Woolen Shirt",prof=197,reagents={{2997,2},{2321,1},{4340,1}},sources={{cost=200,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[2538]={colors={45,45,65,85},creates={2679,1,1},learn=45,name="Charred Wolf Meat",prof=185,reagents={{2672,1}},sources={{t="other"}}}
+R[2539]={colors={10,50,70,90},creates={2680,1,1},learn=10,name="Spiced Wolf Meat",prof=185,reagents={{2672,1},{2678,1}},sources={{cost=50,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[2540]={colors={45,45,65,85},creates={2681,1,1},learn=45,name="Roasted Boar Meat",prof=185,reagents={{769,1}},sources={{t="other"}}}
+R[2541]={colors={50,90,110,130},creates={2684,1,1},learn=50,name="Coyote Steak",prof=185,reagents={{2673,1}},sources={{cost=100,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[2542]={colors={50,90,110,130},creates={724,1,1},learn=50,name="Goretusk Liver Pie",prof=185,reagents={{723,1},{2678,1}},sources={{cost=400,item=2697,npcs={340},t="vendor"},{item=2697,t="quest"}}}
+R[2543]={colors={75,115,135,155},creates={733,1,1},learn=75,name="Westfall Stew",prof=185,reagents={{729,1},{730,1},{731,1}},sources={{cost=200,item=728,npcs={340},t="vendor"},{item=728,t="quest"}}}
+R[2544]={colors={75,115,135,155},creates={2683,1,1},learn=75,name="Crab Cake",prof=185,reagents={{2674,1},{2678,1}},sources={{cost=200,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[2545]={colors={85,125,145,165},creates={2682,1,1},learn=85,name="Cooked Crab Claw",prof=185,reagents={{2675,1},{2678,1}},sources={{cost=400,item=2698,npcs={340},t="vendor"},{item=2698,t="drop"}}}
+R[2546]={colors={80,120,140,160},creates={2687,1,1},learn=80,name="Dry Pork Ribs",prof=185,reagents={{2677,1},{2678,1}},sources={{cost=150,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[2547]={colors={100,135,155,175},creates={1082,1,1},learn=100,name="Redridge Goulash",prof=185,reagents={{1081,1},{1080,1}},sources={{cost=800,item=2699,npcs={340},t="vendor"},{item=2699,t="quest"}}}
+R[2548]={colors={110,130,150,170},creates={2685,1,1},learn=110,name="Succulent Pork Ribs",prof=185,reagents={{2677,2},{2692,1}},sources={{cost=400,item=2700,npcs={340},t="vendor"},{item=2700,t="drop"}}}
+R[2549]={colors={100,140,160,180},creates={1017,3,3},learn=100,name="Seasoned Wolf Kabob",prof=185,reagents={{1015,2},{2678,1}},sources={{cost=1600,item=2701,npcs={340},t="vendor"},{item=2701,t="quest"}}}
+R[2660]={colors={1,15,35,55},creates={2862,1,1},learn=1,name="Rough Sharpening Stone",prof=164,reagents={{2835,1}},sources={{t="starter"}}}
+R[2661]={colors={35,70,90,110},creates={2851,1,1},learn=35,name="Copper Chain Belt",prof=164,reagents={{2840,6}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2662]={colors={1,50,70,90},creates={2852,1,1},learn=1,name="Copper Chain Pants",prof=164,reagents={{2840,4}},sources={{cost=50,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2663]={colors={1,20,40,60},creates={2853,1,1},learn=1,name="Copper Bracers",prof=164,reagents={{2840,2}},sources={{t="starter"}}}
+R[2664]={colors={90,90,102,115},creates={2854,1,1},learn=90,name="Runed Copper Bracers",prof=164,reagents={{2840,10},{3470,3}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2665]={colors={65,65,77,90},creates={2863,1,1},est=true,learn=65,name="Coarse Sharpening Stone",prof=164,reagents={{2836,1}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2666]={colors={70,85,105,125},creates={2857,1,1},learn=70,name="Runed Copper Belt",prof=164,reagents={{2840,10}},sources={{cost=200,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2667]={colors={80,95,115,135},creates={2864,1,1},learn=80,name="Runed Copper Breastplate",prof=164,reagents={{2840,12},{1210,1},{3470,2}},sources={{item=2881,t="drop"}}}
+R[2668]={colors={105,120,135,150},creates={2865,1,1},learn=105,name="Rough Bronze Leggings",prof=164,reagents={{2841,6}},sources={{cost=300,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2670]={colors={105,120,135,150},creates={2866,1,1},learn=105,name="Rough Bronze Cuirass",prof=164,reagents={{2841,7}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2672]={colors={120,125,140,155},creates={2868,1,1},learn=120,name="Patterned Bronze Bracers",prof=164,reagents={{2841,5},{3478,2}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2673]={colors={130,135,150,165},creates={2869,1,1},learn=130,name="Silvered Bronze Breastplate",prof=164,reagents={{2841,10},{2842,2},{3478,2},{1705,1}},sources={{item=5578,t="drop"}}}
+R[2674]={colors={125,125,140,155},creates={2871,1,1},est=true,learn=125,name="Heavy Sharpening Stone",prof=164,reagents={{2838,1}},sources={{cost=1000,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2675]={colors={145,150,165,180},creates={2870,1,1},learn=145,name="Shining Silver Breastplate",prof=164,reagents={{2841,20},{1206,2},{1705,2},{5500,2},{2842,4}},sources={{cost=1000,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2737]={colors={15,55,75,95},creates={2844,1,1},learn=15,name="Copper Mace",prof=164,reagents={{2840,6},{2880,1},{2589,2}},sources={{cost=50,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2738]={colors={20,60,80,100},creates={2845,1,1},learn=20,name="Copper Axe",prof=164,reagents={{2840,6},{2880,1},{2589,2}},sources={{cost=50,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2739]={colors={25,65,85,105},creates={2847,1,1},learn=25,name="Copper Shortsword",prof=164,reagents={{2840,6},{2880,1},{2589,2}},sources={{cost=50,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[2740]={colors={110,115,130,145},creates={2848,1,1},learn=110,name="Bronze Mace",prof=164,reagents={{2841,6},{2880,4},{2319,1}},sources={{cost=200,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2741]={colors={115,120,135,150},creates={2849,1,1},learn=115,name="Bronze Axe",prof=164,reagents={{2841,7},{2880,4},{2319,1}},sources={{cost=200,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2742]={colors={120,125,140,155},creates={2850,1,1},learn=120,name="Bronze Shortsword",prof=164,reagents={{2841,5},{2880,4},{2319,2}},sources={{cost=200,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[2795]={colors={25,60,80,100},creates={2888,1,1},learn=25,name="Beer Basted Boar Ribs",prof=185,reagents={{2886,1},{2894,1}},sources={{cost=240,item=2889,npcs={340},t="vendor"},{item=2889,t="quest"}}}
+R[2881]={colors={1,20,30,40},creates={2318,1,1},learn=1,name="Light Leather",prof=165,reagents={{2934,3}},sources={{t="starter"}}}
+R[2963]={colors={1,25,37,50},creates={2996,1,1},learn=1,name="Bolt of Linen Cloth",prof=197,reagents={{2589,2}},sources={{t="starter"}}}
+R[2964]={colors={75,75,77,85},creates={2997,1,1},learn=75,name="Bolt of Woolen Cloth",prof=197,reagents={{2592,3}},sources={{cost=100,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[3115]={colors={1,15,35,55},creates={3239,1,1},learn=1,name="Rough Weightstone",prof=164,reagents={{2835,1}},sources={{t="starter"}}}
+R[3116]={colors={65,65,77,90},creates={3240,1,1},est=true,learn=65,name="Coarse Weightstone",prof=164,reagents={{2836,1}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3117]={colors={125,125,140,155},creates={3241,1,1},est=true,learn=125,name="Heavy Weightstone",prof=164,reagents={{2838,1}},sources={{cost=1000,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3170]={colors={15,60,80,100},creates={3382,1,1},learn=15,name="Minor Troll's Blood Elixir",prof=171,reagents={{2447,1},{2449,2},{3371,1}},sources={{cost=50,npcs={1215,1246,1386,1470,2132,2391,3009,3184},t="trainer"}}}
+R[3171]={colors={90,120,140,160},creates={3383,1,1},learn=90,name="Elixir of Wisdom",prof=171,reagents={{785,1},{2450,2},{3371,1}},sources={{cost=500,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[3172]={colors={110,135,155,175},creates={3384,1,1},learn=110,name="Minor Magic Resistance Potion",prof=171,reagents={{785,3},{3355,1},{3371,1}},sources={{item=3393,t="drop"}}}
+R[3173]={colors={120,145,165,185},creates={3385,1,1},learn=120,name="Lesser Mana Potion",prof=171,reagents={{785,1},{3820,1},{3371,1}},sources={{cost=1500,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[3174]={colors={120,145,165,185},creates={3386,1,1},learn=120,name="Potion of Poison Cleansing",prof=171,reagents={{1288,1},{2453,1},{3372,1}},sources={{item=3394,t="drop"}}}
+R[3175]={colors={250,275,295,315},creates={3387,1,1},learn=250,name="Limited Invulnerability Potion",prof=171,reagents={{8839,2},{8845,1},{8925,1}},sources={{item=3395,t="drop"}}}
+R[3176]={colors={125,150,170,190},creates={3388,1,1},learn=125,name="Lesser Troll's Blood Elixir",prof=171,reagents={{2453,2},{2450,2},{3372,1}},sources={{cost=1500,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[3177]={colors={130,155,175,195},creates={3389,1,1},learn=130,name="Elixir of Lesser Defense",prof=171,reagents={{3355,1},{3820,1},{3372,1}},sources={{cost=2000,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[3188]={colors={150,175,195,215},creates={3391,1,1},learn=150,name="Elixir of Ogre Strength",prof=171,reagents={{2449,1},{3356,1},{3372,1}},sources={{item=6211,t="drop"}}}
+R[3230]={colors={50,80,100,120},creates={2457,1,1},learn=50,name="Elixir of Minor Agility",prof=171,reagents={{2452,1},{765,1},{3371,1}},sources={{item=2553,t="drop"}}}
+R[3275]={colors={1,30,45,60},creates={1251,1,1},learn=1,name="Linen Bandage",prof=129,reagents={{2589,1}},sources={{t="starter"}}}
+R[3276]={colors={40,50,75,100},creates={2581,1,1},learn=40,name="Heavy Linen Bandage",prof=129,reagents={{2589,2}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[3277]={colors={80,80,115,150},creates={3530,1,1},learn=80,name="Wool Bandage",prof=129,reagents={{2592,1}},sources={{cost=250,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[3278]={colors={115,115,150,185},creates={3531,1,1},learn=115,name="Heavy Wool Bandage",prof=129,reagents={{2592,2}},sources={{cost=1000,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[3292]={colors={95,110,130,150},creates={3487,1,1},learn=95,name="Heavy Copper Broadsword",prof=164,reagents={{2840,14},{2880,2},{818,2},{2319,2}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3293]={colors={35,70,90,110},creates={3488,1,1},learn=35,name="Copper Battle Axe",prof=164,reagents={{2840,12},{2880,2},{774,2},{3470,2},{2318,2}},sources={{cost=250,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3294]={colors={70,85,105,125},creates={3489,1,1},learn=70,name="Thick War Axe",prof=164,reagents={{2840,10},{2880,2},{2842,2},{3470,2},{2318,2}},sources={{cost=500,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3295]={colors={125,130,145,160},creates={3490,1,1},learn=125,name="Deadly Bronze Poniard",prof=164,reagents={{2841,4},{3466,1},{2459,1},{1210,2},{3478,2},{2319,2}},sources={{item=2883,t="drop"}}}
+R[3296]={colors={130,135,150,165},creates={3491,1,1},learn=130,name="Heavy Bronze Mace",prof=164,reagents={{2841,8},{3466,1},{1206,1},{1210,1},{3478,2},{2319,2}},sources={{cost=1000,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3297]={colors={145,150,165,180},creates={3492,1,1},learn=145,name="Mighty Iron Hammer",prof=164,reagents={{3575,6},{3466,2},{3391,1},{1705,2},{3478,2},{2319,2}},sources={{item=3608,t="drop"}}}
+R[3319]={colors={20,60,80,100},creates={3469,1,1},learn=20,name="Copper Chain Boots",prof=164,reagents={{2840,8}},sources={{cost=50,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3320]={colors={25,45,65,85},creates={3470,1,1},learn=25,name="Rough Grinding Stone",prof=164,reagents={{2835,2}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3321]={colors={35,70,90,110},creates={3471,1,1},learn=35,name="Copper Chain Vest",prof=164,reagents={{2840,8},{774,1},{3470,2}},sources={{item=3609,t="drop"},{item=3609,t="quest"}}}
+R[3323]={colors={40,75,95,115},creates={3472,1,1},learn=40,name="Runed Copper Gauntlets",prof=164,reagents={{2840,8},{3470,2}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3324]={colors={45,75,95,115},creates={3473,1,1},learn=45,name="Runed Copper Pants",prof=164,reagents={{2840,8},{2320,3},{3470,3}},sources={{cost=200,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3325]={colors={60,75,95,115},creates={3474,1,1},learn=60,name="Gemmed Copper Gauntlets",prof=164,reagents={{2840,8},{818,1},{774,1}},sources={{item=3610,t="drop"}}}
+R[3326]={colors={75,75,87,100},creates={3478,1,1},est=true,learn=75,name="Coarse Grinding Stone",prof=164,reagents={{2836,2}},sources={{cost=250,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[3328]={colors={110,115,130,145},creates={3480,1,1},learn=110,name="Rough Bronze Shoulders",prof=164,reagents={{2841,5},{1210,1},{3478,1}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3330]={colors={125,130,145,160},creates={3481,1,1},learn=125,name="Silvered Bronze Shoulders",prof=164,reagents={{2841,8},{2842,2},{3478,2}},sources={{item=2882,t="drop"}}}
+R[3331]={colors={130,135,150,165},creates={3482,1,1},learn=130,name="Silvered Bronze Boots",prof=164,reagents={{2841,6},{2842,1},{3478,2}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3333]={colors={135,140,155,170},creates={3483,1,1},learn=135,name="Silvered Bronze Gauntlets",prof=164,reagents={{2841,8},{2842,1},{3478,2}},sources={{cost=1000,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3334]={colors={145,150,165,180},creates={3484,1,1},learn=145,name="Green Iron Boots",prof=164,reagents={{3575,4},{1705,2},{3478,2},{2605,1}},sources={{item=3611,t="drop"}}}
+R[3336]={colors={150,155,170,185},creates={3485,1,1},learn=150,name="Green Iron Gauntlets",prof=164,reagents={{3575,4},{5498,2},{3478,2},{2605,1}},sources={{item=3612,t="drop"}}}
+R[3337]={colors={125,125,140,155},creates={3486,1,1},est=true,learn=125,name="Heavy Grinding Stone",prof=164,reagents={{2838,3}},sources={{cost=1000,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3370]={colors={80,120,140,160},creates={3662,1,1},learn=80,name="Crocolisk Steak",prof=185,reagents={{2924,1},{2678,1}},sources={{cost=400,item=3678,npcs={340},t="vendor"},{item=3678,t="quest"}}}
+R[3371]={colors={60,100,120,140},creates={3220,2,2},learn=60,name="Blood Sausage",prof=185,reagents={{3173,1},{3172,1},{3174,1}},sources={{cost=400,item=3679,npcs={340},t="vendor"},{item=3679,t="quest"}}}
+R[3372]={colors={90,130,150,170},creates={3663,1,1},learn=90,name="Murloc Fin Soup",prof=185,reagents={{1468,2},{2692,1}},sources={{cost=1600,item=3680,npcs={340},t="vendor"},{item=3680,t="quest"}}}
+R[3373]={colors={120,160,180,200},creates={3664,1,1},learn=120,name="Crocolisk Gumbo",prof=185,reagents={{3667,1},{2692,1}},sources={{cost=1600,item=3681,npcs={340},t="vendor"},{item=3681,t="quest"}}}
+R[3376]={colors={130,170,190,210},creates={3665,1,1},learn=130,name="Curiously Tasty Omelet",prof=185,reagents={{3685,1},{2692,1}},sources={{cost=1600,item=3682,npcs={340},t="vendor"},{cost=1600,item=3682,npcs={1148},t="vendor"},{cost=1600,item=3682,npcs={2821},t="vendor"},{item=3682,t="quest"}}}
+R[3377]={colors={110,150,170,190},creates={3666,1,1},learn=110,name="Gooey Spider Cake",prof=185,reagents={{2251,2},{2692,1}},sources={{cost=1600,item=3683,npcs={340},t="vendor"},{item=3683,t="quest"}}}
+R[3397]={colors={110,150,170,190},creates={3726,1,1},learn=110,name="Big Bear Steak",prof=185,reagents={{3730,1},{2692,1}},sources={{cost=1600,item=3734,limited=true,npcs={12246},t="vendor"},{cost=1684,item=3734,npcs={3960},t="vendor"},{item=3734,t="quest"}}}
+R[3398]={colors={125,175,195,215},creates={3727,1,1},learn=125,name="Hot Lion Chops",prof=185,reagents={{3731,1},{2692,1}},sources={{cost=1800,item=3735,npcs={3489},t="vendor"},{cost=1800,item=3735,npcs={12245},t="vendor"},{item=3735,t="quest"}}}
+R[3399]={colors={150,190,210,230},creates={3728,1,1},learn=150,name="Tasty Lion Steak",prof=185,reagents={{3731,2},{3713,1}},sources={{item=3736,t="quest"}}}
+R[3400]={colors={175,215,235,255},creates={3729,1,1},learn=175,name="Soothing Turtle Bisque",prof=185,reagents={{3712,1},{3713,1}},sources={{item=3737,t="quest"}}}
+R[3448]={colors={165,185,205,225},creates={3823,1,1},learn=165,name="Lesser Invisibility Potion",prof=171,reagents={{3818,1},{3355,1},{3372,1}},sources={{cost=4500,npcs={1386,4160,4611,7948,11042,246795,275322},t="trainer"}}}
+R[3449]={colors={165,190,210,230},creates={3824,2,2},learn=165,name="Shadow Oil",prof=171,reagents={{3818,4},{3369,4},{3372,1}},sources={{cost=1333,item=6068,limited=true,npcs={4878},t="vendor"},{cost=1500,item=6068,npcs={12245},t="vendor"},{cost=1578,item=6068,limited=true,npcs={2481},t="vendor"}}}
+R[3450]={colors={175,195,215,235},creates={3825,1,1},learn=175,name="Elixir of Lesser Fortitude",prof=171,reagents={{3355,1},{3821,1},{3372,1}},sources={{cost=5400,npcs={1386,4160,4611,7948,246795,275322},t="trainer"},{item=3830,t="drop"}}}
+R[3451]={colors={180,200,220,240},creates={3826,1,1},learn=180,name="Troll's Blood Elixir",prof=171,reagents={{3357,1},{2453,1},{3372,1}},sources={{item=3831,t="drop"}}}
+R[3452]={colors={160,180,200,220},creates={3827,1,1},learn=160,name="Mana Potion",prof=171,reagents={{3820,1},{3356,1},{3372,1}},sources={{cost=5000,npcs={1386,4160,4611,7948,246795,275322},t="trainer"}}}
+R[3453]={colors={195,215,235,255},creates={3828,1,1},learn=195,name="Draught of Detect Lesser Invisibility",prof=171,reagents={{3358,1},{3818,1},{3372,1}},sources={{item=3832,t="drop"}}}
+R[3454]={colors={200,220,240,260},creates={3829,2,2},learn=200,name="Frost Oil",prof=171,reagents={{3358,4},{3819,2},{3372,1}},sources={{cost=2631,item=14634,limited=true,npcs={2480},t="vendor"}}}
+R[3491]={colors={105,110,125,140},creates={3848,1,1},learn=105,name="Big Bronze Knife",prof=164,reagents={{2841,6},{2880,4},{3470,2},{818,1},{2319,1}},sources={{cost=600,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[3492]={colors={160,160,172,185},creates={3849,1,1},learn=160,name="Hardened Iron Shortsword",prof=164,reagents={{3575,6},{3466,2},{3486,1},{1705,2},{4234,3}},sources={{cost=3000,item=12162,limited=true,npcs={5512},t="vendor"},{cost=3157,item=12162,limited=true,npcs={2843},t="vendor"},{cost=3157,item=12162,limited=true,npcs={3356},t="vendor"}}}
+R[3493]={colors={175,175,187,200},creates={3850,1,1},learn=175,name="Jade Serpentblade",prof=164,reagents={{3575,8},{3466,2},{3486,2},{1529,2},{4234,3}},sources={{item=3866,t="drop"}}}
+R[3494]={colors={155,155,167,180},creates={3851,1,1},learn=155,name="Solid Iron Maul",prof=164,reagents={{3575,8},{3466,2},{3486,1},{2842,4},{4234,2}},sources={{cost=3000,item=10858,limited=true,npcs={1471},t="vendor"},{cost=3000,item=10858,limited=true,npcs={8878},t="vendor"},{cost=3000,item=10858,limited=true,npcs={9179},t="vendor"}}}
+R[3495]={colors={170,170,182,195},creates={3852,1,1},learn=170,name="Golden Iron Destroyer",prof=164,reagents={{3575,10},{3577,4},{1705,2},{3466,2},{4234,2},{3486,2}},sources={{item=3867,t="drop"}}}
+R[3496]={colors={180,180,192,205},creates={3853,1,1},learn=180,name="Moonsteel Broadsword",prof=164,reagents={{3859,8},{3466,2},{3486,2},{1705,3},{4234,3}},sources={{cost=4400,item=12163,npcs={2482},t="vendor"}}}
+R[3497]={colors={200,200,212,225},creates={3854,1,1},learn=200,name="Frost Tiger Blade",prof=164,reagents={{3859,8},{3466,2},{3486,2},{1529,2},{3829,1},{4234,4}},sources={{item=3868,t="drop"}}}
+R[3498]={colors={185,185,197,210},creates={3855,1,1},learn=185,name="Massive Iron Axe",prof=164,reagents={{3575,14},{3466,2},{3486,2},{3577,4},{4234,2}},sources={{cost=4400,item=12164,npcs={2483},t="vendor"},{cost=4631,item=12164,limited=true,npcs={1146},t="vendor"}}}
+R[3500]={colors={200,200,212,225},creates={3856,1,1},learn=200,name="Shadow Crescent Axe",prof=164,reagents={{3859,10},{3466,2},{3486,3},{3864,2},{3824,1},{4234,3}},sources={{item=3869,t="drop"}}}
+R[3501]={colors={165,165,177,190},creates={3835,1,1},learn=165,name="Green Iron Bracers",prof=164,reagents={{3575,6},{2605,1}},sources={{cost=1000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[3502]={colors={170,170,182,195},creates={3836,1,1},learn=170,name="Green Iron Helm",prof=164,reagents={{3575,12},{3864,1},{2605,1}},sources={{cost=1250,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[3503]={colors={190,190,202,215},creates={3837,1,1},learn=190,name="Golden Scale Coif",prof=164,reagents={{3859,8},{3577,2},{3486,2}},sources={{cost=4400,item=6047,npcs={5411},t="vendor"}}}
+R[3504]={colors={160,160,172,185},creates={3840,1,1},learn=160,name="Green Iron Shoulders",prof=164,reagents={{3575,7},{3486,1},{2605,1}},sources={{item=3870,t="drop"}}}
+R[3505]={colors={175,175,187,200},creates={3841,1,1},learn=175,name="Golden Scale Shoulders",prof=164,reagents={{3859,6},{3577,2},{3486,1}},sources={{item=3871,t="drop"}}}
+R[3506]={colors={155,155,167,180},creates={3842,1,1},learn=155,name="Green Iron Leggings",prof=164,reagents={{3575,8},{3486,1},{2605,1}},sources={{cost=5000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[3507]={colors={170,170,182,195},creates={3843,1,1},learn=170,name="Golden Scale Leggings",prof=164,reagents={{3575,10},{3577,2},{3486,1}},sources={{item=3872,t="drop"}}}
+R[3508]={colors={180,180,192,205},creates={3844,1,1},learn=180,name="Green Iron Hauberk",prof=164,reagents={{3575,20},{3486,4},{1529,2},{1206,2},{4255,1}},sources={{cost=7500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[3511]={colors={195,195,207,220},creates={3845,1,1},learn=195,name="Golden Scale Cuirass",prof=164,reagents={{3859,12},{3577,2},{3486,4},{1529,2}},sources={{item=3873,t="drop"}}}
+R[3513]={colors={185,185,197,210},creates={3846,1,1},learn=185,name="Polished Steel Boots",prof=164,reagents={{3859,8},{3864,1},{1705,1},{3486,2}},sources={{item=3874,t="drop"}}}
+R[3515]={colors={200,200,212,225},creates={3847,1,1},learn=200,name="Golden Scale Boots",prof=164,reagents={{3859,10},{3577,4},{3486,4},{3864,1}},sources={{item=3875,t="drop"}}}
+R[3753]={colors={25,55,70,85},creates={4237,1,1},learn=25,name="Handstitched Leather Belt",prof=165,reagents={{2318,6},{2320,1}},sources={{cost=75,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[3755]={colors={45,45,47,65},creates={4238,1,1},learn=45,name="Linen Bag",prof=197,reagents={{2996,3},{2320,3}},sources={{cost=100,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[3756]={colors={55,70,85,100},creates={4239,1,1},learn=55,name="Embossed Leather Gloves",prof=165,reagents={{2318,3},{2320,2}},sources={{cost=150,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[3757]={colors={80,80,92,110},creates={4240,1,1},learn=80,name="Woolen Bag",prof=197,reagents={{2997,3},{2321,1}},sources={{cost=200,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3758]={colors={95,100,117,135},creates={4241,1,1},learn=95,name="Green Woolen Bag",prof=197,reagents={{2997,4},{2605,1},{2321,1}},sources={{item=4292,t="drop"}}}
+R[3759]={colors={75,80,95,110},creates={4242,1,1},learn=75,name="Embossed Leather Pants",prof=165,reagents={{4231,1},{2318,6},{2320,2}},sources={{cost=200,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[3760]={colors={150,150,155,165},creates={3719,1,1},learn=150,name="Hillman's Cloak",prof=165,reagents={{4234,5},{2321,2}},sources={{cost=600,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3761]={colors={85,90,105,120},creates={4243,1,1},learn=85,name="Fine Leather Tunic",prof=165,reagents={{4231,3},{2318,6},{2320,4}},sources={{cost=350,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3762]={colors={100,100,112,125},creates={4244,1,1},learn=100,name="Hillman's Leather Vest",prof=165,reagents={{4243,1},{4231,2},{2320,2}},sources={{item=4293,t="drop"}}}
+R[3763]={colors={80,85,100,115},creates={4246,1,1},learn=80,name="Fine Leather Belt",prof=165,reagents={{2318,6},{2320,2}},sources={{cost=300,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3764]={colors={145,145,157,170},creates={4247,1,1},learn=145,name="Hillman's Leather Gloves",prof=165,reagents={{2319,14},{2321,4}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3765]={colors={120,140,152,165},creates={4248,1,1},learn=120,name="Dark Leather Gloves",prof=165,reagents={{2312,1},{4233,1},{2321,1},{4340,1}},sources={{item=7360,t="drop"}}}
+R[3766]={colors={125,125,137,150},creates={4249,1,1},learn=125,name="Dark Leather Belt",prof=165,reagents={{4246,1},{4233,1},{2321,2},{4340,1}},sources={{cost=400,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3767]={colors={120,125,137,150},creates={4250,1,1},learn=120,name="Hillman's Belt",prof=165,reagents={{2319,8},{3383,1},{2321,2}},sources={{item=4294,t="drop"}}}
+R[3768]={colors={130,130,142,155},creates={4251,1,1},learn=130,name="Hillman's Shoulders",prof=165,reagents={{4233,1},{2319,4},{2321,1}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3769]={colors={140,140,152,165},creates={4252,1,1},learn=140,name="Dark Leather Shoulders",prof=165,reagents={{2319,12},{3390,1},{4340,1},{2321,2}},sources={{item=4296,t="drop"}}}
+R[3770]={colors={135,135,147,160},creates={4253,1,1},learn=135,name="Toughened Leather Gloves",prof=165,reagents={{2319,4},{4233,2},{3389,2},{3182,2},{2321,2}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3771]={colors={150,150,160,170},creates={4254,1,1},learn=150,name="Barbaric Gloves",prof=165,reagents={{4234,6},{5637,2},{2321,1}},sources={{item=4297,t="drop"}}}
+R[3772]={colors={155,155,160,170},creates={4255,1,1},learn=155,name="Green Leather Armor",prof=165,reagents={{4234,9},{2605,2},{2321,4}},sources={{cost=2000,item=7613,limited=true,npcs={2698},t="vendor"},{cost=2000,item=7613,npcs={12245},t="vendor"},{cost=2105,item=7613,limited=true,npcs={2679},t="vendor"}}}
+R[3773]={colors={175,175,180,190},creates={4256,1,1},learn=175,name="Guardian Armor",prof=165,reagents={{4236,2},{4234,12},{3824,1},{2321,2}},sources={{item=4299,t="drop"}}}
+R[3774]={colors={160,160,165,175},creates={4257,1,1},learn=160,name="Green Leather Belt",prof=165,reagents={{4236,1},{4234,5},{2321,1},{2605,1},{7071,1}},sources={{cost=900,npcs={3007,4212,11098},t="trainer"}}}
+R[3775]={colors={170,170,175,185},creates={4258,1,1},learn=170,name="Guardian Belt",prof=165,reagents={{4236,2},{4234,4},{2321,1},{7071,1}},sources={{item=4298,t="drop"}}}
+R[3776]={colors={180,180,185,195},creates={4259,1,1},learn=180,name="Green Leather Bracers",prof=165,reagents={{4236,2},{4234,6},{2605,1},{2321,1}},sources={{cost=1080,npcs={3007,4212,11098},t="trainer"}}}
+R[3777]={colors={195,195,200,210},creates={4260,1,1},learn=195,name="Guardian Leather Bracers",prof=165,reagents={{4234,6},{4236,2},{4291,1}},sources={{item=4300,t="drop"}}}
+R[3778]={colors={185,185,190,200},creates={4262,1,1},learn=185,name="Gem-studded Leather Belt",prof=165,reagents={{4236,4},{5500,2},{1529,2},{3864,1},{2321,1}},sources={{cost=3000,item=14635,limited=true,npcs={2699},t="vendor"},{cost=3000,item=14635,limited=true,npcs={12245},t="vendor"}}}
+R[3779]={colors={200,200,205,215},creates={4264,1,1},learn=200,name="Barbaric Belt",prof=165,reagents={{4234,6},{4236,2},{4096,2},{5633,1},{4291,1},{7071,1}},sources={{item=4301,t="drop"}}}
+R[3780]={colors={150,150,155,165},creates={4265,1,1},learn=150,name="Heavy Armor Kit",prof=165,reagents={{4234,5},{2321,1}},sources={{cost=750,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3813]={colors={150,150,160,175},creates={4245,1,1},learn=150,name="Small Silk Pack",prof=197,reagents={{4305,3},{4234,2},{2321,3}},sources={{cost=800,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3816]={colors={35,50,60,70},creates={4231,1,1},learn=35,name="Cured Light Hide",prof=165,reagents={{783,1},{4289,1}},sources={{cost=50,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[3817]={colors={100,100,100,105},creates={4233,1,1},learn=100,name="Cured Medium Hide",prof=165,reagents={{4232,1},{4289,1}},sources={{cost=200,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3818]={colors={150,150,160,170},creates={4236,1,1},est=true,learn=150,name="Cured Heavy Hide",prof=165,reagents={{4235,1},{4289,3}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[3839]={colors={125,125,142,160},creates={4305,1,1},est=true,learn=125,name="Bolt of Silk Cloth",prof=197,reagents={{4306,4}},sources={{cost=500,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3840]={colors={35,50,67,85},creates={4307,1,1},learn=35,name="Heavy Linen Gloves",prof=197,reagents={{2996,2},{2320,1}},sources={{cost=100,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[3841]={colors={60,60,77,95},creates={4308,1,1},learn=60,name="Green Linen Bracers",prof=197,reagents={{2996,3},{2320,2},{2605,1}},sources={{cost=200,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[3842]={colors={70,70,87,105},creates={4309,1,1},learn=70,name="Handstitched Linen Britches",prof=197,reagents={{2996,4},{2321,2}},sources={{cost=300,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[3843]={colors={85,85,102,120},creates={4310,1,1},learn=85,name="Heavy Woolen Gloves",prof=197,reagents={{2997,3},{2321,1}},sources={{cost=400,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3844]={colors={100,105,122,140},creates={4311,1,1},learn=100,name="Heavy Woolen Cloak",prof=197,reagents={{2997,3},{2321,2},{5498,2}},sources={{item=4346,t="drop"}}}
+R[3845]={colors={80,80,97,115},creates={4312,1,1},learn=80,name="Soft-soled Linen Boots",prof=197,reagents={{2996,5},{2318,2},{2321,1}},sources={{cost=300,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3847]={colors={95,95,97,115},creates={4313,1,1},learn=95,name="Red Woolen Boots",prof=197,reagents={{2997,4},{2318,2},{2321,1},{2604,2}},sources={{item=4345,t="drop"}}}
+R[3848]={colors={110,110,127,145},creates={4314,1,1},learn=110,name="Double-stitched Woolen Shoulders",prof=197,reagents={{2997,3},{2321,2}},sources={{cost=500,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3849]={colors={120,120,137,155},creates={4315,1,1},learn=120,name="Reinforced Woolen Shoulders",prof=197,reagents={{2997,6},{2319,2},{2321,2}},sources={{item=4347,t="drop"}}}
+R[3850]={colors={110,110,127,145},creates={4316,1,1},learn=110,name="Heavy Woolen Pants",prof=197,reagents={{2997,5},{2321,4}},sources={{cost=500,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3851]={colors={125,125,142,160},creates={4317,1,1},learn=125,name="Phoenix Pants",prof=197,reagents={{2997,6},{5500,1},{2321,3}},sources={{item=4349,t="drop"}}}
+R[3852]={colors={130,130,140,155},creates={4318,1,1},learn=130,name="Gloves of Meditation",prof=197,reagents={{2997,4},{2321,3},{3383,1}},sources={{cost=750,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3854]={colors={145,145,155,170},creates={4319,1,1},learn=145,name="Azure Silk Gloves",prof=197,reagents={{4305,3},{4234,2},{6260,2},{2321,2}},sources={{cost=1000,item=7114,limited=true,npcs={9636},t="vendor"},{cost=1052,item=7114,limited=true,npcs={2679},t="vendor"}}}
+R[3855]={colors={125,125,142,160},creates={4320,1,1},learn=125,name="Spidersilk Boots",prof=197,reagents={{4305,2},{2319,4},{3182,4},{5500,1}},sources={{cost=750,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3856]={colors={140,140,147,160},creates={4321,1,1},learn=140,name="Spider Silk Slippers",prof=197,reagents={{4305,3},{3182,1},{2321,2}},sources={{item=4350,t="drop"}}}
+R[3857]={colors={165,165,165,180},creates={4322,1,1},learn=165,name="Enchanter's Cowl",prof=197,reagents={{4305,3},{2321,2},{4337,2}},sources={{cost=1000,item=14630,npcs={2670},t="vendor"},{cost=1000,item=14630,limited=true,npcs={12246},t="vendor"}}}
+R[3858]={colors={170,170,170,185},creates={4323,1,1},learn=170,name="Shadow Hood",prof=197,reagents={{4305,4},{4291,1},{3824,1}},sources={{item=4351,t="drop"}}}
+R[3859]={colors={150,150,160,175},creates={4324,1,1},learn=150,name="Azure Silk Vest",prof=197,reagents={{4305,5},{6260,4}},sources={{cost=750,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3860]={colors={175,175,175,190},creates={4325,1,1},learn=175,name="Boots of the Enchanter",prof=197,reagents={{4305,4},{4291,1},{4337,2}},sources={{item=4352,t="drop"}}}
+R[3861]={colors={185,185,185,200},creates={4326,1,1},learn=185,name="Long Silken Cloak",prof=197,reagents={{4305,4},{3827,1},{4291,1}},sources={{cost=900,npcs={1300,1346,2399,4576,251972},t="trainer"}}}
+R[3862]={colors={200,200,200,215},creates={4327,1,1},learn=200,name="Icy Cloak",prof=197,reagents={{4339,3},{4291,2},{3829,1},{4337,2}},sources={{cost=1500,item=4355,limited=true,npcs={2381},t="vendor"},{cost=1500,item=4355,limited=true,npcs={6567},t="vendor"}}}
+R[3863]={colors={180,180,180,195},creates={4328,1,1},learn=180,name="Spider Belt",prof=197,reagents={{4305,4},{4337,2},{7071,1}},sources={{item=4353,t="drop"}}}
+R[3864]={colors={200,200,200,215},creates={4329,1,1},learn=200,name="Star Belt",prof=197,reagents={{4339,4},{4234,4},{3864,1},{7071,1},{4291,1}},sources={{item=4356,t="drop"}}}
+R[3865]={colors={175,175,177,190},creates={4339,1,1},est=true,learn=175,name="Bolt of Mageweave",prof=197,reagents={{4338,5}},sources={{cost=1000,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[3866]={colors={110,110,127,145},creates={4330,1,1},learn=110,name="Stylish Red Shirt",prof=197,reagents={{2997,3},{2604,2},{2321,1}},sources={{cost=250,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[3868]={colors={125,125,142,160},creates={4331,1,1},learn=125,name="Phoenix Gloves",prof=197,reagents={{2997,4},{5500,1},{2321,4},{2324,2}},sources={{item=4348,t="drop"}}}
+R[3869]={colors={135,135,150,165},creates={4332,1,1},est=true,learn=135,name="Bright Yellow Shirt",prof=197,reagents={{4305,1},{4341,1},{2321,1}},sources={{cost=842,item=14627,limited=true,npcs={2668},t="vendor"}}}
+R[3870]={colors={155,155,165,180},creates={4333,1,1},est=true,learn=155,name="Dark Silk Shirt",prof=197,reagents={{4305,2},{4340,2},{2321,1}},sources={{cost=1100,item=6401,npcs={2394},t="vendor"},{cost=1100,item=6401,limited=true,npcs={12246},t="vendor"},{cost=1157,item=6401,limited=true,npcs={2669},t="vendor"}}}
+R[3871]={colors={170,170,180,195},creates={4334,1,1},est=true,learn=170,name="Formal White Shirt",prof=197,reagents={{4305,3},{2324,2},{2321,1}},sources={{cost=450,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[3872]={colors={185,185,187,200},creates={4335,1,1},est=true,learn=185,name="Rich Purple Silk Shirt",prof=197,reagents={{4305,4},{4342,1},{4291,1}},sources={{item=4354,t="drop"}}}
+R[3873]={colors={200,200,202,215},creates={4336,1,1},est=true,learn=200,name="Black Swashbuckler's Shirt",prof=197,reagents={{4305,5},{2325,1},{4291,1}},sources={{cost=1500,item=10728,npcs={2663},t="vendor"}}}
+R[3914]={colors={30,50,67,85},creates={4343,1,1},learn=30,name="Brown Linen Pants",prof=197,reagents={{2996,2},{2320,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[3915]={colors={1,35,47,60},creates={4344,1,1},learn=1,name="Brown Linen Shirt",prof=197,reagents={{2996,1},{2320,1}},sources={{t="starter"}}}
+R[3918]={colors={1,20,30,40},creates={4357,1,1},learn=1,name="Rough Blasting Powder",prof=202,reagents={{2835,1}},sources={{t="starter"}}}
+R[3919]={colors={1,30,45,60},creates={4358,2,2},learn=1,name="Rough Dynamite",prof=202,reagents={{4357,1},{2589,1}},sources={{t="starter"}}}
+R[3920]={colors={30,30,45,60},creates={8067,200,200},learn=30,name="Crafted Light Shot",prof=202,reagents={{4357,1},{2840,1}},sources={{t="other"}}}
+R[3922]={colors={30,45,52,60},creates={4359,1,1},learn=30,name="Handful of Copper Bolts",prof=202,reagents={{2840,1}},sources={{cost=115,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3923]={colors={30,60,75,90},creates={4360,2,2},learn=30,name="Rough Copper Bomb",prof=202,reagents={{2840,1},{4359,1},{4357,2},{2589,1}},sources={{cost=130,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3924]={colors={50,80,95,110},creates={4361,1,1},learn=50,name="Copper Tube",prof=202,reagents={{2840,2},{2880,1}},sources={{cost=150,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3925]={colors={50,80,95,110},creates={4362,1,1},learn=50,name="Rough Boomstick",prof=202,reagents={{4361,1},{4359,1},{4399,1}},sources={{cost=150,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3926]={colors={65,95,110,125},creates={4363,1,1},learn=65,name="Copper Modulator",prof=202,reagents={{4359,2},{2840,1},{2589,2}},sources={{cost=225,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3928]={colors={75,105,120,135},creates={4401,1,1},learn=75,name="Mechanical Squirrel",prof=202,reagents={{4363,1},{4359,1},{2840,1},{774,2}},sources={{item=4408,t="drop"}}}
+R[3929]={colors={75,85,90,95},creates={4364,1,1},learn=75,name="Coarse Blasting Powder",prof=202,reagents={{2836,1}},sources={{cost=250,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3930]={colors={75,85,90,95},creates={8068,200,200},learn=75,name="Crafted Heavy Shot",prof=202,reagents={{4364,1},{2840,1}},sources={{cost=250,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3931]={colors={75,90,97,105},creates={4365,2,2},learn=75,name="Coarse Dynamite",prof=202,reagents={{4364,3},{2589,1}},sources={{cost=250,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3932]={colors={85,115,130,145},creates={4366,1,1},learn=85,name="Target Dummy",prof=202,reagents={{4363,1},{4359,2},{2841,1},{2592,1}},sources={{cost=300,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3933]={colors={100,130,145,160},creates={4367,1,1},learn=100,name="Small Seaforium Charge",prof=202,reagents={{4364,2},{4363,1},{2318,1},{159,1}},sources={{item=4409,t="drop"}}}
+R[3934]={colors={100,130,145,160},creates={4368,1,1},learn=100,name="Flying Tiger Goggles",prof=202,reagents={{2318,6},{818,2}},sources={{cost=400,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3936]={colors={105,130,142,155},creates={4369,1,1},learn=105,name="Deadly Blunderbuss",prof=202,reagents={{4361,2},{4359,4},{4399,1},{2319,2}},sources={{cost=420,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3937]={colors={105,105,130,155},creates={4370,3,3},learn=105,name="Large Copper Bomb",prof=202,reagents={{2840,3},{4364,4},{4404,1}},sources={{cost=450,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3938]={colors={105,105,130,155},creates={4371,1,1},learn=105,name="Bronze Tube",prof=202,reagents={{2841,2},{2880,1}},sources={{cost=450,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3939]={colors={120,145,157,170},creates={4372,1,1},learn=120,name="Lovingly Crafted Boomstick",prof=202,reagents={{4371,2},{4359,2},{4400,1},{1206,3}},sources={{cost=1000,item=13309,npcs={6730},t="vendor"},{cost=1052,item=13309,limited=true,npcs={2682},t="vendor"}}}
+R[3940]={colors={120,145,157,170},creates={4373,1,1},learn=120,name="Shadow Goggles",prof=202,reagents={{2319,4},{1210,2}},sources={{item=4410,t="drop"}}}
+R[3941]={colors={120,120,145,170},creates={4374,2,2},learn=120,name="Small Bronze Bomb",prof=202,reagents={{4364,4},{2841,2},{4404,1},{2592,1}},sources={{cost=500,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3942]={colors={125,125,150,175},creates={4375,1,1},learn=125,name="Whirring Bronze Gizmo",prof=202,reagents={{2841,2},{2592,1}},sources={{cost=500,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3944]={colors={125,125,150,175},creates={4376,1,1},learn=125,name="Flame Deflector",prof=202,reagents={{4375,1},{4402,1}},sources={{item=4411,t="drop"}}}
+R[3945]={colors={125,125,135,145},creates={4377,1,1},learn=125,name="Heavy Blasting Powder",prof=202,reagents={{2838,1}},sources={{cost=500,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3946]={colors={125,125,135,145},creates={4378,3,3},learn=125,name="Heavy Dynamite",prof=202,reagents={{4377,2},{2592,1}},sources={{cost=500,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3947]={colors={125,125,135,145},creates={8069,200,200},learn=125,name="Crafted Solid Shot",prof=202,reagents={{4377,1},{2841,1}},sources={{cost=300,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3949]={colors={130,155,167,180},creates={4379,1,1},learn=130,name="Silver-plated Shotgun",prof=202,reagents={{4371,2},{4375,2},{4400,1},{2842,3}},sources={{cost=550,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3950]={colors={140,140,165,190},creates={4380,3,3},learn=140,name="Big Bronze Bomb",prof=202,reagents={{4377,2},{2841,3},{4404,1}},sources={{cost=600,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3952]={colors={140,165,177,190},creates={4381,1,1},learn=140,name="Minor Recombobulator",prof=202,reagents={{4371,1},{4375,2},{2319,2},{1206,1}},sources={{cost=1578,item=14639,limited=true,npcs={2682},t="vendor"},{cost=1578,item=14639,limited=true,npcs={2683},t="vendor"},{cost=1578,item=14639,limited=true,npcs={216672},t="vendor"},{item=14639,t="drop"}}}
+R[3953]={colors={145,145,170,195},creates={4382,1,1},learn=145,name="Bronze Framework",prof=202,reagents={{2841,2},{2319,1},{2592,1}},sources={{cost=600,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3954]={colors={145,170,182,195},creates={4383,1,1},learn=145,name="Moonsight Rifle",prof=202,reagents={{4371,3},{4375,3},{4400,1},{1705,2}},sources={{item=4412,t="drop"}}}
+R[3955]={colors={150,175,187,200},creates={4384,1,1},learn=150,name="Explosive Sheep",prof=202,reagents={{4382,1},{4375,1},{4377,2},{2592,2}},sources={{cost=750,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3956]={colors={150,175,187,200},creates={4385,1,1},learn=150,name="Green Tinted Goggles",prof=202,reagents={{2319,4},{1206,2},{4368,1}},sources={{cost=750,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3957]={colors={155,175,185,195},creates={4386,1,1},learn=155,name="Ice Deflector",prof=202,reagents={{4375,1},{3829,1}},sources={{cost=1800,item=13308,limited=true,npcs={2684},t="vendor"}}}
+R[3958]={colors={160,160,170,180},creates={4387,1,1},learn=160,name="Iron Strut",prof=202,reagents={{3575,2}},sources={{cost=800,npcs={5174,8736,11017},t="trainer"}}}
+R[3959]={colors={160,180,190,200},creates={4388,1,1},learn=160,name="Discombobulator Ray",prof=202,reagents={{4375,3},{4306,2},{1529,1},{4371,1}},sources={{item=4413,t="drop"}}}
+R[3960]={colors={165,185,195,205},creates={4403,1,1},learn=165,name="Portable Bronze Mortar",prof=202,reagents={{4371,4},{4387,1},{4377,4},{2319,4}},sources={{item=4414,t="drop"}}}
+R[3961]={colors={170,170,190,210},creates={4389,1,1},learn=170,name="Gyrochronatom",prof=202,reagents={{3575,1},{10558,1}},sources={{cost=900,npcs={5174,8736,11017},t="trainer"}}}
+R[3962]={colors={175,175,195,215},creates={4390,3,3},learn=175,name="Iron Grenade",prof=202,reagents={{3575,1},{4377,1},{4306,1}},sources={{cost=1000,npcs={5174,8736,11017},t="trainer"}}}
+R[3963]={colors={175,175,195,215},creates={4391,1,1},learn=175,name="Compact Harvest Reaper Kit",prof=202,reagents={{4387,2},{4382,1},{4389,2},{4234,4}},sources={{cost=1000,npcs={5174,8736,11017},t="trainer"}}}
+R[3965]={colors={185,185,205,225},creates={4392,1,1},learn=185,name="Advanced Target Dummy",prof=202,reagents={{4387,1},{4382,1},{4389,1},{4234,4}},sources={{cost=1200,npcs={5174,8736,11017},t="trainer"}}}
+R[3966]={colors={185,205,215,225},creates={4393,1,1},learn=185,name="Craftsman's Monocle",prof=202,reagents={{4234,6},{3864,2}},sources={{item=4415,t="drop"}}}
+R[3967]={colors={190,190,210,230},creates={4394,2,2},learn=190,name="Big Iron Bomb",prof=202,reagents={{3575,3},{4377,3},{4404,1}},sources={{cost=1400,npcs={5174,8736,11017},t="trainer"}}}
+R[3968]={colors={195,215,225,235},creates={4395,1,1},learn=195,name="Goblin Land Mine",prof=202,reagents={{4377,3},{3575,2},{4389,1}},sources={{item=4416,t="drop"}}}
+R[3969]={colors={200,220,230,240},creates={4396,1,1},learn=200,name="Mechanical Dragonling",prof=202,reagents={{4382,1},{4387,4},{4389,4},{3864,2},{7191,1}},sources={{cost=10000,item=13311,limited=true,npcs={2687},t="vendor"}}}
+R[3971]={colors={200,220,230,240},creates={4397,1,1},learn=200,name="Gnomish Cloaking Device",prof=202,reagents={{4389,4},{1529,2},{1705,2},{3864,2},{7191,1}},sources={{cost=2526,item=7742,limited=true,npcs={6777},t="vendor"},{item=7742,t="drop"}}}
+R[3972]={colors={200,200,220,240},creates={4398,1,1},learn=200,name="Large Seaforium Charge",prof=202,reagents={{10505,2},{4234,2},{159,1}},sources={{item=4417,t="drop"}}}
+R[3973]={colors={90,110,125,140},creates={4404,5,5},learn=90,name="Silver Contact",prof=202,reagents={{2842,1}},sources={{cost=300,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3977]={colors={60,90,105,120},creates={4405,1,1},learn=60,name="Crude Scope",prof=202,reagents={{4361,1},{774,1},{4359,1}},sources={{cost=200,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[3978]={colors={110,135,147,160},creates={4406,1,1},learn=110,name="Standard Scope",prof=202,reagents={{4371,1},{1206,1}},sources={{cost=475,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[3979]={colors={180,200,210,220},creates={4407,1,1},learn=180,name="Accurate Scope",prof=202,reagents={{4371,1},{1529,1},{3864,1}},sources={{cost=2000,item=13310,npcs={2685},t="vendor"},{cost=2000,item=13310,limited=true,npcs={12246},t="vendor"}}}
+R[4094]={colors={175,215,235,255},creates={4457,1,1},learn=175,name="Barbecued Buzzard Wing",prof=185,reagents={{3404,1},{2692,1}},sources={{cost=450,npcs={2818},t="trainer"},{cost=1000,item=4609,npcs={2814},t="vendor"},{cost=1000,item=4609,limited=true,npcs={12246},t="vendor"},{item=4609,t="quest"}}}
+R[4096]={colors={165,165,170,180},creates={4455,1,1},learn=165,name="Raptor Hide Harness",prof=165,reagents={{4461,6},{4234,4},{2321,2}},sources={{cost=2631,item=13287,limited=true,npcs={2819},t="vendor"}}}
+R[4097]={colors={165,165,170,180},creates={4456,1,1},learn=165,name="Raptor Hide Belt",prof=165,reagents={{4461,4},{4234,4},{2321,2}},sources={{cost=2500,item=13288,limited=true,npcs={2816},t="vendor"}}}
+R[4508]={colors={50,55,75,95},creates={4596,1,1},learn=50,name="Minor Discolored Healing Potion",prof=171,reagents={{3371,1},{2447,1},{730,1}},sources={{cost=0,npcs={1937},t="trainer"},{item=4597,t="quest"}}}
+R[4942]={colors={215,230,250,270},creates={4623,1,1},learn=215,name="Lesser Stoneshield Potion",prof=171,reagents={{3858,1},{3821,1},{3372,1}},sources={{item=4624,t="quest"}}}
+R[5244]={colors={40,65,80,95},creates={5081,1,1},learn=40,name="Kodo Hide Bag",prof=165,reagents={{5082,3},{2318,4},{2320,1}},sources={{item=5083,t="quest"}}}
+R[6412]={colors={10,50,70,90},creates={5472,1,1},learn=10,name="Kaldorei Spider Kabob",prof=185,reagents={{5465,1}},sources={{item=5482,t="quest"}}}
+R[6413]={colors={20,60,80,100},creates={5473,1,1},learn=20,name="Scorpid Surprise",prof=185,reagents={{5466,1}},sources={{cost=140,item=5483,npcs={3881},t="vendor"},{cost=140,item=5483,npcs={261313},t="vendor"}}}
+R[6414]={colors={35,75,95,115},creates={5474,2,2},learn=35,name="Roasted Kodo Meat",prof=185,reagents={{5467,1},{2678,1}},sources={{cost=240,item=5484,npcs={3081},t="vendor"}}}
+R[6415]={colors={50,90,110,130},creates={5476,2,2},learn=50,name="Fillet of Frenzy",prof=185,reagents={{5468,1},{2678,1}},sources={{cost=400,item=5485,npcs={4200},t="vendor"}}}
+R[6416]={colors={50,90,110,130},creates={5477,2,2},learn=50,name="Strider Stew",prof=185,reagents={{5469,1},{4536,1}},sources={{cost=440,item=5486,npcs={3482},t="vendor"},{item=5486,t="quest"}}}
+R[6417]={colors={90,130,150,170},creates={5478,2,2},learn=90,name="Dig Rat Stew",prof=185,reagents={{5051,1}},sources={{item=5487,t="quest"}}}
+R[6418]={colors={100,140,160,180},creates={5479,2,2},learn=100,name="Crispy Lizard Tail",prof=185,reagents={{5470,1},{2692,1}},sources={{cost=400,item=5488,npcs={3482},t="vendor"}}}
+R[6419]={colors={110,150,170,190},creates={5480,2,2},learn=110,name="Lean Venison",prof=185,reagents={{5471,1},{2678,4}},sources={{cost=1200,item=5489,npcs={12245},t="vendor"},{cost=1263,item=5489,npcs={3960},t="vendor"}}}
+R[6458]={colors={135,160,172,185},creates={5507,1,1},learn=135,name="Ornate Spyglass",prof=202,reagents={{4371,2},{4375,2},{4363,1},{1206,1}},sources={{cost=400,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[6499]={colors={50,90,110,130},creates={5525,1,1},learn=50,name="Boiled Clams",prof=185,reagents={{5503,1},{159,1}},sources={{cost=100,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[6500]={colors={125,165,185,205},creates={5527,1,1},learn=125,name="Goblin Deviled Clams",prof=185,reagents={{5504,1},{2692,1}},sources={{cost=300,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[6501]={colors={90,130,150,170},creates={5526,1,1},learn=90,name="Clam Chowder",prof=185,reagents={{5503,1},{1179,1},{2678,1}},sources={{cost=800,item=5528,npcs={4305},t="vendor"},{cost=800,item=5528,npcs={4307},t="vendor"}}}
+R[6517]={colors={110,115,130,145},creates={5540,1,1},learn=110,name="Pearl-handled Dagger",prof=164,reagents={{2841,6},{3466,1},{5498,2},{3478,2}},sources={{cost=800,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[6518]={colors={140,145,160,175},creates={5541,1,1},learn=140,name="Iridescent Hammer",prof=164,reagents={{2841,10},{3466,1},{5500,1},{3478,2},{2319,2}},sources={{item=5543,t="drop"}}}
+R[6521]={colors={90,95,112,130},creates={5542,1,1},learn=90,name="Pearl-clasped Cloak",prof=197,reagents={{2997,3},{2321,2},{5498,1}},sources={{cost=400,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[6617]={colors={60,90,110,130},creates={5631,1,1},learn=60,name="Rage Potion",prof=171,reagents={{5635,1},{2450,1},{3371,1}},sources={{cost=100,item=5640,limited=true,npcs={1669},t="vendor"},{cost=100,item=5640,limited=true,npcs={1685},t="vendor"},{cost=100,item=5640,limited=true,npcs={3335},t="vendor"},{cost=100,item=5640,limited=true,npcs={3499},t="vendor"}}}
+R[6618]={colors={175,195,215,235},creates={5633,1,1},learn=175,name="Great Rage Potion",prof=171,reagents={{5637,1},{3356,1},{3372,1}},sources={{cost=2000,item=5643,limited=true,npcs={3335},t="vendor"},{cost=2000,item=5643,limited=true,npcs={4226},t="vendor"},{cost=2000,item=5643,npcs={12245},t="vendor"}}}
+R[6624]={colors={150,175,195,215},creates={5634,1,1},learn=150,name="Free Action Potion",prof=171,reagents={{6370,2},{3820,1},{3372,1}},sources={{cost=1800,item=5642,limited=true,npcs={3348},t="vendor"},{cost=1800,item=5642,limited=true,npcs={5178},t="vendor"},{cost=1800,item=5642,limited=true,npcs={12245},t="vendor"},{cost=1894,item=5642,limited=true,npcs={4226},t="vendor"}}}
+R[6661]={colors={190,190,195,205},creates={5739,1,1},learn=190,name="Barbaric Harness",prof=165,reagents={{4234,14},{2321,2},{7071,1}},sources={{cost=1800,npcs={3007,4212,11098},t="trainer"}}}
+R[6686]={colors={70,75,92,110},creates={5762,1,1},learn=70,name="Red Linen Bag",prof=197,reagents={{2996,4},{2321,1},{2604,1}},sources={{cost=200,item=5771,limited=true,npcs={843},t="vendor"},{cost=200,item=5771,limited=true,npcs={3556},t="vendor"},{cost=200,item=5771,npcs={4189},t="vendor"},{cost=210,item=5771,limited=true,npcs={3005},t="vendor"},{item=5771,t="drop"}}}
+R[6688]={colors={115,115,132,150},creates={5763,1,1},learn=115,name="Red Woolen Bag",prof=197,reagents={{2997,4},{2604,1},{2321,1}},sources={{cost=470,item=5772,limited=true,npcs={3364},t="vendor"},{cost=500,item=5772,npcs={1454},t="vendor"},{cost=500,item=5772,limited=true,npcs={1474},t="vendor"},{cost=500,item=5772,npcs={3537},t="vendor"},{cost=500,item=5772,limited=true,npcs={3683},t="vendor"},{cost=500,item=5772,limited=true,npcs={4189},t="vendor"},{cost=500,item=5772,npcs={4577},t="vendor"},{cost=526,item=5772,limited=true,npcs={777},t="vendor"},{cost=526,item=5772,limited=true,npcs={3005},t="vendor"},{cost=526,item=5772,limited=true,npcs={3485},t="vendor"},{cost=526,item=5772,limited=true,npcs={5944},t="vendor"},{item=5772,t="drop"}}}
+R[6690]={colors={135,135,145,160},creates={5766,1,1},learn=135,name="Lesser Wizard's Robe",prof=197,reagents={{4305,2},{2321,2},{3182,2}},sources={{cost=1000,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[6692]={colors={150,150,160,175},creates={5770,1,1},learn=150,name="Robes of Arcana",prof=197,reagents={{4305,4},{2321,2},{3182,2}},sources={{item=5773,t="drop"}}}
+R[6693]={colors={175,175,175,190},creates={5764,1,1},learn=175,name="Green Silk Pack",prof=197,reagents={{4305,4},{4234,3},{2321,3},{2605,1}},sources={{item=5774,t="drop"}}}
+R[6695]={colors={185,185,185,200},creates={5765,1,1},learn=185,name="Black Silk Pack",prof=197,reagents={{4305,5},{2325,1},{2321,4}},sources={{item=5775,t="drop"}}}
+R[6702]={colors={90,95,110,125},creates={5780,1,1},learn=90,name="Murloc Scale Belt",prof=165,reagents={{5784,8},{2318,6},{2321,1}},sources={{cost=550,item=5786,limited=true,npcs={843},t="vendor"},{cost=550,item=5786,limited=true,npcs={3556},t="vendor"},{cost=578,item=5786,limited=true,npcs={4186},t="vendor"},{item=5786,t="drop"}}}
+R[6703]={colors={95,100,115,130},creates={5781,1,1},learn=95,name="Murloc Scale Breastplate",prof=165,reagents={{5784,12},{4231,1},{2318,8},{2321,1}},sources={{cost=600,item=5787,limited=true,npcs={843},t="vendor"},{cost=600,item=5787,limited=true,npcs={3556},t="vendor"},{cost=600,item=5787,npcs={4186},t="vendor"},{item=5787,t="drop"}}}
+R[6704]={colors={170,170,175,185},creates={5782,1,1},learn=170,name="Thick Murloc Armor",prof=165,reagents={{5785,12},{4236,1},{4234,10},{2321,3}},sources={{cost=650,item=5788,limited=true,npcs={2846},t="vendor"},{cost=684,item=5788,limited=true,npcs={2393},t="vendor"},{cost=688,item=5788,limited=true,npcs={2381},t="vendor"},{item=5788,t="drop"}}}
+R[6705]={colors={190,190,195,205},creates={5783,1,1},learn=190,name="Murloc Scale Bracers",prof=165,reagents={{5785,16},{4236,1},{4234,14},{4291,1}},sources={{cost=2800,item=5789,limited=true,npcs={2846},t="vendor"},{cost=2800,item=5789,limited=true,npcs={4897},t="vendor"},{item=5789,t="drop"}}}
+R[7126]={colors={1,40,55,70},creates={5957,1,1},learn=1,name="Handstitched Leather Vest",prof=165,reagents={{2318,3},{2320,1}},sources={{t="starter"}}}
+R[7133]={colors={105,105,117,130},creates={5958,1,1},learn=105,name="Fine Leather Pants",prof=165,reagents={{2319,8},{2997,1},{2321,1}},sources={{item=5972,t="drop"}}}
+R[7135]={colors={115,115,127,140},creates={5961,1,1},learn=115,name="Dark Leather Pants",prof=165,reagents={{2319,12},{4340,1},{2321,1}},sources={{cost=400,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[7147]={colors={160,160,165,175},creates={5962,1,1},learn=160,name="Guardian Pants",prof=165,reagents={{4234,12},{4305,2},{2321,2}},sources={{cost=1000,npcs={3007,11098},t="trainer"}}}
+R[7149]={colors={170,170,175,185},creates={5963,1,1},learn=170,name="Barbaric Leggings",prof=165,reagents={{4234,10},{2321,2},{1206,1}},sources={{cost=650,item=5973,limited=true,npcs={2810},t="vendor"},{cost=650,item=5973,limited=true,npcs={2821},t="vendor"},{cost=650,item=5973,limited=true,npcs={3958},t="vendor"},{cost=650,item=5973,npcs={12245},t="vendor"},{cost=684,item=5973,limited=true,npcs={4877},t="vendor"}}}
+R[7151]={colors={175,175,180,190},creates={5964,1,1},learn=175,name="Barbaric Shoulders",prof=165,reagents={{4234,8},{4236,1},{2321,2}},sources={{cost=1080,npcs={3007,4212,11098},t="trainer"}}}
+R[7153]={colors={185,185,190,200},creates={5965,1,1},learn=185,name="Guardian Cloak",prof=165,reagents={{4234,14},{4305,2},{4291,2}},sources={{item=5974,t="drop"}}}
+R[7156]={colors={190,190,195,205},creates={5966,1,1},learn=190,name="Guardian Gloves",prof=165,reagents={{4234,4},{4236,1},{4291,1}},sources={{cost=2160,npcs={3007,4212,11098},t="trainer"}}}
+R[7179]={colors={90,120,140,160},creates={5996,1,1},learn=90,name="Draught of Water Breathing",prof=171,reagents={{3820,1},{6370,2},{3371,1}},sources={{cost=450,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[7183]={colors={1,55,75,95},creates={5997,1,1},learn=1,name="Elixir of Minor Defense",prof=171,reagents={{765,1},{2447,1},{3371,1}},sources={{t="starter"}}}
+R[7213]={colors={175,215,235,255},creates={6038,1,1},learn=175,name="Giant Clam Scorcho",prof=185,reagents={{4655,1},{2692,1}},sources={{cost=5000,item=6039,npcs={2664},t="vendor"}}}
+R[7221]={colors={150,155,170,185},creates={6042,1,1},learn=150,name="Iron Shield Spike",prof=164,reagents={{3575,6},{3478,4}},sources={{item=6044,t="drop"}}}
+R[7222]={colors={165,165,177,190},creates={6043,1,1},learn=165,name="Iron Counterweight",prof=164,reagents={{3575,4},{3478,2},{1705,1}},sources={{item=6045,t="drop"}}}
+R[7223]={colors={185,185,197,210},creates={6040,1,1},learn=185,name="Golden Scale Bracers",prof=164,reagents={{3859,5},{3486,2}},sources={{cost=1000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[7224]={colors={190,190,202,215},creates={6041,1,1},learn=190,name="Steel Weapon Chain",prof=164,reagents={{3859,8},{3486,2},{4234,4}},sources={{item=6046,t="drop"}}}
+R[7255]={colors={100,130,150,170},creates={6051,1,1},learn=100,name="Holy Protection Potion",prof=171,reagents={{2453,1},{2452,1},{3371,1}},sources={{cost=800,item=6053,npcs={3134},t="vendor"},{cost=800,item=6053,limited=true,npcs={3490},t="vendor"},{cost=842,item=6053,limited=true,npcs={1685},t="vendor"}}}
+R[7256]={colors={135,160,180,200},creates={6048,1,1},learn=135,name="Shadow Protection Potion",prof=171,reagents={{3369,1},{3356,1},{3372,1}},sources={{cost=947,item=6054,limited=true,npcs={2393},t="vendor"},{cost=947,item=6054,limited=true,npcs={3956},t="vendor"}}}
+R[7257]={colors={165,210,230,250},creates={6049,1,1},learn=165,name="Fire Protection Potion",prof=171,reagents={{4402,1},{6371,1},{3372,1}},sources={{cost=1500,item=6055,limited=true,npcs={2380},t="vendor"},{cost=1500,item=6055,npcs={4083},t="vendor"}}}
+R[7258]={colors={190,205,225,245},creates={6050,1,1},learn=190,name="Frost Protection Potion",prof=171,reagents={{3819,1},{3821,1},{3372,1}},sources={{cost=2000,item=6056,npcs={2812},t="vendor"},{cost=2000,item=6056,npcs={2848},t="vendor"}}}
+R[7259]={colors={190,210,230,250},creates={6052,1,1},learn=190,name="Nature Protection Potion",prof=171,reagents={{3357,1},{3820,1},{3372,1}},sources={{cost=2000,item=6057,npcs={2848},t="vendor"},{cost=2000,item=6057,limited=true,npcs={5594},t="vendor"},{cost=2000,item=6057,limited=true,npcs={8158},t="vendor"},{cost=2105,item=6057,limited=true,npcs={8157},t="vendor"}}}
+R[7408]={colors={65,80,100,120},creates={6214,1,1},learn=65,name="Heavy Copper Maul",prof=164,reagents={{2840,12},{2880,2},{2318,2}},sources={{cost=300,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[7418]={colors={20,20,22,25},learn=20,name="Enchant Bracer - Inferior Stamina",prof=333,reagents={{247786,1}},sources={{t="other"}}}
+R[7420]={colors={15,70,90,110},learn=15,name="Enchant Chest - Inferior Stamina",prof=333,reagents={{10940,1}},sources={{cost=50,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[7421]={colors={1,5,7,10},creates={6218,1,1},learn=1,name="Runed Copper Rod",prof=333,reagents={{6217,1},{247786,1}},sources={{t="starter"}}}
+R[7426]={colors={40,90,110,130},learn=40,name="Enchant Chest - Minor Absorption",prof=333,reagents={{10938,1}},sources={{cost=100,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[7428]={colors={80,80,100,120},learn=80,name="Enchant Bracer - Minor Deflect",prof=333,reagents={{10938,1}},sources={{t="other"}}}
+R[7430]={colors={50,70,80,90},creates={6219,1,1},learn=50,name="Arclight Spanner",prof=202,reagents={{2840,6}},sources={{cost=150,npcs={1702,2857,3290,3412,3494,4586,5174,5518},t="trainer"}}}
+R[7443]={colors={20,80,100,120},learn=20,name="Enchant Chest - Minor Intellect",prof=333,reagents={{10938,1}},sources={{cost=266,item=6342,limited=true,npcs={1318},t="vendor"},{cost=266,item=6342,limited=true,npcs={4617},t="vendor"},{cost=266,item=6342,limited=true,npcs={5158},t="vendor"},{cost=300,item=6342,limited=true,npcs={3346},t="vendor"},{cost=300,item=6342,limited=true,npcs={4228},t="vendor"},{cost=300,item=6342,limited=true,npcs={5758},t="vendor"},{cost=300,item=6342,npcs={257004},t="vendor"},{cost=300,item=6342,npcs={257020},t="vendor"},{cost=315,item=6342,limited=true,npcs={3012},t="vendor"},{cost=315,item=6342,limited=true,npcs={5757},t="vendor"},{cost=337,item=6342,limited=true,npcs={15419},t="vendor"},{item=6342,t="drop"}}}
+R[7454]={colors={45,95,115,135},learn=45,name="Enchant Cloak - Minor Resistance",prof=333,reagents={{10940,1},{10938,1}},sources={{cost=100,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[7457]={colors={50,100,120,140},learn=50,name="Enchant Bracer - Minor Stamina",prof=333,reagents={{10940,2}},sources={{cost=250,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[7623]={colors={30,50,67,85},creates={6238,1,1},learn=30,name="Brown Linen Robe",prof=197,reagents={{2996,3},{2320,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[7624]={colors={30,50,67,85},creates={6241,1,1},learn=30,name="White Linen Robe",prof=197,reagents={{2996,3},{2320,1},{2324,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[7629]={colors={55,60,77,95},creates={6239,1,1},learn=55,name="Red Linen Vest",prof=197,reagents={{2996,3},{2320,1},{2604,1}},sources={{item=6271,t="drop"}}}
+R[7630]={colors={55,60,77,95},creates={6240,1,1},learn=55,name="Blue Linen Vest",prof=197,reagents={{2996,3},{2320,1},{6260,1}},sources={{cost=188,item=6270,limited=true,npcs={3364},t="vendor"},{cost=210,item=6270,limited=true,npcs={66},t="vendor"},{cost=210,item=6270,limited=true,npcs={3485},t="vendor"},{cost=210,item=6270,limited=true,npcs={3522},t="vendor"},{cost=210,item=6270,limited=true,npcs={4189},t="vendor"}}}
+R[7633]={colors={70,70,87,105},creates={6242,1,1},learn=70,name="Blue Linen Robe",prof=197,reagents={{2996,4},{2320,2},{6260,2}},sources={{cost=300,item=6272,limited=true,npcs={3499},t="vendor"},{cost=300,item=6272,limited=true,npcs={3556},t="vendor"},{cost=300,item=6272,limited=true,npcs={4168},t="vendor"},{cost=315,item=6272,limited=true,npcs={1250},t="vendor"},{cost=315,item=6272,limited=true,npcs={3485},t="vendor"}}}
+R[7639]={colors={100,100,117,135},creates={6263,1,1},learn=100,name="Blue Overalls",prof=197,reagents={{2997,4},{2321,2},{6260,2}},sources={{cost=376,item=6274,limited=true,npcs={3364},t="vendor"},{cost=400,item=6274,limited=true,npcs={843},t="vendor"},{cost=400,item=6274,limited=true,npcs={1347},t="vendor"},{cost=400,item=6274,npcs={5944},t="vendor"},{cost=421,item=6274,limited=true,npcs={2394},t="vendor"}}}
+R[7643]={colors={115,115,132,150},creates={6264,1,1},learn=115,name="Greater Adept's Robe",prof=197,reagents={{2997,5},{2321,3},{2604,3}},sources={{cost=800,item=6275,npcs={1454},t="vendor"},{cost=800,item=6275,limited=true,npcs={3499},t="vendor"},{cost=800,item=6275,limited=true,npcs={4168},t="vendor"},{cost=800,item=6275,npcs={4577},t="vendor"},{cost=842,item=6275,limited=true,npcs={1474},t="vendor"},{cost=842,item=6275,limited=true,npcs={2669},t="vendor"}}}
+R[7745]={colors={100,130,150,170},learn=100,name="Enchant 2H Weapon - Minor Impact",prof=333,reagents={{10940,1},{10978,1}},sources={{cost=500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7748]={colors={60,105,125,145},learn=60,name="Enchant Chest - Lesser Stamina",prof=333,reagents={{10940,1},{10938,1}},sources={{cost=250,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[7751]={colors={1,45,65,85},creates={6290,1,1},learn=1,name="Brilliant Smallfish",prof=185,reagents={{6291,1}},sources={{cost=40,item=6325,npcs={66},t="vendor"},{cost=40,item=6325,npcs={1684},t="vendor"},{cost=40,item=6325,npcs={3029},t="vendor"},{cost=40,item=6325,npcs={3550},t="vendor"},{cost=40,item=6325,npcs={4265},t="vendor"},{cost=40,item=6325,npcs={4574},t="vendor"},{cost=40,item=6325,npcs={5494},t="vendor"},{cost=40,item=6325,npcs={5940},t="vendor"},{cost=40,item=6325,npcs={8508},t="vendor"},{cost=40,item=6325,npcs={257006},t="vendor"}}}
+R[7752]={colors={1,45,65,85},creates={787,1,1},learn=1,name="Slitherskin Mackerel",prof=185,reagents={{6303,1}},sources={{cost=40,item=6326,npcs={3550},t="vendor"},{cost=40,item=6326,npcs={4305},t="vendor"},{cost=40,item=6326,npcs={5162},t="vendor"},{cost=40,item=6326,npcs={5942},t="vendor"},{cost=40,item=6326,npcs={10118},t="vendor"},{cost=40,item=6326,npcs={257006},t="vendor"}}}
+R[7753]={colors={50,90,110,130},creates={4592,1,1},learn=50,name="Longjaw Mud Snapper",prof=185,reagents={{6289,1}},sources={{cost=400,item=6328,npcs={66},t="vendor"},{cost=400,item=6328,npcs={1684},t="vendor"},{cost=400,item=6328,npcs={3027},t="vendor"},{cost=400,item=6328,npcs={4265},t="vendor"},{cost=400,item=6328,npcs={4574},t="vendor"},{cost=400,item=6328,npcs={5162},t="vendor"},{cost=400,item=6328,npcs={5748},t="vendor"},{cost=400,item=6328,npcs={5940},t="vendor"},{cost=400,item=6328,npcs={257006},t="vendor"}}}
+R[7754]={colors={50,90,110,130},creates={6316,1,1},learn=50,name="Loch Frenzy Delight",prof=185,reagents={{6317,1},{2678,1}},sources={{cost=400,item=6329,npcs={1684},t="vendor"}}}
+R[7755]={colors={100,140,160,180},creates={4593,1,1},learn=100,name="Bristle Whisker Catfish",prof=185,reagents={{6308,1}},sources={{cost=1200,item=6330,npcs={2383},t="vendor"},{cost=1200,item=6330,npcs={2397},t="vendor"},{cost=1200,item=6330,npcs={3027},t="vendor"},{cost=1200,item=6330,npcs={3029},t="vendor"},{cost=1200,item=6330,npcs={3497},t="vendor"},{cost=1200,item=6330,npcs={4553},t="vendor"},{cost=1200,item=6330,npcs={5494},t="vendor"},{cost=1200,item=6330,npcs={260487},t="vendor"}}}
+R[7766]={colors={60,105,125,145},learn=60,name="Enchant Bracer - Minor Spirit",prof=333,reagents={{10938,1}},sources={{item=6344,t="drop"}}}
+R[7771]={colors={70,110,130,150},learn=70,name="Enchant Cloak - Minor Protection",prof=333,reagents={{10940,2}},sources={{cost=200,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[7776]={colors={80,115,135,155},learn=80,name="Enchant Chest - Lesser Intellect",prof=333,reagents={{10938,2}},sources={{cost=378,item=6346,limited=true,npcs={3346},t="vendor"},{cost=421,item=6346,limited=true,npcs={5757},t="vendor"}}}
+R[7779]={colors={80,115,135,155},learn=80,name="Enchant Bracer - Minor Agility",prof=333,reagents={{10940,1},{10938,2}},sources={{cost=400,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7782]={colors={80,115,135,155},learn=80,name="Enchant Bracer - Minor Strength",prof=333,reagents={{10940,3}},sources={{item=6347,t="drop"}}}
+R[7786]={colors={90,120,140,160},learn=90,name="Enchant Weapon - Minor Beastslayer",prof=333,reagents={{10940,2},{10939,1}},sources={{item=6348,t="drop"}}}
+R[7788]={colors={90,120,140,160},learn=90,name="Enchant Weapon - Minor Striking",prof=333,reagents={{10940,1},{10938,1},{10978,1}},sources={{cost=500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7793]={colors={100,130,150,170},learn=100,name="Enchant 2H Weapon - Lesser Intellect",prof=333,reagents={{10938,4}},sources={{cost=444,item=6349,limited=true,npcs={5158},t="vendor"},{cost=473,item=6349,limited=true,npcs={3346},t="vendor"},{cost=500,item=6349,limited=true,npcs={5758},t="vendor"},{cost=526,item=6349,limited=true,npcs={3012},t="vendor"}}}
+R[7795]={colors={100,130,150,170},creates={6339,1,1},learn=100,name="Runed Silver Rod",prof=333,reagents={{6338,1},{10940,3},{10938,4},{1210,1}},sources={{cost=1000,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7817]={colors={95,100,115,130},creates={6350,1,1},learn=95,name="Rough Bronze Boots",prof=164,reagents={{2841,6},{3470,6}},sources={{cost=200,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[7818]={colors={100,100,120,135},creates={6338,1,1},est=true,learn=100,name="Silver Rod",prof=164,reagents={{2842,1},{3470,2}},sources={{cost=100,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[7827]={colors={50,90,110,130},creates={5095,1,1},learn=50,name="Rainbow Fin Albacore",prof=185,reagents={{6361,1}},sources={{cost=400,item=6368,npcs={3178},t="vendor"},{cost=400,item=6368,npcs={3333},t="vendor"},{cost=400,item=6368,npcs={3497},t="vendor"},{cost=400,item=6368,npcs={4305},t="vendor"},{cost=400,item=6368,npcs={4307},t="vendor"},{cost=400,item=6368,npcs={4553},t="vendor"},{cost=400,item=6368,npcs={5494},t="vendor"},{cost=400,item=6368,npcs={5748},t="vendor"},{cost=400,item=6368,npcs={5942},t="vendor"},{cost=400,item=6368,npcs={10118},t="vendor"},{cost=400,item=6368,npcs={260487},t="vendor"}}}
+R[7828]={colors={175,190,210,230},creates={4594,1,1},learn=175,name="Rockscale Cod",prof=185,reagents={{6362,1}},sources={{cost=2200,item=6369,npcs={2383},t="vendor"},{cost=2200,item=6369,npcs={2664},t="vendor"},{cost=2200,item=6369,npcs={3178},t="vendor"},{cost=2200,item=6369,npcs={3333},t="vendor"},{cost=2200,item=6369,npcs={4307},t="vendor"},{cost=2200,item=6369,npcs={4574},t="vendor"},{cost=2200,item=6369,npcs={5162},t="vendor"},{cost=2200,item=6369,npcs={12033},t="vendor"},{cost=2200,item=6369,npcs={12962},t="vendor"}}}
+R[7836]={colors={80,80,90,100},creates={6370,1,1},learn=80,name="Blackmouth Oil",prof=171,reagents={{6358,2},{3371,1}},sources={{cost=250,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[7837]={colors={130,150,160,170},creates={6371,2,2},learn=130,name="Fire Oil",prof=171,reagents={{6359,2},{3371,1}},sources={{cost=1000,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[7841]={colors={100,130,150,170},creates={6372,1,1},learn=100,name="Swim Speed Potion",prof=171,reagents={{2452,1},{6370,1},{3371,1}},sources={{cost=1000,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[7845]={colors={140,165,185,205},creates={6373,1,1},learn=140,name="Elixir of Fire Power",prof=171,reagents={{6371,2},{3356,1},{3372,1}},sources={{cost=3000,npcs={1386,2391,3009,3347,4160,4609,4611,5177},t="trainer"}}}
+R[7857]={colors={120,145,165,185},learn=120,name="Enchant Chest - Stamina",prof=333,reagents={{10940,2},{10998,1}},sources={{cost=1000,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7859]={colors={120,145,165,185},learn=120,name="Enchant Bracer - Lesser Spirit",prof=333,reagents={{10998,1}},sources={{item=6375,t="drop"}}}
+R[7861]={colors={125,150,170,190},learn=125,name="Enchant Cloak - Lesser Fire Resistance",prof=333,reagents={{6371,1},{10998,1}},sources={{cost=1250,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7863]={colors={125,150,170,190},learn=125,name="Enchant Boots - Minor Stamina",prof=333,reagents={{10940,4}},sources={{cost=1400,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[7867]={colors={125,150,170,190},learn=125,name="Enchant Boots - Minor Agility",prof=333,reagents={{10940,3},{10998,1}},sources={{cost=1000,item=6377,limited=true,npcs={3537},t="vendor"},{cost=1052,item=6377,limited=true,npcs={3012},t="vendor"}}}
+R[7892]={colors={120,120,137,155},creates={6384,1,1},learn=120,name="Stylish Blue Shirt",prof=197,reagents={{2997,4},{6260,2},{4340,1},{2321,1}},sources={{item=6390,t="drop"}}}
+R[7893]={colors={120,120,137,155},creates={6385,1,1},learn=120,name="Stylish Green Shirt",prof=197,reagents={{2997,4},{2605,2},{4340,1},{2321,1}},sources={{item=6391,t="drop"}}}
+R[7928]={colors={150,150,180,210},creates={6450,1,1},learn=150,name="Silk Bandage",prof=129,reagents={{4306,1}},sources={{cost=5000,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[7929]={colors={180,180,210,240},creates={6451,1,1},learn=180,name="Heavy Silk Bandage",prof=129,reagents={{4306,2}},sources={{cost=2200,item=16112,npcs={13476},t="vendor"},{cost=2329,item=16112,npcs={2805},t="vendor"}}}
+R[7934]={colors={80,80,115,150},creates={6452,3,3},learn=80,name="Anti-Venom",prof=129,reagents={{1475,1}},sources={{cost=250,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[7935]={colors={130,130,165,200},creates={6453,3,3},learn=130,name="Strong Anti-Venom",prof=129,reagents={{1288,1}},sources={{item=6454,t="drop"}}}
+R[7953]={colors={90,95,110,125},creates={6466,1,1},learn=90,name="Deviate Scale Cloak",prof=165,reagents={{6470,8},{4231,1},{2321,1}},sources={{cost=550,item=6474,limited=true,npcs={5783},t="vendor"}}}
+R[7954]={colors={105,105,117,130},creates={6467,1,1},learn=105,name="Deviate Scale Gloves",prof=165,reagents={{6471,2},{6470,6},{2321,2}},sources={{cost=1500,item=6475,limited=true,npcs={5783},t="vendor"}}}
+R[7955]={colors={115,115,127,140},creates={6468,1,1},learn=115,name="Deviate Scale Belt",prof=165,reagents={{6471,10},{6470,10},{2321,2}},sources={{item=6476,t="quest"}}}
+R[8238]={colors={85,125,145,165},creates={6657,1,1},learn=85,name="Savory Deviate Delight",prof=185,reagents={{6522,1},{2678,1}},sources={{item=6661,t="drop"}}}
+R[8240]={colors={90,120,140,160},creates={6662,1,1},learn=90,name="Elixir of Giant Growth",prof=171,reagents={{6522,1},{2449,1},{3371,1}},sources={{item=6663,t="drop"}}}
+R[8243]={colors={185,185,205,225},creates={4852,1,1},learn=185,name="Flash Bomb",prof=202,reagents={{4611,1},{4377,1},{4306,1}},sources={{item=6672,t="drop"},{item=6672,t="quest"}}}
+R[8322]={colors={90,90,105,120},creates={6709,1,1},learn=90,name="Moonglow Vest",prof=165,reagents={{2318,6},{4231,1},{2320,4},{5498,1}},sources={{item=6710,t="quest"}}}
+R[8334]={colors={100,115,122,130},creates={6712,1,1},learn=100,name="Practice Lock",prof=202,reagents={{2841,1},{4359,2},{2880,1}},sources={{cost=300,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[8339]={colors={100,115,122,130},creates={6714,2,2},learn=100,name="EZ-Thro Dynamite",prof=202,reagents={{4364,3},{2589,1},{260794,1}},sources={{item=6716,t="drop"}}}
+R[8367]={colors={100,115,135,155},creates={6731,1,1},learn=100,name="Ironforge Breastplate",prof=164,reagents={{2840,16},{818,2},{3470,3}},sources={{item=6735,t="quest"}}}
+R[8465]={colors={40,50,67,85},creates={6786,1,1},learn=40,name="Simple Dress",prof=197,reagents={{2996,2},{2320,1},{6260,1},{2324,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[8467]={colors={110,110,127,145},creates={6787,1,1},learn=110,name="White Woolen Dress",prof=197,reagents={{2997,3},{2324,4},{2321,1}},sources={{cost=250,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[8483]={colors={160,160,170,185},creates={6795,1,1},est=true,learn=160,name="White Swashbuckler's Shirt",prof=197,reagents={{4305,3},{2324,2},{4291,1}},sources={{cost=450,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8489]={colors={175,175,177,190},creates={6796,1,1},est=true,learn=175,name="Red Swashbuckler's Shirt",prof=197,reagents={{4305,3},{2604,2},{4291,1}},sources={{cost=675,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8604]={colors={1,45,65,85},creates={6888,1,1},learn=1,name="Herb Baked Egg",prof=185,reagents={{6889,1},{2678,1}},sources={{t="starter"}}}
+R[8607]={colors={40,80,100,120},creates={6890,1,1},learn=40,name="Smoked Bear Meat",prof=185,reagents={{3173,1}},sources={{cost=250,item=6892,npcs={1465},t="vendor"},{cost=250,item=6892,npcs={3556},t="vendor"}}}
+R[8758]={colors={140,140,150,165},creates={7046,1,1},learn=140,name="Azure Silk Pants",prof=197,reagents={{4305,4},{6260,2},{2321,3}},sources={{cost=600,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[8760]={colors={145,145,160,175},creates={7048,1,1},est=true,learn=145,name="Azure Silk Hood",prof=197,reagents={{4305,2},{6260,2},{2321,1}},sources={{cost=600,npcs={1300,1346,2399,2627,3004,3363,3704,4576},t="trainer"}}}
+R[8762]={colors={160,160,170,185},creates={7050,1,1},est=true,learn=160,name="Silk Headband",prof=197,reagents={{4305,3},{2321,2}},sources={{cost=675,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8764]={colors={170,170,170,185},creates={7051,1,1},learn=170,name="Earthen Vest",prof=197,reagents={{4305,3},{7067,1},{2321,2}},sources={{cost=810,npcs={1300,1346,2399,4576,251972},t="trainer"}}}
+R[8766]={colors={175,175,175,190},creates={7052,1,1},learn=175,name="Azure Silk Belt",prof=197,reagents={{4305,4},{7070,1},{6260,2},{2321,2},{7071,1}},sources={{cost=900,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8768]={colors={150,150,165,180},creates={7071,2,2},est=true,learn=150,name="Iron Buckle",prof=164,reagents={{3575,1}},sources={{cost=250,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[8770]={colors={190,190,190,205},creates={7054,1,1},learn=190,name="Robe of Power",prof=197,reagents={{4339,2},{7067,2},{7070,2},{7068,2},{7069,2},{4291,2}},sources={{cost=900,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8772]={colors={175,175,175,190},creates={7055,1,1},learn=175,name="Crimson Silk Belt",prof=197,reagents={{4305,4},{7071,1},{2604,2},{4291,1}},sources={{cost=900,npcs={1300,1346,2399,4576,251972},t="trainer"}}}
+R[8774]={colors={180,180,180,195},creates={7057,1,1},learn=180,name="Green Silken Shoulders",prof=197,reagents={{4305,5},{4291,2}},sources={{cost=900,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8776]={colors={15,50,67,85},creates={7026,1,1},learn=15,name="Linen Belt",prof=197,reagents={{2996,1},{2320,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[8780]={colors={145,145,155,170},creates={7047,1,1},learn=145,name="Hands of Darkness",prof=197,reagents={{4305,3},{4234,2},{6048,2},{2321,2}},sources={{item=7092,t="drop"}}}
+R[8782]={colors={150,150,160,175},creates={7049,1,1},learn=150,name="Truefaith Gloves",prof=197,reagents={{4305,3},{4234,2},{929,4},{2321,1}},sources={{item=7091,t="drop"}}}
+R[8784]={colors={165,165,165,180},creates={7065,1,1},learn=165,name="Green Silk Armor",prof=197,reagents={{4305,5},{2605,2},{4291,1}},sources={{item=7090,t="drop"}}}
+end)()
+;(function()
+R[8786]={colors={175,175,175,190},creates={7053,1,1},learn=175,name="Azure Silk Cloak",prof=197,reagents={{4305,3},{6260,2},{2321,2}},sources={{cost=1500,item=7089,npcs={251997},t="vendor"},{cost=1578,item=7089,limited=true,npcs={6574},t="vendor"},{cost=1578,item=7089,limited=true,npcs={6576},t="vendor"}}}
+R[8789]={colors={180,180,180,195},creates={7056,1,1},learn=180,name="Crimson Silk Cloak",prof=197,reagents={{4305,5},{2604,2},{6371,2},{4291,1}},sources={{cost=1200,item=7087,npcs={2670},t="vendor"},{cost=1200,item=7087,limited=true,npcs={12246},t="vendor"},{cost=1200,item=7087,npcs={251997},t="vendor"}}}
+R[8791]={colors={185,185,185,190},creates={7058,1,1},learn=185,name="Crimson Silk Vest",prof=197,reagents={{4305,4},{2604,2},{2321,2}},sources={{cost=2250,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8793]={colors={190,190,190,205},creates={7059,1,1},learn=190,name="Crimson Silk Shoulders",prof=197,reagents={{4305,5},{6371,2},{2604,2},{4291,2}},sources={{item=7084,t="drop"}}}
+R[8795]={colors={190,190,190,205},creates={7060,1,1},learn=190,name="Azure Shoulders",prof=197,reagents={{4305,6},{7072,2},{6260,2},{4291,2}},sources={{item=7085,t="drop"}}}
+R[8797]={colors={195,195,195,210},creates={7061,1,1},learn=195,name="Earthen Silk Belt",prof=197,reagents={{4305,5},{7067,4},{4234,4},{7071,1},{4291,2}},sources={{item=7086,t="drop"}}}
+R[8799]={colors={195,195,195,200},creates={7062,1,1},learn=195,name="Crimson Silk Pantaloons",prof=197,reagents={{4305,4},{2604,2},{4291,2}},sources={{cost=2700,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8802]={colors={205,205,205,215},creates={7063,1,1},learn=205,name="Crimson Silk Robe",prof=197,reagents={{4305,8},{7068,4},{3827,2},{2604,4},{4291,1}},sources={{cost=5000,item=7088,limited=true,npcs={6568},t="vendor"},{cost=5000,item=7088,npcs={260570},t="vendor"}}}
+R[8804]={colors={210,210,210,220},creates={7064,1,1},learn=210,name="Crimson Silk Gloves",prof=197,reagents={{4305,6},{7068,2},{6371,2},{4304,2},{2604,4},{4291,2}},sources={{cost=4500,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[8880]={colors={30,65,85,105},creates={7166,1,1},learn=30,name="Copper Dagger",prof=164,reagents={{2840,6},{2880,1},{3470,1},{2318,1}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[8895]={colors={225,245,255,265},creates={7189,1,1},learn=225,name="Goblin Rocket Boots",prof=202,reagents={{10026,1},{10559,2},{4234,4},{9061,2},{10560,1}},sources={{cost=2200,npcs={8126,260562},t="trainer"},{item=7192,t="drop"}},spec=20222}
+R[9058]={colors={1,40,55,70},creates={7276,1,1},learn=1,name="Handstitched Leather Cloak",prof=165,reagents={{2318,2},{2320,1}},sources={{t="starter"}}}
+R[9059]={colors={1,40,55,70},creates={7277,1,1},learn=1,name="Handstitched Leather Bracers",prof=165,reagents={{2318,2},{2320,3}},sources={{t="starter"}}}
+R[9060]={colors={30,55,70,85},creates={7278,1,1},learn=30,name="Light Leather Quiver",prof=165,reagents={{2318,4},{2320,2}},sources={{cost=100,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[9062]={colors={30,55,70,85},creates={7279,1,1},learn=30,name="Small Leather Ammo Pouch",prof=165,reagents={{2318,3},{2320,4}},sources={{cost=100,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[9064]={colors={35,60,75,90},creates={7280,1,1},learn=35,name="Rugged Leather Pants",prof=165,reagents={{2318,5},{2320,5}},sources={{item=7288,t="drop"}}}
+R[9065]={colors={70,75,90,105},creates={7281,1,1},learn=70,name="Light Leather Bracers",prof=165,reagents={{2318,6},{2320,4}},sources={{cost=150,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[9068]={colors={95,100,115,130},creates={7282,1,1},learn=95,name="Light Leather Pants",prof=165,reagents={{2318,10},{4231,1},{2321,1}},sources={{cost=400,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[9070]={colors={100,100,112,125},creates={7283,1,1},learn=100,name="Black Whelp Cloak",prof=165,reagents={{7286,12},{2319,4},{2321,1}},sources={{cost=650,item=7289,limited=true,npcs={2697},t="vendor"},{item=7289,t="drop"}}}
+R[9072]={colors={120,120,132,145},creates={7284,1,1},learn=120,name="Red Whelp Gloves",prof=165,reagents={{7287,6},{2319,4},{2321,1}},sources={{cost=1684,item=7290,limited=true,npcs={2679},t="vendor"}}}
+R[9074]={colors={120,120,132,145},creates={7285,1,1},learn=120,name="Nimble Leather Gloves",prof=165,reagents={{2457,1},{2319,6},{2321,1}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[9145]={colors={125,125,137,150},creates={7348,1,1},learn=125,name="Fletcher's Gloves",prof=165,reagents={{2319,8},{5116,4},{2321,2}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[9146]={colors={135,135,147,160},creates={7349,1,1},learn=135,name="Herbalist's Gloves",prof=165,reagents={{2319,8},{3356,4},{2321,2}},sources={{cost=1800,item=7361,limited=true,npcs={6731},t="vendor"}}}
+R[9147]={colors={135,135,147,160},creates={7352,1,1},learn=135,name="Earthen Leather Shoulders",prof=165,reagents={{2319,6},{7067,1},{2321,2}},sources={{cost=2000,item=7362,npcs={3537},t="vendor"}}}
+R[9148]={colors={140,140,152,165},creates={7358,1,1},learn=140,name="Pilferer's Gloves",prof=165,reagents={{2319,10},{5373,2},{2321,2}},sources={{item=7363,t="drop"}}}
+R[9149]={colors={145,145,157,170},creates={7359,1,1},learn=145,name="Heavy Earthen Gloves",prof=165,reagents={{2319,12},{7067,2},{2997,2},{2321,2}},sources={{item=7364,t="drop"}}}
+R[9193]={colors={150,150,155,165},creates={7371,1,1},learn=150,name="Heavy Quiver",prof=165,reagents={{4234,8},{2321,2}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[9194]={colors={150,150,155,165},creates={7372,1,1},learn=150,name="Heavy Leather Ammo Pouch",prof=165,reagents={{4234,8},{2321,2}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[9195]={colors={165,165,170,180},creates={7373,1,1},learn=165,name="Dusky Leather Leggings",prof=165,reagents={{4234,10},{2325,1},{2321,2}},sources={{item=7449,t="drop"}}}
+R[9196]={colors={175,175,180,190},creates={7374,1,1},learn=175,name="Dusky Leather Armor",prof=165,reagents={{4234,10},{3824,1},{2321,2}},sources={{cost=1350,npcs={3007,4212,11098},t="trainer"}}}
+R[9197]={colors={175,175,180,190},creates={7375,1,1},learn=175,name="Green Whelp Armor",prof=165,reagents={{7392,4},{4234,10},{2321,2}},sources={{item=7450,t="drop"}}}
+R[9198]={colors={180,180,185,195},creates={7377,1,1},learn=180,name="Frost Leather Cloak",prof=165,reagents={{4234,6},{7067,2},{7070,2},{2321,2}},sources={{cost=1800,npcs={3007,4212,11098},t="trainer"}}}
+R[9201]={colors={185,185,190,200},creates={7378,1,1},learn=185,name="Dusky Bracers",prof=165,reagents={{4234,16},{2325,1},{4291,2}},sources={{cost=1800,npcs={3007,4212,11098},t="trainer"}}}
+R[9202]={colors={190,190,195,205},creates={7386,1,1},learn=190,name="Green Whelp Bracers",prof=165,reagents={{7392,6},{4234,8},{4291,2}},sources={{cost=2488,item=7451,limited=true,npcs={7852},t="vendor"},{cost=2800,item=7451,limited=true,npcs={4225},t="vendor"},{cost=2800,item=7451,npcs={12245},t="vendor"},{cost=2947,item=7451,limited=true,npcs={7854},t="vendor"},{cost=2964,item=7451,limited=true,npcs={4589},t="vendor"}}}
+R[9206]={colors={195,195,200,210},creates={7387,1,1},learn=195,name="Dusky Belt",prof=165,reagents={{4234,10},{4305,2},{2325,2},{7071,1}},sources={{cost=2250,npcs={3007,11098},t="trainer"}}}
+R[9207]={colors={200,200,205,215},creates={7390,1,1},learn=200,name="Dusky Boots",prof=165,reagents={{4234,8},{7428,2},{3824,1},{4291,2}},sources={{item=7452,t="drop"}}}
+R[9208]={colors={200,200,205,215},creates={7391,1,1},learn=200,name="Swift Boots",prof=165,reagents={{4234,10},{2459,2},{4337,2},{4291,1}},sources={{item=7453,t="drop"}}}
+R[9269]={colors={125,150,162,175},creates={7506,1,1},learn=125,name="Gnomish Universal Remote",prof=202,reagents={{2841,6},{4375,1},{814,2},{818,1},{774,1}},sources={{cost=1200,item=7560,npcs={6730},t="vendor"},{cost=1263,item=7560,limited=true,npcs={5175},t="vendor"},{item=7560,t="drop"}}}
+R[9271]={colors={150,150,160,170},creates={6533,3,3},learn=150,name="Aquadynamic Fish Attractor",prof=202,reagents={{2841,2},{6530,1},{4364,1}},sources={{cost=500,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[9273]={colors={165,165,180,200},creates={7148,1,1},learn=165,name="Goblin Jumper Cables",prof=202,reagents={{3575,6},{4375,2},{814,2},{4306,2},{1210,2},{7191,1}},sources={{cost=2000,item=7561,limited=true,npcs={3134},t="vendor"},{cost=2000,item=7561,limited=true,npcs={3537},t="vendor"},{cost=2000,item=7561,limited=true,npcs={4086},t="vendor"},{cost=2000,item=7561,limited=true,npcs={12246},t="vendor"},{item=7561,t="drop"}}}
+R[9513]={colors={60,100,120,140},creates={7676,1,1},learn=60,name="Thistle Tea",prof=185,reagents={{2452,1},{159,1}},sources={{cost=210,item=18160,npcs={6779},t="vendor"},{item=18160,t="quest"}}}
+R[9811]={colors={160,160,172,185},creates={7913,1,1},learn=160,name="Barbaric Iron Shoulders",prof=164,reagents={{3575,8},{5635,4},{1210,2},{3486,2}},sources={{item=7978,t="quest"}}}
+R[9813]={colors={160,160,172,185},creates={7914,1,1},learn=160,name="Barbaric Iron Breastplate",prof=164,reagents={{3575,20},{3486,4}},sources={{item=7979,t="quest"}}}
+R[9814]={colors={175,175,187,200},creates={7915,1,1},learn=175,name="Barbaric Iron Helm",prof=164,reagents={{3575,10},{5637,2},{5635,2}},sources={{item=7980,t="quest"}}}
+R[9818]={colors={180,180,192,205},creates={7916,1,1},learn=180,name="Barbaric Iron Boots",prof=164,reagents={{3575,12},{5637,4},{818,4},{3486,2}},sources={{item=7981,t="quest"}}}
+R[9820]={colors={185,185,197,210},creates={7917,1,1},learn=185,name="Barbaric Iron Gloves",prof=164,reagents={{3575,14},{3486,3},{5637,2}},sources={{item=7982,t="quest"}}}
+R[9916]={colors={200,200,212,225},creates={7963,1,1},learn=200,name="Steel Breastplate",prof=164,reagents={{3859,16},{3486,3}},sources={{cost=2500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9918]={colors={200,200,212,225},creates={7964,1,1},est=true,learn=200,name="Solid Sharpening Stone",prof=164,reagents={{7912,1}},sources={{cost=2500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9920]={colors={200,200,212,225},creates={7966,1,1},est=true,learn=200,name="Solid Grinding Stone",prof=164,reagents={{7912,4}},sources={{cost=2500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9921]={colors={200,200,212,225},creates={7965,1,1},est=true,learn=200,name="Solid Weightstone",prof=164,reagents={{7912,1}},sources={{cost=2500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9926]={colors={205,205,210,220},creates={7918,1,1},learn=205,name="Heavy Mithril Shoulder",prof=164,reagents={{3860,8},{4234,6}},sources={{cost=5000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9928]={colors={205,205,210,220},creates={7919,1,1},learn=205,name="Heavy Mithril Gauntlet",prof=164,reagents={{3860,6},{4338,4}},sources={{cost=5000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9931]={colors={210,210,215,225},creates={7920,1,1},learn=210,name="Mithril Plate Pants",prof=164,reagents={{3860,12}},sources={{cost=5000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9933]={colors={210,210,215,225},creates={7921,1,1},learn=210,name="Heavy Mithril Pants",prof=164,reagents={{3860,10},{1705,2}},sources={{item=7975,t="drop"}}}
+R[9935]={colors={215,215,220,230},creates={7922,1,1},learn=215,name="Steel Plate Helm",prof=164,reagents={{3859,14},{7966,1}},sources={{cost=5000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9937]={colors={215,215,220,230},creates={7924,1,1},learn=215,name="Mithril Plate Bracers",prof=164,reagents={{3860,8},{3864,2}},sources={{cost=5333,item=7995,limited=true,npcs={8176},t="vendor"},{cost=6000,item=7995,limited=true,npcs={8161},t="vendor"}}}
+R[9939]={colors={215,215,220,230},creates={7967,1,1},learn=215,name="Mithril Shield Spike",prof=164,reagents={{3860,4},{6037,2},{7966,4}},sources={{item=7976,t="drop"}}}
+R[9945]={colors={220,220,225,235},creates={7926,1,1},learn=220,name="Ornate Mithril Pants",prof=164,reagents={{3860,12},{6037,1},{7966,1},{7909,1}},sources={{item=7983,t="quest"}}}
+R[9950]={colors={220,220,225,235},creates={7927,1,1},learn=220,name="Ornate Mithril Gloves",prof=164,reagents={{3860,10},{4338,6},{6037,1},{7966,1}},sources={{item=7984,t="quest"}}}
+R[9952]={colors={225,225,230,240},creates={7928,1,1},learn=225,name="Ornate Mithril Shoulders",prof=164,reagents={{3860,12},{6037,1},{4304,6}},sources={{item=7985,t="quest"}}}
+R[9954]={colors={225,225,230,240},creates={7938,1,1},learn=225,name="Truesilver Gauntlets",prof=164,reagents={{3860,10},{6037,8},{7909,3},{3864,3},{5966,1},{7966,2}},sources={{t="trainer",unknownCost=true}},spec=9788}
+R[9957]={colors={230,230,235,245},creates={7929,1,1},learn=230,name="Orcish War Leggings",prof=164,reagents={{3860,12},{7067,1}},sources={{t="other"}}}
+R[9959]={colors={230,230,235,245},creates={7930,1,1},learn=230,name="Heavy Mithril Breastplate",prof=164,reagents={{3860,16}},sources={{cost=15000,npcs={2836},t="trainer"}}}
+R[9961]={colors={230,230,235,245},creates={7931,1,1},learn=230,name="Mithril Coif",prof=164,reagents={{3860,10},{4338,6}},sources={{cost=15000,npcs={2836},t="trainer"}}}
+R[9964]={colors={235,235,240,250},creates={7969,1,1},learn=235,name="Mithril Spurs",prof=164,reagents={{3860,4},{7966,3}},sources={{item=7989,t="drop"}}}
+R[9966]={colors={235,235,240,250},creates={7932,1,1},learn=235,name="Mithril Plate Shoulders",prof=164,reagents={{3860,14},{4304,4},{3864,4}},sources={{item=7991,t="drop"}}}
+R[9968]={colors={235,235,240,250},creates={7933,1,1},learn=235,name="Heavy Mithril Boots",prof=164,reagents={{3860,14},{4304,4}},sources={{cost=20000,npcs={2836},t="trainer"}}}
+R[9970]={colors={245,245,245,250},creates={7934,1,1},learn=245,name="Heavy Mithril Helm",prof=164,reagents={{3860,14},{7909,1}},sources={{item=7990,t="drop"}}}
+R[9972]={colors={240,240,245,255},creates={7935,1,1},learn=240,name="Ornate Mithril Breastplate",prof=164,reagents={{3860,16},{6037,6},{7077,1},{7966,1}},sources={{t="other"}}}
+R[9974]={colors={245,245,250,260},creates={7939,1,1},learn=245,name="Truesilver Breastplate",prof=164,reagents={{3860,12},{6037,24},{7910,4},{7971,4},{7966,2}},sources={{t="trainer",unknownCost=true}},spec=9788}
+R[9979]={colors={245,245,250,260},creates={7936,1,1},learn=245,name="Ornate Mithril Boots",prof=164,reagents={{3860,14},{6037,2},{4304,4},{7966,1},{7909,1}},sources={{t="other"}}}
+R[9980]={colors={245,245,250,260},creates={7937,1,1},learn=245,name="Ornate Mithril Helm",prof=164,reagents={{3860,16},{6037,2},{7971,1},{7966,1}},sources={{t="other"}}}
+R[9983]={colors={30,65,85,105},creates={7955,1,1},learn=30,name="Copper Claymore",prof=164,reagents={{2840,10},{2880,2},{3470,1},{2318,1}},sources={{cost=100,npcs={514,957,1241,1383,2836,2998,3174,3355},t="trainer"}}}
+R[9985]={colors={125,155,170,185},creates={7956,1,1},learn=125,name="Bronze Warhammer",prof=164,reagents={{2841,8},{3466,1},{2319,1}},sources={{cost=250,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[9986]={colors={130,135,150,165},creates={7957,1,1},learn=130,name="Bronze Greatsword",prof=164,reagents={{2841,12},{3466,2},{2319,2}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[9987]={colors={135,140,155,170},creates={7958,1,1},learn=135,name="Bronze Battle Axe",prof=164,reagents={{2841,14},{3466,1},{2319,2}},sources={{cost=500,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[9993]={colors={210,210,222,235},creates={7941,1,1},learn=210,name="Heavy Mithril Axe",prof=164,reagents={{3860,12},{3864,2},{7966,1},{4234,4}},sources={{cost=10000,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[9995]={colors={220,220,232,245},creates={7942,1,1},learn=220,name="Blue Glittering Axe",prof=164,reagents={{3860,16},{7909,2},{7966,1},{4304,4}},sources={{item=7992,t="drop"}}}
+R[9997]={colors={225,225,237,250},creates={7943,1,1},learn=225,name="Wicked Mithril Blade",prof=164,reagents={{3860,14},{6037,4},{7966,1},{4304,2}},sources={{item=8029,t="drop"}}}
+R[10001]={colors={230,230,242,255},creates={7945,1,1},learn=230,name="Big Black Mace",prof=164,reagents={{3860,16},{7971,1},{1210,4},{7966,1},{4304,2}},sources={{cost=15000,npcs={2836},t="trainer"}}}
+R[10003]={colors={235,235,247,260},creates={7954,1,1},learn=235,name="The Shatterer",prof=164,reagents={{3860,24},{7075,4},{6037,6},{3864,5},{1529,5},{7966,4},{4304,4}},sources={{t="trainer",unknownCost=true}},spec=9787}
+R[10005]={colors={240,240,252,265},creates={7944,1,1},learn=240,name="Dazzling Mithril Rapier",prof=164,reagents={{3860,14},{7909,1},{1705,2},{1206,2},{7966,1},{4338,2}},sources={{item=7993,t="drop"}}}
+R[10007]={colors={245,245,257,270},creates={7961,1,1},learn=245,name="Phantom Blade",prof=164,reagents={{3860,28},{7081,6},{6037,8},{3823,2},{7909,6},{7966,4},{4304,2}},sources={{t="trainer",unknownCost=true}},spec=9787}
+R[10009]={colors={245,245,257,270},creates={7946,1,1},learn=245,name="Runed Mithril Hammer",prof=164,reagents={{3860,18},{7075,2},{7966,1},{4304,4}},sources={{item=8028,t="drop"}}}
+R[10011]={colors={250,250,262,275},creates={7959,1,1},learn=250,name="Blight",prof=164,reagents={{3860,28},{7972,10},{6037,10},{7966,6},{4304,6}},sources={{t="trainer",unknownCost=true}},spec=9787}
+R[10013]={colors={255,255,267,280},creates={7947,1,1},learn=255,name="Ebon Shiv",prof=164,reagents={{3860,12},{6037,6},{7910,2},{7966,1},{4304,2}},sources={{cost=10000,item=8030,npcs={11278},t="vendor"}}}
+R[10015]={colors={260,260,272,285},creates={7960,1,1},learn=260,name="Truesilver Champion",prof=164,reagents={{3860,30},{6037,16},{7910,6},{7081,4},{7966,8},{4304,6}},sources={{t="trainer",unknownCost=true}},spec=9787}
+R[10482]={colors={200,200,205,215},creates={8172,1,1},est=true,learn=200,name="Cured Thick Hide",prof=165,reagents={{8169,1},{8150,1}},sources={{cost=1800,npcs={3007,4212,11098},t="trainer"}}}
+R[10487]={colors={200,200,205,215},creates={8173,1,1},learn=200,name="Thick Armor Kit",prof=165,reagents={{4304,5},{4291,1}},sources={{cost=1800,npcs={3007,4212,11098},t="trainer"}}}
+R[10490]={colors={200,200,205,215},creates={8174,1,1},learn=200,name="Comfortable Leather Hat",prof=165,reagents={{4234,12},{4236,2},{4291,2}},sources={{item=8384,t="drop"}}}
+R[10499]={colors={205,205,210,220},creates={8175,1,1},learn=205,name="Nightscape Tunic",prof=165,reagents={{4304,7},{4291,2}},sources={{cost=2700,npcs={3007,11098},t="trainer"}}}
+R[10507]={colors={205,205,210,220},creates={8176,1,1},learn=205,name="Nightscape Headband",prof=165,reagents={{4304,5},{4291,2}},sources={{cost=2700,npcs={3007,4212,11098},t="trainer"}}}
+R[10509]={colors={205,205,210,220},creates={8187,1,1},learn=205,name="Turtle Scale Gloves",prof=165,reagents={{4304,6},{8167,8},{8343,1}},sources={{cost=3111,item=8385,limited=true,npcs={7852},t="vendor"},{cost=3500,item=8385,limited=true,npcs={7854},t="vendor"},{item=8385,t="drop"}}}
+R[10511]={colors={210,210,215,225},creates={8189,1,1},learn=210,name="Turtle Scale Breastplate",prof=165,reagents={{4304,6},{8167,12},{8343,1}},sources={{cost=3000,npcs={3007,11098},t="trainer"}}}
+R[10516]={colors={210,210,215,225},creates={8192,1,1},learn=210,name="Nightscape Shoulders",prof=165,reagents={{4304,8},{4338,6},{4291,3}},sources={{cost=4000,item=8409,limited=true,npcs={7854},t="vendor"},{cost=4000,item=8409,limited=true,npcs={8160},t="vendor"}}}
+R[10518]={colors={210,210,215,225},creates={8198,1,1},learn=210,name="Turtle Scale Bracers",prof=165,reagents={{4304,8},{8167,12},{8343,1}},sources={{cost=3150,npcs={3007,11098},t="trainer"}}}
+R[10520]={colors={215,215,220,230},creates={8200,1,1},learn=215,name="Big Voodoo Robe",prof=165,reagents={{4304,10},{8151,4},{8343,1}},sources={{item=8386,t="drop"}}}
+R[10525]={colors={220,220,225,235},creates={8203,1,1},learn=220,name="Tough Scorpid Breastplate",prof=165,reagents={{4304,12},{8154,12},{4291,4}},sources={{item=8395,t="drop"}}}
+R[10529]={colors={220,220,225,235},creates={8210,1,1},learn=220,name="Wild Leather Shoulders",prof=165,reagents={{4304,10},{8153,1},{8172,1}},sources={{item=8403,t="quest"}}}
+R[10531]={colors={220,220,225,235},creates={8201,1,1},learn=220,name="Big Voodoo Mask",prof=165,reagents={{4304,8},{8151,6},{8343,1}},sources={{item=8387,t="drop"}}}
+R[10533]={colors={220,220,225,235},creates={8205,1,1},learn=220,name="Tough Scorpid Bracers",prof=165,reagents={{4304,10},{8154,4},{4291,2}},sources={{item=8397,t="drop"}}}
+R[10542]={colors={225,225,230,240},creates={8204,1,1},learn=225,name="Tough Scorpid Gloves",prof=165,reagents={{4304,6},{8154,8},{4291,2}},sources={{item=8398,t="drop"}}}
+R[10544]={colors={225,225,230,240},creates={8211,1,1},learn=225,name="Wild Leather Vest",prof=165,reagents={{4304,12},{8153,2},{8172,1}},sources={{item=8404,t="quest"}}}
+R[10546]={colors={225,225,230,240},creates={8214,1,1},learn=225,name="Wild Leather Helmet",prof=165,reagents={{4304,10},{8153,2},{8172,1}},sources={{item=8405,t="quest"}}}
+R[10548]={colors={230,230,235,245},creates={8193,1,1},learn=230,name="Nightscape Pants",prof=165,reagents={{4304,14},{4291,4}},sources={{cost=4000,npcs={11098},t="trainer"}}}
+R[10552]={colors={230,230,235,245},creates={8191,1,1},learn=230,name="Turtle Scale Helm",prof=165,reagents={{4304,14},{8167,24},{8343,1}},sources={{cost=4000,npcs={11098},t="trainer"}}}
+R[10554]={colors={235,235,240,250},creates={8209,1,1},learn=235,name="Tough Scorpid Boots",prof=165,reagents={{4304,12},{8154,12},{4291,6}},sources={{item=8399,t="drop"}}}
+R[10556]={colors={235,235,240,250},creates={8185,1,1},learn=235,name="Turtle Scale Leggings",prof=165,reagents={{4304,14},{8167,28},{8343,1}},sources={{cost=4500,npcs={11098},t="trainer"}}}
+R[10558]={colors={235,235,240,250},creates={8197,1,1},learn=235,name="Nightscape Boots",prof=165,reagents={{4304,16},{8343,2}},sources={{cost=4500,npcs={11098},t="trainer"}}}
+R[10560]={colors={240,240,240,250},creates={8202,1,1},learn=240,name="Big Voodoo Pants",prof=165,reagents={{4304,10},{8152,6},{8343,2}},sources={{item=8389,t="drop"}}}
+R[10562]={colors={240,240,245,255},creates={8216,1,1},learn=240,name="Big Voodoo Cloak",prof=165,reagents={{4304,14},{8152,4},{8343,2}},sources={{item=8390,t="drop"}}}
+R[10564]={colors={240,240,245,255},creates={8207,1,1},learn=240,name="Tough Scorpid Shoulders",prof=165,reagents={{4304,12},{8154,16},{8343,2}},sources={{item=8400,t="drop"}}}
+R[10566]={colors={245,245,250,260},creates={8213,1,1},learn=245,name="Wild Leather Boots",prof=165,reagents={{4304,14},{8153,4},{8172,2}},sources={{item=8406,t="quest"}}}
+R[10568]={colors={245,245,250,260},creates={8206,1,1},learn=245,name="Tough Scorpid Leggings",prof=165,reagents={{4304,14},{8154,8},{8343,2}},sources={{item=8401,t="drop"}}}
+R[10570]={colors={250,250,255,265},creates={8208,1,1},learn=250,name="Tough Scorpid Helm",prof=165,reagents={{4304,10},{8154,20},{8343,2}},sources={{item=8402,t="drop"}}}
+R[10572]={colors={250,250,255,265},creates={8212,1,1},learn=250,name="Wild Leather Leggings",prof=165,reagents={{4304,16},{8153,2},{8172,2}},sources={{item=8407,t="quest"}}}
+R[10574]={colors={250,250,255,265},creates={8215,1,1},learn=250,name="Wild Leather Cloak",prof=165,reagents={{4304,16},{8153,2},{8172,2}},sources={{item=8408,t="quest"}}}
+R[10619]={colors={225,225,230,240},creates={8347,1,1},learn=225,name="Dragonscale Gauntlets",prof=165,reagents={{4304,24},{8165,12},{8343,4},{8172,2}},sources={{cost=9000,npcs={7867},t="trainer"}},spec=10656}
+R[10621]={colors={225,225,230,240},creates={8345,1,1},learn=225,name="Wolfshead Helm",prof=165,reagents={{4304,18},{8368,2},{8146,8},{8343,4},{8172,2}},sources={{t="trainer",unknownCost=true}},spec=10660}
+R[10630]={colors={230,230,235,245},creates={8346,1,1},learn=230,name="Gauntlets of the Sea",prof=165,reagents={{4304,20},{7079,8},{7075,2},{8172,1},{8343,4}},sources={{t="trainer",unknownCost=true}},spec=10658}
+R[10632]={colors={250,250,255,265},creates={8348,1,1},learn=250,name="Helm of Fire",prof=165,reagents={{4304,40},{7077,8},{7075,4},{8172,2},{8343,4}},sources={{t="trainer",unknownCost=true}},spec=10658}
+R[10647]={colors={250,250,255,265},creates={8349,1,1},learn=250,name="Feathered Breastplate",prof=165,reagents={{4304,40},{8168,40},{7971,2},{8172,4},{8343,4}},sources={{t="trainer",unknownCost=true}},spec=10660}
+R[10650]={colors={255,255,260,270},creates={8367,1,1},learn=255,name="Dragonscale Breastplate",prof=165,reagents={{4304,40},{8165,30},{8343,4},{8172,4}},sources={{cost=9000,npcs={7867},t="trainer"}},spec=10656}
+R[10840]={colors={210,210,240,270},creates={8544,1,1},learn=210,name="Mageweave Bandage",prof=129,reagents={{4338,1}},sources={{cost=5000,item=16113,npcs={13476},t="vendor"},{cost=5294,item=16113,npcs={2805},t="vendor"}}}
+R[10841]={colors={240,240,270,300},creates={8545,1,1},learn=240,name="Heavy Mageweave Bandage",prof=129,reagents={{4338,2}},sources={{t="other"}}}
+R[11448]={colors={205,220,240,260},creates={6149,1,1},learn=205,name="Greater Mana Potion",prof=171,reagents={{3358,1},{3821,1},{3372,1}},sources={{cost=8100,npcs={1386,4160,4611,7948,11042,246795,275322},t="trainer"}}}
+R[11449]={colors={185,205,225,245},creates={8949,1,1},learn=185,name="Elixir of Agility",prof=171,reagents={{3820,1},{3821,1},{3372,1}},sources={{cost=5850,npcs={1386,4160,4611,7948,246795,275322},t="trainer"}}}
+R[11450]={colors={195,215,235,255},creates={8951,1,1},learn=195,name="Elixir of Defense",prof=171,reagents={{3355,1},{3821,1},{3372,1}},sources={{cost=6750,npcs={1386,4160,4611,7948,246795,275322},t="trainer"}}}
+R[11451]={colors={205,220,240,260},creates={8956,1,1},learn=205,name="Oil of Immolation",prof=171,reagents={{4625,1},{3821,1},{8925,1}},sources={{cost=7200,npcs={1386,4160,4611,7948,11042,246795,275322},t="trainer"}}}
+R[11452]={colors={215,225,245,265},creates={9030,1,1},learn=215,name="Restorative Potion",prof=171,reagents={{7067,1},{3821,1},{8925,1}},sources={{t="other"}}}
+R[11453]={colors={210,225,245,265},creates={9036,1,1},learn=210,name="Magic Resistance Potion",prof=171,reagents={{3358,1},{8831,1},{8925,1}},sources={{item=9293,t="drop"}}}
+R[11454]={colors={200,200,212,225},creates={9060,1,1},learn=200,name="Inlaid Mithril Cylinder",prof=164,reagents={{3860,5},{3577,1},{6037,1}},sources={{t="other"}}}
+R[11456]={colors={210,225,245,265},creates={9061,2,2},learn=210,name="Goblin Rocket Fuel",prof=171,reagents={{4625,1},{9260,1},{3372,1}},sources={{t="other"}}}
+R[11458]={colors={225,225,237,250},creates={9144,1,1},learn=225,name="Wildvine Potion",prof=171,reagents={{8153,1},{8831,1},{8925,1}},sources={{item=9294,t="drop"}}}
+R[11459]={colors={225,240,260,280},creates={9149,1,1},learn=225,name="Philosopher's Stone",prof=171,reagents={{3575,4},{9262,1},{8831,4},{4625,4}},sources={{cost=8000,item=9303,npcs={5594},t="vendor"}}}
+R[11460]={colors={230,245,265,285},creates={9154,1,1},learn=230,name="Draught of Detect Undead",prof=171,reagents={{8836,1},{8925,1}},sources={{cost=4500,npcs={1386,7948},t="trainer"}}}
+R[11461]={colors={235,250,270,290},creates={9155,1,1},learn=235,name="Arcane Elixir",prof=171,reagents={{8839,1},{3821,1},{8925,1}},sources={{cost=9000,npcs={1386,7948},t="trainer"}}}
+R[11464]={colors={235,250,270,290},creates={9172,1,1},learn=235,name="Invisibility Potion",prof=171,reagents={{8845,1},{8838,1},{8925,1}},sources={{item=9295,t="drop"}}}
+R[11465]={colors={235,250,270,290},creates={9179,1,1},learn=235,name="Elixir of Greater Intellect",prof=171,reagents={{8839,1},{3358,1},{8925,1}},sources={{cost=10800,npcs={1386,7948},t="trainer"}}}
+R[11466]={colors={240,255,275,295},creates={9088,1,1},learn=240,name="Gift of Arthas",prof=171,reagents={{8836,1},{8839,1},{8925,1}},sources={{item=9296,t="drop"}}}
+R[11467]={colors={240,255,275,295},creates={9187,1,1},learn=240,name="Elixir of Greater Agility",prof=171,reagents={{8838,1},{3821,1},{8925,1}},sources={{cost=10800,npcs={1386,7948},t="trainer"}}}
+R[11468]={colors={240,255,275,295},creates={9197,1,1},learn=240,name="Draught of Dream Vision",prof=171,reagents={{8831,3},{8925,1}},sources={{item=9297,t="drop"}}}
+R[11472]={colors={245,260,280,300},creates={9206,1,1},learn=245,name="Elixir of Greater Strength",prof=171,reagents={{8838,1},{8846,1},{8925,1}},sources={{item=9298,t="drop"}}}
+R[11473]={colors={245,260,280,300},creates={9210,2,2},learn=245,name="Ghost Dye",prof=171,reagents={{8845,2},{4342,1},{8925,1}},sources={{cost=9000,item=9302,limited=true,npcs={8157},t="vendor"},{cost=9000,item=9302,limited=true,npcs={8158},t="vendor"}}}
+R[11476]={colors={250,265,285,305},creates={9264,1,1},learn=250,name="Elixir of Shadow Power",prof=171,reagents={{8845,3},{8925,1}},sources={{cost=10000,item=9301,limited=true,npcs={4610},t="vendor"},{cost=10526,item=9301,limited=true,npcs={1313},t="vendor"}}}
+R[11477]={colors={250,265,285,305},creates={9224,1,1},learn=250,name="Potion of Demonslaying",prof=171,reagents={{8846,1},{8845,1},{8925,1}},sources={{cost=10000,item=9300,limited=true,npcs={8177},t="vendor"},{cost=10526,item=9300,limited=true,npcs={8178},t="vendor"}}}
+R[11478]={colors={250,265,285,305},creates={9233,1,1},learn=250,name="Draught of Detect Demon",prof=171,reagents={{8846,2},{8925,1}},sources={{cost=12600,npcs={1386,7948},t="trainer"}}}
+R[11479]={colors={225,240,260,280},creates={3577,1,1},learn=225,name="Transmute: Iron to Gold",prof=171,reagents={{3575,1}},sources={{cost=2500,npcs={1681,3137,3175,3357,3555,4254,5513},t="trainer"},{cost=8000,item=9304,npcs={5594},t="vendor"}}}
+R[11480]={colors={225,240,260,280},creates={6037,1,1},learn=225,name="Transmute: Mithril to Truesilver",prof=171,reagents={{3860,1}},sources={{cost=10000,npcs={1681,3137,3175,3357,3555,4254,5513},t="trainer"},{cost=8000,item=9305,limited=true,npcs={5594},t="vendor"}}}
+R[11643]={colors={205,205,210,220},creates={9366,1,1},learn=205,name="Golden Scale Gauntlets",prof=164,reagents={{3859,10},{3577,4},{3486,4},{3864,1}},sources={{item=9367,t="quest"}}}
+R[12044]={colors={1,40,50,60},creates={10045,1,1},learn=1,name="Simple Linen Pants",prof=197,reagents={{2996,1},{2320,1}},sources={{t="starter"}}}
+R[12045]={colors={20,50,67,85},creates={10046,1,1},learn=20,name="Simple Linen Boots",prof=197,reagents={{2996,2},{2318,1},{2320,1}},sources={{cost=50,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[12046]={colors={75,75,92,110},creates={10047,1,1},learn=75,name="Simple Kilt",prof=197,reagents={{2996,4},{2321,1}},sources={{cost=300,npcs={1103,1300,1346,1703,2399,2627,2855,3004},t="trainer"}}}
+R[12047]={colors={120,120,120,130},creates={10048,1,1},learn=120,name="Colorful Kilt",prof=197,reagents={{2997,5},{2604,3},{2321,1}},sources={{item=10316,t="drop"}}}
+R[12048]={colors={205,205,205,215},creates={9998,1,1},learn=205,name="Black Mageweave Vest",prof=197,reagents={{4339,2},{4291,3}},sources={{cost=3600,npcs={1300,1346,2399,4576,251972},t="trainer"}}}
+R[12049]={colors={205,205,205,215},creates={9999,1,1},learn=205,name="Black Mageweave Leggings",prof=197,reagents={{4339,2},{4291,3}},sources={{cost=3600,npcs={1300,1346,2399,4576,251972},t="trainer"}}}
+R[12050]={colors={210,210,210,220},creates={10001,1,1},learn=210,name="Black Mageweave Robe",prof=197,reagents={{4339,3},{8343,1}},sources={{cost=3600,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12052]={colors={210,210,210,220},creates={10002,1,1},learn=210,name="Shadoweave Pants",prof=197,reagents={{4339,3},{10285,2},{8343,1}},sources={{t="trainer",unknownCost=true}}}
+R[12053]={colors={215,215,215,225},creates={10003,1,1},learn=215,name="Black Mageweave Gloves",prof=197,reagents={{4339,2},{8343,2}},sources={{cost=4500,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12055]={colors={215,215,215,225},creates={10004,1,1},learn=215,name="Shadoweave Robe",prof=197,reagents={{4339,3},{10285,2},{8343,1}},sources={{t="trainer",unknownCost=true}}}
+R[12056]={colors={215,215,215,225},creates={10007,1,1},learn=215,name="Red Mageweave Vest",prof=197,reagents={{4339,3},{2604,2},{8343,1}},sources={{item=10300,t="drop"}}}
+R[12059]={colors={215,215,215,230},creates={10008,1,1},est=true,learn=215,name="White Bandit Mask",prof=197,reagents={{4339,1},{2324,1},{8343,1}},sources={{item=10301,t="drop"}}}
+R[12060]={colors={215,215,215,225},creates={10009,1,1},learn=215,name="Red Mageweave Pants",prof=197,reagents={{4339,3},{2604,2},{8343,1}},sources={{item=10302,t="drop"}}}
+R[12061]={colors={215,215,215,230},creates={10056,1,1},est=true,learn=215,name="Orange Mageweave Shirt",prof=197,reagents={{4339,1},{6261,1},{8343,1}},sources={{cost=2250,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12064]={colors={220,220,225,235},creates={10052,1,1},est=true,learn=220,name="Orange Martial Shirt",prof=197,reagents={{4339,2},{6261,2},{8343,1}},sources={{cost=3000,item=10311,limited=true,npcs={4168},t="vendor"},{cost=3157,item=10311,limited=true,npcs={3005},t="vendor"}}}
+R[12065]={colors={225,225,225,235},creates={10050,1,1},learn=225,name="Mageweave Bag",prof=197,reagents={{4339,4},{4291,2}},sources={{cost=4500,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12066]={colors={225,225,225,235},creates={10018,1,1},learn=225,name="Red Mageweave Gloves",prof=197,reagents={{4339,3},{2604,2},{8343,2}},sources={{item=10312,t="drop"}}}
+R[12067]={colors={225,225,225,235},creates={10019,1,1},learn=225,name="Dreamweave Gloves",prof=197,reagents={{4339,4},{8153,4},{10286,2},{8343,2}},sources={{cost=4500,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12069]={colors={225,225,225,235},creates={10042,1,1},learn=225,name="Cindercloth Robe",prof=197,reagents={{4339,5},{7077,2},{8343,2}},sources={{cost=4500,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12070]={colors={225,225,225,235},creates={10021,1,1},learn=225,name="Dreamweave Vest",prof=197,reagents={{4339,6},{8153,6},{10286,2},{8343,2}},sources={{cost=4500,npcs={1300,1346,2399,4576,11052,251972},t="trainer"}}}
+R[12071]={colors={225,225,225,235},creates={10023,1,1},learn=225,name="Shadoweave Gloves",prof=197,reagents={{4339,5},{10285,5},{8343,2}},sources={{t="trainer",unknownCost=true}}}
+R[12072]={colors={230,230,230,235},creates={10024,1,1},learn=230,name="Black Mageweave Headband",prof=197,reagents={{4339,3},{8343,2}},sources={{cost=6000,npcs={2399,11052},t="trainer"}}}
+R[12073]={colors={230,230,230,235},creates={10026,1,1},learn=230,name="Black Mageweave Boots",prof=197,reagents={{4339,3},{8343,2},{4304,2}},sources={{cost=6000,npcs={2399,11052},t="trainer"}}}
+R[12074]={colors={230,230,230,235},creates={10027,1,1},learn=230,name="Black Mageweave Shoulders",prof=197,reagents={{4339,3},{8343,2}},sources={{cost=6000,npcs={2399,11052},t="trainer"}}}
+R[12075]={colors={230,230,245,260},creates={10054,1,1},est=true,learn=230,name="Lavender Mageweave Shirt",prof=197,reagents={{4339,2},{4342,2},{8343,2}},sources={{cost=3764,item=10314,limited=true,npcs={3364},t="vendor"},{cost=4210,item=10314,limited=true,npcs={8681},t="vendor"}}}
+R[12076]={colors={235,235,235,240},creates={10028,1,1},learn=235,name="Shadoweave Shoulders",prof=197,reagents={{4339,5},{10285,4},{8343,2}},sources={{t="trainer",unknownCost=true}}}
+R[12077]={colors={235,235,250,265},creates={10053,1,1},est=true,learn=235,name="Simple Black Dress",prof=197,reagents={{4339,3},{2325,1},{8343,1},{2324,1}},sources={{cost=5000,npcs={2399,11052},t="trainer"}}}
+R[12078]={colors={235,235,235,240},creates={10029,1,1},learn=235,name="Red Mageweave Shoulders",prof=197,reagents={{4339,4},{2604,2},{8343,3}},sources={{item=10315,t="drop"}}}
+R[12079]={colors={235,235,235,240},creates={10051,1,1},learn=235,name="Red Mageweave Bag",prof=197,reagents={{4339,4},{2604,2},{8343,2}},sources={{cost=6500,npcs={2399,11052},t="trainer"}}}
+R[12080]={colors={235,235,250,265},creates={10055,1,1},est=true,learn=235,name="Pink Mageweave Shirt",prof=197,reagents={{4339,3},{10290,1},{8343,1}},sources={{cost=3764,item=10317,limited=true,npcs={3364},t="vendor"},{cost=4210,item=10317,limited=true,npcs={8681},t="vendor"}}}
+R[12081]={colors={240,240,240,245},creates={10030,1,1},learn=240,name="Admiral's Hat",prof=197,reagents={{4339,3},{4589,6},{8343,2}},sources={{cost=7000,item=10318,limited=true,npcs={2672},t="vendor"}}}
+R[12082]={colors={240,240,240,245},creates={10031,1,1},learn=240,name="Shadoweave Boots",prof=197,reagents={{4339,6},{10285,6},{8343,3},{4304,2}},sources={{t="trainer",unknownCost=true}}}
+R[12084]={colors={240,240,240,245},creates={10033,1,1},learn=240,name="Red Mageweave Headband",prof=197,reagents={{4339,4},{2604,2},{8343,2}},sources={{item=10320,t="drop"}}}
+R[12085]={colors={240,240,255,270},creates={10034,1,1},est=true,learn=240,name="Tuxedo Shirt",prof=197,reagents={{4339,4},{8343,2}},sources={{cost=4000,item=10321,limited=true,npcs={4577},t="vendor"},{cost=4500,item=10321,limited=true,npcs={8681},t="vendor"}}}
+R[12086]={colors={245,245,260,275},creates={10025,1,1},est=true,learn=245,name="Shadoweave Mask",prof=197,reagents={{4339,2},{10285,8},{8343,2}},sources={{item=10463,t="quest"}}}
+R[12088]={colors={245,245,260,275},creates={10044,1,1},est=true,learn=245,name="Cindercloth Boots",prof=197,reagents={{4339,5},{7077,1},{8343,3},{4304,2}},sources={{cost=7500,npcs={2399,11052},t="trainer"}}}
+R[12089]={colors={245,245,260,275},creates={10035,1,1},est=true,learn=245,name="Tuxedo Pants",prof=197,reagents={{4339,4},{8343,3}},sources={{cost=4000,item=10323,limited=true,npcs={4577},t="vendor"},{cost=4736,item=10323,limited=true,npcs={8681},t="vendor"}}}
+R[12091]={colors={250,250,265,280},creates={10040,1,1},est=true,learn=250,name="White Wedding Dress",prof=197,reagents={{4339,5},{8343,3},{2324,1}},sources={{cost=10000,item=10325,limited=true,npcs={1347},t="vendor"},{cost=10526,item=10325,limited=true,npcs={3005},t="vendor"}}}
+R[12092]={colors={250,250,265,280},creates={10041,1,1},est=true,learn=250,name="Dreamweave Circlet",prof=197,reagents={{4339,8},{8153,4},{10286,2},{8343,3},{6037,1},{1529,1}},sources={{cost=7500,npcs={2399,11052},t="trainer"}}}
+R[12093]={colors={250,250,265,280},creates={10036,1,1},est=true,learn=250,name="Tuxedo Jacket",prof=197,reagents={{4339,5},{8343,3}},sources={{cost=4444,item=10326,limited=true,npcs={4577},t="vendor"},{cost=5263,item=10326,limited=true,npcs={8681},t="vendor"}}}
+R[12259]={colors={155,155,167,180},creates={10423,1,1},learn=155,name="Silvered Bronze Leggings",prof=164,reagents={{2841,12},{2842,4},{3478,2}},sources={{item=10424,t="drop"}}}
+R[12260]={colors={1,15,35,55},creates={10421,1,1},learn=1,name="Rough Copper Vest",prof=164,reagents={{2840,4}},sources={{t="starter"}}}
+R[12584]={colors={150,150,170,190},creates={10558,3,3},learn=150,name="Gold Power Core",prof=202,reagents={{3577,1}},sources={{cost=1000,npcs={3412,5174,5518,8736,11017,11029,11031},t="trainer"}}}
+R[12585]={colors={175,175,185,195},creates={10505,1,1},learn=175,name="Solid Blasting Powder",prof=202,reagents={{7912,2}},sources={{cost=1000,npcs={5174,8736,11017},t="trainer"}}}
+R[12586]={colors={175,175,185,195},creates={10507,2,2},learn=175,name="Solid Dynamite",prof=202,reagents={{10505,1},{4306,1}},sources={{cost=1000,npcs={5174,8736,11017},t="trainer"}}}
+R[12587]={colors={175,195,205,215},creates={10499,1,1},learn=175,name="Bright-Eye Goggles",prof=202,reagents={{4234,6},{3864,2}},sources={{item=10601,t="drop"}}}
+R[12589]={colors={195,195,215,235},creates={10559,1,1},learn=195,name="Mithril Tube",prof=202,reagents={{3860,3}},sources={{cost=1300,npcs={5174,8736,11017},t="trainer"}}}
+R[12590]={colors={175,175,195,215},creates={10498,1,1},learn=175,name="Gyromatic Micro-Adjustor",prof=202,reagents={{3859,4}},sources={{cost=1000,npcs={5174,8736,11017},t="trainer"}}}
+R[12591]={colors={200,200,220,240},creates={10560,1,1},learn=200,name="Unstable Trigger",prof=202,reagents={{3860,1},{4338,1},{10505,1}},sources={{cost=1500,npcs={5174,8736,11017},t="trainer"}}}
+R[12594]={colors={205,225,235,245},creates={10500,1,1},learn=205,name="Fire Goggles",prof=202,reagents={{4385,1},{3864,2},{7068,2},{4234,4}},sources={{cost=1600,npcs={5174,8736,11017},t="trainer"}}}
+R[12595]={colors={205,225,235,245},creates={10508,1,1},learn=205,name="Mithril Blunderbuss",prof=202,reagents={{10559,1},{10560,1},{4400,1},{3860,4},{7068,2}},sources={{cost=1600,npcs={5174,8736,11017},t="trainer"}}}
+R[12596]={colors={210,210,230,250},creates={10512,200,200},learn=210,name="Hi-Impact Mithril Slugs",prof=202,reagents={{3860,1},{10505,1}},sources={{cost=1700,npcs={5174,8736,11017},t="trainer"}}}
+R[12597]={colors={210,230,240,250},creates={10546,1,1},learn=210,name="Deadly Scope",prof=202,reagents={{10559,1},{7909,2},{4304,2}},sources={{cost=3000,item=10602,limited=true,npcs={8679},t="vendor"},{cost=3157,item=10602,limited=true,npcs={9544},t="vendor"}}}
+R[12599]={colors={215,215,235,255},creates={10561,1,1},learn=215,name="Mithril Casing",prof=202,reagents={{3860,3}},sources={{cost=1800,npcs={5174,8736,11017},t="trainer"}}}
+R[12603]={colors={215,215,235,255},creates={10514,3,3},learn=215,name="Mithril Frag Bomb",prof=202,reagents={{10561,1},{10560,1},{10505,1}},sources={{cost=1800,npcs={5174,8736,11017},t="trainer"}}}
+R[12607]={colors={220,240,250,260},creates={10501,1,1},learn=220,name="Catseye Ultra Goggles",prof=202,reagents={{4304,4},{7909,2},{10592,1}},sources={{item=10603,t="drop"}}}
+R[12609]={colors={200,220,240,260},creates={10592,1,1},learn=200,name="Catseye Draught",prof=171,reagents={{3821,1},{3818,1},{3372,1}},sources={{cost=7200,npcs={1386,4160,4611,7948,246795,275322},t="trainer"}}}
+R[12614]={colors={220,240,250,260},creates={10510,1,1},learn=220,name="Mithril Heavy-bore Rifle",prof=202,reagents={{10559,2},{10560,1},{4400,1},{3860,6},{3864,2}},sources={{item=10604,t="drop"}}}
+R[12615]={colors={225,245,255,265},creates={10502,1,1},learn=225,name="Spellpower Goggles Xtreme",prof=202,reagents={{4304,4},{7910,2}},sources={{item=10605,t="drop"}}}
+R[12616]={colors={225,245,255,265},creates={10518,1,1},learn=225,name="Parachute Cloak",prof=202,reagents={{4339,4},{10285,2},{10560,1},{10505,4}},sources={{item=10606,t="drop"}}}
+R[12617]={colors={230,250,260,270},creates={10506,1,1},learn=230,name="Deepdive Helmet",prof=202,reagents={{3860,8},{10561,1},{6037,1},{818,4},{774,4}},sources={{cost=3600,item=10607,limited=true,npcs={8678},t="vendor"}}}
+R[12618]={colors={230,250,260,270},creates={10503,1,1},learn=230,name="Rose Colored Goggles",prof=202,reagents={{4304,6},{7910,2}},sources={{cost=2200,npcs={8736},t="trainer"}}}
+R[12619]={colors={235,235,255,275},creates={10562,4,4},learn=235,name="Hi-Explosive Bomb",prof=202,reagents={{10561,2},{10560,1},{10505,2}},sources={{cost=2400,npcs={8736},t="trainer"}}}
+R[12620]={colors={240,260,270,280},creates={10548,1,1},learn=240,name="Sniper Scope",prof=202,reagents={{10559,1},{7910,1},{6037,2}},sources={{item=10608,t="drop"}}}
+R[12621]={colors={245,245,265,285},creates={10513,200,200},learn=245,name="Mithril Gyro-Shot",prof=202,reagents={{3860,2},{10505,2}},sources={{cost=2800,npcs={8736},t="trainer"}}}
+R[12622]={colors={245,265,275,285},creates={10504,1,1},learn=245,name="Green Lens",prof=202,reagents={{4304,8},{1529,3},{7909,3},{10286,2},{8153,2}},sources={{cost=2800,npcs={8736},t="trainer"}}}
+R[12624]={colors={250,270,280,290},creates={10576,1,1},learn=250,name="Mithril Mechanical Dragonling",prof=202,reagents={{3860,14},{7077,4},{6037,4},{9060,2},{9061,2},{7910,2}},sources={{cost=4000,item=10609,limited=true,npcs={2688},t="vendor"}}}
+R[12715]={colors={205,205,225,245},creates={10644,1,1},est=true,learn=205,name="Goblin Rocket Fuel Recipe",prof=202,reagents={{10648,1},{10647,1}},sources={{cost=1000,npcs={260562},t="trainer"}},spec=20222}
+R[12716]={colors={225,225,235,245},creates={10577,1,1},learn=225,name="Goblin Mortar",prof=202,reagents={{10559,2},{3860,4},{10505,5},{10558,1},{7068,1}},sources={{t="other"}},spec=20222}
+R[12717]={colors={205,225,235,245},creates={10542,1,1},learn=205,name="Goblin Mining Helmet",prof=202,reagents={{3860,8},{3864,1},{7067,4}},sources={{cost=1500,npcs={260562},t="trainer"}},spec=20222}
+R[12718]={colors={205,225,235,245},creates={10543,1,1},learn=205,name="Goblin Construction Helmet",prof=202,reagents={{3860,8},{3864,1},{7068,4}},sources={{cost=1500,npcs={260562},t="trainer"}},spec=20222}
+R[12754]={colors={235,235,255,275},creates={10586,2,2},learn=235,name="The Big One",prof=202,reagents={{10561,1},{9061,1},{10507,6},{10560,1}},sources={{cost=2600,npcs={260562},t="trainer"}},spec=20222}
+R[12755]={colors={230,230,250,270},creates={10587,1,1},learn=230,name="Goblin Bomb Dispenser",prof=202,reagents={{10561,2},{10505,4},{6037,6},{10560,1},{4407,2}},sources={{cost=2400,npcs={260562},t="trainer"}},spec=20222}
+R[12758]={colors={245,265,275,285},creates={10588,1,1},learn=245,name="Goblin Rocket Helmet",prof=202,reagents={{10543,1},{9061,4},{3860,4},{10560,1}},sources={{cost=3000,npcs={260562},t="trainer"}},spec=20222}
+R[12759]={colors={240,260,270,280},creates={10645,1,1},learn=240,name="Gnomish Death Ray",prof=202,reagents={{10559,2},{10560,1},{12808,1},{7972,4},{9060,1}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12760]={colors={205,205,225,245},creates={10646,1,1},learn=205,name="Goblin Sapper Charge",prof=202,reagents={{4338,1},{10505,3},{10560,1}},sources={{cost=1500,npcs={260562},t="trainer"}},spec=20222}
+R[12895]={colors={205,205,225,245},creates={10713,1,1},est=true,learn=205,name="Inlaid Mithril Cylinder Plans",prof=202,reagents={{10648,1},{10647,1}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12897]={colors={210,230,240,250},creates={10545,1,1},learn=210,name="Gnomish Goggles",prof=202,reagents={{10500,1},{10559,1},{10558,2},{8151,2},{4234,2}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12899]={colors={205,225,235,245},creates={10716,1,1},learn=205,name="Gnomish Shrink Ray",prof=202,reagents={{10559,1},{10560,1},{3860,4},{8151,4},{1529,2}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12902]={colors={210,230,240,250},creates={10720,1,1},learn=210,name="Gnomish Net-o-Matic Projector",prof=202,reagents={{10559,1},{10285,2},{4337,4},{10505,2},{3860,4}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12903]={colors={215,235,245,255},creates={10721,1,1},learn=215,name="Gnomish Harm Prevention Belt",prof=202,reagents={{7387,1},{3860,4},{6037,2},{10560,1},{7909,2}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12905]={colors={225,245,255,265},creates={10724,1,1},learn=225,name="Gnomish Rocket Boots",prof=202,reagents={{10026,1},{10559,2},{4234,4},{10505,8},{4389,4}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12906]={colors={230,250,260,270},creates={10725,1,1},learn=230,name="Gnomish Battle Chicken",prof=202,reagents={{10561,1},{6037,6},{3860,6},{9060,2},{10558,1},{1529,2}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12907]={colors={235,255,265,275},creates={10726,1,1},learn=235,name="Gnomish Mind Control Cap",prof=202,reagents={{3860,10},{6037,4},{10558,1},{7910,2},{4338,4}},sources={{t="trainer",unknownCost=true}},spec=20219}
+R[12908]={colors={240,260,270,280},creates={10727,1,1},learn=240,name="Goblin Dragon Gun",prof=202,reagents={{10559,2},{9061,4},{3860,6},{6037,6},{10560,1}},sources={{cost=2800,npcs={260562},t="trainer"}},spec=20222}
+R[13028]={colors={175,215,235,255},creates={10841,4,4},learn=175,name="Goldthorn Tea",prof=185,reagents={{3821,1},{159,1}},sources={{t="other"}}}
+R[13378]={colors={105,130,150,170},learn=105,name="Enchant Shield - Minor Stamina",prof=333,reagents={{10998,1},{10940,1}},sources={{cost=600,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13380]={colors={110,135,155,175},learn=110,name="Enchant 2H Weapon - Lesser Spirit",prof=333,reagents={{10998,1},{10940,3}},sources={{item=11038,t="drop"}}}
+R[13419]={colors={110,135,155,175},learn=110,name="Enchant Cloak - Minor Agility",prof=333,reagents={{10998,1}},sources={{cost=842,item=11039,limited=true,npcs={3954},t="vendor"},{cost=842,item=11039,limited=true,npcs={12043},t="vendor"},{item=11039,t="drop"}}}
+R[13421]={colors={115,140,160,180},learn=115,name="Enchant Cloak - Lesser Protection",prof=333,reagents={{10940,3},{10978,1}},sources={{cost=800,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13464]={colors={115,140,160,180},learn=115,name="Enchant Shield - Lesser Protection",prof=333,reagents={{10940,1},{10978,1}},sources={{item=11081,t="drop"}}}
+R[13485]={colors={130,155,175,195},learn=130,name="Enchant Shield - Lesser Spirit",prof=333,reagents={{10998,1},{10940,2}},sources={{cost=1500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13501]={colors={130,155,175,195},learn=130,name="Enchant Bracer - Lesser Stamina",prof=333,reagents={{11083,1}},sources={{cost=1500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13503]={colors={140,165,185,205},learn=140,name="Enchant Weapon - Lesser Striking",prof=333,reagents={{11083,1},{11084,1}},sources={{cost=2000,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13522]={colors={135,160,180,200},learn=135,name="Enchant Cloak - Lesser Shadow Resistance",prof=333,reagents={{10998,1},{6048,1}},sources={{item=11098,t="drop"}}}
+R[13529]={colors={145,170,190,210},learn=145,name="Enchant 2H Weapon - Lesser Impact",prof=333,reagents={{11083,1},{11084,1}},sources={{cost=2400,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13536]={colors={140,165,185,205},learn=140,name="Enchant Bracer - Lesser Strength",prof=333,reagents={{11083,1}},sources={{cost=2631,item=11101,limited=true,npcs={3954},t="vendor"},{cost=2631,item=11101,limited=true,npcs={12043},t="vendor"}}}
+R[13538]={colors={140,165,185,205},learn=140,name="Enchant Chest - Lesser Absorption",prof=333,reagents={{10940,1},{10998,1},{11084,1}},sources={{cost=2500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13607]={colors={145,170,190,210},learn=145,name="Enchant Chest - Intellect",prof=333,reagents={{11082,1}},sources={{cost=2400,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13612]={colors={145,170,190,210},learn=145,name="Enchant Gloves - Mining",prof=333,reagents={{11083,1},{2772,1}},sources={{item=11150,t="drop"}}}
+R[13617]={colors={145,170,190,210},learn=145,name="Enchant Gloves - Herbalism",prof=333,reagents={{11083,1},{3356,1}},sources={{item=11151,t="drop"}}}
+R[13620]={colors={145,170,190,210},learn=145,name="Enchant Gloves - Fishing",prof=333,reagents={{11083,1},{6370,1}},sources={{item=11152,t="drop"}}}
+R[13622]={colors={150,175,195,215},learn=150,name="Enchant Bracer - Lesser Intellect",prof=333,reagents={{11082,1}},sources={{cost=2500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13626]={colors={150,175,195,215},learn=150,name="Enchant Chest - Minor Stats",prof=333,reagents={{10998,1},{11083,1},{11084,1}},sources={{cost=2500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13628]={colors={150,175,195,215},creates={11130,1,1},learn=150,name="Runed Golden Rod",prof=333,reagents={{11128,1},{5500,1},{11082,1},{11083,1}},sources={{cost=2500,npcs={1317,3011,3345,4213,4616,5157,11072,11073},t="trainer"}}}
+R[13631]={colors={155,175,195,215},learn=155,name="Enchant Shield - Lesser Stamina",prof=333,reagents={{11134,1}},sources={{cost=2600,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13635]={colors={155,175,195,215},learn=155,name="Enchant Cloak - Defense",prof=333,reagents={{11138,1},{11083,1}},sources={{cost=2600,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13637]={colors={160,180,200,220},learn=160,name="Enchant Boots - Lesser Agility",prof=333,reagents={{11083,1}},sources={{cost=2800,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13640]={colors={160,180,200,220},learn=160,name="Enchant Chest - Greater Stamina",prof=333,reagents={{11083,2}},sources={{cost=2700,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13642]={colors={165,185,205,225},learn=165,name="Enchant Bracer - Spirit",prof=333,reagents={{11134,1}},sources={{cost=2800,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13644]={colors={170,190,210,230},learn=170,name="Enchant Boots - Lesser Stamina",prof=333,reagents={{11083,2}},sources={{cost=2800,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13646]={colors={170,190,210,230},learn=170,name="Enchant Bracer - Lesser Deflection",prof=333,reagents={{11134,1},{11083,1}},sources={{cost=3000,item=11163,limited=true,npcs={2821},t="vendor"},{cost=3176,item=11163,limited=true,npcs={2381},t="vendor"}}}
+R[13648]={colors={170,190,210,230},learn=170,name="Enchant Bracer - Stamina",prof=333,reagents={{11083,3}},sources={{cost=2800,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13653]={colors={175,195,215,235},learn=175,name="Enchant Weapon - Lesser Beastslayer",prof=333,reagents={{5637,1},{11138,1}},sources={{item=11164,t="drop"}}}
+R[13655]={colors={175,195,215,235},learn=175,name="Enchant Weapon - Lesser Elemental Slayer",prof=333,reagents={{7067,1},{11138,1}},sources={{item=11165,t="drop"}}}
+R[13657]={colors={175,195,215,235},learn=175,name="Enchant Cloak - Fire Resistance",prof=333,reagents={{11134,1},{7068,1}},sources={{cost=3000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13659]={colors={180,200,220,240},learn=180,name="Enchant Shield - Spirit",prof=333,reagents={{11134,1},{11137,1}},sources={{cost=3200,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13661]={colors={180,200,220,240},learn=180,name="Enchant Bracer - Strength",prof=333,reagents={{11137,1}},sources={{cost=3600,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13663]={colors={185,205,225,245},learn=185,name="Enchant Chest - Greater Intellect",prof=333,reagents={{11134,1}},sources={{cost=3800,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13687]={colors={190,210,230,250},learn=190,name="Enchant Boots - Lesser Spirit",prof=333,reagents={{11134,2}},sources={{item=11167,t="drop"}}}
+R[13689]={colors={195,215,235,255},learn=195,name="Enchant Shield - Lesser Block",prof=333,reagents={{11135,1},{11137,1},{11139,1}},sources={{item=11168,t="drop"}}}
+R[13693]={colors={195,215,235,255},learn=195,name="Enchant Weapon - Striking",prof=333,reagents={{11135,1},{11139,1}},sources={{cost=4000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13695]={colors={200,220,240,260},learn=200,name="Enchant 2H Weapon - Impact",prof=333,reagents={{11137,2},{11139,1}},sources={{cost=4000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13698]={colors={200,220,240,260},learn=200,name="Enchant Gloves - Skinning",prof=333,reagents={{11137,1},{7392,1}},sources={{item=11166,t="drop"}}}
+R[13700]={colors={200,220,240,260},learn=200,name="Enchant Chest - Lesser Stats",prof=333,reagents={{11135,1},{11137,1},{11139,1}},sources={{cost=4000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13702]={colors={200,220,240,260},creates={11145,1,1},learn=200,name="Runed Truesilver Rod",prof=333,reagents={{11144,1},{7971,1},{11135,1},{11137,1}},sources={{cost=4000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13746]={colors={205,225,245,265},learn=205,name="Enchant Cloak - Greater Defense",prof=333,reagents={{11137,1}},sources={{cost=4200,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13794]={colors={205,225,245,265},learn=205,name="Enchant Cloak - Resistance",prof=333,reagents={{11174,1}},sources={{cost=4200,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13815]={colors={210,230,250,270},learn=210,name="Enchant Gloves - Agility",prof=333,reagents={{11137,1}},sources={{cost=4400,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13817]={colors={210,230,250,270},learn=210,name="Enchant Shield - Stamina",prof=333,reagents={{11137,2}},sources={{item=11202,t="drop"}}}
+R[13822]={colors={210,230,250,270},learn=210,name="Enchant Bracer - Intellect",prof=333,reagents={{11174,1}},sources={{cost=4400,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13836]={colors={215,235,255,275},learn=215,name="Enchant Boots - Stamina",prof=333,reagents={{11137,2}},sources={{cost=4600,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13841]={colors={215,235,255,275},learn=215,name="Enchant Gloves - Advanced Mining",prof=333,reagents={{11137,2},{6037,1}},sources={{item=11203,t="drop"}}}
+R[13846]={colors={220,240,260,280},learn=220,name="Enchant Bracer - Greater Spirit",prof=333,reagents={{11174,1},{11137,1}},sources={{item=11204,t="drop"}}}
+R[13858]={colors={220,240,260,280},learn=220,name="Enchant Chest - Superior Stamina",prof=333,reagents={{11137,3}},sources={{cost=4800,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13868]={colors={225,245,265,285},learn=225,name="Enchant Gloves - Advanced Herbalism",prof=333,reagents={{11137,2},{8838,1}},sources={{item=11205,t="drop"}}}
+R[13882]={colors={225,245,265,285},learn=225,name="Enchant Cloak - Lesser Agility",prof=333,reagents={{11174,1}},sources={{item=11206,t="drop"}}}
+R[13887]={colors={225,245,265,285},learn=225,name="Enchant Gloves - Strength",prof=333,reagents={{11174,1},{11137,2}},sources={{cost=5000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13890]={colors={225,245,265,285},learn=225,name="Enchant Boots - Minor Speed",prof=333,reagents={{11177,1},{7909,1},{11174,1}},sources={{cost=5000,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[13898]={colors={265,285,305,325},learn=265,name="Enchant Weapon - Fiery Weapon",prof=333,reagents={{11177,2},{7078,1}},sources={{item=11207,t="drop"}}}
+R[13905]={colors={230,250,270,290},learn=230,name="Enchant Shield - Greater Spirit",prof=333,reagents={{11174,2},{11176,1}},sources={{cost=5400,npcs={11073},t="trainer"}}}
+R[13915]={colors={230,250,270,290},learn=230,name="Enchant Weapon - Demonslaying",prof=333,reagents={{11177,1},{11176,1},{9224,1}},sources={{item=11208,t="drop"}}}
+R[13917]={colors={230,250,270,290},learn=230,name="Enchant Chest - Superior Intellect",prof=333,reagents={{11175,1}},sources={{cost=5400,npcs={11073},t="trainer"}}}
+R[13931]={colors={235,255,275,295},learn=235,name="Enchant Bracer - Deflection",prof=333,reagents={{11174,2},{11176,1}},sources={{cost=5155,item=11223,limited=true,npcs={989},t="vendor"},{cost=6105,item=11223,limited=true,npcs={4229},t="vendor"}}}
+R[13933]={colors={235,255,275,295},learn=235,name="Enchant Shield - Frost Resistance",prof=333,reagents={{11178,1},{3829,1}},sources={{item=11224,t="drop"}}}
+R[13935]={colors={235,255,275,295},learn=235,name="Enchant Boots - Agility",prof=333,reagents={{11175,1}},sources={{cost=5800,npcs={11073},t="trainer"}}}
+R[13937]={colors={240,260,280,300},learn=240,name="Enchant 2H Weapon - Greater Impact",prof=333,reagents={{11178,1},{11176,1}},sources={{cost=6200,npcs={11073},t="trainer"}}}
+R[13939]={colors={240,260,280,300},learn=240,name="Enchant Bracer - Greater Strength",prof=333,reagents={{11176,1},{11174,2}},sources={{cost=6200,npcs={11073},t="trainer"}}}
+R[13941]={colors={245,265,285,305},learn=245,name="Enchant Chest - Stats",prof=333,reagents={{11178,1},{11176,1},{11175,1}},sources={{cost=6200,npcs={11073},t="trainer"}}}
+R[13943]={colors={245,265,285,305},learn=245,name="Enchant Weapon - Greater Striking",prof=333,reagents={{11178,1},{11175,1}},sources={{cost=6200,npcs={11073},t="trainer"}}}
+R[13945]={colors={245,265,285,305},learn=245,name="Enchant Bracer - Greater Stamina",prof=333,reagents={{11176,3}},sources={{item=11225,t="drop"}}}
+R[13947]={colors={250,270,290,310},learn=250,name="Enchant Gloves - Riding Skill",prof=333,reagents={{11178,1},{11176,2}},sources={{item=11226,t="drop"}}}
+R[13948]={colors={250,270,290,310},learn=250,name="Enchant Gloves - Minor Haste",prof=333,reagents={{11178,1},{8153,1}},sources={{cost=6500,npcs={11073},t="trainer"}}}
+R[14293]={colors={10,75,95,115},creates={11287,1,1},learn=10,name="Lesser Magic Wand",prof=333,reagents={{4470,1},{10938,1}},sources={{cost=50,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[14379]={colors={150,150,165,180},creates={11128,1,1},est=true,learn=150,name="Golden Rod",prof=164,reagents={{3577,1},{3478,2}},sources={{cost=250,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[14380]={colors={200,200,212,225},creates={11144,1,1},est=true,learn=200,name="Truesilver Rod",prof=164,reagents={{6037,1},{3486,1}},sources={{cost=2500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[14807]={colors={70,110,130,150},creates={11288,1,1},learn=70,name="Greater Magic Wand",prof=333,reagents={{4470,1},{10938,2}},sources={{cost=200,npcs={1317,3011,3345,3606,4213,4616,5157,5695},t="trainer"}}}
+R[14809]={colors={155,175,195,215},creates={11289,1,1},learn=155,name="Lesser Mystic Wand",prof=333,reagents={{11291,1},{11134,1}},sources={{cost=2600,npcs={11072,11073,11074,251978},t="trainer"}}}
+R[14810]={colors={175,195,215,235},creates={217287,1,1},learn=175,name="Greater Mystic Wand",prof=333,reagents={{11291,1},{11134,1},{11137,1}},sources={{cost=3000,npcs={11073,11074,251978},t="trainer"}}}
+R[14930]={colors={225,225,230,240},creates={8217,1,1},learn=225,name="Quickdraw Quiver",prof=165,reagents={{4304,12},{8172,1},{8949,1},{4291,4}},sources={{cost=3240,npcs={3007,11098},t="trainer"}}}
+R[14932]={colors={225,225,230,240},creates={8218,1,1},learn=225,name="Thick Leather Ammo Pouch",prof=165,reagents={{4304,10},{8172,1},{8951,1},{4291,6}},sources={{cost=3240,npcs={3007,11098},t="trainer"}}}
+R[15255]={colors={200,200,220,240},creates={11590,1,1},learn=200,name="Mechanical Repair Kit",prof=202,reagents={{3860,1},{4338,1},{10505,1}},sources={{cost=1500,npcs={5174,8736,11017},t="trainer"}}}
+R[15292]={colors={265,265,270,280},creates={11608,1,1},learn=265,name="Dark Iron Pulverizer",prof=164,reagents={{11371,18},{7077,4}},sources={{item=11610,t="drop"}}}
+R[15293]={colors={270,270,275,285},creates={11606,1,1},learn=270,name="Dark Iron Mail",prof=164,reagents={{11371,10},{7077,2}},sources={{item=11614,t="drop"}}}
+R[15294]={colors={275,275,280,290},creates={11607,1,1},learn=275,name="Dark Iron Sunderer",prof=164,reagents={{11371,26},{7077,4}},sources={{item=11611,t="drop"}}}
+R[15295]={colors={280,280,285,295},creates={11605,1,1},learn=280,name="Dark Iron Shoulders",prof=164,reagents={{11371,6},{7077,1}},sources={{item=11615,t="drop"}}}
+R[15296]={colors={285,285,290,300},creates={11604,1,1},learn=285,name="Dark Iron Plate",prof=164,reagents={{11371,20},{7077,8}},sources={{item=11612,t="drop"}}}
+R[15596]={colors={265,285,305,325},learn=265,name="Smoking Heart of the Mountain",prof=333,reagents={{11382,1},{7078,1},{14343,3}},sources={{t="drop"}}}
+R[15628]={colors={205,205,225,245},creates={11825,1,1},est=true,learn=205,name="Pet Bombling",prof=202,reagents={{4394,1},{7077,1},{7191,1},{3860,6}},sources={{t="other"}},spec=20222}
+R[15633]={colors={205,205,225,245},creates={11826,1,1},est=true,learn=205,name="Lil' Smoky",prof=202,reagents={{7075,1},{4389,2},{7191,1},{3860,2},{6037,1}},sources={{t="other"}},spec=20219}
+R[15833]={colors={230,245,265,285},creates={12190,1,1},learn=230,name="Dreamless Sleep Potion",prof=171,reagents={{8831,3},{8925,1}},sources={{cost=9000,npcs={1386,7948},t="trainer"}}}
+R[15853]={colors={125,165,185,205},creates={12209,1,1},learn=125,name="Lean Wolf Steak",prof=185,reagents={{1015,1},{2678,1}},sources={{cost=1600,item=12227,limited=true,npcs={12246},t="vendor"}}}
+R[15855]={colors={175,215,235,255},creates={12210,1,1},learn=175,name="Roast Raptor",prof=185,reagents={{12184,1},{2692,1}},sources={{cost=5000,item=12228,npcs={734},t="vendor"},{cost=5000,item=12228,npcs={1148},t="vendor"},{cost=5000,item=12228,npcs={2810},t="vendor"},{cost=5000,item=12228,npcs={2821},t="vendor"},{cost=5000,item=12228,npcs={4879},t="vendor"},{cost=5000,item=12228,npcs={4897},t="vendor"},{cost=5000,item=12228,npcs={12245},t="vendor"}}}
+R[15856]={colors={175,215,235,255},creates={13851,1,1},learn=175,name="Hot Wolf Ribs",prof=185,reagents={{12203,1},{2692,1}},sources={{cost=5000,item=12229,npcs={7947},t="vendor"},{cost=5000,item=12229,npcs={8145},t="vendor"},{cost=5000,item=12229,limited=true,npcs={12246},t="vendor"}}}
+R[15861]={colors={175,215,235,255},creates={12212,2,2},learn=175,name="Jungle Stew",prof=185,reagents={{12202,1},{159,1},{4536,2}},sources={{cost=3000,item=12231,npcs={734},t="vendor"},{cost=3000,item=12231,npcs={1148},t="vendor"},{cost=3000,item=12231,npcs={12245},t="vendor"}}}
+R[15863]={colors={175,215,235,255},creates={12213,1,1},learn=175,name="Carrion Surprise",prof=185,reagents={{12037,1},{2692,1}},sources={{cost=4444,item=12232,npcs={989},t="vendor"},{cost=5000,item=12232,npcs={4879},t="vendor"},{cost=5000,item=12232,npcs={9636},t="vendor"},{cost=5000,item=12232,npcs={12245},t="vendor"}}}
+R[15865]={colors={175,215,235,255},creates={12214,1,1},learn=175,name="Mystery Stew",prof=185,reagents={{12037,1},{2596,1}},sources={{cost=3000,item=12233,npcs={4897},t="vendor"},{cost=3000,item=12233,limited=true,npcs={12246},t="vendor"},{cost=3157,item=12233,npcs={8150},t="vendor"}}}
+R[15906]={colors={200,240,260,280},creates={12217,1,1},learn=200,name="Dragonbreath Chili",prof=185,reagents={{12037,1},{4402,1},{2692,1}},sources={{cost=6588,item=12239,npcs={4879},t="vendor"},{cost=7000,item=12239,npcs={4897},t="vendor"},{cost=7000,item=12239,limited=true,npcs={12246},t="vendor"}}}
+R[15910]={colors={200,240,260,280},creates={12215,2,2},learn=200,name="Heavy Kodo Stew",prof=185,reagents={{12204,2},{3713,1},{159,1}},sources={{cost=7000,item=12240,npcs={9636},t="vendor"},{cost=7000,item=12240,npcs={12245},t="vendor"},{cost=7368,item=12240,npcs={8150},t="vendor"}}}
+R[15915]={colors={225,265,285,305},creates={12216,1,1},learn=225,name="Spiced Chili Crab",prof=185,reagents={{12206,1},{2692,2}},sources={{cost=10666,item=16111,npcs={989},t="vendor"},{cost=12000,item=16111,npcs={1149},t="vendor"},{cost=12000,item=16111,npcs={4305},t="vendor"}}}
+R[15933]={colors={225,265,285,305},creates={12218,1,1},learn=225,name="Monster Omelet",prof=185,reagents={{12207,1},{3713,2}},sources={{cost=11294,item=16110,npcs={2803},t="vendor"},{cost=12000,item=16110,npcs={2806},t="vendor"},{cost=12000,item=16110,npcs={11187},t="vendor"}}}
+R[15935]={colors={1,45,65,85},creates={12224,1,1},learn=1,name="Crispy Bat Wing",prof=185,reagents={{12223,1},{2678,1}},sources={{cost=25,item=12226,npcs={2118},t="vendor"}}}
+R[15972]={colors={180,180,192,205},creates={12259,1,1},learn=180,name="Glinting Steel Dagger",prof=164,reagents={{3859,10},{3466,2},{1206,1},{7067,1},{4234,1}},sources={{cost=7500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[15973]={colors={190,190,202,215},creates={12260,1,1},learn=190,name="Searing Golden Blade",prof=164,reagents={{3859,10},{3577,4},{7068,2},{4234,2}},sources={{item=12261,t="drop"}}}
+R[16639]={colors={250,250,260,270},creates={12644,1,1},est=true,learn=250,name="Dense Grinding Stone",prof=164,reagents={{12365,4}},sources={{cost=10000,npcs={2836},t="trainer"}}}
+R[16640]={colors={250,250,260,270},creates={12643,1,1},est=true,learn=250,name="Dense Weightstone",prof=164,reagents={{12365,1}},sources={{cost=10000,npcs={2836},t="trainer"}}}
+R[16641]={colors={250,250,260,270},creates={12404,1,1},est=true,learn=250,name="Dense Sharpening Stone",prof=164,reagents={{12365,1}},sources={{cost=10000,npcs={2836},t="trainer"}}}
+R[16642]={colors={250,250,255,265},creates={12405,1,1},learn=250,name="Thorium Armor",prof=164,reagents={{12359,16},{12361,1},{11188,4}},sources={{item=12682,t="drop"}}}
+R[16643]={colors={250,250,255,265},creates={12406,1,1},learn=250,name="Thorium Belt",prof=164,reagents={{12359,12},{11186,4}},sources={{item=12683,t="drop"}}}
+R[16644]={colors={255,255,260,270},creates={12408,1,1},learn=255,name="Thorium Bracers",prof=164,reagents={{12359,12},{11184,4}},sources={{item=12684,t="drop"}}}
+R[16645]={colors={260,260,265,275},creates={12416,1,1},learn=260,name="Radiant Belt",prof=164,reagents={{12359,10},{7077,2}},sources={{item=12685,t="drop"}}}
+R[16646]={colors={265,265,270,280},creates={12428,1,1},learn=265,name="Imperial Plate Shoulders",prof=164,reagents={{12359,24},{8170,6},{3864,2}},sources={{item=12687,t="quest"}}}
+R[16647]={colors={265,265,270,280},creates={12424,1,1},learn=265,name="Imperial Plate Belt",prof=164,reagents={{12359,22},{8170,6},{7909,1}},sources={{item=12688,t="quest"}}}
+R[16648]={colors={270,270,275,285},creates={12415,1,1},learn=270,name="Radiant Breastplate",prof=164,reagents={{12359,18},{7077,2},{7910,1}},sources={{item=12689,t="drop"}}}
+R[16649]={colors={270,270,275,285},creates={12425,1,1},learn=270,name="Imperial Plate Bracers",prof=164,reagents={{12359,20},{7910,1}},sources={{item=12690,t="quest"}}}
+R[16650]={colors={270,270,275,285},creates={12624,1,1},learn=270,name="Wildthorn Mail",prof=165,reagents={{8170,40},{12810,2},{12803,4},{8153,4},{12364,1},{14341,1}},sources={{item=12691,t="drop"}}}
+R[16651]={colors={275,275,280,290},creates={12645,1,1},learn=275,name="Thorium Shield Spike",prof=164,reagents={{12359,4},{12644,4},{7076,2}},sources={{item=12692,t="drop"}}}
+R[16652]={colors={280,280,285,295},creates={12409,1,1},learn=280,name="Thorium Boots",prof=164,reagents={{12359,20},{8170,8},{11185,4}},sources={{item=12693,t="drop"}}}
+R[16653]={colors={280,280,285,295},creates={12410,1,1},learn=280,name="Thorium Helm",prof=164,reagents={{12359,24},{7910,1},{11188,4}},sources={{item=12694,t="drop"}}}
+R[16654]={colors={285,285,290,300},creates={12418,1,1},learn=285,name="Radiant Gloves",prof=164,reagents={{12359,18},{7077,4}},sources={{item=12695,t="drop"}}}
+R[16655]={colors={290,290,295,305},creates={12631,1,1},learn=290,name="Fiery Plate Gauntlets",prof=164,reagents={{12359,20},{12655,6},{7078,2},{7910,4}},sources={{item=12699,t="quest"}}}
+R[16656]={colors={290,290,295,305},creates={12419,1,1},learn=290,name="Radiant Boots",prof=164,reagents={{12359,14},{7077,4}},sources={{item=12697,t="drop"}}}
+R[16657]={colors={295,295,300,310},creates={12426,1,1},learn=295,name="Imperial Plate Boots",prof=164,reagents={{12359,34},{7910,1},{7909,1}},sources={{item=12700,t="quest"}}}
+R[16658]={colors={295,295,300,310},creates={12427,1,1},learn=295,name="Imperial Plate Helm",prof=164,reagents={{12359,34},{7910,2}},sources={{item=12701,t="quest"}}}
+R[16659]={colors={295,295,300,310},creates={12417,1,1},learn=295,name="Radiant Circlet",prof=164,reagents={{12359,18},{7077,4}},sources={{item=12702,t="drop"}}}
+R[16660]={colors={290,290,295,305},creates={12625,1,1},learn=290,name="Dawnbringer Shoulders",prof=164,reagents={{12359,20},{12360,4},{12364,2},{7080,2}},sources={{cost=23157,item=12698,npcs={10856},standing=6,t="reputation"},{cost=23294,item=12698,npcs={10857},standing=6,t="reputation"},{cost=24750,item=12698,npcs={11536},standing=6,t="reputation"}}}
+R[16661]={colors={295,295,300,310},creates={12632,1,1},learn=295,name="Storm Gauntlets",prof=165,reagents={{8170,20},{12810,4},{7080,4},{12361,4},{14341,1}},sources={{cost=40000,item=12703,npcs={11278},t="vendor"},{item=12703,t="drop"}}}
+R[16662]={colors={300,300,305,315},creates={12414,1,1},learn=300,name="Thorium Leggings",prof=164,reagents={{12359,26},{11186,4}},sources={{item=12704,t="drop"}}}
+R[16663]={colors={300,300,305,315},creates={12422,1,1},learn=300,name="Imperial Plate Chest",prof=164,reagents={{12359,40},{7910,2}},sources={{item=12705,t="quest"}}}
+R[16664]={colors={300,300,305,315},creates={12610,1,1},learn=300,name="Runic Plate Shoulders",prof=164,reagents={{12359,20},{12360,2},{3577,6}},sources={{item=12706,t="drop"}}}
+R[16665]={colors={300,300,305,315},creates={12611,1,1},learn=300,name="Runic Plate Boots",prof=164,reagents={{12359,20},{12360,2},{2842,10}},sources={{item=12707,t="drop"}}}
+R[16667]={colors={285,285,290,300},learn=285,name="Demon Forged Breastplate",prof=164,reagents={{12359,40},{12662,10},{12361,4},{7910,4}},sources={{t="quest"}}}
+R[16724]={colors={300,310,320,330},creates={12633,1,1},learn=300,name="Whitesoul Helm",prof=164,reagents={{12359,20},{12655,4},{6037,6},{3577,6},{12800,2}},sources={{item=12711,t="drop"}}}
+R[16725]={colors={300,300,310,320},creates={12420,1,1},learn=300,name="Radiant Leggings",prof=164,reagents={{12359,20},{7077,4}},sources={{item=12713,t="drop"}}}
+R[16726]={colors={300,300,310,320},creates={12612,1,1},learn=300,name="Runic Plate Helm",prof=164,reagents={{12359,30},{12360,2},{6037,2},{12364,1}},sources={{item=12714,t="drop"}}}
+R[16728]={colors={300,300,300,310},creates={12636,1,1},learn=300,name="Helm of the Great Chief",prof=165,reagents={{8170,40},{12810,4},{8168,60},{12799,6},{12364,2},{14341,1}},sources={{item=12716,t="drop"}}}
+R[16729]={colors={300,320,330,340},creates={12640,1,1},learn=300,name="Lionheart Helm",prof=164,reagents={{12359,80},{12360,12},{8146,40},{12361,10},{12800,4}},sources={{item=12717,t="drop"}}}
+R[16730]={colors={300,300,310,320},creates={12429,1,1},learn=300,name="Imperial Plate Leggings",prof=164,reagents={{12359,44},{7910,2}},sources={{item=12715,t="quest"}}}
+R[16731]={colors={300,305,315,325},creates={12613,1,1},learn=300,name="Runic Breastplate",prof=164,reagents={{12359,40},{12360,2},{7910,1}},sources={{item=12718,t="drop"}}}
+R[16732]={colors={300,305,315,325},creates={12614,1,1},learn=300,name="Runic Plate Leggings",prof=164,reagents={{12359,40},{12360,2},{7910,1}},sources={{item=12719,t="drop"}}}
+R[16741]={colors={300,320,330,340},creates={12639,1,1},learn=300,name="Stronghold Gauntlets",prof=164,reagents={{12360,15},{12655,20},{7076,10},{12361,4},{12799,4}},sources={{item=12720,t="drop"}}}
+R[16742]={colors={300,320,330,340},creates={12620,1,1},learn=300,name="Enchanted Thorium Helm",prof=164,reagents={{12360,6},{12655,16},{7076,6},{12799,2},{12800,1}},sources={{item=12725,t="quest"}}}
+R[16744]={colors={300,320,330,340},creates={12619,1,1},learn=300,name="Enchanted Thorium Leggings",prof=164,reagents={{12360,10},{12655,20},{7080,6},{12361,2},{12364,1}},sources={{item=12726,t="quest"}}}
+R[16745]={colors={300,320,330,340},creates={12618,1,1},learn=300,name="Enchanted Thorium Breastplate",prof=164,reagents={{12360,8},{12655,24},{7076,4},{7080,4},{12364,2},{12800,2}},sources={{item=12727,t="quest"}}}
+R[16746]={colors={300,300,302,310},creates={12641,1,1},learn=300,name="Invulnerable Mail",prof=165,reagents={{249427,20},{12810,30},{12364,6},{12800,6},{249429,10},{14341,2}},sources={{item=12728,t="drop"}}}
+R[16969]={colors={275,275,287,300},creates={12773,1,1},learn=275,name="Ornate Thorium Handaxe",prof=164,reagents={{12359,20},{12799,2},{12644,2},{8170,4}},sources={{cost=16000,item=12819,npcs={11278},t="vendor"}}}
+R[16970]={colors={275,275,287,300},creates={12774,1,1},learn=275,name="Dawn's Edge",prof=164,reagents={{12359,30},{12655,4},{7910,4},{12361,4},{12644,2},{8170,4}},sources={{item=12821,t="quest"}}}
+R[16971]={colors={280,280,292,305},creates={12775,1,1},learn=280,name="Huge Thorium Battleaxe",prof=164,reagents={{12359,40},{12644,6},{8170,6}},sources={{cost=20000,item=12823,npcs={11278},t="vendor"}}}
+R[16973]={colors={280,280,292,305},creates={12776,1,1},learn=280,name="Enchanted Battlehammer",prof=164,reagents={{12359,20},{12655,6},{12364,2},{12804,4},{8170,4}},sources={{item=12824,t="quest"}}}
+R[16978]={colors={280,280,292,305},creates={12777,1,1},learn=280,name="Blazing Rapier",prof=164,reagents={{12655,10},{7078,4},{7077,4},{12800,2},{12644,2}},sources={{item=12825,t="quest"}}}
+R[16983]={colors={285,285,297,310},creates={12781,1,1},learn=285,name="Serenity",prof=164,reagents={{12655,6},{12360,2},{12804,4},{12799,2},{12361,2},{12364,1}},sources={{item=12827,t="drop"}}}
+R[16984]={colors={290,290,302,315},creates={12792,1,1},learn=290,name="Volcanic Hammer",prof=164,reagents={{12359,30},{7077,4},{7910,4},{8170,4}},sources={{item=12828,t="drop"}}}
+R[16985]={colors={290,290,302,315},creates={12782,1,1},learn=290,name="Corruption",prof=164,reagents={{12359,40},{12360,2},{12662,16},{12808,8},{12361,2},{12644,2},{8170,4}},sources={{item=12830,t="drop"}}}
+R[16988]={colors={300,320,330,340},creates={12796,1,1},learn=300,name="Hammer of the Titans",prof=164,reagents={{12359,50},{12360,15},{12809,4},{12810,6},{7076,10}},sources={{item=12833,t="drop"}}}
+R[16990]={colors={300,320,330,340},creates={12790,1,1},learn=300,name="Arcanite Champion",prof=164,reagents={{12360,15},{12800,8},{12811,1},{12799,4},{12810,8},{12644,2}},sources={{item=12834,t="drop"}}}
+R[16991]={colors={300,300,305,315},creates={12798,1,1},learn=300,name="Annihilator",prof=164,reagents={{12359,40},{12360,12},{12808,10},{12364,8},{12644,2},{12810,4}},sources={{item=12835,t="drop"}}}
+R[16992]={colors={300,320,330,340},creates={12797,1,1},learn=300,name="Frostguard",prof=164,reagents={{12360,18},{12361,8},{12800,8},{7080,4},{12644,2},{12810,4}},sources={{item=12836,t="drop"}}}
+R[16993]={colors={300,320,330,340},creates={12794,1,1},learn=300,name="Masterwork Stormhammer",prof=164,reagents={{12655,20},{12364,8},{12799,8},{7076,6},{12810,4}},sources={{item=12837,t="drop"}}}
+R[16994]={colors={300,320,330,340},creates={12784,1,1},learn=300,name="Arcanite Reaper",prof=164,reagents={{12360,20},{12810,6},{12644,2}},sources={{item=12838,t="drop"}}}
+R[16995]={colors={300,320,330,340},creates={12783,1,1},learn=300,name="Heartseeker",prof=164,reagents={{12360,10},{12655,10},{12810,2},{7910,6},{12800,6},{12799,6},{12644,4}},sources={{item=12839,t="drop"}}}
+R[17180]={colors={250,250,255,260},creates={12655,1,1},learn=250,name="Enchanted Thorium",prof=333,reagents={{12359,1},{11176,3}},sources={{cost=10000,npcs={11073},t="trainer"}}}
+R[17181]={colors={250,250,255,260},creates={12810,1,1},learn=250,name="Enchanted Leather",prof=333,reagents={{8170,1},{16202,1}},sources={{cost=10000,npcs={11073},t="trainer"}}}
+R[17187]={colors={275,275,282,290},creates={12360,1,1},learn=275,name="Transmute: Arcanite",prof=171,reagents={{12359,1},{12363,1}},sources={{cost=50000,item=12958,npcs={5594},t="vendor"}}}
+R[17551]={colors={250,250,255,260},creates={13423,2,2},learn=250,name="Stonescale Oil",prof=171,reagents={{13422,1},{3372,1}},sources={{cost=13500,npcs={1386,7948},t="trainer"}}}
+R[17552]={colors={255,270,290,310},creates={13442,1,1},learn=255,name="Mighty Rage Potion",prof=171,reagents={{8846,3},{8925,1}},sources={{item=13476,t="drop"}}}
+R[17553]={colors={260,275,295,315},creates={13443,1,1},learn=260,name="Superior Mana Potion",prof=171,reagents={{8838,2},{8839,2},{8925,1}},sources={{cost=12000,item=13477,limited=true,npcs={4226},t="vendor"},{cost=12000,item=13477,limited=true,npcs={4610},t="vendor"}}}
+R[17554]={colors={265,280,300,320},creates={13445,1,1},learn=265,name="Elixir of Greater Defense",prof=171,reagents={{13423,2},{8838,1},{8925,1}},sources={{cost=13000,item=13478,limited=true,npcs={3348},t="vendor"},{cost=13684,item=13478,limited=true,npcs={5178},t="vendor"}}}
+R[17555]={colors={270,285,305,325},creates={13447,1,1},learn=270,name="Elixir of the Sages",prof=171,reagents={{13463,1},{13466,2},{8925,1}},sources={{item=13479,t="drop"}}}
+R[17557]={colors={275,290,310,330},creates={13453,1,1},learn=275,name="Elixir of Brute Force",prof=171,reagents={{8846,2},{13466,2},{8925,1}},sources={{item=13481,t="drop"}}}
+R[17559]={colors={275,275,282,290},creates={7078,1,1},learn=275,name="Transmute: Air to Fire",prof=171,reagents={{7082,1}},sources={{cost=15000,item=13482,npcs={10856},standing=5,t="reputation"},{cost=15789,item=13482,npcs={10857},standing=5,t="reputation"},{cost=15882,item=13482,npcs={11536},standing=5,t="reputation"}}}
+end)()
+;(function()
+R[17560]={colors={275,275,282,290},creates={7076,1,1},learn=275,name="Transmute: Fire to Earth",prof=171,reagents={{7078,1}},sources={{t="vendor",unknownCost=true}}}
+R[17561]={colors={275,275,282,290},creates={7080,1,1},learn=275,name="Transmute: Earth to Water",prof=171,reagents={{7076,1}},sources={{t="vendor",unknownCost=true}}}
+R[17562]={colors={275,275,282,290},creates={7082,1,1},learn=275,name="Transmute: Water to Air",prof=171,reagents={{7080,1}},sources={{cost=15000,item=13485,npcs={11278},t="vendor"}}}
+R[17563]={colors={275,275,282,290},creates={7080,1,1},learn=275,name="Transmute: Undeath to Water",prof=171,reagents={{12808,1}},sources={{t="drop"}}}
+R[17564]={colors={275,275,282,290},creates={12808,1,1},learn=275,name="Transmute: Water to Undeath",prof=171,reagents={{7080,1}},sources={{item=13487,t="drop"}}}
+R[17565]={colors={275,275,282,290},creates={7076,1,1},learn=275,name="Transmute: Life to Earth",prof=171,reagents={{12803,1}},sources={{t="drop"}}}
+R[17566]={colors={275,275,282,290},creates={12803,1,1},learn=275,name="Transmute: Earth to Life",prof=171,reagents={{7076,1}},sources={{item=13489,t="drop"}}}
+R[17570]={colors={280,295,315,335},creates={13455,1,1},learn=280,name="Greater Stoneshield Potion",prof=171,reagents={{13423,3},{10620,1},{8925,1}},sources={{item=13490,t="drop"}}}
+R[17571]={colors={280,295,315,335},creates={13452,1,1},learn=280,name="Elixir of the Mongoose",prof=171,reagents={{13465,2},{13466,2},{8925,1}},sources={{item=13491,t="drop"}}}
+R[17572]={colors={285,300,320,340},creates={13462,1,1},learn=285,name="Purification Potion",prof=171,reagents={{13467,2},{13466,2},{8925,1}},sources={{item=13492,t="drop"}}}
+R[17573]={colors={285,300,320,340},creates={13454,1,1},learn=285,name="Greater Arcane Elixir",prof=171,reagents={{13463,3},{13465,1},{8925,1}},sources={{item=13493,t="drop"}}}
+R[17574]={colors={290,305,325,345},creates={13457,1,1},learn=290,name="Greater Fire Protection Potion",prof=171,reagents={{7068,1},{13463,1},{8925,1}},sources={{item=13494,t="drop"}}}
+R[17575]={colors={290,305,325,345},creates={13456,1,1},learn=290,name="Greater Frost Protection Potion",prof=171,reagents={{7070,1},{13463,1},{8925,1}},sources={{item=13495,t="drop"}}}
+R[17576]={colors={290,305,325,345},creates={13458,1,1},learn=290,name="Greater Nature Protection Potion",prof=171,reagents={{7067,1},{13463,1},{8925,1}},sources={{item=13496,t="drop"}}}
+R[17577]={colors={290,305,325,345},creates={13461,1,1},learn=290,name="Greater Arcane Protection Potion",prof=171,reagents={{11176,1},{13463,1},{8925,1}},sources={{item=13497,t="drop"}}}
+R[17578]={colors={290,305,325,345},creates={13459,1,1},learn=290,name="Greater Shadow Protection Potion",prof=171,reagents={{3824,1},{13463,1},{8925,1}},sources={{item=13499,t="drop"}}}
+R[17580]={colors={295,310,330,350},creates={13444,1,1},learn=295,name="Major Mana Potion",prof=171,reagents={{13463,3},{13467,2},{8925,1}},sources={{cost=30000,item=13501,npcs={11278},t="vendor"},{item=13501,t="drop"}}}
+R[17632]={colors={300,315,322,330},creates={13503,1,1},learn=300,name="Alchemist's Stone",prof=171,reagents={{7078,8},{7076,8},{7082,8},{7080,8},{12803,8},{9262,2},{13468,4}},sources={{t="other"}}}
+R[17634]={colors={300,315,322,330},creates={13506,1,1},learn=300,name="Flask of Petrification",prof=171,reagents={{13423,30},{13465,10},{13468,1},{8925,1}},sources={{item=13518,t="drop"}}}
+R[17635]={colors={300,315,322,330},creates={13510,1,1},learn=300,name="Flask of the Titans",prof=171,reagents={{8846,30},{13423,10},{13468,1},{8925,1}},sources={{item=13519,t="drop"}}}
+R[17636]={colors={300,315,322,330},creates={13511,1,1},learn=300,name="Flask of Distilled Wisdom",prof=171,reagents={{13463,30},{13467,10},{13468,1},{8925,1}},sources={{item=13520,t="drop"}}}
+R[17637]={colors={300,315,322,330},creates={13512,1,1},learn=300,name="Flask of Supreme Power",prof=171,reagents={{13463,30},{13465,10},{13468,1},{8925,1}},sources={{item=13521,t="drop"}}}
+R[17638]={colors={300,315,322,330},creates={13513,1,1},learn=300,name="Flask of Chromatic Resistance",prof=171,reagents={{13467,30},{13465,10},{13468,1},{8925,1}},sources={{item=13522,t="drop"}}}
+R[18238]={colors={225,265,285,305},creates={6887,1,1},learn=225,name="Spotted Yellowtail",prof=185,reagents={{4603,1}},sources={{cost=16000,item=13939,npcs={8137},t="vendor"}}}
+R[18239]={colors={225,265,285,305},creates={13927,1,1},learn=225,name="Cooked Glossy Mightfish",prof=185,reagents={{13754,1},{3713,1}},sources={{cost=16000,item=13940,npcs={2664},t="vendor"}}}
+R[18240]={colors={240,280,300,320},creates={13928,1,1},learn=240,name="Grilled Squid",prof=185,reagents={{13755,1},{3713,1}},sources={{cost=16000,item=13942,npcs={8137},t="vendor"}}}
+R[18241]={colors={225,265,285,305},creates={13930,1,1},learn=225,name="Filet of Redgill",prof=185,reagents={{13758,1}},sources={{cost=16000,item=13941,npcs={2664},t="vendor"}}}
+R[18242]={colors={240,280,300,320},creates={13929,1,1},learn=240,name="Hot Smoked Bass",prof=185,reagents={{13756,1},{2692,2}},sources={{cost=16000,item=13943,npcs={2664},t="vendor"}}}
+R[18243]={colors={250,290,310,330},creates={13931,1,1},learn=250,name="Nightfin Soup",prof=185,reagents={{13759,1},{159,1}},sources={{cost=20000,item=13945,npcs={8137},t="vendor"}}}
+R[18244]={colors={250,290,310,330},creates={13932,1,1},learn=250,name="Poached Sunscale Salmon",prof=185,reagents={{13760,1}},sources={{cost=20000,item=13946,npcs={8137},t="vendor"}}}
+R[18245]={colors={275,315,335,355},creates={13933,1,1},learn=275,name="Lobster Stew",prof=185,reagents={{13888,1},{159,1}},sources={{cost=20000,item=13947,npcs={7947},t="vendor"},{cost=20000,item=13947,npcs={8145},t="vendor"}}}
+R[18246]={colors={275,315,335,355},creates={13934,1,1},learn=275,name="Mightfish Steak",prof=185,reagents={{13893,1},{2692,1},{3713,1}},sources={{cost=20000,item=13948,npcs={7947},t="vendor"},{cost=20000,item=13948,npcs={8145},t="vendor"}}}
+R[18247]={colors={275,315,335,355},creates={13935,1,1},learn=275,name="Baked Salmon",prof=185,reagents={{13889,1},{3713,1}},sources={{cost=20000,item=13949,npcs={7947},t="vendor"},{cost=20000,item=13949,npcs={8145},t="vendor"}}}
+R[18401]={colors={250,250,265,280},creates={14048,1,1},est=true,learn=250,name="Bolt of Runecloth",prof=197,reagents={{14047,5}},sources={{cost=10000,npcs={2399,11052},t="trainer"}}}
+R[18402]={colors={255,255,270,285},creates={13856,1,1},est=true,learn=255,name="Runecloth Belt",prof=197,reagents={{14048,3},{14341,1}},sources={{cost=10000,npcs={2399,11052},t="trainer"}}}
+R[18403]={colors={255,255,270,285},creates={13869,1,1},est=true,learn=255,name="Frostweave Tunic",prof=197,reagents={{14048,5},{7079,2},{14341,1}},sources={{item=14466,t="drop"}}}
+R[18404]={colors={255,255,270,285},creates={13868,1,1},est=true,learn=255,name="Frostweave Robe",prof=197,reagents={{14048,5},{7079,2},{14341,1}},sources={{item=14467,t="drop"}}}
+R[18405]={colors={260,260,275,290},creates={14046,1,1},est=true,learn=260,name="Runecloth Bag",prof=197,reagents={{14048,5},{8170,2},{14341,1},{249430,4},{249409,2}},sources={{cost=12000,item=14468,limited=true,npcs={11189},t="vendor"}}}
+R[18406]={colors={260,260,275,290},creates={13858,1,1},est=true,learn=260,name="Runecloth Robe",prof=197,reagents={{14048,5},{14227,1},{14341,1}},sources={{cost=12000,item=14469,limited=true,npcs={7940},t="vendor"}}}
+R[18407]={colors={260,260,275,290},creates={13857,1,1},est=true,learn=260,name="Runecloth Tunic",prof=197,reagents={{14048,5},{14227,1},{14341,1}},sources={{item=14470,t="drop"}}}
+R[18408]={colors={260,260,275,290},creates={14042,1,1},est=true,learn=260,name="Cindercloth Vest",prof=197,reagents={{14048,5},{7077,3},{14341,1}},sources={{item=14471,t="drop"}}}
+R[18409]={colors={265,265,265,270},creates={13860,1,1},learn=265,name="Runecloth Cloak",prof=197,reagents={{14048,4},{14227,1},{14341,1}},sources={{cost=12000,item=14472,limited=true,npcs={7940},t="vendor"}}}
+R[18410]={colors={265,265,277,290},creates={14143,1,1},est=true,learn=265,name="Ghostweave Belt",prof=197,reagents={{14048,3},{9210,2},{14227,1},{14341,1}},sources={{item=14473,t="drop"}}}
+R[18411]={colors={265,265,277,290},creates={13870,1,1},est=true,learn=265,name="Frostweave Gloves",prof=197,reagents={{14048,3},{7080,1},{14341,1}},sources={{item=14474,t="drop"}}}
+R[18412]={colors={270,270,280,295},creates={14043,1,1},est=true,learn=270,name="Cindercloth Gloves",prof=197,reagents={{14048,4},{7077,3},{14341,1}},sources={{item=14476,t="drop"}}}
+R[18413]={colors={270,270,280,295},creates={14142,1,1},est=true,learn=270,name="Ghostweave Gloves",prof=197,reagents={{14048,4},{9210,2},{14227,1},{14341,1}},sources={{item=14477,t="drop"}}}
+R[18414]={colors={270,270,280,295},creates={14100,1,1},est=true,learn=270,name="Brightcloth Robe",prof=197,reagents={{14048,5},{3577,2},{14341,1}},sources={{item=14478,t="drop"}}}
+R[18415]={colors={270,270,280,295},creates={14101,1,1},est=true,learn=270,name="Brightcloth Gloves",prof=197,reagents={{14048,4},{3577,2},{14341,1}},sources={{item=14479,t="drop"}}}
+R[18416]={colors={275,275,290,305},creates={14141,1,1},est=true,learn=275,name="Ghostweave Vest",prof=197,reagents={{14048,6},{9210,4},{14227,1},{14341,1}},sources={{item=14480,t="drop"}}}
+R[18417]={colors={275,275,290,305},creates={13863,1,1},est=true,learn=275,name="Runecloth Gloves",prof=197,reagents={{14048,4},{8170,4},{14341,1}},sources={{cost=16000,item=14481,npcs={11189},t="vendor"}}}
+R[18418]={colors={275,275,290,305},creates={14044,1,1},est=true,learn=275,name="Cindercloth Cloak",prof=197,reagents={{14048,5},{7078,1},{14341,1}},sources={{item=14482,t="drop"}}}
+R[18419]={colors={275,275,290,305},creates={14107,1,1},est=true,learn=275,name="Felcloth Pants",prof=197,reagents={{14048,5},{14256,4},{14341,1}},sources={{cost=16000,item=14483,limited=true,npcs={12022},t="vendor"}}}
+R[18420]={colors={275,275,290,305},creates={14103,1,1},est=true,learn=275,name="Brightcloth Cloak",prof=197,reagents={{14048,4},{3577,2},{14341,1}},sources={{item=14484,t="drop"}}}
+R[18421]={colors={275,275,290,305},creates={14132,1,1},est=true,learn=275,name="Wizardweave Leggings",prof=197,reagents={{14048,6},{11176,1},{14341,1}},sources={{item=14485,t="drop"}}}
+R[18422]={colors={275,275,275,280},creates={14134,1,1},learn=275,name="Cloak of Fire",prof=197,reagents={{14048,6},{7078,4},{7077,4},{7068,4},{14341,1}},sources={{item=14486,t="drop"}}}
+R[18423]={colors={280,280,295,310},creates={13864,1,1},est=true,learn=280,name="Runecloth Boots",prof=197,reagents={{14048,4},{14227,2},{8170,4},{14341,1}},sources={{cost=20000,item=14488,limited=true,npcs={7940},t="vendor"}}}
+R[18424]={colors={280,280,295,310},creates={13871,1,1},est=true,learn=280,name="Frostweave Pants",prof=197,reagents={{14048,6},{7080,1},{14341,1}},sources={{item=14489,t="drop"}}}
+R[18434]={colors={280,280,295,310},creates={14045,1,1},est=true,learn=280,name="Cindercloth Pants",prof=197,reagents={{14048,6},{7078,1},{14341,1}},sources={{item=14490,t="drop"}}}
+R[18436]={colors={285,285,285,290},creates={14136,1,1},learn=285,name="Robe of Winter Night",prof=197,reagents={{14048,10},{14256,12},{12808,4},{7080,4},{14341,1}},sources={{item=14493,t="drop"}}}
+R[18437]={colors={285,285,300,315},creates={14108,1,1},est=true,learn=285,name="Felcloth Boots",prof=197,reagents={{14048,6},{14256,4},{8170,4},{14341,1}},sources={{item=14492,t="drop"}}}
+R[18438]={colors={285,285,300,315},creates={13865,1,1},est=true,learn=285,name="Runecloth Pants",prof=197,reagents={{14048,6},{14227,2},{14341,1}},sources={{item=14491,t="drop"}}}
+R[18439]={colors={290,290,305,320},creates={14104,1,1},est=true,learn=290,name="Brightcloth Pants",prof=197,reagents={{14048,6},{3577,4},{14227,1},{14341,1}},sources={{item=14494,t="drop"}}}
+R[18440]={colors={290,290,290,300},creates={14137,1,1},learn=290,name="Mooncloth Leggings",prof=197,reagents={{14048,6},{14342,4},{14341,1}},sources={{item=14497,t="drop"}}}
+R[18441]={colors={290,290,305,320},creates={14144,1,1},est=true,learn=290,name="Ghostweave Pants",prof=197,reagents={{14048,6},{9210,4},{14341,1}},sources={{item=14495,t="drop"}}}
+R[18442]={colors={290,290,305,320},creates={14111,1,1},est=true,learn=290,name="Felcloth Hood",prof=197,reagents={{14048,5},{14256,4},{14341,1}},sources={{item=14496,t="drop"}}}
+R[18444]={colors={295,295,305,320},creates={13866,1,1},est=true,learn=295,name="Runecloth Headband",prof=197,reagents={{14048,4},{14227,2},{14341,1}},sources={{item=14498,t="drop"}}}
+R[18445]={colors={300,300,310,325},creates={14155,1,1},est=true,learn=300,name="Mooncloth Bag",prof=197,reagents={{14048,4},{14342,1},{14341,1},{249431,10},{249430,2},{249409,4}},sources={{item=14499,t="drop"}}}
+R[18446]={colors={300,300,310,325},creates={14128,1,1},est=true,learn=300,name="Wizardweave Robe",prof=197,reagents={{14048,8},{11176,2},{14341,1}},sources={{item=14500,t="drop"}}}
+R[18447]={colors={300,300,300,315},creates={14138,1,1},learn=300,name="Mooncloth Vest",prof=197,reagents={{14048,6},{14342,4},{14341,1}},sources={{item=14501,t="drop"}}}
+R[18448]={colors={300,300,305,320},creates={14139,1,1},learn=300,name="Mooncloth Shoulders",prof=197,reagents={{14048,5},{14342,5},{14341,1}},sources={{item=14507,t="drop"}}}
+R[18449]={colors={300,300,300,305},creates={13867,1,1},learn=300,name="Runecloth Shoulders",prof=197,reagents={{14048,7},{14227,2},{8170,4},{14341,1}},sources={{item=14504,t="drop"}}}
+R[18450]={colors={300,300,300,305},creates={14130,1,1},learn=300,name="Wizardweave Turban",prof=197,reagents={{14048,6},{11176,4},{7910,1},{14341,1}},sources={{item=14505,t="drop"}}}
+R[18451]={colors={300,300,300,305},creates={14106,1,1},learn=300,name="Felcloth Robe",prof=197,reagents={{14048,8},{14256,8},{12662,4},{14341,2}},sources={{item=14506,t="drop"}}}
+R[18452]={colors={300,300,310,325},creates={14140,1,1},learn=300,name="Mooncloth Circlet",prof=197,reagents={{14048,4},{14342,6},{12800,1},{12810,2},{14341,2}},sources={{item=14509,t="drop"}}}
+R[18453]={colors={300,300,300,310},creates={14112,1,1},learn=300,name="Felcloth Shoulders",prof=197,reagents={{14048,7},{14256,6},{12662,4},{8170,4},{14341,2}},sources={{item=14508,t="drop"}}}
+R[18454]={colors={300,310,325,340},creates={14146,1,1},learn=300,name="Gloves of Spell Mastery",prof=197,reagents={{14048,10},{14342,8},{9210,8},{13926,4},{12364,4},{12810,6},{14341,2},{249431,10}},sources={{item=14511,t="drop"}}}
+R[18455]={colors={300,315,330,345},creates={14156,1,1},learn=300,name="Bottomless Bag",prof=197,reagents={{14048,8},{14342,12},{14344,2},{249429,5},{249428,5},{249431,8},{14341,2}},sources={{item=14510,t="drop"}}}
+R[18456]={colors={300,310,325,340},creates={14154,1,1},learn=300,name="Truefaith Vestments",prof=197,reagents={{14048,12},{14342,8},{12811,2},{13926,2},{9210,8},{14341,2},{249431,10}},sources={{item=14512,t="drop"}}}
+R[18457]={colors={300,310,325,340},creates={14152,1,1},learn=300,name="Robe of the Archmage",prof=197,reagents={{14048,12},{7078,8},{7082,8},{7076,8},{7080,8},{14341,2},{249431,10}},sources={{item=14513,t="drop"}}}
+R[18458]={colors={300,310,325,340},creates={14153,1,1},learn=300,name="Robe of the Void",prof=197,reagents={{14048,12},{12662,20},{14256,40},{7078,8},{12808,8},{14341,2},{249431,10}},sources={{item=14514,t="drop"}}}
+R[18560]={colors={250,270,285,300},creates={14342,1,1},learn=250,name="Mooncloth",prof=197,reagents={{14256,2}},sources={{cost=20000,item=14526,npcs={11189},t="vendor"}}}
+R[18629]={colors={260,260,290,320},creates={14529,1,1},learn=260,name="Runecloth Bandage",prof=129,reagents={{14047,1}},sources={{t="other"}}}
+R[18630]={colors={290,290,320,350},creates={14530,1,1},learn=290,name="Heavy Runecloth Bandage",prof=129,reagents={{14047,2}},sources={{t="other"}}}
+R[19047]={colors={250,250,260,270},creates={15407,2,2},est=true,learn=250,name="Cured Rugged Hide",prof=165,reagents={{8171,1},{15409,1}},sources={{cost=5000,npcs={11098},t="trainer"}}}
+R[19048]={colors={255,255,260,270},creates={15077,1,1},learn=255,name="Heavy Scorpid Bracers",prof=165,reagents={{8170,4},{15408,4},{14341,1}},sources={{cost=12000,item=15724,limited=true,npcs={12956},t="vendor"}}}
+R[19049]={colors={260,260,265,275},creates={15083,1,1},learn=260,name="Wicked Leather Gauntlets",prof=165,reagents={{8170,8},{2325,1},{14341,1}},sources={{cost=12000,item=15725,npcs={12943},t="vendor"},{cost=13500,item=15725,limited=true,npcs={12942},t="vendor"}}}
+R[19050]={colors={260,260,265,275},creates={15045,1,1},learn=260,name="Green Dragonscale Breastplate",prof=165,reagents={{8170,20},{15412,25},{14341,2}},sources={{cost=12000,item=15726,limited=true,npcs={11874},t="vendor"}}}
+R[19051]={colors={265,265,270,280},creates={15076,1,1},learn=265,name="Heavy Scorpid Vest",prof=165,reagents={{8170,6},{15408,6},{14341,1}},sources={{item=15727,t="drop"}}}
+R[19052]={colors={265,265,270,280},creates={15084,1,1},learn=265,name="Wicked Leather Bracers",prof=165,reagents={{8170,8},{2325,1},{14341,1}},sources={{item=15728,t="drop"}}}
+R[19053]={colors={265,265,270,280},creates={15074,1,1},learn=265,name="Chimeric Gloves",prof=165,reagents={{8170,6},{15423,6},{14341,1}},sources={{cost=12000,item=15729,limited=true,npcs={12957},t="vendor"}}}
+R[19054]={colors={300,310,320,330},creates={15047,1,1},learn=300,name="Red Dragonscale Breastplate",prof=165,reagents={{8170,40},{15414,30},{14341,1}},sources={{item=15730,t="drop"}}}
+R[19055]={colors={270,270,275,285},creates={15091,1,1},learn=270,name="Runic Leather Gauntlets",prof=165,reagents={{8170,10},{14047,6},{14341,1}},sources={{item=15731,t="drop"}}}
+R[19058]={colors={250,250,260,270},creates={15564,1,1},est=true,learn=250,name="Rugged Armor Kit",prof=165,reagents={{8170,5}},sources={{cost=5000,npcs={11098},t="trainer"}}}
+R[19059]={colors={270,270,275,285},creates={15054,1,1},learn=270,name="Volcanic Leggings",prof=165,reagents={{8170,6},{7078,1},{7075,1},{14341,1}},sources={{item=15732,t="drop"}}}
+R[19060]={colors={270,270,275,285},creates={15046,1,1},learn=270,name="Green Dragonscale Leggings",prof=165,reagents={{8170,20},{15412,25},{14341,1}},sources={{item=15733,t="drop"}}}
+R[19061]={colors={270,270,275,285},creates={15061,1,1},learn=270,name="Living Shoulders",prof=165,reagents={{8170,12},{12803,4},{14341,1}},sources={{cost=13176,item=15734,limited=true,npcs={7852},t="vendor"},{cost=14000,item=15734,limited=true,npcs={7854},t="vendor"}}}
+R[19062]={colors={270,270,275,285},creates={15067,1,1},learn=270,name="Ironfeather Shoulders",prof=165,reagents={{8170,24},{15420,80},{1529,2},{14341,1}},sources={{cost=14000,item=15735,limited=true,npcs={12958},t="vendor"}}}
+R[19063]={colors={275,275,280,290},creates={15073,1,1},learn=275,name="Chimeric Boots",prof=165,reagents={{8170,4},{15423,8},{14341,1}},sources={{item=15737,t="drop"}}}
+R[19064]={colors={275,275,280,290},creates={15078,1,1},learn=275,name="Heavy Scorpid Gauntlets",prof=165,reagents={{8170,6},{15408,8},{14341,1}},sources={{item=15738,t="drop"}}}
+R[19065]={colors={275,275,280,290},creates={15092,1,1},learn=275,name="Runic Leather Bracers",prof=165,reagents={{8170,6},{7971,1},{14047,6},{14341,1}},sources={{item=15739,t="drop"}}}
+R[19066]={colors={275,275,280,290},creates={15071,1,1},learn=275,name="Frostsaber Boots",prof=165,reagents={{8170,4},{15422,6},{14341,1}},sources={{cost=16000,item=15740,npcs={11189},t="vendor"}}}
+R[19067]={colors={275,275,280,290},creates={15057,1,1},learn=275,name="Stormshroud Pants",prof=165,reagents={{8170,16},{7080,2},{7082,2},{14341,1}},sources={{cost=16000,item=15741,limited=true,npcs={12942},t="vendor"},{cost=16000,item=15741,limited=true,npcs={12943},t="vendor"}}}
+R[19068]={colors={275,275,280,290},creates={15064,1,1},learn=275,name="Warbear Harness",prof=165,reagents={{8170,28},{15419,12},{14341,1}},sources={{item=15742,t="drop"},{cost=16000,item=20253,npcs={11557},standing=4,t="reputation"},{item=20253,t="drop"}}}
+R[19070]={colors={280,280,285,295},creates={15082,1,1},learn=280,name="Heavy Scorpid Belt",prof=165,reagents={{8170,6},{15408,8},{14341,1}},sources={{item=15743,t="drop"}}}
+R[19071]={colors={280,280,285,295},creates={15086,1,1},learn=280,name="Wicked Leather Headband",prof=165,reagents={{8170,12},{2325,1},{14341,1}},sources={{item=15744,t="drop"}}}
+R[19072]={colors={280,280,285,295},creates={15093,1,1},learn=280,name="Runic Leather Belt",prof=165,reagents={{8170,12},{14047,10},{14341,1}},sources={{item=15745,t="drop"}}}
+R[19073]={colors={280,280,285,295},creates={15072,1,1},learn=280,name="Chimeric Leggings",prof=165,reagents={{8170,8},{15423,8},{14341,1}},sources={{item=15746,t="drop"}}}
+R[19074]={colors={285,285,290,300},creates={15069,1,1},learn=285,name="Frostsaber Leggings",prof=165,reagents={{8170,6},{15422,8},{14341,1}},sources={{item=15747,t="drop"}}}
+R[19075]={colors={285,285,290,300},creates={15079,1,1},learn=285,name="Heavy Scorpid Leggings",prof=165,reagents={{8170,8},{15408,12},{14341,1}},sources={{item=15748,t="drop"}}}
+R[19076]={colors={285,285,290,300},creates={15053,1,1},learn=285,name="Volcanic Breastplate",prof=165,reagents={{8170,8},{7078,1},{7076,1},{14341,1}},sources={{item=15749,t="drop"}}}
+R[19077]={colors={285,285,290,300},creates={15048,1,1},learn=285,name="Blue Dragonscale Breastplate",prof=165,reagents={{8170,28},{15415,30},{15407,1},{14341,1}},sources={{cost=20000,item=15751,limited=true,npcs={12957},t="vendor"}}}
+R[19078]={colors={285,285,290,300},creates={15060,1,1},learn=285,name="Living Leggings",prof=165,reagents={{8170,16},{12803,6},{15407,1},{14341,1}},sources={{item=15752,t="drop"}}}
+R[19079]={colors={285,285,290,300},creates={15056,1,1},learn=285,name="Stormshroud Armor",prof=165,reagents={{8170,16},{7080,3},{7082,3},{15407,1},{14341,1}},sources={{item=15753,t="drop"}}}
+R[19080]={colors={285,285,290,300},creates={15065,1,1},learn=285,name="Warbear Woolies",prof=165,reagents={{8170,24},{15419,14},{14341,1}},sources={{cost=20000,item=20254,npcs={11557},standing=4,t="reputation"}}}
+R[19081]={colors={290,290,295,305},creates={15075,1,1},learn=290,name="Chimeric Vest",prof=165,reagents={{8170,10},{15423,10},{14341,1}},sources={{item=15755,t="drop"}}}
+R[19082]={colors={290,290,295,305},creates={15094,1,1},learn=290,name="Runic Leather Headband",prof=165,reagents={{8170,14},{14047,10},{14341,1}},sources={{cost=22000,item=15756,limited=true,npcs={12941},t="vendor"}}}
+R[19083]={colors={290,290,295,305},creates={15087,1,1},learn=290,name="Wicked Leather Pants",prof=165,reagents={{8170,16},{15407,1},{2325,3},{14341,1}},sources={{item=15757,t="drop"}}}
+R[19084]={colors={290,290,295,305},creates={15063,1,1},learn=290,name="Devilsaur Gauntlets",prof=165,reagents={{8170,30},{15417,8},{14341,1}},sources={{cost=22000,item=15758,limited=true,npcs={12959},t="vendor"}}}
+R[19085]={colors={290,290,295,305},creates={15050,1,1},learn=290,name="Black Dragonscale Breastplate",prof=165,reagents={{8170,40},{15416,60},{15407,1},{14341,2}},sources={{cost=22000,item=15759,limited=true,npcs={9499},t="vendor"}}}
+R[19086]={colors={290,290,295,305},creates={15066,1,1},learn=290,name="Ironfeather Breastplate",prof=165,reagents={{8170,40},{15420,120},{1529,1},{15407,1},{14341,1}},sources={{item=15760,t="drop"}}}
+R[19087]={colors={295,295,300,310},creates={15070,1,1},learn=295,name="Frostsaber Gloves",prof=165,reagents={{8170,6},{15422,10},{14341,1}},sources={{item=15761,t="drop"}}}
+R[19088]={colors={295,295,300,310},creates={15080,1,1},learn=295,name="Heavy Scorpid Helm",prof=165,reagents={{8170,8},{15408,12},{15407,1},{14341,1}},sources={{cost=25000,item=15762,limited=true,npcs={12956},t="vendor"}}}
+R[19089]={colors={295,295,300,310},creates={15049,1,1},learn=295,name="Blue Dragonscale Shoulders",prof=165,reagents={{8170,28},{15415,30},{12810,2},{15407,1},{14341,1}},sources={{item=15763,t="drop"}}}
+R[19090]={colors={295,295,300,310},creates={15058,1,1},learn=295,name="Stormshroud Shoulders",prof=165,reagents={{8170,12},{7080,3},{7082,3},{12810,2},{14341,1}},sources={{item=15764,t="drop"}}}
+R[19091]={colors={300,300,305,315},creates={15095,1,1},learn=300,name="Runic Leather Pants",prof=165,reagents={{8170,18},{14047,12},{12810,2},{14341,1}},sources={{item=15765,t="drop"}}}
+R[19092]={colors={300,300,305,315},creates={15088,1,1},learn=300,name="Wicked Leather Belt",prof=165,reagents={{8170,14},{2325,2},{14341,2}},sources={{item=15768,t="drop"}}}
+R[19093]={colors={300,320,330,340},creates={15138,1,1},learn=300,name="Onyxia Scale Cloak",prof=165,reagents={{15410,1},{14044,1},{14341,1}},sources={{t="other"}}}
+R[19094]={colors={300,310,320,330},creates={15051,1,1},learn=300,name="Black Dragonscale Shoulders",prof=165,reagents={{8170,44},{15416,45},{12810,2},{15407,1},{14341,1}},sources={{item=15770,t="drop"}}}
+R[19095]={colors={300,310,320,330},creates={15059,1,1},learn=300,name="Living Breastplate",prof=165,reagents={{8170,16},{12803,8},{14342,2},{15407,1},{14341,2}},sources={{item=15771,t="drop"}}}
+R[19097]={colors={300,310,320,330},creates={15062,1,1},learn=300,name="Devilsaur Leggings",prof=165,reagents={{8170,30},{15417,14},{15407,1},{14341,1}},sources={{item=15772,t="drop"}}}
+R[19098]={colors={300,300,310,320},creates={15085,1,1},learn=300,name="Wicked Leather Armor",prof=165,reagents={{8170,20},{15407,2},{14256,6},{2325,4},{14341,2}},sources={{item=15773,t="drop"}}}
+R[19100]={colors={300,300,310,320},creates={15081,1,1},learn=300,name="Heavy Scorpid Shoulders",prof=165,reagents={{8170,14},{15408,14},{15407,1},{14341,2}},sources={{item=15774,t="drop"}}}
+R[19101]={colors={300,300,310,320},creates={15055,1,1},learn=300,name="Volcanic Shoulders",prof=165,reagents={{8170,10},{7078,1},{7076,1},{14341,2}},sources={{item=15775,t="drop"}}}
+R[19102]={colors={300,305,315,325},creates={15090,1,1},learn=300,name="Runic Leather Armor",prof=165,reagents={{8170,22},{12810,4},{14047,16},{15407,1},{14341,2}},sources={{item=15776,t="drop"}}}
+R[19103]={colors={300,305,315,325},creates={15096,1,1},learn=300,name="Runic Leather Shoulders",prof=165,reagents={{8170,16},{12810,4},{14047,18},{15407,1},{14341,2}},sources={{item=15777,t="drop"}}}
+R[19104]={colors={300,310,320,330},creates={15068,1,1},learn=300,name="Frostsaber Tunic",prof=165,reagents={{8170,12},{15422,12},{15407,1},{14341,2}},sources={{item=15779,t="drop"}}}
+R[19107]={colors={300,310,320,330},creates={15052,1,1},learn=300,name="Black Dragonscale Leggings",prof=165,reagents={{8170,40},{15416,60},{12810,4},{15407,1},{14341,2}},sources={{item=15781,t="drop"}}}
+R[19435]={colors={290,290,300,315},creates={15802,1,1},learn=290,name="Mooncloth Boots",prof=197,reagents={{14048,6},{14342,4},{7971,2},{14341,1}},sources={{t="quest"}}}
+R[19567]={colors={250,270,280,290},creates={15846,1,1},learn=250,name="Salt Shaker",prof=202,reagents={{10561,1},{12359,6},{10558,1},{10560,4}},sources={{cost=4000,npcs={8736},t="trainer"}}}
+R[19666]={colors={100,100,120,135},creates={15869,2,2},est=true,learn=100,name="Silver Skeleton Key",prof=164,reagents={{2842,1},{3470,1}},sources={{cost=100,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[19667]={colors={150,150,165,180},creates={15870,2,2},est=true,learn=150,name="Golden Skeleton Key",prof=164,reagents={{3577,1},{3486,1}},sources={{cost=250,npcs={1383,2836,2998,3355,3478,4258,4596,5511},t="trainer"}}}
+R[19668]={colors={200,200,212,225},creates={15871,2,2},est=true,learn=200,name="Truesilver Skeleton Key",prof=164,reagents={{6037,1},{7966,1}},sources={{cost=2500,npcs={2836,3355,4258,28694},t="trainer"}}}
+R[19669]={colors={275,275,287,300},creates={15872,2,2},est=true,learn=275,name="Arcanite Skeleton Key",prof=164,reagents={{12360,1},{12644,1}},sources={{t="trainer",unknownCost=true}}}
+R[19788]={colors={250,250,255,260},creates={15992,1,1},learn=250,name="Dense Blasting Powder",prof=202,reagents={{12365,2}},sources={{cost=4000,npcs={8736},t="trainer"}}}
+R[19790]={colors={260,280,290,300},creates={15993,3,3},learn=260,name="Thorium Grenade",prof=202,reagents={{15994,1},{12359,3},{15992,3},{14047,3}},sources={{cost=12000,item=16041,limited=true,npcs={3413},t="vendor"},{cost=12631,item=16041,limited=true,npcs={5175},t="vendor"}}}
+R[19791]={colors={260,280,290,300},creates={15994,1,1},learn=260,name="Thorium Widget",prof=202,reagents={{12359,3},{14047,1}},sources={{cost=12000,item=16042,limited=true,npcs={3413},t="vendor"},{cost=12631,item=16042,limited=true,npcs={5175},t="vendor"}}}
+R[19792]={colors={260,280,290,300},creates={15995,1,1},learn=260,name="Thorium Rifle",prof=202,reagents={{10559,2},{10561,2},{15994,2},{12359,4},{10546,1}},sources={{item=16043,t="drop"}}}
+R[19793]={colors={265,285,295,305},creates={15996,1,1},learn=265,name="Lifelike Mechanical Toad",prof=202,reagents={{12803,1},{15994,4},{10558,1},{8170,1}},sources={{item=16044,t="drop"}}}
+R[19794]={colors={270,290,300,310},creates={15999,1,1},learn=270,name="Spellpower Goggles Xtreme Plus",prof=202,reagents={{10502,1},{7910,4},{12810,2},{14047,8}},sources={{item=16045,t="drop"}}}
+R[19795]={colors={275,295,305,315},creates={16000,1,1},learn=275,name="Thorium Tube",prof=202,reagents={{12359,6}},sources={{cost=16000,item=16047,npcs={260565},t="vendor"},{cost=16842,item=16047,limited=true,npcs={11185},t="vendor"}}}
+R[19796]={colors={275,295,305,315},creates={16004,1,1},learn=275,name="Dark Iron Rifle",prof=202,reagents={{16000,2},{11371,6},{10546,2},{12361,2},{12799,2},{8170,4}},sources={{item=16048,t="drop"}}}
+R[19799]={colors={285,305,315,325},creates={16005,3,3},learn=285,name="Dark Iron Bomb",prof=202,reagents={{15994,2},{11371,1},{15992,3},{14047,3}},sources={{item=16049,t="drop"}}}
+R[19800]={colors={285,305,315,325},creates={15997,200,200},learn=285,name="Thorium Shells",prof=202,reagents={{12359,2},{15992,1}},sources={{item=16051,t="drop"}}}
+R[19814]={colors={275,295,305,315},creates={16023,1,1},learn=275,name="Masterwork Target Dummy",prof=202,reagents={{10561,1},{16000,1},{15994,2},{6037,1},{8170,2},{14047,4}},sources={{cost=16000,item=16046,limited=true,npcs={11185},t="vendor"},{cost=16000,item=16046,npcs={260565},t="vendor"}}}
+R[19815]={colors={285,305,315,325},creates={16006,1,1},learn=285,name="Delicate Arcanite Converter",prof=202,reagents={{12360,1},{14227,1}},sources={{cost=20000,item=16050,limited=true,npcs={11185},t="vendor"}}}
+R[19819]={colors={290,310,320,330},creates={16009,1,1},learn=290,name="Voice Amplification Modulator",prof=202,reagents={{16006,2},{10558,1},{15994,1},{12799,1}},sources={{item=16052,t="drop"}}}
+R[19825]={colors={290,310,320,330},creates={16008,1,1},learn=290,name="Master Engineer's Goggles",prof=202,reagents={{10500,1},{12364,2},{12810,4}},sources={{item=16053,t="drop"}}}
+R[19830]={colors={300,320,330,340},creates={16022,1,1},learn=300,name="Arcanite Dragonling",prof=202,reagents={{10576,1},{16006,8},{12655,10},{15994,6},{10558,4},{12810,6}},sources={{item=16054,t="drop"}}}
+R[19831]={colors={300,320,330,340},creates={16040,3,3},learn=300,name="Arcane Bomb",prof=202,reagents={{16006,1},{12359,3},{14047,1}},sources={{item=16055,t="drop"}}}
+R[19833]={colors={300,320,330,340},creates={16007,1,1},learn=300,name="Flawless Arcanite Rifle",prof=202,reagents={{12360,10},{16000,2},{7078,2},{7076,2},{12800,2},{12810,2}},sources={{item=16056,t="drop"}}}
+R[20008]={colors={255,275,295,315},learn=255,name="Enchant Bracer - Greater Intellect",prof=333,reagents={{16202,2}},sources={{item=16214,t="drop"}}}
+R[20009]={colors={270,290,310,330},learn=270,name="Enchant Bracer - Superior Spirit",prof=333,reagents={{16202,2},{11176,7}},sources={{item=16218,t="drop"}}}
+R[20010]={colors={295,315,335,355},learn=295,name="Enchant Bracer - Superior Strength",prof=333,reagents={{16204,6},{16203,6}},sources={{item=16246,t="drop"}}}
+R[20011]={colors={300,320,340,360},learn=300,name="Enchant Bracer - Superior Stamina",prof=333,reagents={{16204,15}},sources={{item=16251,t="drop"}}}
+R[20012]={colors={270,290,310,330},learn=270,name="Enchant Gloves - Greater Agility",prof=333,reagents={{16202,2},{16204,2}},sources={{item=16219,t="drop"}}}
+R[20013]={colors={295,315,335,355},learn=295,name="Enchant Gloves - Greater Strength",prof=333,reagents={{16203,4},{16204,4}},sources={{item=16244,t="drop"}}}
+R[20014]={colors={265,285,305,325},learn=265,name="Enchant Cloak - Greater Resistance",prof=333,reagents={{16202,1},{7077,1},{7075,1},{7079,1},{7081,1},{7972,1}},sources={{item=16216,t="drop"}}}
+R[20015]={colors={285,305,325,345},learn=285,name="Enchant Cloak - Superior Defense",prof=333,reagents={{16204,8}},sources={{cost=20000,item=16224,limited=true,npcs={12022},t="vendor"}}}
+R[20016]={colors={280,300,320,340},learn=280,name="Enchant Shield - Superior Spirit",prof=333,reagents={{16203,2},{16204,4}},sources={{item=16222,t="drop"}}}
+R[20017]={colors={265,285,305,325},learn=265,name="Enchant Shield - Greater Stamina",prof=333,reagents={{11176,6}},sources={{cost=10666,item=16217,limited=true,npcs={4561},t="vendor"},{cost=12631,item=16217,limited=true,npcs={4229},t="vendor"}}}
+R[20020]={colors={260,280,300,320},learn=260,name="Enchant Boots - Greater Stamina",prof=333,reagents={{11176,6}},sources={{item=16215,t="drop"}}}
+R[20023]={colors={295,315,335,355},learn=295,name="Enchant Boots - Greater Agility",prof=333,reagents={{16203,8}},sources={{item=16245,t="drop"}}}
+R[20024]={colors={275,295,315,335},learn=275,name="Enchant Boots - Spirit",prof=333,reagents={{16203,2},{16202,1}},sources={{item=16220,t="drop"}}}
+R[20025]={colors={300,320,340,360},learn=300,name="Enchant Chest - Greater Stats",prof=333,reagents={{14344,4},{16204,15},{16203,10}},sources={{item=16253,t="drop"}}}
+R[20026]={colors={275,295,315,335},learn=275,name="Enchant Chest - Major Stamina",prof=333,reagents={{16204,6},{14343,1}},sources={{cost=16000,item=16221,limited=true,npcs={11189},t="vendor"}}}
+R[20028]={colors={290,310,330,350},learn=290,name="Enchant Chest - Major Intellect",prof=333,reagents={{16203,3},{14343,1}},sources={{item=16242,t="drop"}}}
+R[20029]={colors={285,305,325,345},learn=285,name="Enchant Weapon - Icy Chill",prof=333,reagents={{14343,4},{7080,1},{7082,1},{13467,1}},sources={{item=16223,t="drop"}}}
+R[20030]={colors={295,315,335,355},learn=295,name="Enchant 2H Weapon - Superior Impact",prof=333,reagents={{14344,4},{16204,10}},sources={{item=16247,t="drop"}}}
+R[20031]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Superior Striking",prof=333,reagents={{14344,2},{16203,10}},sources={{item=16250,t="drop"}}}
+R[20032]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Lifestealing",prof=333,reagents={{14344,6},{12808,6},{12803,6}},sources={{item=16254,t="drop"}}}
+R[20033]={colors={295,315,335,355},learn=295,name="Enchant Weapon - Unholy Weapon",prof=333,reagents={{14344,4},{12808,4}},sources={{item=16248,t="drop"}}}
+R[20034]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Crusader",prof=333,reagents={{14344,4},{12811,2}},sources={{item=16252,t="drop"}}}
+R[20035]={colors={300,320,340,360},learn=300,name="Enchant 2H Weapon - Major Spirit",prof=333,reagents={{16203,12},{14344,2}},sources={{item=16255,t="drop"}}}
+R[20036]={colors={300,320,340,360},learn=300,name="Enchant 2H Weapon - Major Intellect",prof=333,reagents={{16203,12},{14344,2}},sources={{item=16249,t="drop"}}}
+R[20051]={colors={290,310,330,350},creates={16207,1,1},learn=290,name="Runed Arcanite Rod",prof=333,reagents={{16206,1},{13926,1},{16204,10},{16203,4},{14343,4},{14344,2}},sources={{cost=22000,item=16243,limited=true,npcs={12022},t="vendor"}}}
+R[20201]={colors={275,275,287,300},creates={16206,1,1},est=true,learn=275,name="Arcanite Rod",prof=164,reagents={{12360,3},{12644,1}},sources={{t="trainer",unknownCost=true}}}
+R[20626]={colors={225,265,285,305},creates={16766,2,2},learn=225,name="Undermine Clam Chowder",prof=185,reagents={{7974,2},{2692,1},{1179,1}},sources={{cost=3000,item=16767,limited=true,npcs={8139},t="vendor"},{cost=3000,item=16767,npcs={255895},t="vendor"}}}
+R[20648]={colors={100,100,112,125},creates={2319,1,1},est=true,learn=100,name="Medium Leather",prof=165,reagents={{2318,4}},sources={{cost=500,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[20649]={colors={150,150,160,170},creates={4234,1,1},est=true,learn=150,name="Heavy Leather",prof=165,reagents={{2319,5}},sources={{cost=1000,npcs={3007,3365,3703,3967,4212,4588,5127,5564},t="trainer"}}}
+R[20650]={colors={200,200,205,215},creates={4304,1,1},est=true,learn=200,name="Thick Leather",prof=165,reagents={{4234,6}},sources={{cost=4000,npcs={3007,4212,11098},t="trainer"}}}
+R[20848]={colors={300,315,330,345},creates={16980,1,1},learn=300,name="Flarecore Mantle",prof=197,reagents={{14048,12},{17010,4},{17011,4},{12810,6},{14341,2}},sources={{cost=190588,item=17017,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[20849]={colors={300,315,330,345},creates={16979,1,1},learn=300,name="Flarecore Gloves",prof=197,reagents={{14048,8},{17010,6},{7078,4},{12810,2},{14341,2}},sources={{cost=84705,item=17018,limited=true,npcs={12944},standing=4,t="reputation"}}}
+R[20853]={colors={295,315,325,335},creates={16982,1,1},learn=295,name="Corehound Boots",prof=165,reagents={{17012,20},{17010,6},{17011,2},{14341,2}},sources={{cost=158823,item=17022,limited=true,npcs={12944},standing=4,t="reputation"}}}
+R[20854]={colors={300,320,330,340},creates={16983,1,1},learn=300,name="Molten Helm",prof=165,reagents={{17012,15},{17010,3},{17011,6},{14341,2}},sources={{cost=169411,item=17023,limited=true,npcs={12944},standing=4,t="reputation"}}}
+R[20855]={colors={300,320,330,340},creates={16984,1,1},learn=300,name="Black Dragonscale Boots",prof=165,reagents={{12810,6},{15416,30},{17010,4},{17011,3},{14341,2}},sources={{cost=169411,item=17025,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[20872]={colors={295,295,300,310},creates={16989,1,1},learn=295,name="Fiery Chain Girdle",prof=164,reagents={{11371,6},{17010,3},{17011,3}},sources={{cost=95294,item=17049,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[20873]={colors={300,320,330,340},creates={16988,1,1},learn=300,name="Fiery Chain Shoulders",prof=164,reagents={{11371,16},{17010,4},{17011,5}},sources={{cost=211764,item=17053,npcs={12944},standing=6,t="reputation"}}}
+R[20874]={colors={295,295,300,310},creates={17014,1,1},learn=295,name="Dark Iron Bracers",prof=164,reagents={{11371,4},{17010,2},{17011,2}},sources={{cost=74117,item=17051,limited=true,npcs={12944},standing=4,t="reputation"}}}
+R[20876]={colors={300,320,330,340},creates={17013,1,1},learn=300,name="Dark Iron Leggings",prof=164,reagents={{11371,16},{17010,4},{17011,6}},sources={{cost=190588,item=17052,npcs={12944},standing=6,t="reputation"}}}
+R[20890]={colors={300,320,330,340},creates={17015,1,1},learn=300,name="Dark Iron Reaver",prof=164,reagents={{11371,16},{17010,12},{11382,2},{12810,2}},sources={{cost=232941,item=17059,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[20897]={colors={300,320,330,340},creates={17016,1,1},learn=300,name="Dark Iron Destroyer",prof=164,reagents={{11371,18},{17011,12},{11382,2},{12810,2}},sources={{cost=232941,item=17060,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[20916]={colors={175,215,235,255},creates={8364,1,1},learn=175,name="Mithril Headed Trout",prof=185,reagents={{8365,1}},sources={{cost=2200,item=17062,npcs={2383},t="vendor"},{cost=2200,item=17062,npcs={2664},t="vendor"},{cost=2200,item=17062,npcs={3178},t="vendor"},{cost=2200,item=17062,npcs={3333},t="vendor"},{cost=2200,item=17062,npcs={4307},t="vendor"},{cost=2200,item=17062,npcs={4574},t="vendor"},{cost=2200,item=17062,npcs={5162},t="vendor"},{cost=2200,item=17062,npcs={12033},t="vendor"},{cost=2200,item=17062,npcs={12962},t="vendor"}}}
+R[21143]={colors={1,45,65,85},creates={17197,1,1},learn=1,name="Gingerbread Cookie",prof=185,reagents={{6889,1},{17194,1}},sources={{cost=25,item=17200,npcs={13420},t="vendor"},{cost=25,item=17200,npcs={13429},t="vendor"},{cost=25,item=17200,npcs={13432},t="vendor"},{cost=25,item=17200,npcs={13433},t="vendor"},{cost=25,item=17200,npcs={13435},t="vendor"},{cost=25,item=17200,npcs={216902},t="vendor"}}}
+R[21144]={colors={35,75,95,115},creates={17198,1,1},learn=35,name="Egg Nog",prof=185,reagents={{6889,1},{1179,1},{17196,1},{17194,1}},sources={{cost=240,item=17201,npcs={13420},t="vendor"},{cost=240,item=17201,npcs={13429},t="vendor"},{cost=240,item=17201,npcs={13432},t="vendor"},{cost=240,item=17201,npcs={13433},t="vendor"},{cost=240,item=17201,npcs={13435},t="vendor"},{cost=240,item=17201,npcs={216902},t="vendor"}}}
+R[21161]={colors={300,325,337,350},creates={17193,1,1},learn=300,name="Sulfuron Hammer",prof=164,reagents={{17203,8},{11371,20},{12360,50},{7078,25},{11382,10},{17011,10},{17010,10}},sources={{item=18592,t="quest"}}}
+R[21175]={colors={200,240,260,280},creates={17222,1,1},learn=200,name="Spider Sausage",prof=185,reagents={{12205,2}},sources={{cost=4000,npcs={1355,1382,1430,1699,3026,3067,3087,3191},t="trainer"}}}
+R[21913]={colors={190,190,202,215},creates={17704,1,1},learn=190,name="Edge of Winter",prof=164,reagents={{3859,10},{3829,1},{7070,2},{7069,2},{4234,2}},sources={{item=17706,t="drop"}}}
+R[21923]={colors={190,210,230,250},creates={17708,1,1},learn=190,name="Elixir of Frost Power",prof=171,reagents={{3819,2},{3358,1},{3372,1}},sources={{item=17709,t="drop"}}}
+R[21931]={colors={190,210,230,250},learn=190,name="Enchant Weapon - Winter's Might",prof=333,reagents={{11135,1},{11137,1},{11139,1},{3819,1}},sources={{item=17725,t="drop"}}}
+R[21940]={colors={190,190,210,230},creates={17716,1,1},learn=190,name="Snowmaster 9000",prof=202,reagents={{3860,8},{4389,4},{17202,4},{3829,1}},sources={{item=17720,t="drop"}}}
+R[21943]={colors={190,190,195,205},creates={17721,1,1},learn=190,name="Gloves of the Greatfather",prof=165,reagents={{4234,8},{7067,4},{4291,1}},sources={{item=17722,t="drop"}}}
+R[21945]={colors={190,190,192,205},creates={17723,1,1},est=true,learn=190,name="Green Holiday Shirt",prof=197,reagents={{4305,5},{2605,4},{4291,1}},sources={{item=17724,t="drop"}}}
+R[22331]={colors={250,250,260,270},creates={8170,1,1},est=true,learn=250,name="Rugged Leather",prof=165,reagents={{4304,6}},sources={{cost=5000,npcs={11098},t="trainer"}}}
+R[22480]={colors={225,265,285,305},creates={18045,1,1},learn=225,name="Tender Wolf Steak",prof=185,reagents={{12208,1},{3713,1}},sources={{cost=12000,item=18046,npcs={4782},t="vendor"},{cost=12000,item=18046,npcs={7733},t="vendor"},{cost=12000,item=18046,npcs={8125},t="vendor"},{cost=12000,item=18046,npcs={255894},t="vendor"}}}
+R[22704]={colors={300,320,330,340},creates={18232,1,1},learn=300,name="Field Repair Bot 74A",prof=202,reagents={{12359,12},{8170,4},{7191,1},{7067,2},{7068,1}},sources={{t="other"}}}
+R[22711]={colors={200,200,200,205},creates={18238,1,1},learn=200,name="Shadowskin Gloves",prof=165,reagents={{4304,6},{7428,8},{7971,2},{4236,2},{1210,4},{8343,1}},sources={{cost=3500,item=18239,limited=true,npcs={2699},t="vendor"}}}
+R[22727]={colors={300,320,330,340},creates={18251,1,1},learn=300,name="Core Armor Kit",prof=165,reagents={{17012,3},{14341,2}},sources={{item=18252,t="drop"}}}
+R[22732]={colors={300,310,320,330},creates={18253,1,1},learn=300,name="Major Rejuvenation Potion",prof=171,reagents={{10286,1},{13464,4},{13463,4},{18256,1}},sources={{item=18257,t="drop"}}}
+R[22749]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Spell Power",prof=333,reagents={{14344,4},{16203,12},{7078,4},{7080,4},{7082,4},{13926,2}},sources={{item=18259,t="drop"}}}
+R[22750]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Healing Power",prof=333,reagents={{14344,4},{16203,8},{12803,6},{7080,6},{12811,1}},sources={{item=18260,t="drop"}}}
+R[22757]={colors={300,300,310,320},creates={18262,1,1},est=true,learn=300,name="Elemental Sharpening Stone",prof=164,reagents={{7067,2},{12365,3}},sources={{item=18264,t="drop"}}}
+R[22759]={colors={300,320,335,350},creates={18263,1,1},learn=300,name="Flarecore Wraps",prof=197,reagents={{14342,6},{17010,8},{7078,2},{12810,6},{14341,4}},sources={{item=18265,t="drop"}}}
+R[22761]={colors={275,315,335,355},creates={18254,1,1},learn=275,name="Runn Tum Tuber Surprise",prof=185,reagents={{18255,1},{3713,1}},sources={{item=18267,t="drop"}}}
+R[22793]={colors={300,320,330,340},creates={18283,1,1},learn=300,name="Biznicks 247x128 Accurascope",prof=202,reagents={{17011,2},{7076,2},{16006,4},{11371,6},{16000,1}},sources={{item=18290,t="drop"}}}
+R[22795]={colors={300,320,330,340},creates={18282,1,1},learn=300,name="Core Marksman Rifle",prof=202,reagents={{17010,4},{17011,2},{12360,6},{16006,2},{16000,2}},sources={{item=18292,t="drop"}}}
+R[22797]={colors={300,320,330,340},creates={18168,1,1},learn=300,name="Force Reactive Disk",prof=202,reagents={{12360,6},{16006,2},{7082,8},{12803,12},{7076,8}},sources={{item=18291,t="drop"}}}
+R[22808]={colors={215,230,250,270},creates={18294,1,1},learn=215,name="Draught of Greater Water Breathing",prof=171,reagents={{7972,1},{8831,2},{8925,1}},sources={{cost=9000,npcs={1386,4160,4611,7948,246795,275322},t="trainer"}}}
+R[22813]={colors={285,285,290,295},creates={18258,1,1},learn=285,name="Gordok Ogre Suit",prof=197,reagents={{14048,2},{8170,4},{18240,1},{14341,1}},sources={{t="other"}}}
+R[22815]={colors={285,285,290,295},creates={18258,1,1},learn=285,name="Gordok Ogre Suit",prof=165,reagents={{8170,4},{14048,2},{18240,1},{14341,1}},sources={{t="other"}}}
+R[22866]={colors={300,310,325,340},creates={18405,1,1},learn=300,name="Belt of the Archmage",prof=197,reagents={{14048,16},{9210,8},{14342,8},{7080,10},{7078,10},{14344,4},{14341,6},{249431,10}},sources={{item=18414,t="drop"}}}
+R[22867]={colors={300,300,310,325},creates={18407,1,1},learn=300,name="Felcloth Gloves",prof=197,reagents={{14048,12},{14256,20},{12662,6},{12808,8},{14341,2}},sources={{item=18415,t="drop"}}}
+R[22868]={colors={300,300,310,325},creates={18408,1,1},learn=300,name="Inferno Gloves",prof=197,reagents={{14048,12},{7078,10},{7910,2},{14341,2}},sources={{item=18416,t="drop"}}}
+R[22869]={colors={300,300,310,325},creates={18409,1,1},learn=300,name="Mooncloth Gloves",prof=197,reagents={{14048,12},{14342,6},{13926,2},{14341,2}},sources={{item=18417,t="drop"}}}
+R[22870]={colors={300,300,310,325},creates={18413,1,1},learn=300,name="Cloak of Warding",prof=197,reagents={{14048,12},{12809,4},{12360,1},{14341,2}},sources={{item=18418,t="drop"}}}
+R[22902]={colors={300,300,305,320},creates={18486,1,1},learn=300,name="Mooncloth Robe",prof=197,reagents={{14048,6},{14342,4},{13926,2},{14341,2}},sources={{cost=40000,item=18487,limited=true,npcs={14371},t="vendor"}}}
+R[22921]={colors={300,310,320,330},creates={18504,1,1},learn=300,name="Girdle of Insight",prof=165,reagents={{8170,12},{12804,12},{15407,2},{14341,4}},sources={{item=18514,t="drop"}}}
+R[22922]={colors={300,310,320,330},creates={18506,1,1},learn=300,name="Mongoose Boots",prof=165,reagents={{8170,12},{7082,6},{11754,4},{15407,2},{14341,4}},sources={{item=18515,t="drop"}}}
+R[22923]={colors={300,310,320,330},creates={18508,1,1},learn=300,name="Swift Flight Bracers",prof=165,reagents={{8170,12},{18512,8},{15420,60},{15407,4},{14341,4}},sources={{item=18516,t="drop"}}}
+R[22926]={colors={300,320,330,340},creates={18509,1,1},learn=300,name="Chromatic Cloak",prof=165,reagents={{8170,30},{12607,12},{15416,30},{15414,30},{15407,5},{14341,8}},sources={{item=18517,t="drop"}}}
+R[22927]={colors={300,320,330,340},creates={18510,1,1},learn=300,name="Hide of the Wild",prof=165,reagents={{8170,30},{12803,12},{7080,10},{18512,8},{15407,3},{14341,8}},sources={{item=18518,t="drop"}}}
+R[22928]={colors={300,320,330,340},creates={18511,1,1},learn=300,name="Shifting Cloak",prof=165,reagents={{8170,30},{7082,12},{12753,4},{12809,8},{15407,4},{14341,8}},sources={{item=18519,t="drop"}}}
+R[23066]={colors={150,150,162,175},creates={9318,3,3},learn=150,name="Red Firework",prof=202,reagents={{4377,1},{4234,1}},sources={{cost=1800,item=18647,limited=true,npcs={3413},t="vendor"}}}
+R[23067]={colors={150,150,162,175},creates={9312,3,3},learn=150,name="Blue Firework",prof=202,reagents={{4377,1},{4234,1}},sources={{cost=1800,item=18649,limited=true,npcs={1304},t="vendor"},{cost=1894,item=18649,limited=true,npcs={5175},t="vendor"}}}
+R[23068]={colors={150,150,162,175},creates={9313,3,3},learn=150,name="Green Firework",prof=202,reagents={{4377,1},{4234,1}},sources={{cost=1800,item=18648,limited=true,npcs={2838},t="vendor"},{cost=1800,item=18648,limited=true,npcs={3495},t="vendor"}}}
+R[23069]={colors={200,200,210,220},creates={18588,1,1},learn=200,name="EZ-Thro Dynamite II",prof=202,reagents={{10505,1},{4306,1},{260801,1}},sources={{cost=5000,item=18650,npcs={8131},t="vendor"},{cost=5000,item=18650,npcs={260566},t="vendor"}}}
+R[23070]={colors={250,250,260,270},creates={18641,2,2},learn=250,name="Dense Dynamite",prof=202,reagents={{15992,2},{14047,3}},sources={{cost=5000,npcs={8736},t="trainer"}}}
+R[23071]={colors={260,270,275,280},creates={18631,1,1},learn=260,name="Truesilver Transformer",prof=202,reagents={{6037,2},{7067,2},{7069,1}},sources={{cost=12000,item=18651,npcs={2685},t="vendor"}}}
+R[23077]={colors={260,280,290,300},creates={18634,1,1},learn=260,name="Gyrofreeze Ice Reflector",prof=202,reagents={{15994,6},{18631,2},{12361,2},{7078,4},{3829,2},{13467,4}},sources={{cost=12000,item=18652,limited=true,npcs={11185},t="vendor"}}}
+R[23078]={colors={265,285,295,305},creates={18587,1,1},learn=265,name="Goblin Jumper Cables XL",prof=202,reagents={{15994,2},{18631,2},{7191,2},{14227,2},{7910,2}},sources={{item=18653,t="drop"}}}
+R[23079]={colors={275,285,290,295},creates={18637,1,1},learn=275,name="Major Recombobulator",prof=202,reagents={{16000,2},{18631,1},{14047,2}},sources={{item=18655,t="drop"}}}
+R[23080]={colors={275,275,285,295},creates={18594,1,1},learn=275,name="Powerful Seaforium Charge",prof=202,reagents={{15994,2},{15992,3},{8170,2},{159,1}},sources={{cost=16000,item=18656,limited=true,npcs={11185},t="vendor"}}}
+R[23081]={colors={290,310,320,330},creates={18638,1,1},learn=290,name="Hyper-Radiant Flame Reflector",prof=202,reagents={{11371,4},{18631,3},{7080,6},{7910,4},{12800,2}},sources={{item=18657,t="drop"}}}
+R[23082]={colors={300,320,330,340},creates={18639,1,1},learn=300,name="Ultra-Flash Shadow Reflector",prof=202,reagents={{11371,8},{18631,4},{12803,6},{12808,4},{12800,2},{12799,2}},sources={{item=18658,t="drop"}}}
+R[23096]={colors={265,275,280,285},creates={18645,1,1},learn=265,name="Alarm-O-Bot",prof=202,reagents={{12359,4},{15994,2},{8170,4},{7910,1},{7191,1}},sources={{item=18654,t="drop"}}}
+R[23129]={colors={260,260,265,270},creates={18660,1,1},learn=260,name="World Enlarger",prof=202,reagents={{10561,1},{15994,2},{10558,1},{10560,1},{3864,1}},sources={{item=18661,t="drop"}},spec=20219}
+R[23190]={colors={150,150,160,170},creates={18662,1,1},est=true,learn=150,name="Heavy Leather Ball",prof=165,reagents={{4234,2},{2321,1}},sources={{cost=1882,item=18731,limited=true,npcs={3366},t="vendor"},{cost=2000,item=18731,limited=true,npcs={5128},t="vendor"}}}
+R[23399]={colors={155,155,165,175},creates={18948,1,1},learn=155,name="Barbaric Bracers",prof=165,reagents={{4234,8},{4236,2},{5498,4},{4461,1},{5637,4}},sources={{cost=2000,item=18949,limited=true,npcs={4225},t="vendor"},{cost=2000,item=18949,limited=true,npcs={4589},t="vendor"}}}
+R[23486]={colors={285,285,295,305},creates={18984,1,1},learn=285,name="Dimensional Ripper - Everlook",prof=202,reagents={{3860,10},{18631,1},{7077,4},{7910,2},{10586,1}},sources={{t="other"}},spec=20222}
+R[23489]={colors={285,285,295,305},creates={18986,1,1},learn=285,name="Ultrasafe Transporter - Gadgetzan",prof=202,reagents={{3860,12},{18631,2},{7075,4},{7079,2},{7909,4},{9060,1}},sources={{t="other"}},spec=20219}
+R[23507]={colors={250,250,260,270},creates={19026,4,4},learn=250,name="Snake Burst Firework",prof=202,reagents={{15992,2},{14047,2},{8150,1}},sources={{cost=5000,item=19027,npcs={14637},t="vendor"}}}
+R[23628]={colors={290,290,295,305},creates={19043,1,1},learn=290,name="Heavy Timbermaw Belt",prof=165,reagents={{8170,12},{7076,3},{12803,3},{14341,1}},sources={{cost=23157,item=19202,npcs={11557},standing=5,t="reputation"}}}
+R[23629]={colors={300,300,310,320},creates={19048,1,1},learn=300,name="Heavy Timbermaw Boots",prof=165,reagents={{8170,20},{7076,6},{12803,6},{14341,1}},sources={{cost=42105,item=19204,npcs={11557},standing=6,t="reputation"}}}
+R[23632]={colors={290,290,295,305},creates={19051,1,1},learn=290,name="Girdle of the Dawn",prof=164,reagents={{12359,8},{6037,6},{12811,1}},sources={{cost=22000,item=19203,npcs={11536},standing=5,t="reputation"},{cost=23157,item=19203,npcs={10856},standing=5,t="reputation"},{cost=23157,item=19203,npcs={10857},standing=5,t="reputation"}}}
+R[23633]={colors={300,320,330,340},creates={19057,1,1},learn=300,name="Gloves of the Dawn",prof=164,reagents={{12360,2},{6037,10},{12811,1}},sources={{cost=40000,item=19205,npcs={10856},standing=6,t="reputation"},{cost=42105,item=19205,npcs={10857},standing=6,t="reputation"},{cost=45000,item=19205,npcs={11536},standing=6,t="reputation"}}}
+R[23636]={colors={300,320,330,340},creates={19148,1,1},learn=300,name="Dark Iron Helm",prof=164,reagents={{17011,4},{17010,2},{11371,4}},sources={{cost=63529,item=19206,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[23637]={colors={300,320,330,340},creates={19164,1,1},learn=300,name="Dark Iron Gauntlets",prof=164,reagents={{17011,3},{17010,5},{17012,4},{11371,4},{11382,2}},sources={{cost=84705,item=19207,npcs={12944},standing=6,t="reputation"}}}
+R[23638]={colors={300,320,330,340},creates={19166,1,1},learn=300,name="Black Amnesty",prof=164,reagents={{17011,3},{17010,6},{12360,12},{11382,1},{11371,4}},sources={{cost=74117,item=19208,npcs={12944},standing=6,t="reputation"}}}
+R[23639]={colors={300,320,330,340},creates={19167,1,1},learn=300,name="Blackfury",prof=164,reagents={{17011,5},{17010,2},{12360,16},{11371,6}},sources={{cost=74117,item=19209,npcs={12944},standing=6,t="reputation"}}}
+R[23650]={colors={300,300,305,315},creates={19170,1,1},learn=300,name="Ebon Hand",prof=164,reagents={{17011,4},{17010,7},{12360,12},{11371,8},{12800,4}},sources={{cost=135000,item=19210,npcs={12944},standing=7,t="reputation"}}}
+R[23652]={colors={300,300,305,315},creates={19168,1,1},learn=300,name="Blackguard",prof=164,reagents={{17011,6},{17010,6},{12360,10},{11371,6},{12809,12}},sources={{cost=135000,item=19211,npcs={12944},standing=7,t="reputation"}}}
+R[23653]={colors={300,300,305,315},creates={19169,1,1},learn=300,name="Nightfall",prof=164,reagents={{17011,8},{17010,5},{12360,10},{11371,12},{12364,4}},sources={{cost=135000,item=19212,npcs={12944},standing=7,t="reputation"}}}
+R[23662]={colors={290,290,290,300},creates={19047,1,1},learn=290,name="Wisdom of the Timbermaw",prof=197,reagents={{14048,8},{7076,3},{12803,3},{14227,2}},sources={{cost=23157,item=19215,npcs={11557},standing=5,t="reputation"}}}
+R[23663]={colors={300,305,319,334},creates={19050,1,1},learn=300,name="Mantle of the Timbermaw",prof=197,reagents={{14342,5},{7076,5},{12803,5},{14227,2}},sources={{cost=42105,item=19218,npcs={11557},standing=6,t="reputation"}}}
+R[23664]={colors={290,290,290,300},creates={19056,1,1},learn=290,name="Argent Boots",prof=197,reagents={{14048,6},{12810,4},{13926,2},{12809,2},{14227,2}},sources={{cost=23157,item=19216,npcs={10856},standing=5,t="reputation"},{cost=23157,item=19216,npcs={10857},standing=5,t="reputation"},{cost=23157,item=19216,npcs={11536},standing=5,t="reputation"}}}
+R[23665]={colors={300,305,320,335},creates={19059,1,1},learn=300,name="Argent Shoulders",prof=197,reagents={{14342,5},{12809,2},{14227,2}},sources={{cost=42105,item=19217,npcs={10856},standing=6,t="reputation"},{cost=42105,item=19217,npcs={10857},standing=6,t="reputation"},{cost=45000,item=19217,npcs={11536},standing=6,t="reputation"}}}
+R[23666]={colors={300,315,330,345},creates={19156,1,1},learn=300,name="Flarecore Robe",prof=197,reagents={{14342,10},{17010,2},{17011,3},{7078,6},{14227,4}},sources={{cost=63529,item=19219,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[23667]={colors={300,315,330,345},creates={19165,1,1},learn=300,name="Flarecore Leggings",prof=197,reagents={{14342,8},{17010,5},{17011,3},{7078,10},{14227,4}},sources={{cost=95294,item=19220,npcs={12944},standing=6,t="reputation"}}}
+R[23703]={colors={290,290,295,305},creates={19044,1,1},learn=290,name="Might of the Timbermaw",prof=165,reagents={{8170,30},{12804,2},{12803,4},{15407,2},{14341,2}},sources={{cost=23157,item=19326,npcs={11557},standing=5,t="reputation"}}}
+R[23704]={colors={300,315,325,335},creates={19049,1,1},learn=300,name="Timbermaw Brawlers",prof=165,reagents={{12810,8},{12804,6},{12803,6},{15407,2},{14227,2}},sources={{cost=42105,item=19327,npcs={11557},standing=6,t="reputation"}}}
+R[23705]={colors={290,290,295,305},creates={19052,1,1},learn=290,name="Dawn Treaders",prof=165,reagents={{8170,30},{12809,2},{7080,4},{15407,2},{14341,2}},sources={{cost=23157,item=19328,npcs={10856},standing=5,t="reputation"},{cost=23157,item=19328,npcs={10857},standing=5,t="reputation"},{cost=23157,item=19328,npcs={11536},standing=5,t="reputation"}}}
+R[23706]={colors={300,315,325,335},creates={19058,1,1},learn=300,name="Golden Mantle of the Dawn",prof=165,reagents={{12810,8},{12803,4},{12809,4},{15407,2},{14341,2}},sources={{cost=40000,item=19329,npcs={10856},standing=6,t="reputation"},{cost=42105,item=19329,npcs={10857},standing=6,t="reputation"},{cost=42105,item=19329,npcs={11536},standing=6,t="reputation"}}}
+R[23707]={colors={300,320,330,340},creates={19149,1,1},learn=300,name="Lava Belt",prof=165,reagents={{17011,5},{15407,4},{14227,4}},sources={{cost=63529,item=19330,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[23708]={colors={300,320,330,340},creates={19157,1,1},learn=300,name="Chromatic Gauntlets",prof=165,reagents={{17010,5},{17011,2},{17012,4},{12607,4},{15407,4},{14227,4}},sources={{cost=95294,item=19331,npcs={12944},standing=6,t="reputation"}}}
+R[23709]={colors={300,320,330,340},creates={19162,1,1},learn=300,name="Corehound Belt",prof=165,reagents={{17010,8},{17012,12},{12810,10},{15407,4},{14227,4}},sources={{cost=95294,item=19332,npcs={12944},standing=6,t="reputation"}}}
+R[23710]={colors={300,320,330,340},creates={19163,1,1},learn=300,name="Molten Belt",prof=165,reagents={{17010,2},{17011,7},{7076,6},{15407,4},{14227,4}},sources={{cost=95294,item=19333,npcs={12944},standing=6,t="reputation"}}}
+R[23787]={colors={300,300,330,360},creates={19440,3,3},learn=300,name="Powerful Anti-Venom",prof=129,reagents={{19441,1}},sources={{cost=105263,item=19442,npcs={10856},standing=5,t="reputation"},{cost=105263,item=19442,npcs={10857},standing=5,t="reputation"},{cost=112500,item=19442,npcs={11536},standing=5,t="reputation"}}}
+R[23799]={colors={290,310,330,350},learn=290,name="Enchant Weapon - Strength",prof=333,reagents={{14344,6},{16203,6},{16204,4},{7076,2}},sources={{cost=31764,item=19444,limited=true,npcs={12944},standing=4,t="reputation"}}}
+R[23800]={colors={290,310,330,350},learn=290,name="Enchant Weapon - Agility",prof=333,reagents={{14344,6},{16203,6},{16204,4},{7082,2}},sources={{cost=31578,item=19445,npcs={11557},standing=5,t="reputation"}}}
+R[23801]={colors={290,310,330,350},learn=290,name="Enchant Bracer - Mana Regeneration",prof=333,reagents={{16204,16},{16203,4},{7080,2}},sources={{cost=31578,item=19446,npcs={10856},standing=5,t="reputation"},{cost=31578,item=19446,npcs={10857},standing=5,t="reputation"},{cost=33750,item=19446,npcs={11536},standing=5,t="reputation"}}}
+R[23802]={colors={300,320,340,360},learn=300,name="Enchant Bracer - Healing Power",prof=333,reagents={{14344,2},{16204,20},{16203,4},{12803,6}},sources={{cost=63157,item=19447,npcs={10856},standing=6,t="reputation"},{cost=63157,item=19447,npcs={10857},standing=6,t="reputation"},{cost=63157,item=19447,npcs={11536},standing=6,t="reputation"}}}
+R[23803]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Mighty Spirit",prof=333,reagents={{14344,10},{16203,8},{16204,15}},sources={{cost=84705,item=19448,limited=true,npcs={12944},standing=5,t="reputation"}}}
+R[23804]={colors={300,320,340,360},learn=300,name="Enchant Weapon - Mighty Intellect",prof=333,reagents={{14344,15},{16203,12},{16204,20}},sources={{cost=105882,item=19449,limited=true,npcs={12944},standing=6,t="reputation"}}}
+R[24091]={colors={300,315,330,345},creates={19682,1,1},learn=300,name="Bloodvine Vest",prof=197,reagents={{14342,3},{19726,5},{12804,4},{14048,4},{14227,2}},sources={{cost=52941,item=19764,npcs={14921},standing=6,t="reputation"}}}
+R[24092]={colors={300,315,330,345},creates={19683,1,1},learn=300,name="Bloodvine Leggings",prof=197,reagents={{14342,4},{19726,4},{12804,4},{14048,4},{14227,2}},sources={{cost=52941,item=19765,npcs={14921},standing=5,t="reputation"}}}
+R[24093]={colors={300,315,330,345},creates={19684,1,1},learn=300,name="Bloodvine Boots",prof=197,reagents={{14342,3},{19726,3},{12810,4},{14048,4},{14227,4}},sources={{cost=50000,item=19766,npcs={14921},standing=4,t="reputation"}}}
+R[24121]={colors={300,320,330,340},creates={19685,1,1},learn=300,name="Primal Batskin Jerkin",prof=165,reagents={{19767,14},{15407,5},{12803,4},{14341,4}},sources={{cost=50000,item=19769,npcs={14921},standing=6,t="reputation"}}}
+R[24122]={colors={300,320,330,340},creates={19686,1,1},learn=300,name="Primal Batskin Gloves",prof=165,reagents={{19767,10},{15407,4},{12803,4},{14341,3}},sources={{cost=50000,item=19770,npcs={14921},standing=5,t="reputation"}}}
+R[24123]={colors={300,320,330,340},creates={19687,1,1},learn=300,name="Primal Batskin Bracers",prof=165,reagents={{19767,8},{15407,3},{12803,4},{14341,3}},sources={{cost=56250,item=19771,npcs={14921},standing=4,t="reputation"}}}
+R[24124]={colors={300,320,330,340},creates={19688,1,1},learn=300,name="Blood Tiger Breastplate",prof=165,reagents={{19768,35},{19726,2},{15407,3},{14341,3}},sources={{cost=50000,item=19772,npcs={14921},standing=6,t="reputation"}}}
+R[24125]={colors={300,320,330,340},creates={19689,1,1},learn=300,name="Blood Tiger Shoulders",prof=165,reagents={{19768,25},{19726,2},{15407,3},{14341,3}},sources={{cost=50000,item=19773,npcs={14921},standing=5,t="reputation"}}}
+R[24136]={colors={300,320,330,340},creates={19690,1,1},learn=300,name="Bloodsoul Breastplate",prof=164,reagents={{12359,20},{19774,10},{19726,2},{7910,2}},sources={{cost=50000,item=19776,npcs={14921},standing=6,t="reputation"}}}
+R[24137]={colors={300,320,330,340},creates={19691,1,1},learn=300,name="Bloodsoul Shoulders",prof=164,reagents={{12359,16},{19774,8},{19726,2},{7910,1}},sources={{cost=52941,item=19777,npcs={14921},standing=5,t="reputation"}}}
+R[24138]={colors={300,320,330,340},creates={19692,1,1},learn=300,name="Bloodsoul Gauntlets",prof=164,reagents={{12359,12},{19774,6},{19726,2},{12810,4}},sources={{cost=56250,item=19778,npcs={14921},standing=4,t="reputation"}}}
+R[24139]={colors={300,320,330,340},creates={19693,1,1},learn=300,name="Darksoul Breastplate",prof=164,reagents={{12359,20},{19774,14},{12799,2}},sources={{cost=50000,item=19779,npcs={14921},standing=6,t="reputation"}}}
+R[24140]={colors={300,320,330,340},creates={19694,1,1},learn=300,name="Darksoul Leggings",prof=164,reagents={{12359,18},{19774,12},{12799,2}},sources={{cost=52941,item=19780,npcs={14921},standing=5,t="reputation"}}}
+R[24141]={colors={300,320,330,340},creates={19695,1,1},learn=300,name="Darksoul Shoulders",prof=164,reagents={{12359,16},{19774,10},{12799,1}},sources={{cost=50000,item=19781,npcs={14921},standing=4,t="reputation"}}}
+R[24266]={colors={315,315,322,330},creates={19931,3,3},learn=315,name="Gurubashi Mojo Madness",prof=171,reagents={{12938,1},{19943,1},{12804,6},{13468,1}},sources={{t="other"}}}
+R[24356]={colors={300,320,330,340},creates={19999,1,1},learn=300,name="Bloodvine Goggles",prof=202,reagents={{19726,4},{19774,5},{16006,2},{12804,8},{12810,4}},sources={{cost=135000,item=20000,npcs={14921},standing=5,t="reputation"}}}
+R[24357]={colors={300,320,330,340},creates={19998,1,1},learn=300,name="Bloodvine Lens",prof=202,reagents={{19726,5},{19774,5},{16006,1},{12804,8},{12810,4}},sources={{cost=50000,item=20001,npcs={14921},standing=4,t="reputation"}}}
+R[24365]={colors={275,290,310,330},creates={20007,1,1},learn=275,name="Mageblood Elixir",prof=171,reagents={{13463,1},{13466,2},{8925,1}},sources={{cost=50000,item=20011,npcs={14921},standing=6,t="reputation"}}}
+R[24366]={colors={275,290,310,330},creates={20002,1,1},learn=275,name="Greater Dreamless Sleep Potion",prof=171,reagents={{13463,2},{13464,1},{8925,1}},sources={{cost=56250,item=20012,npcs={14921},standing=4,t="reputation"}}}
+R[24367]={colors={285,300,320,340},creates={20008,1,1},learn=285,name="Living Action Potion",prof=171,reagents={{13467,2},{13465,2},{10286,2},{8925,1}},sources={{cost=56250,item=20013,npcs={14921},standing=7,t="reputation"}}}
+R[24368]={colors={290,305,325,345},creates={20004,1,1},learn=290,name="Major Troll's Blood Elixir",prof=171,reagents={{8846,1},{13466,2},{8925,1}},sources={{cost=50000,item=20014,npcs={14921},standing=5,t="reputation"}}}
+R[24399]={colors={300,320,330,340},creates={20039,1,1},learn=300,name="Dark Iron Boots",prof=164,reagents={{17011,3},{17010,3},{17012,4},{11371,6}},sources={{cost=90000,item=20040,npcs={12944},standing=7,t="reputation"}}}
+R[24418]={colors={150,160,180,200},creates={20074,1,1},learn=150,name="Heavy Crocolisk Stew",prof=185,reagents={{3667,2},{3713,1}},sources={{cost=2000,item=20075,npcs={4879},t="vendor"}}}
+R[24654]={colors={300,310,320,330},creates={20295,1,1},learn=300,name="Blue Dragonscale Leggings",prof=165,reagents={{8170,28},{15415,36},{15407,2},{14341,2}},sources={{cost=45000,npcs={7867},t="trainer"}},spec=10656}
+R[24655]={colors={280,280,285,295},creates={20296,1,1},learn=280,name="Green Dragonscale Gauntlets",prof=165,reagents={{8170,20},{15412,30},{15407,1},{14341,2}},sources={{cost=27000,npcs={7867},t="trainer"}},spec=10656}
+R[24703]={colors={300,320,330,340},creates={20380,1,1},learn=300,name="Dreamscale Breastplate",prof=165,reagents={{12810,12},{20381,6},{12803,4},{15407,4},{14227,6}},sources={{t="other"}}}
+R[24801]={colors={285,325,345,365},creates={20452,1,1},learn=285,name="Smoked Desert Dumplings",prof=185,reagents={{20424,1},{3713,1}},sources={{t="other"}}}
+R[24846]={colors={300,310,320,330},creates={20481,1,1},learn=300,name="Spitfire Bracers",prof=165,reagents={{20500,1},{20498,20},{7078,2}},sources={{t="other"}}}
+R[24847]={colors={300,305,315,325},creates={20480,1,1},learn=300,name="Spitfire Gauntlets",prof=165,reagents={{20500,2},{20498,30},{7078,2},{15407,1}},sources={{t="other"}}}
+R[24848]={colors={300,310,320,330},creates={20479,1,1},learn=300,name="Spitfire Breastplate",prof=165,reagents={{20500,3},{20498,40},{7078,2},{15407,2}},sources={{t="other"}}}
+R[24849]={colors={300,310,320,330},creates={20476,1,1},learn=300,name="Sandstalker Bracers",prof=165,reagents={{20501,1},{20498,20},{18512,2}},sources={{t="other"}}}
+R[24850]={colors={300,310,320,330},creates={20477,1,1},learn=300,name="Sandstalker Gauntlets",prof=165,reagents={{20501,2},{20498,30},{18512,2},{15407,1}},sources={{t="other"}}}
+R[24851]={colors={300,310,320,330},creates={20478,1,1},learn=300,name="Sandstalker Breastplate",prof=165,reagents={{20501,3},{20498,40},{18512,2},{15407,2}},sources={{t="other"}}}
+R[24901]={colors={300,300,315,330},creates={20538,1,1},learn=300,name="Runed Stygian Leggings",prof=197,reagents={{14048,6},{20520,8},{14256,6},{14227,2}},sources={{item=20546,t="drop"}}}
+R[24902]={colors={300,300,315,330},creates={20539,1,1},learn=300,name="Runed Stygian Belt",prof=197,reagents={{14048,2},{20520,6},{14256,2},{12810,2},{14227,2}},sources={{item=20548,t="drop"}}}
+R[24903]={colors={300,300,315,330},creates={20537,1,1},learn=300,name="Runed Stygian Boots",prof=197,reagents={{14048,4},{20520,6},{14256,4},{12810,2},{14227,2}},sources={{item=20547,t="drop"}}}
+R[24912]={colors={300,320,330,340},creates={20549,1,1},learn=300,name="Darkrune Gauntlets",prof=164,reagents={{12359,12},{20520,6},{6037,6},{12810,2}},sources={{item=20553,t="drop"}}}
+R[24913]={colors={300,320,330,340},creates={20551,1,1},learn=300,name="Darkrune Helm",prof=164,reagents={{12359,16},{20520,8},{6037,8},{11754,1}},sources={{item=20555,t="drop"}}}
+R[24914]={colors={300,320,330,340},creates={20550,1,1},learn=300,name="Darkrune Breastplate",prof=164,reagents={{12359,20},{20520,10},{6037,10}},sources={{item=20554,t="drop"}}}
+R[24940]={colors={100,100,112,125},creates={20575,1,1},learn=100,name="Black Whelp Tunic",prof=165,reagents={{2319,8},{7286,8},{4231,1},{2321,2}},sources={{cost=1473,item=20576,limited=true,npcs={777},t="vendor"},{item=20576,t="drop"}}}
+R[25072]={colors={300,320,340,360},learn=300,name="Enchant Gloves - Threat",prof=333,reagents={{20725,4},{14344,6},{18512,8}},sources={{item=20726,t="drop"}}}
+R[25073]={colors={300,320,340,360},learn=300,name="Enchant Gloves - Shadow Power",prof=333,reagents={{20725,3},{14344,10},{12808,6}},sources={{item=20727,t="drop"}}}
+R[25074]={colors={300,320,340,360},learn=300,name="Enchant Gloves - Frost Power",prof=333,reagents={{20725,3},{14344,10},{7080,4}},sources={{item=20728,t="drop"}}}
+R[25078]={colors={300,320,340,360},learn=300,name="Enchant Gloves - Fire Power",prof=333,reagents={{20725,2},{14344,10},{7078,4}},sources={{item=20729,t="drop"}}}
+R[25079]={colors={300,320,340,360},learn=300,name="Enchant Gloves - Healing Power",prof=333,reagents={{20725,3},{14344,8},{12811,1}},sources={{item=20730,t="drop"}}}
+R[25080]={colors={300,320,340,360},learn=300,name="Enchant Gloves - Superior Agility",prof=333,reagents={{20725,3},{14344,8},{7082,4}},sources={{item=20731,t="drop"}}}
+R[25081]={colors={300,320,340,360},learn=300,name="Enchant Cloak - Greater Fire Resistance",prof=333,reagents={{20725,3},{14344,8},{7078,4}},sources={{cost=112500,item=20732,npcs={15419},standing=4,t="reputation"},{cost=90000,item=229008,npcs={12944},standing=5,t="reputation"}}}
+R[25082]={colors={300,320,340,360},learn=300,name="Enchant Cloak - Greater Nature Resistance",prof=333,reagents={{20725,2},{14344,8},{12803,4}},sources={{cost=112500,item=20733,npcs={15419},standing=5,t="reputation"},{cost=90000,item=229009,npcs={12944},standing=5,t="reputation"}}}
+R[25083]={colors={300,320,340,360},learn=300,name="Enchant Cloak - Stealth",prof=333,reagents={{20725,3},{14344,8},{13468,2}},sources={{item=20734,t="drop"}}}
+R[25084]={colors={300,320,340,360},learn=300,name="Enchant Cloak - Subtlety",prof=333,reagents={{20725,4},{14344,6},{11754,2}},sources={{item=20735,t="drop"}}}
+R[25086]={colors={300,320,340,360},learn=300,name="Enchant Cloak - Dodge",prof=333,reagents={{20725,3},{14344,8},{12809,8}},sources={{item=20736,t="drop"}}}
+R[25124]={colors={45,45,47,65},creates={20744,1,1},learn=45,name="Minor Wizard Oil",prof=333,reagents={{10940,1},{17034,1},{3371,1}},sources={{cost=500,item=20758,npcs={1318},t="vendor"},{cost=500,item=20758,npcs={3012},t="vendor"},{cost=500,item=20758,npcs={3346},t="vendor"},{cost=500,item=20758,npcs={4228},t="vendor"},{cost=500,item=20758,npcs={4617},t="vendor"},{cost=500,item=20758,npcs={5158},t="vendor"},{cost=500,item=20758,npcs={5757},t="vendor"},{cost=500,item=20758,npcs={5758},t="vendor"},{cost=500,item=20758,npcs={257020},t="vendor"},{cost=562,item=20758,npcs={15419},t="vendor"}}}
+R[25125]={colors={150,160,170,180},creates={20745,1,1},learn=150,name="Minor Mana Oil",prof=333,reagents={{11083,1},{17034,2},{3372,1}},sources={{cost=3000,item=20752,npcs={1318},t="vendor"},{cost=3000,item=20752,npcs={3012},t="vendor"},{cost=3000,item=20752,npcs={3346},t="vendor"},{cost=3000,item=20752,npcs={4228},t="vendor"},{cost=3000,item=20752,npcs={4617},t="vendor"},{cost=3000,item=20752,npcs={5158},t="vendor"},{cost=3000,item=20752,npcs={5757},t="vendor"},{cost=3000,item=20752,npcs={5758},t="vendor"},{cost=3000,item=20752,npcs={257020},t="vendor"},{cost=3375,item=20752,npcs={15419},t="vendor"}}}
+R[25126]={colors={200,210,220,230},creates={20746,1,1},learn=200,name="Lesser Wizard Oil",prof=333,reagents={{11137,1},{17035,2},{3372,1}},sources={{cost=4000,item=20753,npcs={1318},t="vendor"},{cost=4000,item=20753,npcs={3012},t="vendor"},{cost=4000,item=20753,npcs={3346},t="vendor"},{cost=4000,item=20753,npcs={4228},t="vendor"},{cost=4000,item=20753,npcs={4617},t="vendor"},{cost=4000,item=20753,npcs={5158},t="vendor"},{cost=4000,item=20753,npcs={5757},t="vendor"},{cost=4000,item=20753,npcs={5758},t="vendor"},{cost=4000,item=20753,npcs={257020},t="vendor"},{cost=4500,item=20753,npcs={15419},t="vendor"}}}
+R[25127]={colors={250,260,270,280},creates={20747,1,1},learn=250,name="Lesser Mana Oil",prof=333,reagents={{11176,1},{8831,1},{8925,1}},sources={{cost=9000,item=20754,npcs={12944},t="vendor"},{cost=11250,item=20754,npcs={15419},t="vendor"}}}
+R[25128]={colors={275,285,295,305},creates={20750,1,1},learn=275,name="Wizard Oil",prof=333,reagents={{16204,3},{4625,2},{8925,1}},sources={{cost=18000,item=20755,npcs={12944},t="vendor"},{cost=22500,item=20755,npcs={15419},t="vendor"}}}
+R[25129]={colors={300,310,320,330},creates={20749,1,1},learn=300,name="Brilliant Wizard Oil",prof=333,reagents={{14344,2},{4625,3},{18256,1}},sources={{cost=45000,item=20756,npcs={14921},standing=5,t="reputation"}}}
+R[25130]={colors={300,310,320,330},creates={20748,1,1},learn=300,name="Brilliant Mana Oil",prof=333,reagents={{14344,2},{8831,3},{18256,1}},sources={{cost=45000,item=20757,npcs={14921},standing=4,t="reputation"}}}
+R[25146]={colors={300,301,305,310},creates={7068,3,3},learn=300,name="Transmute: Elemental Fire",prof=171,reagents={{7077,1}},sources={{cost=127058,item=20761,limited=true,npcs={12944},standing=4,t="reputation"}}}
+R[25659]={colors={300,325,345,365},creates={21023,5,5},learn=300,name="Dirge's Kickin' Chimaerok Chops",prof=185,reagents={{2692,1},{9061,1},{8150,1},{21024,1}},sources={{item=21025,t="quest"}}}
+R[25704]={colors={80,120,140,160},creates={21072,1,1},learn=80,name="Smoked Sagefish",prof=185,reagents={{21071,1},{2678,1}},sources={{cost=500,item=21099,npcs={2381},t="vendor"},{cost=500,item=21099,npcs={2397},t="vendor"},{cost=500,item=21099,npcs={2664},t="vendor"},{cost=500,item=21099,npcs={3027},t="vendor"},{cost=500,item=21099,npcs={3085},t="vendor"},{cost=500,item=21099,npcs={3400},t="vendor"},{cost=500,item=21099,npcs={4223},t="vendor"},{cost=500,item=21099,npcs={4265},t="vendor"},{cost=500,item=21099,npcs={4553},t="vendor"},{cost=500,item=21099,npcs={5160},t="vendor"},{cost=500,item=21099,npcs={5483},t="vendor"},{cost=500,item=21099,npcs={8307},t="vendor"},{cost=500,item=21099,npcs={12033},t="vendor"},{cost=500,item=21099,npcs={14738},t="vendor"},{cost=500,item=21099,npcs={240604},t="vendor"},{cost=500,item=21099,npcs={242498},t="vendor"},{cost=500,item=21099,npcs={248198},t="vendor"},{cost=500,item=21099,npcs={251905},t="vendor"},{cost=500,item=21099,npcs={252083},t="vendor"},{cost=500,item=21099,npcs={256731},t="vendor"},{cost=500,item=21099,npcs={259962},t="vendor"},{cost=500,item=21099,npcs={267000},t="vendor"},{cost=500,item=21099,npcs={272646},t="vendor"}}}
+R[25954]={colors={175,215,235,255},creates={21217,1,1},learn=175,name="Sagefish Delight",prof=185,reagents={{21153,1},{2692,1}},sources={{cost=5000,item=21219,npcs={2381},t="vendor"},{cost=5000,item=21219,npcs={2397},t="vendor"},{cost=5000,item=21219,npcs={2664},t="vendor"},{cost=5000,item=21219,npcs={3027},t="vendor"},{cost=5000,item=21219,npcs={3085},t="vendor"},{cost=5000,item=21219,npcs={3400},t="vendor"},{cost=5000,item=21219,npcs={4223},t="vendor"},{cost=5000,item=21219,npcs={4265},t="vendor"},{cost=5000,item=21219,npcs={4553},t="vendor"},{cost=5000,item=21219,npcs={5160},t="vendor"},{cost=5000,item=21219,npcs={5483},t="vendor"},{cost=5000,item=21219,npcs={8307},t="vendor"},{cost=5000,item=21219,npcs={12033},t="vendor"},{cost=5000,item=21219,npcs={14738},t="vendor"},{cost=5000,item=21219,npcs={240604},t="vendor"},{cost=5000,item=21219,npcs={242498},t="vendor"},{cost=5000,item=21219,npcs={248198},t="vendor"},{cost=5000,item=21219,npcs={251905},t="vendor"},{cost=5000,item=21219,npcs={252083},t="vendor"},{cost=5000,item=21219,npcs={256731},t="vendor"},{cost=5000,item=21219,npcs={259962},t="vendor"},{cost=5000,item=21219,npcs={267000},t="vendor"},{cost=5000,item=21219,npcs={272646},t="vendor"}}}
+R[26011]={colors={250,320,330,340},creates={21277,1,1},learn=250,name="Tranquil Mechanical Yeti",prof=202,reagents={{15407,1},{15994,4},{7079,2},{18631,2},{10558,1}},sources={{t="other"}}}
+R[26085]={colors={260,260,275,290},creates={21340,1,1},est=true,learn=260,name="Soul Pouch",prof=197,reagents={{14048,6},{8170,4},{7972,2},{14341,1}},sources={{cost=12000,item=21358,npcs={6568},t="vendor"},{cost=12000,item=21358,npcs={260570},t="vendor"}}}
+R[26086]={colors={285,285,285,290},creates={21341,1,1},learn=285,name="Felcloth Bag",prof=197,reagents={{14256,12},{12810,6},{20520,2},{14227,4}},sources={{t="other"}}}
+R[26087]={colors={300,315,330,345},creates={21342,1,1},learn=300,name="Core Felcloth Bag",prof=197,reagents={{14256,20},{17012,16},{19726,8},{7078,4},{14227,4}},sources={{item=21371,t="drop"}}}
+R[26277]={colors={250,265,285,305},creates={21546,1,1},learn=250,name="Elixir of Holy Power",prof=171,reagents={{6371,3},{4625,3},{8925,1}},sources={{item=21547,t="drop"}}}
+R[26279]={colors={300,310,320,330},creates={21278,1,1},learn=300,name="Stormshroud Gloves",prof=165,reagents={{12810,6},{7080,4},{7082,4},{15407,2},{14227,2}},sources={{item=21548,t="drop"}}}
+R[26403]={colors={250,250,265,280},creates={21154,1,1},est=true,learn=250,name="Festival Dress",prof=197,reagents={{14048,4},{4625,2},{2604,2},{14341,1}},sources={{item=21722,t="quest"}}}
+R[26407]={colors={250,250,265,280},creates={21542,1,1},est=true,learn=250,name="Festival Suit",prof=197,reagents={{14048,4},{4625,2},{2604,2},{14341,1}},sources={{item=21723,t="quest"}}}
+R[26416]={colors={125,125,137,150},creates={21558,5,5},learn=125,name="Small Blue Rocket",prof=202,reagents={{4364,1},{2319,1}},sources={{t="other"}}}
+R[26417]={colors={125,125,137,150},creates={21559,5,5},learn=125,name="Small Green Rocket",prof=202,reagents={{4364,1},{2319,1}},sources={{t="other"}}}
+R[26418]={colors={125,125,137,150},creates={21557,5,5},learn=125,name="Small Red Rocket",prof=202,reagents={{4364,1},{2319,1}},sources={{t="other"}}}
+R[26420]={colors={175,175,187,200},creates={21589,5,5},learn=175,name="Large Blue Rocket",prof=202,reagents={{4377,1},{4234,1}},sources={{t="other"}}}
+R[26421]={colors={175,175,187,200},creates={21590,5,5},learn=175,name="Large Green Rocket",prof=202,reagents={{4377,1},{4234,1}},sources={{t="other"}}}
+R[26422]={colors={175,175,187,200},creates={21592,5,5},learn=175,name="Large Red Rocket",prof=202,reagents={{4377,1},{4234,1}},sources={{t="other"}}}
+R[26423]={colors={225,225,237,250},creates={21571,5,5},learn=225,name="Blue Rocket Cluster",prof=202,reagents={{10505,1},{4304,1}},sources={{t="other"}}}
+R[26424]={colors={225,225,237,250},creates={21574,5,5},learn=225,name="Green Rocket Cluster",prof=202,reagents={{10505,1},{4304,1}},sources={{t="other"}}}
+R[26425]={colors={225,225,237,250},creates={21576,5,5},learn=225,name="Red Rocket Cluster",prof=202,reagents={{10505,1},{4304,1}},sources={{t="other"}}}
+R[26426]={colors={275,275,280,285},creates={21714,5,5},learn=275,name="Large Blue Rocket Cluster",prof=202,reagents={{15992,1},{8170,1}},sources={{t="other"}}}
+R[26427]={colors={275,275,280,285},creates={21716,5,5},learn=275,name="Large Green Rocket Cluster",prof=202,reagents={{15992,1},{8170,1}},sources={{t="other"}}}
+R[26428]={colors={275,275,280,285},creates={21718,5,5},learn=275,name="Large Red Rocket Cluster",prof=202,reagents={{15992,1},{8170,1}},sources={{t="other"}}}
+R[26442]={colors={225,245,255,265},creates={21569,1,1},learn=225,name="Firework Launcher",prof=202,reagents={{9060,2},{9061,2},{10560,2},{10561,1}},sources={{item=21738,t="quest"}}}
+R[26443]={colors={275,295,305,315},creates={21570,1,1},learn=275,name="Firework Cluster Launcher",prof=202,reagents={{9060,3},{9061,3},{18631,1},{10561,1}},sources={{item=21737,t="quest"}}}
+R[27585]={colors={300,320,330,340},creates={22197,1,1},learn=300,name="Heavy Obsidian Belt",prof=164,reagents={{22202,14},{12655,4},{7076,2}},sources={{t="other"}}}
+R[27586]={colors={300,320,330,340},creates={22198,1,1},learn=300,name="Jagged Obsidian Shield",prof=164,reagents={{22203,8},{22202,24},{12655,8},{7076,4}},sources={{cost=44444,item=22219,limited=true,npcs={15471},standing=6,t="reputation"}}}
+R[27587]={colors={300,320,330,340},creates={22196,1,1},learn=300,name="Thick Obsidian Breastplate",prof=164,reagents={{22203,18},{22202,40},{12655,12},{7076,10},{12364,4}},sources={{item=22222,t="drop"}}}
+R[27588]={colors={300,320,330,340},creates={22195,1,1},learn=300,name="Light Obsidian Belt",prof=164,reagents={{22202,14},{12810,4}},sources={{t="other"}}}
+R[27589]={colors={300,320,330,340},creates={22194,1,1},learn=300,name="Black Grasp of the Destroyer",prof=164,reagents={{22203,8},{22202,24},{12810,8},{13512,1}},sources={{item=22220,t="drop"}}}
+R[27590]={colors={300,320,330,340},creates={22191,1,1},learn=300,name="Obsidian Mail Tunic",prof=164,reagents={{22203,15},{22202,36},{12810,12},{12809,10},{12800,4}},sources={{cost=71111,item=22221,limited=true,npcs={15471},standing=7,t="reputation"}}}
+R[27658]={colors={225,225,225,235},creates={22246,1,1},learn=225,name="Enchanted Mageweave Pouch",prof=197,reagents={{4339,4},{11137,4},{8343,2}},sources={{cost=6000,item=22307,npcs={1318},t="vendor"},{cost=6000,item=22307,npcs={3012},t="vendor"},{cost=6000,item=22307,npcs={3346},t="vendor"},{cost=6000,item=22307,npcs={4228},t="vendor"},{cost=6000,item=22307,npcs={4617},t="vendor"},{cost=6000,item=22307,npcs={5158},t="vendor"},{cost=6000,item=22307,npcs={5757},t="vendor"},{cost=6000,item=22307,npcs={5758},t="vendor"},{cost=6000,item=22307,npcs={257020},t="vendor"},{cost=6750,item=22307,npcs={15419},t="vendor"}}}
+R[27659]={colors={275,275,290,305},creates={22248,1,1},est=true,learn=275,name="Enchanted Runecloth Bag",prof=197,reagents={{14048,5},{16203,2},{14341,2}},sources={{cost=18000,item=22308,npcs={12944},t="vendor"},{cost=22500,item=22308,npcs={15419},t="vendor"}}}
+R[27660]={colors={300,300,310,325},creates={22249,1,1},est=true,learn=300,name="Big Bag of Enchantment",prof=197,reagents={{14048,6},{14344,4},{12810,4},{14227,4}},sources={{item=22309,t="drop"}}}
+R[27724]={colors={275,275,290,305},creates={22251,1,1},est=true,learn=275,name="Cenarion Herb Bag",prof=197,reagents={{14048,5},{8831,10},{11040,8},{14341,2}},sources={{cost=22500,item=22310,npcs={15179},standing=4,t="reputation"}}}
+R[27725]={colors={300,300,310,325},creates={22252,1,1},est=true,learn=300,name="Satchel of Cenarius",prof=197,reagents={{14048,6},{14342,2},{13468,1},{14227,4}},sources={{cost=56250,item=22312,npcs={15179},standing=6,t="reputation"}}}
+R[27829]={colors={300,320,330,340},creates={22385,1,1},learn=300,name="Titanic Leggings",prof=164,reagents={{12360,12},{12655,20},{7076,10},{13510,2}},sources={{item=22388,t="drop"}}}
+R[27830]={colors={300,320,330,340},creates={22384,1,1},learn=300,name="Persuader",prof=164,reagents={{12360,15},{11371,10},{12808,20},{20520,20},{15417,10},{12753,2}},sources={{item=22390,t="drop"}}}
+R[27832]={colors={300,320,330,340},creates={22383,1,1},learn=300,name="Sageblade",prof=164,reagents={{12360,12},{20725,2},{13512,2},{12810,4}},sources={{item=22389,t="drop"}}}
+R[27837]={colors={290,310,330,350},learn=290,name="Enchant 2H Weapon - Agility",prof=333,reagents={{14344,10},{16203,6},{16204,14},{7082,4}},sources={{cost=25000,item=22392,npcs={11557},standing=4,t="reputation"}}}
+R[28205]={colors={300,315,330,345},creates={22654,1,1},learn=300,name="Glacial Gloves",prof=197,reagents={{22682,5},{14048,4},{7080,4},{14227,4}},sources={{t="other"}}}
+R[28207]={colors={300,315,330,345},creates={22652,1,1},learn=300,name="Glacial Vest",prof=197,reagents={{22682,7},{14048,8},{7080,6},{14227,8}},sources={{t="other"}}}
+R[28208]={colors={300,315,330,345},creates={22658,1,1},learn=300,name="Glacial Cloak",prof=197,reagents={{22682,5},{14048,4},{7080,2},{14227,4}},sources={{t="other"}}}
+R[28209]={colors={300,315,330,345},creates={22655,1,1},learn=300,name="Glacial Wrists",prof=197,reagents={{22682,4},{14048,2},{7080,2},{14227,4}},sources={{t="other"}}}
+R[28210]={colors={300,315,330,345},creates={22660,1,1},learn=300,name="Gaea's Embrace",prof=197,reagents={{19726,1},{14342,2},{12803,4},{14227,4}},sources={{cost=101250,item=22683,npcs={15179},standing=6,t="reputation"}}}
+R[28219]={colors={300,320,330,340},creates={22661,1,1},learn=300,name="Polar Tunic",prof=165,reagents={{22682,7},{12810,16},{7080,2},{15407,4},{14227,4}},sources={{t="other"}}}
+R[28220]={colors={300,320,330,340},creates={22662,1,1},learn=300,name="Polar Gloves",prof=165,reagents={{22682,5},{12810,12},{7080,2},{15407,3},{14227,4}},sources={{t="other"}}}
+R[28221]={colors={300,320,330,340},creates={22663,1,1},learn=300,name="Polar Bracers",prof=165,reagents={{22682,4},{12810,12},{7080,2},{15407,2},{14227,4}},sources={{t="other"}}}
+R[28222]={colors={300,320,330,340},creates={22664,1,1},learn=300,name="Icy Scale Breastplate",prof=165,reagents={{22682,7},{15408,24},{7080,2},{15407,4},{14227,4}},sources={{t="other"}}}
+end)()
+;(function()
+R[28223]={colors={300,320,330,340},creates={22666,1,1},learn=300,name="Icy Scale Gauntlets",prof=165,reagents={{22682,5},{15408,16},{7080,2},{15407,3},{14227,4}},sources={{t="other"}}}
+R[28224]={colors={300,320,330,340},creates={22665,1,1},learn=300,name="Icy Scale Bracers",prof=165,reagents={{22682,4},{15408,16},{7080,2},{15407,2},{14227,4}},sources={{t="other"}}}
+R[28242]={colors={300,320,330,340},creates={22669,1,1},learn=300,name="Icebane Breastplate",prof=164,reagents={{22682,7},{12359,16},{12360,2},{7080,4}},sources={{t="other"}}}
+R[28243]={colors={300,320,330,340},creates={22670,1,1},learn=300,name="Icebane Gauntlets",prof=164,reagents={{22682,5},{12359,12},{12360,2},{7080,2}},sources={{t="other"}}}
+R[28244]={colors={300,320,330,340},creates={22671,1,1},learn=300,name="Icebane Bracers",prof=164,reagents={{22682,4},{12359,12},{12360,2},{7080,2}},sources={{t="other"}}}
+R[28327]={colors={275,295,305,315},creates={22728,1,1},learn=275,name="Steam Tonk Controller",prof=202,reagents={{15994,2},{10561,1},{10558,1}},sources={{item=22729,t="quest"}}}
+R[28461]={colors={300,320,330,340},learn=300,name="Ironvine Breastplate",prof=164,reagents={{12655,12},{19726,2},{12360,2},{12803,2}},sources={{t="other"}}}
+R[28462]={colors={300,320,330,340},learn=300,name="Ironvine Gloves",prof=164,reagents={{12655,8},{19726,1},{12803,2}},sources={{t="other"}}}
+R[28463]={colors={300,320,330,340},learn=300,name="Ironvine Belt",prof=164,reagents={{12655,6},{12803,2}},sources={{t="other"}}}
+R[28472]={colors={300,320,330,340},creates={22759,1,1},learn=300,name="Bramblewood Helm",prof=165,reagents={{12810,12},{19726,2},{12803,2},{15407,2}},sources={{t="other"}}}
+R[28473]={colors={300,320,330,340},creates={22760,1,1},learn=300,name="Bramblewood Boots",prof=165,reagents={{12810,6},{18512,2},{12803,2},{15407,2}},sources={{t="other"}}}
+R[28474]={colors={300,320,330,340},creates={22761,1,1},learn=300,name="Bramblewood Belt",prof=165,reagents={{12810,4},{12803,2},{15407,1}},sources={{t="other"}}}
+R[28480]={colors={300,315,330,345},creates={22756,1,1},learn=300,name="Sylvan Vest",prof=197,reagents={{14048,4},{19726,2},{12803,2},{14227,2}},sources={{cost=56250,item=22774,npcs={15179},standing=6,t="reputation"}}}
+R[28481]={colors={300,315,330,345},creates={22757,1,1},learn=300,name="Sylvan Crown",prof=197,reagents={{14048,4},{14342,2},{12803,2},{14227,2}},sources={{cost=56250,item=22773,npcs={15179},standing=5,t="reputation"}}}
+R[28482]={colors={300,315,330,345},creates={22758,1,1},learn=300,name="Sylvan Shoulders",prof=197,reagents={{14048,2},{12803,4},{14227,2}},sources={{cost=52941,item=22772,npcs={15179},standing=4,t="reputation"}}}
+R[44950]={colors={250,250,252,255},creates={34087,1,1},learn=250,name="Green Winter Clothes",prof=197,reagents={{14048,4},{2997,1},{2605,2},{14341,1}},sources={{t="other"}}}
+R[44953]={colors={285,285,287,290},creates={34086,1,1},learn=285,name="Winter Boots",prof=165,reagents={{2840,1},{2997,1},{8170,4},{14341,1}},sources={{t="other"}}}
+R[44958]={colors={250,250,252,255},creates={34085,1,1},learn=250,name="Red Winter Clothes",prof=197,reagents={{14048,4},{2997,1},{2604,2},{14341,1}},sources={{t="other"}}}
+R[424641]={colors={135,135,140,145},creates={210147,1,1},learn=135,name="Shredder Autosalvage Unit",prof=202,reagents={{4382,1},{4375,2},{4234,1}},sources={{item=210178,t="drop"}}}
+R[426607]={colors={90,90,100,110},creates={210708,1,1},learn=90,name="Elixir of Coalesced Regret",prof=171,reagents={{3820,5},{3372,1},{3369,5},{11083,1}},sources={{cost=100,item=210709,limited=true,npcs={3134},t="vendor"},{cost=105,item=210709,limited=true,npcs={3537},t="vendor"}}}
+R[427061]={colors={140,140,150,160},learn=140,name="Mantle of the Second War",prof=164,reagents={{2841,20},{1206,2},{1705,2},{5500,2},{2842,4}},sources={{t="vendor",unknownCost=true}}}
+R[428424]={colors={125,125,137,150},creates={210781,1,1},learn=125,name="Phoenix Bindings",prof=197,reagents={{2997,6},{814,2},{2321,2}},sources={{cost=70588,item=211247,npcs={214070},t="vendor"},{cost=75000,item=211247,npcs={213077},t="vendor"},{cost=75000,item=211247,npcs={214096},t="vendor"},{cost=75000,item=211247,npcs={214098},t="vendor"},{cost=79411,item=211247,npcs={214099},t="vendor"},{cost=79411,item=211247,npcs={214101},t="vendor"}}}
+R[429348]={colors={175,175,190,205},learn=175,name="Shifting Silver Breastplate",prof=164,reagents={{2870,1},{211422,1}},sources={{t="other"}}}
+R[429351]={colors={150,150,167,185},learn=150,name="Extraplanar Spidersilk Boots",prof=197,reagents={{211422,1},{4320,1}},sources={{t="other"}}}
+R[429354]={colors={160,160,172,185},learn=160,name="Void-Touched Leather Gloves",prof=165,reagents={{211422,1},{4253,1}},sources={{t="other"}}}
+R[429869]={colors={160,160,172,185},learn=160,name="Void-Touched Leather Gauntlets",prof=165,reagents={{211422,1},{4253,1}},sources={{t="other"}}}
+R[430397]={colors={100,100,110,120},creates={211845,1,1},learn=100,name="Blackfathom Sharpening Stone",prof=164,reagents={{2863,1},{10938,1}},sources={{t="other"}}}
+R[430409]={colors={100,100,110,120},learn=100,name="Blackfathom Mana Oil",prof=333,reagents={{3372,1},{10939,1},{10940,5}},sources={{t="other"}}}
+R[431362]={colors={205,205,210,215},creates={211427,1,1},learn=205,name="Soul Vessel",prof=202,reagents={{1210,4},{9262,1},{16583,1}},sources={{cost=20000,item=212230,npcs={213077},t="vendor"},{cost=20000,item=212230,npcs={214070},t="vendor"},{cost=20000,item=212230,npcs={214096},t="vendor"},{cost=20000,item=212230,npcs={214098},t="vendor"},{cost=20000,item=212230,npcs={214099},t="vendor"},{cost=21176,item=212230,npcs={214101},t="vendor"}}}
+R[435481]={colors={200,200,217,235},learn=200,name="Enchant Weapon - Dismantle",prof=333,reagents={{11174,4},{5637,2},{11177,2}},sources={{cost=50000,item=215129,npcs={217689},t="vendor"}}}
+R[435610]={colors={225,225,230,235},learn=225,name="Gneuro-Linked Arcano-Filament Monocle",prof=197,reagents={{213379,5},{213369,1},{213372,1},{11137,10},{4339,10}},sources={{t="vendor",unknownCost=true}}}
+R[435819]={colors={200,200,210,220},creates={213369,1,1},learn=200,name="Faintly Glowing Leather",prof=165,reagents={{8172,1},{213370,5}},sources={{cost=25000,item=215367,npcs={217689},t="vendor"}}}
+R[435827]={colors={200,200,210,220},creates={213379,1,1},learn=200,name="Hyperconductive Arcano-Filament",prof=197,reagents={{4339,2},{213378,5},{8343,5}},sources={{cost=25000,item=215368,npcs={217689},t="vendor"}}}
+R[435841]={colors={170,170,185,200},creates={215366,1,1},learn=170,name="Invoker's Cord",prof=197,reagents={{4305,3},{1210,1},{2321,1},{4340,1}},sources={{cost=736,item=215369,npcs={3364},t="vendor"},{cost=736,item=215369,npcs={4168},t="vendor"}}}
+R[435848]={colors={170,170,185,200},creates={215365,1,1},learn=170,name="Invoker's Mantle",prof=197,reagents={{4305,4},{4340,4},{2321,1},{6260,4}},sources={{cost=700,item=215370,npcs={3364},t="vendor"},{cost=736,item=215370,npcs={4168},t="vendor"}}}
+R[435903]={colors={200,200,220,240},learn=200,name="Enchant Chest - Retricutioner",prof=333,reagents={{11177,1},{11176,2}},sources={{cost=50000,item=215138,npcs={217689},t="vendor"}}}
+R[435904]={colors={225,225,230,235},learn=225,name="Glowing Gneuro-Linked Cowl",prof=165,reagents={{213379,1},{8172,5},{4291,2},{213369,5}},sources={{t="vendor",unknownCost=true}}}
+R[435906]={colors={225,225,230,235},learn=225,name="Reflective Truesilver Braincage",prof=164,reagents={{3860,25},{213376,4},{213379,2},{213383,1}},sources={{t="vendor",unknownCost=true}}}
+R[435908]={colors={225,225,230,235},learn=225,name="Tempered Interference-Negating Helmet",prof=164,reagents={{3860,25},{213376,4},{213379,1},{213369,2}},sources={{t="vendor",unknownCost=true}}}
+R[435910]={colors={200,200,210,220},creates={213376,1,1},learn=200,name="Low-Background Truesilver Plates",prof=164,reagents={{6037,1},{213373,5}},sources={{cost=25000,item=215384,npcs={217689},t="vendor"}}}
+R[435949]={colors={225,225,230,235},learn=225,name="Glowing Hyperconductive Scale Coif",prof=165,reagents={{213376,1},{5785,10},{213369,5},{213372,1}},sources={{t="vendor",unknownCost=true}}}
+R[435951]={colors={225,225,230,235},learn=225,name="Gneuro-Conductive Channeler's Hood",prof=165,reagents={{213372,1},{8172,5},{213369,5},{213379,1}},sources={{t="vendor",unknownCost=true}}}
+R[435953]={colors={225,225,230,235},learn=225,name="Rad-Resistant Scale Hood",prof=165,reagents={{213376,1},{8172,5},{213369,5},{213372,1}},sources={{t="vendor",unknownCost=true}}}
+R[435956]={colors={200,200,210,220},creates={213383,1,1},learn=200,name="Polished Truesilver Gears",prof=202,reagents={{6037,1},{213381,5}},sources={{cost=25000,item=215429,npcs={217689},t="vendor"}}}
+R[435958]={colors={225,225,232,240},learn=225,name="Whirling Truesilver Gearwall",prof=202,reagents={{213376,3},{213383,5},{213369,2},{10561,2},{4389,2},{3860,15}},sources={{t="vendor",unknownCost=true}}}
+R[435960]={colors={225,225,230,235},learn=225,name="Hyperconductive Goldwap",prof=202,reagents={{213383,3},{213379,3},{213369,1},{3577,10}},sources={{t="vendor",unknownCost=true}}}
+R[435964]={colors={225,225,230,235},learn=225,name="High-Yield Radiation Bomb",prof=202,reagents={{10505,1},{215430,1},{3860,2}},sources={{t="vendor",unknownCost=true}}}
+R[435966]={colors={225,225,230,235},learn=225,name="Ez-Thro Radiation Bomb",prof=202,reagents={{10505,2},{215430,1},{3860,2}},sources={{t="vendor",unknownCost=true}}}
+R[435969]={colors={200,200,210,220},learn=200,name="Insulating Gniodine",prof=171,reagents={{3372,1},{213371,5}},sources={{t="vendor",unknownCost=true}}}
+R[435971]={colors={225,225,230,235},learn=225,name="Mildly Irradiated Rejuvenation Potion",prof=171,reagents={{213371,1},{2456,1},{215430,3},{8925,5}},sources={{t="vendor",unknownCost=true}}}
+R[439085]={colors={220,220,235,250},learn=220,name="Crimson Silk Robe",prof=197,reagents={{4305,8},{7068,4},{3827,2},{2604,4},{4291,1}},sources={{t="vendor",unknownCost=true}}}
+R[439086]={colors={205,220,235,250},learn=205,name="Black Mageweave Vest",prof=197,reagents={{4339,2},{4291,3}},sources={{cost=4000,npcs={1346,4576,11052},t="trainer"}}}
+R[439088]={colors={205,220,235,250},learn=205,name="Black Mageweave Leggings",prof=197,reagents={{4339,2},{4291,3}},sources={{cost=4000,npcs={1346,4576,11052},t="trainer"}}}
+R[439091]={colors={215,215,230,245},learn=215,name="Earthen Silk Belt",prof=197,reagents={{4305,5},{7067,4},{4234,4},{7071,1},{4291,2}},sources={{t="drop"}}}
+R[439093]={colors={210,210,225,240},learn=210,name="Crimson Silk Shoulders",prof=197,reagents={{4305,5},{6371,2},{2604,2},{4291,2}},sources={{t="drop"}}}
+R[439094]={colors={185,205,220,235},learn=185,name="Long Silken Cloak",prof=197,reagents={{4305,4},{3827,1},{4291,1}},sources={{cost=1000,npcs={1346,4576,11052},t="trainer"}}}
+R[439097]={colors={195,195,210,225},learn=195,name="Boots of the Enchanter",prof=197,reagents={{4305,4},{4291,1},{4337,2}},sources={{t="drop"}}}
+R[439098]={colors={175,195,210,225},learn=175,name="Crimson Silk Belt",prof=197,reagents={{4305,4},{7071,1},{2604,2},{4291,1}},sources={{cost=1000,npcs={1346,4576,11052},t="trainer"}}}
+R[439100]={colors={170,190,205,220},learn=170,name="Earthen Vest",prof=197,reagents={{4305,3},{7067,1},{2321,2}},sources={{cost=900,npcs={1346,4576,11052},t="trainer"}}}
+R[439102]={colors={185,185,200,215},learn=185,name="Enchanter's Cowl",prof=197,reagents={{4305,3},{2321,2},{4337,2}},sources={{t="vendor",unknownCost=true}}}
+R[439105]={colors={240,240,250,260},learn=240,name="Big Voodoo Mask",prof=165,reagents={{4304,8},{8151,6},{8343,1}},sources={{t="drop"}}}
+R[439108]={colors={235,235,245,255},learn=235,name="Big Voodoo Robe",prof=165,reagents={{4304,10},{8151,4},{8343,1}},sources={{t="drop"}}}
+R[439110]={colors={215,215,225,235},learn=215,name="Guardian Leather Bracers",prof=165,reagents={{4234,6},{4236,2},{4291,1}},sources={{t="drop"}}}
+R[439112]={colors={190,190,200,210},learn=190,name="Guardian Belt",prof=165,reagents={{4236,2},{4234,4},{2321,1},{7071,1}},sources={{t="drop"}}}
+R[439114]={colors={160,180,190,200},learn=160,name="Guardian Pants",prof=165,reagents={{4234,12},{4305,2},{2321,2}},sources={{cost=900,npcs={3007,4212,11098},t="trainer"}}}
+R[439116]={colors={210,230,240,250},learn=210,name="Turtle Scale Breastplate",prof=165,reagents={{4304,6},{8167,12},{8343,1}},sources={{cost=2700,npcs={3007,11098},t="trainer"}}}
+R[439118]={colors={225,225,235,245},creates={217270,1,1},learn=225,name="Turtle Scale Gloves",prof=165,reagents={{4304,6},{8167,8},{8343,1}},sources={{cost=3500,item=217271,limited=true,npcs={7854},t="vendor"},{cost=3684,item=217271,limited=true,npcs={7852},t="vendor"},{item=217271,t="drop"}}}
+R[439120]={colors={225,225,235,245},creates={217273,1,1},learn=225,name="Golden Scale Gauntlets",prof=164,reagents={{3859,10},{3577,4},{3486,4},{3864,1}},sources={{t="quest"}}}
+R[439122]={colors={225,225,237,250},learn=225,name="Golden Scale Boots",prof=164,reagents={{3859,10},{3577,4},{3486,4},{3864,1}},sources={{t="drop"}}}
+R[439124]={colors={220,220,232,245},learn=220,name="Golden Scale Cuirass",prof=164,reagents={{3859,12},{3577,2},{3486,4},{1529,2}},sources={{t="drop"}}}
+R[439126]={colors={215,215,227,240},learn=215,name="Golden Scale Coif",prof=164,reagents={{3859,8},{3577,2},{3486,2}},sources={{t="vendor",unknownCost=true}}}
+R[439128]={colors={205,205,217,230},learn=205,name="Moonsteel Broadsword",prof=164,reagents={{3859,8},{3466,2},{3486,2},{1705,3},{4234,3}},sources={{t="vendor",unknownCost=true}}}
+R[439130]={colors={200,200,212,225},learn=200,name="Golden Scale Shoulders",prof=164,reagents={{3859,6},{3577,2},{3486,1}},sources={{t="drop"}}}
+R[439132]={colors={195,195,207,220},learn=195,name="Golden Scale Leggings",prof=164,reagents={{3575,10},{3577,2},{3486,1}},sources={{t="drop"}}}
+R[439134]={colors={175,195,215,235},creates={217287,1,1},learn=175,name="Greater Mystic Wand",prof=333,reagents={{11291,1},{11135,1},{11137,1}},sources={{cost=3000,npcs={11072,11074},t="trainer"}}}
+R[439156]={colors={225,225,227,230},creates={217308,1,1},learn=225,name="Sigil of Innovation",prof=333,reagents={{11137,5}},sources={{cost=50000,item=215141,npcs={217689},t="vendor"}}}
+R[439960]={colors={210,210,212,215},creates={217398,1,1},learn=210,name="Lesser Arcane Elixir",prof=171,reagents={{3356,1},{3821,1},{8925,1}},sources={{cost=16000,item=217399,npcs={214098},t="vendor"},{cost=18823,item=217399,npcs={214070},t="vendor"},{cost=20000,item=217399,npcs={214096},t="vendor"},{cost=21176,item=217399,npcs={213077},t="vendor"},{cost=21176,item=217399,npcs={214099},t="vendor"},{cost=21176,item=217399,npcs={214101},t="vendor"}}}
+R[446183]={colors={250,250,255,260},learn=250,name="Paranoia Mantle",prof=165,reagents={{221021,10},{220688,1},{15423,8},{8170,4}},sources={{t="other"}}}
+R[446185]={colors={250,250,255,260},learn=250,name="Shrieking Spaulders",prof=165,reagents={{221021,10},{220688,1},{15416,8},{8170,8}},sources={{t="other"}}}
+R[446186]={colors={250,250,255,260},learn=250,name="Cacophonous Chain Shoulderguards",prof=165,reagents={{221021,10},{220688,1},{15416,4},{8170,10}},sources={{t="other"}}}
+R[446189]={colors={250,250,255,260},learn=250,name="Shoulderpads of Obsession",prof=165,reagents={{221021,10},{220688,1},{7080,1},{8170,12}},sources={{t="other"}}}
+R[446190]={colors={250,250,255,260},learn=250,name="Wailing Chain Mantle",prof=165,reagents={{221021,10},{220688,1},{15412,8},{8170,8}},sources={{t="other"}}}
+R[446192]={colors={250,250,255,260},learn=250,name="Membrane of Dark Neurosis",prof=165,reagents={{221021,10},{220688,1},{15407,2},{8170,6}},sources={{t="other"}}}
+R[446193]={colors={250,250,255,260},learn=250,name="Fractured Mind Pauldrons",prof=197,reagents={{221021,10},{220688,1},{14256,8},{14048,8}},sources={{t="other"}}}
+R[446194]={colors={250,250,255,260},learn=250,name="Mantle of Insanity",prof=197,reagents={{221021,10},{220688,1},{12803,4},{14048,10}},sources={{t="other"}}}
+R[446195]={colors={250,250,255,260},learn=250,name="Shoulderpads of the Deranged",prof=197,reagents={{221021,10},{220688,1},{14256,6},{7080,1},{14048,3}},sources={{t="other"}}}
+R[446226]={colors={250,250,255,260},learn=250,name="Flask of Everlasting Nightmares",prof=171,reagents={{221021,10},{220688,1},{8925,1}},sources={{t="other"}}}
+R[446236]={colors={250,250,255,260},learn=250,name="Void-Powered Invoker's Vambraces",prof=202,reagents={{221021,10},{220688,1},{220689,1},{10558,2},{15994,2}},sources={{t="other"}}}
+R[446237]={colors={250,250,255,260},learn=250,name="Void-Powered Slayer's Vambraces",prof=202,reagents={{221021,10},{220688,1},{220689,1},{15992,3},{7910,2}},sources={{t="other"}}}
+R[446238]={colors={250,250,255,260},learn=250,name="Void-Powered Protector's Vambraces",prof=202,reagents={{221021,10},{220688,1},{220689,1},{10558,2},{16000,2}},sources={{t="other"}}}
+R[446243]={colors={250,250,255,260},learn=250,name="Sigil of Living Dreams",prof=333,reagents={{11176,5}},sources={{t="other"}}}
+R[446851]={colors={250,250,255,260},learn=250,name="Jar of Nightmarish Mojo",prof=171,reagents={{221021,5},{8925,1},{221312,5}},sources={{t="other"}}}
+R[448085]={colors={250,250,255,260},learn=250,name="Flask of Restless Dreams",prof=171,reagents={{221021,10},{220688,1},{8925,1}},sources={{t="other"}}}
+R[448624]={colors={120,120,140,160},creates={220792,1,1},learn=120,name="Scroll of Spatial Mending",prof=333,reagents={{4470,1},{10940,4}},sources={{item=223163,t="drop"}}}
+R[451706]={colors={250,250,255,260},learn=250,name="Screaming Chain Pauldrons",prof=165,reagents={{221021,10},{220688,1},{15412,5},{8170,10}},sources={{t="other"}}}
+R[460460]={colors={325,325,337,350},learn=325,name="Sulfuron Hammer",prof=164,reagents={{17203,8},{11371,20},{12360,50},{7078,25},{11382,10},{17011,10},{17010,10}},sources={{t="quest"}}}
+R[461645]={colors={315,315,325,335},learn=315,name="Honed Blue Dragonscale Shoulders",prof=165,reagents={{8170,28},{15415,30},{12810,2},{15407,1},{14341,1}},sources={{t="drop"}}}
+R[461647]={colors={320,320,330,340},learn=320,name="Skyrider's Masterwork Stormhammer",prof=164,reagents={{12794,1},{18262,10},{12360,15}},sources={{t="drop"}}}
+R[461649]={colors={290,290,300,310},learn=290,name="Living Green Dragonscale Leggings",prof=165,reagents={{8170,20},{15412,25},{14341,1}},sources={{t="other"}}}
+R[461651]={colors={310,310,320,330},learn=310,name="Fiery Plate Gauntlets of the Hidden Technique",prof=164,reagents={{12359,20},{12655,6},{7078,2},{7910,4}},sources={{t="quest"}}}
+R[461653]={colors={320,320,330,340},learn=320,name="Brilliant Chromatic Cloak",prof=165,reagents={{8170,30},{12607,12},{15416,30},{15414,30},{15407,5},{14341,8}},sources={{t="drop"}}}
+R[461655]={colors={310,310,320,330},learn=310,name="Hardened Black Dragonscale Breastplate",prof=165,reagents={{8170,40},{15416,60},{15407,1},{14341,2}},sources={{t="vendor",unknownCost=true}}}
+R[461657]={colors={320,320,330,340},learn=320,name="Hardened Black Dragonscale Leggings",prof=165,reagents={{8170,40},{15416,60},{12810,4},{15407,1},{14341,2}},sources={{t="drop"}}}
+R[461659]={colors={320,320,330,340},learn=320,name="Hardened Black Dragonscale Shoulders",prof=165,reagents={{8170,44},{15416,45},{12810,2},{15407,1},{14341,1}},sources={{t="drop"}}}
+R[461661]={colors={305,305,315,325},learn=305,name="Masterwork Volcanic Breastplate",prof=165,reagents={{8170,8},{7078,1},{7076,1},{14341,1}},sources={{t="drop"}}}
+R[461663]={colors={320,320,330,340},learn=320,name="Masterwork Volcanic Shoulders",prof=165,reagents={{8170,10},{7078,1},{7076,1},{14341,2}},sources={{t="drop"}}}
+R[461665]={colors={290,290,300,310},learn=290,name="Masterwork Volcanic Leggings",prof=165,reagents={{8170,6},{7078,1},{7075,1},{14341,1}},sources={{t="drop"}}}
+R[461667]={colors={305,305,315,325},learn=305,name="Tempered Dark Iron Plate",prof=164,reagents={{11371,20},{7077,8}},sources={{t="drop"}}}
+R[461669]={colors={320,320,330,340},learn=320,name="Refined Arcanite Champion",prof=164,reagents={{12790,1},{18262,10}},sources={{t="drop"}}}
+R[461671]={colors={320,320,330,340},learn=320,name="Stronger-hold Gauntlets",prof=164,reagents={{12360,15},{12655,20},{7076,10},{12361,4},{12799,4}},sources={{t="drop"}}}
+R[461673]={colors={305,305,315,325},learn=305,name="Honed Blue Dragonscale Breastplate",prof=165,reagents={{8170,28},{15415,30},{15407,1},{14341,1}},sources={{t="vendor",unknownCost=true}}}
+R[461675]={colors={320,320,330,340},learn=320,name="Refined Arcanite Reaper",prof=164,reagents={{12784,1},{18262,10}},sources={{t="drop"}}}
+R[461677]={colors={300,300,310,320},learn=300,name="Living Green Dragonscale Gauntlets",prof=165,reagents={{8170,20},{15412,25},{14341,1}},sources={{t="other"}}}
+R[461690]={colors={320,320,330,340},learn=320,name="Mastercrafted Shifting Cloak",prof=165,reagents={{8170,30},{7082,12},{12753,4},{12809,8},{15407,4},{14341,8}},sources={{t="drop"}}}
+R[461692]={colors={285,285,290,295},learn=285,name="Synthetic Gordok Ogre Suit",prof=165,reagents={{8170,4},{14048,2},{18240,1},{14341,1}},sources={{t="other"}}}
+R[461706]={colors={320,320,330,340},learn=320,name="Swift Flight Vambraces",prof=165,reagents={{8170,12},{18512,8},{15420,60},{15407,4},{14341,4}},sources={{t="drop"}}}
+R[461708]={colors={315,315,330,345},learn=315,name="Incandescent Mooncloth Robe",prof=197,reagents={{14048,6},{14342,4},{13926,2},{14341,2}},sources={{t="vendor",unknownCost=true}}}
+R[461710]={colors={320,320,330,340},learn=320,name="Fiery Core Sharpshooter Rifle",prof=202,reagents={{17010,4},{17011,2},{12360,6},{16006,2},{16000,2}},sources={{t="other"}}}
+R[461712]={colors={320,320,330,340},learn=320,name="Refined Hammer of the Titans",prof=164,reagents={{12796,1},{18262,10}},sources={{t="other"}}}
+R[461714]={colors={315,315,327,340},learn=315,name="Desecration",prof=164,reagents={{12359,40},{12360,2},{12662,16},{12808,8},{12361,2},{12644,2},{8170,4}},sources={{t="other"}}}
+R[461716]={colors={320,320,330,340},learn=320,name="Deadly Heartseeker",prof=164,reagents={{12360,10},{12655,10},{12810,2},{7910,6},{12800,6},{12799,6},{12644,4}},sources={{t="other"}}}
+R[461718]={colors={310,310,322,335},learn=310,name="Tranquility",prof=164,reagents={{12655,6},{12360,2},{12804,4},{12799,2},{12361,2},{12364,1}},sources={{t="other"}}}
+R[461720]={colors={280,280,290,300},learn=280,name="Living Green Dragonscale Breastplate",prof=165,reagents={{8170,20},{15412,25},{14341,2}},sources={{t="vendor",unknownCost=true}}}
+R[461722]={colors={310,310,320,330},learn=310,name="Devilcore Gauntlets",prof=165,reagents={{8170,30},{15417,8},{14341,1},{7078,8}},sources={{t="drop"}}}
+R[461724]={colors={320,320,330,340},learn=320,name="Devilcore Leggings",prof=165,reagents={{8170,30},{15417,20},{15407,1},{14341,1},{7078,10}},sources={{t="drop"}}}
+R[461727]={colors={315,315,330,345},creates={227844,1,1},learn=315,name="Leather-Reinforced Runecloth Bag",prof=197,reagents={{14048,5},{8170,2},{14341,1},{15407,1}},sources={{t="vendor",unknownCost=true}}}
+R[461730]={colors={320,320,330,340},learn=320,name="Hardened Frostguard",prof=164,reagents={{12797,1},{18262,10}},sources={{t="drop"}}}
+R[461733]={colors={305,305,317,330},learn=305,name="Finely-Enchanted Battlehammer",prof=164,reagents={{12359,20},{12655,6},{12364,2},{12804,4},{8170,4}},sources={{t="quest"}}}
+R[461735]={colors={320,320,330,340},learn=320,name="Invincible Mail",prof=164,reagents={{12360,30},{12655,30},{12364,6},{12800,6}},sources={{t="drop"}}}
+R[461737]={colors={315,315,325,335},learn=315,name="Tempest Gauntlets",prof=164,reagents={{12359,20},{12655,4},{7080,4},{12361,4}},sources={{t="drop"},{t="vendor",unknownCost=true}}}
+R[461739]={colors={320,320,330,340},learn=320,name="Warcrest of the Great Chief",prof=164,reagents={{12359,40},{12655,4},{8168,60},{12799,6},{12364,2}},sources={{t="drop"}}}
+R[461743]={colors={320,320,330,340},learn=320,name="Sageblade of the Archmagus",prof=164,reagents={{12360,12},{20725,2},{13512,2},{12810,4}},sources={{t="drop"}}}
+R[461747]={colors={315,315,330,345},learn=315,name="Incandescent Mooncloth Vest",prof=197,reagents={{14048,6},{14342,4},{14341,1}},sources={{t="drop"}}}
+R[461750]={colors={315,315,330,345},learn=315,name="Incandescent Mooncloth Circlet",prof=197,reagents={{14048,4},{14342,6},{12800,1},{12810,2},{14341,2}},sources={{t="drop"}}}
+R[461752]={colors={305,305,320,335},learn=305,name="Incandescent Mooncloth Leggings",prof=197,reagents={{14048,6},{14342,4},{14341,1}},sources={{t="drop"}}}
+R[461754]={colors={320,320,330,340},learn=320,name="Girdle of Arcane Insight",prof=165,reagents={{8170,12},{12804,12},{15407,2},{14341,4}},sources={{t="drop"}}}
+R[462227]={colors={320,320,330,340},learn=320,name="Honed Blue Dragonscale Leggings",prof=165,reagents={{8170,28},{15415,36},{15407,2},{14341,2}},sources={{t="other"}}}
+R[462282]={colors={315,315,330,345},learn=315,name="Embroidered Belt of the Archmage",prof=197,reagents={{14048,16},{9210,10},{14342,10},{7080,12},{7078,12},{14344,6},{14341,6}},sources={{t="drop"}}}
+R[463866]={colors={305,305,312,320},creates={228978,1,1},learn=305,name="Sigil of Flowing Waters",prof=333,reagents={{16204,1}},sources={{cost=100000,item=228979,npcs={13278},standing=6,t="reputation"}}}
+R[463869]={colors={285,285,295,305},creates={228980,1,1},learn=285,name="Conductive Shield Coating",prof=333,reagents={{16204,2},{4625,1},{8925,1}},sources={{cost=21176,item=228981,npcs={12944},t="vendor"}}}
+R[463871]={colors={320,320,340,360},learn=320,name="Enchant Shield - Law of Nature",prof=333,reagents={{14344,4},{16203,12},{7078,4},{7080,4},{7076,1},{12811,1}},sources={{cost=112500,item=228982,npcs={11557},standing=6,t="reputation"}}}
+R[463972]={colors={315,315,330,345},learn=315,name="Bottomless Bag",prof=197,reagents={{14048,8},{14342,12},{14344,2},{17012,2},{14341,2}},sources={{t="drop"}}}
+R[470349]={colors={315,315,327,340},creates={232433,1,1},learn=315,name="Dense Runecloth Bandage",prof=129,reagents={{14530,2}},sources={{cost=110000,item=232434,npcs={17070},t="vendor"},{cost=115789,item=232434,npcs={17068},t="vendor"}}}
+R[470359]={colors={325,325,345,365},creates={232436,1,1},learn=325,name="Darkclaw Bisque",prof=185,reagents={{13888,1},{227813,1}},sources={{cost=20000,item=232437,npcs={17070},t="vendor"},{cost=21052,item=232437,npcs={17068},t="vendor"}}}
+R[470370]={colors={325,325,345,365},creates={232438,1,1},learn=325,name="Smoked Redgill",prof=185,reagents={{13758,1}},sources={{cost=16000,item=232443,npcs={17070},t="vendor"},{cost=16842,item=232443,npcs={17068},t="vendor"}}}
+R[471400]={colors={310,310,320,330},creates={232611,1,1},learn=310,name="Magnificent Trollshine",prof=333,reagents={{8151,3},{8152,3},{14344,2},{18256,1}},sources={{cost=42352,item=232610,npcs={14921},standing=5,t="reputation"}}}
+R[1213481]={colors={320,320,330,340},learn=320,name="Razorspike Headcage",prof=164,reagents={{12360,15},{234003,3},{12810,4},{8146,10},{234006,4}},sources={{t="other"}}}
+R[1213484]={colors={320,320,330,340},learn=320,name="Razorspike Shoulderplate",prof=164,reagents={{12360,15},{234003,3},{12810,4},{8146,10},{234006,4}},sources={{t="other"}}}
+R[1213490]={colors={320,320,330,340},learn=320,name="Razorspike Battleplate",prof=164,reagents={{12360,20},{234003,4},{12810,4},{8146,10},{234006,8}},sources={{t="other"}}}
+R[1213492]={colors={320,320,330,340},learn=320,name="Obsidian Reaver",prof=164,reagents={{12360,40},{234003,10},{12810,8},{234004,6},{20873,4},{20882,2}},sources={{t="other"}}}
+R[1213498]={colors={320,320,330,340},learn=320,name="Obsidian Champion",prof=164,reagents={{12360,40},{234003,10},{12810,8},{234004,6},{20872,4},{20879,2}},sources={{t="other"}}}
+R[1213500]={colors={320,320,330,340},learn=320,name="Obsidian Destroyer",prof=164,reagents={{12360,40},{234003,10},{234004,8},{20873,4},{20872,4},{20875,2}},sources={{t="other"}}}
+R[1213502]={colors={320,320,330,340},learn=320,name="Obsidian Stormhammer",prof=164,reagents={{12360,30},{234003,8},{12810,5},{234004,6},{20871,3},{20878,2}},sources={{t="other"}}}
+R[1213504]={colors={320,320,330,340},learn=320,name="Obsidian Sageblade",prof=164,reagents={{12360,30},{234003,8},{20725,3},{234004,3},{20871,3},{20877,2}},sources={{t="other"}}}
+R[1213506]={colors={320,320,330,340},learn=320,name="Obsidian Defender",prof=164,reagents={{12360,30},{234003,8},{234004,6},{20872,3},{20871,3},{20874,2}},sources={{t="other"}}}
+R[1213513]={colors={320,320,330,340},learn=320,name="Glowing Chitin Armor Kit",prof=165,reagents={{234007,5},{14342,3},{18251,1}},sources={{t="other"}}}
+R[1213519]={colors={320,320,330,340},learn=320,name="Sharpened Chitin Armor Kit",prof=165,reagents={{234007,5},{15407,3},{18251,1}},sources={{t="other"}}}
+R[1213521]={colors={320,320,330,340},learn=320,name="Razorbramble Cowl",prof=165,reagents={{234007,15},{12810,8},{234009,8},{15407,8}},sources={{t="other"}}}
+R[1213523]={colors={320,320,330,340},learn=320,name="Razorbramble Shoulderpads",prof=165,reagents={{234007,15},{12810,8},{234009,8},{15407,8}},sources={{t="other"}}}
+R[1213525]={colors={320,320,330,340},learn=320,name="Razorbramble Leathers",prof=165,reagents={{234007,22},{12810,12},{234009,12},{15407,12}},sources={{t="other"}}}
+R[1213527]={colors={315,315,330,345},learn=315,name="Vampiric Cowl",prof=197,reagents={{234009,15},{14342,8},{12810,8},{14341,1}},sources={{t="other"}}}
+R[1213530]={colors={315,315,330,345},learn=315,name="Vampiric Shawl",prof=197,reagents={{234009,15},{14342,8},{12810,8},{14341,1}},sources={{t="other"}}}
+R[1213532]={colors={315,315,330,345},learn=315,name="Vampiric Robe",prof=197,reagents={{234009,25},{14342,12},{12810,12},{14341,1}},sources={{t="other"}}}
+R[1213534]={colors={320,320,330,340},learn=320,name="Qiraji Silk Scarf",prof=197,reagents={{234009,9},{234007,8},{15407,4},{12810,8},{14341,1}},sources={{t="other"}}}
+R[1213536]={colors={320,320,330,340},learn=320,name="Qiraji Silk Cape",prof=197,reagents={{234009,9},{234007,8},{15407,4},{12810,8},{14341,1}},sources={{t="other"}}}
+R[1213538]={colors={320,320,330,340},learn=320,name="Qiraji Silk Cloak",prof=197,reagents={{234009,9},{234007,8},{15407,4},{12810,8},{14341,1}},sources={{t="other"}}}
+R[1213540]={colors={320,320,330,340},learn=320,name="Qiraji Silk Drape",prof=197,reagents={{234009,9},{234007,8},{15407,4},{12810,8},{14341,1}},sources={{t="other"}}}
+R[1213544]={colors={315,315,322,330},learn=315,name="Flask of Unyielding Sorrow",prof=171,reagents={{16203,1},{234012,1},{13511,1},{8925,1}},sources={{t="other"}}}
+R[1213546]={colors={315,315,322,330},learn=315,name="Flask of Ancient Knowledge",prof=171,reagents={{16203,1},{234011,1},{13512,1},{8925,1}},sources={{t="other"}}}
+R[1213548]={colors={315,315,322,330},learn=315,name="Flask of the Old Gods",prof=171,reagents={{16203,1},{234006,1},{13510,1},{8925,1}},sources={{t="other"}}}
+R[1213552]={colors={315,315,322,330},learn=315,name="Flask of Madness",prof=171,reagents={{16203,1},{234010,1},{13513,1},{8925,1}},sources={{t="other"}}}
+R[1213559]={colors={315,315,322,330},learn=315,name="Elixir of the Honey Badger",prof=171,reagents={{13465,2},{234012,2},{234011,1},{8925,1}},sources={{t="other"}}}
+R[1213563]={colors={315,315,322,330},learn=315,name="Elixir of the Mage-Lord",prof=171,reagents={{13466,2},{234012,2},{234011,1},{8925,1}},sources={{t="other"}}}
+R[1213565]={colors={315,315,322,330},learn=315,name="Elixir of the Ironside",prof=171,reagents={{13467,2},{234012,2},{234011,1},{8925,1}},sources={{t="other"}}}
+R[1213571]={colors={315,315,322,330},learn=315,name="Elixir of Alacrity",prof=171,reagents={{13463,2},{234012,2},{234011,1},{8925,1}},sources={{t="other"}}}
+R[1213573]={colors={315,315,322,330},learn=315,name="Arcane Megabomb",prof=202,reagents={{16006,1},{20725,1},{14047,1}},sources={{t="other"}}}
+R[1213576]={colors={315,315,322,330},learn=315,name="The Fumigator",prof=202,reagents={{234011,1},{234005,2},{14047,1}},sources={{t="other"}}}
+R[1213578]={colors={315,315,322,330},learn=315,name="Obsidian Bomb",prof=202,reagents={{234005,3},{234007,1},{234008,1},{12365,1}},sources={{t="other"}}}
+R[1213586]={colors={315,315,322,330},learn=315,name="G00 DV-1B3 Generator",prof=202,reagents={{234005,20},{234012,30},{234009,8},{234011,8},{234010,8},{234007,8}},sources={{t="other"}}}
+R[1213588]={colors={315,315,322,330},learn=315,name="Tuned Force Reactive Disk",prof=202,reagents={{18168,1},{234007,4},{234003,8},{234005,5}},sources={{t="other"}}}
+R[1213593]={colors={320,320,340,360},learn=320,name="Speedstone",prof=333,reagents={{234006,10},{234010,10},{20725,6},{234004,6},{2452,20}},sources={{t="other"}}}
+R[1213595]={colors={320,320,340,360},learn=320,name="Tear of the Dreamer",prof=333,reagents={{234006,10},{234010,10},{20725,4},{234003,10},{234012,10}},sources={{t="other"}}}
+R[1213598]={colors={320,320,340,360},learn=320,name="Lodestone of Retaliation",prof=333,reagents={{234007,10},{234010,5},{20725,4},{234003,10},{234011,10}},sources={{t="other"}}}
+R[1213600]={colors={320,320,340,360},learn=320,name="Enchanted Stopwatch",prof=333,reagents={{234003,3},{234005,6},{14344,4},{2459,3}},sources={{t="other"}}}
+R[1213603]={colors={320,320,340,360},learn=320,name="Ruby-Encrusted Broach",prof=333,reagents={{234007,10},{234010,5},{20725,6},{234003,10},{234012,10},{234011,10}},sources={{t="other"}}}
+R[1213607]={colors={320,320,340,360},learn=320,name="Scroll: Wrath of the Swarm",prof=333,reagents={{16203,1},{14047,1}},sources={{t="other"}}}
+R[1213610]={colors={320,320,340,360},learn=320,name="Enchanted Repellent",prof=333,reagents={{234011,3},{234012,3},{16204,2}},sources={{cost=52631,item=234272,npcs={15419},standing=4,t="reputation"}}}
+R[1213616]={colors={320,320,340,360},learn=320,name="Enchant Chest - Living Stats",prof=333,reagents={{20725,2},{16204,8},{16203,5},{13458,10},{234011,2},{234010,2}},sources={{t="other"}}}
+R[1213622]={colors={320,320,340,360},learn=320,name="Enchant Gloves - Holy Power",prof=333,reagents={{20725,2},{14344,5},{13180,5},{12735,2}},sources={{t="other"}}}
+R[1213626]={colors={320,320,340,360},learn=320,name="Enchant Gloves - Arcane Power",prof=333,reagents={{20725,2},{14344,5},{12753,2}},sources={{t="other"}}}
+R[1213628]={colors={320,320,340,360},learn=320,name="Enchanted Prayer Tome",prof=333,reagents={{20725,3},{234008,10},{234003,2},{12810,4}},sources={{t="other"}}}
+R[1213633]={colors={320,320,340,360},learn=320,name="Enchanted Totem",prof=333,reagents={{20725,3},{234012,10},{234003,2},{12810,3}},sources={{t="other"}}}
+R[1213635]={colors={320,320,340,360},learn=320,name="Enchanted Mushroom",prof=333,reagents={{20725,2},{234012,20},{12810,3},{234011,4},{234010,4}},sources={{t="other"}}}
+R[1213643]={colors={315,315,322,330},learn=315,name="Obsidian Grinding Stone",prof=164,reagents={{22202,5}},sources={{t="other"}}}
+R[1213646]={colors={315,315,322,330},learn=315,name="Obsidian Blasting Powder",prof=202,reagents={{22202,2}},sources={{t="other"}}}
+R[1213709]={colors={320,320,330,340},learn=320,name="Ironvine Belt",prof=164,reagents={{12655,8},{12803,4},{19726,4}},sources={{t="other"}}}
+R[1213711]={colors={320,320,330,340},learn=320,name="Ironvine Gloves",prof=164,reagents={{12655,12},{19726,4},{12803,2}},sources={{t="other"}}}
+R[1213715]={colors={320,320,330,340},learn=320,name="Ironvine Breastplate",prof=164,reagents={{12655,14},{19726,8},{12360,8},{12803,4}},sources={{t="other"}}}
+R[1213717]={colors={320,320,330,340},learn=320,name="Sandstalker Bracers",prof=165,reagents={{20501,2},{20498,20},{18512,4},{19726,4}},sources={{t="other"}}}
+R[1213720]={colors={320,320,330,340},learn=320,name="Sandstalker Gauntlets",prof=165,reagents={{20501,4},{20498,30},{18512,4},{15407,2},{19726,6}},sources={{t="other"}}}
+R[1213723]={colors={320,320,330,340},learn=320,name="Sandstalker Breastplate",prof=165,reagents={{20501,5},{20498,40},{18512,4},{15407,4},{19726,8}},sources={{t="other"}}}
+R[1213726]={colors={320,320,330,340},learn=320,name="Spitfire Bracers",prof=165,reagents={{20500,2},{20498,20},{7078,2},{19726,4}},sources={{t="other"}}}
+R[1213728]={colors={320,320,330,340},learn=320,name="Spitfire Gauntlets",prof=165,reagents={{20500,3},{20498,30},{7078,2},{15407,2},{19726,6}},sources={{t="other"}}}
+R[1213731]={colors={320,320,330,340},learn=320,name="Spitfire Breastplate",prof=165,reagents={{20500,4},{20498,40},{7078,2},{15407,4},{19726,8}},sources={{t="other"}}}
+R[1213734]={colors={320,320,330,340},learn=320,name="Bramblewood Belt",prof=165,reagents={{12810,6},{12803,4},{15407,2},{19726,4}},sources={{t="other"}}}
+R[1213736]={colors={320,320,330,340},learn=320,name="Bramblewood Boots",prof=165,reagents={{12810,6},{18512,3},{12803,4},{15407,4},{19726,6}},sources={{t="other"}}}
+R[1213738]={colors={320,320,330,340},learn=320,name="Bramblewood Helm",prof=165,reagents={{12810,14},{19726,7},{12803,4},{15407,4}},sources={{t="other"}}}
+R[1213740]={colors={315,315,330,345},learn=315,name="Sylvan Shoulders",prof=197,reagents={{14048,4},{12803,4},{14227,4},{19726,3}},sources={{t="other"}}}
+R[1213742]={colors={315,315,330,345},learn=315,name="Sylvan Crown",prof=197,reagents={{14048,4},{14342,4},{12803,3},{14227,3},{19726,4}},sources={{t="other"}}}
+R[1213744]={colors={315,315,330,345},learn=315,name="Sylvan Vest",prof=197,reagents={{14048,4},{19726,3},{12803,2},{14227,3},{14342,4}},sources={{t="other"}}}
+R[1213746]={colors={320,320,330,340},learn=320,name="Heavy Obsidian Belt",prof=164,reagents={{22202,14},{12655,4},{7076,2},{19726,4}},sources={{t="other"}}}
+R[1213748]={colors={320,320,330,340},learn=320,name="Light Obsidian Belt",prof=164,reagents={{22202,14},{12810,6},{19726,4}},sources={{t="other"}}}
+R[1213751]={colors={320,320,330,340},learn=320,name="Dreamscale Breastplate",prof=165,reagents={{12810,12},{20381,6},{12803,4},{15407,4},{14227,6}},sources={{t="other"}}}
+R[1214137]={colors={320,320,330,340},learn=320,name="Obsidian Heartseeker",prof=164,reagents={{12360,30},{234003,8},{234004,6},{20871,3},{20867,3},{20876,2}},sources={{t="other"}}}
+R[1214145]={colors={320,320,330,340},learn=320,name="Obsidian Shotgun",prof=202,reagents={{12360,30},{234003,8},{20725,3},{20868,3},{20870,3},{20881,2}},sources={{t="other"}}}
+R[1214257]={colors={320,320,330,340},learn=320,name="Black Grasp of the Destroyer",prof=164,reagents={{22203,8},{22202,24},{12810,8},{13512,1}},sources={{t="other"}}}
+R[1214270]={colors={320,320,330,340},learn=320,name="Jagged Obsidian Shield",prof=164,reagents={{22203,8},{22202,24},{12655,8},{7076,4}},sources={{t="other"}}}
+R[1214274]={colors={320,320,330,340},learn=320,name="Obsidian Mail Tunic",prof=164,reagents={{22203,15},{22202,36},{12810,12},{12809,10},{12800,4}},sources={{t="other"}}}
+R[1214303]={colors={320,320,330,340},learn=320,name="Dreamscale Kilt",prof=165,reagents={{12810,12},{20381,6},{12803,4},{15407,4},{14227,6}},sources={{t="other"}}}
+R[1214306]={colors={320,320,330,340},learn=320,name="Dreamscale Bracers",prof=197,reagents={{14048,30},{20381,4},{12803,4},{14342,4},{14227,6}},sources={{t="other"}}}
+R[1214307]={colors={320,320,330,340},learn=320,name="Dreamscale Mitts",prof=197,reagents={{14048,30},{20381,5},{12803,4},{14342,4},{14227,6}},sources={{t="other"}}}
+R[1214309]={colors={320,320,330,340},learn=320,name="Dreamscale Visor",prof=164,reagents={{12360,20},{12810,4},{8146,8},{20381,8},{12803,4}},sources={{t="other"}}}
+R[1215507]={colors={320,320,330,340},learn=320,name="Thick Obsidian Breastplate",prof=164,reagents={{22203,18},{22202,40},{12655,12},{7076,10},{12364,4}},sources={{t="other"}}}
+R[1216005]={colors={320,320,340,360},learn=320,name="Libram of Righteousness",prof=333,reagents={{20725,3},{234008,10},{234003,2},{12810,4}},sources={{t="other"}}}
+R[1216007]={colors={320,320,340,360},learn=320,name="Libram of the Exorcist",prof=333,reagents={{20725,3},{234008,10},{234003,2},{12810,4}},sources={{t="other"}}}
+R[1216010]={colors={320,320,340,360},learn=320,name="Libram of Sanctity",prof=333,reagents={{20725,3},{234008,10},{234003,2},{12810,4}},sources={{t="other"}}}
+R[1216014]={colors={320,320,340,360},learn=320,name="Totem of Pyroclastic Thunder",prof=333,reagents={{20725,3},{234012,10},{234003,2},{12810,3}},sources={{t="other"}}}
+R[1216016]={colors={320,320,340,360},learn=320,name="Totem of Thunderous Strikes",prof=333,reagents={{20725,3},{234012,10},{234003,2},{12810,3}},sources={{t="other"}}}
+R[1216018]={colors={320,320,340,360},learn=320,name="Totem of Flowing Magma",prof=333,reagents={{20725,3},{234012,10},{234003,2},{12810,3}},sources={{t="other"}}}
+R[1216020]={colors={320,320,340,360},learn=320,name="Idol of Sidereal Wrath",prof=333,reagents={{20725,2},{234012,20},{12810,3},{234011,4},{234010,4}},sources={{t="other"}}}
+R[1216022]={colors={320,320,340,360},learn=320,name="Idol of Feline Ferocity",prof=333,reagents={{20725,2},{234012,20},{12810,3},{234011,4},{234010,4}},sources={{t="other"}}}
+R[1216024]={colors={320,320,340,360},learn=320,name="Idol of Ursin Power",prof=333,reagents={{20725,2},{234012,20},{12810,3},{234011,4},{234010,4}},sources={{t="other"}}}
+R[1217189]={colors={320,320,340,360},learn=320,name="Enchant Bracer - Spell Power",prof=333,reagents={{14344,2},{16204,20},{16203,4},{7080,2},{7078,2},{7082,2}},sources={{t="other"}}}
+R[1217203]={colors={320,320,340,360},learn=320,name="Enchant Bracer - Agility",prof=333,reagents={{20725,2},{16204,10},{16203,2},{7082,2}},sources={{t="other"}}}
+R[1217207]={colors={320,320,330,340},learn=320,name="Obsidian Scope",prof=202,reagents={{16000,1},{12363,1},{234003,1}},sources={{t="other"}}}
+R[1219577]={colors={320,320,340,360},learn=320,name="Enchant Off-Hand - Superior Intellect",prof=333,reagents={{20725,2},{16204,18},{7082,2}},sources={{t="other"}}}
+R[1219578]={colors={320,320,340,360},learn=320,name="Enchant Off-Hand - Excellent Spirit",prof=333,reagents={{20725,2},{16204,18},{7080,2}},sources={{t="other"}}}
+R[1219579]={colors={320,320,340,360},learn=320,name="Enchant Off-Hand - Wisdom",prof=333,reagents={{14344,6},{16204,18},{7082,1},{7080,1}},sources={{t="other"}}}
+R[1219580]={colors={320,320,340,360},learn=320,name="Enchant 2H Weapon - Spellblasting",prof=333,reagents={{20725,3},{16204,24},{12938,1},{8831,6}},sources={{t="other"}}}
+R[1219581]={colors={320,320,340,360},learn=320,name="Enchant Shield - Excellent Stamina",prof=333,reagents={{14344,6},{16204,18},{7076,2}},sources={{t="other"}}}
+R[1219587]={colors={320,320,340,360},learn=320,name="Enchant Cloak - Agility",prof=333,reagents={{16203,3},{16204,9},{7078,1}},sources={{t="other"}}}
+R[1220623]={colors={320,320,340,360},learn=320,name="Enchant Shield - Critical Strike",prof=333,reagents={{14344,5},{16204,15},{12938,1}},sources={{t="other"}}}
+R[1220624]={colors={320,320,340,360},learn=320,name="Enchant Bracer - Greater Spellpower",prof=333,reagents={{16203,3},{16204,9},{12808,12},{8831,2}},sources={{t="other"}}}
+R[1221012]={colors={275,275,277,280},learn=275,name="Creepy Censor Sensors",prof=202,reagents={{8170,8},{12800,2}},sources={{t="other"}}}
+R[1223760]={colors={315,315,330,345},learn=315,name="Glacial Vest",prof=197,reagents={{236656,7},{14048,8},{7080,6},{14227,8}},sources={{t="other"}}}
+R[1223762]={colors={315,315,330,345},learn=315,name="Glacial Cloak",prof=197,reagents={{236656,5},{14048,4},{7080,2},{14227,4}},sources={{t="other"}}}
+R[1223764]={colors={315,315,330,345},learn=315,name="Glacial Gloves",prof=197,reagents={{236656,5},{14048,4},{7080,4},{14227,4}},sources={{t="other"}}}
+R[1223766]={colors={315,315,330,345},learn=315,name="Glacial Wrists",prof=197,reagents={{236656,4},{14048,2},{7080,2},{14227,4}},sources={{t="other"}}}
+R[1223768]={colors={315,315,330,345},learn=315,name="Frosty Vest",prof=197,reagents={{236656,7},{14048,8},{7080,6},{14227,8}},sources={{t="other"}}}
+R[1223770]={colors={315,315,330,345},learn=315,name="Frosty Gloves",prof=197,reagents={{236656,5},{14048,4},{7080,4},{14227,4}},sources={{t="other"}}}
+R[1223772]={colors={315,315,330,345},learn=315,name="Frosty Wrists",prof=197,reagents={{236656,4},{14048,2},{7080,2},{14227,4}},sources={{t="other"}}}
+R[1223774]={colors={320,320,330,340},learn=320,name="Icy Scale Breastplate",prof=165,reagents={{236656,7},{15408,24},{7080,2},{15407,4},{14227,4}},sources={{t="other"}}}
+R[1223776]={colors={320,320,330,340},learn=320,name="Icy Scale Gauntlets",prof=165,reagents={{236656,5},{15408,16},{7080,2},{15407,3},{14227,4}},sources={{t="other"}}}
+R[1223778]={colors={320,320,330,340},learn=320,name="Icy Scale Bracers",prof=165,reagents={{236656,4},{15408,16},{7080,2},{15407,2},{14227,4}},sources={{t="other"}}}
+R[1223780]={colors={320,320,330,340},learn=320,name="Polar Tunic",prof=165,reagents={{236656,7},{12810,16},{7080,2},{15407,4},{14227,4}},sources={{t="other"}}}
+R[1223782]={colors={320,320,330,340},learn=320,name="Polar Gloves",prof=165,reagents={{236656,5},{12810,12},{7080,2},{15407,3},{14227,4}},sources={{t="other"}}}
+R[1223784]={colors={320,320,330,340},learn=320,name="Polar Bracers",prof=165,reagents={{236656,4},{12810,12},{7080,2},{15407,2},{14227,4}},sources={{t="other"}}}
+R[1223787]={colors={320,320,330,340},learn=320,name="Icebane Breastplate",prof=164,reagents={{236656,7},{12359,16},{12360,2},{7080,4}},sources={{t="other"}}}
+R[1223789]={colors={320,320,330,340},learn=320,name="Icebane Gauntlets",prof=164,reagents={{236656,5},{12359,12},{12360,2},{7080,2}},sources={{t="other"}}}
+R[1223791]={colors={320,320,330,340},learn=320,name="Icebane Bracers",prof=164,reagents={{236656,4},{12359,12},{12360,2},{7080,2}},sources={{t="other"}}}
+R[1224607]={colors={285,285,295,305},learn=285,name="Scarlet Augur's Hood",prof=197,reagents={{12938,1},{12811,2},{14048,12}},sources={{t="drop"}}}
+R[1224608]={colors={285,285,295,305},learn=285,name="Scarlet Augur's Mantle",prof=197,reagents={{12811,1},{14048,10}},sources={{t="drop"}}}
+R[1224609]={colors={285,285,295,305},learn=285,name="Scarlet Augur's Vestments",prof=197,reagents={{12938,1},{12811,1},{14048,12}},sources={{t="drop"}}}
+R[1224610]={colors={260,260,282,305},learn=260,name="Scarlet Augur's Cuffs",prof=197,reagents={{14048,8}},sources={{t="drop"}}}
+R[1224611]={colors={270,270,287,305},learn=270,name="Scarlet Augur's Mitts",prof=197,reagents={{12811,1},{14048,10}},sources={{t="drop"}}}
+R[1224612]={colors={260,260,282,305},learn=260,name="Scarlet Augur's Strap",prof=197,reagents={{12811,1},{14048,10}},sources={{t="drop"}}}
+R[1224613]={colors={280,280,292,305},learn=280,name="Scarlet Augur's Leggings",prof=197,reagents={{12938,1},{12811,1},{14048,12}},sources={{t="drop"}}}
+R[1224614]={colors={270,270,287,305},learn=270,name="Scarlet Augur's Soles",prof=197,reagents={{12811,1},{14048,10}},sources={{t="drop"}}}
+R[1224615]={colors={285,285,295,305},learn=285,name="Scarlet Infiltrator's Bandana",prof=165,reagents={{12938,1},{12811,2},{8170,12}},sources={{t="drop"}}}
+R[1224616]={colors={285,285,295,305},learn=285,name="Scarlet Infiltrator's Shoulderpads",prof=165,reagents={{12811,1},{8170,10}},sources={{t="drop"}}}
+R[1224617]={colors={285,285,295,305},learn=285,name="Scarlet Infiltrator's Vest",prof=165,reagents={{12938,1},{12811,1},{8170,12}},sources={{t="drop"}}}
+R[1224618]={colors={260,260,282,305},learn=260,name="Scarlet Infiltrator's Bracers",prof=165,reagents={{8170,8}},sources={{t="drop"}}}
+R[1224619]={colors={270,270,287,305},learn=270,name="Scarlet Infiltrator's Gloves",prof=165,reagents={{12811,1},{8170,10}},sources={{t="drop"}}}
+R[1224620]={colors={260,260,282,305},learn=260,name="Scarlet Infiltrator's Belt",prof=165,reagents={{12811,1},{8170,10}},sources={{t="drop"}}}
+R[1224621]={colors={280,280,292,305},learn=280,name="Scarlet Infiltrator's Trousers",prof=165,reagents={{12938,1},{12811,1},{8170,12}},sources={{t="drop"}}}
+R[1224622]={colors={270,270,287,305},learn=270,name="Scarlet Infiltrator's Shoes",prof=165,reagents={{12811,1},{8170,10}},sources={{t="drop"}}}
+R[1224623]={colors={285,285,295,305},learn=285,name="Scarlet Huntsman's Coif",prof=165,reagents={{12938,1},{12811,2},{15408,12}},sources={{t="drop"}}}
+R[1224624]={colors={285,285,295,305},learn=285,name="Scarlet Huntsman's Pauldrons",prof=165,reagents={{12811,1},{15408,10}},sources={{t="drop"}}}
+R[1224625]={colors={285,285,295,305},learn=285,name="Scarlet Huntsman's Chain",prof=165,reagents={{12938,1},{12811,1},{15408,12}},sources={{t="drop"}}}
+R[1224626]={colors={260,260,282,305},learn=260,name="Scarlet Huntsman's Wristguards",prof=165,reagents={{15408,8}},sources={{t="drop"}}}
+R[1224627]={colors={270,270,287,305},learn=270,name="Scarlet Huntsman's Handguards",prof=165,reagents={{12811,1},{15408,10}},sources={{t="drop"}}}
+R[1224628]={colors={260,260,282,305},learn=260,name="Scarlet Huntsman's Clasp",prof=165,reagents={{12811,1},{15408,10}},sources={{t="drop"}}}
+R[1224629]={colors={280,280,292,305},learn=280,name="Scarlet Huntsman's Legguards",prof=165,reagents={{12938,1},{12811,1},{15408,12}},sources={{t="drop"}}}
+R[1224630]={colors={270,270,287,305},learn=270,name="Scarlet Huntsman's Boots",prof=165,reagents={{12811,1},{15408,10}},sources={{t="drop"}}}
+R[1224631]={colors={285,285,295,305},learn=285,name="Scarlet Soldier's Helmet",prof=164,reagents={{12938,1},{12811,2},{12359,24}},sources={{t="drop"}}}
+R[1224632]={colors={285,285,295,305},learn=285,name="Scarlet Soldier's Spaulders",prof=164,reagents={{12811,1},{12359,20}},sources={{t="drop"}}}
+R[1224633]={colors={285,285,295,305},learn=285,name="Scarlet Soldier's Chestplate",prof=164,reagents={{12938,1},{12811,1},{12359,24}},sources={{t="drop"}}}
+R[1224635]={colors={260,260,282,305},learn=260,name="Scarlet Soldier's Protectors",prof=164,reagents={{12359,16}},sources={{t="drop"}}}
+R[1224636]={colors={270,270,287,305},learn=270,name="Scarlet Soldier's Grips",prof=164,reagents={{12811,1},{12359,20}},sources={{t="drop"}}}
+R[1224637]={colors={260,260,282,305},learn=260,name="Scarlet Soldier's Waistguard",prof=164,reagents={{12811,1},{12359,20}},sources={{t="drop"}}}
+R[1224638]={colors={280,280,292,305},learn=280,name="Scarlet Soldier's Legplates",prof=164,reagents={{12938,1},{12811,1},{12359,20}},sources={{t="drop"}}}
+R[1224639]={colors={270,270,287,305},learn=270,name="Scarlet Soldier's Stompers",prof=164,reagents={{12811,1},{12359,20}},sources={{t="drop"}}}
+R[1225758]={colors={260,260,270,280},creates={238637,2,2},learn=260,name="Prowler Steak",prof=185,reagents={{12202,2},{239016,1}},sources={{t="quest"}}}
+R[1225759]={colors={260,260,270,280},creates={238638,2,2},learn=260,name="Filet o' Flank",prof=185,reagents={{12203,2},{239016,1}},sources={{t="quest"}}}
+R[1225760]={colors={260,260,270,280},creates={238639,2,2},learn=260,name="Sunrise Omelette",prof=185,reagents={{12207,2},{239016,1}},sources={{t="quest"}}}
+R[1225762]={colors={290,290,300,310},creates={238641,1,1},learn=290,name="Specklefin Feast",prof=185,reagents={{4603,12},{12184,4},{6362,3},{239017,1}},sources={{t="other"}}}
+R[1225763]={colors={290,290,300,310},creates={238642,1,1},learn=290,name="Grand Lobster Banquet",prof=185,reagents={{13888,12},{3712,4},{3404,3},{239017,1}},sources={{t="other"}}}
+R[1226206]={colors={260,260,270,280},creates={238737,1,1},learn=260,name="Tinkerbox",prof=202,reagents={{10561,1},{10558,2}},sources={{t="quest"}}}
+R[1226207]={colors={270,270,280,290},creates={238734,1,1},learn=270,name="Tinkerbox: Teleport",prof=202,reagents={{238737,1},{10560,1},{15994,1}},sources={{t="quest"}}}
+R[1226208]={colors={270,270,280,290},creates={238735,1,1},learn=270,name="Tinkerbox: Nitro Boosts",prof=202,reagents={{238737,1},{10560,1},{16000,1}},sources={{t="quest"}}}
+R[1226209]={colors={270,270,280,290},creates={238736,1,1},learn=270,name="Tinkerbox: Magnetic Displacement",prof=202,reagents={{238737,1},{10560,1},{4387,2}},sources={{t="quest"}}}
+R[1226210]={colors={280,280,282,285},learn=280,name="Tinker: Teleport",prof=202,reagents={{238737,1},{16006,1},{15994,1}},sources={{t="other"}}}
+R[1226211]={colors={280,280,282,285},learn=280,name="Tinker: Nitro Boosts",prof=202,reagents={{238737,1},{16006,1},{16000,1}},sources={{t="other"}}}
+R[1226212]={colors={280,280,282,285},learn=280,name="Tinker: Magnetic Displacement",prof=202,reagents={{238737,1},{16006,1},{4387,2}},sources={{t="other"}}}
+R[1226213]={colors={305,305,315,325},est=true,learn=305,name="Semisafe Transporter: New Avalon",prof=202,reagents={{16006,1},{18631,2},{10560,1},{10561,2},{10588,2},{12811,1}},sources={{t="quest"}}}
+R[1226689]={colors={280,280,285,290},learn=280,name="Scarlet Quiver",prof=165,reagents={{12811,1},{8170,24},{15407,2}},sources={{t="quest"}}}
+R[1226690]={colors={280,280,285,290},learn=280,name="Scarlet Ammo Pouch",prof=165,reagents={{12811,1},{15408,24},{15407,2}},sources={{t="quest"}}}
+R[1227723]={colors={260,260,262,265},creates={239147,1,1},learn=260,name="Crusader's Knapsack",prof=197,reagents={{12811,1},{14048,14},{2604,8},{14227,3}},sources={{t="quest"}}}
+R[1227724]={colors={300,300,302,305},creates={239148,1,1},learn=300,name="Crimson Dawnwoven Bag",prof=197,reagents={{12938,1},{14048,24},{2604,4},{12808,2},{12811,2}},sources={{t="quest"}}}
+R[1228088]={colors={255,255,257,260},creates={237023,1,1},learn=255,name="Pop-Up Shrub",prof=202,reagents={{15994,1},{10560,1},{4382,1}},sources={{t="quest"}}}
+R[1229432]={colors={20,20,22,25},creates={279978,1,1},learn=20,name="Camp Tent",prof=165,reagents={{2318,5}},sources={{cost=0,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"}}}
+R[1229504]={colors={20,20,22,25},creates={279972,1,1},learn=20,name="Faction Banner",prof=197,reagents={{2996,1},{2320,1}},sources={{cost=0,npcs={2855,3004,3363,3484,3523,3704,11048,11049},t="trainer"}}}
+R[1229737]={colors={1,1,3,5},creates={279981,1,1},learn=1,name="Basic Campfire",prof=185,reagents={{4470,1}},sources={{cost=0,npcs={1355,1430,1699,3026,3067,3087,3191,3399},t="trainer"}}}
+R[1230117]={colors={20,20,22,25},creates={279968,1,1},learn=20,name="First Aid Kit",prof=129,reagents={{1251,3},{159,1}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[1230171]={colors={20,20,22,25},creates={279944,1,1},learn=20,name="Sharpening Wheel",prof=164,reagents={{2835,1},{2840,1}},sources={{cost=0,npcs={514,957,1241,1383,2998,3174,3478,3557},t="trainer"}}}
+R[1230564]={colors={20,20,22,25},creates={279956,1,1},learn=20,name="Mana Well",prof=171,reagents={{2447,1},{3371,1}},sources={{cost=0,npcs={1215,1246,1470,2132,2391,3009,3184,3347},t="trainer"}}}
+R[1230643]={colors={20,20,22,25},creates={279976,1,1},learn=20,name="Enchanted Lute",prof=333,reagents={{4470,1},{10940,1}},sources={{cost=0,npcs={1317,3345,3606,4213,4616,5157,5695,11065},t="trainer"}}}
+R[1230656]={colors={20,20,22,25},creates={279950,1,1},learn=20,name="Reagent Bot",prof=202,reagents={{4359,1},{4361,1}},sources={{cost=0,npcs={1702,2857,3290,3412,3494,4586,5518,10993},t="trainer"}}}
+R[1231128]={colors={305,305,307,310},learn=305,name="Enchant Weapon - Grand Crusader",prof=333,reagents={{14344,5},{12811,2},{20725,2},{12938,1}},sources={{t="other"}}}
+R[1231139]={colors={305,305,307,310},learn=305,name="Enchant 2H Weapon - Grand Arcanist",prof=333,reagents={{14344,10},{12811,4},{20725,4},{12938,1}},sources={{t="other"}}}
+R[1231164]={colors={305,305,307,310},learn=305,name="Enchant Weapon - Grand Sorcerer",prof=333,reagents={{14344,6},{12811,3},{20725,2},{12938,1}},sources={{t="other"}}}
+R[1231583]={colors={290,290,310,330},creates={241650,1,1},learn=290,name="Major Discolored Healing Potion",prof=171,reagents={{8925,1},{13466,1},{730,1}},sources={{cost=0,npcs={1937},t="trainer"}}}
+R[1232172]={colors={305,305,307,310},learn=305,name="Enchant 2H Weapon - Grand Inquisitor",prof=333,reagents={{14344,10},{12811,6},{20725,4},{12938,1}},sources={{t="other"}}}
+R[1244421]={colors={260,260,265,270},creates={246948,1,1},learn=260,name="Distilled Firewater",prof=171,reagents={{3819,4},{8846,2},{3372,1}},sources={{t="other"}}}
+R[1244431]={colors={55,55,75,95},creates={118,1,1},learn=55,name="Minor Healing Potion",prof=129,reagents={{3371,1},{2678,1},{2447,1}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[1244432]={colors={85,85,105,125},creates={858,1,1},learn=85,name="Lesser Healing Potion",prof=129,reagents={{3371,1},{2678,2},{2450,1}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[1244433]={colors={135,135,155,175},creates={929,1,1},learn=135,name="Healing Potion",prof=129,reagents={{3372,1},{2692,1},{2453,1}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[1244434]={colors={175,175,195,215},creates={1710,1,1},learn=175,name="Greater Healing Potion",prof=129,reagents={{3372,1},{2692,3},{3357,1}},sources={{t="other"}}}
+R[1244435]={colors={230,230,250,270},creates={3928,1,1},learn=230,name="Superior Healing Potion",prof=129,reagents={{8925,1},{3713,1},{8838,1}},sources={{t="other"}}}
+R[1244436]={colors={290,290,310,330},creates={13446,1,1},learn=290,name="Major Healing Potion",prof=129,reagents={{8925,1},{3713,3},{13464,1}},sources={{cost=80000,item=255729,npcs={266901},t="vendor"}}}
+R[1244645]={colors={85,85,105,125},creates={247239,1,1},learn=85,name="Lesser Discolored Healing Potion",prof=171,reagents={{3371,1},{2450,1},{730,1}},sources={{cost=0,npcs={1937},t="trainer"}}}
+R[1244646]={colors={135,135,155,175},creates={247240,1,1},learn=135,name="Discolored Healing Potion",prof=171,reagents={{3372,1},{2453,1},{730,1}},sources={{cost=0,npcs={1937},t="trainer"}}}
+R[1244647]={colors={175,175,195,215},creates={247241,1,1},learn=175,name="Greater Discolored Healing Potion",prof=171,reagents={{3372,1},{3356,1},{730,1}},sources={{cost=0,npcs={1937},t="trainer"}}}
+R[1244648]={colors={230,230,250,270},creates={247242,1,1},learn=230,name="Superior Discolored Healing Potion",prof=171,reagents={{8925,1},{8838,1},{730,1}},sources={{cost=0,npcs={1937},t="trainer"}}}
+R[1245246]={colors={10,10,12,15},creates={247754,1,1},learn=10,name="Minor Arcane Elixir",prof=171,reagents={{2447,1},{3371,1}},sources={{t="other"}}}
+R[1245250]={colors={10,10,12,15},creates={247755,1,1},learn=10,name="Elixir of Minor Force",prof=171,reagents={{765,1},{3371,1}},sources={{t="other"}}}
+R[1245287]={colors={10,10,12,15},creates={6217,1,1},learn=10,name="Copper Rod",prof=164,reagents={{2840,1}},sources={{t="other"}}}
+R[1245320]={colors={10,10,12,15},creates={247786,3,3},learn=10,name="Dust to Motes",prof=333,reagents={{10940,1}},sources={{t="other"}}}
+R[1245321]={colors={10,10,12,15},creates={247789,1,1},learn=10,name="Novice's Practice Wand",prof=333,reagents={{4470,1},{247786,1}},sources={{t="other"}}}
+R[1247741]={colors={210,210,215,220},creates={8957,1,1},learn=210,name="Spinefin Halibut",prof=185,reagents={{8959,1}},sources={{t="other"}}}
+R[1248458]={colors={110,110,130,150},learn=110,name="Enchant Bracer - Minor Intellect",prof=333,reagents={{10938,1}},sources={{item=249474,t="drop"}}}
+R[1248459]={colors={120,120,140,160},learn=120,name="Enchant Bracer - Minor Healing Power",prof=333,reagents={{10938,2}},sources={{t="other"}}}
+R[1248460]={colors={165,165,185,205},learn=165,name="Enchant Bracer - Lesser Agility",prof=333,reagents={{11134,1}},sources={{t="other"}}}
+R[1248461]={colors={205,205,225,245},creates={249144,1,1},learn=205,name="Twisted Nether Wand",prof=333,reagents={{11174,1},{11176,1},{11291,1}},sources={{t="other"}}}
+R[1248497]={colors={225,225,245,265},learn=225,name="Enchant Bracer - Agility",prof=333,reagents={{11137,1}},sources={{t="other"}}}
+R[1248498]={colors={225,225,245,265},learn=225,name="Enchant Bracer - Lesser Healing Power",prof=333,reagents={{11134,2}},sources={{t="other"}}}
+R[1248500]={colors={260,260,280,300},learn=260,name="Enchant Bracer - Greater Agility",prof=333,reagents={{11176,3},{11174,1}},sources={{t="other"}}}
+R[1248505]={colors={265,265,285,305},creates={249232,1,1},learn=265,name="Lesser Eternal Wand",prof=333,reagents={{16202,1},{11176,1},{11291,1}},sources={{t="other"}}}
+R[1248509]={colors={235,235,255,275},creates={249234,1,1},learn=235,name="Dreambough Wand",prof=333,reagents={{11174,2},{11137,1},{11291,1}},sources={{t="other"}}}
+R[1248510]={colors={230,230,250,270},learn=230,name="Enchant 2H Weapon - Lesser Agility",prof=333,reagents={{11137,2},{11139,1},{11174,1}},sources={{t="other"}}}
+R[1248511]={colors={240,240,260,280},learn=240,name="Enchant 2H Weapon - Lesser Strength",prof=333,reagents={{11137,1},{11139,1},{11174,2}},sources={{t="other"}}}
+R[1248515]={colors={285,285,295,305},creates={249237,1,1},learn=285,name="Greater Eternal Wand",prof=333,reagents={{16203,2},{16204,1},{11291,1}},sources={{t="other"}}}
+R[1248528]={colors={270,270,290,310},learn=270,name="Enchant Gloves - Advanced Skinning",prof=333,reagents={{11176,2},{15407,1}},sources={{t="other"}}}
+R[1248599]={colors={315,315,335,355},learn=315,name="Enchant Bracer - Superior Agility",prof=333,reagents={{16204,3},{16203,3},{14344,1}},sources={{t="other"}}}
+R[1248607]={colors={320,320,340,360},learn=320,name="Enchant 2H Weapon - Mighty Spell Power",prof=333,reagents={{248819,4},{16203,6},{7076,4},{12808,4},{20725,4},{248820,2}},sources={{t="other"}}}
+R[1248636]={colors={320,320,340,360},learn=320,name="Enchant 2H Weapon - Mighty Healing Power",prof=333,reagents={{248819,4},{16203,6},{249726,4},{249274,4},{20725,4},{248820,4}},sources={{t="other"}}}
+R[1248640]={colors={320,320,340,360},learn=320,name="Enchant Gloves - Superior Strength",prof=333,reagents={{20725,4},{16203,8},{7076,4}},sources={{t="other"}}}
+R[1248645]={colors={320,320,340,360},learn=320,name="Enchant Gloves - Natural Power",prof=333,reagents={{20725,2},{14344,5},{248822,4}},sources={{t="other"}}}
+R[1248650]={colors={320,320,340,360},creates={249385,1,1},learn=320,name="Brilliant Wand",prof=333,reagents={{16203,1},{16204,3},{14344,2},{11291,1}},sources={{t="other"}}}
+R[1248661]={colors={320,320,340,360},learn=320,name="Enchant Bracer - Superior Intellect",prof=333,reagents={{16203,10}},sources={{t="other"}}}
+R[1248665]={colors={320,320,340,360},learn=320,name="Enchant Bracer - Superior Deflection",prof=333,reagents={{14344,3}},sources={{t="other"}}}
+R[1248668]={colors={290,290,295,300},learn=290,name="Enchant 2H Weapon - Strength",prof=333,reagents={{14344,8},{16203,10},{16204,8},{12363,4}},sources={{t="other"}}}
+R[1248703]={colors={140,140,160,180},creates={249392,1,1},learn=140,name="Glimmering Staff",prof=333,reagents={{11084,4},{10978,2},{11291,4},{11082,1},{10940,5},{249391,3}},sources={{t="other"}}}
+R[1248739]={colors={140,140,160,180},creates={249393,1,1},learn=140,name="Soulstaff",prof=333,reagents={{11084,2},{10978,1},{11291,4},{11082,1},{11083,6},{1210,2}},sources={{t="other"}}}
+R[1248745]={colors={140,140,160,180},creates={249394,1,1},learn=140,name="Orb of Mystic Insight",prof=333,reagents={{10978,2},{11082,2},{10940,5}},sources={{t="other"}}}
+R[1248748]={colors={140,140,160,180},creates={249395,1,1},learn=140,name="Orb of Souls",prof=333,reagents={{10978,2},{11082,2},{11083,2}},sources={{t="other"}}}
+R[1248752]={colors={140,140,160,180},creates={249396,1,1},learn=140,name="Mystic Mushroom",prof=333,reagents={{10978,1},{10939,2},{10940,5},{4605,1}},sources={{t="other"}}}
+R[1248754]={colors={140,140,160,180},creates={249397,1,1},learn=140,name="Tenets of the Silver Hand",prof=333,reagents={{11084,1},{10939,1},{10940,2},{3013,5}},sources={{t="other"}}}
+R[1248755]={colors={140,140,160,180},creates={249398,1,1},learn=140,name="Polished Driftwood Icon",prof=333,reagents={{11084,1},{10939,2},{10940,3},{4470,1}},sources={{t="other"}}}
+R[1248757]={colors={140,140,160,180},learn=140,name="Enchant Weapon - Insight",prof=333,reagents={{10940,10},{11084,4},{11082,4},{249391,4},{249399,4}},sources={{t="other"}}}
+R[1248760]={colors={140,140,160,180},learn=140,name="Enchant Weapon - Recovery",prof=333,reagents={{11083,6},{11084,4},{11082,6},{249391,4},{2775,4}},sources={{t="other"}}}
+R[1248805]={colors={140,140,160,180},learn=140,name="Enchant Weapon - Revelation",prof=333,reagents={{11083,8},{11084,6},{11082,2},{249409,4},{249410,4}},sources={{t="other"}}}
+R[1248974]={colors={225,225,245,265},creates={249441,1,1},learn=225,name="Talons of Wrath",prof=333,reagents={{11178,2},{11175,4},{11176,6},{249430,2},{249409,1},{11291,1}},sources={{t="other"}}}
+R[1249006]={colors={225,225,245,265},creates={249442,1,1},learn=225,name="Libram of Invocation",prof=333,reagents={{11178,3},{11175,3},{11176,4},{249430,2},{249409,1},{2289,4}},sources={{t="other"}}}
+R[1249015]={colors={225,225,245,265},creates={249443,1,1},learn=225,name="Totem of Ancestral Protection",prof=333,reagents={{11178,4},{11175,2},{11176,2},{249432,4},{249410,2},{11291,2}},sources={{t="other"}}}
+R[1249019]={colors={225,225,245,265},learn=225,name="Enchant Necklace - Strength",prof=333,reagents={{11175,4},{11178,4},{11176,10},{249410,4},{249425,4}},sources={{t="other"}}}
+R[1249057]={colors={225,225,245,265},learn=225,name="Enchant Necklace - Spell Power",prof=333,reagents={{11175,5},{11178,3},{11176,8},{249409,4},{249430,4}},sources={{t="other"}}}
+R[1249058]={colors={225,225,245,265},learn=225,name="Enchant Necklace - Healing Power",prof=333,reagents={{11175,3},{11178,5},{11176,4},{249391,4},{249424,4}},sources={{t="other"}}}
+R[1249059]={colors={225,225,245,265},learn=225,name="Enchant Necklace - Agility",prof=333,reagents={{11175,2},{11178,8},{11176,6},{249410,4},{249430,4}},sources={{t="other"}}}
+R[1249060]={colors={225,225,245,265},learn=225,name="Enchant Necklace - Deflection",prof=333,reagents={{11175,8},{11178,2},{11176,2},{249409,4},{249430,4}},sources={{t="other"}}}
+R[1249061]={colors={225,225,245,265},creates={249453,1,1},learn=225,name="Radiant Staff",prof=333,reagents={{11178,6},{11177,2},{11291,4},{11175,4},{11176,6},{249409,2},{249430,4}},sources={{t="other"}}}
+R[1249064]={colors={225,225,245,265},creates={249454,1,1},learn=225,name="Dreamstaff",prof=333,reagents={{11178,4},{11177,4},{11291,4},{11175,6},{11176,8},{249409,2},{249430,4}},sources={{t="other"}}}
+R[1249069]={colors={225,225,245,265},creates={249455,1,1},learn=225,name="Truesilver Conduit",prof=333,reagents={{11178,3},{11177,1},{11291,2},{11175,2},{11176,3},{249409,1},{249430,2}},sources={{t="other"}}}
+R[1249070]={colors={225,225,245,265},creates={249456,1,1},learn=225,name="Twisting Essence Jar",prof=333,reagents={{6037,4},{11175,12},{11135,12},{249409,1},{249430,2}},sources={{t="other"}}}
+R[1249071]={colors={225,225,245,265},learn=225,name="Enchant Chest - Absorption",prof=333,reagents={{11176,10},{11175,4},{11178,2}},sources={{t="other"}}}
+R[1249107]={colors={285,285,305,325},creates={249469,1,1},learn=285,name="Frozen Heart of the Mountain",prof=333,reagents={{11382,1},{12808,1},{14343,3}},sources={{t="other"}}}
+R[1249112]={colors={285,285,305,325},creates={249470,1,1},learn=285,name="Molten Heart of the Mountain",prof=333,reagents={{11382,1},{7076,1},{14343,3}},sources={{t="other"}}}
+R[1249114]={colors={285,285,305,325},creates={249473,1,1},learn=285,name="Dormant Heart of the Mountain",prof=333,reagents={{11382,1},{7080,1},{14343,3}},sources={{t="other"}}}
+R[1249128]={colors={320,320,340,360},creates={220606,1,1},learn=320,name="Idol of the Dream",prof=333,reagents={{14344,2},{16203,4},{16204,6},{249431,8},{249430,4},{249409,2},{11291,4}},sources={{t="other"}}}
+R[1249152]={colors={320,320,340,360},creates={228175,1,1},learn=320,name="Libram of Holy Alacrity",prof=333,reagents={{14344,4},{16203,3},{16204,4},{249431,8},{249430,4},{249409,2},{10308,4}},sources={{t="other"}}}
+R[1249154]={colors={320,320,340,360},creates={228176,1,1},learn=320,name="Totem of Thunder",prof=333,reagents={{14344,1},{16203,8},{16204,10},{249431,8},{249430,4},{249409,2},{11291,4}},sources={{t="other"}}}
+R[1249630]={colors={50,50,70,90},creates={249409,1,1},learn=50,name="Cerulean Dye",prof=171,reagents={{249399,2},{3371,1}},sources={{cost=0,npcs={1215,1246,1470,2132,2391,3009,3184,3347},t="trainer"}}}
+R[1249631]={colors={130,130,142,155},creates={249430,1,1},learn=130,name="Magenta Dye",prof=171,reagents={{249424,2},{3372,1}},sources={{cost=0,npcs={2391,3009,3347,4160,4609,5177,5499,11042},t="trainer"}}}
+R[1249632]={colors={230,230,250,270},creates={249431,1,1},learn=230,name="Viridian Dye",prof=171,reagents={{249274,2},{8925,1}},sources={{cost=0,npcs={4160,246795,275322},t="trainer"}}}
+R[1249633]={colors={50,50,70,90},creates={249410,1,1},learn=50,name="Sulfuric Acid",prof=171,reagents={{249391,2},{3371,1}},sources={{cost=0,npcs={1215,1246,1470,2132,2391,3009,3184,3347},t="trainer"}}}
+R[1249634]={colors={130,130,142,155},creates={249432,1,1},learn=130,name="Sandpaper",prof=202,reagents={{249425,2},{2996,1}},sources={{t="other"}}}
+R[1249957]={colors={25,25,45,65},creates={249865,1,1},learn=25,name="Peace Tea",prof=185,reagents={{159,1},{2447,2}},sources={{item=249879,t="drop"}}}
+R[1249958]={colors={85,85,105,125},creates={249866,1,1},learn=85,name="Royal Tea",prof=185,reagents={{1179,1},{785,2}},sources={{t="other"}}}
+R[1249959]={colors={155,155,170,185},creates={249867,1,1},learn=155,name="Root Tea",prof=185,reagents={{1205,1},{3357,2}},sources={{t="other"}}}
+R[1249960]={colors={195,195,215,235},creates={249868,1,1},learn=195,name="Triage Tea",prof=185,reagents={{1708,1},{3818,2}},sources={{t="other"}}}
+end)()
+;(function()
+R[1249961]={colors={220,220,235,250},creates={249869,1,1},learn=220,name="Sunny Tea",prof=185,reagents={{1645,1},{8838,2}},sources={{t="other"}}}
+R[1249962]={colors={260,260,275,290},creates={249870,1,1},learn=260,name="Sage's Tea",prof=185,reagents={{8766,1},{13465,2}},sources={{t="other"}}}
+R[1249963]={colors={5,5,10,15},creates={249871,1,1},learn=5,name="Venomous Smoothie",prof=185,reagents={{159,1},{2678,1},{1475,1}},sources={{t="other"}}}
+R[1249964]={colors={85,85,90,95},creates={249872,1,1},learn=85,name="Slimy Smoothie",prof=185,reagents={{1179,1},{2678,2},{3174,1}},sources={{t="other"}}}
+R[1249965]={colors={135,135,140,145},creates={249873,1,1},learn=135,name="Mrrggl Smrrthle",prof=185,reagents={{1205,1},{2692,2},{1468,1}},sources={{t="other"}}}
+R[1249966]={colors={185,185,190,195},creates={249874,1,1},learn=185,name="Calcified Smoothie",prof=185,reagents={{1708,1},{2692,3},{5637,1}},sources={{t="other"}}}
+R[1249967]={colors={215,215,220,225},creates={249875,1,1},learn=215,name="Spicy Smoothie",prof=185,reagents={{1645,1},{3713,3},{4402,1}},sources={{t="other"}}}
+R[1249968]={colors={240,240,245,250},creates={249876,1,1},learn=240,name="Wicked Smoothie",prof=185,reagents={{8766,1},{3713,4},{8146,1}},sources={{t="other"}}}
+R[1250142]={colors={225,225,240,255},creates={250065,1,1},learn=225,name="Savory Stag Sliders",prof=185,reagents={{5471,2},{2692,3}},sources={{t="other"}}}
+R[1250143]={colors={275,275,292,310},creates={250066,1,1},learn=275,name="Soaring Pamplona",prof=185,reagents={{3404,3},{3713,3}},sources={{t="other"}}}
+R[1250144]={colors={280,280,295,310},creates={250067,1,1},learn=280,name="Bat Hachee",prof=185,reagents={{12223,3},{3713,2}},sources={{t="other"}}}
+R[1250145]={colors={260,260,280,300},creates={250068,1,1},learn=260,name="Savory Turtle Stew",prof=185,reagents={{3712,3},{3713,3}},sources={{t="other"}}}
+R[1250146]={colors={285,285,300,315},creates={250069,1,1},learn=285,name="Flank au Poivre",prof=185,reagents={{12203,3},{3713,3}},sources={{t="other"}}}
+R[1250147]={colors={275,275,290,305},creates={250070,1,1},learn=275,name="Bear Bruscitti",prof=185,reagents={{3730,3},{3713,3}},sources={{t="other"}}}
+R[1250148]={colors={260,260,280,300},creates={250071,1,1},learn=260,name="Steaming Stag Steak",prof=185,reagents={{5471,3},{3713,4}},sources={{t="other"}}}
+R[1250149]={colors={175,175,190,205},creates={250072,1,1},learn=175,name="Swiftstrike Steak",prof=185,reagents={{12202,3},{3713,2}},sources={{t="other"}}}
+R[1250150]={colors={185,185,200,215},creates={250073,1,1},learn=185,name="Raging Raptor Ribs",prof=185,reagents={{12184,2},{2692,3}},sources={{t="other"}}}
+R[1250151]={colors={200,200,210,220},creates={250074,1,1},learn=200,name="Bear Brisket",prof=185,reagents={{3730,2},{2692,3}},sources={{t="other"}}}
+R[1250152]={colors={260,260,280,300},creates={250075,1,1},learn=260,name="Prehistoric Pulled Raptor",prof=185,reagents={{12184,3},{3713,4}},sources={{t="other"}}}
+R[1250153]={colors={225,225,237,250},creates={250076,1,1},learn=225,name="Raptor Rouladen",prof=185,reagents={{12184,2},{2692,4}},sources={{t="other"}}}
+R[1250154]={colors={115,115,132,150},creates={250077,1,1},learn=115,name="Twice-Spiced Raptor Slice",prof=185,reagents={{12184,1},{2678,2}},sources={{t="other"}}}
+R[1250155]={colors={195,195,207,220},creates={250078,1,1},learn=195,name="Giant Scrambled Eggs",prof=185,reagents={{12207,2},{2692,4}},sources={{t="other"}}}
+R[1250156]={colors={35,35,55,75},creates={250079,1,1},learn=35,name="Tasty Raptor Bites",prof=185,reagents={{3685,1},{2678,4}},sources={{item=250187,t="drop"}}}
+R[1250157]={colors={75,75,92,110},creates={250080,1,1},learn=75,name="Breakfast Omelette",prof=185,reagents={{6889,1},{2678,4}},sources={{item=250188,t="drop"}}}
+R[1250158]={colors={200,200,220,240},creates={250081,1,1},learn=200,name="Clam Linguine",prof=185,reagents={{7974,3},{3713,4}},sources={{t="other"}}}
+R[1250775]={colors={205,205,207,210},learn=205,name="Revealing Draught",prof=171,reagents={{3818,3},{3358,1},{3372,1}},sources={{t="other"}}}
+R[1250776]={colors={200,200,202,205},creates={250327,1,1},learn=200,name="Draught of Predatory Senses",prof=171,reagents={{3818,2},{3821,2},{3372,1}},sources={{t="other"}}}
+R[1250777]={colors={280,280,282,285},creates={250328,1,1},learn=280,name="Elixir of Cunning",prof=171,reagents={{13463,3},{8846,2},{8925,1}},sources={{t="other"}}}
+R[1250778]={colors={255,255,257,260},creates={250329,1,1},learn=255,name="Elixir of the Phalanx",prof=171,reagents={{13464,2},{8838,4},{8925,1}},sources={{t="other"}}}
+R[1250779]={colors={50,50,52,55},creates={250330,1,1},learn=50,name="Minor Cleric's Elixir",prof=171,reagents={{785,2},{2453,1},{3371,1}},sources={{item=250366,t="drop"}}}
+R[1250780]={colors={100,100,102,105},creates={250331,1,1},learn=100,name="Lesser Cleric's Elixir",prof=171,reagents={{3356,2},{3357,2},{3372,1}},sources={{t="other"}}}
+R[1250781]={colors={150,150,152,155},creates={250332,1,1},learn=150,name="Cleric's Elixir",prof=171,reagents={{3819,2},{4625,2},{3372,1}},sources={{t="other"}}}
+R[1250782]={colors={200,200,202,205},creates={250333,1,1},learn=200,name="Greater Cleric's Elixir",prof=171,reagents={{8836,3},{8831,1},{8925,1}},sources={{t="other"}}}
+R[1250783]={colors={155,155,157,160},creates={250334,1,1},learn=155,name="Elixir of Fortitude",prof=171,reagents={{3821,4},{3372,1}},sources={{t="other"}}}
+R[1250784]={colors={205,205,207,210},creates={250335,1,1},learn=205,name="Elixir of Greater Fortitude",prof=171,reagents={{8838,4},{8925,1}},sources={{t="other"}}}
+R[1250785]={colors={290,290,292,295},creates={250336,1,1},learn=290,name="Elixir of Wicked Regeneration",prof=171,reagents={{13464,3},{13463,2},{8925,1}},sources={{t="other"}}}
+R[1250786]={colors={285,285,287,290},creates={250337,1,1},learn=285,name="Elixir of the Owl",prof=171,reagents={{13463,4},{13465,2},{18256,1}},sources={{t="other"}}}
+R[1250787]={colors={280,280,282,285},creates={250338,1,1},learn=280,name="Elixir of Sages",prof=171,reagents={{13463,4},{13464,2},{18256,1}},sources={{t="other"}}}
+R[1250788]={colors={30,30,32,35},creates={250339,1,1},learn=30,name="Minor Mageblood Elixir",prof=171,reagents={{785,2},{3371,1}},sources={{item=250375,t="drop"}}}
+R[1250789]={colors={80,80,82,85},creates={250340,1,1},learn=80,name="Lesser Mageblood Elixir",prof=171,reagents={{3356,3},{3371,1}},sources={{t="other"}}}
+R[1250790]={colors={180,180,182,185},creates={250341,1,1},learn=180,name="Greater Mageblood Elixir",prof=171,reagents={{8839,3},{8836,2},{8925,1}},sources={{t="other"}}}
+R[1250791]={colors={125,125,127,130},creates={250342,1,1},learn=125,name="Lesser Arcane Elixir",prof=171,reagents={{3356,4},{3372,1}},sources={{t="other"}}}
+R[1250792]={colors={290,290,292,295},creates={250343,1,1},learn=290,name="Elixir of Nature Power",prof=171,reagents={{13464,4},{8838,2},{8925,1}},sources={{t="other"}}}
+R[1250793]={colors={20,20,22,25},creates={250344,1,1},learn=20,name="Elixir of Minor Spirit",prof=171,reagents={{2449,2},{2447,1},{3371,1}},sources={{item=250380,t="drop"}}}
+R[1250794]={colors={70,70,72,75},creates={250345,1,1},learn=70,name="Elixir of Lesser Spirit",prof=171,reagents={{3355,2},{785,1},{3371,1}},sources={{t="other"}}}
+R[1250795]={colors={120,120,122,125},creates={250346,1,1},learn=120,name="Elixir of Spirit",prof=171,reagents={{3358,3},{3356,1},{3372,1}},sources={{t="other"}}}
+R[1250796]={colors={170,170,172,175},creates={250347,1,1},learn=170,name="Elixir of Greater Spirit",prof=171,reagents={{8836,3},{8831,2},{8925,1}},sources={{t="other"}}}
+R[1250797]={colors={280,280,282,285},creates={250348,1,1},learn=280,name="Elixir of the Whale",prof=171,reagents={{13463,3},{8846,1},{8925,1}},sources={{t="other"}}}
+R[1250798]={colors={155,155,157,160},creates={250349,1,1},learn=155,name="Elixir of Strength",prof=171,reagents={{3355,3},{3821,1},{3372,1}},sources={{t="other"}}}
+R[1250799]={colors={280,280,282,285},creates={250350,1,1},learn=280,name="Elixir of Ferocity",prof=171,reagents={{8846,3},{8845,1},{8925,1}},sources={{t="other"}}}
+R[1250800]={colors={305,305,307,310},creates={250351,1,1},learn=305,name="Elixir of the Grizzly",prof=171,reagents={{8846,3},{8839,1},{8925,1}},sources={{t="other"}}}
+R[1250801]={colors={100,100,102,105},creates={250353,1,1},learn=100,name="Elixir of Lesser Intellect",prof=171,reagents={{3356,3},{3372,1}},sources={{t="other"}}}
+R[1250802]={colors={140,140,142,145},creates={250354,1,1},learn=140,name="Elixir of Intellect",prof=171,reagents={{3358,3},{3372,1}},sources={{t="other"}}}
+R[1251729]={colors={40,40,42,45},creates={250932,1,1},learn=40,name="Minor Spellblasting Potion",prof=171,reagents={{765,1},{2447,1},{3371,1}},sources={{item=250976,t="drop"}}}
+R[1251730]={colors={90,90,92,95},creates={250933,1,1},learn=90,name="Lesser Spellblasting Potion",prof=171,reagents={{785,1},{765,2},{3371,1}},sources={{item=250977,t="drop"}}}
+R[1251731]={colors={140,140,142,145},creates={250934,1,1},learn=140,name="Spellblasting Potion",prof=171,reagents={{3355,1},{3369,1},{3371,1}},sources={{t="other"}}}
+R[1251732]={colors={190,190,192,195},creates={250935,1,1},learn=190,name="Greater Spellblasting Potion",prof=171,reagents={{3356,2},{3818,1},{3372,1}},sources={{t="other"}}}
+R[1251733]={colors={240,240,242,245},creates={250936,1,1},learn=240,name="Superior Spellblasting Potion",prof=171,reagents={{3819,2},{3358,2},{3372,1}},sources={{t="other"}}}
+R[1251734]={colors={290,290,292,295},creates={250937,1,1},learn=290,name="Major Spellblasting Potion",prof=171,reagents={{13463,2},{13465,1},{18256,1}},sources={{t="other"}}}
+R[1251735]={colors={45,45,47,50},creates={250938,1,1},learn=45,name="Minor Frenzy Potion",prof=171,reagents={{2449,1},{765,1},{3371,1}},sources={{item=250982,t="drop"}}}
+R[1251736]={colors={95,95,97,100},creates={250939,1,1},learn=95,name="Lesser Frenzy Potion",prof=171,reagents={{2450,1},{2449,2},{3371,1}},sources={{item=250983,t="drop"}}}
+R[1251737]={colors={145,145,147,150},creates={250940,1,1},learn=145,name="Frenzy Potion",prof=171,reagents={{3818,2},{2450,2},{3372,1}},sources={{t="other"}}}
+R[1251738]={colors={195,195,197,200},creates={250941,1,1},learn=195,name="Greater Frenzy Potion",prof=171,reagents={{4625,3},{3818,2},{3372,1}},sources={{t="other"}}}
+R[1251739]={colors={245,245,247,250},creates={250942,1,1},learn=245,name="Superior Frenzy Potion",prof=171,reagents={{8839,3},{4625,2},{8925,1}},sources={{t="other"}}}
+R[1251740]={colors={295,295,297,300},creates={250943,1,1},learn=295,name="Major Frenzy Potion",prof=171,reagents={{13466,3},{8839,2},{18256,1}},sources={{t="other"}}}
+R[1251741]={colors={35,35,37,40},creates={250944,1,1},learn=35,name="Minor Mender's Potion",prof=171,reagents={{785,2},{2453,1},{3371,1}},sources={{item=250988,t="drop"}}}
+R[1251742]={colors={85,85,87,90},creates={250945,1,1},learn=85,name="Lesser Mender's Potion",prof=171,reagents={{3356,2},{3357,2},{3372,1}},sources={{item=250989,t="drop"}}}
+R[1251743]={colors={135,135,137,140},creates={250946,1,1},learn=135,name="Mender's Potion",prof=171,reagents={{3819,2},{4625,2},{3372,1}},sources={{t="other"}}}
+R[1251744]={colors={185,185,187,190},creates={250947,1,1},learn=185,name="Greater Mender's Potion",prof=171,reagents={{8836,2},{8831,1},{8925,1}},sources={{t="other"}}}
+R[1251745]={colors={235,235,237,240},creates={250948,1,1},learn=235,name="Superior Mender's Potion",prof=171,reagents={{8838,2},{8836,1},{8925,1}},sources={{t="other"}}}
+R[1251747]={colors={285,285,287,290},creates={250949,1,1},learn=285,name="Major Mender's Potion",prof=171,reagents={{13463,3},{8838,1},{18256,1}},sources={{t="other"}}}
+R[1251748]={colors={280,280,282,285},creates={250950,1,1},learn=280,name="Potion of Venomous Blood",prof=171,reagents={{8846,3},{13466,2},{8925,1}},sources={{t="other"}}}
+R[1251749]={colors={270,270,272,275},creates={250951,1,1},learn=270,name="Caustic Smog Potion",prof=171,reagents={{8845,2},{3369,2},{8925,1}},sources={{t="other"}}}
+R[1251750]={colors={185,185,187,190},creates={250952,1,1},learn=185,name="Disorienting Smog Potion",prof=171,reagents={{8845,3},{3369,2},{8925,1}},sources={{t="other"}}}
+R[1251751]={colors={250,250,252,255},creates={250953,1,1},learn=250,name="Dragonfire Potion",prof=171,reagents={{13465,2},{4625,2},{8925,1}},sources={{t="other"}}}
+R[1251752]={colors={285,285,287,290},creates={250954,1,1},learn=285,name="Potion of Elemental Siphoning",prof=171,reagents={{4625,2},{3819,2},{8925,1}},sources={{t="other"}}}
+R[1251753]={colors={285,285,287,290},creates={250955,1,1},learn=285,name="Potion of Beast Culling",prof=171,reagents={{8846,2},{13466,2},{18256,1}},sources={{t="other"}}}
+R[1252229]={colors={40,55,75,95},creates={250620,1,1},est=true,learn=40,name="Gemmed Copper Boots",prof=164,reagents={{2840,2},{818,2},{774,2},{2318,4}},sources={{cost=0,npcs={514,957,1241,1383,2998,3174,3478,3557},t="trainer"}}}
+R[1252230]={colors={40,55,75,95},creates={250621,1,1},est=true,learn=40,name="Strange Copper Boots",prof=164,reagents={{2840,2},{10940,4},{2318,2}},sources={{cost=0,npcs={514,957,1241,1383,2998,3174,3478,3557},t="trainer"}}}
+R[1252231]={colors={40,55,75,95},creates={250482,1,1},est=true,learn=40,name="Glowing Copper Boots",prof=164,reagents={{2840,2},{10938,4},{2318,2}},sources={{cost=0,npcs={514,957,1241,1383,2998,3174,3478,3557},t="trainer"}}}
+R[1252232]={colors={130,130,145,160},creates={250483,1,1},learn=130,name="Sterling Silver Boots",prof=164,reagents={{2842,6},{2840,2},{3478,2},{2319,2}},sources={{t="other"}}}
+R[1252233]={colors={135,135,150,165},creates={250484,1,1},learn=135,name="Sterling Silver Leggings",prof=164,reagents={{2842,10},{2840,3},{3478,3}},sources={{t="other"}}}
+R[1252234]={colors={135,135,150,165},creates={250485,1,1},learn=135,name="Sterling Silver Gauntlet",prof=164,reagents={{2842,6},{2840,2},{3478,2}},sources={{t="other"}}}
+R[1252235]={colors={140,140,155,170},creates={250486,1,1},learn=140,name="Sterling Silver Shoulders",prof=164,reagents={{2842,6},{2840,2},{3478,2}},sources={{t="other"}}}
+R[1252236]={colors={155,155,170,185},creates={250487,1,1},learn=155,name="Sterling Silver Breastplate",prof=164,reagents={{2842,12},{2840,4},{3478,3}},sources={{t="other"}}}
+R[1252237]={colors={85,85,105,120},creates={250488,1,1},est=true,learn=85,name="Veteran's Chain Shirt",prof=164,reagents={{2841,4},{3470,2},{5498,2}},sources={{t="other"}}}
+R[1252238]={colors={85,85,105,120},creates={250489,1,1},est=true,learn=85,name="Guard's Chain Shirt",prof=164,reagents={{2841,4},{3470,2},{1210,2}},sources={{t="other"}}}
+R[1252239]={colors={85,85,105,120},creates={250490,1,1},est=true,learn=85,name="Protector's Chain Shirt",prof=164,reagents={{2841,4},{3470,2},{818,2}},sources={{t="other"}}}
+R[1252240]={colors={85,85,105,120},creates={250491,1,1},est=true,learn=85,name="Acolyte's Chain Shirt",prof=164,reagents={{2841,4},{3470,2},{10940,2}},sources={{t="other"}}}
+R[1252241]={colors={85,85,105,120},creates={250492,1,1},est=true,learn=85,name="Crusader's Chain Shirt",prof=164,reagents={{2841,4},{3470,2},{10938,2}},sources={{t="other"}}}
+R[1252242]={colors={100,100,120,135},creates={250493,1,1},est=true,learn=100,name="Veteran's Chain Leggings",prof=164,reagents={{2841,6},{3478,2},{5498,4}},sources={{t="other"}}}
+R[1252243]={colors={100,100,120,135},creates={250494,1,1},est=true,learn=100,name="Guard's Chain Leggings",prof=164,reagents={{2841,6},{3478,2},{1210,4}},sources={{t="other"}}}
+R[1252244]={colors={100,100,120,135},creates={250495,1,1},est=true,learn=100,name="Protector's Chain Leggings",prof=164,reagents={{2841,6},{3478,2},{818,4}},sources={{t="other"}}}
+R[1252245]={colors={100,100,120,135},creates={250496,1,1},est=true,learn=100,name="Acolyte's Chain Leggings",prof=164,reagents={{2841,6},{3478,2},{10940,4}},sources={{t="other"}}}
+R[1252246]={colors={100,100,120,135},creates={250497,1,1},est=true,learn=100,name="Crusader's Chain Leggings",prof=164,reagents={{2841,6},{3478,2},{10938,4}},sources={{t="other"}}}
+R[1252247]={colors={130,130,145,160},creates={250498,1,1},est=true,learn=130,name="Veteran's Chain Helm",prof=164,reagents={{2841,8},{3478,2},{5498,6}},sources={{t="other"}}}
+R[1252248]={colors={130,130,145,160},creates={250499,1,1},est=true,learn=130,name="Guard's Chain Helm",prof=164,reagents={{2841,8},{3478,2},{1210,6}},sources={{t="other"}}}
+R[1252249]={colors={130,130,145,160},creates={250500,1,1},est=true,learn=130,name="Protector's Chain Helm",prof=164,reagents={{2841,8},{3478,2},{818,6}},sources={{t="other"}}}
+R[1252250]={colors={130,130,145,160},creates={250501,1,1},est=true,learn=130,name="Acolyte's Chain Helm",prof=164,reagents={{2841,8},{3478,2},{10940,6}},sources={{t="other"}}}
+R[1252251]={colors={130,130,145,160},creates={250502,1,1},est=true,learn=130,name="Crusader's Chain Helm",prof=164,reagents={{2841,8},{3478,2},{10938,6}},sources={{t="other"}}}
+R[1252252]={colors={115,115,130,145},creates={250503,1,1},learn=115,name="Veteran's Boots",prof=164,reagents={{2841,12},{3478,2},{249427,4},{5498,5}},sources={{t="other"}}}
+R[1252253]={colors={115,115,130,145},creates={250504,1,1},learn=115,name="Guard's Boots",prof=164,reagents={{2841,12},{3478,2},{249427,4},{1210,5}},sources={{t="other"}}}
+R[1252254]={colors={115,115,130,145},creates={250505,1,1},learn=115,name="Protector's Boots",prof=164,reagents={{2841,12},{3478,2},{249427,4},{818,5}},sources={{t="other"}}}
+R[1252255]={colors={115,115,130,145},creates={250506,1,1},learn=115,name="Acolyte's Boots",prof=164,reagents={{2841,12},{3478,2},{249427,4},{10940,5}},sources={{t="other"}}}
+R[1252256]={colors={115,115,130,145},creates={250507,1,1},learn=115,name="Crusader's Boots",prof=164,reagents={{2841,12},{3478,2},{249427,4},{10938,5}},sources={{t="other"}}}
+R[1252257]={colors={110,110,125,140},creates={250508,1,1},learn=110,name="Veteran's Gloves",prof=164,reagents={{2841,10},{3470,4},{249410,2},{5498,3}},sources={{t="other"}}}
+R[1252258]={colors={110,110,125,140},creates={250509,1,1},learn=110,name="Guard's Gloves",prof=164,reagents={{2841,10},{3470,4},{249410,2},{1210,3}},sources={{t="other"}}}
+R[1252259]={colors={110,110,125,140},creates={250510,1,1},learn=110,name="Protector's Gloves",prof=164,reagents={{2841,10},{3470,4},{249410,2},{818,3}},sources={{t="other"}}}
+R[1252260]={colors={110,110,125,140},creates={250511,1,1},learn=110,name="Acolyte's Gloves",prof=164,reagents={{2841,10},{3470,4},{249410,2},{10940,3}},sources={{t="other"}}}
+R[1252261]={colors={110,110,125,140},creates={250512,1,1},learn=110,name="Crusader's Gloves",prof=164,reagents={{2841,10},{3470,4},{249410,2},{10938,3}},sources={{t="other"}}}
+R[1252262]={colors={85,85,105,125},creates={250513,1,1},learn=85,name="Veteran's Chain Belt",prof=164,reagents={{2840,12},{3470,4},{249427,2},{5498,2}},sources={{t="other"}}}
+R[1252263]={colors={85,85,105,125},creates={250514,1,1},learn=85,name="Guard's Chain Belt",prof=164,reagents={{2840,12},{3470,4},{249427,2},{1210,2}},sources={{t="other"}}}
+R[1252264]={colors={85,85,105,125},creates={250515,1,1},learn=85,name="Protector's Chain Belt",prof=164,reagents={{2840,12},{3470,4},{249427,2},{818,2}},sources={{t="other"}}}
+R[1252265]={colors={85,85,105,125},creates={250516,1,1},learn=85,name="Acolyte's Chain Belt",prof=164,reagents={{2840,12},{3470,4},{249427,2},{10940,2}},sources={{t="other"}}}
+R[1252266]={colors={85,85,105,125},creates={250517,1,1},learn=85,name="Crusader's Chain Belt",prof=164,reagents={{2840,12},{3470,4},{249427,2},{10938,2}},sources={{t="other"}}}
+R[1252267]={colors={140,140,155,170},creates={250518,1,1},learn=140,name="Veteran's Silvered Chain Shirt",prof=164,reagents={{2841,20},{3478,6},{2842,5},{249427,6},{5498,8}},sources={{t="other"}}}
+R[1252268]={colors={140,140,155,170},creates={250519,1,1},learn=140,name="Guard's Silvered Chain Shirt",prof=164,reagents={{2841,20},{3478,6},{2842,5},{249427,6},{1210,8}},sources={{t="other"}}}
+R[1252269]={colors={140,140,155,170},creates={250520,1,1},learn=140,name="Protector's Silvered Chain Shirt",prof=164,reagents={{2841,20},{3478,6},{2842,5},{249427,6},{818,8}},sources={{t="other"}}}
+R[1252270]={colors={140,140,155,170},creates={250521,1,1},learn=140,name="Acolyte's Silvered Chain Shirt",prof=164,reagents={{2841,20},{3478,6},{2842,5},{249427,6},{10940,8}},sources={{t="other"}}}
+R[1252271]={colors={140,140,155,170},creates={250522,1,1},learn=140,name="Crusader's Silvered Chain Shirt",prof=164,reagents={{2841,20},{3478,6},{2842,5},{249427,6},{10938,8}},sources={{t="other"}}}
+R[1252272]={colors={155,155,170,185},creates={250523,1,1},learn=155,name="Veteran's Silvered Chain Leggings",prof=164,reagents={{2841,20},{3478,8},{2842,6},{249427,6},{5498,8}},sources={{t="other"}}}
+R[1252273]={colors={155,155,170,185},creates={250524,1,1},learn=155,name="Guard's Silvered Chain Leggings",prof=164,reagents={{2841,20},{3478,8},{2842,6},{249427,6},{1210,8}},sources={{t="other"}}}
+R[1252274]={colors={155,155,170,185},creates={250525,1,1},learn=155,name="Protector's Silvered Chain Leggings",prof=164,reagents={{2841,20},{3478,8},{2842,6},{249427,6},{818,8}},sources={{t="other"}}}
+R[1252275]={colors={155,155,170,185},creates={250526,1,1},learn=155,name="Acolyte's Silvered Chain Leggings",prof=164,reagents={{2841,20},{3478,8},{2842,6},{249427,6},{10940,8}},sources={{t="other"}}}
+R[1252276]={colors={155,155,170,185},creates={250527,1,1},learn=155,name="Crusader's Silvered Chain Leggings",prof=164,reagents={{2841,20},{3478,8},{2842,6},{249427,6},{10938,8}},sources={{t="other"}}}
+R[1252277]={colors={125,125,140,155},creates={250528,1,1},learn=125,name="Veteran's Silvered Chain Helm",prof=164,reagents={{2841,15},{3478,6},{2842,4},{249427,4},{5498,6}},sources={{t="other"}}}
+R[1252278]={colors={125,125,140,155},creates={250529,1,1},learn=125,name="Guard's Silvered Chain Helm",prof=164,reagents={{2841,15},{3478,6},{2842,4},{249427,4},{1210,6}},sources={{t="other"}}}
+R[1252279]={colors={125,125,140,155},creates={250530,1,1},learn=125,name="Protector's Silvered Chain Helm",prof=164,reagents={{2841,15},{3478,6},{2842,4},{249427,4},{818,6}},sources={{t="other"}}}
+R[1252280]={colors={125,125,140,155},creates={250531,1,1},learn=125,name="Acolyte's Silvered Chain Helm",prof=164,reagents={{2841,15},{3478,6},{2842,4},{249427,4},{10940,6}},sources={{t="other"}}}
+R[1252281]={colors={125,125,140,155},creates={250532,1,1},learn=125,name="Crusader's Silvered Chain Helm",prof=164,reagents={{2841,15},{3478,6},{2842,4},{249427,4},{10938,6}},sources={{t="other"}}}
+R[1252282]={colors={170,170,182,195},creates={250533,1,1},learn=170,name="Hard Gold Cuirass",prof=164,reagents={{3577,12},{3859,3},{3486,2}},sources={{t="other"}}}
+R[1252283]={colors={175,175,187,200},creates={250534,1,1},learn=175,name="Hard Gold Boots",prof=164,reagents={{3577,6},{3859,2},{3486,2},{4234,2}},sources={{t="other"}}}
+R[1252284]={colors={185,185,197,210},creates={250535,1,1},learn=185,name="Hard Gold Bracers",prof=164,reagents={{3577,6},{3859,1},{3486,2}},sources={{t="other"}}}
+R[1252285]={colors={190,190,202,215},creates={250536,1,1},learn=190,name="Hard Gold Leggings",prof=164,reagents={{3577,10},{3859,2},{3486,2}},sources={{t="other"}}}
+R[1252286]={colors={195,195,207,220},creates={250537,1,1},learn=195,name="Hard Gold Coif",prof=164,reagents={{3577,10},{3859,2},{3486,2}},sources={{t="other"}}}
+R[1252287]={colors={200,200,212,225},creates={250538,1,1},learn=200,name="Hard Gold Gauntlet",prof=164,reagents={{3577,8},{3859,2},{3486,2}},sources={{t="other"}}}
+R[1252288]={colors={200,200,212,225},creates={250539,1,1},learn=200,name="Hard Gold Pauldrons",prof=164,reagents={{3577,8},{3859,2},{3486,2}},sources={{t="other"}}}
+R[1252289]={colors={215,215,225,235},creates={250540,1,1},learn=215,name="Shining Mithril Breastplate",prof=164,reagents={{3860,8},{6037,9},{3486,2},{7971,2}},sources={{t="other"}}}
+R[1252290]={colors={215,215,225,235},creates={250541,1,1},learn=215,name="Shining Mithril Pauldrons",prof=164,reagents={{3860,6},{6037,3},{3486,2},{4304,2}},sources={{t="other"}}}
+R[1252291]={colors={220,220,230,240},creates={250542,1,1},learn=220,name="Shining Mithril Boots",prof=164,reagents={{3860,4},{6037,3},{3486,2},{4304,4}},sources={{t="other"}}}
+R[1252292]={colors={235,235,245,255},creates={250543,1,1},learn=235,name="Shining Mithril Helm",prof=164,reagents={{3860,8},{6037,9},{3486,2},{7075,1}},sources={{t="other"}}}
+R[1252293]={colors={240,240,250,260},creates={250544,1,1},learn=240,name="Shining Mithril Pants",prof=164,reagents={{3860,6},{6037,9},{3486,2},{7075,1}},sources={{t="other"}}}
+R[1252294]={colors={240,240,250,260},creates={250545,1,1},learn=240,name="Shining Mithril Gauntlet",prof=164,reagents={{3860,5},{6037,6},{3486,2},{7909,2}},sources={{t="other"}}}
+R[1252295]={colors={205,205,217,230},creates={250546,1,1},est=true,learn=205,name="Officer's Boots",prof=164,reagents={{3859,4},{3486,4},{1529,4}},sources={{t="other"}}}
+R[1252296]={colors={205,205,217,230},creates={250547,1,1},est=true,learn=205,name="Sentinel's Boots",prof=164,reagents={{3859,4},{3486,4},{8831,4}},sources={{t="other"}}}
+R[1252297]={colors={205,205,217,230},creates={250548,1,1},est=true,learn=205,name="Warder's Boots",prof=164,reagents={{3859,4},{3486,4},{7971,4}},sources={{t="other"}}}
+R[1252298]={colors={205,205,217,230},creates={250549,1,1},est=true,learn=205,name="Prefect's Boots",prof=164,reagents={{3859,4},{3486,4},{13926,4}},sources={{t="other"}}}
+R[1252299]={colors={205,205,217,230},creates={250550,1,1},est=true,learn=205,name="Justicar's Boots",prof=164,reagents={{3859,4},{3486,4},{7079,4}},sources={{t="other"}}}
+R[1252300]={colors={255,255,265,275},creates={250551,1,1},est=true,learn=255,name="Officer's Gloves",prof=164,reagents={{12359,8},{7966,4},{1529,4}},sources={{t="other"}}}
+R[1252301]={colors={255,255,265,275},creates={250552,1,1},est=true,learn=255,name="Sentinel's Gloves",prof=164,reagents={{12359,8},{7966,4},{8831,4}},sources={{t="other"}}}
+R[1252302]={colors={255,255,265,275},creates={250553,1,1},est=true,learn=255,name="Warder's Gloves",prof=164,reagents={{12359,8},{7966,4},{7971,4}},sources={{t="other"}}}
+R[1252303]={colors={255,255,265,275},creates={250554,1,1},est=true,learn=255,name="Prefect's Gloves",prof=164,reagents={{12359,8},{7966,4},{13926,4}},sources={{t="other"}}}
+R[1252304]={colors={255,255,265,275},creates={250555,1,1},est=true,learn=255,name="Justicar's Gloves",prof=164,reagents={{12359,8},{7966,4},{7079,4}},sources={{t="other"}}}
+R[1252305]={colors={155,155,170,185},creates={250556,1,1},est=true,learn=155,name="Officer's Belt",prof=164,reagents={{3575,6},{3486,2},{1529,2}},sources={{cost=0,npcs={1383,2998,3478,4596,5511,10276,28694,252479},t="trainer"}}}
+R[1252306]={colors={155,155,170,185},creates={250557,1,1},est=true,learn=155,name="Sentinel's Belt",prof=164,reagents={{3575,6},{3486,2},{8831,2}},sources={{cost=0,npcs={1383,2998,3478,4596,5511,10276,28694,252479},t="trainer"}}}
+R[1252307]={colors={155,155,170,185},creates={250558,1,1},est=true,learn=155,name="Warder's Belt",prof=164,reagents={{3575,6},{3486,2},{7971,2}},sources={{cost=0,npcs={1383,2998,3478,4596,5511,10276,28694,252479},t="trainer"}}}
+R[1252308]={colors={155,155,170,185},creates={250559,1,1},est=true,learn=155,name="Prefect's Belt",prof=164,reagents={{3575,6},{3486,2},{13926,2}},sources={{cost=0,npcs={1383,2998,3478,4596,5511,10276,28694,252479},t="trainer"}}}
+R[1252309]={colors={155,155,170,185},creates={250560,1,1},est=true,learn=155,name="Justicar's Belt",prof=164,reagents={{3575,6},{3486,2},{7079,2}},sources={{cost=0,npcs={1383,2998,3478,4596,5511,10276,28694,252479},t="trainer"}}}
+R[1252310]={colors={260,260,270,280},creates={250561,1,1},learn=260,name="Officer's Sabatons",prof=164,reagents={{12359,20},{7966,3},{249432,4},{249410,4},{1529,6},{249427,4}},sources={{t="other"}}}
+R[1252311]={colors={260,260,270,280},creates={250562,1,1},learn=260,name="Sentinel's Sabatons",prof=164,reagents={{12359,20},{7966,3},{249432,4},{249410,4},{8831,6},{249427,4}},sources={{t="other"}}}
+R[1252312]={colors={260,260,270,280},creates={250563,1,1},learn=260,name="Warder's Sabatons",prof=164,reagents={{12359,20},{7966,3},{249432,4},{249410,4},{7971,6},{249427,4}},sources={{t="other"}}}
+R[1252313]={colors={260,260,270,280},creates={250564,1,1},learn=260,name="Prefect's Sabatons",prof=164,reagents={{12359,20},{7966,3},{249432,4},{249410,4},{13926,6},{249427,4}},sources={{t="other"}}}
+R[1252314]={colors={260,260,270,280},creates={250565,1,1},learn=260,name="Justicar's Sabatons",prof=164,reagents={{12359,20},{7966,3},{249432,4},{249410,4},{7079,6},{249427,4}},sources={{t="other"}}}
+R[1252315]={colors={200,200,212,225},creates={250566,1,1},learn=200,name="Officer's Gauntlet",prof=164,reagents={{3859,10},{3486,4},{249432,4},{249410,2},{1529,4}},sources={{t="other"}}}
+R[1252316]={colors={200,200,212,225},creates={250567,1,1},learn=200,name="Sentinel's Gauntlet",prof=164,reagents={{3859,10},{3486,4},{249432,4},{249410,2},{8831,4}},sources={{t="other"}}}
+R[1252317]={colors={200,200,212,225},creates={250568,1,1},learn=200,name="Warder's Gauntlet",prof=164,reagents={{3859,10},{3486,4},{249432,4},{249410,2},{7971,4}},sources={{t="other"}}}
+R[1252318]={colors={200,200,212,225},creates={250569,1,1},learn=200,name="Prefect's Gauntlet",prof=164,reagents={{3859,10},{3486,4},{249432,4},{249410,2},{13926,4}},sources={{t="other"}}}
+R[1252319]={colors={200,200,212,225},creates={250570,1,1},learn=200,name="Justicar's Gauntlet",prof=164,reagents={{3859,10},{3486,4},{249432,4},{249410,2},{7079,4}},sources={{t="other"}}}
+R[1252320]={colors={270,270,280,290},creates={250571,1,1},learn=270,name="Officer's Waistguard",prof=164,reagents={{12359,24},{7966,4},{249432,6},{249410,6},{1529,10}},sources={{t="other"}}}
+R[1252321]={colors={270,270,280,290},creates={250572,1,1},learn=270,name="Sentinel's Waistguard",prof=164,reagents={{12359,24},{7966,4},{249432,6},{249410,6},{8831,10}},sources={{t="other"}}}
+R[1252322]={colors={270,270,280,290},creates={250573,1,1},learn=270,name="Warder's Waistguard",prof=164,reagents={{12359,24},{7966,4},{249432,6},{249410,6},{7971,10}},sources={{t="other"}}}
+R[1252323]={colors={270,270,280,290},creates={250574,1,1},learn=270,name="Prefect's Waistguard",prof=164,reagents={{12359,24},{7966,4},{249432,6},{249410,6},{13926,10}},sources={{t="other"}}}
+R[1252324]={colors={270,270,280,290},creates={250575,1,1},learn=270,name="Justicar's Waistguard",prof=164,reagents={{12359,24},{7966,4},{249432,6},{249410,6},{7079,10}},sources={{t="other"}}}
+R[1252325]={colors={230,230,240,250},creates={250576,1,1},learn=230,name="Officer's Pauldrons",prof=164,reagents={{3860,20},{7966,2},{249432,6},{249410,4},{1529,8},{11139,1}},sources={{t="other"}}}
+R[1252326]={colors={230,230,240,250},creates={250577,1,1},learn=230,name="Sentinel's Pauldrons",prof=164,reagents={{3860,20},{7966,2},{249432,6},{249410,4},{8831,8},{11139,1}},sources={{t="other"}}}
+R[1252327]={colors={230,230,240,250},creates={250578,1,1},learn=230,name="Warder's Pauldrons",prof=164,reagents={{3860,20},{7966,2},{249432,6},{249410,4},{7971,8},{11139,1}},sources={{t="other"}}}
+R[1252328]={colors={230,230,240,250},creates={250579,1,1},learn=230,name="Prefect's Pauldrons",prof=164,reagents={{3860,20},{7966,2},{249432,6},{249410,4},{13926,8},{11139,1}},sources={{t="other"}}}
+R[1252329]={colors={230,230,240,250},creates={250580,1,1},learn=230,name="Justicar's Pauldrons",prof=164,reagents={{3860,20},{7966,2},{249432,6},{249410,4},{7079,8},{11139,1}},sources={{t="other"}}}
+R[1252330]={colors={250,250,262,275},creates={250581,1,1},learn=250,name="Officer's Wristguards",prof=164,reagents={{12359,16},{7966,2},{249432,6},{249410,4},{1529,6},{11139,1}},sources={{t="other"}}}
+R[1252331]={colors={250,250,262,275},creates={250582,1,1},learn=250,name="Sentinel's Wristguards",prof=164,reagents={{12359,16},{7966,2},{249432,6},{249410,4},{8831,6},{11139,1}},sources={{t="other"}}}
+R[1252332]={colors={250,250,262,275},creates={250583,1,1},learn=250,name="Warder's Wristguards",prof=164,reagents={{12359,16},{7966,2},{249432,6},{249410,4},{7971,6},{11139,1}},sources={{t="other"}}}
+R[1252333]={colors={250,250,262,275},creates={250584,1,1},learn=250,name="Prefect's Wristguards",prof=164,reagents={{12359,16},{7966,2},{249432,6},{249410,4},{13926,6},{11139,1}},sources={{t="other"}}}
+R[1252334]={colors={250,250,262,275},creates={250585,1,1},learn=250,name="Justicar's Wristguards",prof=164,reagents={{12359,16},{7966,2},{249432,6},{249410,4},{7079,6},{11139,1}},sources={{t="other"}}}
+R[1252335]={colors={260,260,270,280},creates={250586,1,1},learn=260,name="Blessed Plate Pauldrons",prof=164,reagents={{12359,20},{12361,1},{8170,6}},sources={{t="other"}}}
+R[1252336]={colors={260,260,270,280},creates={250587,1,1},learn=260,name="Blessed Plate Boots",prof=164,reagents={{12359,24},{12361,1},{8170,6}},sources={{t="other"}}}
+R[1252337]={colors={265,265,275,285},creates={250588,1,1},learn=265,name="Blessed Plate Gauntlet",prof=164,reagents={{12359,20},{12361,2}},sources={{t="other"}}}
+R[1252338]={colors={275,275,285,295},creates={250589,1,1},learn=275,name="Imperial Plate Gauntlets",prof=164,reagents={{12359,24},{7910,1}},sources={{t="other"}}}
+R[1252339]={colors={275,275,285,295},creates={250590,1,1},learn=275,name="Blessed Plate Bracers",prof=164,reagents={{12359,16},{12361,1}},sources={{t="other"}}}
+R[1252340]={colors={290,290,300,310},creates={250591,1,1},learn=290,name="Blessed Plate Leggings",prof=164,reagents={{12359,40},{12361,2}},sources={{t="other"}}}
+R[1252341]={colors={290,290,300,310},creates={250592,1,1},learn=290,name="Blessed Plate Belt",prof=164,reagents={{12359,18},{12361,1},{7071,1},{8170,6}},sources={{t="other"}}}
+R[1252342]={colors={295,295,305,315},creates={250593,1,1},learn=295,name="Blessed Plate Helm",prof=164,reagents={{12359,30},{12361,2}},sources={{t="other"}}}
+R[1252343]={colors={300,300,310,320},creates={250594,1,1},learn=300,name="Blessed Plate Chest",prof=164,reagents={{12359,36},{12361,2}},sources={{t="other"}}}
+R[1252344]={colors={320,320,330,340},creates={250595,1,1},learn=320,name="Enriched Thorium Breastplate",prof=164,reagents={{251290,8},{251291,24},{7082,4},{7078,4},{249726,4}},sources={{t="other"}}}
+R[1252345]={colors={320,320,330,340},creates={250596,1,1},learn=320,name="Enriched Thorium Leggings",prof=164,reagents={{251290,10},{251291,20},{7082,6},{249726,3}},sources={{t="other"}}}
+R[1252346]={colors={320,320,330,340},creates={250597,1,1},learn=320,name="Enriched Thorium Helm",prof=164,reagents={{251290,6},{251291,16},{7078,6},{249726,3}},sources={{t="other"}}}
+R[1252347]={colors={320,320,330,340},creates={250598,1,1},learn=320,name="Champion's Legplates",prof=164,reagents={{251290,12},{251291,20},{7082,10},{13512,2}},sources={{t="other"}}}
+R[1252348]={colors={320,320,330,340},creates={250599,1,1},learn=320,name="Stalwart Helm",prof=164,reagents={{251290,12},{12359,80},{7910,10},{12800,4},{7971,20}},sources={{t="other"}}}
+R[1252349]={colors={320,320,330,340},creates={250600,1,1},learn=320,name="Martyr's Legplates",prof=164,reagents={{251290,12},{251291,20},{7078,10},{13511,2}},sources={{t="other"}}}
+R[1252350]={colors={320,320,330,340},creates={250601,1,1},learn=320,name="Breastplate of Salvation",prof=164,reagents={{251290,12},{12359,80},{12361,10},{12800,4},{12662,20}},sources={{t="other"}}}
+R[1252351]={colors={110,110,125,140},creates={250602,1,1},learn=110,name="Brass Knuckles",prof=164,reagents={{2841,6},{2880,4},{3470,2},{1210,2},{2319,1}},sources={{t="other"}}}
+R[1252352]={colors={125,125,140,155},creates={250603,1,1},learn=125,name="Bronze Dory",prof=164,reagents={{2841,8},{2880,4},{2319,1}},sources={{t="other"}}}
+R[1252353]={colors={155,155,167,180},creates={250604,1,1},learn=155,name="Iron Fists",prof=164,reagents={{3575,6},{3466,2},{3486,1},{2842,2},{4234,2}},sources={{t="other"}}}
+R[1252354]={colors={185,185,197,210},creates={250605,1,1},learn=185,name="Steel Spear",prof=164,reagents={{3859,10},{3466,2},{7069,1},{3486,4},{4234,1}},sources={{t="other"}}}
+R[1252355]={colors={190,190,202,215},creates={250606,1,1},learn=190,name="Iron Morningstar",prof=164,reagents={{3575,14},{3466,2},{3486,2},{3864,4},{4234,2}},sources={{t="other"}}}
+R[1252356]={colors={200,200,210,220},creates={250607,1,1},learn=200,name="Mithril Shortsword",prof=164,reagents={{3860,8},{3466,2},{3486,2},{1705,4},{4234,2}},sources={{t="other"}}}
+R[1252357]={colors={210,210,220,230},creates={250608,1,1},learn=210,name="Mithril Warhammer",prof=164,reagents={{3860,12},{3864,2},{7966,1},{4234,4}},sources={{cost=7500,item=251460,npcs={259860},t="vendor"}}}
+R[1252358]={colors={215,215,225,235},creates={250609,1,1},learn=215,name="Mithril Claws",prof=164,reagents={{3860,8},{1529,1},{7966,1},{4234,2}},sources={{t="other"}}}
+R[1252359]={colors={215,215,225,235},creates={250610,1,1},learn=215,name="Mithril Claymore",prof=164,reagents={{3860,16},{3577,6},{7966,2},{4234,4}},sources={{t="other"}}}
+R[1252360]={colors={230,230,240,250},creates={250611,1,1},learn=230,name="Mithril Stiletto",prof=164,reagents={{3860,16},{1210,6},{3577,2},{7966,1}},sources={{t="other"}}}
+R[1252361]={colors={235,235,245,255},creates={250612,1,1},learn=235,name="Charged Mithril Battleaxe",prof=164,reagents={{3860,20},{7082,6},{7966,4},{4234,4}},sources={{t="other"}}}
+R[1252362]={colors={270,270,280,290},creates={250613,1,1},learn=270,name="Thorium Greatmace",prof=164,reagents={{12359,30},{251291,4},{7076,4},{249726,10},{12644,2}},sources={{t="other"}}}
+R[1252363]={colors={270,270,280,290},creates={250614,1,1},learn=270,name="Thorium Cestus",prof=164,reagents={{12359,20},{251291,8},{7082,4},{249726,10},{12644,1}},sources={{t="other"}}}
+R[1252364]={colors={280,280,292,305},creates={250615,1,1},learn=280,name="Thorium Poleaxe",prof=164,reagents={{12359,20},{251291,6},{249726,10},{12803,4},{8170,4}},sources={{t="other"}}}
+R[1252365]={colors={290,290,300,310},creates={250616,1,1},learn=290,name="Bold Dirk",prof=164,reagents={{12359,30},{7082,4},{249726,10},{8170,4}},sources={{cost=100000,item=251468,npcs={266901},t="vendor"}}}
+R[1252366]={colors={320,320,330,340},creates={250617,1,1},learn=320,name="Stormcarver",prof=164,reagents={{251290,20},{249726,10},{12644,2}},sources={{t="other"}}}
+R[1252367]={colors={320,320,330,340},creates={250618,1,1},learn=320,name="Bagh Nakh",prof=164,reagents={{251290,10},{251291,10},{249726,10},{7910,4},{12361,4}},sources={{t="other"}}}
+R[1252368]={colors={320,320,330,340},creates={250619,1,1},learn=320,name="Legionite Glaive",prof=164,reagents={{251290,15},{251291,8},{249726,10},{248820,4},{248822,1}},sources={{t="other"}}}
+R[1252566]={colors={125,125,145,165},creates={251525,1,1},learn=125,name="Savory Whimsyfin Delight",prof=185,reagents={{251524,1},{2678,1}},sources={{t="other"}}}
+R[1254965]={colors={235,235,245,255},creates={252488,1,1},learn=235,name="Forceful Rugged Armor Kit",prof=165,reagents={{15564,1},{11176,2},{9206,2},{249429,1},{248824,1}},sources={{t="other"}}}
+R[1254966]={colors={235,235,245,255},creates={252487,1,1},learn=235,name="Mystic Rugged Armor Kit",prof=165,reagents={{15564,1},{11176,2},{13444,2},{249429,1},{248824,1}},sources={{t="other"}}}
+R[1254967]={colors={320,320,330,340},creates={252606,1,1},learn=320,name="Pristine Scorpid Leggings",prof=165,reagents={{8170,20},{15408,40},{12810,12},{15407,4},{249429,10},{14341,2},{248825,20}},sources={{t="other"}}}
+R[1254968]={colors={320,320,330,340},creates={252605,1,1},learn=320,name="Black Dragonscale Helm",prof=165,reagents={{8170,20},{15416,40},{12810,12},{15407,4},{249429,10},{14341,2},{248825,20}},sources={{t="other"}}}
+R[1254969]={colors={320,320,330,340},creates={252604,1,1},learn=320,name="Blue Dragonscale Helm",prof=165,reagents={{8170,20},{15415,40},{12810,12},{15407,6},{249429,10},{14341,2},{248825,20}},sources={{t="other"}}}
+R[1254970]={colors={320,320,330,340},creates={252603,1,1},learn=320,name="Red Dragonscale Leggings",prof=165,reagents={{8170,20},{15414,40},{12810,12},{15407,4},{249429,10},{14341,2},{248825,20}},sources={{t="other"}}}
+R[1254971]={colors={300,300,310,320},creates={252602,1,1},learn=300,name="Charged Scorpid Boots",prof=165,reagents={{8170,12},{15408,14},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254972]={colors={300,300,310,320},creates={252601,1,1},learn=300,name="Supple Scorpid Sabatons",prof=165,reagents={{8170,20},{15408,10},{14341,1}},sources={{t="other"}}}
+R[1254973]={colors={290,290,300,310},creates={252600,1,1},learn=290,name="Charged Scorpid Leggings",prof=165,reagents={{8170,12},{15408,14},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254974]={colors={290,290,300,310},creates={252599,1,1},learn=290,name="Supple Scorpid Vest",prof=165,reagents={{8170,20},{15408,10},{14341,1}},sources={{cost=100000,item=252933,npcs={266901},t="vendor"}}}
+R[1254975]={colors={280,280,290,300},creates={252598,1,1},learn=280,name="Charged Scorpid Vest",prof=165,reagents={{8170,6},{15408,12},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254976]={colors={280,280,290,300},creates={252597,1,1},learn=280,name="Supple Scorpid Helm",prof=165,reagents={{8170,11},{15408,10},{14341,1}},sources={{t="other"}}}
+R[1254977]={colors={275,275,285,295},creates={252596,1,1},learn=275,name="Charged Scorpid Gauntlets",prof=165,reagents={{8170,4},{15408,8},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254978]={colors={275,275,285,295},creates={252595,1,1},learn=275,name="Supple Scorpid Belt",prof=165,reagents={{8170,9},{15408,6},{14341,1}},sources={{t="other"}}}
+R[1254979]={colors={275,275,285,295},creates={252594,1,1},learn=275,name="Heavy Scorpid Boots",prof=165,reagents={{8170,6},{15408,8},{14341,1}},sources={{t="other"}}}
+R[1254980]={colors={275,275,285,295},creates={252593,1,1},learn=275,name="Charged Scorpid Bracers",prof=165,reagents={{8170,2},{15408,4},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254981]={colors={275,275,285,295},creates={252592,1,1},learn=275,name="Supple Scorpid Shoulder",prof=165,reagents={{8170,9},{15408,6},{14341,1}},sources={{t="other"}}}
+R[1254982]={colors={270,270,280,290},creates={252591,1,1},learn=270,name="Mender's Mail Belt",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{5500,8},{249427,5}},sources={{t="other"}}}
+R[1254983]={colors={270,270,280,290},creates={252590,1,1},learn=270,name="Skirmisher's Mail Belt",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{3864,8},{249427,5}},sources={{t="other"}}}
+R[1254984]={colors={270,270,280,290},creates={252589,1,1},learn=270,name="Skycaller's Mail Belt",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{7070,8},{249427,5}},sources={{t="other"}}}
+R[1254985]={colors={270,270,280,290},creates={252588,1,1},learn=270,name="Stalker's Mail Belt",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{7069,8},{249427,5}},sources={{t="other"}}}
+R[1254986]={colors={255,255,265,275},creates={252587,1,1},est=true,learn=255,name="Mender's Mail Gauntlets",prof=165,reagents={{4304,16},{8172,2},{5500,4}},sources={{t="other"}}}
+R[1254987]={colors={255,255,265,275},creates={252586,1,1},est=true,learn=255,name="Skirmisher's Mail Gauntlets",prof=165,reagents={{4304,16},{8172,2},{3864,4}},sources={{t="other"}}}
+R[1254988]={colors={255,255,265,275},creates={252585,1,1},est=true,learn=255,name="Skycaller's Mail Gauntlets",prof=165,reagents={{4304,16},{8172,2},{7070,4}},sources={{t="other"}}}
+R[1254989]={colors={255,255,265,275},creates={252584,1,1},est=true,learn=255,name="Stalker's Mail Gauntlets",prof=165,reagents={{4304,16},{8172,2},{7069,4}},sources={{t="other"}}}
+R[1254990]={colors={270,270,280,290},creates={252583,1,1},learn=270,name="Charged Scorpid Shoulder",prof=165,reagents={{8170,4},{15408,8},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254991]={colors={270,270,280,290},creates={252582,1,1},learn=270,name="Supple Scorpid Bracers",prof=165,reagents={{8170,7},{15408,2},{14341,1}},sources={{t="other"}}}
+R[1254992]={colors={260,260,270,280},creates={252581,1,1},learn=260,name="Charged Scorpid Helm",prof=165,reagents={{8170,4},{15408,6},{14341,1},{7069,2}},sources={{t="other"}}}
+R[1254993]={colors={260,260,270,280},creates={252580,1,1},learn=260,name="Supple Scorpid Leggings",prof=165,reagents={{8170,9},{15408,4},{14341,1}},sources={{t="other"}}}
+R[1254994]={colors={255,255,265,275},creates={252579,1,1},learn=255,name="Mender's Mail Sabatons",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{5500,6},{249427,4}},sources={{t="other"}}}
+R[1254995]={colors={255,255,265,275},creates={252578,1,1},learn=255,name="Skirmisher's Mail Sabatons",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{3864,6},{249427,4}},sources={{t="other"}}}
+R[1254996]={colors={255,255,265,275},creates={252577,1,1},learn=255,name="Skycaller's Mail Sabatons",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{7070,6},{249427,4}},sources={{t="other"}}}
+R[1254997]={colors={255,255,265,275},creates={252576,1,1},learn=255,name="Stalker's Mail Sabatons",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{7069,6},{249427,4}},sources={{t="other"}}}
+R[1254998]={colors={250,250,260,270},creates={252575,1,1},learn=250,name="Charged Scorpid Belt",prof=165,reagents={{8170,6},{15408,6},{14341,1}},sources={{t="other"}}}
+R[1254999]={colors={250,250,260,270},creates={252574,1,1},learn=250,name="Supple Scorpid Boots",prof=165,reagents={{8170,12},{15408,4},{14341,1}},sources={{t="other"}}}
+R[1255000]={colors={220,220,230,240},creates={252573,1,1},learn=220,name="Mender's Mail Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{5500,4},{249427,3}},sources={{t="other"}}}
+R[1255001]={colors={220,220,230,240},creates={252572,1,1},learn=220,name="Skirmisher's Mail Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{3864,4},{249427,3}},sources={{t="other"}}}
+R[1255002]={colors={220,220,230,240},creates={252571,1,1},learn=220,name="Skycaller's Mail Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{7070,4},{249427,3}},sources={{t="other"}}}
+R[1255003]={colors={220,220,230,240},creates={252570,1,1},learn=220,name="Stalker's Mail Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{7069,4},{249427,3}},sources={{t="other"}}}
+R[1255004]={colors={220,220,230,240},creates={252569,1,1},learn=220,name="Mender's Mail Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{5500,3},{249427,2}},sources={{t="other"}}}
+R[1255005]={colors={220,220,230,240},creates={252568,1,1},learn=220,name="Skirmisher's Mail Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{3864,3},{249427,2}},sources={{t="other"}}}
+R[1255006]={colors={220,220,230,240},creates={252567,1,1},learn=220,name="Skycaller's Mail Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{7070,3},{249427,2}},sources={{t="other"}}}
+R[1255007]={colors={220,220,230,240},creates={252566,1,1},learn=220,name="Stalker's Mail Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{7069,3},{249427,2}},sources={{t="other"}}}
+R[1255008]={colors={205,205,210,220},creates={252565,1,1},est=true,learn=205,name="Mender's Mail Boots",prof=165,reagents={{4234,8},{4233,2},{5500,2}},sources={{t="other"}}}
+R[1255009]={colors={205,205,210,220},creates={252564,1,1},est=true,learn=205,name="Skirmisher's Mail Boots",prof=165,reagents={{4234,8},{4233,2},{3864,2}},sources={{t="other"}}}
+R[1255010]={colors={205,205,210,220},creates={252563,1,1},est=true,learn=205,name="Skycaller's Mail Boots",prof=165,reagents={{4234,8},{4233,2},{7070,2}},sources={{t="other"}}}
+R[1255011]={colors={205,205,210,220},creates={252562,1,1},est=true,learn=205,name="Stalker's Mail Boots",prof=165,reagents={{4234,8},{4233,2},{7069,2}},sources={{t="other"}}}
+R[1255012]={colors={320,320,330,340},creates={252486,1,1},learn=320,name="Ironfeather Leggings",prof=165,reagents={{8170,20},{15420,120},{1529,4},{15407,2},{14341,4},{249429,10},{248825,20}},sources={{t="other"}}}
+R[1255013]={colors={320,320,330,340},creates={252485,1,1},learn=320,name="Warbear Helm",prof=165,reagents={{8170,20},{15419,20},{14341,4},{15407,2},{249429,10},{248825,20}},sources={{t="other"}}}
+R[1255014]={colors={320,320,330,340},creates={252484,1,1},learn=320,name="Timbermaw Tunic",prof=165,reagents={{12810,6},{12804,20},{12803,20},{249429,10},{15407,4},{14341,10},{248825,20}},sources={{t="other"}}}
+R[1255015]={colors={320,320,330,340},creates={252483,1,1},learn=320,name="Dawn Armor",prof=165,reagents={{12810,6},{12809,10},{7080,20},{249429,10},{15407,4},{14341,10},{248825,20}},sources={{t="other"}}}
+R[1255016]={colors={320,320,330,340},creates={252561,1,1},learn=320,name="Living Crown",prof=165,reagents={{8170,20},{12803,20},{7080,20},{249429,10},{15407,4},{14341,10},{248825,20}},sources={{t="other"}}}
+R[1255017]={colors={300,300,310,320},creates={252482,1,1},learn=300,name="Blue Suede Hat",prof=165,reagents={{8170,16},{14341,1},{6260,4}},sources={{t="other"}}}
+R[1255018]={colors={300,300,310,320},creates={252560,1,1},learn=300,name="Tooled Leather Pants",prof=165,reagents={{8170,18},{14341,1},{6261,1},{15407,1}},sources={{t="other"}}}
+R[1255019]={colors={295,295,305,315},creates={252559,1,1},learn=295,name="Blue Suede Bracers",prof=165,reagents={{8170,10},{14341,1},{6260,1}},sources={{t="other"}}}
+R[1255020]={colors={295,295,305,315},creates={252558,1,1},learn=295,name="Tooled Leather Epaulets",prof=165,reagents={{8170,12},{14341,1},{6261,1},{15407,1}},sources={{t="other"}}}
+R[1255021]={colors={290,290,300,310},creates={252481,1,1},learn=290,name="Blue Suede Belt",prof=165,reagents={{8170,14},{14341,1},{6260,2}},sources={{t="other"}}}
+R[1255022]={colors={290,290,300,310},creates={252557,1,1},learn=290,name="Tooled Leather Bracers",prof=165,reagents={{8170,10},{14341,1},{6261,1}},sources={{t="other"}}}
+R[1255023]={colors={290,290,300,310},creates={252556,1,1},learn=290,name="Wicked Leather Shoulder",prof=165,reagents={{8170,12},{14341,1},{2325,1},{15407,1}},sources={{t="other"}}}
+R[1255024]={colors={285,285,295,305},creates={252480,1,1},learn=285,name="Blue Suede Armor",prof=165,reagents={{8170,14},{15407,2},{14341,2},{6260,4},{15415,6}},sources={{t="other"}}}
+R[1255025]={colors={285,285,295,305},creates={252555,1,1},learn=285,name="Tooled Leather Crown",prof=165,reagents={{8170,14},{14341,1},{6261,1}},sources={{t="other"}}}
+R[1255026]={colors={280,280,290,300},creates={252554,1,1},learn=280,name="Blue Suede Shoulder",prof=165,reagents={{8170,10},{14341,1},{6260,2}},sources={{t="other"}}}
+R[1255027]={colors={280,280,290,300},creates={252553,1,1},learn=280,name="Tooled Leather Gauntlets",prof=165,reagents={{8170,10},{14341,1},{6261,1}},sources={{t="other"}}}
+R[1255028]={colors={280,280,290,300},creates={252479,1,1},learn=280,name="Wicked Leather Boots",prof=165,reagents={{8170,10},{14341,1},{2325,1}},sources={{t="other"}}}
+R[1255029]={colors={275,275,285,295},creates={252478,1,1},learn=275,name="Blue Suede Pants",prof=165,reagents={{8170,14},{14341,1},{6260,3},{15407,1}},sources={{t="other"}}}
+R[1255030]={colors={275,275,285,295},creates={252552,1,1},learn=275,name="Tooled Leather Armor",prof=165,reagents={{8170,16},{14341,1},{6261,3},{15407,2},{13423,6}},sources={{cost=100000,item=252877,npcs={266901},t="vendor"}}}
+R[1255031]={colors={270,270,280,290},creates={252477,1,1},learn=270,name="Mender's Leather Waistguard",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{5500,8},{249427,5}},sources={{t="other"}}}
+R[1255032]={colors={270,270,280,290},creates={252476,1,1},learn=270,name="Skycaller's Leather Waistguard",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{7070,8},{249427,5}},sources={{t="other"}}}
+R[1255033]={colors={270,270,280,290},creates={252475,1,1},learn=270,name="Warden's Leather Waistguard",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{7067,8},{249427,5}},sources={{t="other"}}}
+R[1255034]={colors={270,270,280,290},creates={252474,1,1},learn=270,name="Skulker's Leather Waistguard",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{3182,8},{249427,5}},sources={{t="other"}}}
+R[1255035]={colors={270,270,280,290},creates={252473,1,1},learn=270,name="Prowler's Leather Waistguard",prof=165,reagents={{8170,12},{8172,4},{249428,10},{8343,2},{1529,8},{249427,5}},sources={{t="other"}}}
+R[1255036]={colors={255,255,265,275},creates={252551,1,1},est=true,learn=255,name="Mender's Leather Gauntlets",prof=165,reagents={{4304,16},{8172,2},{5500,4}},sources={{t="other"}}}
+R[1255037]={colors={255,255,265,275},creates={252550,1,1},est=true,learn=255,name="Skycaller's Leather Gauntlets",prof=165,reagents={{4304,16},{8172,2},{7070,4}},sources={{t="other"}}}
+R[1255038]={colors={255,255,265,275},creates={252549,1,1},est=true,learn=255,name="Warden's Leather Gauntlets",prof=165,reagents={{4304,16},{8172,2},{7067,4}},sources={{t="other"}}}
+R[1255039]={colors={255,255,265,275},creates={252548,1,1},est=true,learn=255,name="Skulker's Leather Gauntlets",prof=165,reagents={{4304,16},{8172,2},{3182,4}},sources={{t="other"}}}
+R[1255040]={colors={255,255,265,275},creates={252547,1,1},est=true,learn=255,name="Prowler's Leather Gauntlets",prof=165,reagents={{4304,16},{8172,2},{1529,4}},sources={{t="other"}}}
+R[1255041]={colors={260,260,270,280},creates={252546,1,1},learn=260,name="Blue Suede Gloves",prof=165,reagents={{8170,8},{14341,1},{6260,1}},sources={{t="other"}}}
+R[1255042]={colors={260,260,270,280},creates={252545,1,1},learn=260,name="Tooled Leather Boots",prof=165,reagents={{8170,8},{14341,1},{6261,1}},sources={{t="other"}}}
+R[1255043]={colors={255,255,265,275},creates={252472,1,1},learn=255,name="Mender's Leather Boots",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{5500,6},{249427,4}},sources={{t="other"}}}
+R[1255044]={colors={255,255,265,275},creates={252471,1,1},learn=255,name="Skycaller's Leather Boots",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{7070,6},{249427,4}},sources={{t="other"}}}
+R[1255045]={colors={255,255,265,275},creates={252470,1,1},learn=255,name="Warden's Leather Boots",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{7067,6},{249427,4}},sources={{t="other"}}}
+R[1255046]={colors={255,255,265,275},creates={252469,1,1},learn=255,name="Skulker's Leather Boots",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{3182,6},{249427,4}},sources={{t="other"}}}
+R[1255047]={colors={255,255,265,275},creates={252468,1,1},learn=255,name="Prowler's Leather Boots",prof=165,reagents={{4304,16},{8172,2},{249428,8},{8343,2},{1529,6},{249427,4}},sources={{t="other"}}}
+R[1255048]={colors={255,255,265,275},creates={252467,1,1},learn=255,name="Blue Suede Shoes",prof=165,reagents={{8170,8},{14341,1},{6260,1}},sources={{t="other"}}}
+R[1255049]={colors={255,255,265,275},creates={252544,1,1},learn=255,name="Tooled Leather Belt",prof=165,reagents={{8170,8},{14341,1},{6261,1}},sources={{t="other"}}}
+R[1255050]={colors={245,245,255,265},creates={252543,1,1},learn=245,name="Mender's Leather Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{5500,4},{249427,3}},sources={{t="other"}}}
+R[1255051]={colors={245,245,255,265},creates={252542,1,1},learn=245,name="Skycaller's Leather Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{7070,4},{249427,3}},sources={{t="other"}}}
+R[1255052]={colors={245,245,255,265},creates={252541,1,1},learn=245,name="Warden's Leather Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{7067,4},{249427,3}},sources={{t="other"}}}
+R[1255053]={colors={245,245,255,265},creates={252540,1,1},learn=245,name="Skulker's Leather Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{3182,4},{249427,3}},sources={{t="other"}}}
+R[1255054]={colors={245,245,255,265},creates={252539,1,1},learn=245,name="Prowler's Leather Bracers",prof=165,reagents={{4304,12},{4236,4},{249428,6},{8343,2},{1529,4},{249427,3}},sources={{t="other"}}}
+R[1255055]={colors={230,230,240,250},creates={252538,1,1},learn=230,name="Mender's Leather Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{5500,3},{249427,2}},sources={{t="other"}}}
+R[1255056]={colors={230,230,240,250},creates={252537,1,1},learn=230,name="Skycaller's Leather Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{7070,3},{249427,2}},sources={{t="other"}}}
+R[1255057]={colors={230,230,240,250},creates={252536,1,1},learn=230,name="Warden's Leather Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{7067,3},{249427,2}},sources={{t="other"}}}
+R[1255058]={colors={230,230,240,250},creates={252535,1,1},learn=230,name="Skulker's Leather Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{3182,3},{249427,2}},sources={{t="other"}}}
+R[1255059]={colors={230,230,240,250},creates={252534,1,1},learn=230,name="Prowler's Leather Shoulder",prof=165,reagents={{4304,10},{4236,3},{249428,4},{4291,2},{1529,3},{249427,2}},sources={{t="other"}}}
+R[1255060]={colors={205,205,210,220},creates={252533,1,1},est=true,learn=205,name="Mender's Leather Shoes",prof=165,reagents={{4234,8},{4233,2},{5500,2}},sources={{t="other"}}}
+R[1255061]={colors={205,205,210,220},creates={252532,1,1},est=true,learn=205,name="Skycaller's Leather Shoes",prof=165,reagents={{4234,8},{4233,2},{7070,2}},sources={{t="other"}}}
+R[1255062]={colors={205,205,210,220},creates={252466,1,1},est=true,learn=205,name="Warden's Leather Shoes",prof=165,reagents={{4234,8},{4233,2},{7067,2}},sources={{t="other"}}}
+R[1255063]={colors={205,205,210,220},creates={252531,1,1},est=true,learn=205,name="Skulker's Leather Shoes",prof=165,reagents={{4234,8},{4233,2},{3182,2}},sources={{t="other"}}}
+R[1255064]={colors={205,205,210,220},creates={252465,1,1},est=true,learn=205,name="Prowler's Leather Shoes",prof=165,reagents={{4234,8},{4233,2},{1529,2}},sources={{t="other"}}}
+R[1255065]={colors={195,195,205,215},creates={252530,1,1},learn=195,name="Mender's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{5500,2},{249427,1}},sources={{t="other"}}}
+R[1255066]={colors={195,195,205,215},creates={252529,1,1},learn=195,name="Skycaller's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{7070,2},{249427,1}},sources={{t="other"}}}
+R[1255067]={colors={195,195,205,215},creates={252528,1,1},learn=195,name="Skirmisher's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{3864,2},{249427,1}},sources={{t="other"}}}
+R[1255068]={colors={195,195,205,215},creates={252527,1,1},learn=195,name="Warden's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{7067,2},{249427,1}},sources={{t="other"}}}
+R[1255069]={colors={195,195,205,215},creates={252526,1,1},learn=195,name="Stalker's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{7069,2},{249427,1}},sources={{t="other"}}}
+R[1255070]={colors={195,195,205,215},creates={252525,1,1},learn=195,name="Skulker's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{3182,2},{249427,1}},sources={{t="other"}}}
+R[1255071]={colors={195,195,205,215},creates={252524,1,1},learn=195,name="Prowler's Leather Gloves",prof=165,reagents={{4234,16},{4236,2},{249428,2},{4291,2},{1529,2},{249427,1}},sources={{t="other"}}}
+R[1255073]={colors={205,205,215,225},creates={252463,1,1},learn=205,name="Forceful Thick Armor Kit",prof=165,reagents={{8173,1},{11137,2},{3391,2}},sources={{t="other"}}}
+R[1255074]={colors={205,205,215,225},creates={252462,1,1},learn=205,name="Mystic Thick Armor Kit",prof=165,reagents={{8173,1},{11137,2},{3827,2}},sources={{t="other"}}}
+R[1255075]={colors={155,155,165,175},creates={252523,1,1},est=true,learn=155,name="Mender's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{5500,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252832,npcs={258306},t="vendor"}}}
+R[1255076]={colors={155,155,165,175},creates={252522,1,1},est=true,learn=155,name="Skycaller's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{7070,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252831,npcs={258306},t="vendor"}}}
+R[1255077]={colors={155,155,165,175},creates={252461,1,1},est=true,learn=155,name="Skirmisher's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{3864,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252830,npcs={258306},t="vendor"}}}
+R[1255078]={colors={155,155,165,175},creates={252460,1,1},est=true,learn=155,name="Warden's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{7067,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252829,npcs={258306},t="vendor"}}}
+R[1255079]={colors={155,155,165,175},creates={252521,1,1},est=true,learn=155,name="Stalker's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{7069,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252828,npcs={258306},t="vendor"}}}
+R[1255080]={colors={155,155,165,175},creates={252520,1,1},est=true,learn=155,name="Skulker's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{3182,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252827,npcs={258306},t="vendor"}}}
+R[1255081]={colors={155,155,165,175},creates={252459,1,1},est=true,learn=155,name="Prowler's Leather Belt",prof=165,reagents={{4234,8},{4233,2},{1529,1}},sources={{cost=0,npcs={3007,3365,3703,4588,5127,5564,11081,11084},t="trainer"},{cost=2000,item=252826,npcs={258306},t="vendor"}}}
+R[1255082]={colors={150,150,160,170},creates={252519,1,1},learn=150,name="Wisdom's Leather Leggings",prof=165,reagents={{2319,12},{4233,4},{249427,8},{2321,3},{5498,8}},sources={{t="other"}}}
+R[1255083]={colors={150,150,160,170},creates={252518,1,1},learn=150,name="Stormrider's Leather Kilt",prof=165,reagents={{2319,12},{4233,4},{249427,8},{2321,3},{249409,8}},sources={{t="other"}}}
+R[1255084]={colors={150,150,160,170},creates={252458,1,1},learn=150,name="Totemic Leather Leggings",prof=165,reagents={{2319,12},{4233,4},{249427,8},{2321,3},{249410,8}},sources={{t="other"}}}
+R[1255085]={colors={150,150,160,170},creates={252457,1,1},learn=150,name="Defender's Leather Kilt",prof=165,reagents={{2319,12},{4233,4},{249427,8},{2321,3},{2458,8}},sources={{t="other"}}}
+R[1255086]={colors={150,150,160,170},creates={252517,1,1},learn=150,name="Trapper's Leather Legguards",prof=165,reagents={{2319,12},{4233,4},{249427,8},{2321,3},{6470,8}},sources={{t="other"}}}
+R[1255087]={colors={150,150,160,170},creates={252516,1,1},learn=150,name="Brawler's Leather Legguards",prof=165,reagents={{2319,12},{4233,4},{249427,8},{2321,3},{1210,8}},sources={{t="other"}}}
+R[1255088]={colors={130,130,142,155},creates={252515,1,1},est=true,learn=130,name="Wisdom's Leather Helm",prof=165,reagents={{2319,12},{4233,2},{5498,3}},sources={{t="other"}}}
+R[1255089]={colors={130,130,142,155},creates={252514,1,1},est=true,learn=130,name="Stormrider's Leather Helm",prof=165,reagents={{2319,12},{4233,2},{249409,3}},sources={{t="other"}}}
+R[1255090]={colors={130,130,142,155},creates={252456,1,1},est=true,learn=130,name="Totemic Leather Helm",prof=165,reagents={{2319,12},{4233,2},{249410,3}},sources={{t="other"}}}
+R[1255091]={colors={130,130,142,155},creates={252455,1,1},est=true,learn=130,name="Defender's Leather Helm",prof=165,reagents={{2319,12},{4233,2},{2458,3}},sources={{t="other"}}}
+R[1255092]={colors={130,130,142,155},creates={252513,1,1},est=true,learn=130,name="Trapper's Leather Helm",prof=165,reagents={{2319,12},{4233,2},{6470,3}},sources={{t="other"}}}
+R[1255093]={colors={130,130,142,155},creates={252512,1,1},est=true,learn=130,name="Brawler's Leather Helm",prof=165,reagents={{2319,12},{4233,2},{1210,3}},sources={{t="other"}}}
+R[1255095]={colors={155,155,165,175},creates={252453,1,1},learn=155,name="Forceful Heavy Armor Kit",prof=165,reagents={{4265,1},{11083,2},{6662,2}},sources={{cost=2000,item=252812,npcs={3005},t="vendor"},{cost=2000,item=252812,npcs={4225},t="vendor"}}}
+R[1255096]={colors={155,155,165,175},creates={252452,1,1},learn=155,name="Mystic Heavy Armor Kit",prof=165,reagents={{4265,1},{11083,2},{3385,2}},sources={{cost=2000,item=252811,npcs={3005},t="vendor"},{cost=2000,item=252811,npcs={4225},t="vendor"}}}
+R[1255097]={colors={135,135,147,160},creates={252511,1,1},learn=135,name="Wisdom's Leather Tunic",prof=165,reagents={{2319,10},{4233,3},{249427,6},{2321,3},{5498,6}},sources={{t="other"}}}
+R[1255098]={colors={135,135,147,160},creates={252510,1,1},learn=135,name="Stormrider's Leather Tunic",prof=165,reagents={{2319,10},{4233,3},{249427,6},{2321,3},{249409,6}},sources={{t="other"}}}
+R[1255099]={colors={135,135,147,160},creates={252451,1,1},learn=135,name="Totemic Leather Tunic",prof=165,reagents={{2319,10},{4233,3},{249427,6},{2321,3},{249410,6}},sources={{t="other"}}}
+R[1255100]={colors={135,135,147,160},creates={252450,1,1},learn=135,name="Defender's Leather Tunic",prof=165,reagents={{2319,10},{4233,3},{249427,6},{2321,3},{2458,6}},sources={{t="other"}}}
+R[1255101]={colors={135,135,147,160},creates={252509,1,1},learn=135,name="Trapper's Leather Tunic",prof=165,reagents={{2319,10},{4233,3},{249427,6},{2321,3},{6470,6}},sources={{t="other"}}}
+R[1255102]={colors={135,135,147,160},creates={252508,1,1},learn=135,name="Brawler's Leather Tunic",prof=165,reagents={{2319,10},{4233,3},{249427,6},{2321,3},{1210,6}},sources={{t="other"}}}
+R[1255103]={colors={135,135,147,160},creates={252449,1,1},learn=135,name="Hillman's Leather Boots",prof=165,reagents={{4233,1},{2319,6},{2321,1}},sources={{t="other"}}}
+R[1255104]={colors={125,125,137,150},creates={252507,1,1},learn=125,name="Wisdom's Leather Hood",prof=165,reagents={{2319,8},{4233,2},{249427,4},{2321,2},{5498,4}},sources={{t="other"}}}
+R[1255105]={colors={125,125,137,150},creates={252506,1,1},learn=125,name="Stormrider's Leather Hood",prof=165,reagents={{2319,8},{4233,2},{249427,4},{2321,2},{249409,4}},sources={{t="other"}}}
+R[1255106]={colors={125,125,137,150},creates={252448,1,1},learn=125,name="Totemic Leather Hood",prof=165,reagents={{2319,8},{4233,2},{249427,4},{2321,2},{249410,4}},sources={{t="other"}}}
+R[1255107]={colors={125,125,137,150},creates={252447,1,1},learn=125,name="Defender's Leather Hood",prof=165,reagents={{2319,8},{4233,2},{249427,4},{2321,2},{2458,4}},sources={{t="other"}}}
+R[1255108]={colors={125,125,137,150},creates={252505,1,1},learn=125,name="Trapper's Leather Hood",prof=165,reagents={{2319,8},{4233,2},{249427,4},{2321,2},{6470,4}},sources={{t="other"}}}
+R[1255109]={colors={125,125,137,150},creates={252504,1,1},learn=125,name="Brawler's Leather Hood",prof=165,reagents={{2319,8},{4233,2},{249427,4},{2321,2},{1210,4}},sources={{t="other"}}}
+R[1255110]={colors={105,105,117,130},creates={252503,1,1},est=true,learn=105,name="Wisdom's Leather Pants",prof=165,reagents={{2319,8},{4231,4},{5498,2}},sources={{t="other"}}}
+R[1255111]={colors={105,105,117,130},creates={252502,1,1},est=true,learn=105,name="Stormrider's Leather Pants",prof=165,reagents={{2319,8},{4231,4},{249409,2}},sources={{t="other"}}}
+R[1255112]={colors={105,105,117,130},creates={252446,1,1},est=true,learn=105,name="Totemic Leather Pants",prof=165,reagents={{2319,8},{4231,4},{249410,2}},sources={{t="other"}}}
+R[1255113]={colors={105,105,117,130},creates={252445,1,1},est=true,learn=105,name="Defender's Leather Pants",prof=165,reagents={{2319,8},{4231,4},{2458,2}},sources={{t="other"}}}
+R[1255114]={colors={105,105,117,130},creates={252501,1,1},est=true,learn=105,name="Trapper's Leather Pants",prof=165,reagents={{2319,8},{4231,4},{6470,2}},sources={{t="other"}}}
+R[1255115]={colors={105,105,117,130},creates={252500,1,1},est=true,learn=105,name="Brawler's Leather Pants",prof=165,reagents={{2319,8},{4231,4},{1210,2}},sources={{t="other"}}}
+R[1255116]={colors={110,110,122,135},creates={252444,1,1},learn=110,name="Wisdom's Leather Boots",prof=165,reagents={{2318,14},{4231,4},{249427,3},{2321,1},{5498,3}},sources={{t="other"}}}
+R[1255117]={colors={110,110,122,135},creates={252443,1,1},learn=110,name="Stormrider's Leather Boots",prof=165,reagents={{2318,14},{4231,4},{249427,3},{2321,1},{249409,3}},sources={{t="other"}}}
+R[1255118]={colors={110,110,122,135},creates={252442,1,1},learn=110,name="Totemic Leather Boots",prof=165,reagents={{2318,14},{4231,4},{249427,3},{2321,1},{249410,3}},sources={{t="other"}}}
+R[1255119]={colors={110,110,122,135},creates={252441,1,1},learn=110,name="Defender's Leather Boots",prof=165,reagents={{2318,14},{4231,4},{249427,3},{2321,1},{2458,3}},sources={{t="other"}}}
+R[1255120]={colors={110,110,122,135},creates={252440,1,1},learn=110,name="Trapper's Leather Boots",prof=165,reagents={{2318,14},{4231,4},{249427,3},{2321,1},{6470,3}},sources={{t="other"}}}
+R[1255121]={colors={110,110,122,135},creates={252439,1,1},learn=110,name="Brawler's Leather Boots",prof=165,reagents={{2318,14},{4231,4},{249427,3},{2321,1},{1210,3}},sources={{t="other"}}}
+R[1255123]={colors={95,95,102,110},creates={252437,1,1},learn=95,name="Forceful Medium Armor Kit",prof=165,reagents={{2313,1},{10940,2},{2454,2}},sources={{cost=500,item=252784,npcs={3005},t="vendor"},{cost=500,item=252784,npcs={3366},t="vendor"},{cost=500,item=252784,npcs={4225},t="vendor"},{cost=500,item=252784,npcs={4589},t="vendor"},{cost=500,item=252784,npcs={5128},t="vendor"},{cost=500,item=252784,npcs={5565},t="vendor"}}}
+R[1255124]={colors={95,95,102,110},creates={252436,1,1},learn=95,name="Mystic Medium Armor Kit",prof=165,reagents={{2313,1},{10940,2},{2455,2}},sources={{cost=500,item=252783,npcs={3005},t="vendor"},{cost=500,item=252783,npcs={3366},t="vendor"},{cost=500,item=252783,npcs={4225},t="vendor"},{cost=500,item=252783,npcs={4589},t="vendor"},{cost=500,item=252783,npcs={5128},t="vendor"},{cost=500,item=252783,npcs={5565},t="vendor"}}}
+R[1255125]={colors={100,100,112,125},creates={252499,1,1},learn=100,name="Wisdom's Leather Gloves",prof=165,reagents={{2318,12},{4231,3},{249427,2},{2321,1},{5498,2}},sources={{t="other"}}}
+R[1255126]={colors={100,100,112,125},creates={252498,1,1},learn=100,name="Stormrider's Leather Gloves",prof=165,reagents={{2318,12},{4231,3},{249427,2},{2321,1},{249409,2}},sources={{t="other"}}}
+R[1255127]={colors={100,100,112,125},creates={252497,1,1},learn=100,name="Totemic Leather Gloves",prof=165,reagents={{2318,12},{4231,3},{249427,2},{2321,1},{249410,2}},sources={{t="other"}}}
+R[1255128]={colors={100,100,112,125},creates={252496,1,1},learn=100,name="Defender's Leather Gloves",prof=165,reagents={{2318,12},{4231,3},{249427,2},{2321,1},{2458,2}},sources={{t="other"}}}
+R[1255129]={colors={100,100,112,125},creates={252495,1,1},learn=100,name="Trapper's Leather Gloves",prof=165,reagents={{2318,12},{4231,3},{249427,2},{2321,1},{6470,2}},sources={{t="other"}}}
+R[1255130]={colors={100,100,112,125},creates={252494,1,1},learn=100,name="Brawler's Leather Gloves",prof=165,reagents={{2318,12},{4231,3},{249427,2},{2321,1},{1210,2}},sources={{t="other"}}}
+R[1255131]={colors={80,80,92,105},creates={252493,1,1},est=true,learn=80,name="Wisdom's Leather Armor",prof=165,reagents={{2318,16},{4231,2},{5498,1}},sources={{t="other"}}}
+R[1255132]={colors={80,80,92,105},creates={252492,1,1},est=true,learn=80,name="Stormrider's Leather Armor",prof=165,reagents={{2318,16},{4231,2},{249409,1}},sources={{t="other"}}}
+R[1255133]={colors={80,80,92,105},creates={252435,1,1},est=true,learn=80,name="Totemic Leather Armor",prof=165,reagents={{2318,16},{4231,2},{249410,1}},sources={{t="other"}}}
+R[1255134]={colors={80,80,92,105},creates={252434,1,1},est=true,learn=80,name="Defender's Leather Armor",prof=165,reagents={{2318,16},{4231,2},{2458,1}},sources={{t="other"}}}
+R[1255135]={colors={80,80,92,105},creates={252491,1,1},est=true,learn=80,name="Trapper's Leather Armor",prof=165,reagents={{2318,16},{4231,2},{6470,1}},sources={{t="other"}}}
+R[1255136]={colors={80,80,92,105},creates={252490,1,1},est=true,learn=80,name="Brawler's Leather Armor",prof=165,reagents={{2318,16},{4231,2},{1210,1}},sources={{t="other"}}}
+R[1255137]={colors={90,90,105,120},creates={252433,1,1},learn=90,name="Wisdom's Leather Belt",prof=165,reagents={{2318,10},{4231,2},{249427,2},{2320,1},{5498,1}},sources={{t="other"}}}
+R[1255138]={colors={90,90,105,120},creates={252432,1,1},learn=90,name="Stormrider's Leather Belt",prof=165,reagents={{2318,10},{4231,2},{249427,2},{2320,1},{249409,1}},sources={{t="other"}}}
+R[1255139]={colors={90,90,105,120},creates={252431,1,1},learn=90,name="Totemic Leather Belt",prof=165,reagents={{2318,10},{4231,2},{249427,2},{2320,1},{249410,1}},sources={{t="other"}}}
+R[1255140]={colors={90,90,105,120},creates={252430,1,1},learn=90,name="Defender's Leather Belt",prof=165,reagents={{2318,10},{4231,2},{249427,2},{2320,1},{2458,1}},sources={{t="other"}}}
+R[1255141]={colors={90,90,105,120},creates={252429,1,1},learn=90,name="Trapper's Leather Belt",prof=165,reagents={{2318,10},{4231,2},{249427,2},{2320,1},{6470,1}},sources={{t="other"}}}
+R[1255142]={colors={90,90,105,120},creates={252428,1,1},learn=90,name="Brawler's Leather Belt",prof=165,reagents={{2318,10},{4231,2},{249427,2},{2320,1},{1210,1}},sources={{t="other"}}}
+R[1255143]={colors={40,40,42,45},creates={252427,1,1},est=true,learn=40,name="Moonglow Boots",prof=165,reagents={{2318,12},{4231,2},{5498,1}},sources={{cost=0,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"},{cost=500,item=252764,npcs={258306},t="vendor"}}}
+R[1255144]={colors={40,40,42,45},creates={252426,1,1},est=true,learn=40,name="Murloc Scale Shoes",prof=165,reagents={{2318,12},{4231,2},{5784,4}},sources={{cost=0,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"},{cost=500,item=252763,npcs={258306},t="vendor"}}}
+R[1255145]={colors={40,40,42,45},creates={252425,1,1},est=true,learn=40,name="Dark Leather Boots",prof=165,reagents={{2318,24},{4231,2},{4340,1}},sources={{cost=0,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"},{cost=500,item=252762,npcs={258306},t="vendor"}}}
+R[1255146]={colors={40,40,42,45},creates={252424,1,1},est=true,learn=40,name="Black Whelp Slippers",prof=165,reagents={{2318,12},{4231,2},{7286,2}},sources={{cost=0,npcs={223,1466,1632,3007,3008,3069,3365,3549},t="trainer"},{cost=500,item=252761,npcs={258306},t="vendor"}}}
+R[1257013]={colors={30,30,47,65},creates={253664,1,1},learn=30,name="Linen Reagent Bag",prof=197,reagents={{2996,6},{2320,6}},sources={{cost=150,item=253665,npcs={1347},t="vendor"},{cost=150,item=253665,npcs={1454},t="vendor"},{cost=150,item=253665,npcs={1474},t="vendor"},{cost=150,item=253665,npcs={1672},t="vendor"},{cost=150,item=253665,npcs={2394},t="vendor"},{cost=150,item=253665,npcs={2668},t="vendor"},{cost=150,item=253665,npcs={2670},t="vendor"},{cost=150,item=253665,npcs={3005},t="vendor"},{cost=150,item=253665,npcs={3091},t="vendor"},{cost=150,item=253665,npcs={3096},t="vendor"},{cost=150,item=253665,npcs={3364},t="vendor"},{cost=150,item=253665,npcs={3485},t="vendor"},{cost=150,item=253665,npcs={4168},t="vendor"},{cost=150,item=253665,npcs={4189},t="vendor"},{cost=150,item=253665,npcs={4577},t="vendor"},{cost=150,item=253665,npcs={5154},t="vendor"},{cost=150,item=253665,npcs={5944},t="vendor"},{cost=150,item=253665,npcs={6568},t="vendor"},{cost=150,item=253665,npcs={6576},t="vendor"},{cost=150,item=253665,npcs={7940},t="vendor"},{cost=150,item=253665,npcs={8681},t="vendor"},{cost=150,item=253665,npcs={242498},t="vendor"},{cost=150,item=253665,npcs={251973},t="vendor"},{cost=150,item=253665,npcs={251991},t="vendor"},{cost=150,item=253665,npcs={252380},t="vendor"},{cost=150,item=253665,npcs={258415},t="vendor"},{cost=150,item=253665,npcs={258463},t="vendor"},{cost=150,item=253665,npcs={258466},t="vendor"},{cost=150,item=253665,npcs={258548},t="vendor"},{cost=150,item=253665,npcs={258568},t="vendor"},{cost=150,item=253665,npcs={258572},t="vendor"},{cost=150,item=253665,npcs={260570},t="vendor"}}}
+R[1257017]={colors={75,75,92,110},creates={253667,1,1},learn=75,name="Woolen Reagent Bag",prof=197,reagents={{2997,3},{2321,1},{249409,1}},sources={{cost=250,item=253668,npcs={1347},t="vendor"},{cost=250,item=253668,npcs={1454},t="vendor"},{cost=250,item=253668,npcs={1474},t="vendor"},{cost=250,item=253668,npcs={1672},t="vendor"},{cost=250,item=253668,npcs={2394},t="vendor"},{cost=250,item=253668,npcs={2668},t="vendor"},{cost=250,item=253668,npcs={2670},t="vendor"},{cost=250,item=253668,npcs={3005},t="vendor"},{cost=250,item=253668,npcs={3091},t="vendor"},{cost=250,item=253668,npcs={3096},t="vendor"},{cost=250,item=253668,npcs={3364},t="vendor"},{cost=250,item=253668,npcs={3485},t="vendor"},{cost=250,item=253668,npcs={4168},t="vendor"},{cost=250,item=253668,npcs={4189},t="vendor"},{cost=250,item=253668,npcs={4577},t="vendor"},{cost=250,item=253668,npcs={5154},t="vendor"},{cost=250,item=253668,npcs={5944},t="vendor"},{cost=250,item=253668,npcs={6568},t="vendor"},{cost=250,item=253668,npcs={6576},t="vendor"},{cost=250,item=253668,npcs={7940},t="vendor"},{cost=250,item=253668,npcs={8681},t="vendor"},{cost=250,item=253668,npcs={242498},t="vendor"},{cost=250,item=253668,npcs={251973},t="vendor"},{cost=250,item=253668,npcs={251991},t="vendor"},{cost=250,item=253668,npcs={252380},t="vendor"},{cost=250,item=253668,npcs={258415},t="vendor"},{cost=250,item=253668,npcs={258463},t="vendor"},{cost=250,item=253668,npcs={258466},t="vendor"},{cost=250,item=253668,npcs={258548},t="vendor"},{cost=250,item=253668,npcs={258568},t="vendor"},{cost=250,item=253668,npcs={258572},t="vendor"},{cost=250,item=253668,npcs={260570},t="vendor"}}}
+R[1257368]={colors={55,55,72,90},creates={253885,1,1},est=true,learn=55,name="Novice Arcanist's Sash",prof=197,reagents={{2996,8},{2321,2},{2455,2}},sources={{cost=0,npcs={1103,1300,1703,2627,2855,3004,3363,3484},t="trainer"}}}
+end)()
+;(function()
+R[1257369]={colors={55,55,72,90},creates={253887,1,1},est=true,learn=55,name="Novice Ardent's Sash",prof=197,reagents={{2996,12},{2321,2},{118,2}},sources={{cost=0,npcs={1103,1300,1703,2627,2855,3004,3363,3484},t="trainer"}}}
+R[1257370]={colors={85,85,102,120},creates={253889,1,1},learn=85,name="Pristine Boots",prof=197,reagents={{2997,8},{2321,2},{249409,2},{249427,1}},sources={{t="other"}}}
+R[1257371]={colors={85,85,102,120},creates={253891,1,1},learn=85,name="Silky Boots",prof=197,reagents={{2997,8},{2321,2},{249409,2},{3182,1}},sources={{t="other"}}}
+R[1257372]={colors={85,85,102,120},creates={253893,1,1},learn=85,name="Flame Boots",prof=197,reagents={{2997,8},{2321,2},{249409,2},{6371,1}},sources={{t="other"}}}
+R[1257373]={colors={85,85,102,120},creates={253895,1,1},learn=85,name="Shadow Boots",prof=197,reagents={{2997,8},{2321,2},{249409,2},{1210,1}},sources={{t="other"}}}
+R[1257374]={colors={85,85,102,120},creates={253897,1,1},learn=85,name="Pearly Boots",prof=197,reagents={{2997,8},{2321,2},{249409,2},{5498,1}},sources={{t="other"}}}
+R[1257375]={colors={85,85,102,120},creates={253899,1,1},learn=85,name="Shining Boots",prof=197,reagents={{2997,8},{2321,2},{249409,2},{249391,1}},sources={{t="other"}}}
+R[1257376]={colors={80,80,97,115},creates={253901,1,1},est=true,learn=80,name="Filigreed Pristine Gown",prof=197,reagents={{2997,8},{2321,4},{249409,2},{249427,2}},sources={{t="other"}}}
+R[1257377]={colors={80,80,97,115},creates={253903,1,1},est=true,learn=80,name="Filigreed Silky Gown",prof=197,reagents={{2997,8},{2321,4},{249409,2},{3182,2}},sources={{t="other"}}}
+R[1257378]={colors={80,80,97,115},creates={253905,1,1},est=true,learn=80,name="Filigreed Flame Gown",prof=197,reagents={{2997,8},{2321,4},{249409,2},{6371,2}},sources={{t="other"}}}
+R[1257379]={colors={80,80,97,115},creates={253907,1,1},est=true,learn=80,name="Filigreed Shadow Gown",prof=197,reagents={{2997,8},{2321,4},{249409,2},{1210,2}},sources={{t="other"}}}
+R[1257380]={colors={80,80,97,115},creates={253909,1,1},est=true,learn=80,name="Filigreed Pearly Gown",prof=197,reagents={{2997,8},{2321,4},{249409,2},{5498,2}},sources={{t="other"}}}
+R[1257381]={colors={80,80,97,115},creates={253911,1,1},est=true,learn=80,name="Filigreed Shining Gown",prof=197,reagents={{2997,8},{2321,4},{249409,2},{249391,2}},sources={{t="other"}}}
+R[1257382]={colors={100,100,117,135},creates={253913,1,1},learn=100,name="Pristine Gloves",prof=197,reagents={{2997,6},{2321,4},{249409,3},{249427,2}},sources={{t="other"}}}
+R[1257383]={colors={100,100,117,135},creates={253915,1,1},learn=100,name="Silky Gloves",prof=197,reagents={{2997,6},{2321,4},{249409,3},{3182,2}},sources={{t="other"}}}
+R[1257384]={colors={100,100,117,135},creates={253917,1,1},learn=100,name="Flame Gloves",prof=197,reagents={{2997,6},{2321,4},{249409,3},{6371,2}},sources={{t="other"}}}
+R[1257385]={colors={100,100,117,135},creates={253919,1,1},learn=100,name="Shadow Gloves",prof=197,reagents={{2997,6},{2321,4},{249409,3},{1210,2}},sources={{t="other"}}}
+R[1257386]={colors={100,100,117,135},creates={253921,1,1},learn=100,name="Pearly Gloves",prof=197,reagents={{2997,6},{2321,4},{249409,3},{5498,2}},sources={{t="other"}}}
+R[1257387]={colors={100,100,117,135},creates={253923,1,1},learn=100,name="Shining Gloves",prof=197,reagents={{2997,6},{2321,4},{249409,3},{249391,2}},sources={{t="other"}}}
+R[1257388]={colors={110,110,127,145},creates={253925,1,1},learn=110,name="Pristine Sash",prof=197,reagents={{4305,8},{2321,4},{249409,3},{249427,3}},sources={{t="other"}}}
+R[1257389]={colors={110,110,127,145},creates={253927,1,1},learn=110,name="Silky Sash",prof=197,reagents={{4305,8},{2321,4},{249409,3},{3182,3}},sources={{t="other"}}}
+R[1257390]={colors={110,110,127,145},creates={253929,1,1},learn=110,name="Flame Sash",prof=197,reagents={{4305,8},{2321,4},{249409,3},{6371,3}},sources={{t="other"}}}
+R[1257391]={colors={110,110,127,145},creates={253931,1,1},learn=110,name="Shadow Sash",prof=197,reagents={{4305,8},{2321,4},{249409,3},{1210,3}},sources={{t="other"}}}
+R[1257392]={colors={110,110,127,145},creates={253933,1,1},learn=110,name="Pearly Sash",prof=197,reagents={{4305,8},{2321,4},{249409,3},{5498,3}},sources={{t="other"}}}
+R[1257393]={colors={110,110,127,145},creates={253935,1,1},learn=110,name="Shining Sash",prof=197,reagents={{4305,8},{2321,4},{249409,3},{249391,3}},sources={{t="other"}}}
+R[1257394]={colors={105,105,122,140},creates={253937,1,1},est=true,learn=105,name="Filigreed Pristine Leggings",prof=197,reagents={{4305,8},{2321,4},{249409,2},{249427,4}},sources={{t="other"}}}
+R[1257395]={colors={105,105,122,140},creates={253939,1,1},est=true,learn=105,name="Filigreed Silky Leggings",prof=197,reagents={{4305,8},{2321,4},{249409,2},{3182,4}},sources={{t="other"}}}
+R[1257396]={colors={105,105,122,140},creates={253941,1,1},est=true,learn=105,name="Filigreed Flame Leggings",prof=197,reagents={{4305,8},{2321,4},{249409,2},{6371,4}},sources={{t="other"}}}
+R[1257397]={colors={105,105,122,140},creates={253943,1,1},est=true,learn=105,name="Filigreed Shadow Leggings",prof=197,reagents={{4305,8},{2321,4},{249409,2},{1210,4}},sources={{t="other"}}}
+R[1257398]={colors={105,105,122,140},creates={253945,1,1},est=true,learn=105,name="Filigreed Pearly Leggings",prof=197,reagents={{4305,8},{2321,4},{249409,2},{5498,4}},sources={{t="other"}}}
+R[1257399]={colors={105,105,122,140},creates={253947,1,1},est=true,learn=105,name="Filigreed Shining Leggings",prof=197,reagents={{4305,8},{2321,4},{249409,2},{249391,4}},sources={{t="other"}}}
+R[1257400]={colors={125,125,142,160},creates={253949,1,1},learn=125,name="Pristine Circlet",prof=197,reagents={{4305,10},{4291,2},{249409,4},{249427,4},{2842,1},{11082,2}},sources={{t="other"}}}
+R[1257401]={colors={125,125,142,160},creates={253951,1,1},learn=125,name="Silky Circlet",prof=197,reagents={{4305,10},{4291,2},{249409,4},{3182,4},{2842,1},{11082,2}},sources={{t="other"}}}
+R[1257402]={colors={125,125,142,160},creates={253953,1,1},learn=125,name="Flame Circlet",prof=197,reagents={{4305,10},{4291,2},{249409,4},{6371,4},{2842,1},{11082,2}},sources={{t="other"}}}
+R[1257403]={colors={125,125,142,160},creates={253955,1,1},learn=125,name="Shadow Circlet",prof=197,reagents={{4305,10},{4291,2},{249409,4},{1210,4},{2842,1},{11082,2}},sources={{t="other"}}}
+R[1257404]={colors={125,125,142,160},creates={253957,1,1},learn=125,name="Pearly Circlet",prof=197,reagents={{4305,10},{4291,2},{249409,4},{5498,4},{2842,1},{11082,2}},sources={{t="other"}}}
+R[1257405]={colors={125,125,142,160},creates={253959,1,1},learn=125,name="Shining Circlet",prof=197,reagents={{4305,10},{4291,2},{249409,4},{249391,4},{2842,1},{11082,2}},sources={{t="other"}}}
+R[1257406]={colors={130,130,145,160},creates={253961,1,1},learn=130,name="Pristine Gown",prof=197,reagents={{4305,12},{4291,2},{249409,6},{249427,6},{2842,2},{11082,2}},sources={{t="other"}}}
+R[1257407]={colors={130,130,145,160},creates={253963,1,1},learn=130,name="Silky Gown",prof=197,reagents={{4305,12},{4291,2},{249409,6},{3182,6},{2842,2},{11082,2}},sources={{t="other"}}}
+R[1257408]={colors={130,130,145,160},creates={253965,1,1},learn=130,name="Flame Gown",prof=197,reagents={{4305,12},{4291,2},{249409,6},{6371,6},{2842,2},{11082,2}},sources={{t="other"}}}
+R[1257409]={colors={130,130,145,160},creates={253967,1,1},learn=130,name="Shadow Gown",prof=197,reagents={{4305,12},{4291,2},{249409,6},{1210,6},{2842,2},{11082,2}},sources={{t="other"}}}
+R[1257410]={colors={130,130,145,160},creates={253969,1,1},learn=130,name="Pearly Gown",prof=197,reagents={{4305,12},{4291,2},{249409,6},{5498,6},{2842,2},{11082,2}},sources={{t="other"}}}
+R[1257411]={colors={130,130,145,160},creates={253971,1,1},learn=130,name="Shining Gown",prof=197,reagents={{4305,12},{4291,2},{249409,6},{249391,6},{2842,2},{11082,2}},sources={{t="other"}}}
+R[1257412]={colors={135,135,137,140},creates={253973,1,1},learn=135,name="Silk Reagent Bag",prof=197,reagents={{4305,3},{4234,2},{2321,3},{249409,3}},sources={{t="other"}}}
+R[1257413]={colors={130,130,147,165},creates={253975,1,1},est=true,learn=130,name="Filigreed Pristine Circlet",prof=197,reagents={{4305,8},{2321,4},{249409,2},{249427,6}},sources={{t="other"}}}
+R[1257414]={colors={130,130,147,165},creates={253977,1,1},est=true,learn=130,name="Filigreed Silky Circlet",prof=197,reagents={{4305,8},{2321,4},{249409,2},{3182,6}},sources={{t="other"}}}
+R[1257415]={colors={130,130,147,165},creates={253979,1,1},est=true,learn=130,name="Filigreed Flame Circlet",prof=197,reagents={{4305,8},{2321,4},{249409,2},{6371,6}},sources={{t="other"}}}
+R[1257416]={colors={130,130,147,165},creates={253981,1,1},est=true,learn=130,name="Filigreed Shadow Circlet",prof=197,reagents={{4305,8},{2321,4},{249409,2},{1210,6}},sources={{t="other"}}}
+R[1257417]={colors={130,130,147,165},creates={253983,1,1},est=true,learn=130,name="Filigreed Pearly Circlet",prof=197,reagents={{4305,8},{2321,4},{249409,2},{5498,6}},sources={{t="other"}}}
+R[1257418]={colors={130,130,147,165},creates={253985,1,1},est=true,learn=130,name="Filigreed Shining Circlet",prof=197,reagents={{4305,8},{2321,4},{249409,2},{249391,6}},sources={{t="other"}}}
+R[1257419]={colors={145,145,160,175},creates={253987,1,1},learn=145,name="Pristine Leggings",prof=197,reagents={{4305,14},{2321,3},{249409,8},{249427,8},{2842,2},{11082,3}},sources={{t="other"}}}
+R[1257420]={colors={145,145,160,175},creates={253989,1,1},learn=145,name="Silky Leggings",prof=197,reagents={{4305,14},{2321,3},{249409,8},{3182,8},{2842,2},{11082,3}},sources={{t="other"}}}
+R[1257421]={colors={145,145,160,175},creates={253991,1,1},learn=145,name="Flame Leggings",prof=197,reagents={{4305,14},{2321,3},{249409,8},{6371,8},{2842,2},{11082,3}},sources={{t="other"}}}
+R[1257422]={colors={145,145,160,175},creates={253993,1,1},learn=145,name="Shadow Leggings",prof=197,reagents={{4305,14},{2321,3},{249409,8},{1210,8},{2842,2},{11082,3}},sources={{t="other"}}}
+R[1257423]={colors={145,145,160,175},creates={253995,1,1},learn=145,name="Pearly Leggings",prof=197,reagents={{4305,14},{2321,3},{249409,8},{5498,8},{2842,2},{11082,3}},sources={{t="other"}}}
+R[1257424]={colors={145,145,160,175},creates={253997,1,1},learn=145,name="Shining Leggings",prof=197,reagents={{4305,14},{2321,3},{249409,8},{249391,8},{2842,2},{11082,3}},sources={{t="other"}}}
+R[1257425]={colors={160,160,175,190},creates={253999,1,1},learn=160,name="Earthen Leggings",prof=197,reagents={{4305,4},{7067,1},{2321,2}},sources={{t="other"}}}
+R[1257426]={colors={145,145,160,175},creates={254001,1,1},est=true,learn=145,name="Gilded Slippers",prof=197,reagents={{4339,8},{8343,4},{249430,2},{249409,2},{3577,2}},sources={{cost=0,npcs={2627,3004,3363,3704,5153,5567,11049,251972},t="trainer"}}}
+R[1257427]={colors={145,145,160,175},creates={254003,1,1},est=true,learn=145,name="Frothing Slippers",prof=197,reagents={{4339,8},{8343,4},{249430,2},{249409,2},{7079,2}},sources={{cost=0,npcs={2627,3004,3363,3704,5153,5567,11049,251972},t="trainer"}}}
+R[1257428]={colors={145,145,160,175},creates={254005,1,1},est=true,learn=145,name="Fiery Slippers",prof=197,reagents={{4339,8},{8343,4},{249430,2},{249409,2},{7077,2}},sources={{cost=0,npcs={2627,3004,3363,3704,5153,5567,11049,251972},t="trainer"}}}
+R[1257429]={colors={145,145,160,175},creates={254007,1,1},est=true,learn=145,name="Black Slippers",prof=197,reagents={{4339,8},{8343,4},{249430,2},{249409,2},{7971,2}},sources={{cost=0,npcs={2627,3004,3363,3704,5153,5567,11049,251972},t="trainer"}}}
+R[1257430]={colors={145,145,160,175},creates={254009,1,1},est=true,learn=145,name="Golden Slippers",prof=197,reagents={{4339,8},{8343,4},{249430,2},{249409,2},{13926,2}},sources={{cost=0,npcs={2627,3004,3363,3704,5153,5567,11049,251972},t="trainer"}}}
+R[1257431]={colors={145,145,160,175},creates={254011,1,1},est=true,learn=145,name="Radiant Slippers",prof=197,reagents={{4339,8},{8343,4},{249430,2},{249409,2},{11178,2}},sources={{cost=0,npcs={2627,3004,3363,3704,5153,5567,11049,251972},t="trainer"}}}
+R[1257432]={colors={165,165,180,195},creates={254013,1,1},learn=165,name="Earthen Silk Slippers",prof=197,reagents={{4305,4},{7067,1},{2321,2},{4234,2}},sources={{t="other"}}}
+R[1257433]={colors={170,170,185,200},creates={254015,1,1},learn=170,name="Earthen Silk Hood",prof=197,reagents={{4305,4},{7067,2},{2321,2}},sources={{t="other"}}}
+R[1257434]={colors={180,180,195,210},creates={254017,1,1},learn=180,name="Earthen Silk Gloves",prof=197,reagents={{4305,5},{7067,2},{4291,2}},sources={{t="other"}}}
+R[1257435]={colors={185,185,200,215},creates={254019,1,1},learn=185,name="Earthen Silk Cuffs",prof=197,reagents={{4305,4},{7067,1},{4291,1}},sources={{t="other"}}}
+R[1257436]={colors={185,185,200,215},creates={254021,1,1},learn=185,name="Gilded Handwraps",prof=197,reagents={{4339,12},{8343,4},{249430,2},{249409,1},{3577,4}},sources={{t="other"}}}
+R[1257437]={colors={185,185,200,215},creates={254023,1,1},learn=185,name="Frothing Handwraps",prof=197,reagents={{4339,12},{8343,4},{249430,2},{249409,1},{7079,4}},sources={{t="other"}}}
+R[1257438]={colors={185,185,200,215},creates={254025,1,1},learn=185,name="Fiery Handwraps",prof=197,reagents={{4339,12},{8343,4},{249430,2},{249409,1},{7077,4}},sources={{t="other"}}}
+R[1257439]={colors={185,185,200,215},creates={254027,1,1},learn=185,name="Black Handwraps",prof=197,reagents={{4339,12},{8343,4},{249430,2},{249409,1},{7971,4}},sources={{t="other"}}}
+R[1257440]={colors={185,185,200,215},creates={254029,1,1},learn=185,name="Golden Handwraps",prof=197,reagents={{4339,12},{8343,4},{249430,2},{249409,1},{13926,4}},sources={{t="other"}}}
+R[1257441]={colors={185,185,200,215},creates={254031,1,1},learn=185,name="Radiant Handwraps",prof=197,reagents={{4339,12},{8343,4},{249430,2},{249409,1},{11178,4}},sources={{t="other"}}}
+R[1257442]={colors={185,185,200,215},creates={254033,1,1},learn=185,name="Earthen Silk Shoulders",prof=197,reagents={{4305,6},{7067,2},{4291,3}},sources={{t="other"}}}
+R[1257443]={colors={205,205,210,215},creates={254035,1,1},learn=205,name="Mageweave Reagent Bag",prof=197,reagents={{4339,4},{8343,2},{249430,1},{249409,1}},sources={{t="other"}}}
+R[1257444]={colors={195,195,205,215},creates={254037,1,1},est=true,learn=195,name="Gilded Cord",prof=197,reagents={{4339,28},{8343,4},{249430,6},{249409,4},{3577,12}},sources={{t="other"}}}
+R[1257445]={colors={195,195,205,215},creates={254039,1,1},est=true,learn=195,name="Frothing Cord",prof=197,reagents={{4339,28},{8343,4},{249430,6},{249409,4},{7079,12}},sources={{t="other"}}}
+R[1257446]={colors={195,195,205,215},creates={254041,1,1},est=true,learn=195,name="Fiery Cord",prof=197,reagents={{4339,28},{8343,4},{249430,6},{249409,4},{7077,12}},sources={{t="other"}}}
+R[1257447]={colors={195,195,205,215},creates={254043,1,1},est=true,learn=195,name="Black Cord",prof=197,reagents={{4339,28},{8343,4},{249430,6},{249409,4},{7971,12}},sources={{t="other"}}}
+R[1257448]={colors={195,195,205,215},creates={254045,1,1},est=true,learn=195,name="Golden Cord",prof=197,reagents={{4339,28},{8343,4},{249430,6},{249409,4},{13926,12}},sources={{t="other"}}}
+R[1257449]={colors={195,195,205,215},creates={254047,1,1},est=true,learn=195,name="Radiant Cord",prof=197,reagents={{4339,28},{8343,4},{249430,6},{249409,4},{11178,12}},sources={{t="other"}}}
+R[1257450]={colors={210,210,225,240},creates={254049,1,1},learn=210,name="Nethergeld Shoulders",prof=197,reagents={{4339,16},{8343,3},{249430,4},{249409,3},{3577,8},{11175,2}},sources={{t="other"}}}
+R[1257451]={colors={210,210,225,240},creates={254051,1,1},learn=210,name="Netherfroth Shoulders",prof=197,reagents={{4339,16},{8343,3},{249430,4},{249409,3},{7079,8},{11175,2}},sources={{t="other"}}}
+R[1257452]={colors={210,210,225,240},creates={254053,1,1},learn=210,name="Netherflame Shoulders",prof=197,reagents={{4339,16},{8343,3},{249430,4},{249409,3},{7077,8},{11175,2}},sources={{t="other"}}}
+R[1257453]={colors={210,210,225,240},creates={254055,1,1},learn=210,name="Netherpearl Shoulders",prof=197,reagents={{4339,16},{8343,3},{249430,4},{249409,3},{7971,8},{11175,2}},sources={{t="other"}}}
+R[1257454]={colors={210,210,225,240},creates={254057,1,1},learn=210,name="Nethershine Shoulders",prof=197,reagents={{4339,16},{8343,3},{249430,4},{249409,3},{13926,8},{11175,2}},sources={{t="other"}}}
+R[1257455]={colors={210,210,225,240},creates={254059,1,1},learn=210,name="Netherlight Shoulders",prof=197,reagents={{4339,16},{8343,3},{249430,4},{249409,3},{11178,8},{11175,2}},sources={{t="other"}}}
+R[1257456]={colors={220,220,235,250},creates={254061,1,1},learn=220,name="Nethergeld Cuffs",prof=197,reagents={{4339,18},{8343,3},{249430,6},{249409,4},{3577,10},{11175,4}},sources={{t="other"}}}
+R[1257457]={colors={220,220,235,250},creates={254063,1,1},learn=220,name="Netherfroth Cuffs",prof=197,reagents={{4339,18},{8343,3},{249430,6},{249409,4},{7079,10},{11175,4}},sources={{t="other"}}}
+R[1257458]={colors={220,220,235,250},creates={254065,1,1},learn=220,name="Netherflame Cuffs",prof=197,reagents={{4339,18},{8343,3},{249430,6},{249409,4},{7077,10},{11175,4}},sources={{t="other"}}}
+R[1257459]={colors={220,220,235,250},creates={254067,1,1},learn=220,name="Netherpearl Cuffs",prof=197,reagents={{4339,18},{8343,3},{249430,6},{249409,4},{7971,10},{11175,4}},sources={{t="other"}}}
+R[1257460]={colors={220,220,235,250},creates={254069,1,1},learn=220,name="Nethershine Cuffs",prof=197,reagents={{4339,18},{8343,3},{249430,6},{249409,4},{13926,10},{11175,4}},sources={{t="other"}}}
+R[1257461]={colors={220,220,235,250},creates={254071,1,1},learn=220,name="Netherlight Cuffs",prof=197,reagents={{4339,18},{8343,3},{249430,6},{249409,4},{11178,10},{11175,4}},sources={{t="other"}}}
+R[1257462]={colors={230,230,245,260},creates={254073,1,1},learn=230,name="Ghostweave Cord",prof=197,reagents={{14048,4},{9210,1},{14227,1},{14341,1}},sources={{t="other"}}}
+R[1257463]={colors={230,230,245,260},creates={254075,1,1},learn=230,name="Earthenweave Gloves",prof=197,reagents={{14048,6},{7076,1},{14341,1}},sources={{t="other"}}}
+R[1257464]={colors={230,230,245,260},creates={254077,1,1},learn=230,name="Earthenweave Cord",prof=197,reagents={{14048,4},{7076,2},{14341,1}},sources={{t="other"}}}
+R[1257465]={colors={230,230,245,260},creates={254079,1,1},learn=230,name="Runecloth Reagent Bag",prof=197,reagents={{14048,5},{8170,2},{14341,1},{249431,1}},sources={{t="other"}}}
+R[1257466]={colors={230,230,245,260},creates={254081,1,1},learn=230,name="Gilded Waistcord",prof=197,reagents={{14048,8},{8343,4},{249430,8},{249409,5},{3577,12}},sources={{t="other"}}}
+R[1257467]={colors={230,230,245,260},creates={254083,1,1},learn=230,name="Frothing Waistcord",prof=197,reagents={{14048,8},{8343,4},{249430,8},{249409,5},{7079,12}},sources={{t="other"}}}
+R[1257468]={colors={230,230,245,260},creates={254085,1,1},learn=230,name="Fiery Waistcord",prof=197,reagents={{14048,8},{8343,4},{249430,8},{249409,5},{7077,12}},sources={{t="other"}}}
+R[1257469]={colors={230,230,245,260},creates={254087,1,1},learn=230,name="Black Waistcord",prof=197,reagents={{14048,8},{8343,4},{249430,8},{249409,5},{7971,12}},sources={{t="other"}}}
+R[1257470]={colors={230,230,245,260},creates={254089,1,1},learn=230,name="Golden Waistcord",prof=197,reagents={{14048,8},{8343,4},{249430,8},{249409,5},{13926,12}},sources={{t="other"}}}
+R[1257471]={colors={230,230,245,260},creates={254091,1,1},learn=230,name="Radiant Waistcord",prof=197,reagents={{14048,8},{8343,4},{249430,8},{249409,5},{11178,12}},sources={{t="other"}}}
+R[1257472]={colors={240,240,255,270},creates={254093,1,1},learn=240,name="Earthenweave Boots",prof=197,reagents={{14048,4},{7076,2},{8170,2},{14341,1}},sources={{t="other"}}}
+R[1257473]={colors={240,240,255,270},creates={254095,1,1},est=true,learn=240,name="Gilded Gloves",prof=197,reagents={{14048,8},{8343,4},{249430,4},{249409,4},{3577,4}},sources={{t="other"}}}
+R[1257474]={colors={240,240,255,270},creates={254097,1,1},est=true,learn=240,name="Frothing Gloves",prof=197,reagents={{14048,8},{8343,4},{249430,4},{249409,4},{7079,4}},sources={{t="other"}}}
+R[1257475]={colors={240,240,255,270},creates={254099,1,1},est=true,learn=240,name="Fiery Gloves",prof=197,reagents={{14048,8},{8343,4},{249430,4},{249409,4},{7077,4}},sources={{t="other"}}}
+R[1257476]={colors={240,240,255,270},creates={254101,1,1},est=true,learn=240,name="Black Gloves",prof=197,reagents={{14048,8},{8343,4},{249430,4},{249409,4},{7971,4}},sources={{t="other"}}}
+R[1257477]={colors={240,240,255,270},creates={254103,1,1},est=true,learn=240,name="Golden Gloves",prof=197,reagents={{14048,8},{8343,4},{249430,4},{249409,4},{13926,4}},sources={{t="other"}}}
+R[1257478]={colors={240,240,255,270},creates={254105,1,1},est=true,learn=240,name="Radiant Gloves",prof=197,reagents={{14048,8},{8343,4},{249430,4},{249409,4},{11178,4}},sources={{t="other"}}}
+R[1257479]={colors={250,250,265,280},creates={254107,1,1},learn=250,name="Gilded Sandals",prof=197,reagents={{14048,10},{8343,4},{249430,10},{249409,6},{3577,14},{249427,4}},sources={{t="other"}}}
+R[1257480]={colors={250,250,265,280},creates={254109,1,1},learn=250,name="Frothing Sandals",prof=197,reagents={{14048,10},{8343,4},{249430,10},{249409,6},{7079,14},{249427,4}},sources={{t="other"}}}
+R[1257481]={colors={250,250,265,280},creates={254111,1,1},learn=250,name="Fiery Sandals",prof=197,reagents={{14048,10},{8343,4},{249430,10},{249409,6},{7077,14},{249427,4}},sources={{t="other"}}}
+R[1257482]={colors={250,250,265,280},creates={254113,1,1},learn=250,name="Black Sandals",prof=197,reagents={{14048,10},{8343,4},{249430,10},{249409,6},{7971,14},{249427,4}},sources={{t="other"}}}
+R[1257483]={colors={250,250,265,280},creates={254115,1,1},learn=250,name="Golden Sandals",prof=197,reagents={{14048,10},{8343,4},{249430,10},{249409,6},{13926,14},{249427,4}},sources={{t="other"}}}
+R[1257484]={colors={250,250,265,280},creates={254117,1,1},learn=250,name="Radiant Sandals",prof=197,reagents={{14048,10},{8343,4},{249430,10},{249409,6},{11178,14},{249427,4}},sources={{t="other"}}}
+R[1257485]={colors={255,255,270,285},creates={254119,1,1},learn=255,name="Earthenweave Mantle",prof=197,reagents={{14048,6},{7076,1},{14341,1}},sources={{t="other"}}}
+R[1257486]={colors={265,265,280,295},creates={254121,1,1},learn=265,name="Earthenweave Vest",prof=197,reagents={{14048,8},{7076,1},{14341,1}},sources={{t="other"}}}
+R[1257487]={colors={265,265,280,295},creates={254123,1,1},learn=265,name="Runecloth Cuffs",prof=197,reagents={{14048,5},{14227,1},{14341,1}},sources={{cost=100000,item=254124,npcs={266901},t="vendor"}}}
+R[1257488]={colors={260,260,275,290},creates={254125,1,1},learn=260,name="Earthenweave Leggings",prof=197,reagents={{14048,6},{7076,2},{14341,1}},sources={{t="other"}}}
+R[1257489]={colors={265,265,280,295},creates={254127,1,1},learn=265,name="Ghostweave Mantle",prof=197,reagents={{14048,5},{9210,3},{14227,1},{14341,1}},sources={{t="other"}}}
+R[1257490]={colors={265,265,280,295},creates={254129,1,1},learn=265,name="Ghostweave Boots",prof=197,reagents={{14048,4},{9210,2},{14227,1},{8170,2},{14341,1}},sources={{t="other"}}}
+R[1257491]={colors={270,270,285,300},creates={254131,1,1},learn=270,name="Earthenweave Cuffs",prof=197,reagents={{14048,5},{7076,1},{14341,1}},sources={{t="other"}}}
+R[1257492]={colors={270,270,285,300},creates={254133,1,1},learn=270,name="Mooncloth Reagent Bag",prof=197,reagents={{14048,4},{14342,1},{14341,1},{249431,10},{249430,1},{249409,1}},sources={{t="other"}}}
+R[1257493]={colors={275,275,290,305},creates={254135,1,1},learn=275,name="Ghostweave Hood",prof=197,reagents={{14048,6},{9210,3},{14227,2},{14341,1}},sources={{t="other"}}}
+R[1257494]={colors={275,275,290,305},creates={254137,1,1},learn=275,name="Earthenweave Crown",prof=197,reagents={{14048,6},{7076,3},{14341,1}},sources={{t="other"}}}
+R[1257495]={colors={315,315,330,345},creates={254139,1,1},learn=315,name="Bottomless Reagent Bag",prof=197,reagents={{14048,8},{14342,12},{14344,2},{249427,5},{14341,2},{249428,5},{249429,5}},sources={{t="other"}}}
+R[1259341]={colors={230,230,260,290},creates={255715,3,3},learn=230,name="Potent Anti-Venom",prof=129,reagents={{255645,1}},sources={{t="other"}}}
+R[1259342]={colors={90,90,125,160},creates={255716,3,3},learn=90,name="Simple Poultice",prof=129,reagents={{3174,1},{2678,1},{2723,1}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[1259343]={colors={160,160,190,220},creates={255717,3,3},learn=160,name="Clever Poultice",prof=129,reagents={{1468,1},{3713,1},{2686,1}},sources={{t="other"}}}
+R[1259344]={colors={225,225,255,285},creates={255718,3,3},learn=225,name="Superior Poultice",prof=129,reagents={{7070,1},{2692,1},{2596,1}},sources={{t="other"}}}
+R[1259345]={colors={295,295,325,355},creates={255719,3,3},learn=295,name="Powerful Poultice",prof=129,reagents={{7080,1},{2692,1},{2594,1}},sources={{t="other"}}}
+R[1259347]={colors={120,120,155,190},creates={255720,1,1},learn=120,name="Woolen Tourniquet",prof=129,reagents={{2592,2},{2321,2}},sources={{cost=0,npcs={2326,2327,2329,2798,3181,3373,4211,4591},t="trainer"}}}
+R[1259348]={colors={220,220,250,280},creates={255721,1,1},learn=220,name="Leather Tourniquet",prof=129,reagents={{4304,2},{4291,2}},sources={{t="other"}}}
+R[1259349]={colors={280,280,310,340},creates={255722,1,1},learn=280,name="Surgical Tourniquet",prof=129,reagents={{8170,2},{14047,2},{8343,2}},sources={{t="other"}}}
+R[1262978]={colors={140,140,142,145},creates={279957,1,1},learn=140,name="Cookie's Feast",prof=185,reagents={{12037,2},{12204,1},{3713,1}},sources={{t="other"}}}
+R[1262996]={colors={140,140,142,145},creates={279940,1,1},learn=140,name="Toxin Study",prof=129,reagents={{6452,1},{8544,2},{4470,2}},sources={{t="other"}}}
+R[1263001]={colors={300,300,330,360},creates={279951,1,1},est=true,learn=300,name="Plague Doctor's Laboratory",prof=129,reagents={{4470,2},{6453,2},{14530,5}},sources={{t="other"}}}
+R[1263005]={colors={140,140,142,145},creates={279970,1,1},learn=140,name="Fermenter",prof=171,reagents={{3372,1},{3356,1},{2452,1}},sources={{t="other"}}}
+R[1263031]={colors={140,140,142,145},creates={279941,1,1},learn=140,name="Tanning Rack",prof=165,reagents={{2319,5},{2321,3},{4470,2}},sources={{t="other"}}}
+R[1263032]={colors={140,140,142,145},creates={279943,1,1},learn=140,name="Spinning Wheel",prof=197,reagents={{4470,2},{4305,5},{2321,3}},sources={{t="other"}}}
+R[1263034]={colors={140,140,142,145},creates={279949,1,1},learn=140,name="Repair Bot",prof=202,reagents={{4375,2},{4371,1},{4234,1}},sources={{t="other"}}}
+R[1263041]={colors={140,140,142,145},creates={279988,1,1},learn=140,name="Anvil",prof=164,reagents={{2841,5},{3478,2},{2319,2}},sources={{t="other"}}}
+R[1263056]={colors={140,140,142,145},creates={279985,1,1},learn=140,name="Arcane Salvager",prof=333,reagents={{11137,2},{11174,1}},sources={{t="other"}}}
+R[1263067]={colors={300,300,320,340},creates={279982,1,1},est=true,learn=300,name="Iron Oven",prof=185,reagents={{10284,10},{159,5},{3713,4}},sources={{t="other"}}}
+R[1263073]={colors={300,300,310,320},creates={279955,1,1},est=true,learn=300,name="Master Forge",prof=164,reagents={{273127,1},{12359,5},{8170,2}},sources={{t="other"}}}
+R[1263078]={colors={300,300,307,315},creates={279990,1,1},est=true,learn=300,name="Alchemy Laboratory",prof=171,reagents={{273125,1},{8925,1},{13463,2}},sources={{t="other"}}}
+R[1263079]={colors={300,300,310,320},creates={279945,1,1},est=true,learn=300,name="Sewing Machine",prof=165,reagents={{273130,1},{8170,5},{14341,1}},sources={{t="other"}}}
+R[1263080]={colors={300,300,310,325},creates={279959,1,1},est=true,learn=300,name="Loom",prof=197,reagents={{273131,1},{14048,4},{4470,4}},sources={{t="other"}}}
+R[1263082]={colors={300,300,320,340},creates={279987,1,1},est=true,learn=300,name="Arcane Forge",prof=333,reagents={{273128,1},{14344,2},{16203,4}},sources={{t="other"}}}
+R[1263083]={colors={300,300,310,320},creates={279989,1,1},est=true,learn=300,name="Anarchist's Workbench",prof=202,reagents={{273129,1},{15994,2}},sources={{t="other"}}}
+R[1263425]={colors={20,20,22,25},creates={279973,1,1},learn=20,name="Faction Banner",prof=197,reagents={{2996,1},{2320,1}},sources={{cost=0,npcs={1103,1300,1703,2627,4193,5153,5567,11050},t="trainer"}}}
+R[1266893]={colors={25,25,27,30},creates={260784,1,1},learn=25,name="SAF-T Tabs",prof=202,reagents={{2570,1},{249409,1}},sources={{t="other"}}}
+R[1266905]={colors={25,25,30,35},creates={260792,1,1},learn=25,name="SAF-T Dynamite",prof=202,reagents={{4357,2},{2589,1}},sources={{t="other"}}}
+R[1266906]={colors={55,55,60,65},creates={260793,1,1},learn=55,name="SAF-T Copper Bomb",prof=202,reagents={{2840,1},{4359,1},{4357,2},{2570,1},{260784,2}},sources={{t="other"}}}
+R[1266907]={colors={100,100,102,105},creates={260794,1,1},learn=100,name="EZ-Thro Wrap",prof=202,reagents={{2592,1},{249410,1}},sources={{t="other"}}}
+R[1266908]={colors={130,130,155,180},creates={260795,1,1},learn=130,name="EZ-Thro Copper Bomb XL",prof=202,reagents={{2840,3},{4364,4},{4404,1},{260794,1}},sources={{t="other"}}}
+R[1266909]={colors={145,145,147,150},creates={260796,1,1},learn=145,name="No Slip SAF-T Padding",prof=202,reagents={{4234,1},{249430,1}},sources={{t="other"}}}
+R[1266910]={colors={145,145,170,195},creates={260797,1,1},learn=145,name="SAF-T Bronze Bomb",prof=202,reagents={{4364,4},{2841,2},{4404,1},{2592,1},{260796,1}},sources={{t="other"}}}
+R[1266911]={colors={150,150,160,170},creates={260798,1,1},learn=150,name="SAF-T Jumbo Dynamite",prof=202,reagents={{4377,2},{2592,1},{260796,1}},sources={{t="other"}}}
+R[1266912]={colors={175,175,177,180},creates={260799,1,1},learn=175,name="SAF-T Bell",prof=202,reagents={{2841,2},{249432,1}},sources={{t="other"}}}
+R[1266913]={colors={200,200,212,225},creates={260800,1,1},learn=200,name="Shafety Sheep",prof=202,reagents={{4382,1},{4375,1},{4377,2},{2592,2},{260799,1}},sources={{t="other"}}}
+R[1266914]={colors={190,190,192,195},creates={260801,1,1},learn=190,name="EZ-Thro Fireproof Fuse",prof=202,reagents={{4404,1},{249428,1}},sources={{t="other"}}}
+R[1266915]={colors={210,210,220,230},creates={260802,1,1},learn=210,name="EZ-Thro Bronze Mortar",prof=202,reagents={{4371,4},{4387,1},{4377,4},{2319,4},{260801,1}},sources={{t="other"}}}
+R[1266916]={colors={200,200,220,240},creates={260803,1,1},learn=200,name="EZ-Thro Grenade",prof=202,reagents={{3575,1},{4377,1},{4306,1},{260801,1}},sources={{t="other"}}}
+R[1266917]={colors={215,215,217,220},creates={260804,1,1},learn=215,name="SAF-T Casing",prof=202,reagents={{10561,1},{4234,1}},sources={{t="other"}}}
+R[1266918]={colors={215,215,230,245},creates={260805,1,1},learn=215,name="SAF-T Bomb",prof=202,reagents={{3575,3},{4377,3},{4404,1},{260804,1}},sources={{t="other"}}}
+R[1266919]={colors={245,245,255,265},creates={260806,1,1},learn=245,name="Emergency Field Cloak",prof=202,reagents={{4397,1},{260804,1}},sources={{t="other"}}}
+R[1266920]={colors={230,230,232,235},creates={260807,1,1},learn=230,name="Compact Critter Carrier",prof=202,reagents={{4234,10},{10559,10},{11175,2},{10558,1}},sources={{t="other"}}}
+R[1266921]={colors={240,240,242,245},creates={260808,1,1},learn=240,name="EZ-Thro Tru-Trigger",prof=202,reagents={{6037,1},{249431,1}},sources={{t="other"}}}
+R[1266922]={colors={240,240,260,280},creates={260809,1,1},learn=240,name="Tru-Trigger Frag Bomb",prof=202,reagents={{10561,1},{10560,1},{10505,1},{260808,1}},sources={{t="other"}}}
+R[1266923]={colors={270,270,280,290},creates={260810,1,1},learn=270,name="SAF-T Disposable Parachute",prof=202,reagents={{10518,1},{260804,1}},sources={{t="other"}}}
+R[1266924]={colors={250,250,252,255},creates={260811,1,1},learn=250,name="Gnomish Army Knife",prof=202,reagents={{10561,1},{10558,1},{15994,2}},sources={{t="other"}}}
+R[1266925]={colors={275,275,277,280},creates={260812,1,1},learn=275,name="Loot-A-Rang",prof=202,reagents={{12359,5},{16203,5}},sources={{t="other"}}}
+R[1266926]={colors={275,275,277,280},creates={260813,1,1},learn=275,name="SAF-T Tube",prof=202,reagents={{12359,1},{249726,1}},sources={{t="other"}}}
+R[1266927]={colors={275,275,285,295},creates={260814,1,1},learn=275,name="SAF-T Clever Dynamite",prof=202,reagents={{15992,2},{14047,3},{260813,1}},sources={{t="other"}}}
+R[1266928]={colors={285,285,287,290},creates={260815,1,1},learn=285,name="EZ-Thro Shell",prof=202,reagents={{12359,2},{249429,1}},sources={{t="other"}}}
+R[1266929]={colors={285,285,295,305},creates={260816,1,1},learn=285,name="EZ-Thro Thorium Grenade",prof=202,reagents={{15994,1},{12359,3},{15992,3},{14047,3},{260815,1}},sources={{t="other"}}}
+R[1266930]={colors={320,320,330,340},creates={260817,1,1},learn=320,name="EZ-Thro Dark Bomb",prof=202,reagents={{15994,2},{11371,1},{15992,3},{14047,3},{260815,1}},sources={{t="other"}}}
+R[1266931]={colors={320,320,330,340},creates={260818,1,1},learn=320,name="EZ-Thro Mana Bomb",prof=202,reagents={{16006,1},{12359,3},{14047,1},{260815,1}},sources={{t="other"}}}
+R[1266932]={colors={320,320,330,340},creates={260819,1,1},learn=320,name="EZ-Thro Field Transporter: Gadgetzan",prof=202,reagents={{18986,1},{260815,1}},sources={{t="other"}}}
+R[1266933]={colors={320,320,330,340},creates={260820,1,1},learn=320,name="SAF-T Emergency Ripper: Everlook",prof=202,reagents={{18984,1},{260813,2}},sources={{t="other"}}}
+R[1266934]={colors={320,320,330,340},creates={260821,1,1},learn=320,name="EZ and SAF Field Transporter: Mt. Hyjal",prof=202,reagents={{260823,1},{260815,1},{260813,1}},sources={{t="other"}}}
+R[1266935]={colors={320,320,330,340},creates={260822,1,1},learn=320,name="Ultrasafe Rechargeable Battery",prof=202,reagents={{249410,2},{249426,1},{249431,1},{12359,3},{3860,1},{248822,1}},sources={{t="other"}}}
+R[1266936]={colors={320,320,330,340},creates={260823,1,1},learn=320,name="Dimensional Transporter - Mt. Hyjal",prof=202,reagents={{3860,10},{18631,1},{7075,4},{7082,4},{251290,2}},sources={{cost=100000,item=264233,npcs={266901},t="vendor"}}}
+R[1266937]={colors={320,320,330,340},creates={260824,1,1},learn=320,name="Gnomish Poultryizer",prof=202,reagents={{16204,10},{14344,2},{249726,2},{251290,2}},sources={{t="other"}}}
+R[1266938]={colors={320,320,330,340},creates={260825,1,1},learn=320,name="Ultralight Goblin Glider",prof=202,reagents={{249431,2},{249726,2},{249429,8},{12359,8}},sources={{t="other"}}}
+R[1266939]={colors={320,320,330,340},creates={260826,1,1},learn=320,name="Gnomish Weather Machine",prof=202,reagents={{7076,2},{7078,2},{7082,2},{7080,2},{248822,2}},sources={{t="other"}}}
+R[1266940]={colors={320,320,330,340},creates={260827,1,1},learn=320,name="Stealthman 52",prof=202,reagents={{7082,6},{16204,6},{248820,2},{251290,2},{248823,4}},sources={{t="other"}}}
+R[1266941]={colors={320,320,330,340},creates={260828,1,1},learn=320,name="SAF-T Nitro Boosts",prof=202,reagents={{238787,1},{260813,2}},sources={{t="other"}}}
+R[1266942]={colors={320,320,330,340},creates={260829,1,1},learn=320,name="EZ-Thro Magnetic Displacer",prof=202,reagents={{238788,1},{260815,1}},sources={{t="other"}}}
+R[1266943]={colors={320,320,330,340},creates={260830,1,1},learn=320,name="SAF-T Teleport",prof=202,reagents={{238786,1},{260813,2}},sources={{t="other"}}}
+R[1270632]={colors={80,80,82,85},learn=80,name="Critter Cookie",prof=185,reagents={{10284,5}},sources={{t="other"}}}
+R[1270633]={colors={20,20,32,45},creates={263509,1,1},learn=20,name="Skywall Souffle",prof=185,reagents={{6889,2},{10284,1}},sources={{item=263511,t="quest"}}}
+R[1270635]={colors={30,30,42,55},creates={263512,1,1},learn=30,name="Pincer Bites",prof=185,reagents={{2675,1},{10284,1}},sources={{item=263513,t="quest"}}}
+R[1283400]={colors={90,90,115,140},creates={279961,1,1},learn=90,name="Journeyman Campfire",prof=185,reagents={{11291,1}},sources={{t="other"}}}
+R[1286792]={colors={190,190,197,205},creates={269900,1,1},learn=190,name="Centaur Banner Deployment Device",prof=202,reagents={{4387,6},{4389,2},{10558,4},{4234,30}},sources={{t="other"}}}
+R[1286796]={colors={150,150,155,160},creates={269902,1,1},learn=150,name="Hoof-Shaped Foot Pedal",prof=202,reagents={{4387,3},{4382,2},{4389,1},{10558,1},{4234,4}},sources={{t="other"}}}
+R[1291341]={colors={200,200,212,225},creates={279974,1,1},learn=200,name="Expert Campfire",prof=185,reagents={{272941,1}},sources={{t="other"}}}
+R[1292920]={colors={320,320,325,330},learn=320,name="Grovekeeper Trousers",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292921]={colors={320,320,325,330},learn=320,name="Grovekeeper Grips",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292923]={colors={320,320,325,330},learn=320,name="Grovekeeper Shoulderpads",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292924]={colors={320,320,325,330},learn=320,name="Grovekeeper Stompers",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292925]={colors={320,320,325,330},learn=320,name="Grovekeeper Kilt",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292926]={colors={320,320,325,330},learn=320,name="Grovekeeper Mitts",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292927]={colors={320,320,325,330},learn=320,name="Grovekeeper Mantle",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292928]={colors={320,320,325,330},learn=320,name="Grovekeeper Sandals",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292929]={colors={320,320,325,330},learn=320,name="Grovekeeper Legguards",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292930]={colors={320,320,325,330},learn=320,name="Grovekeeper Handguards",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292931]={colors={320,320,325,330},learn=320,name="Grovekeeper Pauldrons",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292932]={colors={320,320,325,330},learn=320,name="Grovekeeper Boots",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292933]={colors={320,320,325,330},learn=320,name="Grovekeeper Leggings",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292934]={colors={320,320,325,330},learn=320,name="Grovekeeper Gauntlets",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292935]={colors={320,320,325,330},learn=320,name="Grovekeeper Spaulders",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292936]={colors={320,320,325,330},learn=320,name="Grovekeeper Treads",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292937]={colors={320,320,325,330},learn=320,name="Wildstalker's Legguards",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292938]={colors={320,320,325,330},learn=320,name="Wildstalker's Gauntlets",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292939]={colors={320,320,325,330},learn=320,name="Wildstalker's Spaulders",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292940]={colors={320,320,325,330},learn=320,name="Wildstalker's Greaves",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292941]={colors={320,320,325,330},learn=320,name="Manaflare Pants",prof=197,reagents={{274030,5},{14342,3},{14048,22},{14341,8}},sources={{t="other"}}}
+R[1292942]={colors={320,320,325,330},learn=320,name="Manaflare Gloves",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292943]={colors={320,320,325,330},learn=320,name="Manaflare Mantle",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292944]={colors={320,320,325,330},learn=320,name="Manaflare Boots",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292945]={colors={320,320,325,330},learn=320,name="Justice Leggings",prof=164,reagents={{274030,5},{12360,4},{251291,18},{18567,1}},sources={{t="other"}}}
+R[1292946]={colors={320,320,325,330},learn=320,name="Justice Gauntlets",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292947]={colors={320,320,325,330},learn=320,name="Justice Spaulders",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292948]={colors={320,320,325,330},learn=320,name="Justice Greaves",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292949]={colors={320,320,325,330},learn=320,name="Justice Legplates",prof=164,reagents={{274030,5},{12360,4},{251291,18},{18567,1}},sources={{t="other"}}}
+R[1292950]={colors={320,320,325,330},learn=320,name="Justice Gloves",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292951]={colors={320,320,325,330},learn=320,name="Justice Epaulets",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292952]={colors={320,320,325,330},learn=320,name="Justice Treads",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292953]={colors={320,320,325,330},learn=320,name="Justice Legguards",prof=164,reagents={{274030,5},{12360,4},{251291,18},{18567,1}},sources={{t="other"}}}
+R[1292954]={colors={320,320,325,330},learn=320,name="Justice Handguards",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292955]={colors={320,320,325,330},learn=320,name="Justice Pauldrons",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292956]={colors={320,320,325,330},learn=320,name="Justice Sabatons",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292957]={colors={320,320,325,330},learn=320,name="Pants of Conviction",prof=197,reagents={{274030,5},{14342,3},{14048,22},{14341,8}},sources={{t="other"}}}
+R[1292958]={colors={320,320,325,330},learn=320,name="Gloves of Conviction",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292959]={colors={320,320,325,330},learn=320,name="Mantle of Conviction",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292960]={colors={320,320,325,330},learn=320,name="Treads of Conviction",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292961]={colors={320,320,325,330},learn=320,name="Leggings of Conviction",prof=197,reagents={{274030,5},{14342,3},{14048,22},{14341,8}},sources={{t="other"}}}
+R[1292962]={colors={320,320,325,330},learn=320,name="Handguards of Conviction",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292963]={colors={320,320,325,330},learn=320,name="Pauldrons of Conviction",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292964]={colors={320,320,325,330},learn=320,name="Boots of Conviction",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292965]={colors={320,320,325,330},learn=320,name="Grimstitch Pants",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292966]={colors={320,320,325,330},learn=320,name="Grimstitch Gloves",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292967]={colors={320,320,325,330},learn=320,name="Grimstitch Spaulders",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292968]={colors={320,320,325,330},learn=320,name="Grimstitch Boots",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292969]={colors={320,320,325,330},learn=320,name="Spiritcaller Kilt",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292970]={colors={320,320,325,330},learn=320,name="Spiritcaller Gloves",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292971]={colors={320,320,325,330},learn=320,name="Spiritcaller Mantle",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292972]={colors={320,320,325,330},learn=320,name="Spiritcaller Boots",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292973]={colors={320,320,325,330},learn=320,name="Spiritcaller Pants",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1292974]={colors={320,320,325,330},learn=320,name="Spiritcaller Gauntlets",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292975]={colors={320,320,325,330},learn=320,name="Spiritcaller Epaulets",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292976]={colors={320,320,325,330},learn=320,name="Spiritcaller Greaves",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1292977]={colors={320,320,325,330},learn=320,name="Demonheart Leggings",prof=197,reagents={{274030,5},{14342,3},{14048,22},{14341,8}},sources={{t="other"}}}
+R[1292978]={colors={320,320,325,330},learn=320,name="Demonheart Gloves",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292979]={colors={320,320,325,330},learn=320,name="Demonheart Spaulders",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292980]={colors={320,320,325,330},learn=320,name="Demonheart Boots",prof=197,reagents={{274030,3},{14342,2},{14048,16},{14341,8}},sources={{t="other"}}}
+R[1292981]={colors={320,320,325,330},learn=320,name="Legplates of Glory",prof=164,reagents={{274030,5},{12360,4},{251291,18},{18567,1}},sources={{t="other"}}}
+R[1292982]={colors={320,320,325,330},learn=320,name="Gauntlets of Glory",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292983]={colors={320,320,325,330},learn=320,name="Shoulders of Glory",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292984]={colors={320,320,325,330},learn=320,name="Greaves of Glory",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292985]={colors={320,320,325,330},learn=320,name="Legguards of Glory",prof=164,reagents={{274030,5},{12360,4},{251291,18},{18567,1}},sources={{t="other"}}}
+R[1292986]={colors={320,320,325,330},learn=320,name="Handguards of Glory",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292987]={colors={320,320,325,330},learn=320,name="Pauldrons of Glory",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1292988]={colors={320,320,325,330},learn=320,name="Sabatons of Glory",prof=164,reagents={{274030,3},{12360,2},{251291,12},{18567,1}},sources={{t="other"}}}
+R[1293088]={colors={125,125,135,145},learn=125,name="9-60 Battery Pack",prof=202,reagents={{249409,1},{249391,1},{3575,1}},sources={{t="other"}}}
+R[1293559]={colors={320,320,325,330},creates={274273,1,1},learn=320,name="Flask of Natural Accuracy",prof=171,reagents={{248822,1},{248821,12},{13464,9},{18256,1}},sources={{t="other"}}}
+R[1293560]={colors={320,320,325,330},creates={274274,1,1},learn=320,name="Flask of Natural Aggression",prof=171,reagents={{248822,1},{248821,18},{13465,6},{18256,1}},sources={{t="other"}}}
+R[1293561]={colors={320,320,325,330},creates={274275,1,1},learn=320,name="Flask of Natural Precision",prof=171,reagents={{248822,1},{248823,12},{13463,9},{18256,1}},sources={{t="other"}}}
+R[1293562]={colors={320,320,325,330},creates={274276,1,1},learn=320,name="Flask of Natural Swiftness",prof=171,reagents={{248822,1},{248823,18},{13467,6},{18256,1}},sources={{t="other"}}}
+R[1293849]={colors={310,310,315,320},creates={274387,200,200},learn=310,name="Swiftfeather Arrow",prof=202,reagents={{251291,8},{17056,5},{7069,1}},sources={{t="other"}}}
+R[1293850]={colors={310,310,315,320},creates={274388,200,200},learn=310,name="Swiftstrike Shot",prof=202,reagents={{251291,8},{12365,8},{7067,1}},sources={{t="other"}}}
+R[1294014]={colors={280,280,282,285},creates={267341,1,1},learn=280,name="Sweetpaw Jam",prof=185,reagents={{249796,3},{3713,1}},sources={{t="other"}}}
+R[1294054]={colors={285,285,287,290},learn=285,name="Enchant Gloves - Lotus Claw",prof=333,reagents={{248822,1},{14343,2},{16204,12},{16202,4}},sources={{t="other"}}}
+R[1295805]={colors={220,220,230,240},creates={274971,1,1},learn=220,name="Briny Seafood Stew",prof=185,reagents={{730,2},{12206,1},{2692,1}},sources={{t="other"}}}
+R[1295834]={colors={200,200,215,230},creates={274976,1,1},learn=200,name="Plain Ol' Paletusk",prof=185,reagents={{769,2},{2678,1}},sources={{cost=2000,item=274977,npcs={259860},t="vendor"}}}
+R[1297120]={colors={290,290,292,295},creates={275604,1,1},learn=290,name="Venomspew Gloves",prof=197,reagents={{14048,4},{14343,1},{7082,3},{14341,6}},sources={{t="other"}}}
+R[1297121]={colors={295,295,297,300},creates={275605,1,1},learn=295,name="Venomspew Cord",prof=197,reagents={{14048,6},{14343,1},{7082,3},{14341,6}},sources={{t="other"}}}
+R[1297122]={colors={295,295,297,300},creates={275606,1,1},learn=295,name="Venomspew Footpads",prof=197,reagents={{14048,5},{14343,1},{7082,3},{14341,6}},sources={{t="other"}}}
+R[1297123]={colors={290,290,292,295},creates={275607,1,1},learn=290,name="Swarmtender's Gloves",prof=197,reagents={{14048,4},{14343,1},{7080,3},{14341,6}},sources={{t="other"}}}
+R[1297124]={colors={295,295,297,300},creates={275608,1,1},learn=295,name="Swarmtender's Cord",prof=197,reagents={{14048,6},{14343,1},{7080,3},{14341,6}},sources={{t="other"}}}
+R[1297125]={colors={295,295,297,300},creates={275609,1,1},learn=295,name="Swarmtender's Footpads",prof=197,reagents={{14048,5},{14343,1},{7080,3},{14341,6}},sources={{t="other"}}}
+R[1297126]={colors={290,290,292,295},creates={275610,1,1},learn=290,name="Bileblister Claws",prof=165,reagents={{8170,12},{12810,3},{7082,3},{14341,6}},sources={{t="other"}}}
+R[1297127]={colors={295,295,297,300},creates={275611,1,1},learn=295,name="Bileblister Girdle",prof=165,reagents={{8170,18},{12810,3},{7082,3},{14341,6}},sources={{t="other"}}}
+R[1297128]={colors={295,295,297,300},creates={275612,1,1},learn=295,name="Bileblister Boots",prof=165,reagents={{8170,15},{12810,3},{7082,3},{14341,6}},sources={{t="other"}}}
+R[1297129]={colors={290,290,292,295},creates={275613,1,1},learn=290,name="Hivethrasher's Claws",prof=165,reagents={{8170,12},{12810,3},{7076,3},{14341,6}},sources={{t="other"}}}
+R[1297130]={colors={295,295,297,300},creates={275614,1,1},learn=295,name="Hivethrasher's Girdle",prof=165,reagents={{8170,18},{12810,3},{7076,3},{14341,6}},sources={{t="other"}}}
+R[1297131]={colors={295,295,297,300},creates={275615,1,1},learn=295,name="Hivethrasher's Boots",prof=165,reagents={{8170,15},{12810,3},{7076,3},{14341,6}},sources={{t="other"}}}
+R[1297132]={colors={290,290,292,295},creates={275616,1,1},learn=290,name="Scalegut Clenchers",prof=165,reagents={{15408,5},{12810,3},{7078,3},{14341,6}},sources={{t="other"}}}
+R[1297133]={colors={295,295,297,300},creates={275617,1,1},learn=295,name="Scalegut Belt",prof=165,reagents={{15408,7},{12810,3},{7078,3},{14341,6}},sources={{t="other"}}}
+R[1297134]={colors={295,295,297,300},creates={275618,1,1},learn=295,name="Scalegut Treaders",prof=165,reagents={{15408,6},{12810,3},{7078,3},{14341,6}},sources={{t="other"}}}
+R[1297135]={colors={290,290,292,295},creates={275619,1,1},learn=290,name="Broodwatcher's Clenchers",prof=165,reagents={{15408,5},{12810,3},{7080,3},{14341,6}},sources={{t="other"}}}
+R[1297136]={colors={295,295,297,300},creates={275620,1,1},learn=295,name="Broodwatcher's Belt",prof=165,reagents={{15408,7},{12810,3},{7080,3},{14341,6}},sources={{t="other"}}}
+R[1297137]={colors={295,295,297,300},creates={275621,1,1},learn=295,name="Broodwatcher's Treaders",prof=165,reagents={{15408,6},{12810,3},{7080,3},{14341,6}},sources={{t="other"}}}
+R[1297138]={colors={290,290,292,295},creates={275622,1,1},learn=290,name="Goregasher Grips",prof=164,reagents={{12359,7},{12655,5},{7078,3},{18567,1}},sources={{t="other"}}}
+R[1297139]={colors={295,295,297,300},creates={275623,1,1},learn=295,name="Goregasher Support",prof=164,reagents={{12359,11},{12655,5},{7078,3},{18567,1}},sources={{t="other"}}}
+R[1297140]={colors={295,295,297,300},creates={275624,1,1},learn=295,name="Goregasher Stompers",prof=164,reagents={{12359,9},{12655,5},{7078,3},{18567,1}},sources={{t="other"}}}
+R[1297141]={colors={290,290,292,295},creates={275625,1,1},learn=290,name="Clutchlord's Grips",prof=164,reagents={{12359,7},{12655,5},{7076,3},{18567,1}},sources={{t="other"}}}
+R[1297142]={colors={295,295,297,300},creates={275626,1,1},learn=295,name="Clutchlord's Support",prof=164,reagents={{12359,11},{12655,5},{7076,3},{18567,1}},sources={{t="other"}}}
+R[1297143]={colors={295,295,297,300},creates={275627,1,1},learn=295,name="Clutchlord's Stompers",prof=164,reagents={{12359,9},{12655,5},{7076,3},{18567,1}},sources={{t="other"}}}
+R[1299914]={colors={320,320,325,330},creates={276538,1,1},learn=320,name="Spiritcaller Leggings",prof=165,reagents={{274030,5},{15407,4},{248825,24},{14341,8}},sources={{t="other"}}}
+R[1299915]={colors={320,320,325,330},creates={276539,1,1},learn=320,name="Spiritcaller Grips",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1299916]={colors={320,320,325,330},creates={276540,1,1},learn=320,name="Spiritcaller Spaulders",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1299917]={colors={320,320,325,330},creates={276541,1,1},learn=320,name="Spiritcaller Treads",prof=165,reagents={{274030,3},{15407,2},{248825,18},{14341,8}},sources={{t="other"}}}
+R[1301421]={colors={65,65,67,70},creates={276992,1,1},learn=65,name="Cloudy Skyforged Chainmail",prof=164,reagents={{2840,8},{2880,1}},sources={{t="other"}}}
+R[1301422]={colors={55,55,57,60},creates={276993,1,1},learn=55,name="Cloudy Skyforged Wristguards",prof=164,reagents={{2840,5}},sources={{t="other"}}}
+R[1301423]={colors={60,60,62,65},creates={276994,1,1},learn=60,name="Cloudy Skyforged Gauntlets",prof=164,reagents={{2840,7}},sources={{t="other"}}}
+R[1301424]={colors={55,55,57,60},creates={276995,1,1},learn=55,name="Cloudy Skyforged Chain",prof=164,reagents={{2840,6}},sources={{t="other"}}}
+R[1301425]={colors={65,65,67,70},creates={276996,1,1},learn=65,name="Cloudy Skyforged Legguards",prof=164,reagents={{2840,8},{2880,1}},sources={{t="other"}}}
+R[1301426]={colors={60,60,62,65},creates={276997,1,1},learn=60,name="Cloudy Skyforged Greaves",prof=164,reagents={{2840,7}},sources={{t="other"}}}
+R[1301427]={colors={65,65,67,70},creates={276998,1,1},learn=65,name="Cloudy Gustwoven Harness",prof=165,reagents={{2318,7},{4231,1},{2320,2}},sources={{t="other"}}}
+R[1301428]={colors={55,55,57,60},creates={276999,1,1},learn=55,name="Cloudy Gustwoven Bracers",prof=165,reagents={{2318,4},{2320,3}},sources={{t="other"}}}
+R[1301429]={colors={60,60,62,65},creates={277000,1,1},learn=60,name="Cloudy Gustwoven Gloves",prof=165,reagents={{2318,6},{2320,4}},sources={{t="other"}}}
+R[1301430]={colors={55,55,57,60},creates={277001,1,1},learn=55,name="Cloudy Gustwoven Belt",prof=165,reagents={{2318,5},{2320,3}},sources={{t="other"}}}
+R[1301431]={colors={65,65,67,70},creates={277002,1,1},learn=65,name="Cloudy Gustwoven Trousers",prof=165,reagents={{2318,7},{4321,1},{2320,2}},sources={{t="other"}}}
+R[1301432]={colors={60,60,62,65},creates={277003,1,1},learn=60,name="Cloudy Gustwoven Boots",prof=165,reagents={{2318,6},{2320,3}},sources={{t="other"}}}
+R[1301433]={colors={65,65,67,70},creates={277004,1,1},learn=65,name="Cloudy Windraveled Jerkin",prof=165,reagents={{2318,7},{4231,1},{2320,2}},sources={{t="other"}}}
+R[1301434]={colors={55,55,57,60},creates={277005,1,1},learn=55,name="Cloudy Windraveled Armguards",prof=165,reagents={{2318,4},{2320,3}},sources={{t="other"}}}
+R[1301435]={colors={60,60,62,65},creates={277006,1,1},learn=60,name="Cloudy Windraveled Mitts",prof=165,reagents={{2318,6},{2320,4}},sources={{t="other"}}}
+R[1301436]={colors={55,55,57,60},creates={277007,1,1},learn=55,name="Cloudy Windraveled Strap",prof=165,reagents={{2318,5},{2320,3}},sources={{t="other"}}}
+R[1301437]={colors={65,65,67,70},creates={277008,1,1},learn=65,name="Cloudy Windraveled Pants",prof=165,reagents={{2318,7},{4321,1},{2320,2}},sources={{t="other"}}}
+R[1301438]={colors={60,60,62,65},creates={277009,1,1},learn=60,name="Cloudy Windraveled Footwraps",prof=165,reagents={{2318,6},{2320,3}},sources={{t="other"}}}
+R[1301439]={colors={65,65,67,70},creates={277010,1,1},learn=65,name="Cloudy Stormsewn Vest",prof=197,reagents={{2996,5},{2320,2}},sources={{t="other"}}}
+R[1301440]={colors={55,55,57,60},creates={277011,1,1},learn=55,name="Cloudy Stormsewn Cuffs",prof=197,reagents={{2996,3},{2320,3}},sources={{t="other"}}}
+R[1301441]={colors={60,60,62,65},creates={277012,1,1},learn=60,name="Cloudy Stormsewn Handwraps",prof=197,reagents={{2996,4},{2320,4}},sources={{t="other"}}}
+R[1301442]={colors={55,55,57,60},creates={277013,1,1},learn=55,name="Cloudy Stormsewn Cord",prof=197,reagents={{2996,3},{2320,3}},sources={{t="other"}}}
+R[1301443]={colors={65,65,67,70},creates={277014,1,1},learn=65,name="Cloudy Stormsewn Leggings",prof=197,reagents={{2996,5},{2320,2}},sources={{t="other"}}}
+R[1301444]={colors={60,60,62,65},creates={277015,1,1},learn=60,name="Cloudy Stormsewn Shoes",prof=197,reagents={{2996,4},{2320,3}},sources={{t="other"}}}
+R[1301445]={colors={65,65,67,70},creates={277016,1,1},learn=65,name="Azure Skyforged Chainmail",prof=164,reagents={{2840,8},{2880,1}},sources={{t="other"}}}
+R[1301446]={colors={55,55,57,60},creates={277017,1,1},learn=55,name="Azure Skyforged Wristguards",prof=164,reagents={{2840,5}},sources={{t="other"}}}
+R[1301447]={colors={60,60,62,65},creates={277018,1,1},learn=60,name="Azure Skyforged Gauntlets",prof=164,reagents={{2840,7}},sources={{t="other"}}}
+R[1301448]={colors={55,55,57,60},creates={277019,1,1},learn=55,name="Azure Skyforged Chain",prof=164,reagents={{2840,6}},sources={{t="other"}}}
+R[1301449]={colors={65,65,67,70},creates={277020,1,1},learn=65,name="Azure Skyforged Legguards",prof=164,reagents={{2840,8},{2880,1}},sources={{t="other"}}}
+R[1301450]={colors={60,60,62,65},creates={277021,1,1},learn=60,name="Azure Skyforged Greaves",prof=164,reagents={{2840,7}},sources={{t="other"}}}
+R[1301451]={colors={65,65,67,70},creates={277022,1,1},learn=65,name="Azure Gustwoven Harness",prof=165,reagents={{2318,7},{4231,1},{2320,2}},sources={{t="other"}}}
+R[1301452]={colors={55,55,57,60},creates={277023,1,1},learn=55,name="Azure Gustwoven Bracers",prof=165,reagents={{2318,4},{2320,3}},sources={{t="other"}}}
+R[1301453]={colors={60,60,62,65},creates={277024,1,1},learn=60,name="Azure Gustwoven Gloves",prof=165,reagents={{2318,6},{2320,4}},sources={{t="other"}}}
+R[1301454]={colors={55,55,57,60},creates={277025,1,1},learn=55,name="Azure Gustwoven Belt",prof=165,reagents={{2318,5},{2320,3}},sources={{t="other"}}}
+R[1301455]={colors={65,65,67,70},creates={277026,1,1},learn=65,name="Azure Gustwoven Trousers",prof=165,reagents={{2318,7},{4321,1},{2320,2}},sources={{t="other"}}}
+R[1301456]={colors={60,60,62,65},creates={277027,1,1},learn=60,name="Azure Gustwoven Boots",prof=165,reagents={{2318,6},{2320,3}},sources={{t="other"}}}
+R[1301457]={colors={65,65,67,70},creates={277028,1,1},learn=65,name="Azure Windraveled Jerkin",prof=165,reagents={{2318,7},{4231,1},{2320,2}},sources={{t="other"}}}
+R[1301458]={colors={55,55,57,60},creates={277029,1,1},learn=55,name="Azure Windraveled Armguards",prof=165,reagents={{2318,4},{2320,3}},sources={{t="other"}}}
+R[1301459]={colors={60,60,62,65},creates={277030,1,1},learn=60,name="Azure Windraveled Mitts",prof=165,reagents={{2318,6},{2320,4}},sources={{t="other"}}}
+R[1301460]={colors={55,55,57,60},creates={277031,1,1},learn=55,name="Azure Windraveled Strap",prof=165,reagents={{2318,5},{2320,3}},sources={{t="other"}}}
+R[1301461]={colors={65,65,67,70},creates={277032,1,1},learn=65,name="Azure Windraveled Pants",prof=165,reagents={{2318,7},{4321,1},{2320,2}},sources={{t="other"}}}
+R[1301462]={colors={60,60,62,65},creates={277033,1,1},learn=60,name="Azure Windraveled Footwraps",prof=165,reagents={{2318,6},{2320,3}},sources={{t="other"}}}
+R[1301463]={colors={65,65,67,70},creates={277034,1,1},learn=65,name="Azure Stormsewn Vest",prof=197,reagents={{2996,5},{2320,2}},sources={{t="other"}}}
+R[1301464]={colors={55,55,57,60},creates={277035,1,1},learn=55,name="Azure Stormsewn Cuffs",prof=197,reagents={{2996,3},{2320,3}},sources={{t="other"}}}
+R[1301465]={colors={60,60,62,65},creates={277036,1,1},learn=60,name="Azure Stormsewn Handwraps",prof=197,reagents={{2996,4},{2320,4}},sources={{t="other"}}}
+R[1301466]={colors={55,55,57,60},creates={277037,1,1},learn=55,name="Azure Stormsewn Cord",prof=197,reagents={{2996,3},{2320,3}},sources={{t="other"}}}
+R[1301468]={colors={65,65,67,70},creates={277038,1,1},learn=65,name="Azure Stormsewn Leggings",prof=197,reagents={{2996,5},{2320,2}},sources={{t="other"}}}
+R[1301469]={colors={60,60,62,65},creates={277039,1,1},learn=60,name="Azure Stormsewn Shoes",prof=197,reagents={{2996,4},{2320,3}},sources={{t="other"}}}
+R[1301526]={colors={185,185,187,190},creates={277040,1,1},learn=185,name="Cloudy Skyforged Helm",prof=164,reagents={{3575,18},{3486,5},{5498,1}},sources={{cost=100000,item=276976,npcs={264078},standing=4,t="reputation"}}}
+R[1301527]={colors={185,185,187,190},creates={277041,1,1},learn=185,name="Cloudy Skyforged Pauldrons",prof=164,reagents={{3575,14},{3486,3},{5498,1}},sources={{cost=100000,item=276977,npcs={264078},standing=4,t="reputation"}}}
+R[1301528]={colors={185,185,187,190},creates={277042,1,1},learn=185,name="Cloudy Gustwoven Hood",prof=165,reagents={{4234,15},{4236,3},{8343,1},{2324,8}},sources={{cost=100000,item=276978,npcs={264078},standing=4,t="reputation"}}}
+R[1301529]={colors={185,185,187,190},creates={277043,1,1},learn=185,name="Cloudy Gustwoven Spaulders",prof=165,reagents={{4234,12},{4236,2},{8343,1},{2324,6}},sources={{cost=100000,item=276979,npcs={264078},standing=4,t="reputation"}}}
+R[1301530]={colors={185,185,187,190},creates={277044,1,1},learn=185,name="Cloudy Windraveled Cover",prof=165,reagents={{4234,15},{4236,3},{8343,1},{2324,8}},sources={{cost=100000,item=276980,npcs={264078},standing=4,t="reputation"}}}
+R[1301531]={colors={185,185,187,190},creates={277045,1,1},learn=185,name="Cloudy Windraveled Drapes",prof=165,reagents={{4234,12},{4236,2},{8343,1},{2324,6}},sources={{cost=100000,item=276981,npcs={264078},standing=4,t="reputation"}}}
+R[1301532]={colors={185,185,187,190},creates={277046,1,1},learn=185,name="Cloudy Stormsewn Cowl",prof=197,reagents={{4305,7},{11134,2},{8343,1},{2324,8}},sources={{cost=100000,item=276982,npcs={264078},standing=4,t="reputation"}}}
+R[1301533]={colors={185,185,187,190},creates={277047,1,1},learn=185,name="Cloudy Stormsewn Epaulets",prof=197,reagents={{4305,5},{11134,1},{8343,1},{2324,6}},sources={{cost=100000,item=276983,npcs={264078},standing=4,t="reputation"}}}
+R[1301534]={colors={185,185,187,190},creates={277048,1,1},learn=185,name="Azure Skyforged Helm",prof=164,reagents={{3575,18},{3486,5},{7909,1}},sources={{cost=100000,item=276984,npcs={32287},standing=4,t="reputation"}}}
+R[1301535]={colors={185,185,187,190},creates={277049,1,1},learn=185,name="Azure Skyforged Pauldrons",prof=164,reagents={{3575,14},{3486,3},{7909,1}},sources={{cost=100000,item=276985,npcs={32287},standing=4,t="reputation"}}}
+R[1301536]={colors={185,185,187,190},creates={277050,1,1},learn=185,name="Azure Gustwoven Hood",prof=165,reagents={{4234,15},{4236,3},{8343,1},{6260,4}},sources={{cost=100000,item=276986,npcs={32287},standing=4,t="reputation"}}}
+R[1301537]={colors={185,185,187,190},creates={277051,1,1},learn=185,name="Azure Gustwoven Spaulders",prof=165,reagents={{4234,12},{4236,2},{8343,1},{6260,3}},sources={{cost=100000,item=276987,npcs={32287},standing=4,t="reputation"}}}
+R[1301538]={colors={185,185,187,190},creates={277052,1,1},learn=185,name="Azure Windraveled Cover",prof=165,reagents={{4234,15},{4236,3},{8343,1},{6260,4}},sources={{cost=100000,item=276988,npcs={32287},standing=4,t="reputation"}}}
+R[1301539]={colors={185,185,187,190},creates={277053,1,1},learn=185,name="Azure Windraveled Drapes",prof=165,reagents={{4234,12},{4236,2},{8343,1},{6260,3}},sources={{cost=100000,item=276989,npcs={32287},standing=4,t="reputation"}}}
+R[1301540]={colors={185,185,187,190},creates={277054,1,1},learn=185,name="Azure Stormsewn Cowl",prof=197,reagents={{4305,7},{11134,2},{8343,1},{6260,4}},sources={{cost=100000,item=276990,npcs={32287},standing=4,t="reputation"}}}
+R[1301541]={colors={185,185,187,190},creates={277055,1,1},learn=185,name="Azure Stormsewn Epaulets",prof=197,reagents={{4305,5},{11134,1},{8343,1},{6260,3}},sources={{cost=100000,item=276991,npcs={32287},standing=4,t="reputation"}}}
+R[1302161]={colors={65,65,72,80},creates={277132,1,1},learn=65,name="Harvester Override Signalcaster",prof=202,reagents={{255007,4},{4363,2},{4405,1}},sources={{item=277470,t="quest"}}}
+R[1302598]={colors={60,60,65,70},creates={277672,1,1},learn=60,name="Rough Copper Chain Boots",prof=164,reagents={{2840,9}},sources={{item=277673,t="quest"}}}
+R[1302604]={colors={40,40,45,50},creates={277715,1,1},learn=40,name="Light Leather Reagent Bag",prof=165,reagents={{2318,8},{4231,1},{2320,3}},sources={{cost=150,item=277716,npcs={4225},t="vendor"},{item=277716,t="quest"}}}
+R[1306520]={colors={310,310,317,325},creates={279246,1,1},learn=310,name="Torch of Light",prof=333,reagents={{274030,2},{20725,1},{14344,6},{16202,5}},sources={{t="other"}}}
+R[1306521]={colors={310,310,317,325},creates={279247,1,1},learn=310,name="Steadfast Libram",prof=333,reagents={{274030,1},{20725,1},{16203,2},{16204,12}},sources={{t="other"}}}
+R[1306522]={colors={310,310,317,325},creates={279248,1,1},learn=310,name="Libram of Infusion",prof=333,reagents={{274030,1},{20725,1},{16203,2},{16204,12}},sources={{t="other"}}}
+R[1306523]={colors={310,310,317,325},creates={279249,1,1},learn=310,name="Totem of Urgency",prof=333,reagents={{274030,1},{20725,1},{16203,2},{16204,12}},sources={{t="other"}}}
+R[1306524]={colors={310,310,317,325},creates={279250,1,1},learn=310,name="Idol of Swiftness",prof=333,reagents={{274030,1},{20725,1},{16203,2},{16204,12}},sources={{t="other"}}}
+R[1306525]={colors={310,310,317,325},creates={279251,1,1},learn=310,name="Idol of the Ursine Twins",prof=333,reagents={{274030,1},{20725,1},{16203,2},{16204,12}},sources={{t="other"}}}
+R[1306526]={colors={310,310,317,325},creates={279252,1,1},learn=310,name="Elderwild Waistcord",prof=165,reagents={{274030,2},{248824,1},{248825,12}},sources={{t="other"}}}
+R[1306527]={colors={310,310,317,325},creates={279253,1,1},learn=310,name="Outlaw's Collar",prof=165,reagents={{274030,3},{248824,2},{248825,22}},sources={{t="other"}}}
+R[1306528]={colors={310,310,317,325},creates={279254,1,1},learn=310,name="Elderwild Pants",prof=165,reagents={{274030,3},{248824,2},{248825,18}},sources={{t="other"}}}
+R[1306529]={colors={310,310,317,325},creates={279255,1,1},learn=310,name="Eternity Pauldrons",prof=165,reagents={{274030,2},{248824,1},{248825,12}},sources={{t="other"}}}
+R[1306530]={colors={310,310,317,325},creates={279256,1,1},learn=310,name="Tranquil Wristguards",prof=165,reagents={{274030,1},{248824,1},{248825,10}},sources={{t="other"}}}
+R[1306531]={colors={310,310,317,325},creates={279257,1,1},learn=310,name="Mourning Handguards",prof=165,reagents={{274030,2},{248824,1},{248825,12}},sources={{t="other"}}}
+R[1306532]={colors={310,310,317,325},creates={279258,1,1},learn=310,name="Wild Leather Armor Kit",prof=165,reagents={{248825,22},{14341,3}},sources={{t="other"}}}
+R[1306533]={colors={310,310,317,325},creates={279259,1,1},learn=310,name="Ironwood Blade",prof=164,reagents={{274030,2},{251290,1},{251291,14}},sources={{t="other"}}}
+R[1306534]={colors={310,310,317,325},creates={279260,1,1},learn=310,name="Forest Defender's Axe",prof=164,reagents={{274030,4},{251290,1},{251291,20}},sources={{t="other"}}}
+R[1306535]={colors={310,310,317,325},creates={279261,1,1},learn=310,name="Greenhammer",prof=164,reagents={{274030,2},{251290,1},{251291,16}},sources={{t="other"}}}
+R[1306536]={colors={310,310,317,325},creates={279262,1,1},learn=310,name="Evergreen Shield",prof=164,reagents={{274030,2},{251290,1},{251291,10}},sources={{t="other"}}}
+R[1306537]={colors={310,310,317,325},creates={279263,1,1},learn=310,name="Depleted Thorium Sabatons",prof=164,reagents={{274030,2},{251290,1},{251291,12}},sources={{t="other"}}}
+R[1306538]={colors={310,310,317,325},creates={279264,1,1},learn=310,name="Heavy Thorium Gauntlets",prof=164,reagents={{274030,2},{251290,1},{251291,14}},sources={{t="other"}}}
+R[1306539]={colors={310,310,317,325},creates={279265,1,1},learn=310,name="Azerothium Legplates",prof=164,reagents={{274030,3},{251290,1},{251291,18}},sources={{t="other"}}}
+R[1306540]={colors={310,310,317,325},creates={279266,1,1},learn=310,name="Robes of Fiery Devastation",prof=197,reagents={{274030,3},{14342,3},{14048,9}},sources={{t="other"}}}
+R[1306541]={colors={310,310,317,325},creates={279267,1,1},learn=310,name="Mana-infused Cord",prof=197,reagents={{274030,2},{14342,2},{14048,7}},sources={{t="other"}}}
+R[1306542]={colors={310,310,317,325},creates={279268,1,1},learn=310,name="Rime-encrusted Boots",prof=197,reagents={{274030,2},{14342,2},{14048,7}},sources={{t="other"}}}
+R[1306543]={colors={310,310,317,325},creates={279269,1,1},learn=310,name="Fel Cape",prof=197,reagents={{274030,1},{14342,1},{14048,5}},sources={{t="other"}}}
+R[1306544]={colors={310,310,317,325},creates={279270,1,1},learn=310,name="Cloak of Earth and Sky",prof=197,reagents={{274030,1},{14342,1},{14048,5}},sources={{t="other"}}}
+R[1306545]={colors={310,310,317,325},creates={279271,1,1},learn=310,name="Felblood Soul Bag",prof=197,reagents={{14256,8},{14048,6}},sources={{t="other"}}}
+R[1306546]={colors={310,310,317,325},creates={279272,1,1},learn=310,name="SAF-T Ultra Precision Scope",prof=202,reagents={{251290,1},{251291,12}},sources={{t="other"}}}
+end)()
+;(function()
+R[1306547]={colors={310,310,317,325},creates={279273,1,1},learn=310,name="Hyper Deluxe Sniper Rifle Mk XVII",prof=202,reagents={{274030,4},{251290,2},{251291,10},{12800,1}},sources={{t="other"}}}
+R[1308178]={colors={180,180,182,185},creates={280306,1,1},learn=180,name="Whimsical Waistwrap",prof=202,reagents={{4382,2},{4375,1},{4305,2}},sources={{t="other"}}}
+R[1308179]={colors={180,180,182,185},creates={280307,1,1},learn=180,name="Gizmo Girdle",prof=202,reagents={{4375,2},{4382,1},{2319,4}},sources={{t="other"}}}
+R[1308180]={colors={180,180,182,185},creates={280308,1,1},learn=180,name="Clanking Cord",prof=202,reagents={{4371,2},{4363,1},{2319,4}},sources={{t="other"}}}
+R[1308182]={colors={180,180,182,185},learn=180,name="Serrated Strap",prof=202,reagents={{4363,2},{4371,1},{3575,1}},sources={{t="other"}}}
+R[1308183]={colors={205,205,207,210},creates={280310,1,1},learn=205,name="Floppy Goggles",prof=202,reagents={{5507,1},{4389,1},{4339,4}},sources={{t="other"}}}
+R[1308184]={colors={205,205,207,210},creates={280311,1,1},learn=205,name="Bent Goggles",prof=202,reagents={{5507,1},{4389,1},{4234,8}},sources={{t="other"}}}
+R[1308185]={colors={205,205,207,210},creates={280312,1,1},learn=205,name="Stuckbutton Goggles",prof=202,reagents={{5507,1},{4389,1},{4234,8}},sources={{t="other"}}}
+R[1308186]={colors={205,205,207,210},creates={280313,1,1},learn=205,name="Dented Goggles",prof=202,reagents={{5507,1},{4389,1},{3860,2}},sources={{t="other"}}}
+R[1317270]={colors={280,280,290,300},creates={284869,3,3},learn=280,name="Unsanctified Grenade",prof=202,reagents={{18631,1},{12655,2},{15992,3},{14047,2}},sources={{t="other"}}}
+R[1317279]={colors={275,275,282,290},creates={251290,1,1},learn=275,name="Transmute: Legionite",prof=171,reagents={{251291,1},{248819,1}},sources={{t="other"}}}
+R[1317958]={colors={90,90,92,95},creates={285275,1,1},learn=90,name="Satchel of Copper Bombs",prof=202,reagents={{4360,20},{2318,6},{4359,4}},sources={{t="other"}}}
+R[1317959]={colors={170,170,172,175},creates={285276,1,1},learn=170,name="Satchel of Bronze Bombs",prof=202,reagents={{4380,20},{2319,6},{4375,1}},sources={{t="other"}}}
+R[1317960]={colors={235,235,237,240},creates={285277,1,1},learn=235,name="Satchel of Iron Bombs",prof=202,reagents={{4394,20},{4304,6},{4389,1}},sources={{t="other"}}}
+R[1317961]={colors={290,290,292,295},creates={285278,1,1},learn=290,name="Satchel of Dark Iron Bombs",prof=202,reagents={{16005,20},{8170,6},{10560,1}},sources={{t="other"}}}
+R[1317962]={colors={115,115,117,120},creates={285279,1,1},learn=115,name="Cracked Blacksmith Hammer",prof=164,reagents={{2841,18},{2842,2},{818,1}},sources={{t="other"}}}
+R[1317963]={colors={200,200,202,205},creates={285280,1,1},learn=200,name="Mithril Blacksmith Hammer",prof=164,reagents={{3860,10},{3577,2},{7910,1}},sources={{t="other"}}}
+R[1317964]={colors={275,275,277,280},creates={285281,1,1},learn=275,name="Arcanite Blacksmith Hammer",prof=164,reagents={{11371,4},{12360,1},{12361,1}},sources={{t="other"}}}
+R[1319154]={colors={125,125,137,150},creates={21560,5,5},learn=125,name="Small Purple Rocket",prof=202,reagents={{4364,1},{2319,1}},sources={{t="other"}}}
+R[1319155]={colors={125,125,137,150},creates={21561,5,5},learn=125,name="Small White Rocket",prof=202,reagents={{4364,1},{2319,1}},sources={{t="other"}}}
+R[1319156]={colors={125,125,137,150},creates={21562,5,5},learn=125,name="Small Yellow Rocket",prof=202,reagents={{4364,1},{2319,1}},sources={{t="other"}}}
+R[1319157]={colors={175,175,187,200},creates={21591,5,5},learn=175,name="Large Purple Rocket",prof=202,reagents={{4377,1},{4234,1}},sources={{t="other"}}}
+R[1319158]={colors={175,175,187,200},creates={21593,5,5},learn=175,name="Large White Rocket",prof=202,reagents={{4377,1},{4234,1}},sources={{t="other"}}}
+R[1319159]={colors={175,175,187,200},creates={21595,5,5},learn=175,name="Large Yellow Rocket",prof=202,reagents={{4377,1},{4234,1}},sources={{t="other"}}}
+R[1319160]={colors={225,225,237,250},creates={21575,5,5},learn=225,name="Purple Rocket Cluster",prof=202,reagents={{10505,1},{4304,1}},sources={{t="other"}}}
+R[1319161]={colors={225,225,237,250},creates={21577,5,5},learn=225,name="White Rocket Cluster",prof=202,reagents={{10505,1},{4304,1}},sources={{t="other"}}}
+R[1319162]={colors={225,225,237,250},creates={21578,5,5},learn=225,name="Yellow Rocket Cluster",prof=202,reagents={{10505,1},{4304,1}},sources={{t="other"}}}
+R[1319163]={colors={275,275,280,285},creates={21717,5,5},learn=275,name="Large Purple Rocket Cluster",prof=202,reagents={{15992,1},{8170,1}},sources={{t="other"}}}
+R[1319164]={colors={275,275,280,285},creates={21719,5,5},learn=275,name="Large White Rocket Cluster",prof=202,reagents={{15992,1},{8170,1}},sources={{t="other"}}}
+R[1319165]={colors={275,275,280,285},creates={21720,5,5},learn=275,name="Large Yellow Rocket Cluster",prof=202,reagents={{15992,1},{8170,1}},sources={{t="other"}}}
+R[1319313]={colors={245,245,250,255},creates={286152,1,1},learn=245,name="Plated Armorfish",prof=185,reagents={{13890,1},{3713,1}},sources={{t="other"}}}
+end)()
+;(function()
+I[118]={ah=99,c=0,il=5,n="Minor Healing Potion",q=1,rl=1,sc=1,slot=0,vsell=5}
+I[159]={ah=895,c=0,il=5,n="Refreshing Spring Water",q=1,rl=1,sc=5,slot=0,vbuy=22,vsell=1}
+I[723]={ah=351,c=7,il=12,n="Goretusk Liver",q=1,sc=8,slot=0,vsell=15}
+I[724]={ah=43,c=0,il=15,n="Goretusk Liver Pie",q=1,rl=5,sc=5,slot=0,vsell=25}
+I[728]={ah=2200,c=9,il=15,n="Recipe: Westfall Stew",q=1,sc=5,slot=0,vbuy=200,vsell=50}
+I[729]={ah=148,c=7,il=10,n="Stringy Vulture Meat",q=1,sc=8,slot=0,vsell=17}
+I[730]={ah=16,c=7,il=11,n="Murloc Eye",q=1,sc=8,slot=0,vsell=16}
+I[731]={ah=54,c=7,il=12,n="Goretusk Snout",q=1,sc=8,slot=0,vsell=27}
+I[733]={ah=94,c=0,il=15,n="Westfall Stew",q=1,rl=5,sc=5,slot=0,vsell=100}
+I[765]={ah=28,c=7,il=5,n="Silverleaf",q=1,sc=9,slot=0,vsell=10}
+I[769]={ah=98,c=7,il=5,n="Chunk of Boar Meat",q=1,sc=8,slot=0,vsell=3}
+I[774]={ah=27,c=7,il=7,n="Malachite",q=2,sc=11,slot=0,vsell=15}
+I[783]={ah=82,c=7,il=10,n="Light Hide",q=1,sc=6,slot=0,vsell=50}
+I[785]={ah=34,c=7,il=10,n="Mageroyal",q=1,rl=4,sc=9,slot=0,vsell=20}
+I[787]={ah=463,c=0,il=10,n="Slitherskin Mackerel",q=1,rl=1,sc=5,slot=0,vbuy=23,vsell=1}
+I[814]={ah=88,c=7,il=1,n="Flask of Oil",q=1,sc=1,slot=0,vsell=25}
+I[818]={ah=205,c=7,il=15,n="Tigerseye",q=2,sc=11,slot=0,vsell=100}
+I[858]={ah=42,c=0,il=13,n="Lesser Healing Potion",q=1,rl=3,sc=1,slot=0,vsell=25}
+I[929]={ah=319,c=0,il=22,n="Healing Potion",q=1,rl=12,sc=1,slot=0,vsell=75}
+I[1015]={ah=216,c=7,il=19,n="Lean Wolf Flank",q=1,sc=8,slot=0,vsell=24}
+I[1017]={ah=211,c=0,il=25,n="Seasoned Wolf Kabob",q=1,rl=15,sc=5,slot=0,vsell=100}
+I[1080]={ah=2474,c=7,il=15,n="Tough Condor Meat",q=1,sc=8,slot=0,vsell=78}
+I[1081]={ah=52,c=7,il=15,n="Crisp Spider Meat",q=1,sc=8,slot=0,vsell=50}
+I[1082]={ah=421,c=0,il=15,n="Redridge Goulash",q=1,rl=5,sc=5,slot=0,vsell=150}
+I[1179]={ah=68,c=0,il=15,n="Ice Cold Milk",q=1,rl=5,sc=5,slot=0,vbuy=111,vsell=6}
+I[1205]={ah=47,c=0,il=25,n="Melon Juice",q=1,rl=15,sc=5,slot=0,vbuy=444,vsell=25}
+I[1206]={ah=2270,c=7,il=25,n="Moss Agate",q=2,sc=11,slot=0,vsell=400}
+I[1210]={ah=285,c=7,il=20,n="Shadowgem",q=2,sc=11,slot=0,vsell=250}
+I[1251]={ah=73,c=0,il=1,n="Linen Bandage",q=1,sc=7,slot=0,vsell=10}
+I[1288]={ah=13790,c=7,il=1,n="Large Venom Sac",q=1,sc=11,slot=0,vsell=185}
+I[1468]={ah=114,c=7,il=16,n="Murloc Fin",q=1,sc=8,slot=0,vsell=28}
+I[1475]={ah=907,c=7,il=1,n="Small Venom Sac",q=1,sc=11,slot=0,vsell=82}
+I[1529]={ah=1783,c=7,de={{11083,0.5,2,2},{11137,0.3333,1,1},{11174,0.1667,2,2}},il=35,n="Jade",q=2,rl=30,sc=11,slot=0,vsell=700}
+I[1645]={ah=219,c=0,il=45,n="Moonberry Juice",q=1,rl=35,sc=5,slot=0,vbuy=1777,vsell=100}
+I[1705]={ah=1657,c=7,il=30,n="Lesser Moonstone",q=2,sc=11,slot=0,vsell=600}
+I[1708]={ah=104,c=0,il=35,n="Sweet Nectar",q=1,rl=25,sc=5,slot=0,vbuy=888,vsell=50}
+I[1710]={ah=811,c=0,il=31,n="Greater Healing Potion",q=1,rl=21,sc=1,slot=0,vsell=125}
+I[2251]={ah=115,c=7,il=25,n="Gooey Spider Leg",q=1,sc=8,slot=0,vsell=12}
+I[2289]={ah=1845,c=0,il=35,n="Scroll of Strength II",q=1,rl=25,sc=4,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=9},vsell=87}
+I[2300]={ah=1600,c=4,de={{10938,0.2211,1,2},{10940,0.7789,1,2}},il=12,n="Embossed Leather Vest",q=2,rl=7,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=62},vsell=192}
+I[2302]={ah=500,c=4,il=8,n="Handstitched Leather Boots",q=1,rl=3,sc=2,slot=8,stats={RESISTANCE0_NAME=31},vsell=29}
+I[2303]={ah=194,c=4,il=10,n="Handstitched Leather Pants",q=2,rl=5,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=48},vsell=71}
+I[2304]={ah=20,c=0,il=5,n="Light Armor Kit",q=1,rl=1,sc=6,slot=0,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=8},vsell=15}
+I[2307]={ah=175,c=4,il=18,n="Fine Leather Boots",q=2,rl=13,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=51},vsell=243}
+I[2308]={ah=2299,c=4,de={{10938,0.1716,1,2},{10940,0.8284,1,2}},il=15,n="Fine Leather Cloak",q=2,rl=10,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=14},vsell=267}
+I[2309]={ah=1591,c=4,de={{10938,0.16,1,2},{10940,0.84,1,2}},il=15,n="Embossed Leather Boots",q=2,rl=10,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=48},vsell=268}
+I[2310]={ah=267,c=4,il=13,n="Embossed Leather Cloak",q=2,rl=8,sc=-6,slot=16,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=12},vsell=112}
+I[2311]={ah=500,c=4,il=13,n="White Leather Jerkin",q=2,rl=8,sc=2,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=65},vsell=150}
+I[2312]={ah=1786,c=4,de={{10938,0.1667,1,2},{10940,0.8333,1,2}},il=15,n="Fine Leather Gloves",q=2,rl=10,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=43},vsell=181}
+I[2313]={ah=593,c=0,il=15,n="Medium Armor Kit",q=1,rl=5,sc=6,slot=0,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=16},vsell=200}
+I[2314]={ah=3243,c=4,il=24,n="Toughened Leather Armor",q=1,rl=19,sc=2,slot=5,stats={RESISTANCE0_NAME=80},vsell=743}
+I[2315]={ah=525,c=4,il=20,n="Dark Leather Boots",q=2,rl=15,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=5,RESISTANCE0_NAME=53},vsell=307}
+I[2316]={ah=3100,c=4,il=22,n="Dark Leather Cloak",q=2,rl=17,sc=-6,slot=16,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=18},vsell=408}
+I[2317]={ah=3491,c=4,de={{10939,0.2432,1,2},{10940,0.7297,2,3},{10978,0.027,1,1}},il=20,n="Dark Leather Tunic",q=2,rl=15,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=6,RESISTANCE0_NAME=78},vsell=689}
+I[2318]={ah=98,c=7,il=10,n="Light Leather",q=1,sc=6,slot=0,vsell=15}
+I[2319]={ah=196,c=7,il=20,n="Medium Leather",q=1,sc=6,slot=0,vsell=50}
+I[2320]={ah=139,c=7,il=5,n="Coarse Thread",q=1,sc=5,slot=0,vbuy=8,vsell=2}
+I[2321]={ah=300,c=7,il=20,n="Fine Thread",q=1,sc=5,slot=0,vbuy=88,vsell=25}
+I[2324]={ah=199,c=7,il=5,n="Bleach",q=1,sc=11,slot=0,vbuy=22,vsell=6}
+I[2325]={ah=2999,c=7,il=40,n="Black Dye",q=1,sc=11,slot=0,vbuy=888,vsell=250}
+I[2406]={ah=664,c=9,il=15,n="Pattern: Fine Leather Boots",q=2,sc=1,slot=0,vsell=25}
+I[2407]={ah=690,c=9,il=13,n="Pattern: White Leather Jerkin",q=2,sc=1,slot=0,vsell=162}
+I[2408]={ah=863,c=9,il=15,n="Pattern: Fine Leather Gloves",q=2,sc=1,slot=0,vsell=125}
+I[2409]={ah=1155,c=9,il=20,n="Pattern: Dark Leather Tunic",q=2,sc=1,slot=0,vsell=350}
+I[2447]={ah=44,c=7,il=5,n="Peacebloom",q=1,sc=9,slot=0,vsell=10}
+I[2449]={ah=94,c=7,il=5,n="Earthroot",q=1,rl=4,sc=9,slot=0,vsell=20}
+I[2450]={ah=366,c=7,il=15,n="Briarthorn",q=1,sc=9,slot=0,vsell=25}
+I[2452]={ah=4613,c=7,il=15,n="Swiftthistle",q=1,sc=9,slot=0,vsell=15}
+I[2453]={ah=299,c=7,il=20,n="Bruiseweed",q=1,sc=9,slot=0,vsell=25}
+I[2454]={ah=219,c=0,il=5,n="Elixir of Minor Strength",q=1,rl=1,sc=2,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=4},vsell=20}
+I[2455]={ah=28,c=0,il=15,n="Minor Mana Potion",q=1,rl=5,sc=1,slot=0,vsell=10}
+I[2456]={ah=591,c=0,il=15,n="Minor Rejuvenation Potion",q=1,rl=5,sc=1,slot=0,vsell=15}
+I[2457]={ah=2187,c=0,il=12,n="Elixir of Minor Agility",q=1,rl=2,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=4},vsell=15}
+I[2458]={ah=435,c=0,il=12,n="Elixir of Minor Fortitude",q=1,rl=2,sc=2,slot=0,vsell=15}
+I[2459]={ah=4800,c=0,il=15,n="Swiftness Potion",q=1,rl=5,sc=1,slot=0,vsell=25}
+I[2553]={ah=4099,c=9,il=12,n="Recipe: Elixir of Minor Agility",q=2,sc=6,slot=0,vsell=25}
+I[2555]={ah=21700,c=9,il=15,n="Recipe: Swiftness Potion",q=2,sc=6,slot=0,vsell=40}
+I[2568]={ah=144,c=4,il=8,n="Brown Linen Vest",q=1,rl=3,sc=1,slot=5,stats={RESISTANCE0_NAME=15},vsell=31}
+I[2569]={ah=1000,c=4,il=13,n="Linen Boots",q=2,rl=8,sc=1,slot=8,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=17},vsell=87}
+I[2570]={ah=1664,c=4,il=6,n="Linen Cloak",q=1,rl=1,sc=-6,slot=16,stats={RESISTANCE0_NAME=6},vsell=11}
+I[2572]={ah=1362,c=4,de={{10938,0.1844,1,2},{10940,0.8156,1,2}},il=10,n="Red Linen Robe",q=2,rl=5,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=1,RESISTANCE0_NAME=19},vsell=99}
+I[2575]={ah=798,c=4,il=10,n="Red Linen Shirt",q=1,rl=4,sc=-8,slot=4,vsell=25}
+I[2576]={ah=944,c=4,il=7,n="White Linen Shirt",q=1,sc=-8,slot=4,vsell=75}
+I[2577]={ah=1475,c=4,il=10,n="Blue Linen Shirt",q=1,sc=-8,slot=4,vsell=75}
+I[2578]={ah=1149,c=4,de={{10938,0.2299,1,2},{10940,0.7701,1,2}},il=14,n="Barbaric Linen Vest",q=2,rl=9,sc=1,slot=5,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=26},vsell=224}
+I[2579]={ah=2000,c=4,il=14,n="Green Linen Shirt",q=1,sc=-8,slot=4,vsell=37}
+I[2580]={ah=371,c=4,il=12,n="Reinforced Linen Cape",q=2,rl=7,sc=-6,slot=16,stats={RESISTANCE0_NAME=11},vsell=67}
+I[2581]={ah=28,c=0,il=1,n="Heavy Linen Bandage",q=1,sc=7,slot=0,vsell=20}
+I[2582]={ah=1111,c=4,il=17,n="Green Woolen Vest",q=2,rl=12,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=4,RESISTANCE0_NAME=30},vsell=216}
+I[2583]={ah=2249,c=4,de={{10939,0.2104,1,2},{10940,0.7315,2,3},{10978,0.0581,1,1}},il=19,n="Woolen Boots",q=2,rl=14,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=2,ITEM_MOD_SPIRIT_SHORT=2,RESISTANCE0_NAME=22},vsell=359}
+I[2584]={ah=150,c=4,il=16,n="Woolen Cape",q=2,rl=11,sc=-6,slot=16,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=15},vsell=142}
+I[2585]={ah=5900,c=4,de={{10940,0.8284,4,6},{10978,0.0373,1,1},{10998,0.1343,1,2}},il=21,n="Gray Woolen Robe",q=2,rl=16,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=35},vsell=638}
+I[2587]={ah=2106,c=4,il=20,n="Gray Woolen Shirt",q=1,sc=-8,slot=4,vsell=200}
+I[2589]={ah=41,c=7,il=5,n="Linen Cloth",q=1,sc=5,slot=0,vsell=13}
+I[2592]={ah=190,c=7,il=15,n="Wool Cloth",q=1,sc=5,slot=0,vsell=33}
+I[2594]={ah=291,c=0,il=25,n="Flagon of Dwarven Honeymead",q=1,sc=5,slot=0,vbuy=1411,vsell=375}
+I[2596]={ah=229,c=0,il=15,n="Skin of Dwarven Stout",q=1,sc=5,slot=0,vbuy=112,vsell=30}
+I[2598]={ah=80,c=9,il=10,n="Pattern: Red Linen Robe",q=2,sc=2,slot=0,vsell=30}
+I[2601]={ah=3752,c=9,il=21,n="Pattern: Gray Woolen Robe",q=2,sc=2,slot=0,vsell=100}
+I[2604]={ah=1982,c=7,il=10,n="Red Dye",q=1,sc=11,slot=0,vbuy=44,vsell=12}
+I[2605]={ah=2500,c=7,il=15,n="Green Dye",q=1,sc=11,slot=0,vbuy=100,vsell=25}
+I[2672]={ah=240,c=7,il=5,n="Stringy Wolf Meat",q=1,sc=8,slot=0,vsell=4}
+I[2673]={ah=379,c=7,il=10,n="Coyote Meat",q=1,sc=8,slot=0,vsell=10}
+I[2674]={ah=327,c=7,il=13,n="Crawler Meat",q=1,sc=8,slot=0,vsell=12}
+I[2675]={ah=57,c=7,il=13,n="Crawler Claw",q=1,sc=8,slot=0,vsell=11}
+I[2677]={ah=176,c=7,il=14,n="Boar Ribs",q=1,sc=8,slot=0,vsell=15}
+I[2678]={ah=47,c=7,il=5,n="Mild Spices",q=1,sc=11,slot=0,vbuy=8}
+I[2679]={ah=24,c=0,il=10,n="Charred Wolf Meat",q=1,rl=1,sc=5,slot=0,vsell=5}
+I[2680]={ah=555,c=0,il=10,n="Spiced Wolf Meat",q=1,rl=1,sc=5,slot=0,vsell=10}
+I[2681]={ah=18,c=0,il=10,n="Roasted Boar Meat",q=1,rl=1,sc=5,slot=0,vsell=6}
+I[2682]={ah=24,c=0,il=10,n="Cooked Crab Claw",q=1,rl=1,sc=5,slot=0,vsell=25}
+I[2683]={ah=41,c=0,il=15,n="Crab Cake",q=1,rl=5,sc=5,slot=0,vsell=25}
+I[2684]={ah=82,c=0,il=15,n="Coyote Steak",q=1,rl=5,sc=5,slot=0,vsell=20}
+I[2685]={ah=55,c=0,il=25,n="Succulent Pork Ribs",q=1,rl=15,sc=5,slot=0,vsell=75}
+I[2686]={c=0,il=1,n="Thunder Ale",q=1,rl=1,sc=5,slot=0,vbuy=50,vsell=12}
+I[2687]={ah=94,c=0,il=15,n="Dry Pork Ribs",q=1,rl=5,sc=5,slot=0,vsell=25}
+I[2692]={ah=344,c=7,il=20,n="Hot Spices",q=1,sc=11,slot=0,vbuy=35,vsell=10}
+I[2697]={ah=2298,c=9,il=15,n="Recipe: Goretusk Liver Pie",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[2698]={ah=3180,c=9,il=15,n="Recipe: Cooked Crab Claw",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[2699]={ah=2699,c=9,il=20,n="Recipe: Redridge Goulash",q=1,sc=5,slot=0,vbuy=800,vsell=200}
+I[2700]={ah=4466,c=9,il=20,n="Recipe: Succulent Pork Ribs",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[2701]={ah=6990,c=9,il=25,n="Recipe: Seasoned Wolf Kabob",q=1,sc=5,slot=0,vbuy=1600,vsell=400}
+I[2723]={ah=90000,c=0,il=1,n="Bottle of Dalaran Noir",q=1,rl=1,sc=5,slot=0,vbuy=47,vsell=12}
+I[2772]={ah=986,c=7,il=30,n="Iron Ore",q=1,sc=7,slot=0,vsell=150}
+I[2775]={ah=2097,c=7,il=10,n="Silver Ore",q=2,sc=7,slot=0,vsell=75}
+I[2835]={ah=29,c=7,il=5,n="Rough Stone",q=1,sc=7,slot=0,vsell=2}
+I[2836]={ah=719,c=7,il=15,n="Coarse Stone",q=1,sc=7,slot=0,vsell=15}
+I[2838]={ah=790,c=7,il=25,n="Heavy Stone",q=1,sc=7,slot=0,vsell=60}
+I[2840]={ah=309,c=7,il=10,n="Copper Bar",q=1,sc=7,slot=0,vsell=10}
+I[2841]={ah=451,c=7,il=20,n="Bronze Bar",q=1,sc=7,slot=0,vsell=50}
+I[2842]={ah=732,c=7,il=10,n="Silver Bar",q=2,rl=10,sc=7,slot=0,vsell=100}
+I[2844]={ah=250,c=2,il=9,n="Copper Mace",q=1,rl=4,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=3.85},vsell=106}
+I[2845]={ah=250,c=2,il=9,n="Copper Axe",q=1,rl=4,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=3.75},vsell=109}
+I[2847]={ah=4958,c=2,il=10,n="Copper Shortsword",q=2,rl=4,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=5.4,ITEM_MOD_STRENGTH_SHORT=1},vsell=110}
+I[2848]={ah=1100,c=2,il=22,n="Bronze Mace",q=2,rl=17,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=11.15,ITEM_MOD_STAMINA_SHORT=3},vsell=1119}
+I[2849]={ah=1000,c=2,il=23,n="Bronze Axe",q=2,rl=18,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=11.6,ITEM_MOD_STRENGTH_SHORT=3},vsell=1269}
+I[2850]={c=2,il=24,n="Bronze Shortsword",q=2,rl=19,sc=7,slot=13,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=12.2},vsell=1439}
+I[2851]={ah=400,c=4,il=11,n="Copper Chain Belt",q=2,rl=6,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=65},vsell=56}
+I[2852]={ah=115,c=4,il=10,n="Copper Chain Pants",q=2,rl=4,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=94},vsell=67}
+I[2853]={ah=300,c=4,il=7,n="Copper Bracers",q=1,rl=2,sc=3,slot=9,stats={RESISTANCE0_NAME=35},vsell=17}
+I[2854]={ah=375,c=4,il=19,n="Runed Copper Bracers",q=2,rl=14,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=2,ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=72},vsell=225}
+I[2857]={ah=292,c=4,il=18,n="Runed Copper Belt",q=2,rl=13,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=2,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=91},vsell=198}
+I[2862]={ah=38,c=0,il=5,n="Rough Sharpening Stone",q=1,rl=1,sc=-3,slot=0,vsell=3}
+I[2863]={ah=436,c=0,il=15,n="Coarse Sharpening Stone",q=1,rl=5,sc=-3,slot=0,vsell=10}
+I[2864]={ah=2971,c=4,de={{10939,0.2258,1,2},{10940,0.7419,2,3},{10978,0.0323,1,1}},il=18,n="Runed Copper Breastplate",q=2,rl=13,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=162},vsell=630}
+I[2865]={ah=1176,c=4,de={{10940,0.7504,4,6},{10978,0.1023,1,1},{10998,0.1472,1,2}},il=21,n="Rough Bronze Leggings",q=2,rl=16,sc=3,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=149},vsell=962}
+I[2866]={ah=550,c=4,il=23,n="Rough Bronze Cuirass",q=2,rl=18,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=177},vsell=752}
+I[2868]={ah=4749,c=4,de={{10940,0.7541,4,6},{10978,0.0898,1,1},{10998,0.156,1,2}},il=25,n="Patterned Bronze Bracers",q=2,rl=20,sc=3,slot=9,stats={ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=80},vsell=807}
+I[2869]={ah=11000,c=4,de={{11082,0.2,1,1},{11083,0.6,2,2},{11084,0.2,1,1}},il=26,n="Silvered Bronze Breastplate",q=2,rl=21,sc=3,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=186},vsell=1831}
+I[2870]={ah=39900,c=4,de={{11084,1,1,1}},il=29,n="Shining Silver Breastplate",q=3,rl=24,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=214},vsell=2935}
+I[2871]={ah=1442,c=0,il=25,n="Heavy Sharpening Stone",q=1,rl=15,sc=-3,slot=0,vsell=40}
+I[2880]={ah=590,c=7,il=5,n="Weak Flux",q=1,sc=11,slot=0,vbuy=88,vsell=25}
+I[2881]={ah=874,c=9,il=18,n="Plans: Runed Copper Breastplate",q=2,sc=4,slot=0,vsell=150}
+I[2882]={ah=3448,c=9,il=25,n="Plans: Silvered Bronze Shoulders",q=2,sc=4,slot=0,vsell=300}
+I[2883]={ah=2299,c=9,il=25,n="Plans: Deadly Bronze Poniard",q=2,sc=4,slot=0,vsell=375}
+I[2886]={ah=35,c=7,il=5,n="Crag Boar Rib",q=1,sc=8,slot=0,vsell=5}
+I[2888]={ah=16,c=0,il=10,n="Beer Basted Boar Ribs",q=1,rl=1,sc=5,slot=0,vsell=10}
+I[2889]={ah=3611,c=9,il=8,n="Recipe: Beer Basted Boar Ribs",q=1,sc=5,slot=0,vbuy=240,vsell=60}
+I[2894]={ah=20,c=0,il=1,n="Rhapsody Malt",q=1,rl=1,sc=5,slot=0,vbuy=50,vsell=12}
+I[2924]={ah=116,c=7,il=14,n="Crocolisk Meat",q=1,sc=8,slot=0,vsell=16}
+I[2934]={ah=25,c=7,il=5,n="Ruined Leather Scraps",q=1,sc=6,slot=0,vsell=7}
+I[2996]={ah=83,c=7,il=10,n="Bolt of Linen Cloth",q=1,sc=5,slot=0,vsell=40}
+I[2997]={ah=450,c=7,il=25,n="Bolt of Woolen Cloth",q=1,sc=5,slot=0,vsell=100}
+I[3013]={ah=232,c=0,il=10,n="Scroll of Protection",q=1,rl=1,sc=4,slot=0,stats={RESISTANCE0_NAME=60},vsell=25}
+I[3172]={ah=19,c=7,il=10,n="Boar Intestines",q=1,sc=8,slot=0,vsell=18}
+I[3173]={ah=382,c=7,il=11,n="Bear Meat",q=1,sc=8,slot=0,vsell=15}
+I[3174]={ah=17,c=7,il=10,n="Spider Ichor",q=1,sc=8,slot=0,vsell=16}
+I[3182]={ah=2356,c=7,il=20,n="Spider's Silk",q=1,sc=5,slot=0,vsell=387}
+I[3220]={ah=73,c=0,il=15,n="Blood Sausage",q=1,rl=5,sc=5,slot=0,vsell=40}
+I[3239]={ah=85,c=0,il=5,n="Rough Weightstone",q=1,rl=1,sc=-3,slot=0,vsell=3}
+I[3240]={ah=569,c=0,il=15,n="Coarse Weightstone",q=1,rl=5,sc=-3,slot=0,vsell=10}
+I[3241]={ah=1620,c=0,il=25,n="Heavy Weightstone",q=1,rl=15,sc=-3,slot=0,vsell=40}
+I[3355]={ah=3888,c=7,il=22,n="Wild Steelbloom",q=1,sc=9,slot=0,vsell=50}
+I[3356]={ah=497,c=7,il=24,n="Kingsblood",q=1,sc=9,slot=0,vsell=30}
+I[3357]={ah=587,c=7,il=30,n="Liferoot",q=1,sc=9,slot=0,vsell=75}
+I[3358]={ah=832,c=7,il=37,n="Khadgar's Whisker",q=1,sc=9,slot=0,vsell=175}
+I[3369]={ah=6217,c=7,il=24,n="Grave Moss",q=1,sc=9,slot=0,vsell=25}
+I[3371]={ah=115,c=7,il=1,n="Empty Vial",q=1,sc=11,slot=0,vbuy=17,vsell=1}
+I[3372]={ah=251,c=7,il=25,n="Leaded Vial",q=1,sc=11,slot=0,vbuy=177,vsell=10}
+I[3382]={ah=333,c=0,il=8,n="Minor Troll's Blood Elixir",q=1,rl=1,sc=2,slot=0,vsell=10}
+I[3383]={ah=360,c=0,il=20,n="Elixir of Wisdom",q=1,rl=10,sc=2,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=6},vsell=100}
+I[3384]={ah=2558,c=0,il=22,n="Minor Magic Resistance Potion",q=1,rl=12,sc=1,slot=0,vsell=20}
+I[3385]={ah=405,c=0,il=24,n="Lesser Mana Potion",q=1,rl=14,sc=1,slot=0,vsell=30}
+I[3386]={ah=41710,c=0,il=55,n="Potion of Poison Cleansing",q=1,rl=14,sc=1,slot=0,vsell=35}
+I[3387]={ah=32906,c=0,il=50,n="Limited Invulnerability Potion",q=1,rl=45,sc=1,slot=0,vsell=30}
+I[3388]={ah=1476,c=0,il=25,n="Lesser Troll's Blood Elixir",q=1,rl=15,sc=2,slot=0,vsell=40}
+I[3389]={ah=3110,c=0,il=26,n="Elixir of Lesser Defense",q=1,rl=16,sc=2,slot=0,stats={RESISTANCE0_NAME=150},vsell=40}
+I[3390]={ah=4199,c=0,il=28,n="Elixir of Lesser Agility",q=1,rl=18,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=8},vsell=35}
+I[3391]={ah=1773,c=0,il=30,n="Elixir of Ogre Strength",q=1,rl=20,sc=2,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=8},vsell=20}
+I[3393]={ah=10050,c=9,il=22,n="Recipe: Minor Magic Resistance Potion",q=1,sc=6,slot=0,vsell=250}
+I[3394]={ah=57100,c=9,il=24,n="Recipe: Potion of Poison Cleansing",q=1,sc=6,slot=0,vsell=250}
+I[3395]={ah=32500,c=9,il=50,n="Recipe: Limited Invulnerability Potion",q=2,sc=6,slot=0,vsell=250}
+I[3396]={ah=27586,c=9,il=28,n="Recipe: Elixir of Lesser Agility",q=2,sc=6,slot=0,vsell=250}
+I[3404]={ah=516,c=7,il=35,n="Buzzard Wing",q=1,sc=8,slot=0,vsell=181}
+I[3466]={ah=4599,c=7,il=25,n="Strong Flux",q=1,sc=11,slot=0,vbuy=1777,vsell=500}
+I[3469]={ah=995,c=4,il=10,n="Copper Chain Boots",q=2,rl=4,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=74},vsell=49}
+I[3470]={ah=66,c=7,il=10,n="Rough Grinding Stone",q=1,sc=7,slot=0,vsell=5}
+I[3471]={ah=2314,c=4,de={{10938,0.1509,1,2},{10940,0.8491,1,2}},il=10,n="Copper Chain Vest",q=2,rl=5,sc=3,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=108},vsell=142}
+I[3472]={ah=500,c=4,il=12,n="Runed Copper Gauntlets",q=2,rl=7,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=1,ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=77},vsell=71}
+I[3473]={ah=3586,c=4,de={{10938,0.1733,1,2},{10940,0.8267,1,2}},il=13,n="Runed Copper Pants",q=2,rl=8,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=113},vsell=299}
+I[3474]={ah=2700,c=4,de={{10938,0.2333,1,2},{10940,0.7667,1,2}},il=15,n="Gemmed Copper Gauntlets",q=2,rl=10,sc=3,slot=10,stats={RESISTANCE0_NAME=90},vsell=216}
+I[3478]={ah=1363,c=7,il=20,n="Coarse Grinding Stone",q=1,sc=7,slot=0,vsell=10}
+I[3480]={ah=1499,c=4,il=22,n="Rough Bronze Shoulders",q=2,rl=17,sc=3,slot=3,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=130},vsell=532}
+I[3481]={ah=10256,c=4,de={{10940,0.7692,4,6},{10978,0.0769,1,1},{10998,0.1538,1,1}},il=25,n="Silvered Bronze Shoulders",q=2,rl=20,sc=3,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=137},vsell=1284}
+I[3482]={ah=3700,c=4,de={{11082,0.1584,1,2},{11083,0.802,1,2},{11084,0.0396,1,1}},il=26,n="Silvered Bronze Boots",q=2,rl=21,sc=3,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=128},vsell=1317}
+I[3483]={ah=2557,c=4,de={{11082,0.2435,1,2},{11083,0.6916,1,2},{11084,0.0649,1,1}},il=27,n="Silvered Bronze Gauntlets",q=2,rl=22,sc=3,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=118},vsell=965}
+I[3484]={ah=10978,c=4,de={{11082,0.2222,1,1},{11083,0.7778,1,2}},il=29,n="Green Iron Boots",q=2,rl=24,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=134},vsell=1767}
+I[3485]={ah=10983,c=4,de={{11082,0.1875,1,2},{11083,0.75,1,2},{11084,0.0625,1,1}},il=30,n="Green Iron Gauntlets",q=2,rl=25,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=124},vsell=1295}
+I[3486]={ah=2755,c=7,il=25,n="Heavy Grinding Stone",q=1,sc=7,slot=0,vsell=100}
+I[3487]={ah=4500,c=2,de={{10939,0.9375,1,2},{10940,0.0625,2,2}},il=19,n="Heavy Copper Broadsword",q=2,rl=14,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=12.58,ITEM_MOD_STAMINA_SHORT=6},vsell=1498}
+I[3488]={ah=4282,c=2,de={{10938,0.7368,1,2},{10940,0.2632,1,2}},il=13,n="Copper Battle Axe",q=2,rl=8,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=9,ITEM_MOD_STAMINA_SHORT=3},vsell=613}
+I[3489]={ah=3400,c=2,de={{10939,0.5,1,2},{10940,0.5,2,3}},il=17,n="Thick War Axe",q=2,rl=12,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=8.6,ITEM_MOD_STAMINA_SHORT=1,ITEM_MOD_STRENGTH_SHORT=1},vsell=937}
+I[3490]={ah=13850,c=2,de={{10939,0.8,1,2},{10940,0.2,5,5}},il=25,n="Deadly Bronze Poniard",q=2,rl=20,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=12.78},vsell=2731}
+I[3491]={ah=14111,c=2,il=25,n="Heavy Bronze Mace",q=2,rl=20,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=12.86,ITEM_MOD_STRENGTH_SHORT=4},vsell=2741}
+I[3492]={ah=19992,c=2,de={{10939,1,1,2}},il=30,n="Mighty Iron Hammer",q=2,rl=25,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=15.54,ITEM_MOD_STRENGTH_SHORT=5},vsell=4552}
+I[3530]={ah=73,c=0,il=1,n="Wool Bandage",q=1,sc=7,slot=0,vsell=28}
+I[3531]={ah=163,c=0,il=1,n="Heavy Wool Bandage",q=1,sc=7,slot=0,vsell=57}
+I[3575]={ah=1360,c=7,il=30,n="Iron Bar",q=1,sc=7,slot=0,vsell=200}
+I[3577]={ah=1637,c=7,il=30,n="Gold Bar",q=2,sc=7,slot=0,vsell=600}
+I[3608]={ah=3621,c=9,il=29,n="Plans: Mighty Iron Hammer",q=2,sc=4,slot=0,vsell=500}
+I[3609]={ah=38,c=9,il=10,n="Plans: Copper Chain Vest",q=2,sc=4,slot=0,vsell=25}
+I[3610]={ah=745,c=9,il=15,n="Plans: Gemmed Copper Gauntlets",q=2,sc=4,slot=0,vsell=50}
+I[3611]={ah=4369,c=9,il=29,n="Plans: Green Iron Boots",q=2,sc=4,slot=0,vsell=500}
+I[3612]={ah=4796,c=9,il=30,n="Plans: Green Iron Gauntlets",q=2,sc=4,slot=0,vsell=500}
+I[3662]={ah=110,c=0,il=15,n="Crocolisk Steak",q=1,rl=5,sc=5,slot=0,vsell=25}
+I[3663]={ah=263,c=0,il=10,n="Murloc Fin Soup",q=1,rl=1,sc=5,slot=0,vsell=125}
+I[3664]={ah=291,c=0,il=25,n="Crocolisk Gumbo",q=1,rl=15,sc=5,slot=0,vsell=100}
+I[3665]={ah=182,c=0,il=25,n="Curiously Tasty Omelet",q=1,rl=15,sc=5,slot=0,vsell=150}
+I[3666]={ah=295,c=0,il=25,n="Gooey Spider Cake",q=1,rl=15,sc=5,slot=0,vsell=100}
+I[3667]={ah=110,c=7,il=23,n="Tender Crocolisk Meat",q=1,sc=8,slot=0,vsell=25}
+I[3678]={ah=4074,c=9,il=15,n="Recipe: Crocolisk Steak",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[3679]={ah=2800,c=9,il=15,n="Recipe: Blood Sausage",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[3680]={ah=1840,c=9,il=25,n="Recipe: Murloc Fin Soup",q=1,sc=5,slot=0,vbuy=1600,vsell=400}
+I[3681]={ah=3500,c=9,il=25,n="Recipe: Crocolisk Gumbo",q=1,sc=5,slot=0,vbuy=1600,vsell=400}
+I[3682]={ah=4237,c=9,il=25,n="Recipe: Curiously Tasty Omelet",q=1,sc=5,slot=0,vbuy=1600,vsell=400}
+I[3683]={ah=2636,c=9,il=25,n="Recipe: Gooey Spider Cake",q=1,sc=5,slot=0,vbuy=1600,vsell=400}
+I[3685]={ah=103,c=7,il=22,n="Raptor Egg",q=1,sc=8,slot=0,vsell=71}
+I[3712]={ah=368,c=7,il=30,n="Turtle Meat",q=1,sc=8,slot=0,vsell=87}
+I[3713]={ah=931,c=7,il=30,n="Soothing Spices",q=1,sc=11,slot=0,vbuy=142,vsell=40}
+I[3719]={ah=4600,c=4,il=30,n="Hillman's Cloak",q=2,rl=25,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=21},vsell=1027}
+I[3726]={ah=289,c=0,il=15,n="Big Bear Steak",q=1,rl=5,sc=5,slot=0,vsell=125}
+I[3727]={ah=228,c=0,il=25,n="Hot Lion Chops",q=1,rl=15,sc=5,slot=0,vsell=125}
+I[3728]={ah=644,c=0,il=35,n="Tasty Lion Steak",q=1,rl=25,sc=5,slot=0,vsell=300}
+I[3729]={ah=883,c=0,il=25,n="Soothing Turtle Bisque",q=1,rl=15,sc=5,slot=0,vsell=300}
+I[3730]={ah=128,c=7,il=21,n="Big Bear Meat",q=1,sc=8,slot=0,vsell=45}
+I[3731]={ah=296,c=7,il=23,n="Lion Meat",q=1,sc=8,slot=0,vsell=55}
+I[3734]={c=9,il=25,n="Recipe: Big Bear Steak",q=1,sc=5,slot=0,vbuy=1684,vsell=400}
+I[3735]={c=9,il=25,n="Recipe: Hot Lion Chops",q=1,sc=5,slot=0,vbuy=1800,vsell=450}
+I[3736]={ah=3200,c=9,il=30,n="Recipe: Tasty Lion Steak",q=1,sc=5,slot=0,vsell=500}
+I[3737]={ah=2800,c=9,il=30,n="Recipe: Soothing Turtle Bisque",q=1,sc=5,slot=0,vsell=550}
+I[3818]={ah=4554,c=7,il=32,n="Fadeleaf",q=1,sc=9,slot=0,vsell=125}
+I[3819]={ah=8893,c=7,il=39,n="Wintersbite",q=1,sc=9,slot=0,vsell=100}
+I[3820]={ah=1424,c=7,il=20,n="Stranglekelp",q=1,sc=9,slot=0,vsell=100}
+I[3821]={ah=2466,c=7,il=34,n="Goldthorn",q=1,sc=9,slot=0,vsell=150}
+I[3823]={ah=8695,c=0,il=33,n="Lesser Invisibility Potion",q=1,rl=23,sc=1,slot=0,vsell=100}
+I[3824]={ah=38889,c=0,il=34,n="Shadow Oil",q=1,rl=24,sc=-3,slot=0,vsell=150}
+I[3825]={ah=10815,c=0,il=35,n="Elixir of Lesser Fortitude",q=1,rl=25,sc=2,slot=0,vsell=110}
+I[3826]={ah=2615,c=0,il=36,n="Troll's Blood Elixir",q=1,rl=26,sc=2,slot=0,vsell=105}
+I[3827]={ah=871,c=0,il=32,n="Mana Potion",q=1,rl=22,sc=1,slot=0,vsell=120}
+I[3828]={ah=3803,c=0,il=39,n="Draught of Detect Lesser Invisibility",q=1,rl=29,sc=2,slot=0,vsell=150}
+I[3829]={ah=25575,c=0,il=40,n="Frost Oil",q=1,rl=30,sc=-3,slot=0,vsell=150}
+I[3830]={ah=4498,c=9,il=35,n="Recipe: Elixir of Lesser Fortitude",q=1,sc=6,slot=0,vsell=500}
+I[3831]={ah=17500,c=9,il=36,n="Recipe: Troll's Blood Elixir",q=1,sc=6,slot=0,vsell=550}
+I[3832]={ah=10086,c=9,il=39,n="Recipe: Elixir of Detect Lesser Invisibility",q=2,sc=6,slot=0,vsell=550}
+I[3835]={ah=6275,c=4,il=33,n="Green Iron Bracers",q=2,rl=28,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=91},vsell=1106}
+I[3836]={ah=16000,c=4,de={{11083,0.8947,2,5},{11134,0.1053,2,2}},il=34,n="Green Iron Helm",q=2,rl=29,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=171},vsell=3053}
+I[3837]={ah=9999,c=4,de={{11137,1,1,2}},il=38,n="Golden Scale Coif",q=2,rl=33,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=181},vsell=4405}
+I[3840]={ah=9000,c=4,de={{11083,0.7083,2,5},{11134,0.2917,1,2}},il=32,n="Green Iron Shoulders",q=2,rl=27,sc=3,slot=3,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=153},vsell=2571}
+I[3841]={ah=18765,c=4,il=35,n="Golden Scale Shoulders",q=2,rl=30,sc=3,slot=3,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=160},vsell=3106}
+I[3842]={ah=4250,c=4,de={{11083,0.7829,2,5},{11134,0.153,1,2},{11138,0.0641,1,1}},il=31,n="Green Iron Leggings",q=2,rl=26,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=176},vsell=2906}
+I[3843]={ah=10280,c=4,de={{11083,0.8182,2,5},{11134,0.1818,1,2}},il=34,n="Golden Scale Leggings",q=2,rl=29,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=184},vsell=3882}
+I[3844]={ah=65000,c=4,il=36,n="Green Iron Hauberk",q=3,rl=31,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=238},vsell=5658}
+I[3845]={c=4,il=40,n="Golden Scale Cuirass",q=2,rl=35,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=231},vsell=6558}
+I[3846]={ah=20000,c=4,il=37,n="Polished Steel Boots",q=2,rl=32,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=151},vsell=3937}
+I[3847]={c=4,il=40,n="Golden Scale Boots",q=2,rl=35,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=159},vsell=4977}
+I[3848]={ah=4529,c=2,de={{10939,0.5405,1,2},{10940,0.4324,2,3},{10978,0.027,1,1}},il=20,n="Big Bronze Knife",q=2,rl=15,sc=15,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=10,ITEM_MOD_STAMINA_SHORT=3},vsell=1426}
+I[3849]={ah=11900,c=2,de={{11134,1,1,2}},il=32,n="Hardened Iron Shortsword",q=2,rl=27,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=16.67,ITEM_MOD_STAMINA_SHORT=5},vsell=5468}
+I[3850]={ah=29500,c=2,de={{11083,0.1667,2,2},{11134,0.6667,1,2},{11138,0.1667,1,1}},il=35,n="Jade Serpentblade",q=2,rl=30,sc=7,slot=13,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=18.21},vsell=7304}
+I[3851]={ah=8910,c=2,de={{11083,0.2857,4,4},{11134,0.5714,2,2},{11138,0.1429,1,1}},il=31,n="Solid Iron Maul",q=2,rl=26,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=15.57,ITEM_MOD_STAMINA_SHORT=12},vsell=6258}
+I[3852]={ah=17489,c=2,il=34,n="Golden Iron Destroyer",q=2,rl=29,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=22.88,ITEM_MOD_STRENGTH_SHORT=11},vsell=8360}
+I[3853]={ah=70000,c=2,de={{11135,0.8333,1,2},{11137,0.1667,1,1}},il=36,n="Moonsteel Broadsword",q=2,rl=31,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=24.71,ITEM_MOD_STRENGTH_SHORT=4},vsell=10153}
+I[3854]={ah=170585,c=2,il=40,n="Frost Tiger Blade",q=2,rl=35,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=28.82},vsell=13784}
+I[3855]={ah=56150,c=2,il=37,n="Massive Iron Axe",q=2,rl=32,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=25.57,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=11},vsell=11248}
+I[3856]={ah=64004,c=2,il=40,n="Shadow Crescent Axe",q=2,rl=35,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=28.94,ITEM_MOD_STRENGTH_SHORT=11},vsell=14221}
+I[3858]={ah=1469,c=7,il=40,n="Mithril Ore",q=1,rl=32,sc=7,slot=0,vsell=250}
+I[3859]={ah=2665,c=7,il=35,n="Steel Bar",q=1,sc=7,slot=0,vsell=60}
+I[3860]={ah=2168,c=7,il=40,n="Mithril Bar",q=1,sc=7,slot=0,vsell=400}
+I[3864]={ah=1117,c=7,il=40,n="Citrine",q=2,sc=11,slot=0,vsell=800}
+I[3866]={ah=4290,c=9,il=35,n="Plans: Jade Serpentblade",q=2,sc=4,slot=0,vsell=1000}
+I[3867]={ah=3315,c=9,il=34,n="Plans: Golden Iron Destroyer",q=2,sc=4,slot=0,vsell=950}
+I[3868]={ah=4299,c=9,il=40,n="Plans: Frost Tiger Blade",q=2,sc=4,slot=0,vsell=1250}
+I[3869]={ah=3861,c=9,il=40,n="Plans: Shadow Crescent Axe",q=2,sc=4,slot=0,vsell=1250}
+I[3870]={ah=4444,c=9,il=32,n="Plans: Green Iron Shoulders",q=2,sc=4,slot=0,vsell=750}
+I[3871]={ah=19999,c=9,il=35,n="Plans: Golden Scale Shoulders",q=3,sc=4,slot=0,vsell=850}
+I[3872]={ah=4299,c=9,il=34,n="Plans: Golden Scale Leggings",q=2,sc=4,slot=0,vsell=800}
+I[3873]={ah=3705,c=9,il=39,n="Plans: Golden Scale Cuirass",q=2,sc=4,slot=0,vsell=1100}
+I[3874]={ah=3796,c=9,il=37,n="Plans: Polished Steel Boots",q=2,sc=4,slot=0,vsell=1100}
+I[3875]={ah=39500,c=9,il=40,n="Plans: Golden Scale Boots",q=3,sc=4,slot=0,vsell=1250}
+I[3928]={ah=1297,c=0,il=45,n="Superior Healing Potion",q=1,rl=35,sc=1,slot=0,vsell=250}
+I[4096]={ah=592,c=15,il=1,n="Coarse Gorilla Hair",q=1,sc=0,slot=0,vsell=608}
+I[4231]={ah=231,c=7,il=10,n="Cured Light Hide",q=1,sc=6,slot=0,vsell=110}
+I[4232]={ah=339,c=7,il=20,n="Medium Hide",q=1,sc=6,slot=0,vsell=125}
+I[4233]={ah=646,c=7,il=20,n="Cured Medium Hide",q=1,sc=6,slot=0,vsell=200}
+I[4234]={ah=496,c=7,il=30,n="Heavy Leather",q=1,sc=6,slot=0,vsell=150}
+I[4235]={ah=1403,c=7,il=30,n="Heavy Hide",q=1,sc=6,slot=0,vsell=200}
+I[4236]={ah=2700,c=7,il=30,n="Cured Heavy Hide",q=1,sc=6,slot=0,vsell=225}
+I[4237]={ah=1656,c=4,il=10,n="Handstitched Leather Belt",q=2,rl=5,sc=2,slot=6,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=31},vsell=34}
+I[4238]={ah=252,c=1,il=5,n="Linen Bag",q=1,sc=0,slot=18,vsell=200}
+I[4239]={ah=186,c=4,il=13,n="Embossed Leather Gloves",q=2,rl=8,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=1,ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=41},vsell=71}
+I[4240]={ah=982,c=1,il=15,n="Woolen Bag",q=1,sc=0,slot=18,vsell=300}
+I[4241]={ah=1335,c=1,il=15,n="Green Woolen Bag",q=1,sc=0,slot=18,vsell=450}
+I[4242]={ah=1400,c=4,de={{10938,0.2244,1,2},{10940,0.7756,1,2}},il=15,n="Embossed Leather Pants",q=2,rl=10,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=61},vsell=347}
+I[4243]={ah=2784,c=4,de={{10939,0.2444,1,2},{10940,0.6778,2,3},{10978,0.0778,1,1}},il=17,n="Fine Leather Tunic",q=2,rl=12,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=73},vsell=461}
+I[4244]={ah=2601,c=4,de={{10939,0.2222,1,2},{10940,0.7778,2,3}},il=20,n="Hillman's Leather Vest",q=2,rl=15,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=78},vsell=723}
+I[4245]={ah=3909,c=1,il=25,n="Small Silk Pack",q=1,sc=0,slot=18,vsell=2000}
+I[4246]={ah=600,c=4,il=16,n="Fine Leather Belt",q=2,rl=11,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=2,ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=40},vsell=125}
+I[4247]={ah=1859,c=4,de={{11082,0.2035,1,2},{11083,0.7411,1,2},{11084,0.0555,1,1}},il=29,n="Hillman's Leather Gloves",q=2,rl=24,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=57},vsell=1049}
+I[4248]={ah=59489,c=4,de={{11082,0.2941,1,2},{11083,0.5294,1,2},{11084,0.1765,1,1}},il=26,n="Dark Leather Gloves",q=2,rl=21,sc=2,slot=10,stats={RESISTANCE0_NAME=54},vsell=791}
+I[4249]={ah=1811,c=4,de={{10940,0.77,4,6},{10978,0.0783,1,1},{10998,0.1517,1,2}},il=25,n="Dark Leather Belt",q=2,rl=20,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=48},vsell=703}
+I[4250]={ah=2199,c=4,de={{10940,0.5,5,6},{10978,0.1,1,1},{10998,0.4,1,2}},il=25,n="Hillman's Belt",q=2,rl=20,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=48},vsell=705}
+I[4251]={ah=2012,c=4,de={{11082,0.1897,1,2},{11083,0.7646,1,2},{11084,0.0458,1,1}},il=26,n="Hillman's Shoulders",q=2,rl=21,sc=2,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=65},vsell=1199}
+I[4252]={ah=12595,c=4,de={{11082,0.0833,1,1},{11083,0.9167,1,2},{11084,0.1667,1,1}},il=28,n="Dark Leather Shoulders",q=2,rl=23,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=7,RESISTANCE0_NAME=68},vsell=1457}
+I[4253]={ah=20499,c=4,de={{11084,1,1,1}},il=27,n="Toughened Leather Gloves",q=3,rl=22,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=61},vsell=962}
+I[4254]={ah=9982,c=4,de={{11082,0.3333,2,2},{11083,0.6667,1,2}},il=30,n="Barbaric Gloves",q=2,rl=25,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=58},vsell=1071}
+I[4255]={c=4,de={{11083,0.8,2,5},{11134,0.15,2,2},{11138,0.05,1,1}},il=31,n="Green Leather Armor",q=2,rl=26,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=95},vsell=2366}
+I[4256]={ah=18999,c=4,il=35,n="Guardian Armor",q=2,rl=30,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=102},vsell=3477}
+I[4257]={ah=5094,c=4,de={{11083,0.7931,2,5},{11134,0.2069,1,2}},il=32,n="Green Leather Belt",q=2,rl=27,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=54},vsell=1311}
+I[4258]={ah=2700,c=4,il=34,n="Guardian Belt",q=2,rl=29,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=7,RESISTANCE0_NAME=56},vsell=1592}
+I[4259]={ah=4493,c=4,de={{11135,0.2,1,2},{11137,0.7391,1,2},{11139,0.0609,1,1}},il=36,n="Green Leather Bracers",q=2,rl=31,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=45},vsell=1934}
+I[4260]={ah=7900,c=4,de={{11135,0.0769,1,1},{11137,0.8077,1,2},{11139,0.1154,1,1}},il=39,n="Guardian Leather Bracers",q=2,rl=34,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=48},vsell=2559}
+I[4262]={ah=25555,c=4,de={{11139,1,1,1}},il=37,n="Gem-studded Leather Belt",q=3,rl=32,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=65},vsell=2652}
+I[4264]={ah=49999,c=4,il=40,n="Barbaric Belt",q=2,rl=35,sc=2,slot=6,stats={ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=62},vsell=2804}
+I[4265]={ah=4499,c=0,il=30,n="Heavy Armor Kit",q=1,rl=20,sc=6,slot=0,stats={ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=24},vsell=650}
+I[4289]={ah=749,c=7,il=10,n="Salt",q=1,sc=6,slot=0,vbuy=44,vsell=12}
+I[4291]={ah=1074,c=7,il=30,n="Silken Thread",q=1,sc=5,slot=0,vbuy=444,vsell=125}
+I[4292]={ah=1040,c=9,il=19,n="Pattern: Green Woolen Bag",q=2,sc=2,slot=0,vsell=200}
+I[4293]={ah=700,c=9,il=20,n="Pattern: Hillman's Leather Vest",q=2,sc=1,slot=0,vsell=162}
+I[4294]={ah=2332,c=9,il=24,n="Pattern: Hillman's Belt",q=2,sc=1,slot=0,vsell=400}
+I[4296]={ah=8100,c=9,il=28,n="Pattern: Dark Leather Shoulders",q=2,sc=1,slot=0,vsell=525}
+I[4297]={ah=5000,c=9,il=30,n="Pattern: Barbaric Gloves",q=2,sc=1,slot=0,vsell=500}
+I[4298]={ah=17200,c=9,il=34,n="Pattern: Guardian Belt",q=3,sc=1,slot=0,vsell=162}
+I[4299]={ah=3579,c=9,il=35,n="Pattern: Guardian Armor",q=2,sc=1,slot=0,vsell=500}
+I[4300]={ah=3596,c=9,il=39,n="Pattern: Guardian Leather Bracers",q=2,sc=1,slot=0,vsell=700}
+I[4301]={ah=59500,c=9,il=40,n="Pattern: Barbaric Belt",q=3,sc=1,slot=0,vsell=875}
+I[4304]={ah=828,c=7,il=40,n="Thick Leather",q=1,rl=32,sc=6,slot=0,vsell=300}
+I[4305]={ah=1083,c=7,il=35,n="Bolt of Silk Cloth",q=1,sc=5,slot=0,vsell=600}
+I[4306]={ah=219,c=7,il=30,n="Silk Cloth",q=1,sc=5,slot=0,vsell=150}
+I[4307]={ah=600,c=4,il=10,n="Heavy Linen Gloves",q=2,rl=5,sc=1,slot=10,stats={RESISTANCE0_NAME=12},vsell=29}
+I[4308]={ah=1500,c=4,il=12,n="Green Linen Bracers",q=2,rl=7,sc=1,slot=9,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=10},vsell=45}
+I[4309]={ah=1161,c=4,de={{10938,0.2071,1,2},{10940,0.7929,1,2}},il=14,n="Handstitched Linen Britches",q=2,rl=9,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=23},vsell=226}
+I[4310]={ah=1839,c=4,de={{10939,0.2067,1,2},{10940,0.7429,2,3},{10978,0.0503,1,1}},il=17,n="Heavy Woolen Gloves",q=2,rl=12,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=19},vsell=180}
+I[4311]={ah=2893,c=4,de={{10940,0.7808,4,6},{10978,0.0685,1,1},{10998,0.1507,1,2}},il=21,n="Heavy Woolen Cloak",q=2,rl=16,sc=-6,slot=16,stats={ITEM_MOD_SPIRIT_SHORT=4,RESISTANCE0_NAME=17},vsell=475}
+I[4312]={ah=1625,c=4,de={{10939,0.1915,1,2},{10940,0.7474,2,3},{10978,0.0611,1,1}},il=16,n="Soft-soled Linen Boots",q=2,rl=11,sc=1,slot=8,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=20},vsell=237}
+I[4313]={ah=5000,c=4,de={{10939,0.1556,1,2},{10940,0.8,2,3},{10978,0.0444,1,1}},il=20,n="Red Woolen Boots",q=2,rl=15,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=5,RESISTANCE0_NAME=23},vsell=416}
+I[4314]={ah=582,c=4,il=22,n="Double-Stitched Woolen Shoulders",q=2,rl=17,sc=1,slot=3,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=27},vsell=331}
+I[4315]={ah=3995,c=4,il=24,n="Reinforced Woolen Shoulders",q=2,rl=19,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=4,RESISTANCE0_NAME=28},vsell=425}
+I[4316]={ah=2200,c=4,de={{10940,0.7649,4,6},{10978,0.0844,1,1},{10998,0.1507,1,2}},il=22,n="Heavy Woolen Pants",q=2,rl=17,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=6,RESISTANCE0_NAME=31},vsell=743}
+I[4317]={ah=14500,c=4,de={{10940,0.7778,4,6},{10978,0.1481,1,1},{10998,0.0741,1,2}},il=25,n="Phoenix Pants",q=2,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=4,RESISTANCE0_NAME=34},vsell=1076}
+I[4318]={ah=1769,c=4,de={{11082,0.1888,1,2},{11083,0.7608,1,2},{11084,0.0504,1,1}},il=26,n="Gloves of Meditation",q=2,rl=21,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=25},vsell=610}
+I[4319]={ah=9500,c=4,de={{11082,0.2781,1,2},{11083,0.6954,1,2},{11084,0.0265,1,1}},il=29,n="Azure Silk Gloves",q=2,rl=24,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=3,RESISTANCE0_NAME=26},vsell=815}
+I[4320]={ah=29787,c=4,de={{10978,1,1,1}},il=25,n="Spidersilk Boots",q=3,rl=20,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=29},vsell=979}
+I[4321]={ah=1950,c=4,de={{11082,0.1923,1,2},{11083,0.8077,1,2}},il=28,n="Spider Silk Slippers",q=2,rl=23,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=29},vsell=1120}
+I[4322]={ah=10702,c=4,de={{11083,0.7773,2,5},{11134,0.1455,1,2},{11138,0.0773,1,1}},il=33,n="Enchanter's Cowl",q=2,rl=28,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=37},vsell=1810}
+I[4323]={ah=30649,c=4,de={{11083,0.8571,2,5},{11134,0.1429,1,2}},il=34,n="Shadow Hood",q=2,rl=29,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=11,RESISTANCE0_NAME=37},vsell=1999}
+I[4324]={ah=4455,c=4,de={{11082,0.2193,1,2},{11083,0.7271,1,2},{11084,0.0536,1,1}},il=30,n="Azure Silk Vest",q=2,rl=25,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=9,RESISTANCE0_NAME=43},vsell=1874}
+I[4325]={ah=9999,c=4,de={{11083,0.7442,2,5},{11134,0.2093,1,2},{11138,0.0465,1,1}},il=35,n="Boots of the Enchanter",q=2,rl=30,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=32},vsell=2272}
+I[4326]={ah=4441,c=4,de={{11135,0.1936,1,2},{11137,0.7502,1,2},{11139,0.0552,1,1}},il=37,n="Long Silken Cloak",q=2,rl=32,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=24},vsell=2496}
+I[4327]={ah=143000,c=4,de={{11139,1,1,1}},il=40,n="Icy Cloak",q=3,rl=35,sc=-6,slot=16,stats={ITEM_MOD_SPIRIT_SHORT=6,RESISTANCE0_NAME=29},vsell=3788}
+I[4328]={ah=24500,c=4,de={{11135,0.1111,1,2},{11137,0.8704,1,2},{11139,0.0185,1,1}},il=36,n="Spider Belt",q=2,rl=31,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=27},vsell=1524}
+I[4329]={ah=58770,c=4,de={{11135,0.2632,1,2},{11137,0.6842,1,2},{11139,0.0526,1,1}},il=40,n="Star Belt",q=2,rl=35,sc=1,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=4,RESISTANCE0_NAME=30},vsell=2120}
+I[4330]={ah=3900,c=4,il=22,n="Stylish Red Shirt",q=1,sc=-8,slot=4,vsell=250}
+I[4331]={ah=14000,c=4,de={{10940,0.6765,4,6},{10978,0.0882,1,1},{10998,0.2353,1,2}},il=25,n="Phoenix Gloves",q=2,rl=20,sc=1,slot=10,stats={RESISTANCE0_NAME=24},vsell=526}
+I[4332]={ah=10899,c=4,il=27,n="Bright Yellow Shirt",q=1,sc=-8,slot=4,vsell=500}
+I[4333]={ah=11393,c=4,il=31,n="Dark Silk Shirt",q=1,sc=-8,slot=4,vsell=1200}
+I[4334]={ah=3194,c=4,il=34,n="Formal White Shirt",q=1,sc=-8,slot=4,vsell=550}
+I[4335]={ah=14583,c=4,il=37,n="Rich Purple Silk Shirt",q=1,sc=-8,slot=4,vsell=1500}
+I[4336]={ah=26399,c=4,il=40,n="Black Swashbuckler's Shirt",q=1,sc=-8,slot=4,vsell=1500}
+I[4337]={ah=771,c=7,il=35,n="Thick Spider's Silk",q=1,sc=5,slot=0,vsell=750}
+I[4338]={ah=649,c=7,il=40,n="Mageweave Cloth",q=1,rl=32,sc=5,slot=0,vsell=250}
+I[4339]={ah=3391,c=7,il=45,n="Bolt of Mageweave",q=1,sc=5,slot=0,vsell=1250}
+I[4340]={ah=350,c=7,il=25,n="Gray Dye",q=1,sc=11,slot=0,vbuy=311,vsell=87}
+I[4341]={c=7,il=25,n="Yellow Dye",q=1,sc=11,slot=0,vbuy=444,vsell=125}
+I[4342]={ah=6913,c=7,il=50,n="Purple Dye",q=1,sc=11,slot=0,vbuy=2222,vsell=625}
+I[4343]={ah=804,c=4,il=10,n="Brown Linen Pants",q=2,rl=5,sc=1,slot=7,stats={RESISTANCE0_NAME=17},vsell=60}
+I[4344]={ah=596,c=4,il=7,n="Brown Linen Shirt",q=1,sc=-8,slot=4,vsell=11}
+I[4345]={ah=1086,c=9,il=19,n="Pattern: Red Woolen Boots",q=2,sc=2,slot=0,vsell=100}
+I[4346]={ah=1136,c=9,il=20,n="Pattern: Heavy Woolen Cloak",q=2,sc=2,slot=0,vsell=100}
+I[4347]={ah=2950,c=9,il=24,n="Pattern: Reinforced Woolen Shoulders",q=2,sc=2,slot=0,vsell=150}
+I[4348]={ah=3987,c=9,il=25,n="Pattern: Phoenix Gloves",q=2,sc=2,slot=0,vsell=175}
+I[4349]={ah=4285,c=9,il=25,n="Pattern: Phoenix Pants",q=2,sc=2,slot=0,vsell=175}
+I[4350]={ah=5095,c=9,il=28,n="Pattern: Spider Silk Slippers",q=2,sc=2,slot=0,vsell=200}
+I[4351]={ah=47500,c=9,il=34,n="Pattern: Shadow Hood",q=2,sc=2,slot=0,vsell=225}
+I[4352]={ah=5499,c=9,il=35,n="Pattern: Boots of the Enchanter",q=2,sc=2,slot=0,vsell=275}
+I[4353]={ah=6698,c=9,il=36,n="Pattern: Spider Belt",q=2,sc=2,slot=0,vsell=300}
+I[4354]={ah=279999,c=9,il=37,n="Pattern: Rich Purple Silk Shirt",q=3,sc=2,slot=0,vsell=350}
+I[4355]={ah=16775,c=9,il=40,n="Pattern: Icy Cloak",q=1,sc=2,slot=0,vsell=375}
+I[4356]={ah=219999,c=9,il=40,n="Pattern: Star Belt",q=2,sc=2,slot=0,vsell=375}
+I[4357]={ah=17,c=7,il=5,n="Rough Blasting Powder",q=1,sc=1,slot=0,vsell=4}
+I[4358]={ah=34,c=0,il=10,n="Rough Dynamite",q=1,sc=0,slot=0,vsell=30}
+I[4359]={ah=182,c=7,il=8,n="Handful of Copper Bolts",q=1,sc=1,slot=0,vsell=12}
+end)()
+;(function()
+I[4360]={ah=260,c=0,il=14,n="Rough Copper Bomb",q=1,sc=0,slot=0,vsell=60}
+I[4361]={ah=167,c=7,il=10,n="Copper Tube",q=1,sc=1,slot=0,vsell=120}
+I[4362]={ah=1600,c=2,de={{10938,0.8385,1,2},{10940,0.1615,1,2}},il=10,n="Rough Boomstick",q=2,rl=5,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=4.13,ITEM_MOD_STAMINA_SHORT=1},vsell=187}
+I[4363]={ah=380,c=7,il=13,n="Copper Modulator",q=1,sc=1,slot=0,vsell=50}
+I[4364]={ah=300,c=7,il=15,n="Coarse Blasting Powder",q=1,sc=1,slot=0,vsell=12}
+I[4365]={ah=165,c=0,il=20,n="Coarse Dynamite",q=1,sc=0,slot=0,vsell=75}
+I[4366]={ah=2778,c=0,il=17,n="Target Dummy",q=1,sc=14,slot=0,vsell=75}
+I[4367]={ah=4724,c=0,il=20,n="Small Seaforium Charge",q=1,sc=0,slot=0,vsell=150}
+I[4368]={ah=1398,c=4,de={{10939,0.2552,1,2},{10940,0.7135,2,3},{10978,0.0312,1,1}},il=20,n="Flying Tiger Goggles",q=2,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=27},vsell=408}
+I[4369]={ah=5585,c=2,de={{10939,0.76,1,2},{10940,0.1486,4,6},{10978,0.0914,1,1}},il=21,n="Deadly Blunderbuss",q=2,rl=16,sc=3,slot=15,stats={ITEM_MOD_AGILITY_SHORT=2,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=8.27},vsell=1179}
+I[4370]={ah=4373,c=0,il=26,n="Large Copper Bomb",q=1,sc=0,slot=0,vsell=175}
+I[4371]={ah=752,c=7,il=21,n="Bronze Tube",q=1,sc=1,slot=0,vsell=200}
+I[4372]={ah=8971,c=2,il=24,n="Lovingly Crafted Boomstick",q=2,rl=19,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=9.72,ITEM_MOD_SPIRIT_SHORT=3},vsell=1800}
+I[4373]={ah=3000,c=4,de={{10940,0.8485,4,6},{10978,0.0909,1,1},{10998,0.0606,1,1}},il=24,n="Shadow Goggles",q=2,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=6,RESISTANCE0_NAME=31},vsell=722}
+I[4374]={ah=1949,c=0,il=29,n="Small Bronze Bomb",q=1,sc=0,slot=0,vsell=200}
+I[4375]={ah=1192,c=7,il=25,n="Whirring Bronze Gizmo",q=1,sc=1,slot=0,vsell=115}
+I[4376]={ah=20096,c=0,il=25,n="Flame Deflector",q=1,rl=15,sc=14,slot=0,vsell=200}
+I[4377]={ah=889,c=7,il=25,n="Heavy Blasting Powder",q=1,sc=1,slot=0,vsell=150}
+I[4378]={ah=1465,c=0,il=30,n="Heavy Dynamite",q=1,sc=0,slot=0,vsell=350}
+I[4379]={ah=6100,c=2,de={{10939,0.732,1,2},{11083,0.2165,1,2},{11084,0.0515,1,1}},il=26,n="Silver-plated Shotgun",q=2,rl=21,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=10.37,ITEM_MOD_STAMINA_SHORT=3},vsell=2357}
+I[4380]={ah=1890,c=0,il=33,n="Big Bronze Bomb",q=1,sc=0,slot=0,vsell=500}
+I[4381]={ah=9458,c=4,il=28,n="Minor Recombobulator",q=2,sc=-4,slot=12,vsell=600}
+I[4382]={ah=1810,c=7,il=29,n="Bronze Framework",q=1,sc=1,slot=0,vsell=600}
+I[4383]={ah=12297,c=2,de={{10939,0.7222,1,2},{11083,0.2778,1,2}},il=29,n="Moonsight Rifle",q=2,rl=24,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=11.76},vsell=3183}
+I[4384]={ah=1811,c=0,il=30,n="Explosive Sheep",q=1,sc=0,slot=0,vsell=1000}
+I[4385]={ah=8095,c=4,de={{11082,0.1034,1,2},{11083,0.7931,1,2},{11084,0.1034,1,1}},il=30,n="Green Tinted Goggles",q=2,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=35},vsell=1410}
+I[4386]={ah=85500,c=0,il=31,n="Ice Deflector",q=1,rl=21,sc=14,slot=0,vsell=175}
+I[4387]={ah=2480,c=7,il=32,n="Iron Strut",q=1,sc=1,slot=0,vsell=400}
+I[4388]={ah=15000,c=0,il=32,n="Discombobulator Ray",q=1,sc=14,slot=0,vsell=1000}
+I[4389]={ah=4633,c=7,il=34,n="Gyrochronatom",q=1,sc=1,slot=0,vsell=750}
+I[4390]={ah=2439,c=0,il=35,n="Iron Grenade",q=1,rl=5,sc=0,slot=0,vsell=500}
+I[4391]={ah=21495,c=0,il=35,n="Compact Harvest Reaper Kit",q=1,rl=30,sc=14,slot=0,vsell=4000}
+I[4392]={ah=20748,c=0,il=37,n="Advanced Target Dummy",q=1,rl=5,sc=14,slot=0,vsell=2500}
+I[4393]={c=4,il=37,n="Craftsman's Monocle",q=2,rl=32,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=15,RESISTANCE0_NAME=40},vsell=2632}
+I[4394]={ah=3800,c=0,il=43,n="Big Iron Bomb",q=1,rl=5,sc=0,slot=0,vsell=750}
+I[4395]={ah=9261,c=0,il=39,n="Goblin Land Mine",q=1,rl=5,sc=0,slot=0,vsell=1600}
+I[4396]={ah=47500,c=4,il=40,n="Mechanical Dragonling",q=1,rl=30,sc=-4,slot=12,vsell=6000}
+I[4397]={ah=125750,c=4,il=40,n="Gnomish Cloaking Device",q=1,rl=5,sc=-4,slot=12,vsell=5000}
+I[4398]={ah=18977,c=0,il=40,n="Large Seaforium Charge",q=1,rl=5,sc=0,slot=0,vsell=900}
+I[4399]={ah=1912,c=7,il=10,n="Wooden Stock",q=1,sc=1,slot=0,vbuy=177,vsell=50}
+I[4400]={ah=3607,c=7,il=25,n="Heavy Stock",q=1,sc=1,slot=0,vbuy=1777,vsell=500}
+I[4401]={ah=3079,c=15,il=15,n="Mechanical Squirrel Box",q=1,sc=2,slot=0,vsell=100}
+I[4402]={ah=10344,c=7,il=25,n="Small Flame Sac",q=1,sc=11,slot=0,vsell=250}
+I[4403]={ah=82699,c=0,il=33,n="Portable Bronze Mortar",q=1,rl=5,sc=14,slot=0,vsell=2000}
+I[4404]={ah=56,c=7,il=18,n="Silver Contact",q=1,sc=1,slot=0,vsell=25}
+I[4405]={ah=236,c=0,il=12,n="Crude Scope",q=1,rl=5,sc=6,slot=0,vsell=125}
+I[4406]={ah=1072,c=0,il=22,n="Standard Scope",q=1,rl=10,sc=6,slot=0,vsell=600}
+I[4407]={ah=13987,c=0,il=36,n="Accurate Scope",q=1,rl=20,sc=6,slot=0,vsell=1200}
+I[4408]={ah=1949,c=9,il=15,n="Schematic: Mechanical Squirrel",q=2,sc=3,slot=0,vsell=162}
+I[4409]={ah=1692,c=9,il=20,n="Schematic: Small Seaforium Charge",q=2,sc=3,slot=0,vsell=200}
+I[4410]={ah=4899,c=9,il=24,n="Schematic: Shadow Goggles",q=2,sc=3,slot=0,vsell=250}
+I[4411]={ah=998996,c=9,il=25,n="Schematic: Flame Deflector",q=2,sc=3,slot=0,vsell=275}
+I[4412]={ah=5500,c=9,il=29,n="Schematic: Moonsight Rifle",q=2,sc=3,slot=0,vsell=375}
+I[4413]={ah=3490000,c=9,il=32,n="Schematic: Discombobulator Ray",q=2,rl=5,sc=3,slot=0,vsell=450}
+I[4414]={ah=5600,c=9,il=33,n="Schematic: Portable Bronze Mortar",q=2,rl=5,sc=3,slot=0,vsell=462}
+I[4415]={ah=76749,c=9,il=37,n="Schematic: Craftsman's Monocle",q=3,rl=5,sc=3,slot=0,vsell=550}
+I[4416]={ah=7800,c=9,il=39,n="Schematic: Goblin Land Mine",q=2,rl=5,sc=3,slot=0,vsell=600}
+I[4417]={ah=28600,c=9,il=40,n="Schematic: Large Seaforium Charge",q=2,rl=5,sc=3,slot=0,vsell=675}
+I[4455]={ah=11644,c=4,de={{11083,0.8649,2,5},{11134,0.1081,2,2},{11138,0.027,1,1}},il=33,n="Raptor Hide Harness",q=2,rl=28,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=98},vsell=3096}
+I[4456]={ah=6666,c=4,de={{11083,0.7805,2,5},{11134,0.1707,1,2},{11138,0.0488,1,1}},il=33,n="Raptor Hide Belt",q=2,rl=28,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=55},vsell=1553}
+I[4457]={ah=1490,c=0,il=35,n="Barbecued Buzzard Wing",q=1,rl=25,sc=5,slot=0,vsell=300}
+I[4461]={ah=205,c=7,il=30,n="Raptor Hide",q=1,sc=6,slot=0,vsell=208}
+I[4470]={ah=573,c=7,il=5,n="Simple Wood",q=1,rl=14,sc=11,slot=0,vbuy=33,vsell=9}
+I[4536]={ah=90,c=0,il=5,n="Shiny Red Apple",q=1,rl=1,sc=5,slot=0,vbuy=23,vsell=1}
+I[4589]={ah=3800,c=7,il=1,n="Long Elegant Feather",q=1,sc=11,slot=0,vsell=530}
+I[4592]={ah=17,c=0,il=15,n="Longjaw Mud Snapper",q=1,rl=5,sc=5,slot=0,vbuy=18,vsell=1}
+I[4593]={ah=50,c=0,il=25,n="Bristle Whisker Catfish",q=1,rl=15,sc=5,slot=0,vbuy=470,vsell=4}
+I[4594]={ah=409,c=0,il=35,n="Rockscale Cod",q=1,rl=25,sc=5,slot=0,vbuy=941,vsell=6}
+I[4596]={ah=180,c=0,il=15,n="Minor Discolored Healing Potion",q=1,rl=5,sc=1,slot=0,vsell=25}
+I[4597]={c=9,il=10,n="Recipe: Minor Discolored Healing Potion",q=2,sc=6,slot=0,vsell=250}
+I[4603]={ah=1610,c=7,il=45,n="Raw Spotted Yellowtail",q=1,rl=35,sc=8,slot=0,vsell=4}
+I[4605]={ah=5,c=0,il=15,n="Red-speckled Mushroom",q=1,rl=5,sc=5,slot=0,vbuy=117,vsell=6}
+I[4609]={c=9,il=35,n="Recipe: Barbecued Buzzard Wing",q=1,sc=5,slot=0,vbuy=1000,vsell=250}
+I[4611]={ah=5144,c=7,il=1,n="Blue Pearl",q=1,sc=11,slot=0,vsell=50}
+I[4623]={ah=4100,c=0,il=43,n="Lesser Stoneshield Potion",q=1,rl=33,sc=1,slot=0,stats={RESISTANCE0_NAME=1000},vsell=375}
+I[4624]={ah=6300,c=9,il=43,n="Recipe: Lesser Stoneshield Potion",q=1,sc=6,slot=0,vsell=550}
+I[4625]={ah=4418,c=7,il=41,n="Firebloom",q=1,sc=9,slot=0,vsell=250}
+I[4655]={ah=250,c=7,il=35,n="Giant Clam Meat",q=1,sc=8,slot=0,vsell=71}
+I[4852]={ah=12983,c=0,il=37,n="Flash Bomb",q=1,rl=27,sc=0,slot=0,vsell=300}
+I[5051]={ah=293,c=12,il=1,n="Dig Rat",q=1,sc=0,slot=0,vsell=1}
+I[5081]={ah=300,c=1,il=5,n="Kodo Hide Bag",q=1,sc=0,slot=18,vsell=250}
+I[5082]={ah=60,c=7,il=10,n="Thin Kodo Leather",q=1,sc=6,slot=0,vsell=25}
+I[5083]={ah=39999,c=9,il=11,n="Pattern: Kodo Hide Bag",q=2,sc=1,slot=0,vsell=50}
+I[5095]={ah=1500,c=0,il=15,n="Rainbow Fin Albacore",q=1,rl=5,sc=5,slot=0,vsell=3}
+I[5116]={ah=303,c=7,il=1,n="Long Tail Feather",q=1,sc=6,slot=0,vsell=303}
+I[5373]={ah=2590,c=15,il=1,n="Lucky Charm",q=1,sc=4,slot=0,vsell=72}
+I[5465]={ah=11,c=7,il=5,n="Small Spider Leg",q=1,sc=8,slot=0,vsell=3}
+I[5466]={ah=19,c=7,il=8,n="Scorpid Stinger",q=1,sc=8,slot=0,vsell=8}
+I[5467]={ah=42,c=7,il=10,n="Kodo Meat",q=1,sc=8,slot=0,vsell=7}
+I[5468]={ah=200,c=7,il=15,n="Soft Frenzy Flesh",q=1,sc=8,slot=0,vsell=12}
+I[5469]={ah=341,c=7,il=10,n="Strider Meat",q=1,sc=8,slot=0,vsell=9}
+I[5470]={ah=152,c=7,il=22,n="Thunder Lizard Tail",q=1,sc=8,slot=0,vsell=28}
+I[5471]={ah=83,c=7,il=23,n="Stag Meat",q=1,sc=8,slot=0,vsell=30}
+I[5472]={ah=17,c=0,il=10,n="Kaldorei Spider Kabob",q=1,rl=1,sc=5,slot=0,vsell=10}
+I[5473]={ah=79,c=0,il=10,n="Scorpid Surprise",q=1,rl=1,sc=5,slot=0,vsell=10}
+I[5474]={ah=49,c=0,il=10,n="Roasted Kodo Meat",q=1,rl=1,sc=5,slot=0,vsell=9}
+I[5476]={c=0,il=15,n="Fillet of Frenzy",q=1,rl=5,sc=5,slot=0,vsell=3}
+I[5477]={ah=56,c=0,il=10,n="Strider Stew",q=1,rl=1,sc=5,slot=0,vsell=18}
+I[5478]={ah=193,c=0,il=25,n="Dig Rat Stew",q=1,rl=15,sc=5,slot=0,vsell=70}
+I[5479]={ah=300,c=0,il=15,n="Crispy Lizard Tail",q=1,rl=5,sc=5,slot=0,vsell=125}
+I[5480]={ah=253,c=0,il=25,n="Lean Venison",q=1,rl=15,sc=5,slot=0,vsell=95}
+I[5482]={ah=16823,c=9,il=5,n="Recipe: Kaldorei Spider Kabob",q=1,sc=5,slot=0,vsell=10}
+I[5483]={ah=9000,c=9,il=8,n="Recipe: Scorpid Surprise",q=1,sc=5,slot=0,vbuy=140,vsell=35}
+I[5484]={ah=10100,c=9,il=10,n="Recipe: Roasted Kodo Meat",q=1,sc=5,slot=0,vbuy=240,vsell=60}
+I[5485]={ah=10000,c=9,il=15,n="Recipe: Fillet of Frenzy",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[5486]={ah=5498,c=9,il=15,n="Recipe: Strider Stew",q=1,sc=5,slot=0,vbuy=440,vsell=110}
+I[5487]={ah=60999,c=9,il=20,n="Recipe: Dig Rat Stew",q=1,sc=5,slot=0,vsell=200}
+I[5488]={ah=8550,c=9,il=20,n="Recipe: Crispy Lizard Tail",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[5489]={c=9,il=25,n="Recipe: Lean Venison",q=1,sc=5,slot=0,vbuy=1200,vsell=300}
+I[5498]={ah=243,c=7,il=15,n="Small Lustrous Pearl",q=2,sc=11,slot=0,vsell=200}
+I[5500]={ah=2554,c=7,il=25,n="Iridescent Pearl",q=2,sc=11,slot=0,vsell=750}
+I[5503]={ah=167,c=7,il=14,n="Clam Meat",q=1,sc=8,slot=0,vsell=16}
+I[5504]={ah=134,c=7,il=23,n="Tangy Clam Meat",q=1,sc=8,slot=0,vsell=22}
+I[5507]={ah=8400,c=0,il=27,n="Ornate Spyglass",q=1,sc=14,slot=0,vsell=600}
+I[5525]={ah=36,c=0,il=10,n="Boiled Clams",q=1,rl=1,sc=5,slot=0,vsell=20}
+I[5526]={ah=74,c=0,il=15,n="Clam Chowder",q=1,rl=5,sc=5,slot=0,vsell=75}
+I[5527]={ah=241,c=0,il=25,n="Goblin Deviled Clams",q=1,rl=15,sc=5,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=6},vsell=95}
+I[5528]={ah=10000,c=9,il=20,n="Recipe: Clam Chowder",q=1,sc=5,slot=0,vbuy=800,vsell=200}
+I[5540]={ah=11000,c=2,de={{10939,0.8,1,2},{10940,0.1,5,5},{10978,0.1,1,1}},il=23,n="Pearl-handled Dagger",q=2,rl=18,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=2,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=11.47,ITEM_MOD_STAMINA_SHORT=2},vsell=2107}
+I[5541]={ah=15840,c=2,de={{10939,0.5455,1,2},{11083,0.3636,1,2},{11084,0.0909,1,1}},il=28,n="Iridescent Hammer",q=2,rl=23,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=14.58,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=3},vsell=3693}
+I[5542]={ah=2735,c=4,de={{10939,0.2075,1,2},{10940,0.7296,2,3},{10978,0.0629,1,1}},il=19,n="Pearl-clasped Cloak",q=2,rl=14,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=3,RESISTANCE0_NAME=16},vsell=370}
+I[5543]={ah=3900,c=9,il=28,n="Plans: Iridescent Hammer",q=2,sc=4,slot=0,vsell=450}
+I[5578]={ah=2498,c=9,il=26,n="Plans: Silvered Bronze Breastplate",q=2,sc=4,slot=0,vsell=300}
+I[5631]={ah=1150,c=0,il=14,n="Rage Potion",q=1,rl=4,sc=1,slot=0,vsell=30}
+I[5633]={ah=3085,c=0,il=35,n="Great Rage Potion",q=1,rl=25,sc=1,slot=0,vsell=150}
+I[5634]={ah=10750,c=0,il=30,n="Free Action Potion",q=1,rl=20,sc=1,slot=0,vsell=75}
+I[5635]={ah=142,c=7,il=15,n="Sharp Claw",q=1,sc=11,slot=0,vsell=45}
+I[5637]={ah=993,c=7,il=30,n="Large Fang",q=1,sc=11,slot=0,vsell=75}
+I[5640]={ah=2694,c=9,il=14,n="Recipe: Rage Potion",q=1,sc=6,slot=0,vsell=25}
+I[5642]={ah=18456,c=9,il=30,n="Recipe: Free Action Potion",q=1,sc=6,slot=0,vsell=450}
+I[5643]={ah=12000,c=9,il=35,n="Recipe: Great Rage Potion",q=1,sc=6,slot=0,vbuy=2000,vsell=500}
+I[5739]={ah=6399,c=4,il=38,n="Barbaric Harness",q=2,rl=33,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=106},vsell=2738}
+I[5762]={ah=250,c=1,il=5,n="Red Linen Bag",q=1,sc=0,slot=18,vsell=250}
+I[5763]={ah=1150,c=1,il=15,n="Red Woolen Bag",q=1,sc=0,slot=18,vsell=700}
+I[5764]={ah=5197,c=1,il=25,n="Green Silk Pack",q=1,sc=0,slot=18,vsell=3000}
+I[5765]={ah=7950,c=1,il=25,n="Black Silk Pack",q=1,sc=0,slot=18,vsell=4000}
+I[5766]={ah=5498,c=4,de={{11082,0.1904,1,2},{11083,0.7735,1,2},{11084,0.0361,1,1}},il=27,n="Lesser Wizard's Robe",q=2,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=41},vsell=1338}
+I[5770]={ah=23200,c=4,de={{11082,0.15,1,2},{11083,0.85,1,2}},il=30,n="Robes of Arcana",q=2,rl=25,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=43},vsell=1807}
+I[5771]={ah=558,c=9,il=14,n="Pattern: Red Linen Bag",q=1,sc=2,slot=0,vbuy=200,vsell=50}
+I[5772]={ah=1281,c=9,il=23,n="Pattern: Red Woolen Bag",q=1,sc=2,slot=0,vbuy=500,vsell=125}
+I[5773]={ah=69849,c=9,il=30,n="Pattern: Robes of Arcana",q=2,sc=2,slot=0,vsell=250}
+I[5774]={ah=3892,c=9,il=35,n="Pattern: Green Silk Pack",q=2,sc=2,slot=0,vsell=275}
+I[5775]={ah=5535,c=9,il=37,n="Pattern: Black Silk Pack",q=2,sc=2,slot=0,vsell=350}
+I[5780]={ah=5495,c=4,de={{10939,0.2778,1,2},{10940,0.7222,2,3}},il=18,n="Murloc Scale Belt",q=2,rl=13,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=42},vsell=260}
+I[5781]={ah=5500,c=4,de={{10939,0.1053,1,2},{10940,0.6316,2,3},{10978,0.2632,1,1}},il=19,n="Murloc Scale Breastplate",q=2,rl=14,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=76},vsell=601}
+I[5782]={ah=24241,c=4,de={{11083,0.6667,3,5},{11134,0.3333,1,1}},il=34,n="Thick Murloc Armor",q=2,rl=29,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=100},vsell=3211}
+I[5783]={ah=24554,c=4,il=38,n="Murloc Scale Bracers",q=2,rl=33,sc=2,slot=9,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=47},vsell=2316}
+I[5784]={ah=111,c=7,il=15,n="Slimy Murloc Scale",q=1,sc=6,slot=0,vsell=75}
+I[5785]={ah=515,c=7,il=35,n="Thick Murloc Scale",q=1,sc=6,slot=0,vsell=500}
+I[5786]={c=9,il=18,n="Pattern: Murloc Scale Belt",q=1,sc=1,slot=0,vsell=137}
+I[5787]={c=9,il=19,n="Pattern: Murloc Scale Breastplate",q=1,sc=1,slot=0,vbuy=600,vsell=150}
+I[5788]={c=9,il=34,n="Pattern: Thick Murloc Armor",q=2,sc=1,slot=0,vsell=162}
+I[5789]={c=9,il=38,n="Pattern: Murloc Scale Bracers",q=2,sc=1,slot=0,vsell=700}
+I[5957]={ah=473,c=4,il=10,n="Handstitched Leather Vest",q=2,rl=3,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=55},vsell=40}
+I[5958]={ah=3481,c=4,de={{10940,0.6667,4,6},{10998,0.3333,1,2}},il=21,n="Fine Leather Pants",q=2,rl=16,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=4,RESISTANCE0_NAME=69},vsell=829}
+I[5961]={ah=2243,c=4,de={{10940,0.7582,4,6},{10978,0.0842,1,1},{10998,0.1575,1,2}},il=23,n="Dark Leather Pants",q=2,rl=18,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=8,RESISTANCE0_NAME=72},vsell=1089}
+I[5962]={ah=5000,c=4,de={{11083,0.8824,2,5},{11134,0.098,1,2},{11138,0.0196,1,1}},il=32,n="Guardian Pants",q=2,rl=27,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=85},vsell=2794}
+I[5963]={ah=8940,c=4,de={{11083,0.8222,2,5},{11134,0.1333,1,2},{11138,0.0444,1,1}},il=34,n="Barbaric Leggings",q=2,rl=29,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=87},vsell=3151}
+I[5964]={ah=4445,c=4,de={{11083,0.7707,2,5},{11134,0.1716,1,2},{11138,0.0562,1,1}},il=35,n="Barbaric Shoulders",q=2,rl=30,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=76},vsell=2609}
+I[5965]={ah=8787,c=4,de={{11135,0.1429,1,1},{11137,0.7143,1,2},{11139,0.1429,1,1}},il=37,n="Guardian Cloak",q=2,rl=32,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=24},vsell=2536}
+I[5966]={ah=5783,c=4,il=38,n="Guardian Gloves",q=2,rl=33,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=66},vsell=1374}
+I[5972]={ah=2000,c=9,il=21,n="Pattern: Fine Leather Pants",q=2,sc=1,slot=0,vsell=375}
+I[5973]={c=9,il=34,n="Pattern: Barbaric Leggings",q=1,sc=1,slot=0,vbuy=650,vsell=162}
+I[5974]={ah=3500,c=9,il=37,n="Pattern: Guardian Cloak",q=2,sc=1,slot=0,vsell=350}
+I[5996]={ah=2300,c=0,il=18,n="Draught of Water Breathing",q=1,rl=8,sc=2,slot=0,vsell=95}
+I[5997]={ah=106,c=0,il=5,n="Elixir of Minor Defense",q=1,rl=1,sc=2,slot=0,stats={RESISTANCE0_NAME=50},vsell=5}
+I[6037]={ah=3164,c=7,il=50,n="Truesilver Bar",q=2,sc=7,slot=0,vsell=1250}
+I[6038]={ah=600,c=0,il=35,n="Giant Clam Scorcho",q=1,rl=25,sc=5,slot=0,vsell=312}
+I[6039]={ah=22599,c=9,il=35,n="Recipe: Giant Clam Scorcho",q=1,sc=5,slot=0,vbuy=5000,vsell=1250}
+I[6040]={ah=3986,c=4,il=37,n="Golden Scale Bracers",q=2,rl=32,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=96},vsell=1649}
+I[6041]={ah=75999,c=0,il=38,n="Steel Weapon Chain",q=1,sc=6,slot=0,vsell=1500}
+I[6042]={ah=7175,c=0,il=30,n="Iron Shield Spike",q=1,sc=6,slot=0,vsell=250}
+I[6043]={ah=18496,c=0,il=33,n="Iron Counterweight",q=1,sc=6,slot=0,vsell=500}
+I[6044]={ah=9424,c=9,il=30,n="Plans: Iron Shield Spike",q=2,sc=4,slot=0,vsell=450}
+I[6045]={ah=7620,c=9,il=33,n="Plans: Iron Counterweight",q=2,sc=4,slot=0,vsell=650}
+I[6046]={ah=604000,c=9,il=38,n="Plans: Steel Weapon Chain",q=2,sc=4,slot=0,vsell=950}
+I[6047]={c=9,il=38,n="Plans: Golden Scale Coif",q=1,sc=4,slot=0,vbuy=4400,vsell=1100}
+I[6048]={ah=7269,c=0,il=27,n="Shadow Protection Potion",q=1,rl=17,sc=1,slot=0,vsell=100}
+I[6049]={ah=15465,c=0,il=33,n="Fire Protection Potion",q=1,rl=23,sc=1,slot=0,vsell=170}
+I[6050]={ah=8939,c=0,il=38,n="Frost Protection Potion",q=1,rl=28,sc=1,slot=0,vsell=300}
+I[6051]={ah=6500,c=0,il=20,n="Holy Protection Potion",q=1,rl=10,sc=1,slot=0,vsell=62}
+I[6052]={ah=4511,c=0,il=38,n="Nature Protection Potion",q=1,rl=28,sc=1,slot=0,vsell=300}
+I[6053]={c=9,il=20,n="Recipe: Holy Protection Potion",q=1,sc=6,slot=0,vbuy=800,vsell=200}
+I[6054]={c=9,il=27,n="Recipe: Shadow Protection Potion",q=1,sc=6,slot=0,vsell=225}
+I[6055]={c=9,il=33,n="Recipe: Fire Protection Potion",q=1,sc=6,slot=0,vbuy=1500,vsell=375}
+I[6056]={c=9,il=38,n="Recipe: Frost Protection Potion",q=1,sc=6,slot=0,vbuy=2000,vsell=500}
+I[6057]={c=9,il=38,n="Recipe: Nature Protection Potion",q=1,sc=6,slot=0,vbuy=2000,vsell=500}
+I[6068]={c=9,il=33,n="Recipe: Shadow Oil",q=1,sc=6,slot=0,vbuy=1500,vsell=375}
+I[6149]={ah=2347,c=0,il=41,n="Greater Mana Potion",q=1,rl=31,sc=1,slot=0,vsell=120}
+I[6211]={ah=7794,c=9,il=30,n="Recipe: Elixir of Ogre's Strength",q=1,sc=6,slot=0,vsell=450}
+I[6214]={ah=2400,c=2,il=16,n="Heavy Copper Maul",q=2,rl=11,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=10.76,ITEM_MOD_STRENGTH_SHORT=4},vsell=595}
+I[6217]={ah=2500,c=7,il=5,n="Copper Rod",q=1,sc=12,slot=0,vbuy=110,vsell=24}
+I[6218]={c=7,il=5,n="Runed Copper Rod",q=1,rl=1,sc=12,slot=0,vsell=24}
+I[6219]={ah=4100,c=2,il=10,n="Arclight Spanner",q=1,sc=14,slot=21,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=4.38},vsell=144}
+I[6238]={ah=751,c=4,de={{10938,0.1993,1,2},{10940,0.8007,1,2}},il=10,n="Brown Linen Robe",q=2,rl=5,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=19},vsell=98}
+I[6239]={ah=1000,c=4,de={{10938,0.1784,1,2},{10940,0.8216,1,2}},il=12,n="Red Linen Vest",q=2,rl=7,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=23},vsell=160}
+I[6240]={ah=1500,c=4,de={{10938,0.2083,1,2},{10940,0.7917,1,2}},il=12,n="Blue Linen Vest",q=2,rl=7,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=2,RESISTANCE0_NAME=23},vsell=161}
+I[6241]={ah=975,c=4,de={{10938,0.215,1,2},{10940,0.785,1,2}},il=10,n="White Linen Robe",q=2,rl=5,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=1,RESISTANCE0_NAME=19},vsell=99}
+I[6242]={ah=2192,c=4,de={{10938,0.1568,1,2},{10940,0.8432,1,2}},il=14,n="Blue Linen Robe",q=2,rl=9,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=3,RESISTANCE0_NAME=26},vsell=243}
+I[6260]={ah=212,c=7,il=10,n="Blue Dye",q=1,sc=11,slot=0,vbuy=50,vsell=12}
+I[6261]={ah=100,c=7,il=35,n="Orange Dye",q=1,sc=11,slot=0,vbuy=1000,vsell=250}
+I[6263]={ah=3500,c=4,de={{10939,0.2,1,2},{10940,0.73,2,3},{10978,0.07,1,1}},il=20,n="Blue Overalls",q=2,rl=15,sc=1,slot=5,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=34},vsell=589}
+I[6264]={ah=4399,c=4,de={{10940,0.7595,4,6},{10978,0.1013,1,1},{10998,0.1392,1,2}},il=23,n="Greater Adept's Robe",q=2,rl=18,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=2,ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=37},vsell=884}
+I[6270]={ah=5360,c=9,il=12,n="Pattern: Blue Linen Vest",q=1,sc=2,slot=0,vsell=50}
+I[6271]={ah=880,c=9,il=12,n="Pattern: Red Linen Vest",q=2,sc=2,slot=0,vsell=50}
+I[6272]={ah=4199,c=9,il=14,n="Pattern: Blue Linen Robe",q=1,sc=2,slot=0,vsell=75}
+I[6274]={ah=3267,c=9,il=20,n="Pattern: Blue Overalls",q=1,sc=2,slot=0,vbuy=400,vsell=100}
+I[6275]={ah=5399,c=9,il=23,n="Pattern: Greater Adept's Robe",q=1,sc=2,slot=0,vbuy=800,vsell=200}
+I[6289]={ah=21,c=7,il=15,n="Raw Longjaw Mud Snapper",q=1,rl=5,sc=8,slot=0,vsell=1}
+I[6290]={ah=416,c=0,il=10,n="Brilliant Smallfish",q=1,rl=1,sc=5,slot=0,vsell=1}
+I[6291]={ah=132,c=7,il=5,n="Raw Brilliant Smallfish",q=1,rl=1,sc=8,slot=0,vsell=1}
+I[6303]={ah=37,c=7,il=5,n="Raw Slitherskin Mackerel",q=1,rl=1,sc=8,slot=0,vsell=1}
+I[6308]={ah=93,c=7,il=25,n="Raw Bristle Whisker Catfish",q=1,rl=15,sc=8,slot=0,vsell=2}
+I[6316]={c=0,il=15,n="Loch Frenzy Delight",q=1,rl=5,sc=5,slot=0,vsell=3}
+I[6317]={ah=89,c=7,il=15,n="Raw Loch Frenzy",q=1,rl=5,sc=8,slot=0,vsell=2}
+I[6325]={ah=1900,c=9,il=5,n="Recipe: Brilliant Smallfish",q=1,sc=5,slot=0,vbuy=40,vsell=10}
+I[6326]={ah=2701,c=9,il=5,n="Recipe: Slitherskin Mackerel",q=1,sc=5,slot=0,vbuy=40,vsell=10}
+I[6328]={ah=3369,c=9,il=15,n="Recipe: Longjaw Mud Snapper",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[6329]={ah=9000,c=9,il=15,n="Recipe: Loch Frenzy Delight",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[6330]={ah=5700,c=9,il=25,n="Recipe: Bristle Whisker Catfish",q=1,sc=5,slot=0,vbuy=1200,vsell=300}
+I[6338]={ah=1700,c=7,il=20,n="Silver Rod",q=1,sc=12,slot=0,vsell=125}
+I[6339]={c=7,il=20,n="Runed Silver Rod",q=1,rl=1,sc=12,slot=0,vsell=24}
+I[6342]={ah=167,c=9,il=12,n="Formula: Enchant Chest - Minor Intellect",q=2,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=2},vbuy=300,vsell=75}
+I[6344]={ah=1460,c=9,il=17,n="Formula: Enchant Bracer - Minor Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=3},vsell=100}
+I[6346]={ah=28799,c=9,il=19,n="Formula: Enchant Chest - Lesser Intellect",q=2,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=3},vsell=100}
+I[6347]={ah=1400,c=9,il=19,n="Formula: Enchant Bracer - Minor Strength",q=2,sc=8,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=3},vsell=100}
+I[6348]={ah=1650,c=9,il=20,n="Formula: Enchant Weapon - Minor Beastslayer",q=2,sc=8,slot=0,vsell=125}
+I[6349]={ah=9498,c=9,il=20,n="Formula: Enchant 2H Weapon - Lesser Intellect",q=1,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=5},vsell=125}
+I[6350]={ah=4895,c=4,il=18,n="Rough Bronze Boots",q=2,rl=13,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=111},vsell=295}
+I[6358]={ah=1470,c=7,il=15,n="Oily Blackmouth",q=1,sc=11,slot=0,vsell=4}
+I[6359]={ah=817,c=7,il=25,n="Firefin Snapper",q=1,sc=11,slot=0,vsell=5}
+I[6361]={ah=124,c=7,il=15,n="Raw Rainbow Fin Albacore",q=1,rl=5,sc=8,slot=0,vsell=2}
+I[6362]={ah=187,c=7,il=35,n="Raw Rockscale Cod",q=1,rl=25,sc=8,slot=0,vsell=4}
+I[6368]={ah=2800,c=9,il=15,n="Recipe: Rainbow Fin Albacore",q=1,sc=5,slot=0,vbuy=400,vsell=100}
+I[6369]={ah=7323,c=9,il=30,n="Recipe: Rockscale Cod",q=1,sc=5,slot=0,vbuy=2200,vsell=550}
+I[6370]={ah=3788,c=7,il=15,n="Blackmouth Oil",q=1,sc=11,slot=0,vsell=10}
+I[6371]={ah=2623,c=7,il=25,n="Fire Oil",q=1,sc=11,slot=0,vsell=12}
+I[6372]={ah=4769,c=0,il=20,n="Swim Speed Potion",q=1,rl=10,sc=1,slot=0,vsell=35}
+I[6373]={ah=5400,c=0,il=28,n="Elixir of Fire Power",q=1,rl=18,sc=2,slot=0,vsell=35}
+I[6375]={ah=5200,c=9,il=24,n="Formula: Enchant Bracer - Lesser Spirit",q=2,sc=8,slot=0,vsell=250}
+I[6377]={ah=5899,c=9,il=25,n="Formula: Enchant Boots - Minor Agility",q=2,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=3},vsell=250}
+I[6384]={ah=8999,c=4,il=25,n="Stylish Blue Shirt",q=1,sc=-8,slot=4,vsell=250}
+I[6385]={ah=9994,c=4,il=25,n="Stylish Green Shirt",q=1,sc=-8,slot=4,vsell=250}
+I[6390]={ah=3154,c=9,il=24,n="Pattern: Stylish Blue Shirt",q=2,sc=2,slot=0,vsell=150}
+I[6391]={ah=3199,c=9,il=24,n="Pattern: Stylish Green Shirt",q=2,sc=2,slot=0,vsell=150}
+I[6401]={c=9,il=31,n="Pattern: Dark Silk Shirt",q=1,sc=2,slot=0,vbuy=1100,vsell=275}
+I[6450]={ah=409,c=0,il=1,n="Silk Bandage",q=1,sc=7,slot=0,vsell=200}
+I[6451]={ah=548,c=0,il=1,n="Heavy Silk Bandage",q=1,sc=7,slot=0,vsell=400}
+I[6452]={ah=1935,c=0,il=16,n="Anti-Venom",q=1,sc=8,slot=0,vsell=28}
+I[6453]={ah=15500,c=0,il=26,n="Strong Anti-Venom",q=1,rl=20,sc=8,slot=0,vsell=62}
+I[6454]={ah=42257,c=9,il=26,n="Manual: Strong Anti-Venom",q=2,sc=7,slot=0,vsell=225}
+I[6466]={ah=3500,c=4,de={{10939,0.3077,1,2},{10940,0.6923,2,3},{10978,0.3333,1,1}},il=18,n="Deviate Scale Cloak",q=2,rl=13,sc=-6,slot=16,stats={ITEM_MOD_AGILITY_SHORT=2,ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=16},vsell=413}
+I[6467]={ah=11100,c=4,de={{10940,0.7273,4,6},{10998,0.2727,1,1}},il=21,n="Deviate Scale Gloves",q=2,rl=16,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=49},vsell=420}
+I[6468]={ah=90093,c=4,de={{10978,1,1,1}},il=23,n="Deviate Scale Belt",q=3,rl=18,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=51},vsell=658}
+I[6470]={ah=83,c=7,il=1,n="Deviate Scale",q=1,sc=6,slot=0,vsell=20}
+I[6471]={ah=5096,c=7,il=1,n="Perfect Deviate Scale",q=1,sc=6,slot=0,vsell=500}
+I[6474]={ah=5555,c=9,il=18,n="Pattern: Deviate Scale Cloak",q=1,sc=1,slot=0,vsell=137}
+I[6475]={ah=5871,c=9,il=21,n="Pattern: Deviate Scale Gloves",q=1,sc=1,slot=0,vsell=375}
+I[6476]={ah=4444,c=9,il=23,n="Pattern: Deviate Scale Belt",q=2,sc=1,slot=0,vsell=500}
+I[6522]={ah=1837,c=0,il=15,n="Deviate Fish",q=1,sc=5,slot=0,vsell=4}
+I[6530]={ah=70,c=0,il=20,n="Nightcrawlers",q=1,sc=-3,slot=0,vbuy=88,vsell=25}
+I[6533]={ah=1353,c=0,il=30,n="Aquadynamic Fish Attractor",q=1,sc=-3,slot=0,vsell=62}
+I[6657]={ah=3143,c=0,il=10,n="Savory Deviate Delight",q=1,rl=1,sc=5,slot=0,vsell=5}
+I[6661]={ah=70000,c=9,il=18,n="Recipe: Savory Deviate Delight",q=2,sc=5,slot=0,vsell=115}
+I[6662]={ah=5004,c=0,il=18,n="Elixir of Giant Growth",q=1,rl=8,sc=2,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=8},vsell=95}
+I[6663]={ah=19200,c=9,il=18,n="Recipe: Elixir of Giant Growth",q=2,sc=6,slot=0,vsell=150}
+I[6672]={ah=50000,c=9,il=37,n="Schematic: Flash Bomb",q=2,rl=5,sc=3,slot=0,vsell=500}
+I[6709]={ah=1807,c=4,de={{10939,0.15,1,2},{10940,0.8,2,3},{10978,0.05,1,1}},il=18,n="Moonglow Vest",q=2,rl=13,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=3,RESISTANCE0_NAME=74},vsell=545}
+I[6710]={ah=49992,c=9,il=18,n="Pattern: Moonglow Vest",q=2,sc=1,slot=0,vsell=137}
+I[6712]={ah=284,c=15,il=20,n="Practice Lock",q=1,sc=4,slot=0,vsell=12}
+I[6714]={ah=1111,c=0,il=25,n="Ez-Thro Dynamite",q=1,rl=10,sc=0,slot=0,vsell=75}
+I[6716]={ah=1531,c=9,il=20,n="Schematic: EZ-Thro Dynamite",q=2,sc=3,slot=0,vsell=200}
+I[6731]={ah=3600,c=4,de={{10939,0.3333,1,2},{10940,0.5556,2,3},{10978,0.1111,1,1}},il=20,n="Ironforge Breastplate",q=2,rl=15,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=168},vsell=871}
+I[6735]={ah=39995,c=9,il=20,n="Plans: Ironforge Breastplate",q=2,sc=4,slot=0,vsell=150}
+I[6786]={ah=2717,c=4,il=10,n="Simple Dress",q=1,sc=0,slot=5,vsell=59}
+I[6787]={ah=1456,c=4,il=22,n="White Woolen Dress",q=2,rl=17,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=36},vsell=466}
+I[6795]={ah=8400,c=4,il=32,n="White Swashbuckler's Shirt",q=1,sc=-8,slot=4,vsell=500}
+I[6796]={ah=4800,c=4,il=35,n="Red Swashbuckler's Shirt",q=1,sc=-8,slot=4,vsell=750}
+I[6887]={ah=1052,c=0,il=45,n="Spotted Yellowtail",q=1,rl=35,sc=5,slot=0,vsell=5}
+I[6888]={ah=400,c=0,il=10,n="Herb Baked Egg",q=1,rl=1,sc=5,slot=0,vsell=10}
+I[6889]={ah=305,c=7,il=5,n="Small Egg",q=1,sc=8,slot=0,vsell=4}
+I[6890]={ah=1294,c=0,il=10,n="Smoked Bear Meat",q=1,rl=1,sc=5,slot=0,vsell=6}
+I[6892]={ah=4200,c=9,il=13,n="Recipe: Smoked Bear Meat",q=1,sc=5,slot=0,vbuy=250,vsell=62}
+I[7026]={ah=196,c=4,il=9,n="Linen Belt",q=1,rl=4,sc=1,slot=6,stats={RESISTANCE0_NAME=9},vsell=22}
+I[7046]={ah=3200,c=4,de={{11082,0.2105,1,2},{11083,0.7381,1,2},{11084,0.0513,1,1}},il=28,n="Azure Silk Pants",q=2,rl=23,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=36},vsell=1494}
+I[7047]={ah=25390,c=4,de={{11082,0.25,1,2},{11083,0.6562,1,2},{11084,0.0938,1,1}},il=29,n="Hands of Darkness",q=2,rl=24,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=5,RESISTANCE0_NAME=26},vsell=824}
+I[7048]={ah=2400,c=4,il=29,n="Azure Silk Hood",q=2,rl=24,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=34},vsell=745}
+I[7049]={ah=15695,c=4,de={{11082,0.2034,1,2},{11083,0.7627,1,2},{11084,0.0339,1,1}},il=30,n="Truefaith Gloves",q=2,rl=25,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,RESISTANCE0_NAME=27},vsell=914}
+I[7050]={ah=2217,c=4,il=32,n="Silk Headband",q=2,rl=27,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=36},vsell=999}
+I[7051]={ah=2600,c=4,de={{11083,0.7486,2,5},{11134,0.2114,1,2},{11138,0.04,1,1}},il=34,n="Earthen Vest",q=2,rl=29,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=10,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=46},vsell=2696}
+I[7052]={ah=21624,c=4,de={{11083,0.6111,2,5},{11134,0.3611,1,2},{11138,0.0278,1,1}},il=35,n="Azure Silk Belt",q=2,rl=30,sc=1,slot=6,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=26},vsell=1488}
+I[7053]={ah=7879,c=4,de={{11083,0.7592,2,5},{11134,0.1961,1,2},{11138,0.0447,1,1}},il=35,n="Azure Silk Cloak",q=2,rl=30,sc=-6,slot=16,stats={ITEM_MOD_SPIRIT_SHORT=3,RESISTANCE0_NAME=23},vsell=2240}
+I[7054]={c=4,de={{11139,1,1,1}},il=38,n="Robe of Power",q=3,rl=33,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=55},vsell=4700}
+I[7055]={ah=6734,c=4,de={{11083,0.7733,2,5},{11134,0.1802,1,2},{11138,0.0465,1,1}},il=35,n="Crimson Silk Belt",q=2,rl=30,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=7,RESISTANCE0_NAME=26},vsell=1503}
+I[7056]={ah=19982,c=4,de={{11135,0.125,1,1},{11137,0.875,1,2}},il=36,n="Crimson Silk Cloak",q=2,rl=31,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=24},vsell=2314}
+I[7057]={ah=4410,c=4,de={{11135,0.2164,1,2},{11137,0.7382,1,2},{11139,0.0454,1,1}},il=36,n="Green Silken Shoulders",q=2,rl=31,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=11,RESISTANCE0_NAME=36},vsell=2323}
+I[7058]={ah=2011,c=4,il=37,n="Crimson Silk Vest",q=2,rl=32,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=49},vsell=2052}
+I[7059]={ah=11700,c=4,de={{11135,0.0645,1,1},{11137,0.871,1,2},{11139,0.0645,1,1}},il=38,n="Crimson Silk Shoulders",q=2,rl=33,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=38},vsell=2781}
+I[7060]={ah=16499,c=4,de={{11135,0.1458,1,2},{11137,0.7083,1,2},{11139,0.1458,1,1}},il=38,n="Azure Shoulders",q=2,rl=33,sc=1,slot=3,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=38},vsell=2791}
+I[7061]={c=4,il=39,n="Earthen Silk Belt",q=2,rl=34,sc=1,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=29},vsell=2017}
+I[7062]={ah=4531,c=4,il=39,n="Crimson Silk Pantaloons",q=2,rl=34,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=13,RESISTANCE0_NAME=45},vsell=2430}
+I[7063]={c=4,il=41,n="Crimson Silk Robe",q=2,rl=36,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=15,RESISTANCE0_NAME=54},vsell=4741}
+I[7064]={ah=14249,c=4,de={{11137,0.5625,2,5},{11174,0.375,1,2},{11177,0.0625,1,1}},il=42,n="Crimson Silk Gloves",q=2,rl=37,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=35},vsell=2569}
+I[7065]={ah=9000,c=4,de={{11083,0.7412,2,5},{11134,0.2235,1,2},{11138,0.0353,1,1}},il=33,n="Green Silk Armor",q=2,rl=28,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=13,RESISTANCE0_NAME=45},vsell=2398}
+I[7067]={ah=20687,c=7,il=25,n="Elemental Earth",q=1,sc=10,slot=0,vsell=400}
+I[7068]={ah=24850,c=7,il=25,n="Elemental Fire",q=1,sc=10,slot=0,vsell=400}
+I[7069]={ah=2048,c=7,il=25,n="Elemental Air",q=1,sc=10,slot=0,vsell=400}
+I[7070]={ah=8333,c=7,il=25,n="Elemental Water",q=1,sc=10,slot=0,vsell=400}
+I[7071]={ah=1985,c=7,il=30,n="Iron Buckle",q=1,sc=1,slot=0,vsell=100}
+I[7072]={ah=171,c=7,il=25,n="Naga Scale",q=1,sc=11,slot=0,vsell=150}
+I[7075]={ah=979,c=7,il=45,n="Core of Earth",q=1,sc=10,slot=0,vsell=400}
+I[7076]={ah=39318,c=7,il=55,n="Essence of Earth",q=2,sc=10,slot=0,vsell=400}
+I[7077]={ah=3033,c=7,il=45,n="Heart of Fire",q=1,sc=10,slot=0,vsell=400}
+I[7078]={ah=29548,c=7,il=55,n="Essence of Fire",q=2,sc=10,slot=0,vsell=400}
+I[7079]={ah=1310,c=7,il=45,n="Globe of Water",q=1,sc=10,slot=0,vsell=400}
+I[7080]={ah=126224,c=7,il=55,n="Essence of Water",q=2,sc=10,slot=0,vsell=400}
+I[7081]={ah=1670,c=7,il=45,n="Breath of Wind",q=1,sc=10,slot=0,vsell=400}
+I[7082]={ah=176732,c=7,il=55,n="Essence of Air",q=2,sc=10,slot=0,vsell=400}
+I[7084]={ah=5504,c=9,il=38,n="Pattern: Crimson Silk Shoulders",q=2,sc=2,slot=0,vsell=350}
+I[7085]={ah=6925,c=9,il=38,n="Pattern: Azure Shoulders",q=2,sc=2,slot=0,vsell=350}
+I[7086]={ah=4567,c=9,il=39,n="Pattern: Earthen Silk Belt",q=2,sc=2,slot=0,vsell=375}
+I[7087]={c=9,il=36,n="Pattern: Crimson Silk Cloak",q=1,sc=2,slot=0,vbuy=1200,vsell=300}
+I[7088]={c=9,il=41,n="Pattern: Crimson Silk Robe",q=1,sc=2,slot=0,vbuy=5000,vsell=1250}
+I[7089]={c=9,il=35,n="Pattern: Azure Silk Cloak",q=1,sc=2,slot=0,vbuy=1500,vsell=375}
+I[7090]={ah=5365,c=9,il=33,n="Pattern: Green Silk Armor",q=2,sc=2,slot=0,vsell=250}
+I[7091]={ah=9943,c=9,il=30,n="Pattern: Truefaith Gloves",q=2,sc=2,slot=0,vsell=250}
+I[7092]={ah=8900,c=9,il=29,n="Pattern: Hands of Darkness",q=2,sc=2,slot=0,vsell=250}
+I[7114]={c=9,il=29,n="Pattern: Azure Silk Gloves",q=1,sc=2,slot=0,vsell=250}
+I[7148]={ah=30595,c=4,il=33,n="Goblin Jumper Cables",q=1,rl=5,sc=-4,slot=12,vsell=21}
+I[7166]={ah=682,c=2,il=11,n="Copper Dagger",q=2,rl=6,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=1,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=5.88},vsell=194}
+I[7189]={ah=159500,c=4,il=45,n="Goblin Rocket Boots",q=2,sc=1,slot=8,stats={RESISTANCE0_NAME=41},vsell=4712}
+I[7191]={ah=33900,c=7,il=26,n="Fused Wiring",q=1,sc=1,slot=0}
+I[7192]={ah=993526,c=9,il=26,n="Schematic: Goblin Rocket Boots",q=2,sc=3,slot=0,vsell=300}
+I[7276]={ah=189,c=4,il=9,n="Handstitched Leather Cloak",q=1,rl=4,sc=-6,slot=16,stats={RESISTANCE0_NAME=8},vsell=34}
+I[7277]={ah=499,c=4,il=9,n="Handstitched Leather Bracers",q=1,rl=4,sc=2,slot=9,stats={RESISTANCE0_NAME=21},vsell=28}
+I[7278]={ah=397,c=11,il=5,n="Light Leather Quiver",q=1,rl=1,sc=2,slot=18,vsell=25}
+I[7279]={ah=441,c=11,il=5,n="Small Leather Ammo Pouch",q=1,rl=1,sc=3,slot=18,vsell=25}
+I[7280]={ah=1800,c=4,de={{10938,0.2826,1,2},{10940,0.7174,1,2}},il=11,n="Rugged Leather Pants",q=2,rl=6,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=51},vsell=162}
+I[7281]={ah=599,c=4,il=14,n="Light Leather Bracers",q=2,rl=9,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=1,ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=30},vsell=84}
+I[7282]={ah=1432,c=4,de={{10939,0.2194,1,2},{10940,0.7342,2,3},{10978,0.0464,1,1}},il=19,n="Light Leather Pants",q=2,rl=14,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=66},vsell=599}
+I[7283]={ah=2482,c=4,de={{10939,0.2,1,2},{10940,0.7,2,3},{10978,0.1,1,1}},il=20,n="Black Whelp Cloak",q=2,rl=15,sc=-6,slot=16,stats={RESISTANCE0_NAME=17},vsell=519}
+I[7284]={ah=14995,c=4,de={{10940,0.8333,4,6},{10998,0.1667,1,1}},il=24,n="Red Whelp Gloves",q=2,rl=19,sc=2,slot=10,stats={RESISTANCE0_NAME=52},vsell=586}
+I[7285]={ah=2295,c=4,de={{10940,0.6699,4,6},{10978,0.1456,1,1},{10998,0.1845,1,2}},il=24,n="Nimble Leather Gloves",q=2,rl=19,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=52},vsell=588}
+I[7286]={ah=26,c=7,il=1,n="Black Whelp Scale",q=1,sc=6,slot=0,vsell=25}
+I[7287]={ah=520,c=7,il=1,n="Red Whelp Scale",q=1,sc=6,slot=0,vsell=100}
+I[7288]={ah=867,c=9,il=11,n="Pattern: Rugged Leather Pants",q=2,sc=1,slot=0,vsell=125}
+I[7289]={ah=10232,c=9,il=20,n="Pattern: Black Whelp Cloak",q=1,sc=1,slot=0,vsell=162}
+I[7290]={ah=9299,c=9,il=24,n="Pattern: Red Whelp Gloves",q=1,sc=1,slot=0,vsell=400}
+I[7348]={ah=3199,c=4,de={{10940,0.8167,4,6},{10978,0.1333,1,1},{10998,0.05,1,2}},il=25,n="Fletcher's Gloves",q=2,rl=20,sc=2,slot=10,stats={RESISTANCE0_NAME=53},vsell=690}
+I[7349]={ah=40000,c=4,de={{11082,0.2105,1,2},{11083,0.6316,1,2},{11084,0.1579,1,1}},il=27,n="Herbalist's Gloves",q=2,rl=22,sc=2,slot=10,stats={RESISTANCE0_NAME=55},vsell=861}
+I[7352]={ah=5595,c=4,de={{11082,0.1765,1,2},{11083,0.7647,1,2},{11084,0.0588,1,1}},il=27,n="Earthen Leather Shoulders",q=2,rl=22,sc=2,slot=3,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=67},vsell=1306}
+I[7358]={ah=14970,c=4,il=28,n="Pilferer's Gloves",q=2,rl=23,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=8,RESISTANCE0_NAME=56},vsell=885}
+I[7359]={ah=11497,c=4,il=29,n="Heavy Earthen Gloves",q=2,rl=24,sc=2,slot=10,stats={RESISTANCE0_NAME=57},vsell=978}
+I[7360]={ah=5299,c=9,il=25,n="Pattern: Dark Leather Gloves",q=2,sc=1,slot=0,vsell=400}
+I[7361]={ah=61453,c=9,il=26,n="Pattern: Herbalist's Gloves",q=2,sc=1,slot=0,vsell=450}
+I[7362]={c=9,il=27,n="Pattern: Earthen Leather Shoulders",q=1,sc=1,slot=0,vbuy=2000,vsell=500}
+I[7363]={ah=4554,c=9,il=28,n="Pattern: Pilferer's Gloves",q=2,sc=1,slot=0,vsell=525}
+I[7364]={ah=4206,c=9,il=29,n="Pattern: Heavy Earthen Gloves",q=2,sc=1,slot=0,vsell=550}
+I[7371]={ah=4552,c=11,il=35,n="Heavy Quiver",q=2,rl=30,sc=2,slot=18,vbuy=2000,vsell=500}
+I[7372]={ah=6699,c=11,il=35,n="Heavy Leather Ammo Pouch",q=2,rl=30,sc=3,slot=18,vsell=500}
+I[7373]={ah=9798,c=4,de={{11083,0.7097,2,5},{11134,0.2258,1,2},{11138,0.0645,1,1}},il=33,n="Dusky Leather Leggings",q=2,rl=28,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=13,RESISTANCE0_NAME=86},vsell=3097}
+I[7374]={ah=29103,c=4,de={{11083,0.8462,2,5},{11134,0.1538,1,2}},il=35,n="Dusky Leather Armor",q=2,rl=30,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=14,RESISTANCE0_NAME=102},vsell=3760}
+I[7375]={ah=16626,c=4,il=35,n="Green Whelp Armor",q=2,rl=30,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=102},vsell=3773}
+I[7377]={ah=12787,c=4,de={{11135,0.3214,1,2},{11137,0.6071,1,2},{11139,0.0714,1,1}},il=36,n="Frost Leather Cloak",q=2,rl=31,sc=-6,slot=16,stats={RESISTANCE0_NAME=24},vsell=2269}
+I[7378]={ah=5058,c=4,de={{11135,0.2346,1,2},{11137,0.7202,1,2},{11139,0.0453,1,1}},il=37,n="Dusky Bracers",q=2,rl=32,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=8,RESISTANCE0_NAME=46},vsell=2146}
+I[7386]={ah=3600,c=4,de={{11135,0.4,1,1},{11137,0.4,1,2},{11139,0.2,1,1}},il=38,n="Green Whelp Bracers",q=2,rl=33,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=47},vsell=2387}
+I[7387]={ah=15025,c=4,de={{11135,0.2029,1,2},{11137,0.7681,1,2},{11139,0.029,1,1}},il=39,n="Dusky Belt",q=2,rl=34,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=61},vsell=2587}
+I[7390]={ah=42044,c=4,il=40,n="Dusky Boots",q=2,rl=35,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=76},vsell=4237}
+I[7391]={ah=24997,c=4,de={{11135,0.1111,2,2},{11137,0.8889,1,2}},il=40,n="Swift Boots",q=2,rl=35,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=76},vsell=4253}
+I[7392]={ah=2700,c=7,il=1,n="Green Whelp Scale",q=1,sc=6,slot=0,vsell=200}
+I[7428]={ah=815,c=7,il=30,n="Shadowcat Hide",q=1,sc=6,slot=0,vsell=250}
+I[7449]={ah=5099,c=9,il=33,n="Pattern: Dusky Leather Leggings",q=2,sc=1,slot=0,vsell=625}
+I[7450]={ah=3874,c=9,il=35,n="Pattern: Green Whelp Armor",q=2,sc=1,slot=0,vsell=500}
+I[7451]={c=9,il=38,n="Pattern: Green Whelp Bracers",q=2,sc=1,slot=0,vbuy=2800,vsell=700}
+I[7452]={ah=67500,c=9,il=40,n="Pattern: Dusky Boots",q=3,sc=1,slot=0,vsell=875}
+I[7453]={ah=4600,c=9,il=40,n="Pattern: Swift Boots",q=2,sc=1,slot=0,vsell=875}
+I[7506]={ah=2777,c=4,il=25,n="Gnomish Universal Remote",q=2,sc=-4,slot=12,vsell=500}
+I[7560]={c=9,il=25,n="Schematic: Gnomish Universal Remote",q=1,sc=3,slot=0,vbuy=1200,vsell=300}
+I[7561]={c=9,il=33,n="Schematic: Goblin Jumper Cables",q=1,rl=5,sc=3,slot=0,vsell=500}
+I[7613]={c=9,il=31,n="Pattern: Green Leather Armor",q=1,sc=1,slot=0,vbuy=2000,vsell=500}
+I[7676]={ah=10187,c=0,il=15,n="Thistle Tea",q=1,rl=5,sc=5,slot=0,vsell=30}
+I[7742]={c=9,il=40,n="Schematic: Gnomish Cloaking Device",q=1,rl=5,sc=3,slot=0,vsell=600}
+I[7909]={ah=3007,c=7,il=45,n="Aquamarine",q=2,sc=11,slot=0,vsell=1000}
+I[7910]={ah=6404,c=7,il=50,n="Star Ruby",q=2,sc=11,slot=0,vsell=5000}
+I[7912]={ah=1195,c=7,il=35,n="Solid Stone",q=1,rl=40,sc=7,slot=0,vsell=100}
+I[7913]={ah=49999,c=4,il=32,n="Barbaric Iron Shoulders",q=2,rl=27,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=153},vsell=2500}
+I[7914]={ah=20000,c=4,il=32,n="Barbaric Iron Breastplate",q=2,rl=27,sc=3,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=204},vsell=3330}
+I[7915]={ah=20000,c=4,il=35,n="Barbaric Iron Helm",q=2,rl=30,sc=3,slot=1,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=173},vsell=3337}
+I[7916]={ah=15000,c=4,il=36,n="Barbaric Iron Boots",q=2,rl=31,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=149},vsell=3700}
+I[7917]={ah=7000,c=4,il=37,n="Barbaric Iron Gloves",q=2,rl=32,sc=3,slot=10,stats={ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=137},vsell=2711}
+I[7918]={ah=9555,c=4,de={{11137,0.7,2,5},{11174,0.2667,1,2},{11177,0.0333,1,1}},il=41,n="Heavy Mithril Shoulder",q=2,rl=40,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=225},vsell=3701}
+I[7919]={ah=12597,c=4,de={{11137,0.7512,2,5},{11174,0.1965,1,2},{11177,0.0523,1,1}},il=41,n="Heavy Mithril Gauntlet",q=2,rl=40,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=188},vsell=2476}
+I[7920]={ah=8000,c=4,de={{11137,0.7524,2,5},{11174,0.219,1,2},{11177,0.0286,1,1}},il=42,n="Mithril Plate Pants",q=2,rl=40,sc=3,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=208},vsell=8053}
+I[7921]={ah=37026,c=4,il=42,n="Heavy Mithril Pants",q=2,rl=40,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=297},vsell=5387}
+I[7922]={ah=10667,c=4,il=43,n="Steel Plate Helm",q=2,rl=40,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=310},vsell=2377}
+I[7924]={ah=7950,c=4,de={{11137,0.55,2,5},{11174,0.4,1,2},{11177,0.05,1,1}},il=43,n="Mithril Plate Bracers",q=2,rl=40,sc=3,slot=9,stats={ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=106},vsell=4103}
+I[7926]={ah=73154,c=4,de={{11137,0.75,2,5},{11174,0.25,1,1}},il=44,n="Ornate Mithril Pants",q=2,rl=40,sc=4,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=375},vsell=5952}
+I[7927]={ah=35892,c=4,de={{11137,0.75,2,5},{11174,0.25,1,2}},il=44,n="Ornate Mithril Gloves",q=2,rl=40,sc=4,slot=10,stats={RESISTANCE0_NAME=268},vsell=2987}
+I[7928]={ah=69000,c=4,de={{11137,0.8,3,4},{11174,0.2,2,2}},il=45,n="Ornate Mithril Shoulders",q=2,rl=40,sc=4,slot=3,stats={ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=327},vsell=4857}
+I[7929]={ah=40000,c=4,il=42,n="Orcish War Leggings",q=2,rl=40,sc=3,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=17,RESISTANCE0_NAME=208},vsell=7739}
+end)()
+;(function()
+I[7930]={ah=33500,c=4,de={{11175,0.1579,1,2},{11176,0.75,1,2},{11178,0.0921,1,1}},il=46,n="Heavy Mithril Breastplate",q=2,rl=41,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=446},vsell=7045}
+I[7931]={ah=39066,c=4,de={{11175,0.2835,1,2},{11176,0.6772,1,2},{11178,0.0394,1,1}},il=46,n="Mithril Coif",q=2,rl=41,sc=3,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=13,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=206},vsell=7955}
+I[7932]={ah=10000,c=4,il=47,n="Mithril Plate Shoulders",q=2,rl=42,sc=3,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=10,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=194},vsell=8661}
+I[7933]={ah=20800,c=4,de={{11175,0.3235,1,2},{11176,0.6324,1,2},{11178,0.0441,1,1}},il=47,n="Heavy Mithril Boots",q=2,rl=42,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=312},vsell=5769}
+I[7934]={ah=12500,c=4,de={{11175,0.2143,1,2},{11176,0.6786,1,2},{11178,0.1071,1,1}},il=47,n="Heavy Mithril Helm",q=2,rl=42,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=369},vsell=5790}
+I[7935]={ah=160000,c=4,de={{11175,0.2,2,2},{11176,0.6,2,2},{11178,0.2,1,1}},il=48,n="Ornate Mithril Breastplate",q=2,rl=43,sc=4,slot=5,stats={RESISTANCE0_NAME=463},vsell=8368}
+I[7936]={ah=151892,c=4,de={{11175,0.2973,1,2},{11176,0.7027,1,2}},il=49,n="Ornate Mithril Boots",q=2,rl=44,sc=4,slot=8,stats={RESISTANCE0_NAME=324},vsell=6739}
+I[7937]={ah=85896,c=4,de={{11175,0.3143,1,2},{11176,0.6857,1,2}},il=49,n="Ornate Mithril Helm",q=2,rl=44,sc=4,slot=1,stats={ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=383},vsell=6763}
+I[7938]={ah=169991,c=4,il=45,n="Truesilver Gauntlets",q=3,rl=40,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=16,RESISTANCE0_NAME=300},vsell=4028}
+I[7939]={ah=188888,c=4,de={{11178,1,1,1}},il=49,n="Truesilver Breastplate",q=3,rl=44,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=519},vsell=10899}
+I[7941]={ah=69896,c=2,de={{11137,0.1538,3,4},{11174,0.8077,1,2},{11177,0.0385,1,1}},il=42,n="Heavy Mithril Axe",q=2,rl=37,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=24.07,ITEM_MOD_STAMINA_SHORT=7},vsell=12520}
+I[7942]={ah=60251,c=2,il=44,n="Blue Glittering Axe",q=2,rl=39,sc=0,slot=13,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=25.83},vsell=14659}
+I[7943]={ah=42500,c=2,il=45,n="Wicked Mithril Blade",q=2,rl=40,sc=7,slot=13,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=26.6,ITEM_MOD_STRENGTH_SHORT=6},vsell=15891}
+I[7944]={ah=40000,c=2,de={{11175,0.8,1,2},{11176,0.1667,1,2},{11178,0.0333,1,1}},il=48,n="Dazzling Mithril Rapier",q=2,rl=43,sc=7,slot=13,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=28.53},vsell=20092}
+I[7945]={ah=82599,c=2,de={{11175,0.7568,1,2},{11176,0.1622,1,2},{11178,0.0811,1,1}},il=46,n="Big Black Mace",q=2,rl=41,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=27.31,ITEM_MOD_STRENGTH_SHORT=8},vsell=17291}
+I[7946]={ah=41225,c=2,de={{11175,0.9,1,2},{11176,0.1,2,2}},il=49,n="Runed Mithril Hammer",q=2,rl=44,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=29.06,ITEM_MOD_STAMINA_SHORT=7},vsell=21660}
+I[7947]={ah=45000,c=2,de={{11176,0.125,5,5},{16202,0.875,1,2}},il=51,n="Ebon Shiv",q=2,rl=46,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=30.29},vsell=24892}
+I[7954]={ah=130000,c=2,il=47,n="The Shatterer",q=3,rl=42,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=31.67},vsell=23159}
+I[7955]={ah=1000,c=2,il=11,n="Copper Claymore",q=2,rl=6,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=7.73,ITEM_MOD_STAMINA_SHORT=1,ITEM_MOD_STRENGTH_SHORT=1},vsell=241}
+I[7956]={ah=1000,c=2,il=25,n="Bronze Warhammer",q=2,rl=20,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=16.86,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=6},vsell=1944}
+I[7957]={ah=2000,c=2,il=26,n="Bronze Greatsword",q=2,rl=21,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=17.5,ITEM_MOD_STAMINA_SHORT=6},vsell=2205}
+I[7958]={ah=4000,c=2,il=27,n="Bronze Battle Axe",q=2,rl=22,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=18.33,ITEM_MOD_STRENGTH_SHORT=10},vsell=2435}
+I[7959]={ah=86283,c=2,de={{11178,1,1,1}},il=50,n="Blight",q=3,rl=45,sc=6,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=43.38},vsell=33857}
+I[7960]={ah=99649,c=2,il=52,n="Truesilver Champion",q=3,rl=47,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=45},vsell=38548}
+I[7961]={ah=189998,c=2,il=49,n="Phantom Blade",q=3,rl=44,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=32.5},vsell=25508}
+I[7963]={ah=13500,c=4,de={{11135,0.2727,1,2},{11137,0.7273,1,2}},il=40,n="Steel Breastplate",q=2,rl=35,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=231},vsell=6488}
+I[7964]={ah=1350,c=0,il=35,n="Solid Sharpening Stone",q=1,rl=25,sc=-3,slot=0,vsell=40}
+I[7965]={ah=1974,c=0,il=35,n="Solid Weightstone",q=1,rl=25,sc=-3,slot=0,vsell=40}
+I[7966]={ah=4268,c=7,il=35,n="Solid Grinding Stone",q=1,sc=7,slot=0,vsell=200}
+I[7967]={ah=31000,c=0,il=43,n="Mithril Shield Spike",q=2,sc=6,slot=0,vsell=250}
+I[7969]={ah=3814,c=0,il=43,n="Mithril Spurs",q=2,sc=6,slot=0,vsell=250}
+I[7971]={ah=1715,c=7,il=40,n="Black Pearl",q=2,sc=11,slot=0,vsell=1000}
+I[7972]={ah=563,c=7,il=45,n="Ichor of Undeath",q=1,sc=10,slot=0,vsell=400}
+I[7974]={ah=167,c=7,il=45,n="Zesty Clam Meat",q=1,sc=8,slot=0,vsell=50}
+I[7975]={ah=5362,c=9,il=42,n="Plans: Heavy Mithril Pants",q=2,sc=4,slot=0,vsell=1500}
+I[7976]={ah=69155,c=9,il=43,n="Plans: Mithril Shield Spike",q=3,sc=4,slot=0,vsell=2000}
+I[7978]={ah=88000,c=9,il=32,n="Plans: Barbaric Iron Shoulders",q=2,sc=4,slot=0,vsell=750}
+I[7979]={ah=50000,c=9,il=32,n="Plans: Barbaric Iron Breastplate",q=2,sc=4,slot=0,vsell=750}
+I[7980]={ah=10000,c=9,il=35,n="Plans: Barbaric Iron Helm",q=2,sc=4,slot=0,vsell=850}
+I[7981]={ah=100,c=9,il=36,n="Plans: Barbaric Iron Boots",q=2,sc=4,slot=0,vsell=1100}
+I[7982]={ah=11650,c=9,il=37,n="Plans: Barbaric Iron Gloves",q=2,sc=4,slot=0,vsell=1100}
+I[7983]={c=9,il=44,n="Plans: Ornate Mithril Pants",q=2,sc=4,slot=0,vsell=2000}
+I[7984]={c=9,il=44,n="Plans: Ornate Mithril Gloves",q=2,sc=4,slot=0,vsell=2000}
+I[7985]={c=9,il=45,n="Plans: Ornate Mithril Shoulders",q=2,sc=4,slot=0,vsell=2000}
+I[7989]={ah=28442,c=9,il=47,n="Plans: Mithril Spurs",q=2,sc=4,slot=0,vsell=2500}
+I[7990]={ah=5825,c=9,il=49,n="Plans: Heavy Mithril Helm",q=2,sc=4,slot=0,vsell=2500}
+I[7991]={ah=36700,c=9,il=47,n="Plans: Mithril Plate Shoulders",q=3,sc=4,slot=0,vsell=2500}
+I[7992]={ah=5450,c=9,il=44,n="Plans: Blue Glittering Axe",q=2,sc=4,slot=0,vsell=2000}
+I[7993]={ah=4900,c=9,il=48,n="Plans: Dazzling Mithril Rapier",q=2,sc=4,slot=0,vsell=2500}
+I[7995]={c=9,il=43,n="Plans: Mithril Plate Bracers",q=1,sc=4,slot=0,vsell=1500}
+I[8028]={ah=33272,c=9,il=49,n="Plans: Runed Mithril Hammer",q=3,sc=4,slot=0,vsell=2500}
+I[8029]={c=9,il=45,n="Plans: Wicked Mithril Blade",q=2,sc=4,slot=0,vsell=2000}
+I[8030]={c=9,il=51,n="Plans: Ebon Shiv",q=1,sc=4,slot=0,vbuy=10000,vsell=2500}
+I[8067]={c=6,il=10,n="Crafted Light Shot",q=1,rl=5,sc=3,slot=24}
+I[8068]={ah=4,c=6,il=20,n="Crafted Heavy Shot",q=1,rl=15,sc=3,slot=24}
+I[8069]={ah=9,c=6,il=35,n="Crafted Solid Shot",q=1,rl=30,sc=3,slot=24}
+I[8146]={ah=789,c=7,il=45,n="Wicked Claw",q=1,sc=11,slot=0,vsell=500}
+I[8150]={ah=526,c=7,il=40,n="Deeprock Salt",q=1,sc=6,slot=0,vsell=250}
+I[8151]={ah=349,c=7,il=40,n="Flask of Mojo",q=1,sc=11,slot=0,vsell=250}
+I[8152]={ah=5700,c=7,il=40,n="Flask of Big Mojo",q=1,sc=11,slot=0,vsell=500}
+I[8153]={ah=5598,c=7,il=40,n="Wildvine",q=1,sc=9,slot=0,vsell=5}
+I[8154]={ah=1241,c=7,il=45,n="Scorpid Scale",q=1,sc=6,slot=0,vsell=250}
+I[8165]={ah=573,c=7,il=45,n="Worn Dragonscale",q=1,sc=6,slot=0,vsell=500}
+I[8167]={ah=1861,c=7,il=35,n="Turtle Scale",q=1,sc=6,slot=0,vsell=100}
+I[8168]={ah=131,c=7,il=45,n="Jet Black Feather",q=1,sc=6,slot=0,vsell=100}
+I[8169]={ah=688,c=7,il=40,n="Thick Hide",q=1,sc=6,slot=0,vsell=500}
+I[8170]={ah=1784,c=7,il=50,n="Rugged Leather",q=1,sc=6,slot=0,vsell=500}
+I[8171]={ah=5900,c=7,il=50,n="Rugged Hide",q=1,sc=6,slot=0,vsell=500}
+I[8172]={ah=3753,c=7,il=40,n="Cured Thick Hide",q=1,sc=6,slot=0,vsell=500}
+I[8173]={ah=2420,c=0,il=40,n="Thick Armor Kit",q=1,rl=30,sc=6,slot=0,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=32},vsell=1000}
+I[8174]={ah=8500,c=4,il=40,n="Comfortable Leather Hat",q=2,rl=35,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=90},vsell=4131}
+I[8175]={ah=12299,c=4,de={{11137,0.7857,2,5},{11174,0.1607,1,2},{11177,0.0536,1,1}},il=41,n="Nightscape Tunic",q=2,rl=36,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=15,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=113},vsell=5971}
+I[8176]={ah=7224,c=4,de={{11137,0.7258,2,5},{11174,0.2308,1,2},{11175,0.0024,1,1},{11177,0.0434,1,1}},il=41,n="Nightscape Headband",q=2,rl=36,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=91},vsell=4495}
+I[8185]={ah=45000,c=4,de={{11175,0.375,2,2},{11176,0.5,1,2},{11178,0.125,1,1}},il=47,n="Turtle Scale Leggings",q=2,rl=42,sc=3,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=226},vsell=10952}
+I[8187]={ah=35090,c=4,de={{11137,0.6667,2,5},{11174,0.1111,2,2},{11177,0.2222,1,1}},il=41,n="Turtle Scale Gloves",q=2,rl=36,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=146},vsell=3477}
+I[8189]={ah=23400,c=4,de={{11137,0.7333,2,5},{11174,0.1333,2,2},{11177,0.1333,1,1}},il=42,n="Turtle Scale Breastplate",q=2,rl=37,sc=3,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=238},vsell=7567}
+I[8191]={ah=48495,c=4,de={{11175,0.1818,1,1},{11176,0.7273,1,2},{11178,0.0909,1,1}},il=46,n="Turtle Scale Helm",q=2,rl=41,sc=3,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=206},vsell=7780}
+I[8192]={ah=23575,c=4,de={{11137,0.6757,2,5},{11174,0.2162,1,2},{11177,0.1081,1,1}},il=42,n="Nightscape Shoulders",q=2,rl=37,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=86},vsell=4782}
+I[8193]={ah=11459,c=4,de={{11175,0.1968,1,2},{11176,0.7486,1,2},{11178,0.0546,1,1}},il=46,n="Nightscape Pants",q=2,rl=41,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=16,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=108},vsell=8708}
+I[8197]={ah=12455,c=4,de={{11175,0.1768,1,2},{11176,0.7795,1,2},{11178,0.0438,1,1}},il=47,n="Nightscape Boots",q=2,rl=42,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=12,RESISTANCE0_NAME=87},vsell=7158}
+I[8198]={ah=58084,c=4,de={{11137,0.7692,2,5},{11174,0.1538,1,2},{11177,0.0769,1,1}},il=42,n="Turtle Scale Bracers",q=2,rl=37,sc=3,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=104},vsell=4013}
+I[8200]={ah=20000,c=4,de={{11137,0.6364,2,5},{11174,0.3636,1,2}},il=43,n="Big Voodoo Robe",q=2,rl=38,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=14,RESISTANCE0_NAME=117},vsell=7275}
+I[8201]={ah=12870,c=4,de={{11137,0.7778,2,5},{11174,0.1667,1,2},{11177,0.0556,1,1}},il=44,n="Big Voodoo Mask",q=2,rl=39,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=14,RESISTANCE0_NAME=97},vsell=5350}
+I[8202]={ah=17999,c=4,de={{11175,0.1667,2,2},{11176,0.7083,1,2},{11178,0.125,1,1}},il=47,n="Big Voodoo Pants",q=2,rl=42,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=110},vsell=9022}
+I[8203]={ah=75000,c=4,de={{11137,1,2,5}},il=44,n="Tough Scorpid Breastplate",q=2,rl=39,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=15,ITEM_MOD_INTELLECT_SHORT=7,RESISTANCE0_NAME=245},vsell=8628}
+I[8204]={ah=24996,c=4,de={{11137,0.6667,2,5},{11174,0.2667,1,2},{11177,0.0667,1,1}},il=45,n="Tough Scorpid Gloves",q=2,rl=40,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_INTELLECT_SHORT=9,RESISTANCE0_NAME=155},vsell=4676}
+I[8205]={ah=16572,c=4,de={{11137,0.7222,2,5},{11174,0.2778,1,2}},il=44,n="Tough Scorpid Bracers",q=2,rl=39,sc=3,slot=9,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=107},vsell=4346}
+I[8206]={ah=23900,c=4,de={{11175,0.1892,1,2},{11176,0.7297,1,2},{11178,0.0811,1,1}},il=49,n="Tough Scorpid Leggings",q=2,rl=44,sc=3,slot=7,stats={ITEM_MOD_AGILITY_SHORT=17,ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=235},vsell=12704}
+I[8207]={ah=37391,c=4,de={{11176,1,1,2}},il=48,n="Tough Scorpid Shoulders",q=2,rl=43,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=197},vsell=8978}
+I[8208]={ah=37495,c=4,de={{11175,0.125,1,1},{11176,0.875,1,2}},il=50,n="Tough Scorpid Helm",q=2,rl=45,sc=3,slot=1,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_INTELLECT_SHORT=14,RESISTANCE0_NAME=222},vsell=10272}
+I[8209]={ah=26655,c=4,de={{11175,0.0667,1,1},{11176,0.9333,1,2}},il=47,n="Tough Scorpid Boots",q=2,rl=42,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_INTELLECT_SHORT=7,RESISTANCE0_NAME=178},vsell=8375}
+I[8210]={ah=14669,c=4,de={{11137,0.6714,2,5},{11174,0.1286,1,2},{11177,0.2,1,1}},il=44,n="Wild Leather Shoulders",q=2,rl=39,sc=2,slot=3,stats={RESISTANCE0_NAME=90},vsell=5537}
+I[8211]={ah=50000,c=4,de={{11137,0.75,2,5},{11174,0.25,1,1}},il=45,n="Wild Leather Vest",q=2,rl=40,sc=2,slot=5,stats={RESISTANCE0_NAME=121},vsell=8002}
+I[8212]={ah=31356,c=4,de={{11175,0.1176,2,2},{11176,0.8824,1,2}},il=50,n="Wild Leather Leggings",q=2,rl=45,sc=2,slot=7,stats={RESISTANCE0_NAME=116},vsell=11585}
+I[8213]={ah=19996,c=4,de={{11175,0.1194,1,2},{11176,0.806,1,2},{11178,0.0746,1,1}},il=49,n="Wild Leather Boots",q=2,rl=44,sc=2,slot=8,stats={RESISTANCE0_NAME=90},vsell=8150}
+I[8214]={ah=29991,c=4,de={{11137,0.814,2,5},{11174,0.186,1,2}},il=45,n="Wild Leather Helmet",q=2,rl=40,sc=2,slot=1,stats={RESISTANCE0_NAME=99},vsell=6230}
+I[8215]={ah=21667,c=4,de={{11175,0.0645,1,1},{11176,0.871,1,2},{11178,0.0645,1,1}},il=50,n="Wild Leather Cloak",q=2,rl=45,sc=-6,slot=16,stats={RESISTANCE0_NAME=33},vsell=9017}
+I[8216]={ah=16500,c=4,de={{11175,0.25,1,2},{11176,0.6667,1,2},{11178,0.0833,1,1}},il=48,n="Big Voodoo Cloak",q=2,rl=43,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=9,RESISTANCE0_NAME=31},vsell=6323}
+I[8217]={ah=24798,c=11,il=45,n="Quickdraw Quiver",q=2,rl=40,sc=2,slot=18,vsell=1000}
+I[8218]={ah=25090,c=11,il=45,n="Thick Leather Ammo Pouch",q=2,rl=40,sc=3,slot=18,vsell=1000}
+I[8343]={ah=2287,c=7,il=40,n="Heavy Silken Thread",q=1,sc=5,slot=0,vbuy=1777,vsell=500}
+I[8345]={ah=150000,c=4,de={{11177,1,1,1}},il=45,n="Wolfshead Helm",q=3,rl=40,sc=2,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=10,RESISTANCE0_NAME=109},vsell=7421}
+I[8346]={ah=277500,c=4,de={{11178,1,1,1}},il=46,n="Gauntlets of the Sea",q=3,rl=41,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=7,RESISTANCE0_NAME=85},vsell=5363}
+I[8347]={ah=53036,c=4,de={{11177,1,1,1}},il=45,n="Dragonscale Gauntlets",q=3,rl=40,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=171},vsell=5979}
+I[8348]={ah=174973,c=4,de={{11178,1,1,1}},il=50,n="Helm of Fire",q=3,rl=45,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=17,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=118},vsell=10819}
+I[8349]={ah=50000,c=4,de={{11178,1,1,1}},il=50,n="Feathered Breastplate",q=3,rl=45,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=24,RESISTANCE0_NAME=146},vsell=14478}
+I[8364]={ah=70,c=0,il=35,n="Mithril Head Trout",q=1,rl=25,sc=5,slot=0,vsell=6}
+I[8365]={ah=110,c=7,il=35,n="Raw Mithril Head Trout",q=1,rl=25,sc=8,slot=0,vsell=4}
+I[8367]={ah=74986,c=4,de={{14343,1,1,1}},il=51,n="Dragonscale Breastplate",q=3,rl=46,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=306},vsell=18455}
+I[8368]={ah=2100,c=7,il=40,n="Thick Wolfhide",q=1,sc=6,slot=0,vsell=1000}
+I[8384]={ah=55000,c=9,il=40,n="Pattern: Comfortable Leather Hat",q=3,sc=1,slot=0,vsell=875}
+I[8385]={c=9,il=41,n="Pattern: Turtle Scale Gloves",q=1,sc=1,slot=0,vsell=875}
+I[8386]={ah=4993,c=9,il=43,n="Pattern: Big Voodoo Robe",q=2,sc=1,slot=0,vsell=1000}
+I[8387]={ah=5068,c=9,il=44,n="Pattern: Big Voodoo Mask",q=2,sc=1,slot=0,vsell=1000}
+I[8389]={ah=5177,c=9,il=48,n="Pattern: Big Voodoo Pants",q=2,sc=1,slot=0,vsell=1250}
+I[8390]={ah=4900,c=9,il=48,n="Pattern: Big Voodoo Cloak",q=2,sc=1,slot=0,vsell=1250}
+I[8395]={ah=2700,c=9,il=44,n="Pattern: Tough Scorpid Breastplate",q=2,sc=1,slot=0,vsell=1000}
+I[8397]={ah=2303,c=9,il=44,n="Pattern: Tough Scorpid Bracers",q=2,sc=1,slot=0,vsell=1000}
+I[8398]={ah=2700,c=9,il=45,n="Pattern: Tough Scorpid Gloves",q=2,sc=1,slot=0,vsell=1125}
+I[8399]={ah=2522,c=9,il=47,n="Pattern: Tough Scorpid Boots",q=2,sc=1,slot=0,vsell=1250}
+I[8400]={ah=3900,c=9,il=48,n="Pattern: Tough Scorpid Shoulders",q=2,sc=1,slot=0,vsell=1250}
+I[8401]={ah=2574,c=9,il=49,n="Pattern: Tough Scorpid Leggings",q=2,sc=1,slot=0,vsell=1375}
+I[8402]={ah=4299,c=9,il=50,n="Pattern: Tough Scorpid Helm",q=2,sc=1,slot=0,vsell=1375}
+I[8403]={c=9,il=44,n="Pattern: Wild Leather Shoulders",q=2,sc=1,slot=0}
+I[8404]={c=9,il=45,n="Pattern: Wild Leather Vest",q=2,sc=1,slot=0}
+I[8405]={c=9,il=45,n="Pattern: Wild Leather Helmet",q=2,sc=1,slot=0}
+I[8406]={c=9,il=49,n="Pattern: Wild Leather Boots",q=2,sc=1,slot=0}
+I[8407]={c=9,il=50,n="Pattern: Wild Leather Leggings",q=2,sc=1,slot=0}
+I[8408]={c=9,il=50,n="Pattern: Wild Leather Cloak",q=2,sc=1,slot=0}
+I[8409]={c=9,il=42,n="Pattern: Nightscape Shoulders",q=2,sc=1,slot=0,vsell=1000}
+I[8544]={ah=850,c=0,il=1,n="Mageweave Bandage",q=1,sc=7,slot=0,vsell=400}
+I[8545]={ah=2450,c=0,il=1,n="Heavy Mageweave Bandage",q=1,sc=7,slot=0,vsell=600}
+I[8766]={ah=380,c=0,il=55,n="Morning Glory Dew",q=1,rl=45,sc=5,slot=0,vbuy=3555,vsell=200}
+I[8831]={ah=1169,c=7,il=42,n="Purple Lotus",q=1,sc=9,slot=0,vsell=300}
+I[8836]={ah=760,c=7,il=44,n="Arthas' Tears",q=1,sc=9,slot=0,vsell=95}
+I[8838]={ah=2527,c=7,il=46,n="Sungrass",q=1,sc=9,slot=0,vsell=60}
+I[8839]={ah=5418,c=7,il=47,n="Blindweed",q=1,sc=9,slot=0,vsell=375}
+I[8845]={ah=12240,c=7,il=47,n="Ghost Mushroom",q=1,sc=9,slot=0,vsell=375}
+I[8846]={ah=6491,c=7,il=50,n="Gromsblood",q=1,sc=9,slot=0,vsell=250}
+I[8925]={ah=1918,c=7,il=35,n="Crystal Vial",q=1,sc=11,slot=0,vbuy=2222,vsell=125}
+I[8949]={ah=4716,c=0,il=37,n="Elixir of Agility",q=1,rl=27,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=15},vsell=200}
+I[8951]={ah=6034,c=0,il=39,n="Elixir of Defense",q=1,rl=29,sc=2,slot=0,stats={RESISTANCE0_NAME=250},vsell=200}
+I[8956]={ah=9192,c=0,il=41,n="Oil of Immolation",q=1,rl=31,sc=8,slot=0,vsell=200}
+I[8957]={ah=300,c=0,il=55,n="Spinefin Halibut",q=1,rl=45,sc=5,slot=0,vbuy=3764,vsell=200}
+I[8959]={ah=1071,c=7,il=55,n="Raw Spinefin Halibut",q=1,rl=45,sc=8,slot=0,vsell=160}
+I[9030]={ah=25200,c=0,il=42,n="Restorative Potion",q=1,rl=32,sc=1,slot=0,vsell=200}
+I[9036]={ah=4535,c=0,il=42,n="Magic Resistance Potion",q=1,rl=32,sc=1,slot=0,vsell=20}
+I[9060]={ah=27690,c=7,il=42,n="Inlaid Mithril Cylinder",q=1,sc=1,slot=0,vsell=1000}
+I[9061]={ah=21400,c=7,il=42,n="Goblin Rocket Fuel",q=1,sc=1,slot=0,vsell=250}
+I[9088]={ah=13731,c=0,il=48,n="Gift of Arthas",q=1,rl=38,sc=2,slot=0,vsell=250}
+I[9144]={ah=2998,c=0,il=45,n="Wildvine Potion",q=1,rl=35,sc=1,slot=0,vsell=250}
+I[9149]={c=4,il=45,n="Philosopher's Stone",q=1,sc=0,slot=0,vsell=250}
+I[9154]={ah=338,c=0,il=46,n="Draught of Detect Undead",q=1,rl=36,sc=2,slot=0,vsell=300}
+I[9155]={ah=9495,c=0,il=47,n="Arcane Elixir",q=1,rl=37,sc=2,slot=0,vsell=400}
+I[9172]={ah=20939,c=0,il=47,n="Invisibility Potion",q=1,rl=37,sc=1,slot=0,vsell=500}
+I[9179]={ah=5021,c=0,il=47,n="Elixir of Greater Intellect",q=1,rl=37,sc=2,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=25},vsell=1000}
+I[9187]={ah=7619,c=0,il=48,n="Elixir of Greater Agility",q=1,rl=38,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=25},vsell=600}
+I[9197]={ah=3113,c=0,il=48,n="Draught of Dream Vision",q=1,rl=38,sc=2,slot=0,vsell=600}
+I[9206]={ah=13338,c=0,il=48,n="Elixir of Greater Strength",q=1,rl=48,sc=2,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=25},vsell=700}
+I[9210]={ah=28899,c=7,il=49,n="Ghost Dye",q=1,sc=11,slot=0,vsell=750}
+I[9224]={ah=20998,c=0,il=50,n="Potion of Demonslaying",q=1,rl=40,sc=2,slot=0,vsell=700}
+I[9233]={ah=1700,c=0,il=50,n="Draught of Detect Demon",q=1,rl=40,sc=2,slot=0,vsell=500}
+I[9260]={ah=4851,c=0,il=1,n="Volatile Rum",q=1,sc=5,slot=0,vsell=400}
+I[9262]={ah=2154,c=7,il=40,n="Black Vitriol",q=1,sc=11,slot=0,vsell=1000}
+I[9264]={ah=40788,c=0,il=50,n="Elixir of Shadow Power",q=1,rl=40,sc=2,slot=0,vsell=35}
+I[9293]={ah=28000,c=9,il=42,n="Recipe: Magic Resistance Potion",q=2,sc=6,slot=0,vsell=1250}
+I[9294]={ah=3688,c=9,il=45,n="Recipe: Wildvine Potion",q=2,sc=6,slot=0,vsell=2000}
+I[9295]={ah=24590,c=9,il=47,n="Recipe: Invisibility Potion",q=2,sc=6,slot=0,vsell=2000}
+I[9296]={ah=14461,c=9,il=48,n="Recipe: Gift of Arthas",q=2,sc=6,slot=0,vsell=2000}
+I[9297]={ah=180618,c=9,il=48,n="Recipe: Draught of Dream Vision",q=2,sc=6,slot=0,vsell=2500}
+I[9298]={ah=45996,c=9,il=49,n="Recipe: Elixir of Giants",q=2,sc=6,slot=0,vsell=2250}
+I[9300]={c=9,il=50,n="Recipe: Potion of Demonslaying",q=1,sc=6,slot=0,vsell=2500}
+I[9301]={ah=33999,c=9,il=50,n="Recipe: Elixir of Shadow Power",q=2,sc=6,slot=0,vsell=2500}
+I[9302]={c=9,il=49,n="Recipe: Ghost Dye",q=1,sc=6,slot=0,vsell=2250}
+I[9303]={ah=25500,c=9,il=45,n="Recipe: Philosopher's Stone",q=1,sc=6,slot=0,vbuy=8000,vsell=2000}
+I[9304]={ah=14798,c=9,il=45,n="Recipe: Transmute Iron to Gold",q=1,sc=6,slot=0,vbuy=8000,vsell=2000}
+I[9305]={c=9,il=45,n="Recipe: Transmute Mithril to Truesilver",q=1,sc=6,slot=0,vsell=2000}
+I[9312]={ah=160,c=0,il=20,n="Blue Firework",q=1,sc=8,slot=0,vbuy=17,vsell=5}
+I[9313]={ah=771,c=0,il=20,n="Green Firework",q=1,sc=8,slot=0,vbuy=17,vsell=5}
+I[9318]={ah=3799,c=0,il=20,n="Red Firework",q=1,sc=8,slot=0,vbuy=17,vsell=5}
+I[9366]={ah=5600,c=4,de={{11137,0.6364,4,5},{11174,0.0909,1,1},{11177,0.2727,1,1}},il=41,n="Golden Scale Gauntlets",q=2,rl=36,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=146},vsell=3689}
+I[9367]={ah=335575,c=9,il=41,n="Plans: Golden Scale Gauntlets",q=2,sc=4,slot=0,vsell=1250}
+I[9998]={ah=7020,c=4,de={{11137,0.7641,2,5},{11174,0.1922,1,2},{11177,0.0437,1,1}},il=41,n="Black Mageweave Vest",q=2,rl=36,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=54},vsell=4815}
+I[9999]={ah=6464,c=4,de={{11137,0.7345,2,5},{11174,0.2226,1,2},{11177,0.0429,1,1}},il=41,n="Black Mageweave Leggings",q=2,rl=36,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=47},vsell=4832}
+I[10001]={ah=9200,c=4,de={{11137,0.7654,2,5},{11174,0.1846,1,2},{11177,0.05,1,1}},il=42,n="Black Mageweave Robe",q=2,rl=37,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=55},vsell=5257}
+I[10002]={ah=40000,c=4,de={{11137,0.775,2,5},{11174,0.1875,1,2},{11177,0.0375,1,1}},il=42,n="Shadoweave Pants",q=2,rl=37,sc=1,slot=7,stats={ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=48},vsell=5276}
+I[10003]={ah=5800,c=4,de={{11137,0.747,2,5},{11174,0.1986,1,2},{11177,0.0544,1,1}},il=43,n="Black Mageweave Gloves",q=2,rl=38,sc=1,slot=10,stats={RESISTANCE0_NAME=35},vsell=2859}
+I[10004]={ah=34988,c=4,de={{11137,0.8197,2,5},{11174,0.1311,1,2},{11177,0.0492,1,1}},il=43,n="Shadoweave Robe",q=2,rl=38,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=57},vsell=5738}
+I[10007]={ah=20000,c=4,de={{11137,0.6316,2,5},{11174,0.3158,2,2},{11177,0.0526,1,1}},il=43,n="Red Mageweave Vest",q=2,rl=38,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=18,RESISTANCE0_NAME=57},vsell=5799}
+I[10008]={ah=15489,c=4,de={{11137,0.7484,2,5},{11174,0.2,1,2},{11177,0.0516,1,1}},il=43,n="White Bandit Mask",q=2,rl=38,sc=1,slot=1,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=46},vsell=4365}
+I[10009]={ah=33333,c=4,de={{11134,0.0476,1,1},{11137,0.6792,2,5},{11174,0.2642,1,2},{11177,0.0566,1,1}},il=43,n="Red Mageweave Pants",q=2,rl=38,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=49},vsell=5284}
+I[10018]={ah=28209,c=4,de={{11137,0.708,2,5},{11174,0.2566,1,2},{11177,0.0354,1,1}},il=45,n="Red Mageweave Gloves",q=2,rl=40,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=37},vsell=3275}
+I[10019]={ah=82196,c=4,de={{11177,1,1,1}},il=45,n="Dreamweave Gloves",q=3,rl=40,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=41},vsell=3944}
+I[10021]={ah=98814,c=4,de={{11177,1,1,1}},il=45,n="Dreamweave Vest",q=3,rl=40,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=65},vsell=7946}
+I[10023]={ah=53505,c=4,de={{11137,0.6849,2,5},{11174,0.2466,1,2},{11176,0.0137,2,2},{11177,0.0548,1,1}},il=45,n="Shadoweave Gloves",q=2,rl=40,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=37},vsell=3334}
+I[10024]={ah=11700,c=4,de={{11175,0.1966,1,2},{11176,0.7533,1,2},{11178,0.0501,1,1}},il=46,n="Black Mageweave Headband",q=2,rl=41,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=49},vsell=5421}
+I[10025]={ah=44400,c=4,de={{11175,0.2137,1,2},{11176,0.7176,1,2},{11178,0.0687,1,1}},il=49,n="Shadoweave Mask",q=2,rl=44,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=52},vsell=6790}
+I[10026]={ah=33264,c=4,de={{11175,0.2134,1,2},{11176,0.75,1,2},{11178,0.0366,1,1}},il=46,n="Black Mageweave Boots",q=2,rl=41,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,RESISTANCE0_NAME=41},vsell=5459}
+I[10027]={ah=10800,c=4,de={{11175,0.2182,1,2},{11176,0.727,1,2},{11178,0.0548,1,1}},il=46,n="Black Mageweave Shoulders",q=2,rl=41,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=9,RESISTANCE0_NAME=45},vsell=5479}
+I[10028]={ah=50000,c=4,de={{11175,0.252,1,2},{11176,0.7073,1,2},{11178,0.0407,1,1}},il=47,n="Shadoweave Shoulders",q=2,rl=42,sc=1,slot=3,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=46},vsell=5938}
+I[10029]={ah=14999,c=4,de={{11175,0.1098,1,2},{11176,0.8537,1,2},{11178,0.0366,1,1}},il=47,n="Red Mageweave Shoulders",q=2,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=15,RESISTANCE0_NAME=46},vsell=5391}
+I[10030]={ah=75464,c=4,de={{11175,0.3571,1,2},{11176,0.5714,1,2},{11178,0.0714,1,1}},il=48,n="Admiral's Hat",q=2,rl=43,sc=1,slot=1,stats={RESISTANCE0_NAME=51},vsell=6007}
+I[10031]={ah=59999,c=4,de={{11175,0.2807,1,2},{11176,0.6842,1,2},{11178,0.0351,1,1}},il=48,n="Shadoweave Boots",q=2,rl=43,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=10,RESISTANCE0_NAME=43},vsell=6030}
+I[10033]={ah=13700,c=4,de={{11175,0.1673,1,2},{11176,0.7909,1,2},{11178,0.0418,1,1}},il=48,n="Red Mageweave Headband",q=2,rl=43,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=20,RESISTANCE0_NAME=51},vsell=6075}
+I[10034]={ah=40987,c=4,il=1,n="Tuxedo Shirt",q=1,sc=-8,slot=4,vsell=2000}
+I[10035]={ah=34749,c=4,il=35,n="Tuxedo Pants",q=1,rl=30,sc=1,slot=7,stats={RESISTANCE0_NAME=39},vsell=1735}
+I[10036]={ah=19998,c=4,il=35,n="Tuxedo Jacket",q=1,rl=30,sc=1,slot=5,stats={RESISTANCE0_NAME=44},vsell=1741}
+I[10040]={ah=73985,c=4,il=35,n="White Wedding Dress",q=1,rl=30,sc=1,slot=5,stats={RESISTANCE0_NAME=44},vsell=1767}
+I[10041]={ah=84900,c=4,de={{11178,1,1,1}},il=50,n="Dreamweave Circlet",q=3,rl=45,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=58},vsell=8593}
+I[10042]={ah=120999,c=4,de={{11137,0.8889,2,5},{11174,0.1111,1,1}},il=45,n="Cindercloth Robe",q=2,rl=40,sc=1,slot=5,stats={RESISTANCE0_NAME=59},vsell=6644}
+I[10044]={ah=16704,c=4,de={{11175,0.0526,2,2},{11176,0.7368,1,2},{11178,0.2105,1,1}},il=49,n="Cindercloth Boots",q=2,rl=44,sc=1,slot=8,stats={RESISTANCE0_NAME=44},vsell=6765}
+I[10045]={ah=150,c=4,il=7,n="Simple Linen Pants",q=1,rl=2,sc=1,slot=7,stats={RESISTANCE0_NAME=12},vsell=23}
+I[10046]={ah=3995,c=4,il=9,n="Simple Linen Boots",q=1,rl=4,sc=1,slot=8,stats={RESISTANCE0_NAME=11},vsell=32}
+I[10047]={ah=160,c=4,il=15,n="Simple Kilt",q=2,rl=10,sc=1,slot=7,stats={ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=24},vsell=164}
+I[10048]={ah=2500,c=4,de={{10940,0.719,4,6},{10978,0.1074,1,1},{10998,0.1736,1,2}},il=19,n="Colorful Kilt",q=2,rl=14,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=5,RESISTANCE0_NAME=29},vsell=935}
+I[10050]={ah=11725,c=1,il=35,n="Mageweave Bag",q=1,sc=0,slot=18,vsell=2500}
+I[10051]={ah=10517,c=1,il=35,n="Red Mageweave Bag",q=1,sc=0,slot=18,vsell=2500}
+I[10052]={ah=35000,c=4,il=40,n="Orange Martial Shirt",q=1,sc=-8,slot=4,vsell=1500}
+I[10053]={ah=53986,c=4,il=47,n="Simple Black Dress",q=1,sc=0,slot=5,vsell=4499}
+I[10054]={ah=36950,c=4,il=46,n="Lavender Mageweave Shirt",q=1,sc=-8,slot=4,vsell=3000}
+I[10055]={ah=36694,c=4,il=47,n="Pink Mageweave Shirt",q=1,sc=-8,slot=4,vsell=3000}
+I[10056]={ah=4399,c=4,il=43,n="Orange Mageweave Shirt",q=1,sc=-8,slot=4,vsell=1500}
+I[10284]={c=7,il=30,n="Simple Flour",q=1,sc=8,slot=0,vbuy=200,vsell=50}
+I[10285]={ah=1049,c=7,il=40,n="Shadow Silk",q=1,sc=5,slot=0,vsell=1000}
+I[10286]={ah=800,c=7,il=45,n="Heart of the Wild",q=1,sc=10,slot=0,vsell=400}
+I[10290]={ah=2666,c=7,il=50,n="Pink Dye",q=1,sc=11,slot=0,vbuy=2500,vsell=625}
+I[10300]={ah=6900,c=9,il=43,n="Pattern: Red Mageweave Vest",q=2,sc=2,slot=0,vsell=1250}
+I[10301]={ah=21199,c=9,il=43,n="Pattern: White Bandit Mask",q=2,sc=2,slot=0,vsell=1250}
+I[10302]={ah=11800,c=9,il=43,n="Pattern: Red Mageweave Pants",q=2,sc=2,slot=0,vsell=1250}
+I[10308]={ah=1333,c=0,il=60,n="Scroll of Intellect IV",q=1,rl=50,sc=4,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=16},vsell=112}
+I[10311]={ah=16283,c=9,il=44,n="Pattern: Orange Martial Shirt",q=1,sc=2,slot=0,vsell=750}
+I[10312]={ah=9090,c=9,il=45,n="Pattern: Red Mageweave Gloves",q=2,sc=2,slot=0,vsell=1500}
+I[10314]={ah=19009,c=9,il=46,n="Pattern: Lavender Mageweave Shirt",q=1,sc=2,slot=0,vsell=1000}
+I[10315]={ah=7558,c=9,il=47,n="Pattern: Red Mageweave Shoulders",q=2,sc=2,slot=0,vsell=1750}
+I[10316]={ah=3200,c=9,il=24,n="Pattern: Colorful Kilt",q=2,sc=2,slot=0,vsell=200}
+I[10317]={ah=19499,c=9,il=47,n="Pattern: Pink Mageweave Shirt",q=1,sc=2,slot=0,vsell=1000}
+I[10318]={ah=17438,c=9,il=48,n="Pattern: Admiral's Hat",q=1,sc=2,slot=0,vsell=1750}
+I[10320]={ah=7688,c=9,il=48,n="Pattern: Red Mageweave Headband",q=2,sc=2,slot=0,vsell=1750}
+I[10321]={ah=29250,c=9,il=48,n="Pattern: Tuxedo Shirt",q=1,sc=2,slot=0,vsell=1125}
+I[10323]={ah=21200,c=9,il=49,n="Pattern: Tuxedo Pants",q=1,sc=2,slot=0,vsell=1125}
+I[10325]={ah=22369,c=9,il=50,n="Pattern: White Wedding Dress",q=1,sc=2,slot=0,vsell=2500}
+I[10326]={ah=19699,c=9,il=50,n="Pattern: Tuxedo Jacket",q=1,sc=2,slot=0,vsell=1250}
+I[10421]={ah=961,c=4,il=10,n="Rough Copper Vest",q=2,rl=2,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=108},vsell=32}
+I[10423]={ah=8000,c=4,de={{11083,0.6957,2,5},{11134,0.2174,1,2},{11138,0.087,1,1}},il=31,n="Silvered Bronze Leggings",q=2,rl=26,sc=3,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=176},vsell=2842}
+I[10424]={ah=4000,c=9,il=31,n="Plans: Silvered Bronze Leggings",q=2,sc=4,slot=0,vsell=750}
+I[10463]={ah=139988,c=9,il=49,n="Pattern: Shadoweave Mask",q=2,sc=2,slot=0,vsell=1750}
+I[10498]={ah=7491,c=7,il=35,n="Gyromatic Micro-Adjustor",q=1,rl=1,sc=1,slot=0,vsell=16}
+I[10499]={ah=26260,c=4,de={{11083,0.6842,2,5},{11134,0.2632,1,1},{11138,0.0526,1,1}},il=35,n="Bright-Eye Goggles",q=2,rl=5,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=38},vsell=2105}
+I[10500]={ah=80000,c=4,de={{11137,0.75,2,5},{11174,0.25,2,2},{11177,0.4444,1,1}},il=41,n="Fire Goggles",q=2,rl=5,sc=1,slot=1,stats={RESISTANCE0_NAME=44},vsell=3478}
+I[10501]={ah=61600,c=4,il=44,n="Catseye Ultra Goggles",q=2,rl=5,sc=1,slot=1,stats={RESISTANCE0_NAME=47},vsell=4398}
+I[10502]={ah=30000,c=4,de={{11137,0.6897,3,5},{11174,0.2414,1,2},{11177,0.069,1,1}},il=43,n="Spellpower Goggles Xtreme",q=2,rl=5,sc=1,slot=1,stats={RESISTANCE0_NAME=46},vsell=4088}
+I[10503]={ah=10002,c=4,de={{11175,0.1146,1,2},{11176,0.8229,1,2},{11178,0.0625,1,1}},il=46,n="Rose Colored Goggles",q=2,rl=10,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=13,RESISTANCE0_NAME=49},vsell=5169}
+I[10504]={ah=54189,c=4,de={{11178,1,1,1}},il=49,n="Green Lens",q=3,rl=10,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=57},vsell=7770}
+I[10505]={ah=2901,c=7,il=35,n="Solid Blasting Powder",q=1,sc=1,slot=0,vsell=250}
+I[10506]={ah=44999,c=4,de={{11175,0.25,1,2},{11176,0.75,1,2}},il=46,n="Deepdive Helmet",q=2,rl=10,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=49},vsell=5227}
+I[10507]={ah=2520,c=0,il=35,n="Solid Dynamite",q=1,rl=5,sc=0,slot=0,vsell=350}
+I[10508]={ah=45438,c=2,de={{11137,0.4,2,4},{11174,0.6,1,2}},il=41,n="Mithril Blunderbuss",q=2,rl=36,sc=3,slot=15,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=17.93},vsell=8958}
+I[10510]={ah=54380,c=2,de={{11174,1,1,2}},il=44,n="Mithril Heavy-bore Rifle",q=2,rl=39,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=20.17},vsell=11369}
+I[10512]={ah=9,c=6,il=42,n="Hi-Impact Mithril Slugs",q=2,rl=37,sc=3,slot=24,vsell=2}
+I[10513]={ah=43,c=6,il=49,n="Mithril Gyro-Shot",q=2,rl=44,sc=3,slot=24,vsell=5}
+I[10514]={ah=2375,c=0,il=43,n="Mithril Frag Bomb",q=1,rl=5,sc=0,slot=0,vsell=750}
+I[10518]={ah=70000,c=4,de={{11137,0.6667,2,5},{11174,0.2778,2,2},{11177,0.0556,1,1}},il=45,n="Parachute Cloak",q=2,rl=5,sc=-6,slot=16,stats={ITEM_MOD_AGILITY_SHORT=8,RESISTANCE0_NAME=30},vsell=4696}
+I[10542]={c=4,il=41,n="Goblin Mining Helmet",q=2,rl=5,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=190},vsell=5255}
+I[10543]={c=4,il=41,n="Goblin Construction Helmet",q=2,rl=5,sc=1,slot=1,stats={RESISTANCE0_NAME=44},vsell=3517}
+I[10545]={c=4,il=42,n="Gnomish Goggles",q=2,rl=5,sc=1,slot=1,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=45},vsell=3929}
+I[10546]={ah=30444,c=0,il=42,n="Deadly Scope",q=1,rl=30,sc=6,slot=0,vsell=1500}
+I[10548]={ah=47800,c=0,il=48,n="Sniper Scope",q=1,rl=40,sc=6,slot=0,vsell=2500}
+I[10558]={ah=1295,c=7,il=30,n="Gold Power Core",q=1,sc=1,slot=0,vsell=250}
+I[10559]={ah=6672,c=7,il=39,n="Mithril Tube",q=1,sc=1,slot=0,vsell=750}
+I[10560]={ah=9518,c=7,il=40,n="Unstable Trigger",q=1,sc=1,slot=0,vsell=1000}
+I[10561]={ah=5706,c=7,il=43,n="Mithril Casing",q=1,sc=1,slot=0,vsell=1000}
+I[10562]={ah=3940,c=0,il=47,n="Hi-Explosive Bomb",q=1,rl=10,sc=0,slot=0,vsell=750}
+I[10576]={ah=443363,c=4,il=50,n="Mithril Mechanical Dragonling",q=1,rl=40,sc=-4,slot=12,vsell=6000}
+I[10577]={ah=140000,c=4,il=41,n="Goblin Mortar",q=1,rl=5,sc=-4,slot=12,vsell=2000}
+I[10586]={ah=33795,c=0,il=45,n="The Big One",q=1,rl=5,sc=0,slot=0,vsell=750}
+I[10587]={c=4,il=46,n="Goblin Bomb Dispenser",q=1,rl=10,sc=-4,slot=12,vsell=1500}
+I[10588]={ah=500000,c=4,il=47,n="Goblin Rocket Helmet",q=2,rl=10,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=50},vsell=5834}
+I[10592]={ah=4018,c=0,il=40,n="Catseye Draught",q=1,rl=30,sc=2,slot=0,vsell=150}
+I[10601]={ah=5398,c=9,il=35,n="Schematic: Bright-Eye Goggles",q=2,rl=5,sc=3,slot=0,vsell=500}
+I[10602]={c=9,il=42,n="Schematic: Deadly Scope",q=1,rl=5,sc=3,slot=0,vsell=750}
+I[10603]={ah=7425,c=9,il=44,n="Schematic: Catseye Ultra Goggles",q=2,rl=5,sc=3,slot=0,vsell=825}
+I[10604]={ah=6384,c=9,il=44,n="Schematic: Mithril Heavy-bore Rifle",q=2,rl=5,sc=3,slot=0,vsell=825}
+I[10605]={ah=30050,c=9,il=45,n="Schematic: Spellpower Goggles Xtreme",q=3,rl=5,sc=3,slot=0,vsell=875}
+I[10606]={ah=14625,c=9,il=45,n="Schematic: Parachute Cloak",q=2,rl=5,sc=3,slot=0,vsell=875}
+I[10607]={c=9,il=46,n="Schematic: Deepdive Helmet",q=1,rl=10,sc=3,slot=0,vsell=900}
+I[10608]={ah=329999,c=9,il=48,n="Schematic: Sniper Scope",q=3,rl=10,sc=3,slot=0,vsell=950}
+I[10609]={ah=47500,c=9,il=50,n="Schematic: Mithril Mechanical Dragonling",q=1,rl=10,sc=3,slot=0,vsell=1000}
+I[10620]={ah=2076,c=7,il=40,n="Thorium Ore",q=1,sc=7,slot=0,vsell=250}
+I[10644]={ah=20190,c=9,il=42,n="Recipe: Goblin Rocket Fuel",q=1,sc=6,slot=0,vsell=500}
+I[10645]={c=4,il=48,n="Gnomish Death Ray",q=1,sc=-4,slot=12,vsell=750}
+I[10646]={ah=35289,c=0,il=41,n="Goblin Sapper Charge",q=1,rl=5,sc=0,slot=0,vsell=500}
+I[10647]={ah=3087,c=7,il=50,n="Engineer's Ink",q=1,sc=1,slot=0,vbuy=2000,vsell=500}
+I[10648]={ah=4372,c=7,il=40,n="Blank Parchment",q=1,sc=11,slot=0,vbuy=500,vsell=125}
+I[10713]={ah=11800,c=9,il=40,n="Plans: Inlaid Mithril Cylinder",q=1,sc=4,slot=0,vsell=500}
+I[10716]={ah=55000,c=4,il=41,n="Gnomish Shrink Ray",q=1,rl=5,sc=-4,slot=12,vsell=750}
+I[10720]={ah=84999,c=4,il=42,n="Gnomish Net-o-Matic Projector",q=1,rl=5,sc=-4,slot=12,vsell=750}
+I[10721]={ah=76777,c=4,de={{11137,0.5,4,4},{11174,0.5,1,1}},il=43,n="Gnomish Harm Prevention Belt",q=2,rl=5,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=66},vsell=3317}
+I[10724]={ah=139999,c=4,il=45,n="Gnomish Rocket Boots",q=2,rl=5,sc=1,slot=8,stats={RESISTANCE0_NAME=41},vsell=4697}
+I[10725]={c=4,il=46,n="Gnomish Battle Chicken",q=1,rl=10,sc=-4,slot=12,vsell=1500}
+I[10726]={ah=148500,c=4,de={{11175,0.125,1,1},{11176,0.875,1,2}},il=47,n="Gnomish Mind Control Cap",q=2,rl=5,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=50},vsell=5520}
+I[10727]={c=4,il=48,n="Goblin Dragon Gun",q=1,sc=-4,slot=12,vsell=2000}
+I[10728]={c=9,il=40,n="Pattern: Black Swashbuckler's Shirt",q=1,sc=2,slot=0,vbuy=1500,vsell=375}
+I[10841]={ah=900,c=0,il=35,n="Goldthorn Tea",q=1,rl=25,sc=5,slot=0,vsell=85}
+I[10858]={c=9,il=31,n="Plans: Solid Iron Maul",q=1,sc=4,slot=0,vsell=750}
+I[10938]={ah=479,c=7,il=10,n="Lesser Magic Essence",q=2,sc=12,slot=0,vsell=1}
+I[10939]={ah=1361,c=7,il=15,n="Greater Magic Essence",q=2,sc=12,slot=0,vsell=1}
+I[10940]={ah=167,c=7,il=10,n="Strange Dust",q=1,sc=12,slot=0,vsell=1}
+I[10978]={ah=398,c=7,il=20,n="Small Glimmering Shard",q=3,sc=12,slot=0,vsell=1}
+I[10998]={ah=1752,c=7,il=20,n="Lesser Astral Essence",q=2,sc=12,slot=0,vsell=1}
+I[11038]={ah=6100,c=9,il=22,n="Formula: Enchant 2H Weapon - Lesser Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=5},vsell=200}
+I[11039]={c=9,il=22,n="Formula: Enchant Cloak - Minor Agility",q=2,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=3},vsell=200}
+I[11040]={ah=4141,c=12,il=50,n="Morrowgrain",q=1,sc=0,slot=0,vsell=1}
+I[11081]={ah=5500,c=9,il=22,n="Formula: Enchant Shield - Lesser Protection",q=2,sc=8,slot=0,stats={RESISTANCE0_NAME=30},vsell=200}
+I[11082]={ah=4366,c=7,il=25,n="Greater Astral Essence",q=2,sc=12,slot=0,vsell=1}
+I[11083]={ah=668,c=7,il=25,n="Soul Dust",q=1,sc=12,slot=0,vsell=1}
+I[11084]={ah=1623,c=7,il=25,n="Large Glimmering Shard",q=3,sc=12,slot=0,vsell=1}
+I[11098]={ah=27080,c=9,il=27,n="Formula: Enchant Cloak - Lesser Shadow Resistance",q=2,sc=8,slot=0,vsell=500}
+I[11101]={ah=15693,c=9,il=28,n="Formula: Enchant Bracer - Lesser Strength",q=2,sc=8,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=4},vsell=625}
+I[11128]={ah=8547,c=7,il=30,n="Golden Rod",q=1,sc=12,slot=0,vsell=500}
+I[11130]={c=7,il=30,n="Runed Golden Rod",q=1,sc=12,slot=0,vsell=500}
+I[11134]={ah=2035,c=7,il=30,n="Lesser Mystic Essence",q=2,sc=12,slot=0,vsell=1}
+I[11135]={ah=7694,c=7,il=35,n="Greater Mystic Essence",q=2,sc=12,slot=0,vsell=1}
+I[11137]={ah=934,c=7,il=35,n="Vision Dust",q=1,sc=12,slot=0,vsell=1}
+I[11138]={ah=226,c=7,il=30,n="Small Glowing Shard",q=3,sc=12,slot=0,vsell=1}
+I[11139]={ah=4522,c=7,il=35,n="Large Glowing Shard",q=3,sc=12,slot=0,vsell=1}
+I[11144]={ah=19185,c=7,il=40,n="Truesilver Rod",q=1,sc=12,slot=0,vsell=1000}
+I[11145]={c=7,il=40,n="Runed Truesilver Rod",q=1,sc=12,slot=0,vsell=1250}
+I[11150]={ah=4189,c=9,il=29,n="Formula: Enchant Gloves - Mining",q=2,sc=8,slot=0,vsell=750}
+I[11151]={ah=37491,c=9,il=29,n="Formula: Enchant Gloves - Herbalism",q=2,sc=8,slot=0,vsell=750}
+I[11152]={ah=2796,c=9,il=29,n="Formula: Enchant Gloves - Fishing",q=2,sc=8,slot=0,vsell=750}
+I[11163]={c=9,il=34,n="Formula: Enchant Bracer - Lesser Deflection",q=2,sc=8,slot=0,vsell=750}
+I[11164]={ah=7489,c=9,il=35,n="Formula: Enchant Weapon - Lesser Beastslayer",q=2,sc=8,slot=0,vsell=750}
+I[11165]={ah=7312,c=9,il=35,n="Formula: Enchant Weapon - Lesser Elemental Slayer",q=2,sc=8,slot=0,vsell=750}
+I[11166]={ah=8600,c=9,il=40,n="Formula: Enchant Gloves - Skinning",q=2,sc=8,slot=0,vsell=1000}
+I[11167]={ah=7000,c=9,il=38,n="Formula: Enchant Boots - Lesser Spirit",q=2,sc=8,slot=0,vsell=1000}
+I[11168]={ah=695403,c=9,il=39,n="Formula: Enchant Shield - Lesser Block",q=2,sc=8,slot=0,vsell=1000}
+I[11174]={ah=10339,c=7,il=40,n="Lesser Nether Essence",q=2,sc=12,slot=0,vsell=1}
+I[11175]={ah=23362,c=7,il=45,n="Greater Nether Essence",q=2,sc=12,slot=0,vsell=1}
+I[11176]={ah=2902,c=7,il=45,n="Dream Dust",q=1,sc=12,slot=0,vsell=1}
+I[11177]={ah=28486,c=7,il=40,n="Small Radiant Shard",q=3,sc=12,slot=0,vsell=1}
+I[11178]={ah=40875,c=7,il=45,n="Large Radiant Shard",q=3,sc=12,slot=0,vsell=1}
+I[11184]={ah=2322,c=12,il=1,n="Blue Power Crystal",q=1,sc=0,slot=0}
+I[11185]={ah=673,c=12,il=1,n="Green Power Crystal",q=1,sc=0,slot=0}
+I[11186]={ah=652,c=12,il=1,n="Red Power Crystal",q=1,sc=0,slot=0}
+I[11188]={ah=1304,c=12,il=1,n="Yellow Power Crystal",q=1,sc=0,slot=0}
+I[11202]={ah=11800,c=9,il=42,n="Formula: Enchant Shield - Stamina",q=2,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=7},vsell=1100}
+I[11203]={ah=5107,c=9,il=43,n="Formula: Enchant Gloves - Advanced Mining",q=2,sc=8,slot=0,vsell=1100}
+I[11204]={ah=14965,c=9,il=44,n="Formula: Enchant Bracer - Greater Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=7},vsell=1100}
+I[11205]={ah=31811,c=9,il=45,n="Formula: Enchant Gloves - Advanced Herbalism",q=2,sc=8,slot=0,vsell=1250}
+I[11206]={ah=67900,c=9,il=45,n="Formula: Enchant Cloak - Lesser Agility",q=2,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=3},vsell=1250}
+I[11207]={ah=23999,c=9,il=53,n="Formula: Enchant Weapon - Fiery Weapon",q=2,sc=8,slot=0,vsell=3000}
+I[11208]={ah=8300,c=9,il=46,n="Formula: Enchant Weapon - Demonslaying",q=2,sc=8,slot=0,vsell=1350}
+I[11223]={ah=25898,c=9,il=47,n="Formula: Enchant Bracer - Deflection",q=2,sc=8,slot=0,vsell=1450}
+I[11224]={ah=159993,c=9,il=47,n="Formula: Enchant Shield - Frost Resistance",q=2,sc=8,slot=0,vsell=1450}
+I[11225]={ah=24745,c=9,il=49,n="Formula: Enchant Bracer - Greater Stamina",q=2,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=7},vsell=1550}
+I[11226]={ah=869999,c=9,il=50,n="Formula: Enchant Gloves - Riding Skill",q=2,sc=8,slot=0,vsell=1550}
+I[11287]={ah=1161,c=2,il=15,n="Lesser Magic Wand",q=2,rl=5,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=11.33},vsell=508}
+I[11288]={ah=2073,c=2,il=23,n="Greater Magic Wand",q=2,rl=13,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=17.5},vsell=1535}
+I[11289]={ah=8092,c=2,il=31,n="Lesser Mystic Wand",q=2,rl=26,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=25.38,ITEM_MOD_INTELLECT_SHORT=4},vsell=3581}
+I[11291]={ah=5596,c=7,il=30,n="Star Wood",q=1,sc=11,slot=0,vbuy=4500,vsell=1125}
+I[11371]={ah=76500,c=7,il=50,n="Dark Iron Bar",q=1,sc=7,slot=0,vsell=600}
+I[11382]={ah=130000,c=7,il=50,n="Blood of the Mountain",q=2,sc=11,slot=0,vsell=750}
+I[11590]={ah=4991,c=0,il=40,n="Mechanical Repair Kit",q=1,rl=5,sc=14,slot=0,vsell=250}
+I[11604]={c=4,il=59,n="Dark Iron Plate",q=3,rl=54,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=617},vsell=19428}
+I[11605]={ah=179702,c=4,il=58,n="Dark Iron Shoulders",q=2,rl=53,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=414},vsell=10776}
+I[11606]={c=4,il=56,n="Dark Iron Mail",q=2,rl=51,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=303},vsell=19255}
+I[11607]={c=2,il=57,n="Dark Iron Sunderer",q=3,rl=52,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=48.85},vsell=51225}
+I[11608]={ah=355461,c=2,il=55,n="Dark Iron Pulverizer",q=3,rl=50,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=47.43},vsell=45760}
+I[11610]={ah=3023,c=9,il=53,n="Plans: Dark Iron Pulverizer",q=3,sc=4,slot=0,vsell=3000}
+I[11611]={ah=22571,c=9,il=55,n="Plans: Dark Iron Sunderer",q=3,sc=4,slot=0,vsell=3000}
+I[11612]={ah=16000,c=9,il=57,n="Plans: Dark Iron Plate",q=3,sc=4,slot=0,vsell=3000}
+I[11614]={c=9,il=54,n="Plans: Dark Iron Mail",q=2,sc=4,slot=0,vsell=3000}
+I[11615]={c=9,il=56,n="Plans: Dark Iron Shoulders",q=2,sc=4,slot=0,vsell=3000}
+I[11754]={ah=220,c=12,il=1,n="Black Diamond",q=2,sc=0,slot=0}
+I[11825]={c=15,il=41,n="Pet Bombling",q=1,sc=2,slot=0,vsell=2500}
+I[11826]={c=15,il=41,n="Lil' Smoky",q=1,sc=2,slot=0,vsell=2500}
+I[12037]={ah=207,c=7,il=30,n="Mystery Meat",q=1,sc=8,slot=0,vsell=87}
+I[12162]={ah=7741,c=9,il=32,n="Plans: Hardened Iron Shortsword",q=1,sc=4,slot=0,vsell=750}
+I[12163]={c=9,il=36,n="Plans: Moonsteel Broadsword",q=1,sc=4,slot=0,vbuy=4400,vsell=1100}
+I[12164]={c=9,il=37,n="Plans: Massive Iron Axe",q=1,sc=4,slot=0,vbuy=4400,vsell=1100}
+I[12184]={ah=235,c=7,il=30,n="Raptor Flesh",q=1,sc=8,slot=0,vsell=87}
+I[12190]={ah=1514,c=0,il=45,n="Dreamless Sleep Potion",q=1,rl=35,sc=1,slot=0,vsell=250}
+I[12202]={ah=405,c=7,il=30,n="Tiger Meat",q=1,sc=8,slot=0,vsell=87}
+I[12203]={ah=170,c=7,il=30,n="Red Wolf Meat",q=1,sc=8,slot=0,vsell=87}
+I[12204]={ah=1799,c=7,il=35,n="Heavy Kodo Meat",q=1,sc=8,slot=0,vsell=112}
+I[12205]={ah=649,c=7,il=40,n="White Spider Meat",q=1,sc=8,slot=0,vsell=112}
+I[12206]={ah=910,c=7,il=40,n="Tender Crab Meat",q=1,sc=8,slot=0,vsell=112}
+I[12207]={ah=1787,c=7,il=45,n="Giant Egg",q=1,sc=8,slot=0,vsell=150}
+I[12208]={ah=757,c=7,il=40,n="Tender Wolf Meat",q=1,sc=8,slot=0,vsell=150}
+I[12209]={ah=2750,c=0,il=25,n="Lean Wolf Steak",q=1,rl=15,sc=5,slot=0,vsell=95}
+I[12210]={ah=1997,c=0,il=25,n="Roast Raptor",q=1,rl=15,sc=5,slot=0,vsell=300}
+I[12212]={ah=657,c=0,il=45,n="Jungle Stew",q=1,rl=35,sc=5,slot=0,vsell=300}
+I[12213]={ah=544,c=0,il=15,n="Carrion Surprise",q=1,rl=5,sc=5,slot=0,vsell=300}
+I[12214]={ah=692,c=0,il=25,n="Mystery Stew",q=1,rl=15,sc=5,slot=0,vsell=300}
+I[12215]={ah=3407,c=0,il=35,n="Heavy Kodo Stew",q=1,rl=25,sc=5,slot=0,vsell=300}
+I[12216]={ah=2864,c=0,il=35,n="Spiced Chili Crab",q=1,rl=25,sc=5,slot=0,vsell=300}
+I[12217]={ah=24396,c=0,il=35,n="Dragonbreath Chili",q=1,rl=25,sc=5,slot=0,vsell=300}
+I[12218]={ah=2900,c=0,il=45,n="Monster Omelet",q=1,rl=35,sc=5,slot=0,vsell=300}
+I[12223]={ah=75,c=7,il=5,n="Meaty Bat Wing",q=1,sc=8,slot=0,vsell=4}
+I[12224]={ah=19,c=0,il=10,n="Crispy Bat Wing",q=1,rl=1,sc=5,slot=0,vsell=10}
+end)()
+;(function()
+I[12226]={ah=6666,c=9,il=5,n="Recipe: Crispy Bat Wing",q=1,sc=5,slot=0,vbuy=25,vsell=6}
+I[12227]={c=9,il=25,n="Recipe: Lean Wolf Steak",q=1,sc=5,slot=0,vsell=400}
+I[12228]={c=9,il=35,n="Recipe: Roast Raptor",q=1,sc=5,slot=0,vbuy=5000,vsell=1250}
+I[12229]={c=9,il=35,n="Recipe: Hot Wolf Ribs",q=1,sc=5,slot=0,vbuy=5000,vsell=1250}
+I[12231]={c=9,il=35,n="Recipe: Jungle Stew",q=1,sc=5,slot=0,vbuy=3000,vsell=750}
+I[12232]={c=9,il=35,n="Recipe: Carrion Surprise",q=1,sc=5,slot=0,vbuy=4444,vsell=1250}
+I[12233]={c=9,il=35,n="Recipe: Mystery Stew",q=1,sc=5,slot=0,vbuy=3000,vsell=750}
+I[12239]={ah=15502,c=9,il=40,n="Recipe: Dragonbreath Chili",q=1,sc=5,slot=0,vbuy=6588,vsell=1750}
+I[12240]={c=9,il=40,n="Recipe: Heavy Kodo Stew",q=1,sc=5,slot=0,vbuy=7000,vsell=1750}
+I[12259]={ah=50000,c=2,il=36,n="Glinting Steel Dagger",q=2,rl=31,sc=15,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=18.82},vsell=8072}
+I[12260]={ah=35000,c=2,il=39,n="Searing Golden Blade",q=2,rl=34,sc=15,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=14.29,ITEM_MOD_INTELLECT_SHORT=7},vsell=10395}
+I[12261]={ah=49900,c=9,il=38,n="Plans: Searing Golden Blade",q=2,sc=4,slot=0,vsell=950}
+I[12359]={ah=3226,c=7,il=50,n="Thorium Bar",q=1,sc=7,slot=0,vsell=600}
+I[12360]={ah=541000,c=7,il=55,n="Arcanite Bar",q=2,sc=7,slot=0,vsell=5000}
+I[12361]={ah=130800,c=7,il=55,n="Blue Sapphire",q=2,sc=11,slot=0,vsell=7000}
+I[12363]={ah=472230,c=7,il=60,n="Arcane Crystal",q=2,sc=11,slot=0,vsell=2000}
+I[12364]={ah=32000,c=7,il=60,n="Huge Emerald",q=2,sc=11,slot=0,vsell=10000}
+I[12365]={ah=1412,c=7,il=45,n="Dense Stone",q=1,sc=7,slot=0,vsell=250}
+I[12404]={ah=3458,c=0,il=45,n="Dense Sharpening Stone",q=1,rl=35,sc=-3,slot=0,vsell=75}
+I[12405]={ah=39996,c=4,il=50,n="Thorium Armor",q=2,rl=45,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=480},vsell=9239}
+I[12406]={ah=60084,c=4,de={{11175,0.2222,1,2},{11176,0.75,1,2},{11178,0.0278,1,1}},il=50,n="Thorium Belt",q=2,rl=45,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=270},vsell=4636}
+I[12408]={ah=11500,c=4,de={{11176,0.7115,2,5},{14343,0.0353,1,1},{16202,0.2532,1,2}},il=51,n="Thorium Bracers",q=2,rl=46,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=214},vsell=4998}
+I[12409]={ah=27000,c=4,de={{14344,0.0088,1,1},{16203,0.2895,1,2},{16204,0.7018,1,2}},il=56,n="Thorium Boots",q=2,rl=51,sc=4,slot=8,stats={RESISTANCE0_NAME=367},vsell=10336}
+I[12410]={ah=36000,c=4,de={{14344,0.0533,1,1},{16203,0.1867,1,2},{16204,0.76,1,2}},il=56,n="Thorium Helm",q=2,rl=51,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=434},vsell=10372}
+I[12414]={ah=70908,c=4,de={{16203,0.3333,2,2},{16204,0.6667,1,2}},il=60,n="Thorium Leggings",q=2,rl=55,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=19,RESISTANCE0_NAME=499},vsell=17376}
+I[12415]={ah=226998,c=4,de={{11176,0.7143,2,5},{14343,0.0952,1,1},{16202,0.1905,1,2}},il=54,n="Radiant Breastplate",q=2,rl=49,sc=3,slot=5,stats={RESISTANCE0_NAME=293},vsell=17003}
+I[12416]={ah=225606,c=4,de={{11176,0.6471,2,5},{14343,0.1176,1,1},{16202,0.2353,1,2}},il=52,n="Radiant Belt",q=2,rl=47,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=159},vsell=7595}
+I[12417]={ah=240000,c=4,il=59,n="Radiant Circlet",q=2,rl=54,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=258},vsell=17034}
+I[12418]={ah=139997,c=4,de={{14344,0.0652,1,1},{16203,0.2609,1,2},{16204,0.6739,1,2}},il=57,n="Radiant Gloves",q=2,rl=52,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=192},vsell=10242}
+I[12419]={ah=220000,c=4,de={{14344,0.1,1,1},{16203,0.2647,1,2},{16204,0.7353,1,2}},il=58,n="Radiant Boots",q=2,rl=53,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=215},vsell=16421}
+I[12420]={ah=269999,c=4,de={{16203,0.1053,2,3},{16204,0.8947,2,5}},il=61,n="Radiant Leggings",q=2,rl=56,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=286},vsell=25330}
+I[12422]={ah=165153,c=4,il=60,n="Imperial Plate Chest",q=2,rl=55,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=17,ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=570},vsell=16204}
+I[12424]={ah=59999,c=4,de={{11176,0.7143,3,5},{16202,0.2857,1,2}},il=53,n="Imperial Plate Belt",q=2,rl=47,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=285},vsell=5533}
+I[12425]={ah=17999,c=4,de={{11176,0.7263,2,5},{14343,0.0337,1,1},{16202,0.2387,1,2}},il=54,n="Imperial Plate Bracers",q=2,rl=49,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=225},vsell=6044}
+I[12426]={ah=52476,c=4,de={{14344,0.0426,1,1},{16203,0.2128,1,2},{16204,0.7447,1,2}},il=59,n="Imperial Plate Boots",q=2,rl=54,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=386},vsell=12062}
+I[12427]={ah=129999,c=4,de={{16203,0.2632,1,2},{16204,0.7368,1,2}},il=59,n="Imperial Plate Helm",q=2,rl=54,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=17,ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=456},vsell=12106}
+I[12428]={ah=74814,c=4,de={{11176,0.625,2,5},{16202,0.375,1,2}},il=53,n="Imperial Plate Shoulders",q=2,rl=47,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=380},vsell=8646}
+I[12429]={ah=189985,c=4,il=61,n="Imperial Plate Leggings",q=2,rl=56,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=18,ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=507},vsell=17923}
+I[12607]={ah=15116,c=7,il=1,n="Brilliant Chromatic Scale",q=3,sc=6,slot=0,vsell=8048}
+I[12610]={c=4,il=60,n="Runic Plate Shoulders",q=2,rl=55,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=427},vsell=12247}
+I[12611]={c=4,il=60,n="Runic Plate Boots",q=2,rl=55,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=392},vsell=12293}
+I[12612]={c=4,il=61,n="Runic Plate Helm",q=2,rl=56,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=19,RESISTANCE0_NAME=471},vsell=12956}
+I[12613]={c=4,il=62,n="Runic Breastplate",q=2,rl=57,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=588},vsell=18205}
+I[12614]={c=4,il=62,n="Runic Plate Leggings",q=2,rl=57,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=19,RESISTANCE0_NAME=515},vsell=18272}
+I[12618]={c=4,il=63,n="Enchanted Thorium Breastplate",q=3,rl=58,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=26,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=657},vsell=23972}
+I[12619]={c=4,il=63,n="Enchanted Thorium Leggings",q=3,rl=58,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=21,ITEM_MOD_STRENGTH_SHORT=20,RESISTANCE0_NAME=575},vsell=24058}
+I[12620]={c=4,il=62,n="Enchanted Thorium Helm",q=3,rl=57,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=25,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=526},vsell=17245}
+I[12624]={ah=490000,c=4,il=54,n="Wildthorn Mail",q=3,rl=49,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=322},vsell=20642}
+I[12625]={ah=2692228,c=4,il=58,n="Dawnbringer Shoulders",q=3,rl=53,sc=4,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=10,RESISTANCE0_NAME=455},vsell=13080}
+I[12631]={ah=307000,c=4,de={{14344,1,1,1}},il=58,n="Fiery Plate Gauntlets",q=3,rl=53,sc=4,slot=10,stats={RESISTANCE0_NAME=379},vsell=8919}
+I[12632]={c=4,il=59,n="Storm Gauntlets",q=3,rl=54,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=218},vsell=14099}
+I[12633]={ah=426000,c=4,de={{14344,1,1,1}},il=60,n="Whitesoul Helm",q=3,rl=55,sc=4,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=15,ITEM_MOD_SPIRIT_SHORT=15,RESISTANCE0_NAME=509},vsell=14859}
+I[12636]={c=4,il=61,n="Helm of the Great Chief",q=3,rl=56,sc=3,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=292},vsell=24285}
+I[12639]={ah=66666658,c=4,il=62,n="Stronghold Gauntlets",q=4,rl=57,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=441},vsell=15271}
+I[12640]={ah=10664997,c=4,il=61,n="Lionheart Helm",q=4,rl=56,sc=4,slot=1,stats={ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=565},vsell=21894}
+I[12641]={c=4,il=63,n="Invulnerable Mail",q=4,rl=57,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=404},vsell=43836}
+I[12643]={ah=6840,c=0,il=45,n="Dense Weightstone",q=1,rl=35,sc=-3,slot=0,vsell=75}
+I[12644]={ah=9115,c=7,il=45,n="Dense Grinding Stone",q=1,sc=7,slot=0,vsell=200}
+I[12645]={ah=200000,c=0,il=55,n="Thorium Shield Spike",q=2,sc=6,slot=0,vsell=500}
+I[12655]={ah=28752,c=7,il=55,n="Enchanted Thorium Bar",q=1,sc=7,slot=0,vsell=500}
+I[12662]={c=7,il=50,n="Demonic Rune",q=2,sc=11,slot=0,vsell=600}
+I[12682]={ah=9632,c=9,il=50,n="Plans: Thorium Armor",q=2,sc=4,slot=0,vsell=3000}
+I[12683]={ah=17893,c=9,il=50,n="Plans: Thorium Belt",q=2,sc=4,slot=0,vsell=3000}
+I[12684]={ah=16200,c=9,il=51,n="Plans: Thorium Bracers",q=2,sc=4,slot=0,vsell=3000}
+I[12685]={ah=60498,c=9,il=52,n="Plans: Radiant Belt",q=2,sc=4,slot=0,vsell=3000}
+I[12687]={c=9,il=53,n="Plans: Imperial Plate Shoulders",q=2,sc=4,slot=0,vsell=3000}
+I[12688]={c=9,il=53,n="Plans: Imperial Plate Belt",q=2,sc=4,slot=0,vsell=3000}
+I[12689]={ah=10400,c=9,il=54,n="Plans: Radiant Breastplate",q=2,sc=4,slot=0,vsell=3500}
+I[12690]={c=9,il=54,n="Plans: Imperial Plate Bracers",q=2,sc=4,slot=0,vsell=3000}
+I[12691]={ah=6050,c=9,il=54,n="Pattern: Wildthorn Mail",q=2,sc=1,slot=0,vsell=4000}
+I[12692]={ah=490000,c=9,il=55,n="Plans: Thorium Shield Spike",q=2,sc=4,slot=0,vsell=4000}
+I[12693]={ah=14219,c=9,il=56,n="Plans: Thorium Boots",q=2,sc=4,slot=0,vsell=5000}
+I[12694]={ah=13650,c=9,il=56,n="Plans: Thorium Helm",q=2,sc=4,slot=0,vsell=5000}
+I[12695]={ah=11125,c=9,il=57,n="Plans: Radiant Gloves",q=2,sc=4,slot=0,vsell=5000}
+I[12697]={ah=12968,c=9,il=58,n="Plans: Radiant Boots",q=2,sc=4,slot=0,vsell=5500}
+I[12698]={ah=49999,c=9,il=58,n="Plans: Dawnbringer Shoulders",q=3,sc=4,slot=0,vsell=5500}
+I[12699]={c=9,il=58,n="Plans: Fiery Plate Gauntlets",q=3,sc=4,slot=0,vsell=5000}
+I[12700]={c=9,il=59,n="Plans: Imperial Plate Boots",q=2,sc=4,slot=0,vsell=6250}
+I[12701]={c=9,il=59,n="Plans: Imperial Plate Helm",q=2,sc=4,slot=0,vsell=6250}
+I[12702]={ah=52000,c=9,il=59,n="Plans: Radiant Circlet",q=2,sc=4,slot=0,vsell=6250}
+I[12703]={ah=40000,c=9,il=59,n="Pattern: Storm Gauntlets",q=3,sc=1,slot=0,vbuy=40000,vsell=10000}
+I[12704]={ah=12938,c=9,il=60,n="Plans: Thorium Leggings",q=2,sc=4,slot=0,vsell=7500}
+I[12705]={c=9,il=60,n="Plans: Imperial Plate Chest",q=2,sc=4,slot=0,vsell=7500}
+I[12706]={c=9,il=60,n="Plans: Runic Plate Shoulders",q=2,sc=4,slot=0,vsell=7500}
+I[12707]={c=9,il=60,n="Plans: Runic Plate Boots",q=2,sc=4,slot=0,vsell=7500}
+I[12711]={ah=125621,c=9,il=60,n="Plans: Whitesoul Helm",q=3,sc=4,slot=0,vsell=10000}
+I[12713]={ah=13600,c=9,il=61,n="Plans: Radiant Leggings",q=2,sc=4,slot=0,vsell=10000}
+I[12714]={c=9,il=61,n="Plans: Runic Plate Helm",q=2,sc=4,slot=0,vsell=10000}
+I[12715]={c=9,il=61,n="Plans: Imperial Plate Leggings",q=2,sc=4,slot=0,vsell=10000}
+I[12716]={ah=300000,c=9,il=61,n="Pattern: Helm of the Great Chief",q=3,sc=1,slot=0,vsell=15000}
+I[12717]={ah=4489899,c=9,il=61,n="Plans: Lionheart Helm",q=4,sc=4,slot=0,vsell=15000}
+I[12718]={c=9,il=62,n="Plans: Runic Breastplate",q=2,sc=4,slot=0,vsell=15000}
+I[12719]={c=9,il=62,n="Plans: Runic Plate Leggings",q=2,sc=4,slot=0,vsell=15000}
+I[12720]={ah=3753769,c=9,il=62,n="Plans: Stronghold Gauntlets",q=4,sc=4,slot=0,vsell=20000}
+I[12725]={c=9,il=63,n="Plans: Enchanted Thorium Helm",q=3,sc=4,slot=0,vsell=15000}
+I[12726]={c=9,il=63,n="Plans: Enchanted Thorium Leggings",q=3,sc=4,slot=0,vsell=15000}
+I[12727]={c=9,il=63,n="Plans: Enchanted Thorium Breastplate",q=3,sc=4,slot=0,vsell=15000}
+I[12728]={ah=350902,c=9,il=63,n="Pattern: Invulnerable Mail",q=4,sc=1,slot=0,vsell=20000}
+I[12735]={c=12,il=1,n="Frayed Abomination Stitching",q=2,sc=0,slot=0}
+I[12753]={c=12,il=1,n="Skin of Shadow",q=2,sc=0,slot=0}
+I[12773]={c=2,il=55,n="Ornate Thorium Handaxe",q=2,rl=50,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=32.63,ITEM_MOD_STRENGTH_SHORT=10},vsell=33079}
+I[12774]={ah=550000,c=2,il=55,n="Dawn's Edge",q=3,rl=50,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=36.43},vsell=36044}
+I[12775]={c=2,de={{16203,0.8235,1,2},{16204,0.1765,1,2}},il=56,n="Huge Thorium Battleaxe",q=2,rl=51,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=43.43},vsell=41827}
+I[12776]={c=2,il=56,n="Enchanted Battlehammer",q=3,rl=51,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=48.29},vsell=48124}
+I[12777]={c=2,il=56,n="Blazing Rapier",q=3,rl=51,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=37.08},vsell=38648}
+I[12781]={ah=2221425,c=2,il=57,n="Serenity",q=3,rl=52,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=37.6},vsell=42721}
+I[12782]={c=2,il=58,n="Corruption",q=3,rl=53,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=49.7,ITEM_MOD_STAMINA_SHORT=30,ITEM_MOD_STRENGTH_SHORT=30},vsell=56808}
+I[12783]={ah=7960000,c=2,il=63,n="Heartseeker",q=3,rl=58,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=41.32},vsell=58215}
+I[12784]={c=2,il=63,n="Arcanite Reaper",q=3,rl=58,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=53.82,ITEM_MOD_STAMINA_SHORT=13},vsell=73036}
+I[12790]={c=2,il=63,n="Arcanite Champion",q=3,rl=58,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=53.82},vsell=74619}
+I[12792]={ah=359997,c=2,il=58,n="Volcanic Hammer",q=2,rl=53,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=34.6},vsell=39255}
+I[12794]={ah=2489998,c=2,il=63,n="Masterwork Stormhammer",q=3,rl=57,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=41.25},vsell=56304}
+I[12796]={c=2,il=63,n="Hammer of the Titans",q=3,rl=58,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=53.82,ITEM_MOD_STRENGTH_SHORT=15},vsell=70912}
+I[12797]={c=2,il=63,n="Frostguard",q=3,rl=58,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=41.43},vsell=56943}
+I[12798]={c=2,il=63,n="Annihilator",q=3,rl=58,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=41.25},vsell=57150}
+I[12799]={ah=11895,c=7,il=55,n="Large Opal",q=2,sc=11,slot=0,vsell=7000}
+I[12800]={ah=31899,c=7,il=60,n="Azerothian Diamond",q=2,sc=11,slot=0,vsell=10000}
+I[12803]={ah=21700,c=7,il=55,n="Living Essence",q=2,sc=10,slot=0,vsell=500}
+I[12804]={ah=3486,c=7,il=55,n="Powerful Mojo",q=1,sc=11,slot=0,vsell=2000}
+I[12808]={ah=13600,c=7,il=55,n="Essence of Undeath",q=2,sc=10,slot=0,vsell=1000}
+I[12809]={ah=145000,c=7,il=60,n="Guardian Stone",q=2,sc=7,slot=0,vsell=10000}
+I[12810]={ah=39200,c=7,il=55,n="Enchanted Leather",q=1,sc=6,slot=0,vsell=500}
+I[12811]={ah=379616,c=7,il=60,n="Righteous Orb",q=2,sc=11,slot=0,vsell=20000}
+I[12819]={c=9,il=55,n="Plans: Ornate Thorium Handaxe",q=2,sc=4,slot=0,vbuy=16000,vsell=4000}
+I[12821]={ah=560000,c=9,il=55,n="Plans: Dawn's Edge",q=3,sc=4,slot=0,vsell=4000}
+I[12823]={c=9,il=56,n="Plans: Huge Thorium Battleaxe",q=1,sc=4,slot=0,vbuy=20000,vsell=5000}
+I[12824]={c=9,il=56,n="Plans: Enchanted Battlehammer",q=2,sc=4,slot=0,vsell=5000}
+I[12825]={ah=690000,c=9,il=56,n="Plans: Blazing Rapier",q=2,sc=4,slot=0,vsell=5000}
+I[12827]={ah=20000,c=9,il=57,n="Plans: Serenity",q=2,sc=4,slot=0,vsell=5000}
+I[12828]={ah=23036,c=9,il=58,n="Plans: Volcanic Hammer",q=2,sc=4,slot=0,vsell=5500}
+I[12830]={ah=39998,c=9,il=58,n="Plans: Corruption",q=1,sc=4,slot=0,vsell=5500}
+I[12833]={ah=19500,c=9,il=63,n="Plans: Hammer of the Titans",q=3,sc=4,slot=0,vsell=20000}
+I[12834]={ah=150000,c=9,il=63,n="Plans: Arcanite Champion",q=3,sc=4,slot=0,vsell=20000}
+I[12835]={ah=37900,c=9,il=63,n="Plans: Annihilator",q=3,sc=4,slot=0,vsell=20000}
+I[12836]={ah=250000,c=9,il=63,n="Plans: Frostguard",q=3,sc=4,slot=0,vsell=20000}
+I[12837]={ah=62494,c=9,il=63,n="Plans: Masterwork Stormhammer",q=3,sc=4,slot=0,vsell=20000}
+I[12838]={ah=222199,c=9,il=63,n="Plans: Arcanite Reaper",q=3,sc=4,slot=0,vsell=20000}
+I[12839]={ah=49800,c=9,il=63,n="Plans: Heartseeker",q=3,sc=4,slot=0,vsell=20000}
+I[12938]={c=12,il=60,n="Blood of Heroes",q=1,sc=0,slot=0}
+I[12958]={ah=82000,c=9,il=55,n="Recipe: Transmute Arcanite",q=1,sc=6,slot=0,vbuy=50000,vsell=12500}
+I[13180]={c=12,il=1,n="Stratholme Holy Water",q=1,sc=0,slot=0}
+I[13287]={ah=24364,c=9,il=33,n="Pattern: Raptor Hide Harness",q=2,sc=1,slot=0,vsell=625}
+I[13288]={ah=19440,c=9,il=33,n="Pattern: Raptor Hide Belt",q=2,sc=1,slot=0,vsell=625}
+I[13308]={c=9,il=31,n="Schematic: Ice Deflector",q=1,rl=5,sc=3,slot=0,vsell=450}
+I[13309]={c=9,il=24,n="Schematic: Lovingly Crafted Boomstick",q=1,sc=3,slot=0,vbuy=1000,vsell=250}
+I[13310]={c=9,il=36,n="Schematic: Accurate Scope",q=1,rl=5,sc=3,slot=0,vbuy=2000,vsell=500}
+I[13311]={ah=44500,c=9,il=40,n="Schematic: Mechanical Dragonling",q=1,rl=5,sc=3,slot=0,vsell=2500}
+I[13422]={ah=4896,c=7,il=45,n="Stonescale Eel",q=1,sc=11,slot=0,vsell=10}
+I[13423]={ah=9200,c=7,il=50,n="Stonescale Oil",q=1,sc=11,slot=0,vsell=125}
+I[13442]={ah=23037,c=0,il=51,n="Mighty Rage Potion",q=1,rl=46,sc=1,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=60},vsell=500}
+I[13443]={ah=12644,c=0,il=51,n="Superior Mana Potion",q=1,rl=41,sc=1,slot=0,vsell=400}
+I[13444]={ah=31678,c=0,il=59,n="Major Mana Potion",q=1,rl=49,sc=1,slot=0,vsell=1500}
+I[13445]={ah=19690,c=0,il=53,n="Elixir of Greater Defense",q=1,rl=43,sc=2,slot=0,stats={RESISTANCE0_NAME=450},vsell=500}
+I[13446]={ah=7431,c=0,il=55,n="Major Healing Potion",q=1,rl=45,sc=1,slot=0,vsell=1000}
+I[13447]={ah=19598,c=0,il=44,n="Elixir of the Sages",q=1,rl=38,sc=2,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=18,ITEM_MOD_SPIRIT_SHORT=18},vsell=1250}
+I[13452]={ah=49861,c=0,il=56,n="Elixir of the Mongoose",q=1,rl=46,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=25},vsell=1250}
+I[13453]={ah=36800,c=0,il=55,n="Elixir of Brute Force",q=1,rl=45,sc=2,slot=0,stats={ITEM_MOD_STAMINA_SHORT=18,ITEM_MOD_STRENGTH_SHORT=18},vsell=1250}
+I[13454]={ah=46276,c=0,il=57,n="Greater Arcane Elixir",q=1,rl=47,sc=2,slot=0,vsell=750}
+I[13455]={ah=30800,c=0,il=56,n="Greater Stoneshield Potion",q=1,rl=46,sc=1,slot=0,stats={RESISTANCE0_NAME=2000},vsell=750}
+I[13456]={ah=48256,c=0,il=58,n="Greater Frost Protection Potion",q=1,rl=48,sc=1,slot=0,vsell=750}
+I[13457]={ah=46030,c=0,il=58,n="Greater Fire Protection Potion",q=1,rl=48,sc=1,slot=0,vsell=750}
+I[13458]={ah=50400,c=0,il=58,n="Greater Nature Protection Potion",q=1,rl=48,sc=1,slot=0,vsell=750}
+I[13459]={ah=82987,c=0,il=58,n="Greater Shadow Protection Potion",q=1,rl=48,sc=1,slot=0,vsell=100}
+I[13461]={ah=18350,c=0,il=58,n="Greater Arcane Protection Potion",q=1,rl=48,sc=1,slot=0,vsell=750}
+I[13462]={ah=12580,c=0,il=57,n="Purification Potion",q=1,rl=47,sc=1,slot=0,vsell=750}
+I[13463]={ah=9495,c=7,il=54,n="Dreamfoil",q=1,sc=9,slot=0,vsell=100}
+I[13464]={ah=484,c=7,il=52,n="Golden Sansam",q=1,sc=9,slot=0,vsell=100}
+I[13465]={ah=9929,c=7,il=56,n="Mountain Silversage",q=1,sc=9,slot=0,vsell=150}
+I[13466]={ah=13800,c=7,il=57,n="Plaguebloom",q=1,sc=9,slot=0,vsell=250}
+I[13467]={ah=5132,c=7,il=58,n="Icecap",q=1,sc=9,slot=0,vsell=250}
+I[13468]={ah=538989,c=7,il=60,n="Black Lotus",q=2,sc=9,slot=0,vsell=1000}
+I[13476]={ah=101351,c=9,il=51,n="Recipe: Mighty Rage Potion",q=2,sc=6,slot=0,vsell=3000}
+I[13477]={ah=23246,c=9,il=52,n="Recipe: Superior Mana Potion",q=1,sc=6,slot=0,vsell=3000}
+I[13478]={ah=28470,c=9,il=53,n="Recipe: Elixir of Superior Defense",q=1,sc=6,slot=0,vsell=3250}
+I[13479]={ah=65000,c=9,il=54,n="Recipe: Elixir of the Sages",q=2,sc=6,slot=0,vsell=3500}
+I[13481]={ah=1000000,c=9,il=55,n="Recipe: Elixir of Brute Force",q=2,sc=6,slot=0,vsell=3750}
+I[13482]={c=9,il=55,n="Recipe: Transmute Air to Fire",q=2,sc=6,slot=0}
+I[13485]={c=9,il=55,n="Recipe: Transmute Water to Air",q=2,sc=6,slot=0,vbuy=15000}
+I[13487]={ah=259999,c=9,il=55,n="Recipe: Transmute Water to Undeath",q=2,sc=6,slot=0,vsell=3750}
+I[13489]={ah=274970,c=9,il=55,n="Recipe: Transmute Earth to Life",q=2,sc=6,slot=0,vsell=3750}
+I[13490]={ah=49089,c=9,il=56,n="Recipe: Greater Stoneshield Potion",q=2,sc=6,slot=0,vsell=4000}
+I[13491]={ah=12934,c=9,il=56,n="Recipe: Elixir of the Mongoose",q=2,sc=6,slot=0,vsell=4000}
+I[13492]={ah=27500,c=9,il=57,n="Recipe: Purification Potion",q=2,sc=6,slot=0,vsell=5000}
+I[13493]={ah=4900000,c=9,il=57,n="Recipe: Greater Arcane Elixir",q=2,sc=6,slot=0,vsell=5000}
+I[13494]={ah=603600,c=9,il=58,n="Recipe: Greater Fire Protection Potion",q=2,sc=6,slot=0,vsell=6000}
+I[13495]={ah=180548,c=9,il=58,n="Recipe: Greater Frost Protection Potion",q=2,sc=6,slot=0,vsell=6000}
+I[13496]={ah=835000,c=9,il=58,n="Recipe: Greater Nature Protection Potion",q=2,sc=6,slot=0,vsell=6000}
+I[13497]={ah=101500,c=9,il=58,n="Recipe: Greater Arcane Protection Potion",q=2,sc=6,slot=0,vsell=6000}
+I[13499]={ah=419000,c=9,il=58,n="Recipe: Greater Shadow Protection Potion",q=2,sc=6,slot=0,vsell=6000}
+I[13501]={c=9,il=59,n="Recipe: Major Mana Potion",q=2,sc=6,slot=0,vbuy=30000,vsell=7500}
+I[13503]={}
+I[13506]={ah=649500,c=0,il=60,n="Flask of Petrification",q=1,rl=50,sc=1,slot=0,vsell=5000}
+I[13510]={ah=1147500,c=0,il=60,n="Flask of the Titans",q=1,rl=50,sc=3,slot=0,vsell=5000}
+I[13511]={ah=1079998,c=0,il=60,n="Flask of Distilled Wisdom",q=1,rl=50,sc=3,slot=0,vsell=5000}
+I[13512]={ah=849000,c=0,il=60,n="Flask of Supreme Power",q=1,rl=50,sc=3,slot=0,vsell=5000}
+I[13513]={ah=319995,c=0,il=60,n="Flask of Chromatic Resistance",q=1,rl=50,sc=3,slot=0,vsell=5000}
+I[13518]={ah=429660,c=9,il=60,n="Recipe: Flask of Petrification",q=2,sc=6,slot=0,vsell=10000}
+I[13519]={ah=3299998,c=9,il=60,n="Recipe: Flask of the Titans",q=2,sc=6,slot=0,vsell=10000}
+I[13520]={ah=950000,c=9,il=60,n="Recipe: Flask of Distilled Wisdom",q=2,sc=6,slot=0,vsell=10000}
+I[13521]={ah=1447500,c=9,il=60,n="Recipe: Flask of Supreme Power",q=2,sc=6,slot=0,vsell=10000}
+I[13522]={ah=369999,c=9,il=60,n="Recipe: Flask of Chromatic Resistance",q=2,sc=6,slot=0,vsell=10000}
+I[13754]={ah=187,c=7,il=45,n="Raw Glossy Mightfish",q=1,rl=35,sc=8,slot=0,vsell=6}
+I[13755]={ah=4281,c=0,il=45,n="Raw Winter Squid",q=1,rl=35,sc=5,slot=0,vsell=7}
+I[13756]={ah=371,c=7,il=45,n="Raw Summer Bass",q=1,rl=35,sc=8,slot=0,vsell=9}
+I[13758]={ah=493,c=7,il=45,n="Raw Redgill",q=1,rl=35,sc=8,slot=0,vsell=4}
+I[13759]={ah=5150,c=7,il=45,n="Raw Nightfin Snapper",q=1,rl=35,sc=8,slot=0,vsell=10}
+I[13760]={ah=303,c=7,il=45,n="Raw Sunscale Salmon",q=1,rl=35,sc=8,slot=0,vsell=10}
+I[13851]={ah=555,c=0,il=35,n="Hot Wolf Ribs",q=1,rl=25,sc=5,slot=0,vsell=312}
+I[13856]={ah=13000,c=4,de={{11176,0.7451,2,5},{14343,0.03,1,1},{16202,0.2249,1,2}},il=51,n="Runecloth Belt",q=2,rl=46,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=37},vsell=5112}
+I[13857]={ah=20000,c=4,de={{11176,0.6429,2,5},{14343,0.0179,1,1},{16202,0.3393,1,2}},il=52,n="Runecloth Tunic",q=2,rl=47,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=11,RESISTANCE0_NAME=68},vsell=10878}
+I[13858]={ah=89605,c=4,de={{11176,0.8148,2,5},{16202,0.1852,2,2}},il=52,n="Runecloth Robe",q=2,rl=47,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=17,RESISTANCE0_NAME=68},vsell=10917}
+I[13860]={ah=28700,c=4,de={{11176,0.7703,2,5},{16202,0.2297,1,2}},il=53,n="Runecloth Cloak",q=2,rl=48,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=34},vsell=8741}
+I[13863]={ah=12900,c=4,de={{11176,0.7477,2,5},{14343,0.0343,1,1},{16202,0.2181,1,2}},il=55,n="Runecloth Gloves",q=2,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,RESISTANCE0_NAME=45},vsell=6617}
+I[13864]={ah=29900,c=4,de={{14344,0.0147,1,1},{16203,0.25,1,2},{16204,0.7353,1,2}},il=56,n="Runecloth Boots",q=2,rl=51,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=50},vsell=9553}
+I[13865]={ah=29908,c=4,de={{14344,0.0366,1,1},{16203,0.1992,1,2},{16204,0.7642,1,2}},il=57,n="Runecloth Pants",q=2,rl=52,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=20,RESISTANCE0_NAME=65},vsell=13555}
+I[13866]={ah=32500,c=4,de={{10940,0.0028,2,2},{14344,0.025,1,1},{16202,0.0028,1,1},{16203,0.2278,1,2},{16204,0.7417,1,2}},il=59,n="Runecloth Headband",q=2,rl=54,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=20,RESISTANCE0_NAME=62},vsell=11358}
+I[13867]={ah=100000,c=4,de={{14344,0.0289,1,1},{16203,0.2441,2,3},{16204,0.727,2,5}},il=61,n="Runecloth Shoulders",q=2,rl=56,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=15,RESISTANCE0_NAME=59},vsell=12570}
+I[13868]={ah=50000,c=4,de={{11176,0.6923,2,5},{16202,0.3077,1,2}},il=51,n="Frostweave Robe",q=2,rl=46,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=66},vsell=9665}
+I[13869]={ah=44900,c=4,de={{11176,0.7812,2,5},{14343,0.0156,1,1},{16202,0.2031,1,2}},il=51,n="Frostweave Tunic",q=2,rl=46,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=11,RESISTANCE0_NAME=66},vsell=9702}
+I[13870]={ah=183293,c=4,de={{11176,0.7442,2,5},{14343,0.0233,1,1},{16202,0.2326,1,2}},il=53,n="Frostweave Gloves",q=2,rl=47,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=43},vsell=5471}
+I[13871]={ah=190000,c=4,de={{14344,0.0541,1,1},{16203,0.3243,1,2},{16204,0.6216,1,2}},il=56,n="Frostweave Pants",q=2,rl=51,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=63},vsell=13436}
+I[13888]={ah=15095,c=7,il=55,n="Darkclaw Lobster",q=1,rl=45,sc=8,slot=0,vsell=12}
+I[13889]={ah=675,c=7,il=55,n="Raw Whitescale Salmon",q=1,rl=45,sc=8,slot=0,vsell=5}
+I[13890]={ah=5200,c=12,il=55,n="Raw Plated Armorfish",q=1,sc=0,slot=0,vsell=70}
+I[13893]={ah=850,c=0,il=55,n="Large Raw Mightfish",q=1,rl=45,sc=5,slot=0,vsell=15}
+I[13926]={ah=249500,c=7,il=40,n="Golden Pearl",q=2,sc=11,slot=0,vsell=10000}
+I[13927]={ah=816,c=0,il=45,n="Cooked Glossy Mightfish",q=1,rl=35,sc=5,slot=0,vsell=8}
+I[13928]={ah=8043,c=0,il=45,n="Grilled Squid",q=1,rl=35,sc=5,slot=0,vsell=8}
+I[13929]={ah=874,c=0,il=45,n="Hot Smoked Bass",q=1,rl=35,sc=5,slot=0,vsell=10}
+I[13930]={ah=96,c=0,il=45,n="Filet of Redgill",q=1,rl=35,sc=5,slot=0,vsell=5}
+I[13931]={ah=7259,c=0,il=45,n="Nightfin Soup",q=1,rl=35,sc=5,slot=0,vsell=12}
+I[13932]={ah=296,c=0,il=45,n="Poached Sunscale Salmon",q=1,rl=35,sc=5,slot=0,vsell=12}
+I[13933]={ah=270,c=0,il=55,n="Lobster Stew",q=1,rl=45,sc=5,slot=0,vsell=14}
+I[13934]={ah=1490,c=0,il=55,n="Mightfish Steak",q=1,rl=45,sc=5,slot=0,vsell=18}
+I[13935]={ah=4999,c=0,il=55,n="Baked Salmon",q=1,rl=45,sc=5,slot=0,vsell=10}
+I[13939]={ah=34010,c=9,il=45,n="Recipe: Spotted Yellowtail",q=1,sc=5,slot=0,vbuy=16000,vsell=4000}
+I[13940]={ah=35000,c=9,il=45,n="Recipe: Cooked Glossy Mightfish",q=1,sc=5,slot=0,vbuy=16000,vsell=4000}
+I[13941]={ah=34772,c=9,il=45,n="Recipe: Filet of Redgill",q=1,sc=5,slot=0,vbuy=16000,vsell=4000}
+I[13942]={ah=38840,c=9,il=48,n="Recipe: Grilled Squid",q=1,sc=5,slot=0,vbuy=16000,vsell=4000}
+I[13943]={ah=31669,c=9,il=48,n="Recipe: Hot Smoked Bass",q=1,sc=5,slot=0,vbuy=16000,vsell=4000}
+I[13945]={ah=41046,c=9,il=50,n="Recipe: Nightfin Soup",q=1,sc=5,slot=0,vbuy=20000,vsell=5000}
+I[13946]={ah=34800,c=9,il=50,n="Recipe: Poached Sunscale Salmon",q=1,sc=5,slot=0,vbuy=20000,vsell=5000}
+I[13947]={ah=42199,c=9,il=55,n="Recipe: Lobster Stew",q=1,sc=5,slot=0,vbuy=20000,vsell=5000}
+I[13948]={ah=41875,c=9,il=55,n="Recipe: Mightfish Steak",q=1,sc=5,slot=0,vbuy=20000,vsell=5000}
+I[13949]={ah=42562,c=9,il=55,n="Recipe: Baked Salmon",q=1,sc=5,slot=0,vbuy=20000,vsell=5000}
+I[14042]={ah=156462,c=4,de={{11176,0.8333,2,5},{16202,0.1667,2,2}},il=52,n="Cindercloth Vest",q=2,rl=47,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=68},vsell=10561}
+I[14043]={ah=28850,c=4,de={{11176,0.75,2,5},{14343,0.125,1,1},{16202,0.125,1,1}},il=54,n="Cindercloth Gloves",q=2,rl=49,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=44},vsell=5955}
+I[14044]={ah=120235,c=4,de={{11176,0.7,2,5},{16202,0.3,2,2}},il=55,n="Cindercloth Cloak",q=2,rl=50,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=36},vsell=9503}
+I[14045]={ah=90000,c=4,de={{14344,0.0769,1,1},{16203,0.0769,1,1},{16204,0.8462,1,2}},il=56,n="Cindercloth Pants",q=2,rl=51,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=63},vsell=13480}
+I[14046]={ah=28649,c=1,il=52,n="Runecloth Bag",q=1,sc=0,slot=18,vsell=5000}
+I[14047]={ah=1147,c=7,il=50,n="Runecloth",q=1,sc=5,slot=0,vsell=400}
+I[14048]={ah=5840,c=7,il=55,n="Bolt of Runecloth",q=1,sc=5,slot=0,vsell=2000}
+I[14100]={ah=133300,c=4,de={{11176,0.7215,2,5},{14343,0.0253,1,1},{16202,0.2532,1,2}},il=54,n="Brightcloth Robe",q=2,rl=49,sc=1,slot=5,stats={RESISTANCE0_NAME=70},vsell=12089}
+I[14101]={ah=76049,c=4,de={{11176,0.7168,2,5},{14343,0.0354,1,1},{16202,0.2478,1,2}},il=54,n="Brightcloth Gloves",q=2,rl=49,sc=1,slot=10,stats={RESISTANCE0_NAME=44},vsell=6066}
+I[14103]={ah=27300,c=4,de={{11176,0.7348,2,5},{14343,0.047,1,1},{16202,0.2182,1,2}},il=55,n="Brightcloth Cloak",q=2,rl=50,sc=-6,slot=16,stats={RESISTANCE0_NAME=36},vsell=9716}
+I[14104]={ah=149499,c=4,de={{14344,0.0455,1,1},{16203,0.2159,1,2},{16204,0.7386,1,2}},il=58,n="Brightcloth Pants",q=2,rl=53,sc=1,slot=7,stats={RESISTANCE0_NAME=66},vsell=15484}
+I[14106]={ah=235000,c=4,de={{16203,0.0588,2,2},{16204,0.9412,2,5}},il=61,n="Felcloth Robe",q=2,rl=56,sc=1,slot=5,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=79},vsell=18053}
+I[14107]={ah=189000,c=4,de={{11176,0.7692,2,5},{14343,0.0192,1,1},{16202,0.2115,1,2}},il=55,n="Felcloth Pants",q=2,rl=50,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=62},vsell=13140}
+I[14108]={ah=150000,c=4,de={{14344,0.1176,1,1},{16203,0.1176,1,1},{16204,0.7647,1,2}},il=57,n="Felcloth Boots",q=2,rl=52,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=51},vsell=11112}
+I[14111]={ah=133086,c=4,de={{14344,0.0566,1,1},{16203,0.2547,1,2},{16204,0.6887,1,2}},il=58,n="Felcloth Hood",q=2,rl=53,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=61},vsell=10775}
+I[14112]={ah=314999,c=4,de={{16203,0.12,2,3},{16204,0.88,2,5}},il=62,n="Felcloth Shoulders",q=2,rl=57,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=5,RESISTANCE0_NAME=60},vsell=13509}
+I[14128]={ah=274944,c=4,de={{14344,0.0612,1,1},{16203,0.2857,1,2},{16204,0.6531,1,2}},il=60,n="Wizardweave Robe",q=2,rl=55,sc=1,slot=5,stats={RESISTANCE0_NAME=77},vsell=16093}
+I[14130]={ah=200000,c=4,de={{14344,0.013,1,1},{16203,0.239,2,3},{16204,0.7481,2,5}},il=61,n="Wizardweave Turban",q=2,rl=56,sc=1,slot=1,stats={RESISTANCE0_NAME=64},vsell=12768}
+I[14132]={ah=37323,c=4,de={{11176,0.88,2,5},{16202,0.12,1,2}},il=55,n="Wizardweave Leggings",q=2,rl=50,sc=1,slot=7,stats={RESISTANCE0_NAME=62},vsell=12441}
+I[14134]={ah=250000,c=4,il=55,n="Cloak of Fire",q=3,rl=50,sc=-6,slot=16,stats={RESISTANCE0_NAME=39},vsell=11280}
+I[14136]={ah=1109000,c=4,de={{14344,1,1,1}},il=57,n="Robe of Winter Night",q=3,rl=52,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=81},vsell=17025}
+I[14137]={ah=500000,c=4,il=58,n="Mooncloth Leggings",q=3,rl=53,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=21,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=72},vsell=18113}
+I[14138]={ah=100000,c=4,il=60,n="Mooncloth Vest",q=3,rl=55,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=20,ITEM_MOD_SPIRIT_SHORT=19,RESISTANCE0_NAME=85},vsell=20042}
+I[14139]={ah=515456,c=4,il=61,n="Mooncloth Shoulders",q=3,rl=56,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=65},vsell=15840}
+I[14140]={ah=1650000,c=4,il=62,n="Mooncloth Circlet",q=3,rl=57,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=15,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=71},vsell=16693}
+I[14141]={c=4,il=55,n="Ghostweave Vest",q=2,rl=50,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=20,RESISTANCE0_NAME=71},vsell=12859}
+I[14142]={ah=47000,c=4,il=54,n="Ghostweave Gloves",q=2,rl=49,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=15,RESISTANCE0_NAME=44},vsell=6087}
+I[14143]={ah=121555,c=4,de={{11176,0.6667,2,5},{14343,0.2,1,1},{16202,0.1333,2,2}},il=53,n="Ghostweave Belt",q=2,rl=48,sc=1,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=9,RESISTANCE0_NAME=39},vsell=5763}
+I[14144]={ah=427799,c=4,il=58,n="Ghostweave Pants",q=2,rl=53,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=20,RESISTANCE0_NAME=66},vsell=14374}
+I[14146]={ah=6500000,c=4,il=62,n="Gloves of Spell Mastery",q=4,rl=57,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=60},vsell=14084}
+I[14152]={c=4,de={{14344,0.1176,3,3},{20725,0.8824,1,2}},il=62,n="Robe of the Archmage",q=4,rl=57,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=12,RESISTANCE0_NAME=96},vsell=28815}
+I[14153]={c=4,de={{14344,0.375,2,4},{20725,0.625,1,2}},il=62,n="Robe of the Void",q=4,rl=57,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=96},vsell=28920}
+I[14154]={c=4,de={{20725,1,1,2}},il=62,n="Truefaith Vestments",q=4,rl=57,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=16,ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=96},vsell=29028}
+I[14155]={ah=222499,c=1,il=60,n="Mooncloth Bag",q=2,sc=0,slot=18,vsell=20000}
+I[14156]={ah=3307372,c=1,il=62,n="Bottomless Bag",q=3,sc=0,slot=18,vsell=40000}
+I[14227]={ah=7547,c=7,il=50,n="Ironweb Spider Silk",q=1,sc=5,slot=0,vsell=2500}
+I[14256]={ah=28250,c=7,il=50,n="Felcloth",q=1,sc=5,slot=0,vsell=2000}
+I[14341]={ah=9161,c=7,il=50,n="Rune Thread",q=1,sc=5,slot=0,vbuy=5000,vsell=1250}
+I[14342]={ah=199632,c=7,il=55,n="Mooncloth",q=1,sc=5,slot=0,vsell=4000}
+I[14343]={ah=6948,c=7,il=50,n="Small Brilliant Shard",q=3,sc=12,slot=0,vsell=1}
+I[14344]={ah=36115,c=7,il=55,n="Large Brilliant Shard",q=3,sc=12,slot=0,vsell=1}
+I[14466]={ah=14430,c=9,il=51,n="Pattern: Frostweave Tunic",q=2,sc=2,slot=0,vsell=3000}
+I[14467]={ah=12799,c=9,il=51,n="Pattern: Frostweave Robe",q=2,sc=2,slot=0,vsell=3000}
+I[14468]={ah=163400,c=9,il=52,n="Pattern: Runecloth Bag",q=1,sc=2,slot=0,vsell=3000}
+I[14469]={c=9,il=52,n="Pattern: Runecloth Robe",q=1,sc=2,slot=0,vsell=3000}
+I[14470]={ah=15199,c=9,il=52,n="Pattern: Runecloth Tunic",q=2,sc=2,slot=0,vsell=3000}
+I[14471]={ah=33600,c=9,il=52,n="Pattern: Cindercloth Vest",q=2,sc=2,slot=0,vsell=3000}
+I[14472]={c=9,il=53,n="Pattern: Runecloth Cloak",q=1,sc=2,slot=0,vsell=3000}
+I[14473]={ah=89999,c=9,il=53,n="Pattern: Ghostweave Belt",q=2,sc=2,slot=0,vsell=3000}
+I[14474]={ah=17137,c=9,il=53,n="Pattern: Frostweave Gloves",q=2,sc=2,slot=0,vsell=3000}
+I[14476]={ah=35498,c=9,il=54,n="Pattern: Cindercloth Gloves",q=2,sc=2,slot=0,vsell=3500}
+I[14477]={ah=51000,c=9,il=54,n="Pattern: Ghostweave Gloves",q=2,sc=2,slot=0,vsell=3500}
+I[14478]={ah=13047,c=9,il=54,n="Pattern: Brightcloth Robe",q=2,sc=2,slot=0,vsell=3500}
+I[14479]={ah=13800,c=9,il=54,n="Pattern: Brightcloth Gloves",q=2,sc=2,slot=0,vsell=3500}
+I[14480]={ah=84480,c=9,il=55,n="Pattern: Ghostweave Vest",q=2,sc=2,slot=0,vsell=4000}
+I[14481]={c=9,il=55,n="Pattern: Runecloth Gloves",q=1,sc=2,slot=0,vbuy=16000,vsell=4000}
+I[14482]={ah=600000,c=9,il=55,n="Pattern: Cindercloth Cloak",q=2,sc=2,slot=0,vsell=4000}
+I[14483]={c=9,il=55,n="Pattern: Felcloth Pants",q=1,sc=2,slot=0,vsell=4000}
+I[14484]={ah=19400,c=9,il=55,n="Pattern: Brightcloth Cloak",q=2,sc=2,slot=0,vsell=4000}
+I[14485]={ah=149997,c=9,il=55,n="Pattern: Wizardweave Leggings",q=2,sc=2,slot=0,vsell=4000}
+I[14486]={c=9,il=55,n="Pattern: Cloak of Fire",q=3,sc=2,slot=0,vsell=10000}
+I[14488]={c=9,il=56,n="Pattern: Runecloth Boots",q=1,sc=2,slot=0,vsell=5000}
+I[14489]={ah=26400,c=9,il=56,n="Pattern: Frostweave Pants",q=2,sc=2,slot=0,vsell=5000}
+I[14490]={ah=65000,c=9,il=56,n="Pattern: Cindercloth Pants",q=2,sc=2,slot=0,vsell=5000}
+I[14491]={ah=29989,c=9,il=57,n="Pattern: Runecloth Pants",q=2,sc=2,slot=0,vsell=5000}
+I[14492]={ah=20000,c=9,il=57,n="Pattern: Felcloth Boots",q=2,sc=2,slot=0,vsell=5000}
+I[14493]={c=9,il=57,n="Pattern: Robe of Winter Night",q=3,sc=2,slot=0,vsell=5000}
+I[14494]={ah=23000,c=9,il=58,n="Pattern: Brightcloth Pants",q=2,sc=2,slot=0,vsell=5500}
+I[14495]={ah=159101,c=9,il=58,n="Pattern: Ghostweave Pants",q=2,sc=2,slot=0,vsell=5500}
+I[14496]={ah=29799,c=9,il=58,n="Pattern: Felcloth Hood",q=2,sc=2,slot=0,vsell=5500}
+I[14497]={ah=103775,c=9,il=58,n="Pattern: Mooncloth Leggings",q=3,sc=2,slot=0,vsell=5500}
+I[14498]={ah=27332,c=9,il=59,n="Pattern: Runecloth Headband",q=2,sc=2,slot=0,vsell=6250}
+I[14499]={ah=152099,c=9,il=60,n="Pattern: Mooncloth Bag",q=2,sc=2,slot=0,vsell=7500}
+I[14500]={ah=176625,c=9,il=60,n="Pattern: Wizardweave Robe",q=2,sc=2,slot=0,vsell=7500}
+I[14501]={ah=100174,c=9,il=60,n="Pattern: Mooncloth Vest",q=3,sc=2,slot=0,vsell=7500}
+I[14504]={ah=23232,c=9,il=61,n="Pattern: Runecloth Shoulders",q=2,sc=2,slot=0,vsell=10000}
+I[14505]={ah=249999,c=9,il=61,n="Pattern: Wizardweave Turban",q=2,sc=2,slot=0,vsell=10000}
+I[14506]={ah=25200,c=9,il=61,n="Pattern: Felcloth Robe",q=2,sc=2,slot=0,vsell=10000}
+I[14507]={ah=110000,c=9,il=61,n="Pattern: Mooncloth Shoulders",q=3,sc=2,slot=0,vsell=10000}
+I[14508]={ah=40000,c=9,il=62,n="Pattern: Felcloth Shoulders",q=2,sc=2,slot=0,vsell=15000}
+I[14509]={ah=450000,c=9,il=62,n="Pattern: Mooncloth Circlet",q=3,sc=2,slot=0,vsell=15000}
+I[14510]={ah=8606112,c=9,il=62,n="Pattern: Bottomless Bag",q=3,sc=2,slot=0,vsell=15000}
+I[14511]={ah=1999999,c=9,il=62,n="Pattern: Gloves of Spell Mastery",q=4,sc=2,slot=0,vsell=15000}
+I[14512]={ah=208000,c=9,il=62,n="Pattern: Truefaith Vestments",q=4,sc=2,slot=0,vsell=15000}
+I[14513]={ah=309000,c=9,il=62,n="Pattern: Robe of the Archmage",q=4,sc=2,slot=0,vsell=15000}
+I[14514]={ah=106290,c=9,il=62,n="Pattern: Robe of the Void",q=4,sc=2,slot=0,vsell=15000}
+I[14526]={c=9,il=55,n="Pattern: Mooncloth",q=1,sc=2,slot=0,vbuy=20000,vsell=5000}
+I[14529]={ah=4457,c=0,il=52,n="Runecloth Bandage",q=1,sc=7,slot=0,vsell=500}
+I[14530]={ah=2931,c=0,il=58,n="Heavy Runecloth Bandage",q=1,sc=7,slot=0,vsell=1000}
+I[14627]={c=9,il=27,n="Pattern: Bright Yellow Shirt",q=1,sc=2,slot=0,vsell=200}
+I[14630]={c=9,il=33,n="Pattern: Enchanter's Cowl",q=1,sc=2,slot=0,vbuy=1000,vsell=250}
+I[14634]={c=9,il=40,n="Recipe: Frost Oil",q=2,sc=6,slot=0,vsell=625}
+I[14635]={ah=16500,c=9,il=37,n="Pattern: Gem-studded Leather Belt",q=1,sc=1,slot=0,vsell=750}
+I[14639]={ah=15184,c=9,il=28,n="Schematic: Minor Recombobulator",q=1,sc=3,slot=0,vsell=375}
+I[15045]={ah=70000,c=4,de={{14343,1,1,1}},il=52,n="Green Dragonscale Breastplate",q=3,rl=47,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=311},vsell=19938}
+I[15046]={ah=50000,c=4,de={{14343,1,1,1}},il=54,n="Green Dragonscale Leggings",q=3,rl=49,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=282},vsell=22482}
+I[15047]={ah=784998,c=4,de={{14344,1,1,1}},il=61,n="Red Dragonscale Breastplate",q=3,rl=56,sc=3,slot=5,stats={RESISTANCE0_NAME=360},vsell=29836}
+I[15048]={ah=186846,c=4,il=57,n="Blue Dragonscale Breastplate",q=3,rl=52,sc=3,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=28,RESISTANCE0_NAME=338},vsell=24409}
+I[15049]={ah=847887,c=4,il=59,n="Blue Dragonscale Shoulders",q=3,rl=54,sc=3,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=21,RESISTANCE0_NAME=262},vsell=20543}
+I[15050]={ah=1209988,c=4,de={{14344,1,1,1}},il=58,n="Black Dragonscale Breastplate",q=3,rl=53,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=344},vsell=26071}
+I[15051]={ah=1150000,c=4,de={{14344,1,1,1}},il=60,n="Black Dragonscale Shoulders",q=3,rl=55,sc=3,slot=3,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=266},vsell=21736}
+I[15052]={ah=1358883,c=4,de={{14344,0.8333,1,1},{20725,0.1667,1,1}},il=62,n="Black Dragonscale Leggings",q=3,rl=57,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=320},vsell=31933}
+I[15053]={ah=250000,c=4,de={{14344,0.125,1,1},{16203,0.125,2,2},{16204,0.75,1,2}},il=57,n="Volcanic Breastplate",q=2,rl=52,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=148},vsell=17275}
+I[15054]={ah=151515,c=4,de={{11176,0.875,2,5},{14343,0.125,1,1}},il=54,n="Volcanic Leggings",q=2,rl=49,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=124},vsell=14559}
+I[15055]={ah=245700,c=4,de={{16203,0.1429,3,3},{16204,0.8571,2,5}},il=61,n="Volcanic Shoulders",q=2,rl=56,sc=2,slot=3,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=117},vsell=16019}
+I[15056]={ah=4750000,c=4,il=57,n="Stormshroud Armor",q=3,rl=52,sc=2,slot=5,stats={RESISTANCE0_NAME=163},vsell=20966}
+I[15057]={ah=1699999,c=4,il=55,n="Stormshroud Pants",q=3,rl=50,sc=2,slot=7,stats={RESISTANCE0_NAME=138},vsell=18728}
+I[15058]={ah=2980090,c=4,il=59,n="Stormshroud Shoulders",q=3,rl=54,sc=2,slot=3,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=126},vsell=17631}
+I[15059]={ah=1699996,c=4,il=60,n="Living Breastplate",q=3,rl=55,sc=2,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=25,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=169},vsell=24776}
+I[15060]={ah=400000,c=4,il=57,n="Living Leggings",q=3,rl=52,sc=2,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=25,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=142},vsell=21277}
+I[15061]={ah=218550,c=4,de={{14343,1,1,1}},il=54,n="Living Shoulders",q=3,rl=49,sc=2,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=13,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=117},vsell=13803}
+I[15062]={ah=1009198,c=4,de={{14344,1,1,1}},il=60,n="Devilsaur Leggings",q=3,rl=55,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=148},vsell=25709}
+I[15063]={ah=527000,c=4,de={{14344,1,1,1}},il=58,n="Devilsaur Gauntlets",q=3,rl=53,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=103},vsell=11701}
+I[15064]={ah=219999,c=4,de={{14343,1,1,1}},il=55,n="Warbear Harness",q=3,rl=50,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STAMINA_SHORT=27,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=158},vsell=19717}
+I[15065]={ah=190000,c=4,de={{14344,1,1,1}},il=57,n="Warbear Woolies",q=3,rl=52,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=28,RESISTANCE0_NAME=142},vsell=22233}
+I[15066]={ah=130000,c=4,de={{14344,1,1,1}},il=58,n="Ironfeather Breastplate",q=3,rl=53,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=28,RESISTANCE0_NAME=165},vsell=23650}
+I[15067]={ah=139999,c=4,il=54,n="Ironfeather Shoulders",q=3,rl=49,sc=2,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=20,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=117},vsell=12758}
+I[15068]={ah=508000,c=4,de={{16203,0.375,3,3},{16204,0.625,2,4}},il=62,n="Frostsaber Tunic",q=2,rl=57,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=158},vsell=21835}
+I[15069]={ah=237600,c=4,de={{14344,0.0476,1,1},{16203,0.2381,1,2},{16204,0.7143,1,2}},il=57,n="Frostsaber Leggings",q=2,rl=52,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=129},vsell=17012}
+I[15070]={ah=200000,c=4,de={{16203,0.1111,2,2},{16204,0.8889,1,2}},il=59,n="Frostsaber Gloves",q=2,rl=54,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=95},vsell=9504}
+I[15071]={ah=290000,c=4,de={{11176,0.875,2,5},{14343,0.125,1,1}},il=55,n="Frostsaber Boots",q=2,rl=50,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=99},vsell=11443}
+I[15072]={ah=264525,c=4,de={{14344,0.0556,1,1},{16203,0.2222,1,1},{16204,0.7222,1,2}},il=56,n="Chimeric Leggings",q=2,rl=51,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=127},vsell=16233}
+I[15073]={ah=154293,c=4,de={{11176,1,2,5}},il=55,n="Chimeric Boots",q=2,rl=50,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=99},vsell=11530}
+I[15074]={ah=259990,c=4,de={{11176,1,3,4}},il=53,n="Chimeric Gloves",q=2,rl=48,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=87},vsell=6867}
+I[15075]={ah=250000,c=4,de={{14344,0.2,1,1},{16203,0.2,1,2},{16204,0.6,1,2}},il=58,n="Chimeric Vest",q=2,rl=53,sc=2,slot=5,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=150},vsell=18449}
+I[15076]={ah=12000,c=4,de={{11176,0.3,2,5},{14343,0.2,1,1},{16202,0.5,2,2}},il=53,n="Heavy Scorpid Vest",q=2,rl=48,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=15,ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=288},vsell=16604}
+I[15077]={ah=7800,c=4,de={{11176,0.8,2,5},{14343,0.1,1,1},{16202,0.1,1,2}},il=51,n="Heavy Scorpid Bracers",q=2,rl=46,sc=3,slot=9,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=122},vsell=7615}
+I[15078]={c=4,de={{11176,0.8333,2,5},{16202,0.1667,1,1}},il=55,n="Heavy Scorpid Gauntlet",q=2,rl=50,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=186},vsell=9649}
+I[15079]={ah=20000,c=4,de={{16203,0.4,2,2},{16204,0.6,1,2}},il=57,n="Heavy Scorpid Leggings",q=2,rl=52,sc=3,slot=7,stats={ITEM_MOD_AGILITY_SHORT=20,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=269},vsell=21760}
+I[15080]={c=4,il=59,n="Heavy Scorpid Helm",q=2,rl=54,sc=3,slot=1,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=258},vsell=18230}
+I[15081]={c=4,il=61,n="Heavy Scorpid Shoulders",q=2,rl=56,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=245},vsell=20261}
+I[15082]={ah=15600,c=4,de={{16203,0.2692,1,2},{16204,0.7308,1,2}},il=56,n="Heavy Scorpid Belt",q=2,rl=51,sc=3,slot=6,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=170},vsell=10375}
+I[15083]={ah=14800,c=4,de={{11176,0.7717,2,5},{14343,0.0245,1,1},{16202,0.2038,1,2}},il=52,n="Wicked Leather Gauntlets",q=2,rl=47,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=86},vsell=6872}
+I[15084]={ah=22495,c=4,de={{11176,0.7329,1,5},{14343,0.0338,1,1},{16202,0.2334,1,2}},il=53,n="Wicked Leather Bracers",q=2,rl=48,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=61},vsell=7311}
+I[15085]={ah=100000,c=4,il=61,n="Wicked Leather Armor",q=2,rl=56,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=25,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=156},vsell=22732}
+I[15086]={ah=23890,c=4,de={{14344,0.0329,1,1},{16203,0.2038,1,2},{16204,0.7633,1,2}},il=56,n="Wicked Leather Headband",q=2,rl=51,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=16,ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=118},vsell=13154}
+I[15087]={ah=60000,c=4,de={{14344,0.1,1,1},{16204,0.9,1,2}},il=58,n="Wicked Leather Pants",q=2,rl=53,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=20,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=131},vsell=17892}
+I[15088]={ah=74960,c=4,de={{16203,0.2,1,2},{16204,0.8,1,2}},il=60,n="Wicked Leather Belt",q=2,rl=55,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=87},vsell=9901}
+I[15090]={c=4,il=62,n="Runic Leather Armor",q=2,rl=57,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=21,RESISTANCE0_NAME=158},vsell=22002}
+I[15091]={ah=12995,c=4,de={{11176,0.7312,2,5},{14343,0.0538,1,1},{16202,0.2151,1,2}},il=54,n="Runic Leather Gauntlets",q=2,rl=49,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=88},vsell=7195}
+I[15092]={ah=59588,c=4,de={{11176,0.7981,2,5},{14343,0.0385,1,1},{16202,0.1635,1,2}},il=55,n="Runic Leather Bracers",q=2,rl=50,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=63},vsell=7656}
+I[15093]={ah=21200,c=4,de={{14344,0.0308,1,1},{16203,0.1385,1,2},{16204,0.8308,1,2}},il=56,n="Runic Leather Belt",q=2,rl=51,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=14,RESISTANCE0_NAME=82},vsell=8368}
+I[15094]={ah=30000,c=4,de={{14344,0.0571,1,1},{16203,0.2857,1,2},{16204,0.6571,1,2}},il=58,n="Runic Leather Headband",q=2,rl=53,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=20,RESISTANCE0_NAME=122},vsell=14155}
+I[15095]={ah=148500,c=4,il=60,n="Runic Leather Pants",q=2,rl=55,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=13,RESISTANCE0_NAME=135},vsell=20885}
+I[15096]={c=4,il=62,n="Runic Leather Shoulders",q=2,rl=57,sc=2,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=15,RESISTANCE0_NAME=119},vsell=17332}
+I[15138]={ah=539999,c=4,de={{14344,1,1,1}},il=60,n="Onyxia Scale Cloak",q=3,rl=55,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=43},vsell=14922}
+I[15407]={ah=201397,c=7,il=50,n="Cured Rugged Hide",q=1,sc=6,slot=0,vsell=500}
+I[15408]={ah=14064,c=7,il=55,n="Heavy Scorpid Scale",q=1,sc=6,slot=0,vsell=500}
+I[15409]={ah=318999,c=7,il=50,n="Refined Deeprock Salt",q=1,sc=6,slot=0,vsell=1000}
+I[15410]={ah=337744,c=7,il=60,n="Scale of Onyxia",q=3,sc=6,slot=0,vsell=5000}
+I[15412]={ah=549,c=7,il=50,n="Green Dragonscale",q=1,sc=6,slot=0,vsell=500}
+I[15414]={ah=11942,c=7,il=60,n="Red Dragonscale",q=1,sc=6,slot=0,vsell=1500}
+I[15415]={ah=745,c=7,il=50,n="Blue Dragonscale",q=1,sc=6,slot=0,vsell=500}
+I[15416]={ah=10395,c=7,il=55,n="Black Dragonscale",q=1,sc=6,slot=0,vsell=1000}
+I[15417]={ah=44760,c=7,il=50,n="Devilsaur Leather",q=1,sc=6,slot=0,vsell=500}
+end)()
+;(function()
+I[15419]={ah=2900,c=7,il=50,n="Warbear Leather",q=1,sc=6,slot=0,vsell=600}
+I[15420]={ah=125,c=7,il=50,n="Ironfeather",q=1,sc=6,slot=0,vsell=100}
+I[15422]={ah=9217,c=7,il=50,n="Frostsaber Leather",q=1,sc=6,slot=0,vsell=500}
+I[15423]={ah=15500,c=7,il=50,n="Chimera Leather",q=1,sc=6,slot=0,vsell=500}
+I[15564]={ah=13690,c=0,il=50,n="Rugged Armor Kit",q=1,rl=40,sc=6,slot=0,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=40},vsell=1000}
+I[15724]={c=9,il=51,n="Pattern: Heavy Scorpid Bracers",q=1,sc=1,slot=0,vsell=3000}
+I[15725]={c=9,il=52,n="Pattern: Wicked Leather Gauntlets",q=1,sc=1,slot=0,vbuy=12000,vsell=3000}
+I[15726]={ah=25000,c=9,il=52,n="Pattern: Green Dragonscale Breastplate",q=1,sc=1,slot=0,vsell=3000}
+I[15727]={ah=10299,c=9,il=53,n="Pattern: Heavy Scorpid Vest",q=2,sc=1,slot=0,vsell=3000}
+I[15728]={ah=13388,c=9,il=53,n="Pattern: Wicked Leather Bracers",q=2,sc=1,slot=0,vsell=3000}
+I[15729]={c=9,il=53,n="Pattern: Chimeric Gloves",q=1,sc=1,slot=0,vsell=3000}
+I[15730]={c=9,il=61,n="Pattern: Red Dragonscale Breastplate",q=3,sc=1,slot=0,vsell=3000}
+I[15731]={ah=10956,c=9,il=54,n="Pattern: Runic Leather Gauntlets",q=2,sc=1,slot=0,vsell=3500}
+I[15732]={ah=4500,c=9,il=54,n="Pattern: Volcanic Leggings",q=2,sc=1,slot=0,vsell=3500}
+I[15733]={ah=25000,c=9,il=54,n="Pattern: Green Dragonscale Leggings",q=3,sc=1,slot=0,vsell=3500}
+I[15734]={ah=18800,c=9,il=54,n="Pattern: Living Shoulders",q=1,sc=1,slot=0,vsell=3500}
+I[15735]={ah=69608,c=9,il=54,n="Pattern: Ironfeather Shoulders",q=1,sc=1,slot=0,vsell=3500}
+I[15737]={ah=7000,c=9,il=55,n="Pattern: Chimeric Boots",q=2,sc=1,slot=0,vsell=4000}
+I[15738]={ah=16217,c=9,il=55,n="Pattern: Heavy Scorpid Gauntlets",q=2,sc=1,slot=0,vsell=4000}
+I[15739]={ah=20100,c=9,il=55,n="Pattern: Runic Leather Bracers",q=2,sc=1,slot=0,vsell=4000}
+I[15740]={c=9,il=55,n="Pattern: Frostsaber Boots",q=1,sc=1,slot=0,vbuy=16000,vsell=4000}
+I[15741]={ah=24994,c=9,il=55,n="Pattern: Stormshroud Pants",q=1,sc=1,slot=0,vsell=4000}
+I[15742]={ah=63726,c=9,il=55,n="Pattern: Warbear Harness",q=1,sc=1,slot=0,vsell=4000}
+I[15743]={ah=12500,c=9,il=56,n="Pattern: Heavy Scorpid Belt",q=2,sc=1,slot=0,vsell=5000}
+I[15744]={ah=27526,c=9,il=56,n="Pattern: Wicked Leather Headband",q=2,sc=1,slot=0,vsell=5000}
+I[15745]={ah=14388,c=9,il=56,n="Pattern: Runic Leather Belt",q=2,sc=1,slot=0,vsell=5000}
+I[15746]={ah=9653,c=9,il=56,n="Pattern: Chimeric Leggings",q=2,sc=1,slot=0,vsell=5000}
+I[15747]={ah=5099,c=9,il=57,n="Pattern: Frostsaber Leggings",q=2,sc=1,slot=0,vsell=5000}
+I[15748]={ah=12400,c=9,il=57,n="Pattern: Heavy Scorpid Leggings",q=2,sc=1,slot=0,vsell=5000}
+I[15749]={ah=24999,c=9,il=57,n="Pattern: Volcanic Breastplate",q=2,sc=1,slot=0,vsell=5000}
+I[15751]={ah=50000,c=9,il=57,n="Pattern: Blue Dragonscale Breastplate",q=1,sc=1,slot=0,vsell=5000}
+I[15752]={ah=6300,c=9,il=57,n="Pattern: Living Leggings",q=3,sc=1,slot=0,vsell=5000}
+I[15753]={ah=103515,c=9,il=57,n="Pattern: Stormshroud Armor",q=3,sc=1,slot=0,vsell=5000}
+I[15755]={ah=10385,c=9,il=58,n="Pattern: Chimeric Vest",q=2,sc=1,slot=0,vsell=5500}
+I[15756]={c=9,il=58,n="Pattern: Runic Leather Headband",q=1,sc=1,slot=0,vsell=5500}
+I[15757]={ah=16500,c=9,il=58,n="Pattern: Wicked Leather Pants",q=2,sc=1,slot=0,vsell=5500}
+I[15758]={ah=59897,c=9,il=58,n="Pattern: Devilsaur Gauntlets",q=1,sc=1,slot=0,vsell=5500}
+I[15759]={ah=40000,c=9,il=58,n="Pattern: Black Dragonscale Breastplate",q=1,sc=1,slot=0,vsell=5500}
+I[15760]={ah=25000,c=9,il=58,n="Pattern: Ironfeather Breastplate",q=3,sc=1,slot=0,vsell=5500}
+I[15761]={ah=7719,c=9,il=59,n="Pattern: Frostsaber Gloves",q=2,sc=1,slot=0,vsell=6250}
+I[15762]={c=9,il=59,n="Pattern: Heavy Scorpid Helm",q=1,sc=1,slot=0,vsell=6250}
+I[15763]={ah=48200,c=9,il=59,n="Pattern: Blue Dragonscale Shoulders",q=3,sc=1,slot=0,vsell=6250}
+I[15764]={ah=199999,c=9,il=59,n="Pattern: Stormshroud Shoulders",q=3,sc=1,slot=0,vsell=6250}
+I[15765]={ah=11457,c=9,il=60,n="Pattern: Runic Leather Pants",q=2,sc=1,slot=0,vsell=7500}
+I[15768]={ah=32068,c=9,il=60,n="Pattern: Wicked Leather Belt",q=2,sc=1,slot=0,vsell=7500}
+I[15770]={ah=18997,c=9,il=60,n="Pattern: Black Dragonscale Shoulders",q=3,sc=1,slot=0,vsell=7500}
+I[15771]={ah=69999,c=9,il=60,n="Pattern: Living Breastplate",q=3,sc=1,slot=0,vsell=7500}
+I[15772]={ah=134500,c=9,il=60,n="Pattern: Devilsaur Leggings",q=3,sc=1,slot=0,vsell=7500}
+I[15773]={ah=50898,c=9,il=61,n="Pattern: Wicked Leather Armor",q=2,sc=1,slot=0,vsell=10000}
+I[15774]={ah=46197,c=9,il=61,n="Pattern: Heavy Scorpid Shoulders",q=2,sc=1,slot=0,vsell=10000}
+I[15775]={ah=29600,c=9,il=61,n="Pattern: Volcanic Shoulders",q=2,sc=1,slot=0,vsell=10000}
+I[15776]={ah=33172,c=9,il=61,n="Pattern: Runic Leather Armor",q=2,sc=1,slot=0,vsell=10000}
+I[15777]={ah=50000,c=9,il=62,n="Pattern: Runic Leather Shoulders",q=2,sc=1,slot=0,vsell=15000}
+I[15779]={ah=19305,c=9,il=62,n="Pattern: Frostsaber Tunic",q=2,sc=1,slot=0,vsell=15000}
+I[15781]={ah=80899,c=9,il=62,n="Pattern: Black Dragonscale Leggings",q=3,sc=1,slot=0,vsell=15000}
+I[15802]={ah=990000,c=4,il=56,n="Mooncloth Boots",q=3,rl=51,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_SPIRIT_SHORT=13,RESISTANCE0_NAME=55},vsell=11648}
+I[15846]={ah=85384,c=0,il=50,n="Salt Shaker",q=1,sc=14,slot=0,vsell=7500}
+I[15869]={ah=738,c=0,il=20,n="Silver Skeleton Key",q=2,sc=8,slot=0,vsell=50}
+I[15870]={ah=1073,c=0,il=30,n="Golden Skeleton Key",q=2,sc=8,slot=0,vsell=300}
+I[15871]={ah=5887,c=0,il=40,n="Truesilver Skeleton Key",q=2,sc=8,slot=0,vsell=625}
+I[15872]={ah=100182,c=0,il=55,n="Arcanite Skeleton Key",q=2,sc=8,slot=0,vsell=625}
+I[15992]={ah=4456,c=7,il=50,n="Dense Blasting Powder",q=1,sc=1,slot=0,vsell=250}
+I[15993]={ah=18100,c=0,il=52,n="Thorium Grenade",q=1,rl=10,sc=0,slot=0,vsell=1500}
+I[15994]={ah=8770,c=7,il=52,n="Thorium Widget",q=1,sc=1,slot=0,vsell=2500}
+I[15995]={ah=169999,c=2,de={{11176,0.4,4,5},{16202,0.6,1,2}},il=52,n="Thorium Rifle",q=2,rl=47,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=24.2},vsell=19739}
+I[15996]={ah=90500,c=15,il=53,n="Lifelike Mechanical Toad",q=1,sc=2,slot=0,vsell=2500}
+I[15997]={ah=73,c=6,il=57,n="Thorium Shells",q=2,rl=52,sc=3,slot=24,vsell=10}
+I[15999]={ah=49975,c=4,de={{11176,0.6667,2,2},{16202,0.3333,2,2}},il=54,n="Spellpower Goggles Xtreme Plus",q=2,rl=10,sc=1,slot=1,stats={RESISTANCE0_NAME=57},vsell=9002}
+I[16000]={ah=17063,c=7,il=39,n="Thorium Tube",q=1,sc=1,slot=0,vsell=3750}
+I[16004]={ah=399900,c=2,il=55,n="Dark Iron Rifle",q=3,rl=50,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=28.33},vsell=29152}
+I[16005]={ah=30000,c=0,il=57,n="Dark Iron Bomb",q=1,rl=10,sc=0,slot=0,vsell=1250}
+I[16006]={ah=609990,c=7,il=58,n="Delicate Arcanite Converter",q=1,sc=1,slot=0,vsell=10000}
+I[16007]={c=2,il=61,n="Flawless Arcanite Rifle",q=3,rl=56,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=31.17,ITEM_MOD_STAMINA_SHORT=9},vsell=40625}
+I[16008]={ah=110000,c=4,il=58,n="Master Engineer's Goggles",q=2,rl=10,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=17,ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=61},vsell=11739}
+I[16009]={c=4,il=58,n="Voice Amplification Modulator",q=2,sc=-3,slot=2,vsell=5930}
+I[16022]={ah=23000103,c=4,il=60,n="Arcanite Dragonling",q=3,rl=50,sc=-4,slot=12,vsell=40000}
+I[16023]={ah=129999,c=0,il=55,n="Masterwork Target Dummy",q=1,rl=10,sc=14,slot=0,vsell=10000}
+I[16040]={ah=314083,c=0,il=60,n="Arcane Bomb",q=1,rl=10,sc=0,slot=0,vsell=4000}
+I[16041]={ah=25600,c=9,il=52,n="Schematic: Thorium Grenade",q=1,rl=10,sc=3,slot=0,vsell=3000}
+I[16042]={ah=44856,c=9,il=52,n="Schematic: Thorium Widget",q=1,rl=10,sc=3,slot=0,vsell=3000}
+I[16043]={ah=11600,c=9,il=52,n="Schematic: Thorium Rifle",q=2,rl=10,sc=3,slot=0,vsell=3000}
+I[16044]={ah=109950,c=9,il=53,n="Schematic: Lifelike Mechanical Toad",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[16045]={ah=19500,c=9,il=54,n="Schematic: Spellpower Goggles Xtreme Plus",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[16046]={c=9,il=55,n="Schematic: Masterwork Target Dummy",q=1,rl=10,sc=3,slot=0,vbuy=16000,vsell=4000}
+I[16047]={c=9,il=55,n="Schematic: Thorium Tube",q=1,rl=10,sc=3,slot=0,vbuy=16000,vsell=4000}
+I[16048]={ah=29500,c=9,il=55,n="Schematic: Dark Iron Rifle",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[16049]={ah=22900,c=9,il=57,n="Schematic: Dark Iron Bomb",q=2,rl=10,sc=3,slot=0,vsell=5000}
+I[16050]={c=9,il=57,n="Schematic: Delicate Arcanite Converter",q=1,rl=10,sc=3,slot=0,vsell=5000}
+I[16051]={ah=76472,c=9,il=57,n="Schematic: Thorium Shells",q=2,rl=10,sc=3,slot=0,vsell=5000}
+I[16052]={ah=40741,c=9,il=58,n="Schematic: Voice Amplification Modulator",q=2,rl=10,sc=3,slot=0,vsell=5000}
+I[16053]={ah=45000,c=9,il=58,n="Schematic: Master Engineer's Goggles",q=2,rl=10,sc=3,slot=0,vsell=5000}
+I[16054]={ah=239991,c=9,il=60,n="Schematic: Arcanite Dragonling",q=2,rl=10,sc=3,slot=0,vsell=6000}
+I[16055]={ah=219999,c=9,il=60,n="Schematic: Arcane Bomb",q=2,rl=10,sc=3,slot=0,vsell=6000}
+I[16056]={ah=89900,c=9,il=61,n="Schematic: Flawless Arcanite Rifle",q=2,rl=10,sc=3,slot=0,vsell=6000}
+I[16110]={ah=28800,c=9,il=45,n="Recipe: Monster Omelet",q=1,sc=5,slot=0,vbuy=11294,vsell=3000}
+I[16111]={ah=24088,c=9,il=45,n="Recipe: Spiced Chili Crab",q=1,sc=5,slot=0,vbuy=10666,vsell=3000}
+I[16112]={ah=8534,c=9,il=36,n="Manual: Heavy Silk Bandage",q=1,sc=7,slot=0,vbuy=2200,vsell=550}
+I[16113]={ah=10440,c=9,il=42,n="Manual: Mageweave Bandage",q=1,sc=7,slot=0,vbuy=5000,vsell=1250}
+I[16202]={ah=20789,c=7,il=50,n="Lesser Eternal Essence",q=2,sc=12,slot=0,vsell=1}
+I[16203]={ah=61477,c=7,il=55,n="Greater Eternal Essence",q=2,sc=12,slot=0,vsell=1}
+I[16204]={ah=1993,c=7,il=55,n="Illusion Dust",q=1,sc=12,slot=0,vsell=1}
+I[16206]={ah=2089787,c=7,il=55,n="Arcanite Rod",q=1,sc=12,slot=0,vsell=1000}
+I[16207]={c=7,il=58,n="Runed Arcanite Rod",q=1,sc=12,slot=0,vsell=1250}
+I[16214]={ah=1215000,c=9,il=51,n="Formula: Enchant Bracer - Greater Intellect",q=2,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=7},vsell=3000}
+I[16215]={ah=23806,c=9,il=52,n="Formula: Enchant Boots - Greater Stamina",q=2,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=7},vsell=3000}
+I[16216]={ah=320000,c=9,il=53,n="Formula: Enchant Cloak - Greater Resistance",q=2,sc=8,slot=0,vsell=3000}
+I[16217]={c=9,il=53,n="Formula: Enchant Shield - Greater Stamina",q=1,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=9},vsell=3000}
+I[16218]={ah=20380,c=9,il=54,n="Formula: Enchant Bracer - Superior Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=9},vsell=3500}
+I[16219]={ah=64000,c=9,il=54,n="Formula: Enchant Gloves - Greater Agility",q=2,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=10},vsell=3500}
+I[16220]={ah=15400,c=9,il=55,n="Formula: Enchant Boots - Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=5},vsell=4000}
+I[16221]={ah=14799,c=9,il=55,n="Formula: Enchant Chest - Major Stamina",q=1,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=10},vsell=4000}
+I[16222]={ah=217999,c=9,il=56,n="Formula: Enchant Shield - Superior Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=9},vsell=5000}
+I[16223]={ah=169900,c=9,il=57,n="Formula: Enchant Weapon - Icy Chill",q=2,sc=8,slot=0,vsell=5000}
+I[16224]={ah=58000,c=9,il=57,n="Formula: Enchant Cloak - Superior Defense",q=1,sc=8,slot=0,stats={RESISTANCE0_NAME=70},vsell=5000}
+I[16242]={ah=510000,c=9,il=58,n="Formula: Enchant Chest - Major Intellect",q=2,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=10},vsell=5500}
+I[16243]={c=9,il=58,n="Formula: Runed Arcanite Rod",q=1,sc=8,slot=0,vsell=5500}
+I[16244]={ah=409982,c=9,il=59,n="Formula: Enchant Gloves - Greater Strength",q=2,sc=8,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=10},vsell=6000}
+I[16245]={ah=27056,c=9,il=59,n="Formula: Enchant Boots - Greater Agility",q=2,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=7},vsell=6000}
+I[16246]={ah=1450000,c=9,il=59,n="Formula: Enchant Bracer - Superior Strength",q=2,sc=8,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=9},vsell=6000}
+I[16247]={ah=292489,c=9,il=59,n="Formula: Enchant 2H Weapon - Superior Impact",q=2,sc=8,slot=0,vsell=6000}
+I[16248]={ah=289575,c=9,il=59,n="Formula: Enchant Weapon - Unholy Weapon",q=2,sc=8,slot=0,vsell=6000}
+I[16249]={ah=325999,c=9,il=60,n="Formula: Enchant 2H Weapon - Major Intellect",q=2,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=9},vsell=7500}
+I[16250]={ah=609000,c=9,il=60,n="Formula: Enchant Weapon - Superior Striking",q=2,sc=8,slot=0,vsell=7500}
+I[16251]={ah=23497,c=9,il=60,n="Formula: Enchant Bracer - Superior Stamina",q=2,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=9},vsell=7500}
+I[16252]={ah=3700000,c=9,il=61,n="Formula: Enchant Weapon - Crusader",q=2,sc=8,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=100},vsell=7500}
+I[16253]={ah=14000000,c=9,il=62,n="Formula: Enchant Chest - Greater Stats",q=2,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4},vsell=7500}
+I[16254]={ah=1005050,c=9,il=62,n="Formula: Enchant Weapon - Lifestealing",q=3,sc=8,slot=0,vsell=7500}
+I[16255]={ah=70000,c=9,il=62,n="Formula: Enchant 2H Weapon - Major Spirit",q=2,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=9},vsell=7500}
+I[16583]={ah=19576,c=15,il=60,n="Demonic Figurine",q=1,sc=1,slot=0,vbuy=8888,vsell=2500}
+I[16766]={ah=1833,c=0,il=45,n="Undermine Clam Chowder",q=1,rl=35,sc=5,slot=0,vsell=100}
+I[16767]={c=9,il=45,n="Recipe: Undermine Clam Chowder",q=1,sc=5,slot=0,vbuy=3000,vsell=750}
+I[16979]={ah=1249999,c=4,il=62,n="Flarecore Gloves",q=4,rl=57,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=60},vsell=14902}
+I[16980]={ah=1389999,c=4,il=61,n="Flarecore Mantle",q=4,rl=56,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=10,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=71},vsell=21365}
+I[16982]={ah=1850000,c=4,il=59,n="Corehound Boots",q=4,rl=54,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=126},vsell=24397}
+I[16983]={ah=2250000,c=4,il=60,n="Molten Helm",q=4,rl=55,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=150},vsell=25709}
+I[16984]={ah=2198998,c=4,de={{14344,0.125,4,4},{20725,0.875,1,2}},il=61,n="Black Dragonscale Boots",q=4,rl=56,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=270},vsell=32653}
+I[16988]={ah=999898,c=4,il=62,n="Fiery Chain Shoulders",q=4,rl=57,sc=3,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=299},vsell=31460}
+I[16989]={ah=599899,c=4,il=59,n="Fiery Chain Girdle",q=4,rl=54,sc=3,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=214},vsell=18610}
+I[17010]={ah=127096,c=7,il=60,n="Fiery Core",q=3,sc=11,slot=0,vsell=2000}
+I[17011]={ah=101039,c=7,il=60,n="Lava Core",q=3,sc=11,slot=0,vsell=2000}
+I[17012]={ah=82446,c=7,il=60,n="Core Leather",q=1,sc=6,slot=0,vsell=1000}
+I[17013]={ah=2250000,c=4,de={{14344,0.1429,2,2},{20725,0.8571,1,1}},il=60,n="Dark Iron Leggings",q=4,rl=55,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=598},vsell=26441}
+I[17014]={ah=998987,c=4,il=59,n="Dark Iron Bracers",q=4,rl=54,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=294},vsell=12637}
+I[17015]={c=2,il=65,n="Dark Iron Reaver",q=3,rl=60,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=42.71,ITEM_MOD_STAMINA_SHORT=10},vsell=63738}
+I[17016]={c=2,il=65,n="Dark Iron Destroyer",q=3,rl=60,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=42.71,ITEM_MOD_STRENGTH_SHORT=10},vsell=63973}
+I[17017]={c=9,il=61,n="Pattern: Flarecore Mantle",q=1,sc=2,slot=0,vsell=45000}
+I[17018]={c=9,il=62,n="Pattern: Flarecore Gloves",q=1,sc=2,slot=0,vsell=20000}
+I[17022]={c=9,il=59,n="Pattern: Corehound Boots",q=1,sc=1,slot=0,vsell=37500}
+I[17023]={c=9,il=60,n="Pattern: Molten Helm",q=1,sc=1,slot=0,vsell=40000}
+I[17025]={c=9,il=60,n="Pattern: Black Dragonscale Boots",q=1,sc=1,slot=0,vsell=40000}
+I[17034]={ah=582,c=15,il=20,n="Maple Seed",q=1,sc=1,slot=0,vbuy=177,vsell=50}
+I[17035]={ah=1993,c=15,il=30,n="Stranglethorn Seed",q=1,sc=1,slot=0,vbuy=355,vsell=100}
+I[17049]={c=9,il=59,n="Plans: Fiery Chain Girdle",q=3,sc=4,slot=0,vsell=22500}
+I[17051]={c=9,il=59,n="Plans: Dark Iron Bracers",q=3,sc=4,slot=0,vsell=17500}
+I[17052]={c=9,il=60,n="Plans: Dark Iron Leggings",q=3,sc=4,slot=0,vsell=45000}
+I[17053]={c=9,il=62,n="Plans: Fiery Chain Shoulders",q=3,sc=4,slot=0,vsell=50000}
+I[17056]={ah=903,c=15,il=1,n="Light Feather",q=1,sc=1,slot=0,vsell=7}
+I[17059]={c=9,il=65,n="Plans: Dark Iron Reaver",q=3,sc=4,slot=0,vsell=55000}
+I[17060]={c=9,il=65,n="Plans: Dark Iron Destroyer",q=3,sc=4,slot=0,vsell=55000}
+I[17062]={ah=7309,c=9,il=30,n="Recipe: Mithril Head Trout",q=1,sc=5,slot=0,vbuy=2200,vsell=550}
+I[17193]={c=2,il=67,n="Sulfuron Hammer",q=4,rl=60,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=63.65},vsell=122311}
+I[17194]={ah=80,c=15,il=5,n="Holiday Spices",q=1,sc=3,slot=0,vbuy=10}
+I[17196]={ah=497,c=0,il=5,n="Holiday Spirits",q=1,rl=1,sc=5,slot=0,vbuy=50,vsell=12}
+I[17197]={ah=1750,c=0,il=10,n="Gingerbread Cookie",q=1,rl=1,sc=5,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=2,ITEM_MOD_STAMINA_SHORT=2},vsell=10}
+I[17198]={ah=97,c=0,il=10,n="Egg Nog",q=1,rl=1,sc=5,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=2,ITEM_MOD_STAMINA_SHORT=2},vsell=9}
+I[17200]={ah=16124,c=9,il=5,n="Recipe: Gingerbread Cookie",q=1,sc=5,slot=0,vbuy=25,vsell=6}
+I[17201]={ah=20000,c=9,il=10,n="Recipe: Egg Nog",q=1,sc=5,slot=0,vbuy=240,vsell=60}
+I[17202]={ah=1502,c=15,il=5,n="Snowball",q=1,sc=3,slot=0,vbuy=10}
+I[17203]={ah=1747399,c=7,il=60,n="Sulfuron Ingot",q=4,sc=7,slot=0,vsell=100000}
+I[17222]={ah=2966,c=0,il=45,n="Spider Sausage",q=1,rl=35,sc=5,slot=0,vsell=300}
+I[17704]={ah=150000,c=2,il=38,n="Edge of Winter",q=2,rl=33,sc=0,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=20.54,ITEM_MOD_STAMINA_SHORT=3},vsell=9178}
+I[17706]={ah=24393,c=9,il=38,n="Plans: Edge of Winter",q=2,sc=4,slot=0,vsell=950}
+I[17708]={ah=35498,c=0,il=38,n="Elixir of Frost Power",q=1,rl=28,sc=2,slot=0,vsell=35}
+I[17709]={ah=450000,c=9,il=38,n="Recipe: Elixir of Frost Power",q=1,sc=6,slot=0,vsell=500}
+I[17716]={ah=250000,c=0,il=38,n="Snowmaster 9000",q=1,rl=5,sc=14,slot=0,vsell=7500}
+I[17720]={ah=119497,c=9,il=38,n="Schematic: Snowmaster 9000",q=2,rl=5,sc=3,slot=0,vsell=600}
+I[17721]={ah=6289,c=4,de={{11135,0.5,1,1},{11137,0.5,1,1}},il=38,n="Gloves of the Greatfather",q=2,rl=33,sc=2,slot=10,stats={RESISTANCE0_NAME=66},vsell=2268}
+I[17722]={ah=19600,c=9,il=38,n="Pattern: Gloves of the Greatfather",q=2,sc=1,slot=0,vsell=700}
+I[17723]={ah=23997,c=4,il=40,n="Green Holiday Shirt",q=1,sc=-8,slot=4,vsell=750}
+I[17724]={ah=24500,c=9,il=38,n="Pattern: Green Holiday Shirt",q=1,sc=2,slot=0,vsell=375}
+I[17725]={ah=137499,c=9,il=38,n="Formula: Enchant Weapon - Winter's Might",q=2,sc=8,slot=0,vsell=750}
+I[18045]={ah=2229,c=0,il=45,n="Tender Wolf Steak",q=1,rl=35,sc=5,slot=0,vsell=300}
+I[18046]={ah=22900,c=9,il=45,n="Recipe: Tender Wolf Steak",q=1,sc=5,slot=0,vbuy=12000,vsell=3000}
+I[18160]={c=9,il=15,n="Recipe: Thistle Tea",q=2,sc=5,slot=0,vbuy=210,vsell=50}
+I[18168]={ah=5994985,c=4,il=65,n="Force Reactive Disk",q=4,rl=60,sc=6,slot=14,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=2468},vsell=56416}
+I[18232]={ah=321964,c=0,il=60,n="Field Repair Bot 74A",q=1,rl=10,sc=14,slot=0,vsell=10000}
+I[18238]={ah=60000,c=4,de={{11139,1,1,1}},il=40,n="Shadowskin Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=76},vsell=3321}
+I[18239]={ah=21374,c=9,il=40,n="Pattern: Shadowskin Gloves",q=1,sc=1,slot=0,vsell=875}
+I[18240]={c=7,il=1,n="Ogre Tannin",q=2,sc=11,slot=0}
+I[18251]={ah=644492,c=0,il=60,n="Core Armor Kit",q=3,rl=50,sc=6,slot=0,vsell=5000}
+I[18252]={c=9,il=60,n="Pattern: Core Armor Kit",q=3,sc=1,slot=0,vsell=50000}
+I[18253]={ah=52998,c=0,il=60,n="Major Rejuvenation Potion",q=1,rl=50,sc=1,slot=0,vsell=15}
+I[18254]={ah=2819,c=0,il=45,n="Runn Tum Tuber Surprise",q=1,rl=35,sc=5,slot=0,vsell=18}
+I[18255]={ah=1144,c=0,il=55,n="Runn Tum Tuber",q=1,rl=45,sc=5,slot=0,vsell=15}
+I[18256]={ah=27599,c=7,il=55,n="Imbued Vial",q=1,sc=11,slot=0,vbuy=26666,vsell=1500}
+I[18257]={ah=1900000,c=9,il=60,n="Recipe: Major Rejuvenation Potion",q=3,sc=6,slot=0,vsell=50000}
+I[18258]={ah=114500,c=12,il=55,n="Gordok Ogre Suit",q=2,rl=55,sc=0,slot=0}
+I[18259]={c=9,il=60,n="Formula: Enchant Weapon - Spell Power",q=3,sc=8,slot=0,vsell=7500}
+I[18260]={c=9,il=60,n="Formula: Enchant Weapon - Healing Power",q=3,sc=8,slot=0,vsell=7500}
+I[18262]={ah=92591,c=0,il=60,n="Elemental Sharpening Stone",q=2,rl=50,sc=-3,slot=0,vsell=1250}
+I[18263]={ah=2989900,c=4,il=64,n="Flarecore Wraps",q=4,rl=60,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=8,RESISTANCE0_NAME=43},vsell=16911}
+I[18264]={c=9,il=60,n="Plans: Elemental Sharpening Stone",q=3,sc=4,slot=0,vsell=25000}
+I[18265]={ah=480000,c=9,il=64,n="Pattern: Flarecore Wraps",q=3,sc=2,slot=0,vsell=30000}
+I[18267]={c=9,il=55,n="Recipe: Runn Tum Tuber Surprise",q=2,sc=5,slot=0,vsell=5000}
+I[18282]={ah=6250000,c=2,il=65,n="Core Marksman Rifle",q=4,rl=60,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=36.8},vsell=66347}
+I[18283]={ah=3785252,c=0,il=60,n="Biznicks 247x128 Accurascope",q=3,rl=50,sc=6,slot=0,vsell=25000}
+I[18290]={c=9,il=60,n="Schematic: Biznicks 247x128 Accurascope",q=3,rl=10,sc=3,slot=0,vsell=30000}
+I[18291]={c=9,il=65,n="Schematic: Force Reactive Disk",q=3,rl=10,sc=3,slot=0,vsell=30000}
+I[18292]={c=9,il=65,n="Schematic: Core Marksman Rifle",q=3,rl=10,sc=3,slot=0,vsell=30000}
+I[18294]={ah=3465,c=0,il=45,n="Draught of Greater Water Breathing",q=1,rl=35,sc=2,slot=0,vsell=250}
+I[18405]={c=4,il=62,n="Belt of the Archmage",q=4,rl=57,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=16,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=54},vsell=14744}
+I[18407]={ah=1200000,c=4,de={{14344,1,1,1}},il=62,n="Felcloth Gloves",q=3,rl=57,sc=1,slot=10,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=55},vsell=11139}
+I[18408]={ah=600000,c=4,de={{14344,1,1,1}},il=62,n="Inferno Gloves",q=3,rl=57,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,RESISTANCE0_NAME=55},vsell=11178}
+I[18409]={c=4,il=62,n="Mooncloth Gloves",q=3,rl=57,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=16,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=55},vsell=11219}
+I[18413]={ah=1150000,c=4,de={{14344,1,1,1}},il=62,n="Cloak of Warding",q=3,rl=57,sc=-6,slot=16,stats={RESISTANCE0_NAME=44},vsell=17070}
+I[18414]={ah=700000,c=9,il=62,n="Pattern: Belt of the Archmage",q=4,sc=2,slot=0,vsell=30000}
+I[18415]={c=9,il=62,n="Pattern: Felcloth Gloves",q=3,sc=2,slot=0,vsell=10000}
+I[18416]={c=9,il=62,n="Pattern: Inferno Gloves",q=3,sc=2,slot=0,vsell=10000}
+I[18417]={c=9,il=62,n="Pattern: Mooncloth Gloves",q=3,sc=2,slot=0,vsell=10000}
+I[18418]={c=9,il=62,n="Pattern: Cloak of Warding",q=3,sc=2,slot=0,vsell=10000}
+I[18486]={ah=1529998,c=4,il=61,n="Mooncloth Robe",q=3,rl=56,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=25,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=87},vsell=21683}
+I[18487]={ah=48000,c=9,il=61,n="Pattern: Mooncloth Robe",q=1,sc=2,slot=0,vsell=10000}
+I[18504]={c=4,il=62,n="Girdle of Insight",q=3,rl=57,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=23,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=98},vsell=14126}
+I[18506]={ah=1335000,c=4,il=62,n="Mongoose Boots",q=3,rl=57,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=23,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=120},vsell=21340}
+I[18508]={ah=400000,c=4,il=62,n="Swift Flight Bracers",q=3,rl=57,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=160},vsell=17194}
+I[18509]={ah=2450000,c=4,il=62,n="Chromatic Cloak",q=4,rl=57,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=48},vsell=23006}
+I[18510]={ah=3550000,c=4,de={{14344,0.0488,2,3},{20725,0.9512,1,2}},il=62,n="Hide of the Wild",q=4,rl=57,sc=-6,slot=16,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=48},vsell=20889}
+I[18511]={ah=7559999,c=4,il=62,n="Shifting Cloak",q=4,rl=57,sc=-6,slot=16,stats={ITEM_MOD_AGILITY_SHORT=17,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=48},vsell=20971}
+I[18512]={ah=61666,c=7,il=55,n="Larval Acid",q=1,sc=11,slot=0,vsell=4000}
+I[18514]={c=9,il=62,n="Pattern: Girdle of Insight",q=3,sc=1,slot=0,vsell=15000}
+I[18515]={c=9,il=62,n="Pattern: Mongoose Boots",q=3,sc=1,slot=0,vsell=15000}
+I[18516]={c=9,il=62,n="Pattern: Swift Flight Bracers",q=3,sc=1,slot=0,vsell=15000}
+I[18517]={ah=270000,c=9,il=62,n="Pattern: Chromatic Cloak",q=4,sc=1,slot=0,vsell=40000}
+I[18518]={ah=2250000,c=9,il=62,n="Pattern: Hide of the Wild",q=4,sc=1,slot=0,vsell=40000}
+I[18519]={ah=320053,c=9,il=62,n="Pattern: Shifting Cloak",q=4,sc=1,slot=0,vsell=40000}
+I[18567]={ah=10000,c=7,il=60,n="Elemental Flux",q=1,sc=7,slot=0,vbuy=133333,vsell=37500}
+I[18587]={ah=390000,c=4,il=53,n="Goblin Jumper Cables XL",q=1,rl=10,sc=-4,slot=12,vsell=2000}
+I[18588]={ah=5625,c=0,il=40,n="Ez-Thro Dynamite II",q=1,rl=30,sc=0,slot=0,vsell=200}
+I[18592]={c=9,il=63,n="Plans: Sulfuron Hammer",q=4,sc=4,slot=0,vsell=20000}
+I[18594]={ah=46800,c=0,il=55,n="Powerful Seaforium Charge",q=1,rl=10,sc=0,slot=0,vsell=3000}
+I[18631]={ah=109988,c=7,il=50,n="Truesilver Transformer",q=1,sc=1,slot=0,vsell=3000}
+I[18634]={ah=1270080,c=4,il=52,n="Gyrofreeze Ice Reflector",q=3,rl=47,sc=-4,slot=12,vsell=12500}
+I[18637]={ah=450000,c=4,il=55,n="Major Recombobulator",q=2,rl=10,sc=-4,slot=12,vsell=600}
+I[18638]={ah=2389800,c=4,il=58,n="Hyper-Radiant Flame Reflector",q=3,rl=53,sc=-4,slot=12,vsell=12500}
+I[18639]={ah=1660004,c=4,il=60,n="Ultra-Flash Shadow Reflector",q=3,rl=55,sc=-4,slot=12,vsell=12500}
+I[18641]={ah=24599,c=0,il=45,n="Dense Dynamite",q=1,rl=10,sc=0,slot=0,vsell=500}
+I[18645]={ah=397950,c=0,il=53,n="Gnomish Alarm-O-Bot",q=1,rl=10,sc=14,slot=0,vsell=1500}
+I[18647]={ah=16118,c=9,il=30,n="Schematic: Red Firework",q=1,sc=3,slot=0,vsell=450}
+I[18648]={c=9,il=30,n="Schematic: Green Firework",q=1,sc=3,slot=0,vsell=450}
+I[18649]={ah=15800,c=9,il=30,n="Schematic: Blue Firework",q=1,sc=3,slot=0,vsell=450}
+I[18650]={c=9,il=40,n="Schematic: EZ-Thro Dynamite II",q=1,rl=5,sc=3,slot=0,vbuy=5000,vsell=1250}
+I[18651]={c=9,il=52,n="Schematic: Truesilver Transformer",q=1,rl=10,sc=3,slot=0,vbuy=12000,vsell=3000}
+I[18652]={ah=29800,c=9,il=52,n="Schematic: Gyrofreeze Ice Reflector",q=1,rl=10,sc=3,slot=0,vsell=3000}
+I[18653]={ah=48016,c=9,il=53,n="Schematic: Goblin Jumper Cables XL",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[18654]={ah=6800,c=9,il=53,n="Schematic: Gnomish Alarm-O-Bot",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[18655]={ah=28550,c=9,il=55,n="Schematic: Major Recombobulator",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[18656]={ah=26599,c=9,il=55,n="Schematic: Powerful Seaforium Charge",q=1,rl=10,sc=3,slot=0,vsell=4000}
+I[18657]={ah=1270254,c=9,il=58,n="Schematic: Hyper-Radiant Flame Reflector",q=2,rl=10,sc=3,slot=0,vsell=5000}
+I[18658]={ah=209999,c=9,il=60,n="Schematic: Ultra-Flash Shadow Reflector",q=2,rl=10,sc=3,slot=0,vsell=6000}
+I[18660]={ah=22999,c=0,il=50,n="World Enlarger",q=2,rl=10,sc=14,slot=0,vsell=7500}
+I[18661]={ah=6463,c=9,il=52,n="Schematic: World Enlarger",q=2,rl=10,sc=3,slot=0,vsell=3000}
+I[18662]={ah=6263,c=0,il=1,n="Heavy Leather Ball",q=1,rl=1,sc=8,slot=0,vbuy=21,vsell=5}
+I[18731]={ah=14088,c=9,il=30,n="Pattern: Heavy Leather Ball",q=1,sc=1,slot=0,vsell=500}
+I[18948]={ah=27500,c=4,de={{11138,1,1,1}},il=32,n="Barbaric Bracers",q=3,rl=27,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=47},vsell=1589}
+I[18949]={ah=12490,c=9,il=31,n="Pattern: Barbaric Bracers",q=1,sc=1,slot=0,vsell=500}
+I[18984]={ah=450000,c=4,il=55,n="Dimensional Ripper - Everlook",q=2,rl=10,sc=0,slot=0,vsell=5000}
+I[18986]={ah=519024,c=4,il=52,n="Ultrasafe Transporter: Gadgetzan",q=2,rl=10,sc=0,slot=0,vsell=5000}
+I[19026]={c=0,il=50,n="Snake Burst Firework",q=1,sc=8,slot=0,vsell=250}
+I[19027]={c=9,il=50,n="Schematic: Snake Burst Firework",q=1,rl=10,sc=3,slot=0,vbuy=5000,vsell=1250}
+I[19043]={c=4,il=58,n="Heavy Timbermaw Belt",q=3,rl=53,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=193},vsell=13291}
+I[19044]={ah=1509961,c=4,il=58,n="Might of the Timbermaw",q=3,rl=53,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=21,RESISTANCE0_NAME=93},vsell=11116}
+I[19047]={ah=1003191,c=4,il=58,n="Wisdom of the Timbermaw",q=3,rl=53,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_SPIRIT_SHORT=9,RESISTANCE0_NAME=46},vsell=9232}
+I[19048]={c=4,il=61,n="Heavy Timbermaw Boots",q=3,rl=56,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=247},vsell=28061}
+I[19049]={c=4,il=61,n="Timbermaw Brawlers",q=3,rl=56,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=21,RESISTANCE0_NAME=107},vsell=15576}
+I[19050]={ah=2999999,c=4,il=61,n="Mantle of the Timbermaw",q=3,rl=56,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=13,RESISTANCE0_NAME=65},vsell=18758}
+I[19051]={ah=369992,c=4,il=58,n="Girdle of the Dawn",q=3,rl=53,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=21,RESISTANCE0_NAME=341},vsell=9365}
+I[19052]={ah=1999953,c=4,il=58,n="Dawn Treaders",q=3,rl=53,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=18,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=114},vsell=17621}
+I[19056]={c=4,il=58,n="Argent Boots",q=3,rl=53,sc=1,slot=8,stats={ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=57},vsell=12941}
+I[19057]={c=4,il=61,n="Gloves of the Dawn",q=3,rl=56,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=21,RESISTANCE0_NAME=398},vsell=11606}
+I[19058]={c=4,il=61,n="Golden Mantle of the Dawn",q=3,rl=56,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=20,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=129},vsell=21845}
+I[19059]={ah=500000,c=4,il=61,n="Argent Shoulders",q=3,rl=56,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=65},vsell=17541}
+I[19148]={ah=1469996,c=4,il=66,n="Dark Iron Helm",q=4,rl=60,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=608},vsell=25399}
+I[19149]={ah=1579998,c=4,il=66,n="Lava Belt",q=4,rl=60,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=113},vsell=21248}
+I[19156]={ah=2949994,c=4,il=66,n="Flarecore Robe",q=4,rl=60,sc=1,slot=5,stats={ITEM_MOD_STAMINA_SHORT=35,RESISTANCE0_NAME=102},vsell=34911}
+I[19157]={ah=3996925,c=4,il=70,n="Chromatic Gauntlets",q=4,rl=60,sc=3,slot=10,stats={RESISTANCE0_NAME=279},vsell=31943}
+I[19162]={ah=3704579,c=4,de={{20725,1,1,2}},il=70,n="Corehound Belt",q=4,rl=60,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=16,RESISTANCE0_NAME=118},vsell=27831}
+I[19163]={ah=2500000,c=4,il=70,n="Molten Belt",q=4,rl=60,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=28,ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=118},vsell=27931}
+I[19164]={ah=2185000,c=4,il=70,n="Dark Iron Gauntlets",q=4,rl=60,sc=4,slot=10,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=495},vsell=22425}
+I[19165]={ah=3489998,c=4,de={{14344,0.5,3,4},{20725,0.5,1,2}},il=70,n="Flarecore Leggings",q=4,rl=60,sc=1,slot=7,stats={ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=94},vsell=45006}
+I[19166]={c=2,il=66,n="Black Amnesty",q=4,rl=60,sc=15,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=47.81},vsell=92896}
+I[19167]={ah=4000000,c=2,il=66,n="Blackfury",q=4,rl=60,sc=6,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=62.62,ITEM_MOD_STAMINA_SHORT=15,ITEM_MOD_STRENGTH_SHORT=35},vsell=116531}
+I[19168]={ah=11009985,c=2,il=70,n="Blackguard",q=4,rl=60,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=51.67,ITEM_MOD_STAMINA_SHORT=12},vsell=102890}
+I[19169]={ah=8990000,c=2,il=70,n="Nightfall",q=4,rl=60,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=67},vsell=129112}
+I[19170]={ah=10011666,c=2,il=70,n="Ebon Hand",q=4,rl=60,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=51.6,ITEM_MOD_STAMINA_SHORT=9},vsell=103689}
+I[19202]={c=9,il=58,n="Pattern: Heavy Timbermaw Belt",q=1,sc=1,slot=0,vsell=5500}
+I[19203]={c=9,il=58,n="Plans: Girdle of the Dawn",q=1,sc=4,slot=0,vsell=5500}
+I[19204]={c=9,il=64,n="Pattern: Heavy Timbermaw Boots",q=1,sc=1,slot=0,vsell=10000}
+I[19205]={c=9,il=64,n="Plans: Gloves of the Dawn",q=1,sc=4,slot=0,vsell=10000}
+I[19206]={c=9,il=66,n="Plans: Dark Iron Helm",q=1,sc=4,slot=0,vsell=15000}
+I[19207]={c=9,il=70,n="Plans: Dark Iron Gauntlets",q=1,sc=4,slot=0,vsell=20000}
+I[19208]={c=9,il=66,n="Plans: Black Amnesty",q=1,sc=4,slot=0,vsell=17500}
+I[19209]={c=9,il=66,n="Plans: Blackfury",q=1,sc=4,slot=0,vsell=17500}
+I[19210]={c=9,il=70,n="Plans: Ebon Hand",q=1,sc=4,slot=0,vsell=30000}
+I[19211]={c=9,il=70,n="Plans: Blackguard",q=1,sc=4,slot=0,vsell=30000}
+I[19212]={c=9,il=70,n="Plans: Nightfall",q=1,sc=4,slot=0,vsell=30000}
+I[19215]={c=9,il=58,n="Pattern: Wisdom of the Timbermaw",q=1,sc=2,slot=0,vsell=5500}
+I[19216]={c=9,il=58,n="Pattern: Argent Boots",q=1,sc=2,slot=0,vsell=5500}
+I[19217]={c=9,il=64,n="Pattern: Argent Shoulders",q=1,sc=2,slot=0,vsell=10000}
+I[19218]={c=9,il=64,n="Pattern: Mantle of the Timbermaw",q=1,sc=2,slot=0,vsell=10000}
+I[19219]={c=9,il=66,n="Pattern: Flarecore Robe",q=1,sc=2,slot=0,vsell=15000}
+I[19220]={c=9,il=70,n="Pattern: Flarecore Leggings",q=1,sc=2,slot=0,vsell=22500}
+I[19326]={c=9,il=58,n="Pattern: Might of the Timbermaw",q=1,sc=1,slot=0,vsell=5500}
+I[19327]={c=9,il=64,n="Pattern: Timbermaw Brawlers",q=1,sc=1,slot=0,vsell=10000}
+I[19328]={c=9,il=58,n="Pattern: Dawn Treaders",q=1,sc=1,slot=0,vsell=5500}
+I[19329]={c=9,il=64,n="Pattern: Golden Mantle of the Dawn",q=1,sc=1,slot=0,vsell=10000}
+I[19330]={c=9,il=66,n="Pattern: Lava Belt",q=1,sc=1,slot=0,vsell=15000}
+I[19331]={c=9,il=70,n="Pattern: Chromatic Gauntlets",q=1,sc=1,slot=0,vsell=22500}
+I[19332]={c=9,il=70,n="Pattern: Corehound Belt",q=1,sc=1,slot=0,vsell=22500}
+I[19333]={c=9,il=70,n="Pattern: Molten Belt",q=1,sc=1,slot=0,vsell=22500}
+I[19440]={ah=25327,c=0,il=58,n="Powerful Anti-Venom",q=1,sc=8,slot=0,vsell=500}
+I[19441]={ah=8488,c=7,il=1,n="Huge Venom Sac",q=1,sc=11,slot=0,vsell=1500}
+I[19442]={c=9,il=58,n="Formula: Powerful Anti-Venom",q=1,sc=7,slot=0,vsell=25000}
+I[19444]={c=9,il=58,n="Formula: Enchant Weapon - Strength",q=1,sc=8,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=15},vsell=7500}
+I[19445]={c=9,il=58,n="Formula: Enchant Weapon - Agility",q=1,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=15},vsell=7500}
+I[19446]={c=9,il=58,n="Formula: Enchant Bracer - Mana Regeneration",q=1,sc=8,slot=0,vsell=7500}
+I[19447]={c=9,il=64,n="Formula: Enchant Bracer - Healing",q=1,sc=8,slot=0,vsell=15000}
+I[19448]={c=9,il=66,n="Formula: Enchant Weapon - Mighty Spirit",q=1,sc=8,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=22},vsell=20000}
+I[19449]={c=9,il=70,n="Formula: Enchant Weapon - Mighty Intellect",q=1,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=22},vsell=25000}
+I[19682]={ah=1947368,c=4,de={{14344,1,1,1}},il=65,n="Bloodvine Vest",q=3,rl=60,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=13,RESISTANCE0_NAME=92},vsell=25035}
+I[19683]={ah=1850000,c=4,de={{14344,1,1,1}},il=65,n="Bloodvine Leggings",q=3,rl=60,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,RESISTANCE0_NAME=80},vsell=25129}
+I[19684]={ah=1599999,c=4,de={{14344,0.96,1,1},{20725,0.04,1,1}},il=65,n="Bloodvine Boots",q=3,rl=60,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=16,RESISTANCE0_NAME=63},vsell=18915}
+I[19685]={ah=1999847,c=4,il=65,n="Primal Batskin Jerkin",q=3,rl=60,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=32,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=181},vsell=31644}
+I[19686]={ah=1550000,c=4,il=65,n="Primal Batskin Gloves",q=3,rl=60,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=113},vsell=15880}
+I[19687]={ah=1114997,c=4,de={{14344,1,1,1}},il=65,n="Primal Batskin Bracers",q=3,rl=60,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=79},vsell=15939}
+I[19688]={ah=1008109,c=4,il=65,n="Blood Tiger Breastplate",q=3,rl=60,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=16,ITEM_MOD_SPIRIT_SHORT=13,ITEM_MOD_STAMINA_SHORT=17,ITEM_MOD_STRENGTH_SHORT=17,RESISTANCE0_NAME=181},vsell=31993}
+I[19689]={ah=708513,c=4,il=65,n="Blood Tiger Shoulders",q=3,rl=60,sc=2,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=136},vsell=24082}
+I[19690]={ah=4559993,c=4,il=65,n="Bloodsoul Breastplate",q=3,rl=60,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=381},vsell=39683}
+I[19691]={ah=1500000,c=4,il=65,n="Bloodsoul Shoulders",q=3,rl=60,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=24,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=286},vsell=30000}
+I[19692]={ah=5099991,c=4,il=65,n="Bloodsoul Gauntlets",q=3,rl=60,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=17,RESISTANCE0_NAME=238},vsell=19980}
+I[19693]={ah=1150000,c=4,il=65,n="Darksoul Breastplate",q=3,rl=60,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=32,RESISTANCE0_NAME=676},vsell=24192}
+I[19694]={ah=970000,c=4,de={{14344,1,1,1}},il=65,n="Darksoul Leggings",q=3,rl=60,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=22,RESISTANCE0_NAME=592},vsell=24286}
+I[19695]={ah=1459461,c=4,il=65,n="Darksoul Shoulders",q=3,rl=60,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=24,RESISTANCE0_NAME=507},vsell=18285}
+I[19726]={ah=207500,c=7,il=60,n="Bloodvine",q=2,sc=9,slot=0,vsell=500}
+I[19764]={c=9,il=65,n="Pattern: Bloodvine Vest",q=1,sc=2,slot=0,vsell=12500}
+I[19765]={c=9,il=65,n="Pattern: Bloodvine Leggings",q=1,sc=2,slot=0,vsell=12500}
+I[19766]={c=9,il=65,n="Pattern: Bloodvine Boots",q=1,sc=2,slot=0,vsell=12500}
+I[19767]={ah=11515,c=7,il=60,n="Primal Bat Leather",q=1,sc=6,slot=0,vsell=2000}
+I[19768]={ah=1965,c=7,il=60,n="Primal Tiger Leather",q=1,sc=6,slot=0,vsell=2000}
+I[19769]={c=9,il=65,n="Pattern: Primal Batskin Jerkin",q=1,sc=1,slot=0,vsell=12500}
+I[19770]={c=9,il=65,n="Pattern: Primal Batskin Gloves",q=1,sc=1,slot=0,vsell=12500}
+I[19771]={c=9,il=65,n="Pattern: Primal Batskin Bracers",q=1,sc=1,slot=0,vsell=12500}
+I[19772]={c=9,il=65,n="Pattern: Blood Tiger Breastplate",q=1,sc=1,slot=0,vsell=12500}
+I[19773]={c=9,il=65,n="Pattern: Blood Tiger Shoulders",q=1,sc=1,slot=0,vsell=12500}
+I[19774]={ah=14399,c=7,il=50,n="Souldarite",q=2,sc=11,slot=0,vsell=5000}
+I[19776]={c=9,il=65,n="Plans: Bloodsoul Breastplate",q=1,sc=4,slot=0,vsell=12500}
+I[19777]={c=9,il=65,n="Plans: Bloodsoul Shoulders",q=1,sc=4,slot=0,vsell=12500}
+I[19778]={c=9,il=65,n="Plans: Bloodsoul Gauntlets",q=1,sc=4,slot=0,vsell=12500}
+I[19779]={c=9,il=65,n="Plans: Darksoul Breastplate",q=1,sc=4,slot=0,vsell=12500}
+I[19780]={c=9,il=65,n="Plans: Darksoul Leggings",q=1,sc=4,slot=0,vsell=12500}
+I[19781]={c=9,il=65,n="Plans: Darksoul Shoulders",q=1,sc=4,slot=0,vsell=12500}
+I[19931]={ah=374962,c=12,il=1,n="Gurubashi Mojo Madness",q=3,sc=0,slot=0}
+I[19943]={ah=3085,c=7,il=60,n="Massive Mojo",q=1,sc=11,slot=0,vsell=2000}
+I[19998]={ah=690000,c=4,il=65,n="Bloodvine Lens",q=3,rl=60,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=147},vsell=23211}
+I[19999]={ah=550000,c=4,il=65,n="Bloodvine Goggles",q=3,rl=60,sc=1,slot=1,stats={RESISTANCE0_NAME=75},vsell=18639}
+I[20000]={c=9,il=65,n="Schematic: Bloodvine Goggles",q=1,rl=10,sc=3,slot=0,vsell=30000}
+I[20001]={c=9,il=65,n="Schematic: Bloodvine Lens",q=1,rl=10,sc=3,slot=0,vsell=12500}
+I[20002]={ah=21899,c=0,il=60,n="Greater Dreamless Sleep Potion",q=1,rl=55,sc=1,slot=0,vsell=1000}
+I[20004]={ah=40740,c=0,il=58,n="Major Troll's Blood Elixir",q=1,rl=53,sc=2,slot=0,vsell=1000}
+I[20007]={ah=68920,c=0,il=50,n="Mageblood Elixir",q=1,rl=40,sc=2,slot=0,vsell=1000}
+I[20008]={ah=69483,c=0,il=57,n="Living Action Potion",q=1,rl=47,sc=1,slot=0,vsell=600}
+I[20011]={c=9,il=55,n="Recipe: Mageblood Elixir",q=1,sc=6,slot=0,vsell=12500}
+I[20012]={c=9,il=55,n="Recipe: Greater Dreamless Sleep",q=1,sc=6,slot=0,vsell=12500}
+I[20013]={c=9,il=57,n="Recipe: Living Action Potion",q=1,sc=6,slot=0,vsell=12500}
+I[20014]={c=9,il=58,n="Recipe: Major Troll's Blood Elixir",q=1,sc=6,slot=0,vsell=12500}
+I[20039]={ah=2000000,c=4,il=70,n="Dark Iron Boots",q=4,rl=60,sc=4,slot=8,stats={RESISTANCE0_NAME=544},vsell=31709}
+I[20040]={c=9,il=70,n="Plans: Dark Iron Boots",q=1,sc=4,slot=0,vsell=20000}
+I[20074]={ah=1933,c=0,il=35,n="Heavy Crocolisk Stew",q=1,rl=25,sc=5,slot=0,vsell=300}
+I[20075]={ah=14998,c=9,il=30,n="Recipe: Heavy Crocolisk Stew",q=1,sc=5,slot=0,vbuy=2000,vsell=500}
+I[20253]={c=9,il=55,n="Pattern: Warbear Harness",q=1,sc=1,slot=0,vsell=4000}
+I[20254]={c=9,il=57,n="Pattern: Warbear Woolies",q=1,sc=1,slot=0,vsell=5000}
+I[20295]={ah=400000,c=4,il=60,n="Blue Dragonscale Leggings",q=3,rl=55,sc=3,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=20,RESISTANCE0_NAME=310},vsell=31083}
+I[20296]={ah=50000,c=4,il=56,n="Green Dragonscale Gauntlets",q=3,rl=51,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=208},vsell=12590}
+I[20380]={ah=1,c=4,il=68,n="Dreamscale Breastplate",q=4,rl=60,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=15,ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=434},vsell=57958}
+I[20381]={ah=250000,c=7,il=63,n="Dreamscale",q=2,sc=6,slot=0,vsell=5000}
+I[20424]={ah=20091,c=7,il=55,n="Sandworm Meat",q=1,sc=8,slot=0,vsell=175}
+I[20452]={ah=28444,c=0,il=55,n="Smoked Desert Dumplings",q=1,rl=45,sc=5,slot=0,vsell=250}
+I[20476]={ah=600000,c=4,il=62,n="Sandstalker Bracers",q=3,rl=57,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=160},vsell=16401}
+I[20477]={ah=1350000,c=4,il=62,n="Sandstalker Gauntlets",q=3,rl=57,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=228},vsell=16898}
+I[20478]={ah=2069999,c=4,il=62,n="Sandstalker Breastplate",q=3,rl=57,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=365},vsell=33917}
+I[20479]={ah=962211,c=4,il=62,n="Spitfire Breastplate",q=3,rl=57,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=16,ITEM_MOD_INTELLECT_SHORT=16,ITEM_MOD_SPIRIT_SHORT=15,RESISTANCE0_NAME=365},vsell=34036}
+I[20480]={ah=490000,c=4,il=62,n="Spitfire Gauntlets",q=3,rl=57,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=228},vsell=17078}
+I[20481]={ah=262504,c=4,il=62,n="Spitfire Bracers",q=3,rl=57,sc=3,slot=9,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,RESISTANCE0_NAME=160},vsell=17139}
+I[20498]={ah=4100,c=7,il=55,n="Silithid Chitin",q=1,sc=6,slot=0,vsell=1000}
+I[20500]={ah=2357,c=7,il=55,n="Light Silithid Carapace",q=1,sc=6,slot=0,vsell=2000}
+I[20501]={ah=118000,c=7,il=55,n="Heavy Silithid Carapace",q=1,sc=6,slot=0,vsell=2000}
+I[20520]={ah=68400,c=7,il=55,n="Dark Rune",q=2,sc=11,slot=0,vsell=2000}
+I[20537]={ah=2210030,c=4,il=63,n="Runed Stygian Boots",q=3,rl=58,sc=1,slot=8,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=61},vsell=17736}
+I[20538]={ah=2026969,c=4,il=63,n="Runed Stygian Leggings",q=3,rl=58,sc=1,slot=7,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=78},vsell=23733}
+I[20539]={ah=1506443,c=4,il=63,n="Runed Stygian Belt",q=3,rl=58,sc=1,slot=6,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=50},vsell=11908}
+I[20546]={ah=487499,c=9,il=62,n="Pattern: Runed Stygian Leggings",q=3,sc=2,slot=0,vsell=10000}
+end)()
+;(function()
+I[20547]={ah=1250000,c=9,il=62,n="Pattern: Runed Stygian Boots",q=3,sc=2,slot=0,vsell=10000}
+I[20548]={ah=420000,c=9,il=62,n="Pattern: Runed Stygian Belt",q=3,sc=2,slot=0,vsell=10000}
+I[20549]={c=4,il=63,n="Darkrune Gauntlets",q=3,rl=58,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=410},vsell=11484}
+I[20550]={ah=475900,c=4,il=63,n="Darkrune Breastplate",q=3,rl=58,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=657},vsell=23051}
+I[20551]={ah=383660,c=4,il=63,n="Darkrune Helm",q=3,rl=58,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=534},vsell=17352}
+I[20553]={ah=260000,c=9,il=63,n="Plans: Darkrune Gauntlets",q=3,sc=4,slot=0,vsell=15000}
+I[20554]={ah=103175,c=9,il=63,n="Plans: Darkrune Breastplate",q=3,sc=4,slot=0,vsell=15000}
+I[20555]={ah=99500,c=9,il=63,n="Plans: Darkrune Helm",q=3,sc=4,slot=0,vsell=15000}
+I[20575]={ah=4444,c=4,de={{10939,0.125,1,2},{10940,0.75,2,3},{10978,0.125,1,1}},il=20,n="Black Whelp Tunic",q=2,rl=15,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=78},vsell=743}
+I[20576]={ah=9800,c=9,il=20,n="Pattern: Black Whelp Tunic",q=1,sc=1,slot=0,vsell=350}
+I[20725]={ah=94118,c=7,il=60,n="Nexus Crystal",q=4,sc=12,slot=0,vsell=1}
+I[20726]={c=9,il=70,n="Formula: Enchant Gloves - Threat",q=3,sc=8,slot=0,vsell=25000}
+I[20727]={c=9,il=70,n="Formula: Enchant Gloves - Shadow Power",q=3,sc=8,slot=0,vsell=25000}
+I[20728]={c=9,il=70,n="Formula: Enchant Gloves - Frost Power",q=3,sc=8,slot=0,vsell=25000}
+I[20729]={c=9,il=70,n="Formula: Enchant Gloves - Fire Power",q=3,sc=8,slot=0,vsell=25000}
+I[20730]={c=9,il=70,n="Formula: Enchant Gloves - Healing Power",q=3,sc=8,slot=0,vsell=25000}
+I[20731]={c=9,il=70,n="Formula: Enchant Gloves - Superior Agility",q=3,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=15},vsell=25000}
+I[20732]={c=9,il=70,n="Formula: Enchant Cloak - Greater Fire Resistance",q=1,sc=8,slot=0,vsell=25000}
+I[20733]={c=9,il=70,n="Formula: Enchant Cloak - Greater Nature Resistance",q=1,sc=8,slot=0,vsell=25000}
+I[20734]={c=9,il=70,n="Formula: Enchant Cloak - Stealth",q=3,sc=8,slot=0,vsell=25000}
+I[20735]={c=9,il=70,n="Formula: Enchant Cloak - Subtlety",q=3,sc=8,slot=0,vsell=25000}
+I[20736]={c=9,il=70,n="Formula: Enchant Cloak - Dodge",q=3,sc=8,slot=0,vsell=25000}
+I[20744]={ah=2090,c=0,il=15,n="Minor Wizard Oil",q=1,rl=5,sc=-3,slot=0,vsell=500}
+I[20745]={ah=5894,c=0,il=30,n="Minor Mana Oil",q=1,rl=20,sc=-3,slot=0,vsell=1000}
+I[20746]={ah=9161,c=0,il=40,n="Lesser Wizard Oil",q=1,rl=30,sc=-3,slot=0,vsell=1000}
+I[20747]={ah=26280,c=0,il=50,n="Lesser Mana Oil",q=1,rl=40,sc=-3,slot=0,vsell=1000}
+I[20748]={ah=136197,c=0,il=55,n="Brilliant Mana Oil",q=1,rl=45,sc=-3,slot=0,vsell=1000}
+I[20749]={ah=152097,c=0,il=55,n="Brilliant Wizard Oil",q=1,rl=45,sc=-3,slot=0,vsell=1000}
+I[20750]={ah=31160,c=0,il=50,n="Wizard Oil",q=1,rl=40,sc=-3,slot=0,vsell=1000}
+I[20752]={ah=17514,c=9,il=30,n="Formula: Minor Mana Oil",q=1,sc=8,slot=0,vbuy=3000,vsell=750}
+I[20753]={ah=19876,c=9,il=40,n="Formula: Lesser Wizard Oil",q=1,sc=8,slot=0,vbuy=4000,vsell=1000}
+I[20754]={ah=76678,c=9,il=50,n="Formula: Lesser Mana Oil",q=1,sc=8,slot=0,vbuy=9000,vsell=2500}
+I[20755]={ah=89991,c=9,il=55,n="Formula: Wizard Oil",q=1,sc=8,slot=0,vbuy=18000,vsell=5000}
+I[20756]={c=9,il=60,n="Formula: Brilliant Wizard Oil",q=1,sc=8,slot=0,vsell=10000}
+I[20757]={c=9,il=60,n="Formula: Brilliant Mana Oil",q=1,sc=8,slot=0,vsell=10000}
+I[20758]={ah=12497,c=9,il=15,n="Formula: Minor Wizard Oil",q=1,sc=8,slot=0,vbuy=500,vsell=125}
+I[20761]={c=9,il=60,n="Recipe: Transmute Elemental Fire",q=1,sc=6,slot=0,vsell=30000}
+I[20867]={ah=419250,c=12,il=61,n="Onyx Idol",q=3,sc=0,slot=0}
+I[20868]={ah=62999,c=12,il=61,n="Lambent Idol",q=3,sc=0,slot=0}
+I[20870]={ah=153039,c=12,il=61,n="Jasper Idol",q=3,sc=0,slot=0}
+I[20871]={ah=29700,c=12,il=61,n="Obsidian Idol",q=3,sc=0,slot=0}
+I[20872]={ah=74498,c=12,il=61,n="Vermillion Idol",q=3,sc=0,slot=0}
+I[20873]={ah=19359,c=12,il=61,n="Alabaster Idol",q=3,sc=0,slot=0}
+I[20874]={ah=1269998,c=12,il=61,n="Idol of the Sun",q=3,sc=0,slot=0}
+I[20875]={ah=1069899,c=12,il=61,n="Idol of Night",q=3,sc=0,slot=0}
+I[20876]={ah=579985,c=12,il=61,n="Idol of Death",q=3,sc=0,slot=0}
+I[20877]={ah=309881,c=12,il=61,n="Idol of the Sage",q=3,sc=0,slot=0}
+I[20878]={ah=804834,c=12,il=61,n="Idol of Rebirth",q=3,sc=0,slot=0}
+I[20879]={ah=1179984,c=12,il=61,n="Idol of Life",q=3,sc=0,slot=0}
+I[20881]={ah=559999,c=12,il=61,n="Idol of Strife",q=3,sc=0,slot=0}
+I[20882]={ah=659999,c=12,il=61,n="Idol of War",q=3,sc=0,slot=0}
+I[21023]={ah=88382,c=0,il=55,n="Dirge's Kickin' Chimaerok Chops",q=1,rl=45,sc=5,slot=0,stats={ITEM_MOD_STAMINA_SHORT=25},vsell=250}
+I[21024]={ah=274997,c=7,il=60,n="Chimaerok Tenderloin",q=1,sc=8,slot=0}
+I[21025]={ah=6900000,c=9,il=60,n="Recipe: Dirge's Kickin' Chimaerok Chops",q=4,sc=5,slot=0,vsell=1250}
+I[21071]={ah=500,c=7,il=20,n="Raw Sagefish",q=1,rl=10,sc=8,slot=0,vsell=25}
+I[21072]={ah=745,c=0,il=20,n="Smoked Sagefish",q=1,rl=10,sc=5,slot=0,vsell=40}
+I[21099]={ah=2248,c=9,il=15,n="Recipe: Smoked Sagefish",q=1,sc=5,slot=0,vbuy=500,vsell=125}
+I[21153]={ah=1775,c=7,il=40,n="Raw Greater Sagefish",q=1,rl=30,sc=8,slot=0,vsell=125}
+I[21154]={ah=397376,c=4,il=1,n="Festival Dress",q=1,sc=5,slot=5,vsell=1}
+I[21217]={ah=2738,c=0,il=55,n="Sagefish Delight",q=1,rl=30,sc=5,slot=0,vsell=125}
+I[21219]={ah=5873,c=9,il=35,n="Recipe: Sagefish Delight",q=1,sc=5,slot=0,vbuy=5000,vsell=1250}
+I[21277]={ah=200000,c=15,il=60,n="Tranquil Mechanical Yeti",q=1,sc=2,slot=0,vsell=1250}
+I[21278]={ah=4500000,c=4,il=62,n="Stormshroud Gloves",q=3,rl=57,sc=2,slot=10,stats={RESISTANCE0_NAME=109},vsell=13212}
+I[21340]={ah=75109,c=1,il=52,n="Soul Pouch",q=2,sc=1,slot=18,vsell=5000}
+I[21341]={ah=699999,c=1,il=57,n="Felcloth Bag",q=3,sc=1,slot=18,vsell=20000}
+I[21342]={ah=4009900,c=1,il=60,n="Core Felcloth Bag",q=4,sc=1,slot=18,vsell=80000}
+I[21358]={ah=41311,c=9,il=52,n="Pattern: Soul Pouch",q=1,sc=2,slot=0,vbuy=12000,vsell=3000}
+I[21371]={ah=740025,c=9,il=60,n="Pattern: Core Felcloth Bag",q=3,sc=2,slot=0,vsell=20000}
+I[21542]={ah=29900,c=4,il=1,n="Festival Suit",q=1,sc=5,slot=5,vsell=1}
+I[21546]={ah=42859,c=0,il=50,n="Elixir of Holy Power",q=1,rl=40,sc=2,slot=0,vsell=35}
+I[21547]={ah=178498,c=9,il=50,n="Recipe: Elixir of Greater Firepower",q=2,sc=6,slot=0,vsell=2500}
+I[21548]={ah=249999,c=9,il=62,n="Pattern: Stormshroud Gloves",q=3,sc=1,slot=0,vsell=15000}
+I[21557]={ah=499,c=15,il=1,n="Small Red Rocket",q=1,sc=3,slot=0,vbuy=25,vsell=6}
+I[21558]={c=15,il=1,n="Small Blue Rocket",q=1,sc=3,slot=0,vbuy=25,vsell=6}
+I[21559]={c=15,il=1,n="Small Green Rocket",q=1,sc=3,slot=0,vbuy=25,vsell=6}
+I[21560]={c=15,il=1,n="Small Purple Rocket",q=1,sc=3,slot=0,vsell=2}
+I[21561]={c=15,il=1,n="Small White Rocket",q=1,sc=3,slot=0,vsell=6}
+I[21562]={ah=4630,c=15,il=1,n="Small Yellow Rocket",q=1,sc=3,slot=0,vsell=6}
+I[21569]={c=15,il=1,n="Firework Launcher",q=1,sc=3,slot=0}
+I[21570]={ah=5080,c=15,il=1,n="Cluster Launcher",q=1,sc=3,slot=0}
+I[21571]={c=15,il=1,n="Blue Rocket Cluster",q=1,sc=3,slot=0,vbuy=100,vsell=25}
+I[21574]={c=15,il=1,n="Green Rocket Cluster",q=1,sc=3,slot=0,vbuy=100,vsell=25}
+I[21575]={c=15,il=1,n="Purple Rocket Cluster",q=1,sc=3,slot=0,vsell=25}
+I[21576]={c=15,il=1,n="Red Rocket Cluster",q=1,sc=3,slot=0,vbuy=100,vsell=25}
+I[21577]={c=15,il=1,n="White Rocket Cluster",q=1,sc=3,slot=0,vsell=25}
+I[21578]={c=15,il=1,n="Yellow Rocket Cluster",q=1,sc=3,slot=0,vsell=25}
+I[21589]={c=15,il=1,n="Large Blue Rocket",q=1,sc=3,slot=0,vsell=12}
+I[21590]={ah=5,c=15,il=1,n="Large Green Rocket",q=1,sc=3,slot=0,vsell=12}
+I[21591]={c=15,il=1,n="Large Purple Rocket",q=1,sc=3,slot=0,vsell=12}
+I[21592]={c=15,il=1,n="Large Red Rocket",q=1,sc=3,slot=0,vsell=12}
+I[21593]={ah=5,c=15,il=1,n="Large White Rocket",q=1,sc=3,slot=0,vsell=12}
+I[21595]={c=15,il=1,n="Large Yellow Rocket",q=1,sc=3,slot=0,vsell=12}
+I[21714]={ah=14296,c=15,il=1,n="Large Blue Rocket Cluster",q=1,sc=3,slot=0,vsell=50}
+I[21716]={c=15,il=1,n="Large Green Rocket Cluster",q=1,sc=3,slot=0,vsell=50}
+I[21717]={c=15,il=1,n="Large Purple Rocket Cluster",q=1,sc=3,slot=0,vsell=50}
+I[21718]={ah=12069,c=15,il=1,n="Large Red Rocket Cluster",q=1,sc=3,slot=0,vsell=50}
+I[21719]={c=15,il=1,n="Large White Rocket Cluster",q=1,sc=3,slot=0,vsell=50}
+I[21720]={c=15,il=1,n="Large Yellow Rocket Cluster",q=1,sc=3,slot=0,vsell=50}
+I[21722]={c=9,il=50,n="Pattern: Festival Dress",q=2,sc=2,slot=0,vsell=1250}
+I[21723]={c=9,il=50,n="Pattern: Festival Suit",q=2,sc=2,slot=0,vsell=1250}
+I[21737]={c=9,il=55,n="Schematic: Cluster Launcher",q=2,rl=10,sc=3,slot=0,vsell=4000}
+I[21738]={c=9,il=45,n="Schematic: Firework Launcher",q=2,rl=5,sc=3,slot=0,vsell=875}
+I[22191]={ah=4000000,c=4,il=72,n="Obsidian Mail Tunic",q=4,rl=60,sc=3,slot=5,stats={RESISTANCE0_NAME=458},vsell=73128}
+I[22194]={c=4,il=70,n="Black Grasp of the Destroyer",q=4,rl=60,sc=3,slot=10,stats={RESISTANCE0_NAME=279},vsell=33521}
+I[22195]={ah=1499999,c=4,il=68,n="Light Obsidian Belt",q=3,rl=60,sc=3,slot=6,stats={RESISTANCE0_NAME=224},vsell=22885}
+I[22196]={ah=4999999,c=4,il=72,n="Thick Obsidian Breastplate",q=4,rl=60,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=16,ITEM_MOD_STRENGTH_SHORT=38,RESISTANCE0_NAME=814},vsell=49624}
+I[22197]={ah=457414,c=4,il=68,n="Heavy Obsidian Belt",q=3,rl=60,sc=4,slot=6,stats={ITEM_MOD_STRENGTH_SHORT=25,RESISTANCE0_NAME=397},vsell=14282}
+I[22198]={ah=2129493,c=4,il=70,n="Jagged Obsidian Shield",q=4,rl=60,sc=6,slot=14,stats={RESISTANCE0_NAME=2645},vsell=67440}
+I[22202]={ah=9000,c=7,il=1,n="Small Obsidian Shard",q=1,sc=7,slot=0,vsell=2500}
+I[22203]={ah=590000,c=7,il=1,n="Large Obsidian Shard",q=1,sc=7,slot=0,vsell=5000}
+I[22219]={c=9,il=70,n="Plans: Jagged Obsidian Shield",q=1,sc=4,slot=0,vsell=12500}
+I[22220]={ah=207206,c=9,il=70,n="Plans: Black Grasp of the Destroyer",q=3,sc=4,slot=0,vsell=12500}
+I[22221]={c=9,il=72,n="Plans: Obsidian Mail Tunic",q=1,sc=4,slot=0,vsell=20000}
+I[22222]={ah=500000,c=9,il=72,n="Plans: Thick Obsidian Breastplate",q=3,sc=4,slot=0,vsell=20000}
+I[22246]={ah=27900,c=1,il=45,n="Enchanted Mageweave Pouch",q=2,sc=3,slot=18,vsell=2500}
+I[22248]={ah=166236,c=1,il=55,n="Enchanted Runecloth Bag",q=2,sc=3,slot=18,vsell=10000}
+I[22249]={ah=880000,c=1,il=65,n="Big Bag of Enchantment",q=2,sc=3,slot=18,vsell=30000}
+I[22251]={ah=246000,c=1,il=55,n="Cenarion Herb Bag",q=2,sc=2,slot=18,vsell=10000}
+I[22252]={ah=1479750,c=1,il=65,n="Satchel of Cenarius",q=2,sc=2,slot=18,vsell=30000}
+I[22307]={ah=11699,c=9,il=45,n="Pattern: Enchanted Mageweave Pouch",q=1,sc=2,slot=0,vbuy=6000,vsell=1500}
+I[22308]={ah=100000,c=9,il=55,n="Pattern: Enchanted Runecloth Bag",q=1,sc=2,slot=0,vbuy=18000,vsell=5000}
+I[22309]={ah=1000000,c=9,il=65,n="Pattern: Big Bag of Enchantment",q=2,sc=2,slot=0,vsell=12500}
+I[22310]={c=9,il=55,n="Pattern: Cenarion Herb Bag",q=1,sc=2,slot=0,vsell=5000}
+I[22312]={c=9,il=65,n="Pattern: Satchel of Cenarius",q=1,sc=2,slot=0,vsell=12500}
+I[22383]={c=2,il=64,n="Sageblade",q=4,rl=59,sc=7,slot=21,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=31.11,ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=14},vsell=84291}
+I[22384]={c=2,il=63,n="Persuader",q=4,rl=58,sc=4,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=45.71},vsell=80554}
+I[22385]={ah=17989747,c=4,il=60,n="Titanic Leggings",q=4,rl=55,sc=4,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=30,RESISTANCE0_NAME=598},vsell=25276}
+I[22388]={ah=3003750,c=9,il=61,n="Plans: Titanic Leggings",q=4,sc=4,slot=0,vsell=15000}
+I[22389]={ah=1290000,c=9,il=64,n="Plans: Sageblade",q=4,sc=4,slot=0,vsell=20000}
+I[22390]={ah=1000000,c=9,il=63,n="Plans: Persuader",q=4,sc=4,slot=0,vsell=20000}
+I[22392]={c=9,il=58,n="Formula: Enchant 2H Weapon - Agility",q=1,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=25},vsell=6250}
+I[22652]={ah=7200000,c=4,il=80,n="Glacial Vest",q=4,rl=60,sc=1,slot=5,stats={ITEM_MOD_STAMINA_SHORT=26,RESISTANCE0_NAME=121},vsell=69171}
+I[22654]={ah=4967743,c=4,il=80,n="Glacial Gloves",q=4,rl=60,sc=1,slot=10,stats={ITEM_MOD_STAMINA_SHORT=22,RESISTANCE0_NAME=76},vsell=34846}
+I[22655]={ah=4247810,c=4,il=80,n="Glacial Wrists",q=4,rl=60,sc=1,slot=9,stats={ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=53},vsell=34973}
+I[22658]={ah=4795296,c=4,il=80,n="Glacial Cloak",q=4,rl=60,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=61},vsell=53045}
+I[22660]={ah=1293803,c=4,il=70,n="Gaea's Embrace",q=3,rl=60,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=49},vsell=24601}
+I[22661]={ah=13990000,c=4,il=80,n="Polar Tunic",q=4,rl=60,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STAMINA_SHORT=26,RESISTANCE0_NAME=234},vsell=89377}
+I[22662]={ah=9996145,c=4,il=80,n="Polar Gloves",q=4,rl=60,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=146},vsell=44851}
+I[22663]={ah=5757571,c=4,il=80,n="Polar Bracers",q=4,rl=60,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=102},vsell=46175}
+I[22664]={ah=7799907,c=4,il=80,n="Icy Scale Breastplate",q=4,rl=60,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=24,RESISTANCE0_NAME=506},vsell=100642}
+I[22665]={ah=9999998,c=4,il=80,n="Icy Scale Bracers",q=4,rl=60,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=17,RESISTANCE0_NAME=221},vsell=50516}
+I[22666]={ah=11990000,c=4,il=80,n="Icy Scale Gauntlets",q=4,rl=60,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=22,RESISTANCE0_NAME=316},vsell=50712}
+I[22669]={ah=9999431,c=4,il=80,n="Icebane Breastplate",q=4,rl=60,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=24,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=899},vsell=68390}
+I[22670]={ah=9599419,c=4,il=80,n="Icebane Gauntlets",q=4,rl=60,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=18,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=562},vsell=34321}
+I[22671]={ah=9399038,c=4,il=80,n="Icebane Bracers",q=4,rl=60,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=393},vsell=34452}
+I[22682]={ah=604653,c=7,il=80,n="Frozen Rune",q=3,rl=60,sc=11,slot=0,vsell=20000}
+I[22683]={c=9,il=70,n="Pattern: Gaea's Embrace",q=1,sc=2,slot=0,vsell=22500}
+I[22728]={c=15,il=55,n="Steam Tonk Controller",q=2,sc=4,slot=0,vsell=5000}
+I[22729]={c=9,il=55,n="Schematic: Steam Tonk Controller",q=1,rl=10,sc=3,slot=0,vsell=2000}
+I[22756]={ah=1230000,c=4,il=70,n="Sylvan Vest",q=3,rl=60,sc=1,slot=5,stats={ITEM_MOD_STAMINA_SHORT=15,RESISTANCE0_NAME=98},vsell=33164}
+I[22757]={ah=1110000,c=4,il=70,n="Sylvan Crown",q=3,rl=60,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=80},vsell=24961}
+I[22758]={ah=449999,c=4,il=70,n="Sylvan Shoulders",q=3,rl=60,sc=1,slot=3,stats={ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=74},vsell=25051}
+I[22759]={ah=2070000,c=4,il=70,n="Bramblewood Helm",q=3,rl=60,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=156},vsell=29190}
+I[22760]={ah=1410000,c=4,il=70,n="Bramblewood Boots",q=3,rl=60,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=132},vsell=29302}
+I[22761]={ah=1100000,c=4,il=70,n="Bramblewood Belt",q=3,rl=60,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=108},vsell=19607}
+I[22772]={c=9,il=70,n="Pattern: Sylvan Shoulders",q=1,sc=2,slot=0,vsell=12500}
+I[22773]={c=9,il=70,n="Pattern: Sylvan Crown",q=1,sc=2,slot=0,vsell=12500}
+I[22774]={c=9,il=70,n="Pattern: Sylvan Vest",q=1,sc=2,slot=0,vsell=12500}
+I[34085]={c=4,il=1,n="Red Winter Clothes",q=1,sc=5,slot=5,vsell=7}
+I[34086]={c=4,il=1,n="Winter Boots",q=1,sc=5,slot=8,vsell=1}
+I[34087]={c=4,il=1,n="Green Winter Clothes",q=1,sc=5,slot=5,vsell=7}
+I[210147]={ah=6524,c=0,il=1,n="Shredder Autosalvage Unit",q=1,rl=1,sc=8,slot=0}
+I[210178]={ah=7055,c=9,il=25,n="Schematic: Shredder Autosalvage Unit",q=2,sc=3,slot=0,vsell=3000}
+I[210708]={ah=38897,c=0,il=25,n="Elixir of Coalesced Regret",q=1,rl=20,sc=8,slot=0,stats={ITEM_MOD_AGILITY_SHORT=1,ITEM_MOD_INTELLECT_SHORT=1,ITEM_MOD_SPIRIT_SHORT=1,ITEM_MOD_STAMINA_SHORT=1,ITEM_MOD_STRENGTH_SHORT=1},vsell=40}
+I[210709]={ah=3698,c=9,il=25,n="Recipe: Elixir of Coalesced Regret",q=2,sc=6,slot=0,vsell=25}
+I[210781]={ah=9335,c=4,de={{11084,1,1,1}},il=30,n="Phoenix Bindings",q=3,rl=25,sc=1,slot=9,stats={RESISTANCE0_NAME=21},vsell=1127}
+I[211247]={c=9,il=30,n="Pattern: Phoenix Bindings",q=2,sc=2,slot=0,vbuy=70588,vsell=1000}
+I[211422]={}
+I[211427]={ah=29600,c=12,il=1,n="Soul Vessel",q=3,sc=0,slot=0}
+I[211845]={ah=1432,c=0,il=25,n="Blackfathom Sharpening Stone",q=2,sc=-3,slot=0,vsell=125}
+I[212230]={c=9,il=41,n="Schematic: Soul Vessel",q=3,rl=5,sc=3,slot=0,vbuy=20000,vsell=675}
+I[213369]={ah=32078,c=7,il=40,n="Faintly Glowing Leather",q=3,sc=6,slot=0,vsell=280}
+I[213370]={c=7,il=40,n="Irradiated Leather Scraps",q=2,sc=6,slot=0}
+I[213371]={c=7,il=40,n="Crate of Tainted Gniodine Solution",q=2,sc=11,slot=0}
+I[213372]={}
+I[213373]={c=7,il=40,n="Reflective Scrapmetal",q=2,sc=7,slot=0}
+I[213376]={ah=49968,c=7,il=40,n="Low-Background Truesilver Plates",q=3,sc=7,slot=0}
+I[213378]={c=7,il=40,n="Unstable Microfilament",q=2,sc=5,slot=0}
+I[213379]={ah=55042,c=7,il=40,n="Hyperconductive Arcano-Filament",q=3,sc=5,slot=0,vsell=280}
+I[213381]={c=7,il=40,n="Pile of Tarnished Gears",q=2,sc=1,slot=0}
+I[213383]={ah=27577,c=7,il=40,n="Polished Truesilver Gears",q=3,sc=1,slot=0}
+I[215129]={c=9,il=45,n="Formula: Enchant Weapon - Dismantle",q=4,sc=8,slot=0,vbuy=50000,vsell=1280}
+I[215138]={c=9,il=46,n="Formula: Enchant Chest - Retricutioner",q=4,sc=8,slot=0,vbuy=50000,vsell=1280}
+I[215141]={c=9,il=46,n="Enchanted Sigil: Innovation",q=4,sc=8,slot=0,vbuy=50000,vsell=1280}
+I[215365]={ah=9501,c=4,de={{11082,0.2,1,2},{11083,1,1,2},{11084,0.1048,1,1}},il=30,n="Invoker's Mantle",q=2,rl=25,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=32},vsell=1371}
+I[215366]={ah=7754,c=4,de={{11082,0.4444,1,2},{11083,0.5556,1,2},{11084,0.0824,1,1}},il=30,n="Invoker's Cord",q=2,rl=25,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=5,RESISTANCE0_NAME=24},vsell=864}
+I[215367]={c=9,il=40,n="Pattern: Faintly Glowing Leather",q=3,sc=1,slot=0,vbuy=25000,vsell=1875}
+I[215368]={c=9,il=40,n="Pattern: Hyperconductive Arcano-Filament",q=3,sc=2,slot=0,vbuy=25000,vsell=1875}
+I[215369]={ah=7000,c=9,il=30,n="Pattern: Invoker's Cord",q=2,sc=2,slot=0,vbuy=736,vsell=175}
+I[215370]={ah=7476,c=9,il=30,n="Pattern: Invoker's Mantle",q=2,sc=2,slot=0,vbuy=700,vsell=175}
+I[215384]={c=9,il=45,n="Plans: Low-Background Truesilver Plates",q=3,sc=4,slot=0,vbuy=25000,vsell=2000}
+I[215429]={c=9,il=40,n="Schematic: Polished Truesilver Gears",q=3,rl=5,sc=3,slot=0,vbuy=25000,vsell=1280}
+I[215430]={ah=5147,c=7,il=40,n="Gnomeregan Fallout",q=1,sc=1,slot=0,vsell=250}
+I[217270]={ah=88998,c=4,il=41,n="Turtle Scale Gloves",q=2,rl=36,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=146},vsell=3477}
+I[217271]={ah=25394,c=9,il=41,n="Pattern: Turtle Scale Gloves",q=1,sc=1,slot=0,vsell=875}
+I[217273]={ah=31999,c=4,il=41,n="Golden Scale Gauntlets",q=2,rl=36,sc=3,slot=10,stats={ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=146},vsell=3689}
+I[217287]={ah=25487,c=2,il=35,n="Greater Mystic Wand",q=2,rl=30,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=29},vsell=5263}
+I[217308]={c=0,il=40,n="Enchanted Sigil: Innovation",q=2,rl=40,sc=8,slot=0}
+I[217398]={ah=7499,c=0,il=38,n="Lesser Arcane Elixir",q=1,rl=28,sc=2,slot=0,vsell=400}
+I[217399]={c=9,il=40,n="Recipe: Lesser Arcane Elixir",q=2,sc=6,slot=0,vbuy=16000,vsell=5000}
+I[220606]={c=4,il=60,n="Idol of the Dream",q=3,rl=55,sc=8,slot=28,vsell=11850}
+I[220688]={}
+I[220689]={}
+I[220792]={ah=12378,c=0,il=15,n="Scroll of Spatial Mending",q=2,rl=1,sc=8,slot=0,vsell=150}
+I[221021]={}
+I[221312]={}
+I[223163]={ah=256897,c=9,il=15,n="Formula: Scroll of Spatial Mending",q=2,sc=8,slot=0,vsell=1280}
+I[227813]={ah=4205,c=0,il=60,n="Drinkable Stratholme Holy Water",q=1,rl=55,sc=8,slot=0}
+I[227844]={ah=347992,c=1,il=60,n="Leather-Reinforced Runecloth Bag",q=3,sc=0,slot=18,vsell=40000}
+I[228175]={c=4,il=60,n="Libram of Holy Alacrity",q=3,rl=55,sc=7,slot=28}
+I[228176]={c=4,il=65,n="Totem of Thunder",q=3,rl=60,sc=9,slot=28}
+I[228978]={c=0,il=60,n="Enchanted Sigil: Flowing Waters",q=3,rl=60,sc=8,slot=0}
+I[228979]={c=9,il=60,n="Enchanted Sigil: Flowing Waters",q=4,sc=8,slot=0,vsell=25000}
+I[228980]={ah=48995,c=0,il=50,n="Conductive Shield Coating",q=1,rl=40,sc=-3,slot=0,vsell=1000}
+I[228981]={c=9,il=55,n="Formula: Conductive Shield Coating",q=1,sc=8,slot=0,vbuy=21176,vsell=5000}
+I[228982]={c=9,il=60,n="Formula: Enchant Shield - Law of Nature",q=3,sc=8,slot=0,vsell=25000}
+I[229008]={c=9,il=70,n="Formula: Enchant Cloak - Greater Fire Resistance",q=1,sc=8,slot=0,vsell=25000}
+I[229009]={c=9,il=70,n="Formula: Enchant Cloak - Greater Nature Resistance",q=1,sc=8,slot=0,vsell=25000}
+I[232433]={ah=19791,c=0,il=70,n="Dense Runecloth Bandage",q=1,rl=50,sc=8,slot=0,vsell=2000}
+I[232434]={ah=285481,c=9,il=70,n="Manual: Dense Runecloth Bandage",q=1,sc=7,slot=0,vbuy=110000,vsell=22000}
+I[232436]={ah=38869,c=0,il=55,n="Darkclaw Bisque",q=1,rl=45,sc=8,slot=0,vsell=100}
+I[232437]={ah=97493,c=9,il=55,n="Recipe: Darkclaw Bisque",q=1,sc=5,slot=0,vbuy=20000,vsell=5000}
+I[232438]={ah=15990,c=0,il=45,n="Smoked Redgill",q=1,rl=35,sc=8,slot=0,vsell=5}
+I[232443]={ah=85402,c=9,il=45,n="Recipe: Smoked Redgill",q=1,sc=5,slot=0,vbuy=16000,vsell=4000}
+I[232610]={c=9,il=60,n="Formula: Magnificent Trollshine",q=1,sc=8,slot=0,vsell=10000}
+I[232611]={ah=349998,c=0,il=55,n="Magnificent Trollshine",q=1,rl=45,sc=-3,slot=0,vsell=1000}
+I[234003]={}
+I[234004]={}
+I[234005]={}
+I[234006]={}
+I[234007]={}
+I[234008]={}
+I[234009]={}
+I[234010]={}
+I[234011]={}
+I[234012]={ah=26181,c=7,il=60,n="Hive Thistle",q=1,sc=9,slot=0,vsell=15}
+I[234272]={c=9,il=60,n="Formula: Enchanted Repellent",q=2,sc=8,slot=0,vsell=12500}
+I[236656]={}
+I[237023]={ah=159281,c=0,il=1,n="Pop-Up Shrub",q=1,rl=10,sc=8,slot=0}
+I[238637]={ah=39936,c=0,il=65,n="Prowler Steak",q=1,rl=55,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=25},vsell=250}
+I[238638]={ah=23125,c=0,il=65,n="Filet o' Flank",q=1,rl=55,sc=5,slot=0,stats={ITEM_MOD_AGILITY_SHORT=25,ITEM_MOD_STAMINA_SHORT=10},vsell=250}
+I[238639]={ah=51486,c=0,il=65,n="Sunrise Omelette",q=1,rl=55,sc=8,slot=0,stats={ITEM_MOD_STAMINA_SHORT=10},vsell=250}
+I[238641]={ah=424848,c=0,il=65,n="Specklefin Feast",q=2,rl=55,sc=8,slot=0,vsell=250}
+I[238642]={ah=409898,c=0,il=65,n="Grand Lobster Banquet",q=2,rl=55,sc=8,slot=0,vsell=250}
+I[238734]={ah=76581,c=0,il=1,n="Tinkerbox: Teleport",q=2,rl=45,sc=8,slot=0}
+I[238735]={ah=69998,c=0,il=1,n="Tinkerbox: Nitro Boosts",q=2,rl=45,sc=8,slot=0}
+I[238736]={ah=44350,c=0,il=1,n="Tinkerbox: Magnetic Displacement",q=2,rl=45,sc=8,slot=0}
+I[238737]={ah=13999,c=7,il=1,n="Tinkerbox",q=1,rl=1,sc=1,slot=0,vbuy=10526,vsell=3000}
+I[238786]={c=0,il=1,n="Schematic: Tinker: Teleport",q=3,rl=1,sc=6,slot=0,vsell=1400}
+I[238787]={c=0,il=1,n="Schematic: Tinker: Nitro Boosts",q=3,rl=1,sc=6,slot=0,vsell=1400}
+I[238788]={c=0,il=1,n="Schematic: Tinker: Magnetic Displacement",q=3,rl=1,sc=6,slot=0,vsell=1400}
+I[239016]={ah=6665,c=7,il=1,n="Holy Salts",q=1,rl=1,sc=8,slot=0}
+I[239017]={ah=3864,c=7,il=1,n="Exquisite Spices",q=2,rl=1,sc=8,slot=0}
+I[239147]={ah=1150249,c=1,il=1,n="Crusader's Knapsack",q=3,rl=1,sc=0,slot=18}
+I[239148]={ah=3279983,c=1,il=1,n="Crimson Dawnwoven Bag",q=4,rl=1,sc=0,slot=18}
+I[241650]={ah=13985,c=0,il=70,n="Major Discolored Healing Potion",q=1,rl=60,sc=1,slot=0,vsell=25}
+I[246948]={c=0,il=45,n="Distilled Firewater",q=1,rl=45,sc=2,slot=0,vsell=200}
+I[247239]={c=0,il=13,n="Lesser Discolored Healing Potion",q=1,rl=3,sc=1,slot=0,vsell=25}
+I[247240]={c=0,il=22,n="Discolored Healing Potion",q=1,rl=12,sc=1,slot=0,vsell=75}
+I[247241]={c=0,il=31,n="Greater Discolored Healing Potion",q=1,rl=21,sc=1,slot=0,vsell=125}
+I[247242]={c=0,il=45,n="Superior Discolored Healing Potion",q=1,rl=35,sc=1,slot=0,vsell=250}
+I[247754]={c=0,il=5,n="Minor Arcane Elixir",q=1,rl=1,sc=2,slot=0,vsell=25}
+I[247755]={c=0,il=5,n="Elixir of Minor Force",q=1,rl=1,sc=2,slot=0,vsell=25}
+I[247786]={c=7,il=5,n="Mote of Magic",q=1,sc=12,slot=0,vbuy=10,vsell=1}
+I[247789]={c=2,il=6,n="Novice's Practice Wand",q=1,rl=1,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=4},vsell=1}
+I[248819]={c=7,il=60,n="Fel Crystal",q=2,sc=11,slot=0,vsell=3000}
+I[248820]={c=7,il=60,n="Torbernite",q=2,sc=11,slot=0,vsell=15000}
+I[248821]={c=7,il=60,n="Demonsage",q=1,sc=9,slot=0,vsell=225}
+I[248822]={c=7,il=60,n="Death Lotus",q=2,sc=9,slot=0,vsell=1500}
+I[248823]={c=7,il=60,n="Marefoil",q=1,sc=9,slot=0,vsell=150}
+I[248824]={c=7,il=60,n="Fel Hide",q=1,sc=6,slot=0,vsell=750}
+I[248825]={c=7,il=60,n="Fel Leather",q=1,sc=6,slot=0,vsell=750}
+I[249144]={c=2,il=42,n="Twisted Nether Wand",q=2,rl=37,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=34},vsell=5263}
+I[249232]={c=2,il=54,n="Lesser Eternal Wand",q=2,rl=49,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=45.75},vsell=5263}
+I[249234]={c=2,il=48,n="Dreambough Wand",q=2,rl=43,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=39.17},vsell=5263}
+I[249237]={c=2,il=60,n="Greater Eternal Wand",q=2,rl=55,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=53.33},vsell=5263}
+I[249274]={c=7,il=60,n="Stranglevine",q=2,sc=9,slot=0,vsell=250}
+I[249385]={c=2,il=60,n="Brilliant Wand",q=3,rl=55,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=59.58,ITEM_MOD_INTELLECT_SHORT=7},vsell=5263}
+I[249391]={c=7,il=25,n="Pyrite",q=2,sc=7,slot=0,vsell=100}
+I[249392]={c=2,il=30,n="Glimmering Staff",q=3,rl=25,sc=10,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=18.41,ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=11},vsell=601}
+I[249393]={c=2,il=30,n="Soulstaff",q=3,rl=25,sc=10,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=18.33,ITEM_MOD_SPIRIT_SHORT=11,ITEM_MOD_STAMINA_SHORT=11},vsell=601}
+I[249394]={c=4,il=30,n="Orb of Mystic Insight",q=3,rl=25,sc=-5,slot=23,stats={ITEM_MOD_INTELLECT_SHORT=6},vsell=2156}
+I[249395]={c=4,il=30,n="Orb of Souls",q=3,rl=25,sc=-5,slot=23,stats={ITEM_MOD_SPIRIT_SHORT=6},vsell=2156}
+I[249396]={c=4,il=25,n="Mystic Mushroom",q=3,rl=20,sc=8,slot=28,vsell=1012}
+I[249397]={c=4,il=25,n="Tenets of the Silver Hand",q=3,rl=20,sc=7,slot=28,vsell=1012}
+I[249398]={c=4,il=25,n="Polished Driftwood Icon",q=3,rl=20,sc=9,slot=28,vsell=1012}
+I[249399]={c=7,il=25,n="Frilled Lichen",q=2,sc=9,slot=0,vsell=30}
+I[249409]={c=7,il=25,n="Cerulean Dye",q=2,sc=11,slot=0,vsell=125}
+I[249410]={c=7,il=25,n="Sulfuric Acid",q=2,sc=11,slot=0,vsell=125}
+I[249424]={c=7,il=45,n="Rosecap",q=2,sc=9,slot=0,vsell=95}
+I[249425]={c=7,il=45,n="Bauxite",q=2,sc=7,slot=0,vsell=250}
+I[249426]={c=7,il=60,n="Pitchblende",q=2,sc=7,slot=0,vsell=375}
+I[249427]={c=7,il=25,n="Pristine Leather",q=2,sc=6,slot=0,vsell=125}
+I[249428]={c=7,il=45,n="Pristine Hide",q=2,sc=6,slot=0,vsell=250}
+I[249429]={c=7,il=60,n="Pristine Scale",q=2,sc=6,slot=0,vsell=375}
+I[249430]={c=7,il=45,n="Magenta Dye",q=2,sc=11,slot=0,vsell=250}
+I[249431]={c=7,il=60,n="Viridian Dye",q=2,sc=11,slot=0,vsell=375}
+I[249432]={c=7,il=45,n="Sandpaper",q=2,sc=1,slot=0,vsell=250}
+I[249441]={c=4,il=45,n="Talons of Wrath",q=3,rl=40,sc=8,slot=28,vsell=5833}
+I[249442]={c=4,il=45,n="Libram of Invocation",q=3,rl=40,sc=7,slot=28,vsell=5833}
+I[249443]={c=4,il=45,n="Totem of Ancestral Protection",q=3,rl=40,sc=9,slot=28,vsell=11880}
+I[249453]={c=2,il=50,n="Radiant Staff",q=3,rl=45,sc=10,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=32.29,ITEM_MOD_INTELLECT_SHORT=19,ITEM_MOD_STAMINA_SHORT=19},vsell=33605}
+I[249454]={c=2,il=50,n="Dreamstaff",q=3,rl=45,sc=10,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=32.29,ITEM_MOD_SPIRIT_SHORT=19,ITEM_MOD_STAMINA_SHORT=19},vsell=33731}
+I[249455]={c=4,il=50,n="Truesilver Conduit",q=3,rl=45,sc=-5,slot=23,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_STAMINA_SHORT=8},vsell=10835}
+I[249456]={c=4,il=50,n="Twisting Essence Jar",q=3,rl=45,sc=-5,slot=23,stats={ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=8},vsell=10877}
+I[249469]={c=4,il=55,n="Frozen Heart of the Mountain",q=3,rl=50,sc=-4,slot=12,vsell=1500}
+I[249470]={c=4,il=55,n="Molten Heart of the Mountain",q=3,rl=50,sc=-4,slot=12,vsell=1500}
+I[249473]={c=4,il=55,n="Dormant Heart of the Mountain",q=3,rl=50,sc=-4,slot=12,vsell=1500}
+I[249474]={c=9,il=14,n="Formula: Enchant Bracer - Minor Intellect",q=2,sc=8,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=3},vsell=2000}
+I[249726]={c=7,il=55,n="Azerothium Bar",q=2,sc=7,slot=0,vsell=5000}
+I[249796]={c=0,il=55,n="Hyjal Berries",q=1,rl=45,sc=5,slot=0,vsell=150}
+I[249865]={c=0,il=5,n="Peace Tea",q=1,rl=1,sc=5,slot=0,vsell=1}
+I[249866]={c=0,il=15,n="Royal Tea",q=1,rl=5,sc=5,slot=0,vsell=1}
+I[249867]={c=0,il=25,n="Root Tea",q=1,rl=15,sc=5,slot=0,vsell=1}
+I[249868]={c=0,il=35,n="Triage Tea",q=1,rl=25,sc=5,slot=0,vsell=1}
+I[249869]={c=0,il=45,n="Sunny Tea",q=1,rl=35,sc=5,slot=0,vsell=1}
+I[249870]={c=0,il=55,n="Sage's Tea",q=1,rl=45,sc=5,slot=0,vsell=1}
+I[249871]={c=0,il=5,n="Venomous Smoothie",q=1,rl=1,sc=5,slot=0,vsell=1}
+I[249872]={c=0,il=15,n="Slimy Smoothie",q=1,rl=5,sc=5,slot=0,vsell=1}
+I[249873]={c=0,il=25,n="Mrrggl Smrrthle",q=1,rl=15,sc=5,slot=0,vsell=1}
+I[249874]={c=0,il=35,n="Calcified Smoothie",q=1,rl=25,sc=5,slot=0,vsell=1}
+I[249875]={c=0,il=45,n="Spicy Smoothie",q=1,rl=35,sc=5,slot=0,vsell=1}
+I[249876]={c=0,il=55,n="Wicked Smoothie",q=1,rl=45,sc=5,slot=0,vsell=1}
+I[249879]={c=9,il=1,n="Recipe: Peace Tea",q=1,rl=1,sc=5,slot=0,vsell=1875}
+I[250065]={c=0,il=45,n="Savory Stag Sliders",q=1,rl=35,sc=5,slot=0,vsell=150}
+I[250066]={c=0,il=55,n="Soaring Pamplona",q=1,rl=45,sc=5,slot=0,vsell=5}
+I[250067]={c=0,il=55,n="Bat Hachee",q=1,rl=45,sc=5,slot=0,vsell=10}
+I[250068]={c=0,il=55,n="Savory Turtle Stew",q=1,rl=45,sc=5,slot=0,vsell=6}
+I[250069]={c=0,il=55,n="Flank au Poivre",q=1,rl=45,sc=5,slot=0,vsell=25}
+I[250070]={c=0,il=55,n="Bear Bruscitti",q=1,rl=45,sc=5,slot=0,vsell=25}
+I[250071]={c=0,il=55,n="Steaming Stag Steak",q=1,rl=45,sc=5,slot=0,vsell=10}
+I[250072]={c=0,il=55,n="Swiftstrike Steak",q=1,rl=45,sc=5,slot=0,vsell=40}
+I[250073]={c=0,il=35,n="Raging Raptor Ribs",q=1,rl=25,sc=5,slot=0,vsell=125}
+I[250074]={c=0,il=35,n="Bear Brisket",q=1,rl=25,sc=5,slot=0,vsell=125}
+I[250075]={c=0,il=55,n="Prehistoric Pulled Raptor",q=1,rl=45,sc=5,slot=0,vsell=10}
+I[250076]={c=0,il=45,n="Raptor Rouladen",q=1,rl=35,sc=5,slot=0,vsell=10}
+I[250077]={c=0,il=15,n="Twice-Spiced Raptor Slice",q=1,rl=5,sc=5,slot=0,vsell=9}
+I[250078]={c=0,il=35,n="Giant Scrambled Eggs",q=1,rl=25,sc=5,slot=0,vsell=18}
+I[250079]={c=0,il=10,n="Tasty Raptor Bites",q=1,rl=1,sc=5,slot=0,vsell=10}
+I[250080]={c=0,il=15,n="Breakfast Omelette",q=1,rl=5,sc=5,slot=0,vsell=6}
+I[250081]={c=0,il=55,n="Clam Linguine",q=1,rl=45,sc=5,slot=0,vsell=10}
+I[250187]={c=9,il=1,n="Recipe: Tasty Raptor Bites",q=1,rl=1,sc=5,slot=0}
+I[250188]={c=9,il=1,n="Recipe: Breakfast Omelette",q=1,rl=1,sc=5,slot=0}
+I[250327]={c=0,il=45,n="Draught of Predatory Senses",q=1,rl=45,sc=2,slot=0,vsell=100}
+I[250328]={c=0,il=55,n="Elixir of Cunning",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=25,ITEM_MOD_INTELLECT_SHORT=25},vsell=125}
+I[250329]={c=0,il=55,n="Elixir of the Phalanx",q=1,rl=55,sc=2,slot=0,stats={RESISTANCE0_NAME=500},vsell=125}
+I[250330]={c=0,il=5,n="Minor Cleric's Elixir",q=1,rl=5,sc=2,slot=0,vsell=25}
+I[250331]={c=0,il=25,n="Lesser Cleric's Elixir",q=1,rl=25,sc=2,slot=0,vsell=50}
+I[250332]={c=0,il=45,n="Cleric's Elixir",q=1,rl=45,sc=2,slot=0,vsell=75}
+I[250333]={c=0,il=55,n="Greater Cleric's Elixir",q=1,rl=55,sc=2,slot=0,vsell=100}
+I[250334]={c=0,il=45,n="Elixir of Fortitude",q=1,rl=45,sc=2,slot=0,vsell=75}
+I[250335]={c=0,il=55,n="Elixir of Greater Fortitude",q=1,rl=55,sc=2,slot=0,vsell=100}
+I[250336]={c=0,il=55,n="Elixir of Wicked Regeneration",q=1,rl=55,sc=2,slot=0,vsell=125}
+I[250337]={c=0,il=55,n="Elixir of the Owl",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=25},vsell=125}
+I[250338]={c=0,il=55,n="Elixir of Sages",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=25},vsell=125}
+I[250339]={c=0,il=5,n="Minor Mageblood Elixir",q=1,rl=5,sc=2,slot=0,vsell=25}
+I[250340]={c=0,il=25,n="Lesser Mageblood Elixir",q=1,rl=25,sc=2,slot=0,vsell=50}
+I[250341]={c=0,il=55,n="Greater Mageblood Elixir",q=1,rl=55,sc=2,slot=0,vsell=100}
+I[250342]={c=0,il=25,n="Lesser Arcane Elixir",q=1,rl=25,sc=2,slot=0,vsell=50}
+I[250343]={c=0,il=55,n="Elixir of Nature Power",q=1,rl=55,sc=2,slot=0,vsell=125}
+I[250344]={c=0,il=5,n="Elixir of Minor Spirit",q=1,rl=5,sc=2,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=3},vsell=25}
+I[250345]={c=0,il=25,n="Elixir of Lesser Spirit",q=1,rl=25,sc=2,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=6},vsell=50}
+I[250346]={c=0,il=45,n="Elixir of Spirit",q=1,rl=45,sc=2,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=10},vsell=75}
+I[250347]={c=0,il=55,n="Elixir of Greater Spirit",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=18},vsell=100}
+I[250348]={c=0,il=55,n="Elixir of the Whale",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_SPIRIT_SHORT=25},vsell=125}
+I[250349]={c=0,il=45,n="Elixir of Strength",q=1,rl=45,sc=2,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=10},vsell=75}
+I[250350]={c=0,il=55,n="Elixir of Ferocity",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STRENGTH_SHORT=18},vsell=125}
+I[250351]={c=0,il=55,n="Elixir of the Grizzly",q=1,rl=55,sc=2,slot=0,stats={ITEM_MOD_STRENGTH_SHORT=25},vsell=125}
+I[250353]={c=0,il=25,n="Elixir of Lesser Intellect",q=1,rl=25,sc=2,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=6},vsell=50}
+I[250354]={c=0,il=45,n="Elixir of Intellect",q=1,rl=45,sc=2,slot=0,stats={ITEM_MOD_INTELLECT_SHORT=10},vsell=75}
+I[250366]={c=9,il=1,n="Recipe: Minor Cleric's Elixir",q=1,rl=1,sc=6,slot=0}
+I[250375]={c=9,il=1,n="Recipe: Minor Mageblood Elixir",q=1,rl=1,sc=6,slot=0}
+I[250380]={c=9,il=1,n="Recipe: Elixir of Minor Spirit",q=1,rl=1,sc=6,slot=0}
+I[250482]={c=4,il=15,n="Glowing Copper Boots",q=3,rl=10,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=4,RESISTANCE0_NAME=109},vsell=394}
+I[250483]={c=4,il=25,n="Sterling Silver Boots",q=2,rl=20,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=126},vsell=1267}
+I[250484]={c=4,il=26,n="Sterling Silver Leggings",q=2,rl=21,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=163},vsell=1908}
+I[250485]={c=4,il=26,n="Sterling Silver Gauntlet",q=2,rl=21,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=116},vsell=957}
+I[250486]={c=4,il=27,n="Sterling Silver Shoulders",q=2,rl=22,sc=3,slot=3,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=142},vsell=1592}
+I[250487]={c=4,il=30,n="Sterling Silver Breastplate",q=2,rl=25,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=198},vsell=2823}
+I[250488]={c=4,il=20,n="Veteran's Chain Shirt",q=3,rl=15,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=184},vsell=974}
+I[250489]={c=4,il=20,n="Guard's Chain Shirt",q=3,rl=15,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=184},vsell=978}
+I[250490]={c=4,il=20,n="Protector's Chain Shirt",q=3,rl=15,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=184},vsell=982}
+I[250491]={c=4,il=20,n="Acolyte's Chain Shirt",q=3,rl=15,sc=3,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=184},vsell=985}
+I[250492]={c=4,il=20,n="Crusader's Chain Shirt",q=3,rl=15,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=184},vsell=989}
+I[250493]={c=4,il=25,n="Veteran's Chain Leggings",q=3,rl=20,sc=3,slot=7,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=176},vsell=1895}
+I[250494]={c=4,il=25,n="Guard's Chain Leggings",q=3,rl=20,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=176},vsell=1954}
+I[250495]={c=4,il=25,n="Protector's Chain Leggings",q=3,rl=20,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=176},vsell=1961}
+I[250496]={c=4,il=25,n="Acolyte's Chain Leggings",q=3,rl=20,sc=3,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=176},vsell=1968}
+I[250497]={c=4,il=25,n="Crusader's Chain Leggings",q=3,rl=20,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=176},vsell=1975}
+I[250498]={c=4,il=30,n="Veteran's Chain Helm",q=3,rl=25,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=177},vsell=2471}
+I[250499]={c=4,il=30,n="Guard's Chain Helm",q=3,rl=25,sc=3,slot=1,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=177},vsell=2480}
+I[250500]={c=4,il=30,n="Protector's Chain Helm",q=3,rl=25,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=177},vsell=2489}
+I[250501]={c=4,il=30,n="Acolyte's Chain Helm",q=3,rl=25,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=177},vsell=2498}
+I[250502]={c=4,il=30,n="Crusader's Chain Helm",q=3,rl=25,sc=3,slot=1,stats={ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=177},vsell=2507}
+I[250503]={c=4,il=22,n="Veteran's Boots",q=3,rl=17,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=131},vsell=1054}
+I[250504]={c=4,il=22,n="Guard's Boots",q=3,rl=17,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=131},vsell=1057}
+I[250505]={c=4,il=22,n="Protector's Boots",q=3,rl=17,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=131},vsell=1061}
+I[250506]={c=4,il=22,n="Acolyte's Boots",q=3,rl=17,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=131},vsell=1065}
+I[250507]={c=4,il=22,n="Crusader's Boots",q=3,rl=17,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=131},vsell=1069}
+I[250508]={c=4,il=20,n="Veteran's Gloves",q=3,rl=15,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=115},vsell=487}
+end)()
+;(function()
+I[250509]={c=4,il=20,n="Guard's Gloves",q=3,rl=15,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=115},vsell=489}
+I[250510]={c=4,il=20,n="Protector's Gloves",q=3,rl=15,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=115},vsell=504}
+I[250511]={c=4,il=20,n="Acolyte's Gloves",q=3,rl=15,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=115},vsell=506}
+I[250512]={c=4,il=20,n="Crusader's Gloves",q=3,rl=15,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=115},vsell=508}
+I[250513]={c=4,il=17,n="Veteran's Chain Belt",q=3,rl=12,sc=3,slot=6,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=98},vsell=335}
+I[250514]={c=4,il=17,n="Guard's Chain Belt",q=3,rl=12,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=98},vsell=336}
+I[250515]={c=4,il=17,n="Protector's Chain Belt",q=3,rl=12,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=98},vsell=337}
+I[250516]={c=4,il=17,n="Acolyte's Chain Belt",q=3,rl=12,sc=3,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=98},vsell=339}
+I[250517]={c=4,il=17,n="Crusader's Chain Belt",q=3,rl=12,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=3,RESISTANCE0_NAME=98},vsell=340}
+I[250518]={c=4,il=27,n="Veteran's Silvered Chain Shirt",q=3,rl=22,sc=3,slot=5,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=208},vsell=2464}
+I[250519]={c=4,il=27,n="Guard's Silvered Chain Shirt",q=3,rl=22,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=208},vsell=2473}
+I[250520]={c=4,il=27,n="Protector's Silvered Chain Shirt",q=3,rl=22,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=208},vsell=2482}
+I[250521]={c=4,il=27,n="Acolyte's Silvered Chain Shirt",q=3,rl=22,sc=3,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=208},vsell=2491}
+I[250522]={c=4,il=27,n="Crusader's Silvered Chain Shirt",q=3,rl=22,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=208},vsell=2500}
+I[250523]={c=4,il=30,n="Veteran's Silvered Chain Leggings",q=3,rl=25,sc=3,slot=7,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=191},vsell=3340}
+I[250524]={c=4,il=30,n="Guard's Silvered Chain Leggings",q=3,rl=25,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=191},vsell=3352}
+I[250525]={c=4,il=30,n="Protector's Silvered Chain Leggings",q=3,rl=25,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=191},vsell=3363}
+I[250526]={c=4,il=30,n="Acolyte's Silvered Chain Leggings",q=3,rl=25,sc=3,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=191},vsell=3137}
+I[250527]={c=4,il=30,n="Crusader's Silvered Chain Leggings",q=3,rl=25,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=191},vsell=3149}
+I[250528]={c=4,il=25,n="Veteran's Silvered Chain Helm",q=3,rl=20,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=163},vsell=1439}
+I[250529]={c=4,il=25,n="Guard's Silvered Chain Helm",q=3,rl=20,sc=3,slot=1,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=163},vsell=1444}
+I[250530]={c=4,il=25,n="Protector's Silvered Chain Helm",q=3,rl=20,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=163},vsell=1450}
+I[250531]={c=4,il=25,n="Acolyte's Silvered Chain Helm",q=3,rl=20,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=163},vsell=1455}
+I[250532]={c=4,il=25,n="Crusader's Silvered Chain Helm",q=3,rl=20,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=163},vsell=1460}
+I[250533]={c=4,il=34,n="Hard Gold Cuirass",q=2,rl=29,sc=3,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=210},vsell=3929}
+I[250534]={c=4,il=35,n="Hard Gold Boots",q=2,rl=30,sc=3,slot=8,stats={ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=147},vsell=3268}
+I[250535]={c=4,il=37,n="Hard Gold Bracers",q=2,rl=32,sc=3,slot=9,stats={ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=96},vsell=2634}
+I[250536]={c=4,il=38,n="Hard Gold Leggings",q=2,rl=33,sc=3,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=195},vsell=5711}
+I[250537]={c=4,il=40,n="Hard Gold Coif",q=2,rl=35,sc=3,slot=1,stats={ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=187},vsell=5036}
+I[250538]={c=4,il=40,n="Hard Gold Gauntlet",q=2,rl=35,sc=3,slot=10,stats={ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=144},vsell=3354}
+I[250539]={c=4,il=40,n="Hard Gold Pauldrons",q=2,rl=35,sc=3,slot=3,stats={ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=173},vsell=5073}
+I[250540]={c=4,il=45,n="Shining Mithril Breastplate",q=2,rl=40,sc=4,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=437},vsell=11586}
+I[250541]={c=4,il=45,n="Shining Mithril Pauldrons",q=2,rl=40,sc=4,slot=3,stats={ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=327},vsell=8704}
+I[250542]={c=4,il=45,n="Shining Mithril Boots",q=2,rl=40,sc=4,slot=8,stats={ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=300},vsell=8110}
+I[250543]={c=4,il=48,n="Shining Mithril Helm",q=2,rl=43,sc=4,slot=1,stats={ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=376},vsell=10255}
+I[250544]={c=4,il=49,n="Shining Mithril Pants",q=2,rl=44,sc=4,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=413},vsell=14716}
+I[250545]={c=4,il=49,n="Shining Mithril Gauntlet",q=2,rl=44,sc=4,slot=10,stats={ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=295},vsell=7428}
+I[250546]={c=4,il=45,n="Officer's Boots",q=3,rl=40,sc=4,slot=8,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=330},vsell=9881}
+I[250547]={c=4,il=45,n="Sentinel's Boots",q=3,rl=40,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=330},vsell=9919}
+I[250548]={c=4,il=45,n="Warder's Boots",q=3,rl=40,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=330},vsell=9957}
+I[250549]={c=4,il=45,n="Prefect's Boots",q=3,rl=40,sc=4,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=330},vsell=9994}
+I[250550]={c=4,il=45,n="Justicar's Boots",q=3,rl=40,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=330},vsell=10031}
+I[250551]={c=4,il=55,n="Officer's Gloves",q=3,rl=50,sc=4,slot=10,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=16,RESISTANCE0_NAME=361},vsell=13178}
+I[250552]={c=4,il=55,n="Sentinel's Gloves",q=3,rl=50,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=16,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=361},vsell=13227}
+I[250553]={c=4,il=55,n="Warder's Gloves",q=3,rl=50,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=361},vsell=13275}
+I[250554]={c=4,il=55,n="Prefect's Gloves",q=3,rl=50,sc=4,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=361},vsell=13325}
+I[250555]={c=4,il=55,n="Justicar's Gloves",q=3,rl=50,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=361},vsell=13374}
+I[250556]={c=4,il=35,n="Officer's Belt",q=3,rl=30,sc=3,slot=6,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=132},vsell=2622}
+I[250557]={c=4,il=35,n="Sentinel's Belt",q=3,rl=30,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=132},vsell=2631}
+I[250558]={c=4,il=35,n="Warder's Belt",q=3,rl=30,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=132},vsell=2710}
+I[250559]={c=4,il=35,n="Prefect's Belt",q=3,rl=30,sc=3,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=132},vsell=2719}
+I[250560]={c=4,il=35,n="Justicar's Belt",q=3,rl=30,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=132},vsell=2729}
+I[250561]={c=4,il=52,n="Officer's Sabatons",q=3,rl=47,sc=4,slot=8,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=376},vsell=15856}
+I[250562]={c=4,il=52,n="Sentinel's Sabatons",q=3,rl=47,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=376},vsell=15918}
+I[250563]={c=4,il=52,n="Warder's Sabatons",q=3,rl=47,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=376},vsell=15979}
+I[250564]={c=4,il=52,n="Prefect's Sabatons",q=3,rl=47,sc=4,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=376},vsell=16041}
+I[250565]={c=4,il=52,n="Justicar's Sabatons",q=3,rl=47,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=376},vsell=16101}
+I[250566]={c=4,il=40,n="Officer's Gauntlet",q=3,rl=35,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=159},vsell=3850}
+I[250567]={c=4,il=40,n="Sentinel's Gauntlet",q=3,rl=35,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=159},vsell=3864}
+I[250568]={c=4,il=40,n="Warder's Gauntlet",q=3,rl=35,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=159},vsell=3878}
+I[250569]={c=4,il=40,n="Prefect's Gauntlet",q=3,rl=35,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=159},vsell=3893}
+I[250570]={c=4,il=40,n="Justicar's Gauntlet",q=3,rl=35,sc=3,slot=10,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=159},vsell=3908}
+I[250571]={c=4,il=55,n="Officer's Waistguard",q=3,rl=50,sc=4,slot=6,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=324},vsell=13177}
+I[250572]={c=4,il=55,n="Sentinel's Waistguard",q=3,rl=50,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=14,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=324},vsell=13225}
+I[250573]={c=4,il=55,n="Warder's Waistguard",q=3,rl=50,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=324},vsell=13274}
+I[250574]={c=4,il=55,n="Prefect's Waistguard",q=3,rl=50,sc=4,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=324},vsell=13677}
+I[250575]={c=4,il=55,n="Justicar's Waistguard",q=3,rl=50,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=324},vsell=13726}
+I[250576]={c=4,il=47,n="Officer's Pauldrons",q=3,rl=42,sc=4,slot=3,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=375},vsell=12276}
+I[250577]={c=4,il=47,n="Sentinel's Pauldrons",q=3,rl=42,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=375},vsell=12320}
+I[250578]={c=4,il=47,n="Warder's Pauldrons",q=3,rl=42,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=375},vsell=12364}
+I[250579]={c=4,il=47,n="Prefect's Pauldrons",q=3,rl=42,sc=4,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=375},vsell=12408}
+I[250580]={c=4,il=47,n="Justicar's Pauldrons",q=3,rl=42,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=375},vsell=12450}
+I[250581]={c=4,il=50,n="Officer's Wristguards",q=3,rl=45,sc=4,slot=9,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=231},vsell=9390}
+I[250582]={c=4,il=50,n="Sentinel's Wristguards",q=3,rl=45,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=231},vsell=9426}
+I[250583]={c=4,il=50,n="Warder's Wristguards",q=3,rl=45,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=231},vsell=9462}
+I[250584]={c=4,il=50,n="Prefect's Wristguards",q=3,rl=45,sc=4,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=231},vsell=9498}
+I[250585]={c=4,il=50,n="Justicar's Wristguards",q=3,rl=45,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=231},vsell=9535}
+I[250586]={c=4,il=52,n="Blessed Plate Pauldrons",q=2,rl=47,sc=4,slot=3,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=373},vsell=13467}
+I[250587]={c=4,il=52,n="Blessed Plate Boots",q=2,rl=47,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=342},vsell=13517}
+I[250588]={c=4,il=54,n="Blessed Plate Gauntlet",q=2,rl=49,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=322},vsell=10241}
+I[250589]={c=4,il=57,n="Imperial Plate Gauntlets",q=2,rl=52,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=339},vsell=12244}
+I[250590]={c=4,il=57,n="Blessed Plate Bracers",q=2,rl=52,sc=4,slot=9,stats={ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=237},vsell=12621}
+I[250591]={c=4,il=59,n="Blessed Plate Leggings",q=2,rl=54,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=20,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=491},vsell=28034}
+I[250592]={c=4,il=59,n="Blessed Plate Belt",q=2,rl=54,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=15,RESISTANCE0_NAME=315},vsell=14148}
+I[250593]={c=4,il=60,n="Blessed Plate Helm",q=2,rl=55,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=463},vsell=22196}
+I[250594]={c=4,il=61,n="Blessed Plate Chest",q=2,rl=56,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=20,RESISTANCE0_NAME=579},vsell=31247}
+I[250595]={c=4,il=62,n="Enriched Thorium Breastplate",q=3,rl=57,sc=4,slot=5,stats={ITEM_MOD_STAMINA_SHORT=25,RESISTANCE0_NAME=647},vsell=39509}
+I[250596]={c=4,il=63,n="Enriched Thorium Leggings",q=3,rl=58,sc=4,slot=7,stats={ITEM_MOD_STAMINA_SHORT=26,RESISTANCE0_NAME=575},vsell=41634}
+I[250597]={c=4,il=63,n="Enriched Thorium Helm",q=3,rl=58,sc=4,slot=1,stats={ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=534},vsell=31277}
+I[250598]={c=4,il=61,n="Champion's Legplates",q=4,rl=56,sc=4,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=608},vsell=50706}
+I[250599]={c=4,il=61,n="Stalwart Helm",q=4,rl=56,sc=4,slot=1,stats={ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=565},vsell=38092}
+I[250600]={c=4,il=61,n="Martyr's Legplates",q=4,rl=56,sc=4,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_SPIRIT_SHORT=18,RESISTANCE0_NAME=608},vsell=51067}
+I[250601]={c=4,il=61,n="Breastplate of Salvation",q=4,rl=56,sc=4,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_SPIRIT_SHORT=33,RESISTANCE0_NAME=695},vsell=46368}
+I[250602]={c=2,il=21,n="Brass Knuckles",q=2,rl=16,sc=13,slot=13,stats={ITEM_MOD_AGILITY_SHORT=2,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=10.42,ITEM_MOD_STAMINA_SHORT=2},vsell=1562}
+I[250603]={c=2,il=25,n="Bronze Dory",q=2,rl=20,sc=6,slot=17,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=16.76},vsell=3253}
+I[250604]={c=2,il=31,n="Iron Fists",q=2,rl=26,sc=13,slot=13,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=16.25},vsell=4754}
+I[250605]={c=2,il=37,n="Steel Spear",q=2,rl=32,sc=6,slot=17,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=25.61},vsell=10569}
+I[250606]={c=2,il=38,n="Iron Morningstar",q=2,rl=33,sc=4,slot=21,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=20.6,ITEM_MOD_STRENGTH_SHORT=4},vsell=9416}
+I[250607]={c=2,il=41,n="Mithril Shortsword",q=2,rl=36,sc=15,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=22.94},vsell=11906}
+I[250608]={c=2,il=43,n="Mithril Warhammer",q=2,rl=38,sc=5,slot=17,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=32.57,ITEM_MOD_STRENGTH_SHORT=9},vsell=17423}
+I[250609]={c=2,il=45,n="Mithril Claws",q=2,rl=40,sc=13,slot=13,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=26.54,ITEM_MOD_STRENGTH_SHORT=6},vsell=16318}
+I[250610]={c=2,il=45,n="Mithril Claymore",q=2,rl=40,sc=8,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=34.61,ITEM_MOD_STAMINA_SHORT=15,ITEM_MOD_STRENGTH_SHORT=9},vsell=20470}
+I[250611]={c=2,il=47,n="Mithril Stiletto",q=2,rl=42,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=28.06},vsell=19171}
+I[250612]={c=2,il=48,n="Charged Mithril Battleaxe",q=2,rl=43,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=37.27,ITEM_MOD_STRENGTH_SHORT=14},vsell=25975}
+I[250613]={c=2,il=55,n="Thorium Greatmace",q=3,rl=50,sc=5,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=47.36,ITEM_MOD_STRENGTH_SHORT=21},vsell=48384}
+I[250614]={c=2,il=55,n="Thorium Cestus",q=3,rl=50,sc=13,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=36.46,ITEM_MOD_STAMINA_SHORT=9},vsell=38843}
+I[250615]={c=2,il=57,n="Thorium Poleaxe",q=3,rl=52,sc=6,slot=17,stats={ITEM_MOD_AGILITY_SHORT=25,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=48.97,ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=13},vsell=54752}
+I[250616]={c=2,il=59,n="Bold Dirk",q=2,rl=54,sc=15,slot=13,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=35.28},vsell=40772}
+I[250617]={c=2,il=63,n="Stormcarver",q=3,rl=58,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=53.89,ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=15},vsell=74598}
+I[250618]={c=2,il=63,n="Bagh Nakh",q=3,rl=58,sc=13,slot=13,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=41.48,ITEM_MOD_STAMINA_SHORT=5},vsell=59891}
+I[250619]={c=2,il=63,n="Legionite Glaive",q=3,rl=58,sc=6,slot=17,stats={ITEM_MOD_AGILITY_SHORT=16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=53.91},vsell=75130}
+I[250620]={c=4,il=15,n="Gemmed Copper Boots",q=3,rl=10,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=109},vsell=401}
+I[250621]={c=4,il=15,n="Strange Copper Boots",q=3,rl=10,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=109},vsell=364}
+I[250932]={c=0,il=45,n="Minor Spellblasting Potion",q=1,rl=5,sc=1,slot=0,vsell=1}
+I[250933]={c=0,il=5,n="Lesser Spellblasting Potion",q=1,rl=15,sc=1,slot=0,vsell=25}
+I[250934]={c=0,il=5,n="Spellblasting Potion",q=1,rl=25,sc=1,slot=0,vsell=25}
+I[250935]={c=0,il=55,n="Greater Spellblasting Potion",q=1,rl=35,sc=1,slot=0,vsell=1}
+I[250936]={c=0,il=55,n="Superior Spellblasting Potion",q=1,rl=45,sc=1,slot=0,vsell=1}
+I[250937]={c=0,il=5,n="Major Spellblasting Potion",q=1,rl=55,sc=1,slot=0,vsell=1}
+I[250938]={c=0,il=25,n="Minor Frenzy Potion",q=1,rl=5,sc=1,slot=0,vsell=1}
+I[250939]={c=0,il=45,n="Lesser Frenzy Potion",q=1,rl=15,sc=1,slot=0,vsell=1}
+I[250940]={c=0,il=55,n="Frenzy Potion",q=1,rl=25,sc=1,slot=0,vsell=1}
+I[250941]={c=0,il=45,n="Greater Frenzy Potion",q=1,rl=35,sc=1,slot=0,vsell=1}
+I[250942]={c=0,il=55,n="Superior Frenzy Potion",q=1,rl=45,sc=1,slot=0,vsell=1}
+I[250943]={c=0,il=55,n="Major Frenzy Potion",q=1,rl=55,sc=1,slot=0,vsell=1}
+I[250944]={c=0,il=55,n="Minor Mender's Potion",q=1,rl=5,sc=1,slot=0,vsell=1}
+I[250945]={c=0,il=55,n="Lesser Mender's Potion",q=1,rl=15,sc=1,slot=0,vsell=1}
+I[250946]={c=0,il=5,n="Mender's Potion",q=1,rl=25,sc=1,slot=0,vsell=1}
+I[250947]={c=0,il=25,n="Greater Mender's Potion",q=1,rl=35,sc=1,slot=0,vsell=1}
+I[250948]={c=0,il=55,n="Superior Mender's Potion",q=1,rl=45,sc=1,slot=0,vsell=1}
+I[250949]={c=0,il=25,n="Major Mender's Potion",q=1,rl=55,sc=1,slot=0,vsell=1}
+I[250950]={c=0,il=55,n="Potion of Venomous Blood",q=1,rl=30,sc=1,slot=0,vsell=1}
+I[250951]={c=0,il=5,n="Caustic Smog Potion",q=1,rl=45,sc=1,slot=0,vsell=1}
+I[250952]={c=0,il=25,n="Disorienting Smog Potion",q=1,rl=45,sc=1,slot=0,vsell=1}
+I[250953]={c=0,il=45,n="Dragonfire Potion",q=1,rl=35,sc=1,slot=0,vsell=1}
+I[250954]={c=0,il=55,n="Potion of Elemental Siphoning",q=1,rl=40,sc=1,slot=0,vsell=1}
+I[250955]={c=0,il=55,n="Potion of Beast Culling",q=1,rl=40,sc=1,slot=0,vsell=1}
+I[250976]={c=9,il=1,n="Recipe: Minor Spellblasting Potion",q=1,rl=1,sc=6,slot=0}
+I[250977]={c=9,il=1,n="Recipe: Lesser Spellblasting Potion",q=1,rl=1,sc=6,slot=0}
+I[250982]={c=9,il=1,n="Recipe: Minor Frenzy Potion",q=1,rl=1,sc=6,slot=0}
+I[250983]={c=9,il=1,n="Recipe: Lesser Frenzy Potion",q=1,rl=1,sc=6,slot=0}
+I[250988]={c=9,il=1,n="Recipe: Minor Mender's Potion",q=1,rl=1,sc=6,slot=0}
+I[250989]={c=9,il=1,n="Recipe: Lesser Mender's Potion",q=1,rl=1,sc=6,slot=0}
+I[251290]={c=7,il=60,n="Legionite Bar",q=2,sc=7,slot=0,vsell=5000}
+I[251291]={c=7,il=60,n="Heavy Thorium Bar",q=2,sc=7,slot=0,vsell=2500}
+I[251460]={c=9,il=43,n="Plans: Mithril Warhammer",q=2,sc=4,slot=0,vbuy=7500,vsell=1500}
+I[251468]={c=9,il=59,n="Plans: Bold Dirk",q=3,sc=4,slot=0,vbuy=100000,vsell=25000}
+I[251524]={c=7,il=15,n="Whimsyfin",q=1,sc=11,slot=0,vsell=4}
+I[251525]={c=0,il=10,n="Savory Whimsyfin Delight",q=1,rl=1,sc=8,slot=0,vsell=5}
+I[252424]={c=4,il=15,n="Black Whelp Slippers",q=3,rl=10,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=4,RESISTANCE0_NAME=53},vsell=306}
+I[252425]={c=4,il=15,n="Dark Leather Boots",q=3,rl=10,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=53},vsell=307}
+I[252426]={c=4,il=15,n="Murloc Scale Shoes",q=3,rl=10,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=53},vsell=308}
+I[252427]={c=4,il=15,n="Moonglow Boots",q=3,rl=10,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=53},vsell=309}
+I[252428]={c=4,il=17,n="Brawler's Leather Belt",q=3,rl=12,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=45},vsell=275}
+I[252429]={c=4,il=17,n="Trapper's Leather Belt",q=3,rl=12,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=45},vsell=276}
+I[252430]={c=4,il=17,n="Defender's Leather Belt",q=3,rl=12,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=45},vsell=277}
+I[252431]={c=4,il=17,n="Totemic Leather Belt",q=3,rl=12,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=45},vsell=278}
+I[252432]={c=4,il=17,n="Stormrider's Leather Belt",q=3,rl=12,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=45},vsell=279}
+I[252433]={c=4,il=17,n="Wisdom's Leather Belt",q=3,rl=12,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=45},vsell=280}
+I[252434]={c=4,il=20,n="Defender's Leather Armor",q=3,rl=15,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=85},vsell=850}
+I[252435]={c=4,il=20,n="Totemic Leather Armor",q=3,rl=15,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=85},vsell=853}
+I[252436]={c=0,il=15,n="Mystic Medium Armor Kit",q=2,rl=15,sc=6,slot=0,stats={RESISTANCE0_NAME=16}}
+I[252437]={c=0,il=15,n="Forceful Medium Armor Kit",q=2,rl=15,sc=6,slot=0,stats={RESISTANCE0_NAME=16}}
+I[252439]={c=4,il=22,n="Brawler's Leather Boots",q=3,rl=17,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=61},vsell=883}
+I[252440]={c=4,il=22,n="Trapper's Leather Boots",q=3,rl=17,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=61},vsell=886}
+I[252441]={c=4,il=22,n="Defender's Leather Boots",q=3,rl=17,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=61},vsell=889}
+I[252442]={c=4,il=22,n="Totemic Leather Boots",q=3,rl=17,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=61},vsell=808}
+I[252443]={c=4,il=22,n="Stormrider's Leather Boots",q=3,rl=17,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=61},vsell=811}
+I[252444]={c=4,il=22,n="Wisdom's Leather Boots",q=3,rl=17,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=61},vsell=814}
+I[252445]={c=4,il=25,n="Defender's Leather Pants",q=3,rl=20,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=82},vsell=1568}
+I[252446]={c=4,il=25,n="Totemic Leather Pants",q=3,rl=20,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=82},vsell=1574}
+I[252447]={c=4,il=25,n="Defender's Leather Hood",q=3,rl=20,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=76},vsell=1188}
+I[252448]={c=4,il=25,n="Totemic Leather Hood",q=3,rl=20,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=76},vsell=1192}
+I[252449]={c=4,il=27,n="Hillman's Leather Boots",q=2,rl=22,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=61},vsell=1240}
+I[252450]={c=4,il=27,n="Defender's Leather Tunic",q=3,rl=22,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=98},vsell=1986}
+I[252451]={c=4,il=27,n="Totemic Leather Tunic",q=3,rl=22,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=98},vsell=1994}
+I[252452]={c=0,il=30,n="Mystic Heavy Armor Kit",q=2,rl=30,sc=6,slot=0,stats={RESISTANCE0_NAME=24}}
+I[252453]={c=0,il=30,n="Forceful Heavy Armor Kit",q=2,rl=30,sc=6,slot=0,stats={RESISTANCE0_NAME=24}}
+I[252455]={c=4,il=30,n="Defender's Leather Helm",q=3,rl=25,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=84},vsell=2079}
+I[252456]={c=4,il=30,n="Totemic Leather Helm",q=3,rl=25,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=84},vsell=2087}
+I[252457]={c=4,il=30,n="Defender's Leather Kilt",q=3,rl=25,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=90},vsell=2785}
+I[252458]={c=4,il=30,n="Totemic Leather Leggings",q=3,rl=25,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=90},vsell=2795}
+I[252459]={c=4,il=35,n="Prowler's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=63},vsell=2276}
+I[252460]={c=4,il=35,n="Warden's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=63},vsell=2284}
+I[252461]={c=4,il=35,n="Skirmisher's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=63},vsell=2292}
+I[252462]={c=0,il=40,n="Mystic Thick Armor Kit",q=2,rl=40,sc=6,slot=0,stats={RESISTANCE0_NAME=32}}
+I[252463]={c=0,il=40,n="Forceful Thick Armor Kit",q=2,rl=40,sc=6,slot=0,stats={RESISTANCE0_NAME=32}}
+I[252465]={c=4,il=45,n="Prowler's Leather Shoes",q=3,rl=40,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=92},vsell=7037}
+I[252466]={c=4,il=45,n="Warden's Leather Shoes",q=3,rl=40,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=92},vsell=7063}
+I[252467]={c=4,il=52,n="Blue Suede Shoes",q=2,rl=47,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=94},vsell=9665}
+I[252468]={c=4,il=52,n="Prowler's Leather Boots",q=3,rl=47,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=104},vsell=11643}
+I[252469]={c=4,il=52,n="Skulker's Leather Boots",q=3,rl=47,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=104},vsell=11687}
+I[252470]={c=4,il=52,n="Warden's Leather Boots",q=3,rl=47,sc=2,slot=8,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=104},vsell=11730}
+I[252471]={c=4,il=52,n="Skycaller's Leather Boots",q=3,rl=47,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=104},vsell=12091}
+I[252472]={c=4,il=52,n="Mender's Leather Boots",q=3,rl=47,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=104},vsell=12136}
+I[252473]={c=4,il=55,n="Prowler's Leather Waistguard",q=3,rl=50,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=89},vsell=9722}
+I[252474]={c=4,il=55,n="Skulker's Leather Waistguard",q=3,rl=50,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=89},vsell=9757}
+I[252475]={c=4,il=55,n="Warden's Leather Waistguard",q=3,rl=50,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=14,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=89},vsell=9792}
+I[252476]={c=4,il=55,n="Skycaller's Leather Waistguard",q=3,rl=50,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=89},vsell=9827}
+I[252477]={c=4,il=55,n="Mender's Leather Waistguard",q=3,rl=50,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=89},vsell=9862}
+I[252478]={c=4,il=56,n="Blue Suede Pants",q=2,rl=51,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=16,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=127},vsell=17346}
+I[252479]={c=4,il=57,n="Wicked Leather Boots",q=2,rl=52,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=12,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=102},vsell=13876}
+I[252480]={c=4,il=58,n="Blue Suede Armor",q=2,rl=53,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=16,RESISTANCE0_NAME=150},vsell=19629}
+I[252481]={c=4,il=59,n="Blue Suede Belt",q=2,rl=54,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=14,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=86},vsell=10423}
+I[252482]={c=4,il=61,n="Blue Suede Hat",q=2,rl=56,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=16,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=17,RESISTANCE0_NAME=127},vsell=15569}
+I[252483]={c=4,il=61,n="Dawn Armor",q=4,rl=56,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=37,RESISTANCE0_NAME=187},vsell=33256}
+I[252484]={c=4,il=61,n="Timbermaw Tunic",q=4,rl=56,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STRENGTH_SHORT=33,RESISTANCE0_NAME=187},vsell=33384}
+I[252485]={c=4,il=61,n="Warbear Helm",q=4,rl=56,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=33,ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=152},vsell=25199}
+I[252486]={c=4,il=61,n="Ironfeather Leggings",q=4,rl=56,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=18,RESISTANCE0_NAME=164},vsell=33639}
+I[252487]={c=0,il=50,n="Mystic Rugged Armor Kit",q=2,rl=50,sc=6,slot=0,stats={RESISTANCE0_NAME=40}}
+I[252488]={c=0,il=50,n="Forceful Rugged Armor Kit",q=2,rl=50,sc=6,slot=0,stats={RESISTANCE0_NAME=40}}
+I[252490]={c=4,il=20,n="Brawler's Leather Armor",q=3,rl=15,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=5,RESISTANCE0_NAME=85},vsell=860}
+I[252491]={c=4,il=20,n="Trapper's Leather Armor",q=3,rl=15,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=85},vsell=863}
+I[252492]={c=4,il=20,n="Stormrider's Leather Armor",q=3,rl=15,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=85},vsell=866}
+I[252493]={c=4,il=20,n="Wisdom's Leather Armor",q=3,rl=15,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=85},vsell=869}
+I[252494]={c=4,il=20,n="Brawler's Leather Gloves",q=3,rl=15,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=53},vsell=439}
+I[252495]={c=4,il=20,n="Trapper's Leather Gloves",q=3,rl=15,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=53},vsell=441}
+I[252496]={c=4,il=20,n="Defender's Leather Gloves",q=3,rl=15,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=53},vsell=442}
+I[252497]={c=4,il=20,n="Totemic Leather Gloves",q=3,rl=15,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=3,ITEM_MOD_STRENGTH_SHORT=4,RESISTANCE0_NAME=53},vsell=444}
+I[252498]={c=4,il=20,n="Stormrider's Leather Gloves",q=3,rl=15,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=53},vsell=446}
+I[252499]={c=4,il=20,n="Wisdom's Leather Gloves",q=3,rl=15,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=53},vsell=447}
+I[252500]={c=4,il=25,n="Brawler's Leather Pants",q=3,rl=20,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=82},vsell=1700}
+I[252501]={c=4,il=25,n="Trapper's Leather Pants",q=3,rl=20,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=82},vsell=1706}
+I[252502]={c=4,il=25,n="Stormrider's Leather Pants",q=3,rl=20,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=82},vsell=1549}
+I[252503]={c=4,il=25,n="Wisdom's Leather Pants",q=3,rl=20,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=82},vsell=1598}
+I[252504]={c=4,il=25,n="Brawler's Leather Hood",q=3,rl=20,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=76},vsell=1206}
+I[252505]={c=4,il=25,n="Trapper's Leather Hood",q=3,rl=20,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=76},vsell=1211}
+I[252506]={c=4,il=25,n="Stormrider's Leather Hood",q=3,rl=20,sc=2,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=9,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=76},vsell=1215}
+I[252507]={c=4,il=25,n="Wisdom's Leather Hood",q=3,rl=20,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=76},vsell=1220}
+I[252508]={c=4,il=27,n="Brawler's Leather Tunic",q=3,rl=22,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=98},vsell=2024}
+I[252509]={c=4,il=27,n="Trapper's Leather Tunic",q=3,rl=22,sc=2,slot=5,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=98},vsell=2032}
+I[252510]={c=4,il=27,n="Stormrider's Leather Tunic",q=3,rl=22,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=98},vsell=2039}
+I[252511]={c=4,il=27,n="Wisdom's Leather Tunic",q=3,rl=22,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=98},vsell=2046}
+I[252512]={c=4,il=30,n="Brawler's Leather Helm",q=3,rl=25,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=84},vsell=2056}
+I[252513]={c=4,il=30,n="Trapper's Leather Helm",q=3,rl=25,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=84},vsell=2063}
+I[252514]={c=4,il=30,n="Stormrider's Leather Helm",q=3,rl=25,sc=2,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=84},vsell=2071}
+I[252515]={c=4,il=30,n="Wisdom's Leather Helm",q=3,rl=25,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=84},vsell=2078}
+I[252516]={c=4,il=30,n="Brawler's Leather Legguards",q=3,rl=25,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=90},vsell=2774}
+I[252517]={c=4,il=30,n="Trapper's Leather Legguards",q=3,rl=25,sc=2,slot=7,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=90},vsell=2784}
+I[252518]={c=4,il=30,n="Stormrider's Leather Kilt",q=3,rl=25,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=11,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=90},vsell=2794}
+I[252519]={c=4,il=30,n="Wisdom's Leather Leggings",q=3,rl=25,sc=2,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=90},vsell=2605}
+I[252520]={c=4,il=35,n="Skulker's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=63},vsell=2122}
+I[252521]={c=4,il=35,n="Stalker's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=63},vsell=2130}
+I[252522]={c=4,il=35,n="Skycaller's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=63},vsell=2139}
+I[252523]={c=4,il=35,n="Mender's Leather Belt",q=3,rl=30,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=63},vsell=2146}
+I[252524]={c=4,il=40,n="Prowler's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=76},vsell=3284}
+I[252525]={c=4,il=40,n="Skulker's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=76},vsell=3297}
+I[252526]={c=4,il=40,n="Stalker's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=76},vsell=3309}
+I[252527]={c=4,il=40,n="Warden's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=76},vsell=3321}
+I[252528]={c=4,il=40,n="Skirmisher's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=76},vsell=3333}
+I[252529]={c=4,il=40,n="Skycaller's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=76},vsell=3346}
+I[252530]={c=4,il=40,n="Mender's Leather Gloves",q=3,rl=35,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=76},vsell=3358}
+I[252531]={c=4,il=45,n="Skulker's Leather Shoes",q=3,rl=40,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=92},vsell=7389}
+I[252532]={c=4,il=45,n="Skycaller's Leather Shoes",q=3,rl=40,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=92},vsell=7416}
+I[252533]={c=4,il=45,n="Mender's Leather Shoes",q=3,rl=40,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=92},vsell=7443}
+I[252534]={c=4,il=47,n="Prowler's Leather Shoulder",q=3,rl=42,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=104},vsell=8712}
+I[252535]={c=4,il=47,n="Skulker's Leather Shoulder",q=3,rl=42,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=104},vsell=8116}
+I[252536]={c=4,il=47,n="Warden's Leather Shoulder",q=3,rl=42,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=11,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=104},vsell=8147}
+I[252537]={c=4,il=47,n="Skycaller's Leather Shoulder",q=3,rl=42,sc=2,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=104},vsell=8179}
+I[252538]={c=4,il=47,n="Mender's Leather Shoulder",q=3,rl=42,sc=2,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=104},vsell=8210}
+I[252539]={c=4,il=50,n="Prowler's Leather Bracers",q=3,rl=45,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=64},vsell=6829}
+I[252540]={c=4,il=50,n="Skulker's Leather Bracers",q=3,rl=45,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=64},vsell=6856}
+I[252541]={c=4,il=50,n="Warden's Leather Bracers",q=3,rl=45,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=64},vsell=6881}
+I[252542]={c=4,il=50,n="Skycaller's Leather Bracers",q=3,rl=45,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=64},vsell=6907}
+I[252543]={c=4,il=50,n="Mender's Leather Bracers",q=3,rl=45,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=64},vsell=6933}
+I[252544]={c=4,il=52,n="Tooled Leather Belt",q=2,rl=47,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=77},vsell=6578}
+I[252545]={c=4,il=53,n="Tooled Leather Boots",q=2,rl=48,sc=2,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=96},vsell=10442}
+I[252546]={c=4,il=53,n="Blue Suede Gloves",q=2,rl=48,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=87},vsell=7024}
+I[252547]={c=4,il=55,n="Prowler's Leather Gauntlets",q=3,rl=50,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=99},vsell=9507}
+I[252548]={c=4,il=55,n="Skulker's Leather Gauntlets",q=3,rl=50,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=99},vsell=9542}
+I[252549]={c=4,il=55,n="Warden's Leather Gauntlets",q=3,rl=50,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_STAMINA_SHORT=14,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=99},vsell=9576}
+I[252550]={c=4,il=55,n="Skycaller's Leather Gauntlets",q=3,rl=50,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=99},vsell=9612}
+I[252551]={c=4,il=55,n="Mender's Leather Gauntlets",q=3,rl=50,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=99},vsell=9900}
+I[252552]={c=4,il=56,n="Tooled Leather Armor",q=2,rl=51,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=16,ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=146},vsell=17413}
+I[252553]={c=4,il=57,n="Tooled Leather Gauntlets",q=2,rl=52,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=92},vsell=9335}
+I[252554]={c=4,il=57,n="Blue Suede Shoulder",q=2,rl=52,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=5,ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=111},vsell=13978}
+I[252555]={c=4,il=58,n="Tooled Leather Crown",q=2,rl=53,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=15,RESISTANCE0_NAME=122},vsell=13454}
+I[252556]={c=4,il=59,n="Wicked Leather Shoulder",q=2,rl=54,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=14,RESISTANCE0_NAME=114},vsell=14180}
+I[252557]={c=4,il=59,n="Tooled Leather Bracers",q=2,rl=54,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_SPIRIT_SHORT=4,RESISTANCE0_NAME=67},vsell=9540}
+I[252558]={c=4,il=60,n="Tooled Leather Epaulets",q=2,rl=55,sc=2,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=10,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=115},vsell=15004}
+I[252559]={c=4,il=60,n="Blue Suede Bracers",q=2,rl=55,sc=2,slot=9,stats={ITEM_MOD_AGILITY_SHORT=3,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=12,RESISTANCE0_NAME=67},vsell=10094}
+I[252560]={c=4,il=61,n="Tooled Leather Pants",q=2,rl=56,sc=2,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=17,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=136},vsell=21109}
+I[252561]={c=4,il=61,n="Living Crown",q=4,rl=56,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=18,ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=152},vsell=25495}
+I[252562]={c=4,il=45,n="Stalker's Mail Boots",q=3,rl=40,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=188},vsell=8589}
+I[252563]={c=4,il=45,n="Skycaller's Mail Boots",q=3,rl=40,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=188},vsell=8622}
+I[252564]={c=4,il=45,n="Skirmisher's Mail Boots",q=3,rl=40,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=188},vsell=8654}
+I[252565]={c=4,il=45,n="Mender's Mail Boots",q=3,rl=40,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=188},vsell=8686}
+I[252566]={c=4,il=47,n="Stalker's Mail Shoulder",q=3,rl=42,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=213},vsell=10170}
+I[252567]={c=4,il=47,n="Skycaller's Mail Shoulder",q=3,rl=42,sc=3,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=213},vsell=10479}
+I[252568]={c=4,il=47,n="Skirmisher's Mail Shoulder",q=3,rl=42,sc=3,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=213},vsell=10516}
+I[252569]={c=4,il=47,n="Mender's Mail Shoulder",q=3,rl=42,sc=3,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=213},vsell=10554}
+I[252570]={c=4,il=50,n="Stalker's Mail Bracers",q=3,rl=45,sc=3,slot=9,stats={ITEM_MOD_AGILITY_SHORT=9,ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=131},vsell=8692}
+I[252571]={c=4,il=50,n="Skycaller's Mail Bracers",q=3,rl=45,sc=3,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=131},vsell=8724}
+I[252572]={c=4,il=50,n="Skirmisher's Mail Bracers",q=3,rl=45,sc=3,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_STAMINA_SHORT=6,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=131},vsell=8754}
+I[252573]={c=4,il=50,n="Mender's Mail Bracers",q=3,rl=45,sc=3,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=131},vsell=8785}
+I[252574]={c=4,il=51,n="Supple Scorpid Boots",q=2,rl=46,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=191},vsell=11844}
+I[252575]={c=4,il=51,n="Charged Scorpid Belt",q=2,rl=46,sc=3,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=156},vsell=7137}
+I[252576]={c=4,il=52,n="Stalker's Mail Sabatons",q=3,rl=47,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=13,ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=11,RESISTANCE0_NAME=214},vsell=13732}
+I[252577]={c=4,il=52,n="Skycaller's Mail Sabatons",q=3,rl=47,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=214},vsell=13785}
+I[252578]={c=4,il=52,n="Skirmisher's Mail Sabatons",q=3,rl=47,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=13,RESISTANCE0_NAME=214},vsell=13838}
+I[252579]={c=4,il=52,n="Mender's Mail Sabatons",q=3,rl=47,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=214},vsell=13890}
+I[252580]={c=4,il=53,n="Supple Scorpid Leggings",q=2,rl=48,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=16,ITEM_MOD_STRENGTH_SHORT=10,RESISTANCE0_NAME=252},vsell=16349}
+I[252581]={c=4,il=53,n="Charged Scorpid Helm",q=2,rl=48,sc=3,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=16,ITEM_MOD_SPIRIT_SHORT=10,RESISTANCE0_NAME=234},vsell=12363}
+I[252582]={c=4,il=55,n="Supple Scorpid Bracers",q=2,rl=50,sc=3,slot=9,stats={ITEM_MOD_STAMINA_SHORT=8,ITEM_MOD_STRENGTH_SHORT=6,RESISTANCE0_NAME=130},vsell=9255}
+I[252583]={c=4,il=55,n="Charged Scorpid Shoulder",q=2,rl=50,sc=3,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=223},vsell=14374}
+I[252584]={c=4,il=55,n="Stalker's Mail Gauntlets",q=3,rl=50,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=205},vsell=11490}
+I[252585]={c=4,il=55,n="Skycaller's Mail Gauntlets",q=3,rl=50,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=205},vsell=11532}
+I[252586]={c=4,il=55,n="Skirmisher's Mail Gauntlets",q=3,rl=50,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=205},vsell=11574}
+I[252587]={c=4,il=55,n="Mender's Mail Gauntlets",q=3,rl=50,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=205},vsell=11615}
+I[252588]={c=4,il=55,n="Stalker's Mail Belt",q=3,rl=50,sc=3,slot=6,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=184},vsell=11657}
+I[252589]={c=4,il=55,n="Skycaller's Mail Belt",q=3,rl=50,sc=3,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=184},vsell=11699}
+I[252590]={c=4,il=55,n="Skirmisher's Mail Belt",q=3,rl=50,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=184},vsell=11740}
+I[252591]={c=4,il=55,n="Mender's Mail Belt",q=3,rl=50,sc=3,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=12,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=184},vsell=11782}
+I[252592]={c=4,il=56,n="Supple Scorpid Shoulder",q=2,rl=51,sc=3,slot=3,stats={ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=8,RESISTANCE0_NAME=227},vsell=15737}
+I[252593]={c=4,il=56,n="Charged Scorpid Bracers",q=2,rl=51,sc=3,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=6,RESISTANCE0_NAME=132},vsell=10482}
+I[252594]={c=4,il=56,n="Heavy Scorpid Boots",q=2,rl=51,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=10,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=208},vsell=15847}
+I[252595]={c=4,il=56,n="Supple Scorpid Belt",q=2,rl=51,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=170},vsell=9550}
+I[252596]={c=4,il=56,n="Charged Scorpid Gauntlets",q=2,rl=51,sc=3,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=189},vsell=9587}
+I[252597]={c=4,il=57,n="Supple Scorpid Helm",q=2,rl=52,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=13,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=250},vsell=15371}
+I[252598]={c=4,il=57,n="Charged Scorpid Vest",q=2,rl=52,sc=3,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=15,ITEM_MOD_SPIRIT_SHORT=14,RESISTANCE0_NAME=307},vsell=20481}
+I[252599]={c=4,il=59,n="Supple Scorpid Vest",q=2,rl=54,sc=3,slot=5,stats={ITEM_MOD_STAMINA_SHORT=16,ITEM_MOD_STRENGTH_SHORT=15,RESISTANCE0_NAME=317},vsell=23511}
+I[252600]={c=4,il=59,n="Charged Scorpid Leggings",q=2,rl=54,sc=3,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,RESISTANCE0_NAME=278},vsell=23598}
+I[252601]={c=4,il=61,n="Supple Scorpid Sabatons",q=2,rl=56,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=7,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=225},vsell=19673}
+I[252602]={c=4,il=61,n="Charged Scorpid Boots",q=2,rl=56,sc=3,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_SPIRIT_SHORT=9,RESISTANCE0_NAME=225},vsell=19743}
+I[252603]={c=4,il=61,n="Red Dragonscale Leggings",q=4,rl=56,sc=3,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=32,RESISTANCE0_NAME=344},vsell=42088}
+I[252604]={c=4,il=61,n="Blue Dragonscale Helm",q=4,rl=56,sc=3,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=18,RESISTANCE0_NAME=319},vsell=31823}
+I[252605]={c=4,il=61,n="Black Dragonscale Helm",q=4,rl=56,sc=3,slot=1,stats={ITEM_MOD_AGILITY_SHORT=21,ITEM_MOD_INTELLECT_SHORT=38,RESISTANCE0_NAME=319},vsell=31936}
+I[252606]={c=4,il=61,n="Pristine Scorpid Leggings",q=4,rl=56,sc=3,slot=7,stats={ITEM_MOD_STRENGTH_SHORT=18,RESISTANCE0_NAME=344},vsell=42548}
+I[252761]={c=9,il=15,n="Pattern: Black Whelp Slippers",q=3,sc=1,slot=0,vbuy=500,vsell=125}
+I[252762]={c=9,il=15,n="Pattern: Dark Leather Boots",q=3,sc=1,slot=0,vbuy=500,vsell=125}
+I[252763]={c=9,il=15,n="Pattern: Murloc Scale Shoes",q=3,sc=1,slot=0,vbuy=500,vsell=125}
+I[252764]={c=9,il=15,n="Pattern: Moonglow Boots",q=3,sc=1,slot=0,vbuy=500,vsell=125}
+I[252783]={c=9,il=15,n="Pattern: Mystic Medium Armor Kit",q=2,sc=1,slot=0,vbuy=500,vsell=125}
+I[252784]={c=9,il=15,n="Pattern: Forceful Medium Armor Kit",q=2,sc=1,slot=0,vbuy=500,vsell=125}
+I[252811]={c=9,il=30,n="Pattern: Mystic Heavy Armor Kit",q=2,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252812]={c=9,il=30,n="Pattern: Forceful Heavy Armor Kit",q=2,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252826]={c=9,il=35,n="Pattern: Prowler's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252827]={c=9,il=35,n="Pattern: Skulker's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252828]={c=9,il=35,n="Pattern: Stalker's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252829]={c=9,il=35,n="Pattern: Warden's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252830]={c=9,il=35,n="Pattern: Skirmisher's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252831]={c=9,il=35,n="Pattern: Skycaller's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252832]={c=9,il=35,n="Pattern: Mender's Leather Belt",q=3,sc=1,slot=0,vbuy=2000,vsell=500}
+I[252877]={c=9,il=56,n="Pattern: Tooled Leather Armor",q=2,sc=1,slot=0,vbuy=100000,vsell=25000}
+I[252933]={c=9,il=59,n="Pattern: Supple Scorpid Vest",q=2,sc=1,slot=0,vbuy=100000,vsell=25000}
+I[253664]={c=1,il=5,n="Linen Reagent Bag",q=1,sc=11,slot=18,vsell=200}
+I[253665]={c=9,il=5,n="Pattern: Linen Reagent Bag",q=2,rl=1,sc=2,slot=0,vbuy=150,vsell=30}
+I[253667]={c=1,il=15,n="Woolen Reagent Bag",q=1,sc=11,slot=18,vsell=5000}
+I[253668]={c=9,il=10,n="Pattern: Woolen Reagent Bag",q=2,rl=1,sc=2,slot=0,vbuy=250,vsell=50}
+I[253885]={c=4,il=15,n="Novice Arcanist's Sash",q=3,rl=10,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=3,RESISTANCE0_NAME=17},vsell=174}
+I[253887]={c=4,il=15,n="Novice Ardent's Sash",q=3,rl=10,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_SPIRIT_SHORT=3,RESISTANCE0_NAME=17},vsell=176}
+I[253889]={c=4,il=17,n="Pristine Boots",q=3,rl=12,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=351}
+I[253891]={c=4,il=17,n="Silky Boots",q=3,rl=12,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=320}
+I[253893]={c=4,il=17,n="Flame Boots",q=3,rl=12,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=323}
+I[253895]={c=4,il=17,n="Shadow Boots",q=3,rl=12,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=325}
+I[253897]={c=4,il=17,n="Pearly Boots",q=3,rl=12,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=328}
+I[253899]={c=4,il=17,n="Shining Boots",q=3,rl=12,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=330}
+I[253901]={c=4,il=20,n="Filigreed Pristine Gown",q=3,rl=15,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=37},vsell=693}
+I[253903]={c=4,il=20,n="Filigreed Silky Gown",q=3,rl=15,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=37},vsell=698}
+I[253905]={c=4,il=20,n="Filigreed Flame Gown",q=3,rl=15,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=37},vsell=703}
+I[253907]={c=4,il=20,n="Filigreed Shadow Gown",q=3,rl=15,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=37},vsell=708}
+I[253909]={c=4,il=20,n="Filigreed Pearly Gown",q=3,rl=15,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=37},vsell=713}
+I[253911]={c=4,il=20,n="Filigreed Shining Gown",q=3,rl=15,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=5,ITEM_MOD_SPIRIT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=37},vsell=650}
+I[253913]={c=4,il=20,n="Pristine Gloves",q=3,rl=15,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=327}
+I[253915]={c=4,il=20,n="Silky Gloves",q=3,rl=15,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=330}
+I[253917]={c=4,il=20,n="Flame Gloves",q=3,rl=15,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=341}
+I[253919]={c=4,il=20,n="Shadow Gloves",q=3,rl=15,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=344}
+I[253921]={c=4,il=20,n="Pearly Gloves",q=3,rl=15,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=346}
+I[253923]={c=4,il=20,n="Shining Gloves",q=3,rl=15,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=3,ITEM_MOD_STAMINA_SHORT=4,RESISTANCE0_NAME=23},vsell=349}
+I[253925]={c=4,il=22,n="Pristine Sash",q=3,rl=17,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=22},vsell=465}
+I[253927]={c=4,il=22,n="Silky Sash",q=3,rl=17,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=22},vsell=468}
+I[253929]={c=4,il=22,n="Flame Sash",q=3,rl=17,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=22},vsell=471}
+I[253931]={c=4,il=22,n="Shadow Sash",q=3,rl=17,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=22},vsell=429}
+I[253933]={c=4,il=22,n="Pearly Sash",q=3,rl=17,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=22},vsell=445}
+I[253935]={c=4,il=22,n="Shining Sash",q=3,rl=17,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=22},vsell=448}
+I[253937]={c=4,il=25,n="Filigreed Pristine Leggings",q=3,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=37},vsell=1303}
+I[253939]={c=4,il=25,n="Filigreed Silky Leggings",q=3,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=37},vsell=1312}
+I[253941]={c=4,il=25,n="Filigreed Flame Leggings",q=3,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=37},vsell=1322}
+I[253943]={c=4,il=25,n="Filigreed Shadow Leggings",q=3,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=37},vsell=1332}
+I[253945]={c=4,il=25,n="Filigreed Pearly Leggings",q=3,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=37},vsell=1341}
+I[253947]={c=4,il=25,n="Filigreed Shining Leggings",q=3,rl=20,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=6,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=5,RESISTANCE0_NAME=37},vsell=1351}
+I[253949]={c=4,il=25,n="Pristine Circlet",q=3,rl=20,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=35},vsell=948}
+I[253951]={c=4,il=25,n="Silky Circlet",q=3,rl=20,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=35},vsell=955}
+I[253953]={c=4,il=25,n="Flame Circlet",q=3,rl=20,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=35},vsell=962}
+I[253955]={c=4,il=25,n="Shadow Circlet",q=3,rl=20,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=35},vsell=970}
+I[253957]={c=4,il=25,n="Pearly Circlet",q=3,rl=20,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=35},vsell=977}
+I[253959]={c=4,il=25,n="Shining Circlet",q=3,rl=20,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=35},vsell=984}
+I[253961]={c=4,il=27,n="Pristine Gown",q=3,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=45},vsell=1643}
+I[253963]={c=4,il=27,n="Silky Gown",q=3,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=45},vsell=1655}
+I[253965]={c=4,il=27,n="Flame Gown",q=3,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=45},vsell=1548}
+I[253967]={c=4,il=27,n="Shadow Gown",q=3,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=45},vsell=1560}
+I[253969]={c=4,il=27,n="Pearly Gown",q=3,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=45},vsell=1572}
+I[253971]={c=4,il=27,n="Shining Gown",q=3,rl=22,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=45},vsell=1584}
+I[253973]={c=1,il=25,n="Silk Reagent Bag",q=1,sc=11,slot=18,vsell=200}
+I[253975]={c=4,il=30,n="Filigreed Pristine Circlet",q=3,rl=25,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=38},vsell=1605}
+I[253977]={c=4,il=30,n="Filigreed Silky Circlet",q=3,rl=25,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=38},vsell=1616}
+I[253979]={c=4,il=30,n="Filigreed Flame Circlet",q=3,rl=25,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=38},vsell=1628}
+I[253981]={c=4,il=30,n="Filigreed Shadow Circlet",q=3,rl=25,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=38},vsell=1640}
+I[253983]={c=4,il=30,n="Filigreed Pearly Circlet",q=3,rl=25,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=38},vsell=1695}
+I[253985]={c=4,il=30,n="Filigreed Shining Circlet",q=3,rl=25,sc=1,slot=1,stats={ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=38},vsell=1545}
+end)()
+;(function()
+I[253987]={c=4,il=30,n="Pristine Leggings",q=3,rl=25,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=41},vsell=2076}
+I[253989]={c=4,il=30,n="Silky Leggings",q=3,rl=25,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=41},vsell=2092}
+I[253991]={c=4,il=30,n="Flame Leggings",q=3,rl=25,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=41},vsell=2108}
+I[253993]={c=4,il=30,n="Shadow Leggings",q=3,rl=25,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=41},vsell=2124}
+I[253995]={c=4,il=30,n="Pearly Leggings",q=3,rl=25,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=41},vsell=2139}
+I[253997]={c=4,il=30,n="Shining Leggings",q=3,rl=25,sc=1,slot=7,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=41},vsell=2155}
+I[253999]={c=4,il=35,n="Earthen Leggings",q=2,rl=30,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=41},vsell=2990}
+I[254001]={c=4,il=35,n="Gilded Slippers",q=3,rl=30,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=35},vsell=2711}
+I[254003]={c=4,il=35,n="Frothing Slippers",q=3,rl=30,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=35},vsell=2730}
+I[254005]={c=4,il=35,n="Fiery Slippers",q=3,rl=30,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=35},vsell=2488}
+I[254007]={c=4,il=35,n="Black Slippers",q=3,rl=30,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=35},vsell=2507}
+I[254009]={c=4,il=35,n="Golden Slippers",q=3,rl=30,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=35},vsell=2526}
+I[254011]={c=4,il=35,n="Radiant Slippers",q=3,rl=30,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STAMINA_SHORT=6,RESISTANCE0_NAME=35},vsell=2545}
+I[254013]={c=4,il=36,n="Earthen Silk Slippers",q=2,rl=31,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=7,RESISTANCE0_NAME=33},vsell=2351}
+I[254015]={c=4,il=37,n="Earthen Silk Hood",q=2,rl=32,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=10,RESISTANCE0_NAME=40},vsell=2675}
+I[254017]={c=4,il=39,n="Earthen Silk Gloves",q=2,rl=34,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=32},vsell=2095}
+I[254019]={c=4,il=40,n="Earthen Silk Cuffs",q=2,rl=35,sc=1,slot=9,stats={ITEM_MOD_SPIRIT_SHORT=5,RESISTANCE0_NAME=23},vsell=2279}
+I[254021]={c=4,il=40,n="Gilded Handwraps",q=3,rl=35,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=36},vsell=2754}
+I[254023]={c=4,il=40,n="Frothing Handwraps",q=3,rl=35,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=36},vsell=2773}
+I[254025]={c=4,il=40,n="Fiery Handwraps",q=3,rl=35,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=36},vsell=2528}
+I[254027]={c=4,il=40,n="Black Handwraps",q=3,rl=35,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=36},vsell=2547}
+I[254029]={c=4,il=40,n="Golden Handwraps",q=3,rl=35,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=36},vsell=2567}
+I[254031]={c=4,il=40,n="Radiant Handwraps",q=3,rl=35,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=36},vsell=2656}
+I[254033]={c=4,il=41,n="Earthen Silk Shoulders",q=2,rl=36,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=40},vsell=3613}
+I[254035]={c=1,il=35,n="Mageweave Reagent Bag",q=1,sc=11,slot=18,vsell=200}
+I[254037]={c=4,il=45,n="Gilded Cord",q=3,rl=40,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=37},vsell=3989}
+I[254039]={c=4,il=45,n="Frothing Cord",q=3,rl=40,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=37},vsell=4018}
+I[254041]={c=4,il=45,n="Fiery Cord",q=3,rl=40,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=37},vsell=4046}
+I[254043]={c=4,il=45,n="Black Cord",q=3,rl=40,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=37},vsell=4075}
+I[254045]={c=4,il=45,n="Golden Cord",q=3,rl=40,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=37},vsell=3714}
+I[254047]={c=4,il=45,n="Radiant Cord",q=3,rl=40,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=37},vsell=3846}
+I[254049]={c=4,il=47,n="Nethergeld Shoulders",q=3,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=51},vsell=6779}
+I[254051]={c=4,il=47,n="Netherfroth Shoulders",q=3,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=51},vsell=6828}
+I[254053]={c=4,il=47,n="Netherflame Shoulders",q=3,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=51},vsell=6879}
+I[254055]={c=4,il=47,n="Netherpearl Shoulders",q=3,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=51},vsell=6928}
+I[254057]={c=4,il=47,n="Nethershine Shoulders",q=3,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=51},vsell=6979}
+I[254059]={c=4,il=47,n="Netherlight Shoulders",q=3,rl=42,sc=1,slot=3,stats={ITEM_MOD_INTELLECT_SHORT=8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=51},vsell=7028}
+I[254061]={c=4,il=50,n="Nethergeld Cuffs",q=3,rl=45,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=31},vsell=5835}
+I[254063]={c=4,il=50,n="Netherfroth Cuffs",q=3,rl=45,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=31},vsell=5463}
+I[254065]={c=4,il=50,n="Netherflame Cuffs",q=3,rl=45,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=31},vsell=5505}
+I[254067]={c=4,il=50,n="Netherpearl Cuffs",q=3,rl=45,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=31},vsell=5546}
+I[254069]={c=4,il=50,n="Nethershine Cuffs",q=3,rl=45,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=31},vsell=5587}
+I[254071]={c=4,il=50,n="Netherlight Cuffs",q=3,rl=45,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=7,ITEM_MOD_SPIRIT_SHORT=5,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=31},vsell=5628}
+I[254073]={c=4,il=52,n="Ghostweave Cord",q=2,rl=47,sc=1,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=38},vsell=5359}
+I[254075]={c=4,il=52,n="Earthenweave Gloves",q=2,rl=47,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=42},vsell=5398}
+I[254077]={c=4,il=52,n="Earthenweave Cord",q=2,rl=47,sc=1,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=38},vsell=5437}
+I[254079]={c=1,il=52,n="Runecloth Reagent Bag",q=1,sc=11,slot=18,vsell=200}
+I[254081]={c=4,il=52,n="Gilded Waistcord",q=3,rl=47,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=42},vsell=6149}
+I[254083]={c=4,il=52,n="Frothing Waistcord",q=3,rl=47,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=42},vsell=6196}
+I[254085]={c=4,il=52,n="Fiery Waistcord",q=3,rl=47,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=42},vsell=6242}
+I[254087]={c=4,il=52,n="Black Waistcord",q=3,rl=47,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=42},vsell=6289}
+I[254089]={c=4,il=52,n="Golden Waistcord",q=3,rl=47,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=42},vsell=6336}
+I[254091]={c=4,il=52,n="Radiant Waistcord",q=3,rl=47,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=12,RESISTANCE0_NAME=42},vsell=6383}
+I[254093]={c=4,il=54,n="Earthenweave Boots",q=2,rl=49,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=11,RESISTANCE0_NAME=48},vsell=9030}
+I[254095]={c=4,il=55,n="Gilded Gloves",q=3,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=49},vsell=7915}
+I[254097]={c=4,il=55,n="Frothing Gloves",q=3,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=49},vsell=7211}
+I[254099]={c=4,il=55,n="Fiery Gloves",q=3,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=49},vsell=7267}
+I[254101]={c=4,il=55,n="Black Gloves",q=3,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=49},vsell=7323}
+I[254103]={c=4,il=55,n="Golden Gloves",q=3,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=49},vsell=7379}
+I[254105]={c=4,il=55,n="Radiant Gloves",q=3,rl=50,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_SPIRIT_SHORT=8,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=49},vsell=7434}
+I[254107]={c=4,il=55,n="Gilded Sandals",q=3,rl=50,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=54},vsell=11236}
+I[254109]={c=4,il=55,n="Frothing Sandals",q=3,rl=50,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=54},vsell=11319}
+I[254111]={c=4,il=55,n="Fiery Sandals",q=3,rl=50,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=54},vsell=11704}
+I[254113]={c=4,il=55,n="Black Sandals",q=3,rl=50,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=54},vsell=11787}
+I[254115]={c=4,il=55,n="Golden Sandals",q=3,rl=50,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=54},vsell=11870}
+I[254117]={c=4,il=55,n="Radiant Sandals",q=3,rl=50,sc=1,slot=8,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=13,RESISTANCE0_NAME=54},vsell=10816}
+I[254119]={c=4,il=57,n="Earthenweave Mantle",q=2,rl=52,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=55},vsell=10205}
+I[254121]={c=4,il=59,n="Earthenweave Vest",q=2,rl=54,sc=1,slot=5,stats={ITEM_MOD_SPIRIT_SHORT=17,RESISTANCE0_NAME=76},vsell=15262}
+I[254123]={c=4,il=59,n="Runecloth Cuffs",q=2,rl=54,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=10,RESISTANCE0_NAME=33},vsell=7688}
+I[254124]={c=9,il=59,n="Pattern: Runecloth Cuffs",q=2,rl=1,sc=2,slot=0,vbuy=100000,vsell=25000}
+I[254125]={c=4,il=58,n="Earthenweave Leggings",q=2,rl=53,sc=1,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=16,RESISTANCE0_NAME=66},vsell=14756}
+I[254127]={c=4,il=59,n="Ghostweave Mantle",q=2,rl=54,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=12,RESISTANCE0_NAME=57},vsell=12020}
+I[254129]={c=4,il=60,n="Ghostweave Boots",q=2,rl=55,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=13,RESISTANCE0_NAME=53},vsell=12714}
+I[254131]={c=4,il=60,n="Earthenweave Cuffs",q=2,rl=55,sc=1,slot=9,stats={ITEM_MOD_SPIRIT_SHORT=10,RESISTANCE0_NAME=34},vsell=8536}
+I[254133]={c=1,il=60,n="Mooncloth Reagent Bag",q=1,sc=11,slot=18,vsell=200}
+I[254135]={c=4,il=61,n="Ghostweave Hood",q=2,rl=56,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=18,RESISTANCE0_NAME=64},vsell=13637}
+I[254137]={c=4,il=61,n="Earthenweave Crown",q=2,rl=56,sc=1,slot=1,stats={ITEM_MOD_SPIRIT_SHORT=18,RESISTANCE0_NAME=64},vsell=12426}
+I[254139]={c=1,il=62,n="Bottomless Reagent Bag",q=1,sc=11,slot=18,vsell=200}
+I[255007]={c=7,il=1,n="Golem Isospring",q=1,sc=1,slot=0,vsell=22}
+I[255645]={c=7,il=1,n="Swolen Venom Sac",q=1,sc=11,slot=0,vsell=370}
+I[255715]={c=15,il=36,n="Potent Anti-Venom",q=1,sc=1,slot=0,vsell=125}
+I[255716]={c=15,il=16,n="Simple Poultice",q=1,sc=1,slot=0,vsell=28}
+I[255717]={c=15,il=26,n="Clever Poultice",q=1,sc=1,slot=0,vsell=62}
+I[255718]={c=15,il=36,n="Superior Poultice",q=1,sc=1,slot=0,vsell=125}
+I[255719]={c=15,il=58,n="Powerful Poultice",q=1,sc=1,slot=0,vsell=500}
+I[255720]={c=15,il=21,n="Woolen Tourniquet",q=1,sc=1,slot=0,vsell=50}
+I[255721]={c=15,il=36,n="Leather Tourniquet",q=1,sc=1,slot=0,vsell=125}
+I[255722]={c=15,il=58,n="Surgical Tourniquet",q=1,sc=1,slot=0,vsell=500}
+I[255729]={c=9,il=55,n="Manual: Major Healing Potion",q=2,sc=7,slot=0,vbuy=80000,vsell=20000}
+I[260784]={c=15,il=5,n="SAF-T Tabs",q=1,rl=1,sc=1,slot=0,vsell=4}
+I[260792]={c=0,il=25,n="SAF-T Dynamite",q=1,rl=1,sc=0,slot=0,vsell=75}
+I[260793]={c=0,il=19,n="SAF-T Copper Bomb",q=1,rl=1,sc=0,slot=0,vsell=60}
+I[260794]={c=15,il=15,n="EZ-Thro Wrap",q=1,rl=1,sc=1,slot=0,vsell=150}
+I[260795]={c=0,il=31,n="EZ-Thro Copper Bomb XL",q=1,rl=1,sc=0,slot=0,vsell=175}
+I[260796]={c=15,il=29,n="No Slip SAF-T Padding",q=1,rl=1,sc=1,slot=0,vsell=200}
+I[260797]={c=0,il=34,n="SAF-T Bronze Bomb",q=1,rl=1,sc=0,slot=0,vsell=200}
+I[260798]={c=0,il=35,n="SAF-T Jumbo Dynamite",q=1,rl=1,sc=0,slot=0,vsell=350}
+I[260799]={c=7,il=35,n="SAF-T Bell",q=1,rl=1,sc=1,slot=0,vsell=250}
+I[260800]={c=0,il=35,n="Shafety Sheep",q=1,rl=1,sc=0,slot=0,vsell=1000}
+I[260801]={c=15,il=39,n="EZ-Thro Fireproof Fuse",q=1,rl=1,sc=1,slot=0,vsell=300}
+I[260802]={c=4,il=39,n="EZ-Thro Bronze Mortar",q=1,rl=1,sc=-4,slot=12,vsell=2000}
+I[260803]={c=0,il=40,n="EZ-Thro Grenade",q=1,rl=1,sc=0,slot=0,vsell=350}
+I[260804]={c=15,il=43,n="SAF-T Casing",q=1,rl=1,sc=1,slot=0,vsell=1000}
+I[260805]={c=0,il=48,n="SAF-T Bomb",q=1,rl=1,sc=0,slot=0,vsell=750}
+I[260806]={c=4,il=40,n="Emergency Field Cloak",q=1,rl=1,sc=-4,slot=12,vsell=5000}
+I[260807]={c=0,il=45,n="Compact Critter Carrier",q=1,rl=40,sc=8,slot=0,vsell=200}
+I[260808]={c=15,il=48,n="EZ-Thro Tru-Trigger",q=1,rl=1,sc=1,slot=0,vsell=1100}
+I[260809]={c=0,il=48,n="Tru-Trigger Frag Bomb",q=1,rl=1,sc=0,slot=0,vsell=750}
+I[260810]={c=4,il=50,n="SAF-T Disposable Parachute",q=1,rl=1,sc=-6,slot=16,stats={RESISTANCE0_NAME=31},vsell=4696}
+I[260811]={c=7,il=50,n="Gnomish Army Knife",q=1,rl=45,sc=1,slot=0,vsell=1000}
+I[260812]={c=15,il=55,n="Loot-A-Rang",q=3,rl=50,sc=4,slot=0,vsell=2000}
+I[260813]={c=15,il=55,n="SAF-T Tube",q=1,rl=1,sc=1,slot=0,vsell=1500}
+I[260814]={c=0,il=50,n="SAF-T Clever Dynamite",q=1,rl=1,sc=0,slot=0,vsell=500}
+I[260815]={c=15,il=57,n="EZ-Thro Shell",q=1,rl=1,sc=1,slot=0,vsell=2000}
+I[260816]={c=0,il=57,n="EZ-Thro Thorium Grenade",q=1,rl=1,sc=0,slot=0,vsell=1500}
+I[260817]={c=0,il=60,n="EZ-Thro Dark Bomb",q=1,rl=1,sc=0,slot=0,vsell=1250}
+I[260818]={c=0,il=60,n="EZ-Thro Mana Bomb",q=1,rl=1,sc=0,slot=0,vsell=4000}
+I[260819]={c=4,il=60,n="EZ-Thro Field Transporter: Gadgetzan",q=2,rl=55,sc=-4,slot=12,vsell=5000}
+I[260820]={c=4,il=60,n="SAF-T Emergency Ripper: Everlook",q=2,rl=55,sc=-4,slot=12,vsell=5000}
+I[260821]={c=4,il=60,n="EZ and SAF Field Transporter: Mt. Hyjal",q=2,rl=60,sc=-4,slot=12,vsell=5000}
+I[260822]={c=0,il=60,n="Ultrasafe Rechargeable Battery",q=2,rl=60,sc=14,slot=0,vsell=2500}
+I[260823]={c=4,il=60,n="Dimensional Transporter - Mt. Hyjal",q=2,rl=60,sc=0,slot=0,vsell=5000}
+I[260824]={c=4,il=60,n="Gnomish Poultryizer",q=3,rl=60,sc=-4,slot=12,vsell=5000}
+I[260825]={c=15,il=1,n="Ultralight Goblin Glider",q=2,rl=10,sc=4,slot=0}
+I[260826]={c=7,il=60,n="Gnomish Weather Machine NYI",q=2,rl=60,sc=1,slot=0,vsell=5000}
+I[260827]={c=0,il=60,n="Stealthman 52",q=2,rl=55,sc=14,slot=0,vsell=5000}
+I[260828]={c=4,il=60,n="SAF-T Nitro Boosts",q=2,rl=55,sc=0,slot=6,vsell=1250}
+I[260829]={c=4,il=60,n="EZ-Thro Magnetic Displacer",q=2,rl=55,sc=0,slot=6,vsell=1250}
+I[260830]={c=4,il=60,n="SAF-T Teleport",q=2,rl=55,sc=0,slot=6,vsell=1250}
+I[263509]={c=0,il=15,n="Skywall Souffle",q=1,rl=5,sc=5,slot=0,vsell=100}
+I[263511]={c=9,il=15,n="Recipe: Skywall Souffle",q=1,sc=5,slot=0,vsell=50}
+I[263512]={c=0,il=15,n="Pincer Bites",q=1,rl=5,sc=5,slot=0,vsell=100}
+I[263513]={c=9,il=15,n="Recipe: Pincer Bites",q=1,sc=5,slot=0,vsell=50}
+I[264233]={c=9,il=60,n="Schematic: Dimensional Transporter: Mt. Hyjal",q=1,rl=10,sc=3,slot=0,vbuy=100000,vsell=25000}
+I[267341]={c=0,il=60,n="Sweetpaw Jam",q=1,rl=55,sc=5,slot=0,vsell=200}
+I[269900]={c=15,il=1,n="Centaur Banner Deployment Device",q=2,rl=1,sc=4,slot=0,vsell=500}
+I[269902]={c=0,il=1,n="Hoof-Shaped Foot Pedal",q=1,rl=1,sc=14,slot=0,vsell=100}
+I[272941]={c=7,il=60,n="Thick Logs",q=1,sc=11,slot=0,vbuy=200000,vsell=50000}
+I[273125]={c=15,il=60,n="Lich's Index Finger",q=2,sc=1,slot=0,vsell=25000}
+I[273127]={c=15,il=60,n="Golem Heart",q=2,sc=1,slot=0,vsell=25000}
+I[273128]={c=15,il=60,n="Maker's Spark",q=2,sc=1,slot=0,vsell=25000}
+I[273129]={c=15,il=60,n="Essence of Anarchy",q=2,sc=1,slot=0,vsell=25000}
+I[273130]={c=15,il=60,n="Undeath Engine",q=2,sc=1,slot=0,vsell=25000}
+I[273131]={c=15,il=60,n="Bottled Screams",q=2,sc=1,slot=0,vsell=25000}
+I[274030]={c=7,il=60,n="Malleable Essence of Nature",q=4,rl=1,sc=12,slot=0}
+I[274273]={c=0,il=60,n="Flask of Natural Accuracy",q=2,rl=55,sc=3,slot=0,stats={ITEM_MOD_STAMINA_SHORT=60},vsell=5000}
+I[274274]={c=0,il=60,n="Flask of Natural Aggression",q=2,rl=55,sc=3,slot=0,stats={ITEM_MOD_STAMINA_SHORT=60},vsell=5000}
+I[274275]={c=0,il=60,n="Flask of Natural Precision",q=2,rl=55,sc=3,slot=0,stats={ITEM_MOD_STAMINA_SHORT=60},vsell=5000}
+I[274276]={c=0,il=60,n="Flask of Natural Swiftness",q=2,rl=55,sc=3,slot=0,stats={ITEM_MOD_STAMINA_SHORT=60},vsell=5000}
+I[274387]={c=6,il=65,n="Swiftfeather Arrow",q=4,rl=60,sc=2,slot=24}
+I[274388]={c=6,il=65,n="Swiftstrike Shot",q=4,rl=60,sc=3,slot=24}
+I[274971]={c=0,il=35,n="Briny Seafood Stew",q=1,rl=25,sc=5,slot=0,vsell=12}
+I[274976]={c=0,il=35,n="Plain Ol' Paletusk",q=1,rl=25,sc=5,slot=0,vsell=75}
+I[274977]={c=9,il=1,n="Recipe: Plain Ol' Paletusk",q=1,sc=5,slot=0,vbuy=2000,vsell=500}
+I[275604]={c=4,il=58,n="Venomspew Gloves",q=3,rl=53,sc=1,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=19,RESISTANCE0_NAME=52},vsell=9017}
+I[275605]={c=4,il=58,n="Venomspew Cord",q=3,rl=53,sc=1,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_STAMINA_SHORT=17,RESISTANCE0_NAME=46},vsell=9050}
+I[275606]={c=4,il=58,n="Venomspew Footpads",q=3,rl=53,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=57},vsell=13626}
+I[275607]={c=4,il=58,n="Swarmtender's Gloves",q=3,rl=53,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=20,RESISTANCE0_NAME=52},vsell=9117}
+I[275608]={c=4,il=58,n="Swarmtender's Cord",q=3,rl=53,sc=1,slot=6,stats={ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=46},vsell=9149}
+I[275609]={c=4,il=58,n="Swarmtender's Footpads",q=3,rl=53,sc=1,slot=8,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=57},vsell=13774}
+I[275610]={c=4,il=58,n="Bileblister Claws",q=3,rl=53,sc=2,slot=10,stats={ITEM_MOD_INTELLECT_SHORT=11,ITEM_MOD_STAMINA_SHORT=19,RESISTANCE0_NAME=103},vsell=11612}
+I[275611]={c=4,il=58,n="Bileblister Girdle",q=3,rl=53,sc=2,slot=6,stats={ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_STAMINA_SHORT=17,RESISTANCE0_NAME=93},vsell=11655}
+I[275612]={c=4,il=58,n="Bileblister Boots",q=3,rl=53,sc=2,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=8,RESISTANCE0_NAME=114},vsell=17451}
+I[275613]={c=4,il=58,n="Hivethrasher's Claws",q=3,rl=53,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=20,RESISTANCE0_NAME=103},vsell=11738}
+I[275614]={c=4,il=58,n="Hivethrasher's Girdle",q=3,rl=53,sc=2,slot=6,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=93},vsell=11780}
+I[275615]={c=4,il=58,n="Hivethrasher's Boots",q=3,rl=53,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=19,ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=114},vsell=16390}
+I[275616]={c=4,il=58,n="Scalegut Clenchers",q=3,rl=53,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=11,ITEM_MOD_STAMINA_SHORT=19,RESISTANCE0_NAME=215},vsell=13126}
+I[275617]={c=4,il=58,n="Scalegut Belt",q=3,rl=53,sc=3,slot=6,stats={ITEM_MOD_AGILITY_SHORT=14,ITEM_MOD_STAMINA_SHORT=17,RESISTANCE0_NAME=193},vsell=13176}
+I[275618]={c=4,il=58,n="Scalegut Treaders",q=3,rl=53,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=8,RESISTANCE0_NAME=236},vsell=19928}
+I[275619]={c=4,il=58,n="Broodwatcher's Clenchers",q=3,rl=53,sc=3,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=20,RESISTANCE0_NAME=215},vsell=13275}
+I[275620]={c=4,il=58,n="Broodwatcher's Belt",q=3,rl=53,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=193},vsell=13325}
+I[275621]={c=4,il=58,n="Broodwatcher's Treaders",q=3,rl=53,sc=3,slot=8,stats={ITEM_MOD_STAMINA_SHORT=10,RESISTANCE0_NAME=236},vsell=20152}
+I[275622]={c=4,il=58,n="Goregasher Grips",q=3,rl=53,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=19,ITEM_MOD_STRENGTH_SHORT=11,RESISTANCE0_NAME=379},vsell=15752}
+I[275623]={c=4,il=58,n="Goregasher Support",q=3,rl=53,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=17,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=341},vsell=15809}
+I[275624]={c=4,il=58,n="Goregasher Stompers",q=3,rl=53,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=8,RESISTANCE0_NAME=417},vsell=23622}
+I[275625]={c=4,il=58,n="Clutchlord's Grips",q=3,rl=53,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=20,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=379},vsell=15927}
+I[275626]={c=4,il=58,n="Clutchlord's Support",q=3,rl=53,sc=4,slot=6,stats={ITEM_MOD_STAMINA_SHORT=21,ITEM_MOD_STRENGTH_SHORT=7,RESISTANCE0_NAME=341},vsell=15986}
+I[275627]={c=4,il=58,n="Clutchlord's Stompers",q=3,rl=53,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=10,ITEM_MOD_STRENGTH_SHORT=19,RESISTANCE0_NAME=417},vsell=23882}
+I[276538]={c=4,il=61,n="Spiritcaller Kilt",q=4,rl=60,sc=3,slot=7,stats={RESISTANCE0_NAME=344},vsell=40208}
+I[276539]={c=4,il=61,n="Spiritcaller Gloves",q=4,rl=60,sc=3,slot=10,stats={RESISTANCE0_NAME=245},vsell=20181}
+I[276540]={c=4,il=61,n="Spiritcaller Mantle",q=4,rl=60,sc=3,slot=3,stats={RESISTANCE0_NAME=294},vsell=30523}
+I[276541]={c=4,il=61,n="Spiritcaller Boots",q=4,rl=60,sc=3,slot=8,stats={RESISTANCE0_NAME=270},vsell=30639}
+I[276976]={c=9,il=1,n="Plans: Cloudy Skyforged Helm",q=2,sc=4,slot=0,vsell=25000}
+I[276977]={c=9,il=1,n="Plans: Cloudy Skyforged Pauldrons",q=2,sc=4,slot=0,vsell=25000}
+I[276978]={c=9,il=1,n="Pattern: Cloudy Gustwoven Hood",q=2,sc=1,slot=0,vsell=25000}
+I[276979]={c=9,il=1,n="Pattern: Cloudy Gustwoven Spaulders",q=2,sc=1,slot=0,vsell=25000}
+I[276980]={c=9,il=1,n="Pattern: Cloudy Windraveled Cover",q=2,sc=1,slot=0,vsell=25000}
+I[276981]={c=9,il=1,n="Pattern: Cloudy Windraveled Drapes",q=2,sc=1,slot=0,vsell=25000}
+I[276982]={c=9,il=1,n="Pattern: Cloudy Stormsewn Cowl",q=2,sc=2,slot=0,vsell=25000}
+I[276983]={c=9,il=1,n="Pattern: Cloudy Stormsewn Epaulets",q=2,sc=2,slot=0,vsell=25000}
+I[276984]={c=9,il=1,n="Plans: Azure Skyforged Helm",q=2,sc=4,slot=0,vsell=25000}
+I[276985]={c=9,il=1,n="Plans: Azure Skyforged Pauldrons",q=2,sc=4,slot=0,vsell=25000}
+I[276986]={c=9,il=1,n="Pattern: Azure Gustwoven Hood",q=2,sc=1,slot=0,vsell=25000}
+I[276987]={c=9,il=1,n="Pattern: Azure Gustwoven Spaulders",q=2,sc=1,slot=0,vsell=25000}
+I[276988]={c=9,il=1,n="Pattern: Azure Windraveled Cover",q=2,sc=1,slot=0,vsell=25000}
+I[276989]={c=9,il=1,n="Pattern: Azure Windraveled Drapes",q=2,sc=1,slot=0,vsell=25000}
+I[276990]={c=9,il=1,n="Pattern: Azure Stormsewn Cowl",q=2,sc=2,slot=0,vsell=25000}
+I[276991]={c=9,il=1,n="Pattern: Azure Stormsewn Epaulets",q=2,sc=2,slot=0,vsell=25000}
+I[276992]={c=4,il=12,n="Cloudy Skyforged Chainmail",q=2,rl=7,sc=3,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=122},vsell=228}
+I[276993]={c=4,il=10,n="Cloudy Skyforged Wristguards",q=2,rl=5,sc=3,slot=9,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=47},vsell=70}
+I[276994]={c=4,il=11,n="Cloudy Skyforged Gauntlets",q=2,rl=6,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=72},vsell=92}
+I[276995]={c=4,il=10,n="Cloudy Skyforged Chain",q=2,rl=5,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=61},vsell=71}
+I[276996]={c=4,il=12,n="Cloudy Skyforged Legguards",q=2,rl=7,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=107},vsell=232}
+I[276997]={c=4,il=11,n="Cloudy Skyforged Greaves",q=2,rl=6,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=79},vsell=140}
+I[276998]={c=4,il=12,n="Cloudy Gustwoven Harness",q=2,rl=7,sc=2,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=62},vsell=200}
+I[276999]={c=4,il=10,n="Cloudy Gustwoven Bracers",q=2,rl=5,sc=2,slot=9,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=24},vsell=62}
+I[277000]={c=4,il=11,n="Cloudy Gustwoven Gloves",q=2,rl=6,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=36},vsell=81}
+I[277001]={c=4,il=10,n="Cloudy Gustwoven Belt",q=2,rl=5,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=31},vsell=62}
+I[277002]={c=4,il=12,n="Cloudy Gustwoven Trousers",q=2,rl=7,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=54},vsell=203}
+I[277003]={c=4,il=11,n="Cloudy Gustwoven Boots",q=2,rl=6,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=40},vsell=122}
+I[277004]={c=4,il=12,n="Cloudy Windraveled Jerkin",q=2,rl=7,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=62},vsell=204}
+I[277005]={c=4,il=10,n="Cloudy Windraveled Armguards",q=2,rl=5,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=1,RESISTANCE0_NAME=24},vsell=63}
+I[277006]={c=4,il=11,n="Cloudy Windraveled Mitts",q=2,rl=6,sc=2,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=36},vsell=82}
+I[277007]={c=4,il=10,n="Cloudy Windraveled Strap",q=2,rl=5,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=31},vsell=57}
+I[277008]={c=4,il=12,n="Cloudy Windraveled Pants",q=2,rl=7,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=54},vsell=187}
+I[277009]={c=4,il=11,n="Cloudy Windraveled Footwraps",q=2,rl=6,sc=2,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=40},vsell=113}
+I[277010]={c=4,il=12,n="Cloudy Stormsewn Vest",q=2,rl=7,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=23},vsell=151}
+I[277011]={c=4,il=10,n="Cloudy Stormsewn Cuffs",q=2,rl=5,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=1,RESISTANCE0_NAME=8},vsell=46}
+I[277012]={c=4,il=11,n="Cloudy Stormsewn Handwraps",q=2,rl=6,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=13},vsell=60}
+I[277013]={c=4,il=10,n="Cloudy Stormsewn Cord",q=2,rl=5,sc=1,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=11},vsell=47}
+I[277014]={c=4,il=12,n="Cloudy Stormsewn Leggings",q=2,rl=7,sc=1,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=20},vsell=157}
+I[277015]={c=4,il=11,n="Cloudy Stormsewn Shoes",q=2,rl=6,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=14},vsell=94}
+I[277016]={c=4,il=12,n="Azure Skyforged Chainmail",q=2,rl=7,sc=3,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=122},vsell=238}
+I[277017]={c=4,il=10,n="Azure Skyforged Wristguards",q=2,rl=5,sc=3,slot=9,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=47},vsell=73}
+I[277018]={c=4,il=11,n="Azure Skyforged Gauntlets",q=2,rl=6,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=72},vsell=96}
+I[277019]={c=4,il=10,n="Azure Skyforged Chain",q=2,rl=5,sc=3,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=61},vsell=74}
+I[277020]={c=4,il=12,n="Azure Skyforged Legguards",q=2,rl=7,sc=3,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=107},vsell=241}
+I[277021]={c=4,il=11,n="Azure Skyforged Greaves",q=2,rl=6,sc=3,slot=8,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=79},vsell=146}
+I[277022]={c=4,il=12,n="Azure Gustwoven Harness",q=2,rl=7,sc=2,slot=5,stats={ITEM_MOD_STRENGTH_SHORT=2,RESISTANCE0_NAME=62},vsell=203}
+I[277023]={c=4,il=10,n="Azure Gustwoven Bracers",q=2,rl=5,sc=2,slot=9,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=24},vsell=63}
+I[277024]={c=4,il=11,n="Azure Gustwoven Gloves",q=2,rl=6,sc=2,slot=10,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=36},vsell=82}
+I[277025]={c=4,il=10,n="Azure Gustwoven Belt",q=2,rl=5,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=31},vsell=63}
+I[277026]={c=4,il=12,n="Azure Gustwoven Trousers",q=2,rl=7,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=54},vsell=205}
+I[277027]={c=4,il=11,n="Azure Gustwoven Boots",q=2,rl=6,sc=2,slot=8,stats={ITEM_MOD_AGILITY_SHORT=1,RESISTANCE0_NAME=40},vsell=112}
+I[277028]={c=4,il=12,n="Azure Windraveled Jerkin",q=2,rl=7,sc=2,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=62},vsell=187}
+I[277029]={c=4,il=10,n="Azure Windraveled Armguards",q=2,rl=5,sc=2,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=1,RESISTANCE0_NAME=24},vsell=58}
+I[277030]={c=4,il=11,n="Azure Windraveled Mitts",q=2,rl=6,sc=2,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=36},vsell=78}
+I[277031]={c=4,il=10,n="Azure Windraveled Strap",q=2,rl=5,sc=2,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=31},vsell=60}
+I[277032]={c=4,il=12,n="Azure Windraveled Pants",q=2,rl=7,sc=2,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=54},vsell=195}
+I[277033]={c=4,il=11,n="Azure Windraveled Footwraps",q=2,rl=6,sc=2,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=40},vsell=118}
+I[277034]={c=4,il=12,n="Azure Stormsewn Vest",q=2,rl=7,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=2,RESISTANCE0_NAME=23},vsell=157}
+I[277035]={c=4,il=10,n="Azure Stormsewn Cuffs",q=2,rl=5,sc=1,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=1,RESISTANCE0_NAME=8},vsell=48}
+I[277036]={c=4,il=11,n="Azure Stormsewn Handwraps",q=2,rl=6,sc=1,slot=10,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=13},vsell=63}
+I[277037]={c=4,il=10,n="Azure Stormsewn Cord",q=2,rl=5,sc=1,slot=6,stats={ITEM_MOD_STAMINA_SHORT=1,RESISTANCE0_NAME=11},vsell=49}
+I[277038]={c=4,il=12,n="Azure Stormsewn Leggings",q=2,rl=7,sc=1,slot=7,stats={ITEM_MOD_STAMINA_SHORT=2,RESISTANCE0_NAME=20},vsell=160}
+I[277039]={c=4,il=11,n="Azure Stormsewn Shoes",q=2,rl=6,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=1,RESISTANCE0_NAME=14},vsell=96}
+I[277040]={c=4,il=35,n="Cloudy Skyforged Helm",q=2,rl=30,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=173},vsell=3352}
+I[277041]={c=4,il=35,n="Cloudy Skyforged Pauldrons",q=2,rl=30,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=160},vsell=3365}
+I[277042]={c=4,il=35,n="Cloudy Gustwoven Hood",q=2,rl=30,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=83},vsell=2809}
+I[277043]={c=4,il=35,n="Cloudy Gustwoven Spaulders",q=2,rl=30,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=76},vsell=2819}
+I[277044]={c=4,il=35,n="Cloudy Windraveled Cover",q=2,rl=30,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=83},vsell=2829}
+I[277045]={c=4,il=35,n="Cloudy Windraveled Drapes",q=2,rl=30,sc=2,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=76},vsell=2839}
+I[277046]={c=4,il=35,n="Cloudy Stormsewn Cowl",q=2,rl=30,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=38},vsell=2113}
+I[277047]={c=4,il=35,n="Cloudy Stormsewn Epaulets",q=2,rl=30,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=35},vsell=2121}
+I[277048]={c=4,il=35,n="Azure Skyforged Helm",q=2,rl=30,sc=3,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=173},vsell=3208}
+I[277049]={c=4,il=35,n="Azure Skyforged Pauldrons",q=2,rl=30,sc=3,slot=3,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=160},vsell=3220}
+I[277050]={c=4,il=35,n="Azure Gustwoven Hood",q=2,rl=30,sc=2,slot=1,stats={ITEM_MOD_STAMINA_SHORT=9,ITEM_MOD_STRENGTH_SHORT=9,RESISTANCE0_NAME=83},vsell=2688}
+I[277051]={c=4,il=35,n="Azure Gustwoven Spaulders",q=2,rl=30,sc=2,slot=3,stats={ITEM_MOD_AGILITY_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=76},vsell=2698}
+I[277052]={c=4,il=35,n="Azure Windraveled Cover",q=2,rl=30,sc=2,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=83},vsell=2708}
+I[277053]={c=4,il=35,n="Azure Windraveled Drapes",q=2,rl=30,sc=2,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=76},vsell=2719}
+I[277054]={c=4,il=35,n="Azure Stormsewn Cowl",q=2,rl=30,sc=1,slot=1,stats={ITEM_MOD_INTELLECT_SHORT=9,ITEM_MOD_STAMINA_SHORT=9,RESISTANCE0_NAME=38},vsell=2177}
+I[277055]={c=4,il=35,n="Azure Stormsewn Epaulets",q=2,rl=30,sc=1,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=7,ITEM_MOD_STAMINA_SHORT=7,RESISTANCE0_NAME=35},vsell=2185}
+I[277132]={c=0,il=15,n="Harvester Override Signalcaster",q=2,sc=14,slot=0,vsell=200}
+I[277470]={c=9,il=15,n="Schematic: Harvester Override Signalcaster",q=1,sc=3,slot=0,vsell=300}
+I[277672]={c=4,il=10,n="Rough Copper Chain Boots",q=2,rl=4,sc=3,slot=8,stats={ITEM_MOD_STRENGTH_SHORT=1,RESISTANCE0_NAME=74},vsell=106}
+I[277673]={c=9,il=1,n="Plans: Rough Copper Chain Boots",q=2,sc=4,slot=0,vsell=150}
+I[277715]={c=1,il=5,n="Light Leather Reagent Bag",q=1,sc=11,slot=18,vsell=100}
+I[277716]={c=9,il=5,n="Pattern: Light Leather Reagent Bag",q=2,rl=1,sc=1,slot=0,vbuy=150,vsell=30}
+I[279246]={c=2,il=65,n="Torch of Light",q=4,rl=60,sc=19,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=76.76,ITEM_MOD_SPIRIT_SHORT=11},vsell=66513}
+I[279247]={c=4,il=65,n="Steadfast Libram",q=4,rl=60,sc=7,slot=28,vsell=24157}
+I[279248]={c=4,il=65,n="Libram of Infusion",q=4,rl=60,sc=7,slot=28,vsell=24924}
+I[279249]={c=4,il=65,n="Totem of Urgency",q=4,rl=60,sc=9,slot=28,vsell=25015}
+I[279250]={c=4,il=65,n="Idol of Swiftness",q=4,rl=60,sc=8,slot=28,vsell=25109}
+I[279251]={c=4,il=65,n="Idol of the Ursine Twins",q=4,rl=60,sc=8,slot=28,vsell=25203}
+I[279252]={c=4,il=65,n="Elderwild Waistcord",q=4,rl=60,sc=2,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=18,ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=111},vsell=21249}
+I[279253]={c=4,il=65,n="Outlaw's Collar",q=4,rl=60,sc=2,slot=1,stats={ITEM_MOD_AGILITY_SHORT=21,ITEM_MOD_STAMINA_SHORT=31,RESISTANCE0_NAME=160},vsell=31820}
+I[279254]={c=4,il=65,n="Elderwild Pants",q=4,rl=60,sc=2,slot=7,stats={ITEM_MOD_SPIRIT_SHORT=24,ITEM_MOD_STAMINA_SHORT=27,RESISTANCE0_NAME=173},vsell=42471}
+I[279255]={c=4,il=65,n="Eternity Pauldrons",q=4,rl=60,sc=3,slot=3,stats={ITEM_MOD_SPIRIT_SHORT=18,ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=312},vsell=38535}
+I[279256]={c=4,il=65,n="Tranquil Wristguards",q=4,rl=60,sc=3,slot=9,stats={ITEM_MOD_INTELLECT_SHORT=10,ITEM_MOD_STAMINA_SHORT=14,ITEM_MOD_STRENGTH_SHORT=16,RESISTANCE0_NAME=182},vsell=25670}
+I[279257]={c=4,il=65,n="Mourning Handguards",q=4,rl=60,sc=3,slot=10,stats={ITEM_MOD_AGILITY_SHORT=21,ITEM_MOD_INTELLECT_SHORT=14,ITEM_MOD_STAMINA_SHORT=18,RESISTANCE0_NAME=260},vsell=25762}
+I[279258]={c=0,il=65,n="Wild Leather Armor Kit",q=3,rl=60,sc=6,slot=0,stats={ITEM_MOD_STAMINA_SHORT=10},vsell=5000}
+I[279259]={c=2,il=65,n="Ironwood Blade",q=4,rl=60,sc=7,slot=13,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=47.29,ITEM_MOD_STAMINA_SHORT=12,ITEM_MOD_STRENGTH_SHORT=8},vsell=86500}
+I[279260]={c=2,il=65,n="Forest Defender's Axe",q=4,rl=60,sc=1,slot=17,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=61.52,ITEM_MOD_STAMINA_SHORT=27,ITEM_MOD_STRENGTH_SHORT=18},vsell=108506}
+I[279261]={c=2,il=65,n="Greenhammer",q=4,rl=60,sc=4,slot=13,stats={ITEM_MOD_AGILITY_SHORT=8,ITEM_MOD_DAMAGE_PER_SECOND_SHORT=47.39,ITEM_MOD_STAMINA_SHORT=12},vsell=87118}
+I[279262]={c=4,il=65,n="Evergreen Shield",q=4,rl=60,sc=6,slot=14,stats={ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=2468},vsell=55955}
+I[279263]={c=4,il=65,n="Depleted Thorium Sabatons",q=4,rl=60,sc=4,slot=8,stats={ITEM_MOD_STAMINA_SHORT=21,ITEM_MOD_STRENGTH_SHORT=14,RESISTANCE0_NAME=507},vsell=45977}
+I[279264]={c=4,il=65,n="Heavy Thorium Gauntlets",q=4,rl=60,sc=4,slot=10,stats={ITEM_MOD_STAMINA_SHORT=14,ITEM_MOD_STRENGTH_SHORT=21,RESISTANCE0_NAME=461},vsell=28800}
+I[279265]={c=4,il=65,n="Azerothium Legplates",q=4,rl=60,sc=4,slot=7,stats={ITEM_MOD_AGILITY_SHORT=18,ITEM_MOD_STAMINA_SHORT=27,ITEM_MOD_STRENGTH_SHORT=24,RESISTANCE0_NAME=646},vsell=57492}
+I[279266]={c=4,il=65,n="Robes of Fiery Devastation",q=4,rl=60,sc=1,slot=5,stats={ITEM_MOD_INTELLECT_SHORT=24,ITEM_MOD_STAMINA_SHORT=27,RESISTANCE0_NAME=100},vsell=32978}
+I[279267]={c=4,il=65,n="Mana-infused Cord",q=4,rl=60,sc=1,slot=6,stats={ITEM_MOD_SPIRIT_SHORT=18,ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=56},vsell=16551}
+I[279268]={c=4,il=65,n="Rime-encrusted Boots",q=4,rl=60,sc=1,slot=8,stats={ITEM_MOD_SPIRIT_SHORT=18,ITEM_MOD_STAMINA_SHORT=21,RESISTANCE0_NAME=69},vsell=24918}
+I[279269]={c=4,il=65,n="Fel Cape",q=4,rl=60,sc=-6,slot=16,stats={ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=50},vsell=25012}
+I[279270]={c=4,il=65,n="Cloak of Earth and Sky",q=4,rl=60,sc=-6,slot=16,stats={ITEM_MOD_SPIRIT_SHORT=14,ITEM_MOD_STAMINA_SHORT=16,RESISTANCE0_NAME=50},vsell=25106}
+I[279271]={c=1,il=65,n="Felblood Soul Bag",q=4,rl=60,sc=1,slot=18,vsell=80000}
+I[279272]={c=0,il=65,n="SAF-T Ultra Precision Scope",q=3,rl=60,sc=6,slot=0,vsell=25000}
+I[279273]={c=2,il=65,n="Hyper Deluxe Sniper Rifle Mk XVII",q=4,rl=60,sc=3,slot=15,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=36.8,ITEM_MOD_SPIRIT_SHORT=6,ITEM_MOD_STAMINA_SHORT=8},vsell=66347}
+I[279940]={c=0,il=28,n="Toxin Study",q=1,sc=8,slot=0}
+I[279941]={c=0,il=28,n="Tanning Rack",q=1,sc=8,slot=0}
+I[279943]={c=0,il=28,n="Spinning Wheel",q=1,sc=8,slot=0}
+I[279944]={c=0,il=4,n="Sharpening Wheel",q=1,sc=8,slot=0}
+I[279945]={c=0,il=60,n="Sewing Machine",q=1,sc=8,slot=0}
+I[279949]={c=0,il=28,n="Repair Bot",q=1,sc=8,slot=0}
+I[279950]={c=0,il=4,n="Reagent Bot",q=1,sc=8,slot=0}
+I[279951]={c=0,il=60,n="Plague Doctor's Laboratory",q=1,sc=8,slot=0}
+I[279955]={c=0,il=60,n="Master Forge",q=1,sc=8,slot=0}
+I[279956]={c=0,il=4,n="Mana Well",q=1,sc=8,slot=0}
+I[279957]={c=0,il=28,n="Cookie's Feast",q=1,sc=8,slot=0}
+I[279959]={c=0,il=60,n="Loom",q=1,sc=8,slot=0}
+I[279961]={c=0,il=18,n="Journeyman Campfire Kit",q=1,sc=8,slot=0}
+I[279968]={c=0,il=4,n="First Aid Kit",q=1,sc=8,slot=0}
+I[279970]={c=0,il=28,n="Fermenter",q=1,sc=8,slot=0}
+I[279972]={c=0,il=4,n="Faction Banner",q=1,sc=8,slot=0}
+I[279973]={c=0,il=4,n="Faction Banner",q=1,sc=8,slot=0}
+I[279974]={c=0,il=40,n="Expert Campfire Kit",q=1,sc=8,slot=0}
+I[279976]={c=0,il=4,n="Enchanted Lute",q=1,sc=8,slot=0}
+I[279978]={c=0,il=4,n="Camp Tent",q=1,sc=8,slot=0}
+I[279981]={c=0,il=4,n="Basic Campfire Kit",q=1,sc=8,slot=0}
+I[279982]={c=0,il=60,n="Iron Oven",q=1,sc=8,slot=0}
+I[279985]={c=0,il=28,n="Arcane Salvager",q=1,sc=8,slot=0}
+I[279987]={c=0,il=60,n="Arcane Forge",q=1,sc=8,slot=0}
+I[279988]={c=0,il=28,n="Anvil",q=1,sc=8,slot=0}
+I[279989]={c=0,il=60,n="Anarchist's Workbench",q=1,rl=10,sc=8,slot=0}
+I[279990]={c=0,il=60,n="Alchemy Laboratory",q=1,sc=8,slot=0}
+I[280306]={c=4,il=35,n="Whimsical Waistwrap",q=2,rl=30,sc=1,slot=6,stats={RESISTANCE0_NAME=26},vsell=1425}
+I[280307]={c=4,il=35,n="Gizmo Girdle",q=2,rl=30,sc=2,slot=6,stats={RESISTANCE0_NAME=57},vsell=1802}
+I[280308]={c=4,il=35,n="Clanking Cord",q=2,rl=30,sc=3,slot=6,stats={RESISTANCE0_NAME=120},vsell=2153}
+I[280310]={c=4,il=45,n="Floppy Goggles",q=2,rl=40,sc=1,slot=1,stats={RESISTANCE0_NAME=48},vsell=4987}
+I[280311]={c=4,il=45,n="Bent Goggles",q=2,rl=40,sc=2,slot=1,stats={RESISTANCE0_NAME=99},vsell=6273}
+I[280312]={c=4,il=45,n="Stuckbutton Goggles",q=2,rl=40,sc=3,slot=1,stats={RESISTANCE0_NAME=202},vsell=7568}
+I[280313]={c=4,il=45,n="Dented Goggles",q=2,rl=40,sc=4,slot=1,stats={RESISTANCE0_NAME=355},vsell=8805}
+I[284869]={c=0,il=52,n="Unsanctified Grenade",q=1,sc=0,slot=0,vsell=1500}
+I[285275]={c=2,il=18,n="Satchel of Copper Bombs",q=2,rl=13,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=3.09,ITEM_MOD_STAMINA_SHORT=2},vsell=9}
+I[285276]={c=2,il=33,n="Satchel of Bronze Bombs",q=2,rl=28,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=5.45,ITEM_MOD_STAMINA_SHORT=4},vsell=9}
+I[285277]={c=2,il=46,n="Satchel of Iron Bombs",q=2,rl=41,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=8.34,ITEM_MOD_STAMINA_SHORT=6},vsell=9}
+I[285278]={c=2,il=57,n="Satchel of Dark Iron Bombs",q=2,rl=52,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=10.35,ITEM_MOD_STAMINA_SHORT=8},vsell=9}
+I[285279]={c=2,il=22,n="Cracked Blacksmith Hammer",q=2,rl=17,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=10,ITEM_MOD_STRENGTH_SHORT=2},vsell=9}
+I[285280]={c=2,il=39,n="Mithril Blacksmith Hammer",q=2,rl=34,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=19.29,ITEM_MOD_STRENGTH_SHORT=5},vsell=9}
+I[285281]={c=2,il=54,n="Arcanite Blacksmith Hammer",q=3,rl=49,sc=16,slot=25,stats={ITEM_MOD_DAMAGE_PER_SECOND_SHORT=32.05,ITEM_MOD_SPIRIT_SHORT=4,ITEM_MOD_STRENGTH_SHORT=6},vsell=9}
+I[286152]={c=0,il=45,n="Plated Armorfish",q=1,rl=35,sc=5,slot=0,vsell=8}
+end)()
+;(function()
+N[54]={n="Corina Steele",side="A",x=41.4,y=65.8,zone="Elwynn Forest"}
+N[66]={n="Tharynn Bouden",side="A",x=41.8,y=67,zone="Elwynn Forest"}
+N[74]={n="Kurran Steele",side="A",x=41.4,y=65.6,zone="Elwynn Forest"}
+N[78]={n="Janos Hammerknuckle",side="A",x=47.2,y=41.8,zone="Elwynn Forest"}
+N[151]={n="Brog Hamfist",side="A",x=43.8,y=66,zone="Elwynn Forest"}
+N[152]={n="Brother Danil",side="A",x=47.4,y=41.4,zone="Elwynn Forest"}
+N[167]={n="Morhan Coppertongue",side="A",x=34,y=46.6,zone="Loch Modan"}
+N[190]={n="Dermot Johns",side="A",x=47.4,y=41.6,zone="Elwynn Forest"}
+N[222]={n="Nillen Andemar",side="A",x=42.8,y=10,zone="Loch Modan"}
+N[223]={n="Dan Golthas",side="H",x=70.4,y=58.4,zone="Undercity"}
+N[225]={n="Gavin Gnarltree",side="A",x=73.4,y=49.8,zone="Duskwood"}
+N[226]={n="Morg Gnarltree",side="A",x=73.8,y=48.4,zone="Duskwood"}
+N[227]={n="Mabel Solaj",side="A",x=73.8,y=45.6,zone="Duskwood"}
+N[228]={n="Avette Fellwood",side="A",x=73,y=44.4,zone="Duskwood"}
+N[233]={n="Farmer Saldean",side="A",x=56,y=31.2,zone="Westfall"}
+N[258]={n="Joshua Maclure",side="A",x=42.4,y=89.2,zone="Elwynn Forest"}
+N[274]={n="Barkeep Hann",side="A",x=73.8,y=44.2,zone="Duskwood"}
+N[277]={n="Roberto Pupellyverbos",side="A",x=51.4,y=68.2,zone="Stormwind City"}
+N[295]={n="Innkeeper Farley",side="A",x=43.8,y=65.8,zone="Elwynn Forest"}
+N[340]={n="Kendor Kabonka",side="A",x=74.4,y=36.4,zone="Stormwind City"}
+N[372]={n="Karm Ironquill",side="A",x=37,y=47.2,zone="Loch Modan"}
+N[384]={n="Katie Hunter",side="A",x=84,y=65.4,zone="Elwynn Forest"}
+N[465]={n="Barkeep Dobbins",side="A",x=43.8,y=65.8,zone="Elwynn Forest"}
+N[483]={n="Elaine Trias",side="A",x=60.4,y=63.4,zone="Stormwind City"}
+N[491]={n="Quartermaster Lewis",side="A",x=56.8,y=47.2,zone="Westfall"}
+N[514]={n="Smith Argus",side="A",x=41.6,y=65.4,zone="Elwynn Forest"}
+N[734]={n="Corporal Bluth",side="A",x=38,y=3,zone="Stranglethorn Vale"}
+N[777]={n="Amy Davenport",side="A",x=29,y=47.4,zone="Redridge Mountains"}
+N[789]={n="Kimberly Hiett",side="A",x=27,y=45.4,zone="Redridge Mountains"}
+N[790]={n="Karen Taylor",side="A",x=29.8,y=47.4,zone="Redridge Mountains"}
+N[791]={n="Lindsay Ashlock",side="A",x=28.4,y=47.4,zone="Redridge Mountains"}
+N[793]={n="Kara Adams",side="A",x=30.6,y=46.4,zone="Redridge Mountains"}
+N[829]={n="Adlin Pridedrift",side="A",x=30,y=71.4,zone="Dun Morogh"}
+N[836]={n="Durnan Furcutter",side="A",x=28.8,y=66.4,zone="Dun Morogh"}
+N[843]={n="Gina MacGregor",side="A",x=57.4,y=54,zone="Westfall"}
+N[844]={n="Antonio Perelli",side="A",x=42.4,y=66.6,zone="Elwynn Forest"}
+N[894]={n="Homer Stonefield",side="A",x=33.6,y=83,zone="Elwynn Forest"}
+N[896]={n="Veldan Lightfoot",side="A",x=25.2,y=73.8,zone="Elwynn Forest"}
+N[945]={n="Rybrad Coldbank",side="A",x=28.6,y=67.8,zone="Dun Morogh"}
+N[954]={n="Kat Sampson",side="A",x=82.4,y=64,zone="Loch Modan"}
+N[955]={n="Sergeant De Vries",side="A",x=24,y=73,zone="Elwynn Forest"}
+N[956]={n="Dorin Songblade",side="A",x=30.8,y=46.4,zone="Redridge Mountains"}
+N[957]={n="Dane Lindgren",side="A",x=57,y=15.4,zone="Stormwind City"}
+N[958]={n="Dawn Brightstar",side="A",x=64.8,y=69.2,zone="Elwynn Forest"}
+N[959]={n="Morley Eberlein",side="A",x=64.6,y=69.6,zone="Elwynn Forest"}
+N[960]={n="Gunder Thornbush",side="A",x=73.8,y=45,zone="Duskwood"}
+N[980]={n="Grimnal",side="H",x=45,y=50.2,zone="Swamp of Sorrows"}
+N[981]={n="Hartash",side="H",x=45.4,y=51.2,zone="Swamp of Sorrows"}
+N[982]={n="Thultash",side="H",x=46.4,y=54.2,zone="Swamp of Sorrows"}
+N[983]={n="Thultazor",side="H",x=45.8,y=53,zone="Swamp of Sorrows"}
+N[984]={n="Thralosh",side="H",x=44.8,y=51.4,zone="Swamp of Sorrows"}
+N[989]={n="Banalash",side="H",x=44.4,y=57,zone="Swamp of Sorrows"}
+N[1103]={n="Eldrin",side="A",x=79.2,y=69,zone="Elwynn Forest"}
+N[1104]={n="Grundel Harkin",side="A",x=28.8,y=67.8,zone="Dun Morogh"}
+N[1146]={n="Vharr",side="H",x=32.2,y=28,zone="Stranglethorn Vale"}
+N[1147]={n="Hragran",side="H",x=31.4,y=29.2,zone="Stranglethorn Vale"}
+N[1148]={n="Nerrist",side="H",x=32.6,y=29.2,zone="Stranglethorn Vale"}
+N[1149]={n="Uthok",side="H",x=31.4,y=28,zone="Stranglethorn Vale"}
+N[1198]={n="Rallic Finn",side="A",x=83.2,y=66,zone="Elwynn Forest"}
+N[1213]={n="Godric Rothgar",side="A",x=47.6,y=41.4,zone="Elwynn Forest"}
+N[1214]={n="Aldren Cordon",side="A",x=64.8,y=66,zone="Loch Modan"}
+N[1215]={n="Alchemist Mallory",side="A",x=39.8,y=48.4,zone="Elwynn Forest"}
+N[1237]={n="Kazan Mogosh",side="A",x=68.4,y=54.4,zone="Dun Morogh"}
+N[1238]={n="Gamili Frosthide",side="A",x=45.2,y=51.8,zone="Dun Morogh"}
+N[1240]={n="Boran Ironclink",side="A",x=45.2,y=51.8,zone="Dun Morogh"}
+N[1241]={n="Tognus Flintfire",side="A",x=45.2,y=52,zone="Dun Morogh"}
+N[1243]={n="Hegnar Rumbleshot",side="A",x=40.6,y=65,zone="Dun Morogh"}
+N[1246]={n="Vosur Brakthel",side="A",x=66.4,y=55.2,zone="Ironforge"}
+N[1247]={n="Innkeeper Belm",side="A",x=47.4,y=52.4,zone="Dun Morogh"}
+N[1249]={n="Quartermaster Hudson",side="A",x=25.2,y=74,zone="Elwynn Forest"}
+N[1250]={n="Drake Lindgren",side="A",x=83,y=66.4,zone="Elwynn Forest"}
+N[1257]={n="Keldric Boucher",side="A",x=55,y=65.2,zone="Stormwind City"}
+N[1261]={n="Veron Amberstill",side="A",x=63.4,y=50.4,zone="Dun Morogh"}
+N[1263]={n="Yarlyn Amberstill",side="A",x=63.2,y=50.2,zone="Dun Morogh"}
+N[1273]={n="Grawn Thromwyn",side="A",x=45.2,y=52,zone="Dun Morogh"}
+N[1275]={n="Kyra Boucher",side="A",x=56.2,y=65,zone="Stormwind City"}
+N[1285]={n="Thurman Mullby",side="A",x=58,y=61.6,zone="Stormwind City"}
+N[1286]={n="Edna Mullby",side="A",x=58,y=60.6,zone="Stormwind City"}
+N[1287]={n="Marda Weller",side="A",x=57.2,y=57,zone="Stormwind City"}
+N[1289]={n="Gunther Weller",side="A",x=57.2,y=57.2,zone="Stormwind City"}
+N[1291]={n="Carla Granger",side="A",x=55,y=56,zone="Stormwind City"}
+N[1294]={n="Aldric Moore",side="A",x=54.8,y=55.2,zone="Stormwind City"}
+N[1295]={n="Lara Moore",side="A",x=54.8,y=55.4,zone="Stormwind City"}
+N[1296]={n="Felder Stover",side="A",x=85,y=68.4,zone="Burning Steppes"}
+N[1297]={n="Lina Stover",side="A",x=50.4,y=57.4,zone="Stormwind City"}
+N[1298]={n="Frederick Stover",side="A",x=50.2,y=57.4,zone="Stormwind City"}
+N[1299]={n="Lisbeth Schneider",side="A",x=49.4,y=54.4,zone="Stormwind City"}
+N[1300]={n="Lawrence Schneider",side="A",x=43.4,y=73.8,zone="Stormwind City"}
+N[1301]={n="Julia Gallina",side="A",x=51.8,y=68.4,zone="Stormwind City"}
+N[1302]={n="Bernard Gump",side="A",x=64.2,y=61,zone="Stormwind City"}
+N[1303]={n="Felicia Gump",side="A",x=64.2,y=60.4,zone="Stormwind City"}
+N[1304]={n="Darian Singh",side="A",x=29.4,y=67.8,zone="Stormwind City"}
+N[1305]={n="Jarel Moor",side="A",x=28.2,y=75.6,zone="Stormwind City"}
+N[1307]={n="Charys Yserian",side="A",x=32.4,y=80,zone="Stormwind City"}
+N[1308]={n="Owen Vaughn",side="A",x=36,y=74.4,zone="Stormwind City"}
+N[1309]={n="Wynne Larson",side="A",x=41.6,y=76.6,zone="Stormwind City"}
+N[1310]={n="Evan Larson",side="A",x=42.4,y=76.4,zone="Stormwind City"}
+N[1311]={n="Joachim Brenlow",side="A",x=40.4,y=90.2,zone="Stormwind City"}
+N[1312]={n="Ardwyn Cailen",side="A",x=42.8,y=65.4,zone="Stormwind City"}
+N[1313]={n="Maria Lumere",side="A",x=46.4,y=78.8,zone="Stormwind City"}
+N[1314]={n="Duncan Cullen",side="A",x=43.4,y=74.2,zone="Stormwind City"}
+N[1315]={n="Allan Hafgan",side="A",x=43,y=65.4,zone="Stormwind City"}
+N[1316]={n="Adair Gilroy",side="A",x=41.4,y=64.4,zone="Stormwind City"}
+N[1317]={n="Lucan Cordell",side="A",x=43,y=64.4,zone="Stormwind City"}
+N[1318]={n="Jessara Cordell",side="A",x=43,y=64.2,zone="Stormwind City"}
+N[1319]={n="Bryan Cross",side="A",x=64.2,y=42.8,zone="Stormwind City"}
+N[1320]={n="Seoman Griffith",side="A",x=67.4,y=48.8,zone="Stormwind City"}
+N[1321]={n="Alyssa Griffith",side="A",x=67.4,y=49,zone="Stormwind City"}
+N[1322]={n="Maxton Strang",side="A",x=67.8,y=8.4,zone="Desolace"}
+N[1323]={n="Osric Strang",side="A",x=74.2,y=47.4,zone="Stormwind City"}
+N[1324]={n="Heinrich Stone",side="A",x=74.2,y=42.8,zone="Stormwind City"}
+N[1325]={n="Jasper Fel",side="A",x=77.8,y=59.6,zone="Stormwind City"}
+N[1326]={n="Sloan McCoy",side="A",x=76.4,y=60,zone="Stormwind City"}
+N[1328]={n="Elly Langston",side="A",x=73.2,y=37.4,zone="Stormwind City"}
+N[1333]={n="Gerik Koen",side="A",x=69,y=42.4,zone="Stormwind City"}
+N[1339]={n="Mayda Thane",side="A",x=67,y=43.2,zone="Stormwind City"}
+N[1341]={n="Wilhelm Strang",side="A",x=74.4,y=47.8,zone="Stormwind City"}
+N[1346]={n="Georgio Bolero",side="A",x=43.2,y=73.4,zone="Stormwind City"}
+N[1347]={n="Alexandra Bolero",side="A",x=43.4,y=74,zone="Stormwind City"}
+N[1348]={n="Gregory Ardus",side="A",x=37,y=39.4,zone="Stormwind City"}
+N[1349]={n="Agustus Moulaine",side="A",x=43.8,y=43.2,zone="Stormwind City"}
+N[1350]={n="Theresa Moulaine",side="A",x=43.4,y=43.4,zone="Stormwind City"}
+N[1351]={n="Brother Cassius",side="A",x=43,y=26.4,zone="Stormwind City"}
+N[1355]={n="Cook Ghilm",side="A",x=68.4,y=54.4,zone="Dun Morogh"}
+N[1362]={n="Gothor Brumn",side="A",x=24,y=18,zone="Loch Modan"}
+N[1381]={n="Krakk",side="H",x=32.4,y=28,zone="Stranglethorn Vale"}
+N[1382]={n="Mudduk",side="H",x=31.4,y=28,zone="Stranglethorn Vale"}
+N[1383]={n="Snarl",side="H",x=79.2,y=22.4,zone="Orgrimmar"}
+N[1386]={n="Rogvar",side="H",x=48.2,y=55.4,zone="Swamp of Sorrows"}
+N[1407]={n="Sranda",side="H",x=3,y=47.4,zone="Badlands"}
+N[1430]={n="Tomas",side="A",x=44.2,y=66,zone="Elwynn Forest"}
+N[1440]={n="Milton Sheaf",side="A",x=74,y=7.4,zone="Stormwind City"}
+N[1441]={n="Brak Durnad",side="A",x=11.4,y=59.4,zone="Wetlands"}
+N[1448]={n="Neal Allen",side="A",x=10.6,y=56.8,zone="Wetlands"}
+N[1450]={n="Brahnmar",side="A",x=11.4,y=59.4,zone="Wetlands"}
+N[1452]={n="Gruham Rumdnul",side="A",x=12,y=57.8,zone="Wetlands"}
+N[1453]={n="Dewin Shimmerdawn",side="A",x=8,y=56.2,zone="Wetlands"}
+N[1454]={n="Jennabink Powerseam",side="A",x=8,y=55.8,zone="Wetlands"}
+N[1456]={n="Kersok Prond",side="A",x=10.4,y=60.4,zone="Wetlands"}
+N[1457]={n="Samor Festivus",side="A",x=10.4,y=60.2,zone="Wetlands"}
+N[1459]={n="Naela Trance",side="A",x=11.2,y=58.4,zone="Wetlands"}
+N[1460]={n="Unger Statforth",side="A",x=8.4,y=54.4,zone="Wetlands"}
+N[1461]={n="Murndan Derth",side="A",x=11.4,y=59.4,zone="Wetlands"}
+N[1462]={n="Edwina Monzor",side="A",x=11,y=58.4,zone="Wetlands"}
+N[1463]={n="Falkan Armonis",side="A",x=8.4,y=56.4,zone="Wetlands"}
+N[1464]={n="Innkeeper Helbrek",side="A",x=10.6,y=60.8,zone="Wetlands"}
+N[1465]={n="Drac Roughcut",side="A",x=35.4,y=48.8,zone="Loch Modan"}
+N[1466]={n="Gretta Finespindle",side="A",x=39,y=32.4,zone="Ironforge"}
+N[1469]={n="Vrok Blunderblast",side="A",x=35.2,y=42.6,zone="Loch Modan"}
+N[1470]={n="Ghak Healtouch",side="A",x=37,y=49.2,zone="Loch Modan"}
+N[1471]={n="Jannos Ironwill",side="A",x=46,y=47.4,zone="Arathi Highlands"}
+N[1474]={n="Rann Flamespinner",side="A",x=36,y=46,zone="Loch Modan"}
+N[1632]={n="Adele Fielder",side="A",x=46.4,y=62.2,zone="Elwynn Forest"}
+N[1645]={n="Quartermaster Hicks",side="A",x=25.2,y=73.8,zone="Elwynn Forest"}
+N[1650]={n="Terry Palin",side="A",x=82.8,y=63.4,zone="Elwynn Forest"}
+N[1668]={n="William MacGregor",side="A",x=57.4,y=53.8,zone="Westfall"}
+N[1669]={n="Defias Profiteer",side="B",x=43.4,y=66.8,zone="Westfall"}
+N[1670]={n="Mike Miller",side="A",x=57.4,y=53.6,zone="Westfall"}
+N[1671]={n="Lamar Veisilli",side="A",x=21,y=46.4,zone="Redridge Mountains"}
+N[1672]={n="Lohgan Eva",side="A",x=75.6,y=44.6,zone="Duskwood"}
+N[1673]={n="Alyssa Eva",side="A",x=76,y=45.2,zone="Duskwood"}
+N[1678]={n="Vernon Hale",side="A",x=27.4,y=47.4,zone="Redridge Mountains"}
+N[1681]={n="Brock Stoneseeker",side="A",x=37,y=47.8,zone="Loch Modan"}
+N[1682]={n="Yanni Stoutheart",side="A",x=34.8,y=48.4,zone="Loch Modan"}
+N[1684]={n="Khara Deepwater",side="A",x=39.4,y=39.2,zone="Loch Modan"}
+N[1685]={n="Xandar Goodbeard",side="A",x=82.4,y=63.4,zone="Loch Modan"}
+N[1686]={n="Irene Sureshot",side="A",x=83,y=63.4,zone="Loch Modan"}
+N[1687]={n="Cliff Hadin",side="A",x=83,y=63,zone="Loch Modan"}
+N[1690]={n="Thrawn Boltar",side="A",x=45.2,y=51.4,zone="Dun Morogh"}
+N[1691]={n="Kreg Bilmn",side="A",x=47.2,y=52.4,zone="Dun Morogh"}
+N[1692]={n="Golorn Frostbeard",side="A",x=46.6,y=53.4,zone="Dun Morogh"}
+N[1694]={n="Loslor Rudge",side="A",x=50,y=49.4,zone="Dun Morogh"}
+N[1695]={n="Rendow",side="A",x=89.4,y=45.8,zone="Feralas"}
+N[1697]={n="Keeg Gibn",side="A",x=30.4,y=46,zone="Dun Morogh"}
+N[1698]={n="Frast Dokner",side="A",x=68.8,y=55.8,zone="Dun Morogh"}
+N[1699]={n="Gremlock Pilsnor",side="A",x=47.6,y=52.4,zone="Dun Morogh"}
+N[1702]={n="Bronk Guzzlegear",side="A",x=50.2,y=50.4,zone="Dun Morogh"}
+N[1703]={n="Uthrar Threx",side="A",x=43.4,y=28.2,zone="Ironforge"}
+N[1937]={n="Apothecary Renferrel",side="H",x=42.8,y=40.8,zone="Silverpine Forest"}
+N[2046]={n="Andrew Krighton",side="A",x=41.6,y=65.6,zone="Elwynn Forest"}
+N[2084]={n="Natheril Raincaller",side="A",x=51.4,y=30.8,zone="Winterspring"}
+N[2113]={n="Archibald Kava",side="H",x=32.4,y=65.6,zone="Tirisfal Glades"}
+N[2115]={n="Joshua Kien",side="H",x=32.2,y=65.4,zone="Tirisfal Glades"}
+N[2116]={n="Blacksmith Rand",side="H",x=32.4,y=66.2,zone="Tirisfal Glades"}
+N[2117]={n="Harold Raims",side="H",x=32.4,y=66.4,zone="Tirisfal Glades"}
+N[2118]={n="Abigail Shiel",side="H",x=61,y=52.4,zone="Tirisfal Glades"}
+N[2132]={n="Carolai Anise",side="H",x=59.4,y=52.2,zone="Tirisfal Glades"}
+N[2134]={n="Mrs. Winters",side="H",x=61,y=52.4,zone="Tirisfal Glades"}
+N[2135]={n="Abe Winters",side="H",x=60.2,y=53,zone="Tirisfal Glades"}
+N[2136]={n="Oliver Dwor",side="H",x=60,y=53.6,zone="Tirisfal Glades"}
+N[2137]={n="Eliza Callen",side="H",x=60.4,y=52.8,zone="Tirisfal Glades"}
+N[2140]={n="Edwin Harly",side="H",x=44,y=40,zone="Silverpine Forest"}
+N[2225]={n="Zora Guthrek",side="H"}
+N[2264]={n="Hillsbrad Tailor",side="A",x=35.4,y=43.2,zone="Hillsbrad Foothills"}
+N[2265]={n="Hillsbrad Apprentice Blacksmith",side="A",x=31.8,y=46.8,zone="Hillsbrad Foothills"}
+N[2303]={n="Lyranne Feathersong",side="A",x=52,y=29.2,zone="Winterspring"}
+N[2326]={n="Thamner Pol",side="A",x=47.2,y=52.4,zone="Dun Morogh"}
+N[2327]={n="Shaina Fuller",side="A",x=42.4,y=26.8,zone="Stormwind City"}
+N[2329]={n="Michelle Belle",side="A",x=43.4,y=65.6,zone="Elwynn Forest"}
+N[2352]={n="Innkeeper Anderson",side="A",x=51,y=58.8,zone="Hillsbrad Foothills"}
+N[2357]={n="Merideth Carlson",side="A",x=52,y=55.6,zone="Hillsbrad Foothills"}
+N[2364]={n="Neema",side="A",x=51,y=59,zone="Hillsbrad Foothills"}
+N[2365]={n="Bront Coldcleave",side="A",x=48.8,y=57.2,zone="Hillsbrad Foothills"}
+N[2366]={n="Barkeep Kelly",side="A",x=51.4,y=58.4,zone="Hillsbrad Foothills"}
+N[2380]={n="Nandar Branson",side="A",x=50.8,y=57,zone="Hillsbrad Foothills"}
+N[2381]={n="Micha Yance",side="A",x=49,y=55,zone="Hillsbrad Foothills"}
+N[2383]={n="Lindea Rabonne",side="A",x=50.4,y=61,zone="Hillsbrad Foothills"}
+N[2388]={n="Innkeeper Shay",side="H",x=62.6,y=19,zone="Hillsbrad Foothills"}
+N[2391]={n="Serge Hinott",side="H",x=61.4,y=19.2,zone="Hillsbrad Foothills"}
+N[2393]={n="Christoph Jeffcoat",side="H",x=62.2,y=19,zone="Hillsbrad Foothills"}
+N[2394]={n="Mallen Swain",side="H",x=62,y=21,zone="Hillsbrad Foothills"}
+N[2397]={n="Derak Nightfall",side="H",x=63,y=19.4,zone="Hillsbrad Foothills"}
+N[2399]={n="Daryl Stack",side="H",x=63.4,y=20.8,zone="Hillsbrad Foothills"}
+N[2401]={n="Kayren Soothallow",side="H",x=62.4,y=19.8,zone="Hillsbrad Foothills"}
+N[2480]={n="Bro'kin",side="B",x=38.4,y=38.8,zone="Alterac Mountains"}
+N[2481]={n="Bliztik",side="B",x=18,y=54.4,zone="Duskwood"}
+N[2482]={n="Zarena Cromwind",side="B",x=28.4,y=75.4,zone="Stranglethorn Vale"}
+N[2483]={n="Jaquilina Dramet",side="B",x=35.6,y=10.6,zone="Stranglethorn Vale"}
+N[2622]={n="Sly Garrett",side="B",x=28.4,y=76.8,zone="Stranglethorn Vale"}
+N[2626]={n="Old Man Heming",side="B",x=27.4,y=77,zone="Stranglethorn Vale"}
+N[2627]={n="Grarnik Goodstitch",side="B",x=28.6,y=76.8,zone="Stranglethorn Vale"}
+N[2663]={n="Narkk",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
+N[2664]={n="Kelsey Yance",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
+N[2668]={n="Danielle Zipstitch",side="A",x=75.8,y=45.4,zone="Duskwood"}
+N[2669]={n="Sheri Zipstitch",side="A",x=75.6,y=45.4,zone="Duskwood"}
+N[2670]={n="Xizk Goodstitch",side="B",x=28.6,y=76.8,zone="Stranglethorn Vale"}
+N[2672]={n="Cowardly Crosby",side="B",x=27,y=82.4,zone="Stranglethorn Vale"}
+N[2679]={n="Wenna Silkbeard",side="A",x=25.6,y=25.8,zone="Wetlands"}
+N[2682]={n="Fradd Swiftgear",side="A",x=26.4,y=25.8,zone="Wetlands"}
+N[2683]={n="Namdo Bizzfizzle",side="A"}
+N[2684]={n="Rizz Loosebolt",side="B",x=47.2,y=35.2,zone="Alterac Mountains"}
+N[2685]={n="Mazk Snipeshot",side="B",x=28.4,y=75,zone="Stranglethorn Vale"}
+N[2687]={n="Gnaz Blunderflame",side="B",x=51,y=35.2,zone="Stranglethorn Vale"}
+N[2688]={n="Ruppo Zipcoil",side="B",x=34.2,y=37.8,zone="The Hinterlands"}
+N[2697]={n="Clyde Ranthal",side="A",x=88.8,y=71,zone="Redridge Mountains"}
+N[2698]={n="George Candarte",side="H",x=92,y=38.2,zone="Hillsbrad Foothills"}
+N[2699]={n="Rikqiz",side="B",x=28.4,y=76,zone="Stranglethorn Vale"}
+N[2786]={n="Gerrig Bonegrip",side="A",x=50.2,y=7,zone="Ironforge"}
+N[2798]={n="Pand Stonebinder",side="H",x=29.4,y=21.4,zone="Thunder Bluff"}
+N[2803]={n="Malygen",side="A",x=62.2,y=25.4,zone="Felwood"}
+N[2805]={n="Deneb Walker",side="A",x=27,y=58.8,zone="Arathi Highlands"}
+N[2806]={n="Bale",side="H",x=34.8,y=53.2,zone="Felwood"}
+N[2808]={n="Vikki Lonsav",side="A",x=46.4,y=47.4,zone="Arathi Highlands"}
+N[2810]={n="Hammon Karwn",side="A",x=46.4,y=47.4,zone="Arathi Highlands"}
+N[2812]={n="Drovnar Strongbrew",side="A",x=46.4,y=47,zone="Arathi Highlands"}
+N[2814]={n="Narj Deepslice",side="A",x=45.4,y=47.4,zone="Arathi Highlands"}
+N[2816]={n="Androd Fadran",side="A",x=45,y=46.8,zone="Arathi Highlands"}
+N[2818]={n="Slagg",side="H",x=73.8,y=33.4,zone="Arathi Highlands"}
+N[2819]={n="Tunkk",side="H",x=74.8,y=34.4,zone="Arathi Highlands"}
+N[2820]={n="Graud",side="H",x=74,y=32.4,zone="Arathi Highlands"}
+N[2821]={n="Keena",side="H",x=74,y=32.4,zone="Arathi Highlands"}
+N[2832]={n="Nixxrax Fillamug",side="B",x=27,y=77.2,zone="Stranglethorn Vale"}
+N[2836]={n="Brikk Keencraft",side="B",x=29,y=75.4,zone="Stranglethorn Vale"}
+N[2838]={n="Crazk Sparks",side="B",x=28.2,y=76.6,zone="Stranglethorn Vale"}
+N[2839]={n="Haren Kanmae",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
+N[2840]={n="Kizz Bluntstrike",side="B",x=28.2,y=75.2,zone="Stranglethorn Vale"}
+N[2842]={n="Wigcik",side="B",x=28,y=76.8,zone="Stranglethorn Vale"}
+N[2843]={n="Jutak",side="B",x=27.4,y=77.4,zone="Stranglethorn Vale"}
+N[2844]={n="Hurklor",side="B",x=29,y=75,zone="Stranglethorn Vale"}
+N[2845]={n="Fargon Mortalak",side="B",x=29,y=75,zone="Stranglethorn Vale"}
+N[2846]={n="Blixrez Goodstitch",side="B",x=28.2,y=77.4,zone="Stranglethorn Vale"}
+N[2847]={n="Jansen Underwood",side="B",x=29,y=75.4,zone="Stranglethorn Vale"}
+N[2848]={n="Glyx Brewright",side="B",x=28,y=78,zone="Stranglethorn Vale"}
+N[2849]={n="Qixdi Goodstitch",side="B",x=28.2,y=77.4,zone="Stranglethorn Vale"}
+N[2855]={n="Snang",side="H",x=62.4,y=49.8,zone="Orgrimmar"}
+N[2857]={n="Thund",side="H",x=75.4,y=24.6,zone="Orgrimmar"}
+N[2908]={n="Grawl",side="H",x=3,y=46,zone="Badlands"}
+N[2921]={n="Lotwil Veriatus",side="B",x=25.8,y=44.4,zone="Badlands"}
+N[2934]={n="Keeper Bel'dugur",side="H",x=53.4,y=53,zone="Undercity"}
+N[2997]={n="Jyn Stonehoof",side="H",x=41.2,y=62,zone="Thunder Bluff"}
+N[2998]={n="Karn Stonehoof",side="H",x=38.8,y=54,zone="Thunder Bluff"}
+N[2999]={n="Taur Stonehoof",side="H",x=39.4,y=55.4,zone="Thunder Bluff"}
+N[3000]={n="Gibbert",side="B",x=44,y=7.2,zone="Un'Goro Crater"}
+N[3002]={n="Kurm Stonehoof",side="H",x=34.4,y=57,zone="Thunder Bluff"}
+N[3003]={n="Fyr Mistrunner",side="H",x=41.2,y=53.4,zone="Thunder Bluff"}
+N[3004]={n="Tepa",side="H",x=43.8,y=44.4,zone="Thunder Bluff"}
+N[3005]={n="Mahu",side="H",x=43.4,y=43.8,zone="Thunder Bluff"}
+N[3007]={n="Una",side="H",x=41.4,y=42.6,zone="Thunder Bluff"}
+N[3008]={n="Mak",side="H",x=42.2,y=43.2,zone="Thunder Bluff"}
+N[3009]={n="Bena Winterhoof",side="H",x=46.8,y=33.4,zone="Thunder Bluff"}
+N[3010]={n="Mani Winterhoof",side="H",x=47,y=33.4,zone="Thunder Bluff"}
+N[3011]={n="Teg Dawnstrider",side="H",x=44.8,y=37.4,zone="Thunder Bluff"}
+N[3012]={n="Nata Dawnstrider",side="H",x=45,y=38.4,zone="Thunder Bluff"}
+N[3014]={n="Nida Winterhoof",side="H",x=49.2,y=39.6,zone="Thunder Bluff"}
+N[3015]={n="Kuna Thunderhorn",side="H",x=46.4,y=44.6,zone="Thunder Bluff"}
+N[3016]={n="Tand",side="H",x=49,y=34.4,zone="Thunder Bluff"}
+N[3017]={n="Nan Mistrunner",side="H",x=46.4,y=42.2,zone="Thunder Bluff"}
+N[3018]={n="Hogor Thunderhoof",side="H",x=55.4,y=56.4,zone="Thunder Bluff"}
+N[3019]={n="Delgo Ragetotem",side="H",x=53.4,y=57.2,zone="Thunder Bluff"}
+N[3020]={n="Etu Ragetotem",side="H",x=53.2,y=57.8,zone="Thunder Bluff"}
+N[3021]={n="Kard Ragetotem",side="H",x=53.2,y=56.8,zone="Thunder Bluff"}
+N[3022]={n="Sunn Ragetotem",side="H",x=49,y=49.6,zone="Thunder Bluff"}
+N[3023]={n="Sura Wildmane",side="H",x=51.4,y=53.8,zone="Thunder Bluff"}
+N[3025]={n="Kaga Mistrunner",side="H",x=52.2,y=47.4,zone="Thunder Bluff"}
+N[3026]={n="Aska Mistrunner",side="H",x=50.8,y=52.4,zone="Thunder Bluff"}
+N[3027]={n="Naal Mistrunner",side="H",x=50.2,y=51.6,zone="Thunder Bluff"}
+N[3029]={n="Sewa Mistrunner",side="H",x=55.2,y=48,zone="Thunder Bluff"}
+N[3044]={n="Miles Welsh",side="H",x=25.4,y=15.4,zone="Thunder Bluff"}
+N[3053]={n="Synge",side="B",x=80.4,y=76.8,zone="Thousand Needles"}
+N[3067]={n="Pyall Silentstride",side="H",x=45,y=61.6,zone="Mulgore"}
+N[3069]={n="Chaw Stronghide",side="H",x=45,y=61.4,zone="Mulgore"}
+N[3072]={n="Kawnie Softbreeze",side="H",x=45.2,y=76.4,zone="Mulgore"}
+N[3073]={n="Marjak Keenblade",side="H",x=43.8,y=77.8,zone="Mulgore"}
+N[3074]={n="Varia Hardhide",side="H",x=43.8,y=77.6,zone="Mulgore"}
+N[3075]={n="Bronk Steelrage",side="H",x=43.8,y=77.8,zone="Mulgore"}
+N[3076]={n="Moorat Longstride",side="H",x=45.2,y=61.4,zone="Mulgore"}
+N[3077]={n="Mahnott Roughwound",side="H",x=45.2,y=62,zone="Mulgore"}
+N[3078]={n="Kennah Hawkseye",side="H",x=45,y=61.8,zone="Mulgore"}
+N[3079]={n="Varg Windwhisper",side="H",x=45.2,y=62,zone="Mulgore"}
+N[3080]={n="Harant Ironbrace",side="H",x=45.4,y=62,zone="Mulgore"}
+N[3081]={n="Wunna Darkmane",side="H",x=45.4,y=61.8,zone="Mulgore"}
+N[3085]={n="Gloria Femmel",side="A",x=26.6,y=43.4,zone="Redridge Mountains"}
+N[3086]={n="Gretchen Vogel",side="A",x=22.6,y=44.2,zone="Redridge Mountains"}
+N[3087]={n="Crystal Boughman",side="A",x=22.8,y=43.4,zone="Redridge Mountains"}
+N[3088]={n="Henry Chapal",side="A",x=23.6,y=41.6,zone="Redridge Mountains"}
+N[3089]={n="Sherman Femmel",side="A",x=26.8,y=43.4,zone="Redridge Mountains"}
+N[3090]={n="Gerald Crawley",side="A",x=24.6,y=41.6,zone="Redridge Mountains"}
+N[3091]={n="Franklin Hamar",side="A",x=27.2,y=45.4,zone="Redridge Mountains"}
+N[3092]={n="Tagain",side="H",x=43.4,y=43.4,zone="Thunder Bluff"}
+N[3093]={n="Grod",side="H",x=42.4,y=43.2,zone="Thunder Bluff"}
+N[3095]={n="Fela",side="H",x=42.8,y=43.4,zone="Thunder Bluff"}
+N[3096]={n="Captured Servant of Azora",side="B",x=74.4,y=79.4,zone="Redridge Mountains"}
+N[3097]={n="Bernard Brubaker",side="A",x=88.2,y=71.2,zone="Redridge Mountains"}
+N[3133]={n="Herble Baubbletump",side="A",x=77.8,y=48.2,zone="Duskwood"}
+N[3134]={n="Kzixx",side="B",x=81.4,y=19.8,zone="Duskwood"}
+N[3135]={n="Malissa",side="A",x=79.4,y=44.4,zone="Duskwood"}
+N[3137]={n="Matt Johnson",side="A",x=74,y=49.4,zone="Duskwood"}
+N[3138]={n="Scott Carevin",side="A",x=75.4,y=48.4,zone="Duskwood"}
+N[3158]={n="Duokna",side="H",x=42.6,y=67.4,zone="Durotar"}
+N[3159]={n="Kzan Thornslash",side="H",x=40.4,y=68,zone="Durotar"}
+N[3160]={n="Huklah",side="H",x=40.6,y=67.8,zone="Durotar"}
+N[3161]={n="Rarc",side="H",x=40.4,y=67.8,zone="Durotar"}
+N[3162]={n="Burdrak Harglhelm",side="A",x=30.2,y=45.2,zone="Dun Morogh"}
+N[3163]={n="Uhgar",side="H",x=52,y=40.4,zone="Durotar"}
+N[3164]={n="Jark",side="H",x=54.2,y=42.2,zone="Durotar"}
+N[3165]={n="Ghrawt",side="H",x=53,y=41,zone="Durotar"}
+N[3166]={n="Cutac",side="H",x=53,y=40.8,zone="Durotar"}
+N[3167]={n="Wuark",side="H",x=52,y=41.2,zone="Durotar"}
+N[3168]={n="Flakk",side="H",x=52.8,y=42,zone="Durotar"}
+N[3174]={n="Dwukk",side="H",x=52,y=40.6,zone="Durotar"}
+N[3175]={n="Krunn",side="H",x=51.8,y=40.8,zone="Durotar"}
+N[3177]={n="Turuk Amberstill",side="A",x=63,y=49.8,zone="Dun Morogh"}
+N[3178]={n="Stuart Fleming",side="A",x=8,y=58.2,zone="Wetlands"}
+N[3180]={n="Dark Iron Entrepreneur",side="B",x=46.4,y=18.2,zone="Wetlands"}
+N[3181]={n="Fremal Doohickey",side="A",x=10.8,y=61.2,zone="Wetlands"}
+N[3184]={n="Miao'zan",side="H",x=55.4,y=74,zone="Durotar"}
+N[3186]={n="K'waii",side="H",x=56.2,y=73.4,zone="Durotar"}
+N[3187]={n="Tai'tasi",side="H",x=56.4,y=73.8,zone="Durotar"}
+N[3191]={n="Cook Torka",side="H",x=51.2,y=42.4,zone="Durotar"}
+N[3290]={n="Deek Fizzlebizz",side="A",x=45.8,y=13.4,zone="Loch Modan"}
+N[3291]={n="Greishan Ironstove",side="A",x=22.8,y=70.8,zone="Loch Modan"}
+N[3298]={n="Gabrielle Chase",side="A",x=84.2,y=67.8,zone="Burning Steppes"}
+N[3312]={n="Olvia",side="H",x=44.8,y=69.4,zone="Orgrimmar"}
+N[3313]={n="Trak'gen",side="H",x=48,y=80.2,zone="Orgrimmar"}
+N[3314]={n="Urtharo",side="H",x=47.4,y=68.4,zone="Orgrimmar"}
+N[3315]={n="Tor'phan",side="H",x=62.4,y=50.4,zone="Orgrimmar"}
+N[3316]={n="Handor",side="H",x=62.4,y=45.4,zone="Orgrimmar"}
+N[3317]={n="Ollanus",side="H",x=56.2,y=73.4,zone="Orgrimmar"}
+N[3319]={n="Sana",side="H",x=55.6,y=73.6,zone="Orgrimmar"}
+N[3321]={n="Morgum",side="H",x=55.6,y=73.6,zone="Orgrimmar"}
+N[3322]={n="Kaja",side="H",x=52.2,y=62.4,zone="Orgrimmar"}
+N[3323]={n="Horthus",side="H",x=45.4,y=56.4,zone="Orgrimmar"}
+N[3329]={n="Kor'jus",side="H",x=49,y=54,zone="Orgrimmar"}
+N[3330]={n="Muragus",side="H",x=44.4,y=48.4,zone="Orgrimmar"}
+N[3331]={n="Kareth",side="H",x=45.2,y=55.2,zone="Orgrimmar"}
+N[3333]={n="Shankys",side="H",x=69.4,y=29,zone="Orgrimmar"}
+N[3334]={n="Rekkul",side="H",x=42.2,y=49.4,zone="Orgrimmar"}
+N[3335]={n="Hagrus",side="H",x=46,y=46,zone="Orgrimmar"}
+N[3342]={n="Shan'ti",side="H",x=37.4,y=52.4,zone="Orgrimmar"}
+N[3343]={n="Grelkor",side="H"}
+N[3345]={n="Godan",side="H",x=53.8,y=38.4,zone="Orgrimmar"}
+N[3346]={n="Kithas",side="H",x=53.4,y=37.2,zone="Orgrimmar"}
+N[3347]={n="Yelmak",side="H",x=56.4,y=33.2,zone="Orgrimmar"}
+N[3348]={n="Kor'geld",side="H",x=56.2,y=34.2,zone="Orgrimmar"}
+N[3349]={n="Ukra'nor",side="H",x=29.8,y=74,zone="Orgrimmar"}
+N[3350]={n="Asoran",side="H",x=46,y=40.4,zone="Orgrimmar"}
+N[3351]={n="Magenius",side="H",x=45.8,y=40.4,zone="Orgrimmar"}
+N[3355]={n="Saru Steelfury",side="H",x=82.2,y=23,zone="Orgrimmar"}
+N[3356]={n="Sumi",side="H",x=82.4,y=23.4,zone="Orgrimmar"}
+N[3357]={n="Makaru",side="H",x=73,y=26.4,zone="Orgrimmar"}
+N[3358]={n="Gorina",side="H",x=73.2,y=26.4,zone="Orgrimmar"}
+N[3359]={n="Kiro",side="H",x=73,y=42,zone="Orgrimmar"}
+N[3360]={n="Koru",side="H",x=81.4,y=18.8,zone="Orgrimmar"}
+N[3361]={n="Shoma",side="H",x=81.2,y=19.6,zone="Orgrimmar"}
+N[3362]={n="Ogunaro Wolfrunner",side="H",x=69.2,y=12.6,zone="Orgrimmar"}
+N[3363]={n="Magar",side="H",x=63.2,y=50.6,zone="Orgrimmar"}
+N[3364]={n="Borya",side="H",x=63,y=51.2,zone="Orgrimmar"}
+N[3365]={n="Karolek",side="H",x=62.8,y=44.4,zone="Orgrimmar"}
+N[3366]={n="Tamar",side="H",x=62.4,y=45.4,zone="Orgrimmar"}
+N[3367]={n="Felika",side="H",x=51.2,y=36.2,zone="Orgrimmar"}
+N[3368]={n="Borstan",side="H",x=57.4,y=53.4,zone="Orgrimmar"}
+N[3369]={n="Gotri",side="H",x=58.8,y=53,zone="Orgrimmar"}
+N[3373]={n="Arnok",side="H",x=34,y=84.4,zone="Orgrimmar"}
+N[3399]={n="Zamja",side="H",x=57.4,y=53.4,zone="Orgrimmar"}
+N[3400]={n="Xen'to",side="H",x=57.4,y=53.2,zone="Orgrimmar"}
+N[3405]={n="Zeal'aya",side="H",x=55,y=39.4,zone="Orgrimmar"}
+N[3409]={n="Zendo'jian",side="H",x=81,y=19.6,zone="Orgrimmar"}
+N[3410]={n="Jin'sora",side="H",x=77.4,y=38.6,zone="Orgrimmar"}
+N[3411]={n="Denni'ka",side="H",x=73.4,y=95.4,zone="Stonetalon Mountains"}
+N[3412]={n="Nogg",side="H",x=75.4,y=24.8,zone="Orgrimmar"}
+end)()
+;(function()
+N[3413]={n="Sovik",side="H",x=75,y=24.4,zone="Orgrimmar"}
+N[3477]={n="Hraq",side="H",x=51.2,y=29,zone="The Barrens"}
+N[3478]={n="Traugh",side="H",x=51.2,y=28.8,zone="The Barrens"}
+N[3479]={n="Nargal Deatheye",side="H",x=51.2,y=29.2,zone="The Barrens"}
+N[3480]={n="Moorane Hearthgrain",side="H",x=52.2,y=30.4,zone="The Barrens"}
+N[3481]={n="Barg",side="H",x=51.6,y=30,zone="The Barrens"}
+N[3482]={n="Tari'qa",side="H",x=51.6,y=30,zone="The Barrens"}
+N[3483]={n="Jahan Hawkwing",side="H",x=51.2,y=29,zone="The Barrens"}
+N[3484]={n="Kil'hala",side="H",x=52.2,y=31.6,zone="The Barrens"}
+N[3485]={n="Wrahk",side="H",x=52.2,y=31.6,zone="The Barrens"}
+N[3486]={n="Halija Whitestrider",side="H",x=52.2,y=31.8,zone="The Barrens"}
+N[3487]={n="Kalyimah Stormcloud",side="H",x=52.2,y=32,zone="The Barrens"}
+N[3488]={n="Uthrok",side="H",x=51,y=29,zone="The Barrens"}
+N[3489]={n="Zargh",side="H",x=52.4,y=29.8,zone="The Barrens"}
+N[3490]={n="Hula'mahi",side="H",x=51.4,y=30.2,zone="The Barrens"}
+N[3491]={n="Ironzar",side="B",x=62.2,y=37.4,zone="The Barrens"}
+N[3492]={n="Vexspindle",side="B",x=62.2,y=38.4,zone="The Barrens"}
+N[3493]={n="Grazlix",side="B",x=62.2,y=38.4,zone="The Barrens"}
+N[3494]={n="Tinkerwiz",side="B",x=62.6,y=36.2,zone="The Barrens"}
+N[3495]={n="Gagsprocket",side="B",x=62.6,y=36.2,zone="The Barrens"}
+N[3497]={n="Kilxx",side="B",x=62.8,y=38.2,zone="The Barrens"}
+N[3498]={n="Jazzik",side="B",x=61.8,y=38.8,zone="The Barrens"}
+N[3499]={n="Ranik",side="B",x=61.8,y=38.6,zone="The Barrens"}
+N[3500]={n="Tarhus",side="H",x=74.6,y=44.8,zone="Feralas"}
+N[3518]={n="Thomas Miller",side="A",x=52.8,y=62.2,zone="Stormwind City"}
+N[3522]={n="Constance Brisboise",side="H",x=52.4,y=55.6,zone="Tirisfal Glades"}
+N[3523]={n="Bowen Brisboise",side="H",x=52.4,y=55.6,zone="Tirisfal Glades"}
+N[3528]={n="Pyrewood Armorer",side="A",x=46.2,y=71.4,zone="Silverpine Forest"}
+N[3529]={n="Moonrage Armorer",side="A",x=45.4,y=74,zone="Silverpine Forest"}
+N[3530]={n="Pyrewood Tailor",side="A",x=46,y=71.4,zone="Silverpine Forest"}
+N[3531]={n="Moonrage Tailor",x=46,y=71.4,zone="Silverpine Forest"}
+N[3532]={n="Pyrewood Leatherworker",side="A",x=44,y=73.8,zone="Silverpine Forest"}
+N[3533]={n="Moonrage Leatherworker",x=44,y=73.8,zone="Silverpine Forest"}
+N[3534]={n="Wallace the Blind",side="B",x=43.8,y=84.4,zone="Silverpine Forest"}
+N[3536]={n="Kris Legace",side="B",x=80,y=39,zone="Hillsbrad Foothills"}
+N[3537]={n="Zixil",side="B",x=50.4,y=50.8,zone="Hillsbrad Foothills"}
+N[3539]={n="Ott",side="H",x=60.4,y=26,zone="Hillsbrad Foothills"}
+N[3540]={n="Hal McAllister",side="A",x=49.8,y=62.2,zone="Hillsbrad Foothills"}
+N[3541]={n="Sarah Raycroft",side="A",x=49,y=55.2,zone="Hillsbrad Foothills"}
+N[3542]={n="Jaysin Lanyda",side="A",x=50.8,y=59,zone="Hillsbrad Foothills"}
+N[3543]={n="Robert Aebischer",side="A",x=51.2,y=57,zone="Hillsbrad Foothills"}
+N[3544]={n="Jason Lemieux",side="H",x=59,y=20.2,zone="Hillsbrad Foothills"}
+N[3546]={n="Bernie Heisten",side="A",x=63.4,y=16.8,zone="Blasted Lands"}
+N[3547]={n="Hamlin Atkins",side="H",x=56.4,y=52.2,zone="Tirisfal Glades"}
+N[3548]={n="Selina Weston",side="H",x=61.8,y=50,zone="Tirisfal Glades"}
+N[3549]={n="Shelene Rhobart",side="H",x=65.4,y=60,zone="Tirisfal Glades"}
+N[3550]={n="Martine Tramblay",side="H",x=65.8,y=59.4,zone="Tirisfal Glades"}
+N[3551]={n="Patrice Dwyer",side="H",x=43,y=41.8,zone="Silverpine Forest"}
+N[3552]={n="Alexandre Lefevre",side="H",x=44.6,y=39.2,zone="Silverpine Forest"}
+N[3553]={n="Sebastian Meloche",side="H",x=43.2,y=41.2,zone="Silverpine Forest"}
+N[3554]={n="Andrea Boynton",side="H",x=44.6,y=39.2,zone="Silverpine Forest"}
+N[3555]={n="Johan Focht",side="H",x=43.4,y=40.4,zone="Silverpine Forest"}
+N[3556]={n="Andrew Hilbert",side="H",x=43.2,y=40.6,zone="Silverpine Forest"}
+N[3557]={n="Guillaume Sorouy",side="H",x=43.2,y=41,zone="Silverpine Forest"}
+N[3561]={n="Kyrai",side="A",x=32.4,y=20,zone="Darnassus"}
+N[3562]={n="Alaindia",side="A",x=29.4,y=70,zone="Darnassus"}
+N[3572]={n="Zizzek",side="B",x=62,y=39,zone="The Barrens"}
+N[3577]={n="Dalaran Brewmaster",side="A",x=62.4,y=64.4,zone="Silverpine Forest"}
+N[3578]={n="Dalaran Miner",side="A",x=62.4,y=62.6,zone="Silverpine Forest"}
+N[3587]={n="Lyrai",side="A",x=59.4,y=41,zone="Teldrassil"}
+N[3588]={n="Khardan Proudblade",side="A",x=58.8,y=39.6,zone="Teldrassil"}
+N[3589]={n="Keina",side="A",x=59.4,y=41.2,zone="Teldrassil"}
+N[3590]={n="Janna Brightmoon",side="A",x=59.4,y=41,zone="Teldrassil"}
+N[3591]={n="Freja Nightwing",side="A",x=59,y=39.6,zone="Teldrassil"}
+N[3592]={n="Andiss",side="A",x=58.6,y=39.8,zone="Teldrassil"}
+N[3603]={n="Cyndra Kindwhisper",side="A",x=57.6,y=60.6,zone="Teldrassil"}
+N[3605]={n="Nadyia Maneweaver",side="A",x=41.8,y=49.4,zone="Teldrassil"}
+N[3606]={n="Alanna Raveneye",side="A",x=36.8,y=34.2,zone="Teldrassil"}
+N[3608]={n="Aldia",side="A",x=55.4,y=57.2,zone="Teldrassil"}
+N[3609]={n="Shalomon",side="A",x=56.2,y=59.4,zone="Teldrassil"}
+N[3610]={n="Jeena Featherbow",side="A",x=55.8,y=59.2,zone="Teldrassil"}
+N[3611]={n="Brannol Eaglemoon",side="A",x=56.2,y=60.2,zone="Teldrassil"}
+N[3612]={n="Sinda",side="A",x=56.2,y=59.4,zone="Teldrassil"}
+N[3613]={n="Meri Ironweave",side="A",x=56.2,y=59.4,zone="Teldrassil"}
+N[3614]={n="Narret Shadowgrove",side="A",x=55.2,y=57,zone="Teldrassil"}
+N[3621]={n="Kurll",side="H",x=21.8,y=52,zone="Azshara"}
+N[3625]={n="Rarck",side="H"}
+N[3658]={n="Lizzarik",side="B",x=52.4,y=30.6,zone="The Barrens"}
+N[3682]={n="Vrang Wildgore",side="H",x=43.8,y=12.2,zone="The Barrens"}
+N[3683]={n="Kiknikle",side="B",x=41.8,y=38.6,zone="The Barrens"}
+N[3684]={n="Pizznukle",side="B",x=41.8,y=38.4,zone="The Barrens"}
+N[3685]={n="Harb Clawhoof",side="H",x=47.4,y=58.4,zone="Mulgore"}
+N[3689]={n="Laer Stepperunner",side="H",x=21,y=31.8,zone="Thousand Needles"}
+N[3700]={n="Jadenvis Seawatcher",side="A",x=30.8,y=42,zone="Feralas"}
+N[3703]={n="Krulmoo Fullmoon",side="H",x=44.8,y=59.4,zone="The Barrens"}
+N[3704]={n="Mahani",side="H",x=44.8,y=59.4,zone="The Barrens"}
+N[3705]={n="Gahroot",side="H",x=44.8,y=59.4,zone="The Barrens"}
+N[3708]={n="Gruna",side="H",x=65.4,y=24,zone="Burning Steppes"}
+N[3779]={n="Syurana",side="A",x=51.4,y=29.8,zone="Winterspring"}
+N[3881]={n="Grimtak",side="H",x=51.2,y=42.4,zone="Durotar"}
+N[3882]={n="Zlagk",side="H",x=42.6,y=67.2,zone="Durotar"}
+N[3883]={n="Moodan Sungrain",side="H",x=44.2,y=78,zone="Mulgore"}
+N[3884]={n="Jhawna Oatwind",side="H",x=47.4,y=61.4,zone="Mulgore"}
+N[3933]={n="Hai'zan",side="H",x=55.4,y=73.6,zone="Durotar"}
+N[3934]={n="Innkeeper Boorand Plainswind",side="H",x=52,y=29.8,zone="The Barrens"}
+N[3935]={n="Toddrick",side="A",x=44.2,y=66,zone="Elwynn Forest"}
+N[3937]={n="Kira Songshine",side="A",x=33,y=51.2,zone="Elwynn Forest"}
+N[3948]={n="Honni Goldenoat",side="A",x=35.2,y=49.4,zone="Loch Modan"}
+N[3951]={n="Bhaldaran Ravenshade",side="A",x=50.2,y=67.2,zone="Ashenvale"}
+N[3952]={n="Aeolynn",side="A",x=34.4,y=49.4,zone="Ashenvale"}
+N[3953]={n="Tandaan Lightmane",side="A",x=34.4,y=49.8,zone="Ashenvale"}
+N[3954]={n="Dalria",side="A",x=35,y=52,zone="Ashenvale"}
+N[3955]={n="Shandrina",side="A",x=49.4,y=67,zone="Ashenvale"}
+N[3956]={n="Harklan Moongrove",side="A",x=50.8,y=67,zone="Ashenvale"}
+N[3958]={n="Lardan",side="A",x=34.8,y=49.8,zone="Ashenvale"}
+N[3959]={n="Nantar",side="A",x=37,y=49.8,zone="Ashenvale"}
+N[3960]={n="Ulthaan",side="A",x=50,y=66.4,zone="Ashenvale"}
+N[3961]={n="Maliynn",side="A",x=36.6,y=49.8,zone="Ashenvale"}
+N[3962]={n="Haljan Oakheart",side="A",x=34.8,y=50.8,zone="Ashenvale"}
+N[3967]={n="Aayndia Floralwind",side="A",x=35.8,y=52,zone="Ashenvale"}
+N[3969]={n="Fahran Silentblade",side="A",x=36.4,y=49.4,zone="Ashenvale"}
+N[3970]={n="Llana",side="A",x=35,y=48.4,zone="Ashenvale"}
+N[4043]={n="Galthuk",side="H",x=82,y=18.4,zone="Orgrimmar"}
+N[4047]={n="Zor Lonetree",side="H",x=38.2,y=38.2,zone="Orgrimmar"}
+N[4082]={n="Grawnal",side="H",x=45.8,y=58.6,zone="Stonetalon Mountains"}
+N[4083]={n="Jeeda",side="H",x=47.4,y=61.8,zone="Stonetalon Mountains"}
+N[4084]={n="Chylina",side="A",x=35.4,y=6.2,zone="Stonetalon Mountains"}
+N[4085]={n="Nizzik",side="B",x=62.6,y=40.2,zone="Stonetalon Mountains"}
+N[4086]={n="Veenix",side="B",x=58.2,y=51.6,zone="Stonetalon Mountains"}
+N[4160]={n="Ainethil",side="A",x=55,y=23.4,zone="Darnassus"}
+N[4164]={n="Cylania",side="A",x=58.4,y=45.8,zone="Darnassus"}
+N[4165]={n="Elissa Dumas",side="A",x=40,y=81.2,zone="Darnassus"}
+N[4167]={n="Dendrythis",side="A",x=33.8,y=15.6,zone="Darnassus"}
+N[4168]={n="Elynna",side="A",x=64.2,y=21.4,zone="Darnassus"}
+N[4169]={n="Jaeana",side="A",x=59.8,y=66.6,zone="Darnassus"}
+N[4170]={n="Ellandrieth",side="A",x=64.4,y=53,zone="Darnassus"}
+N[4171]={n="Merelyssa",side="A",x=64.4,y=59.8,zone="Darnassus"}
+N[4172]={n="Anadyia",side="A",x=55.6,y=89.4,zone="Darnassus"}
+N[4173]={n="Landria",side="A",x=63,y=67.6,zone="Darnassus"}
+N[4175]={n="Vinasia",side="A",x=60.4,y=72.2,zone="Darnassus"}
+N[4177]={n="Melea",side="A",x=56.4,y=77.8,zone="Darnassus"}
+N[4180]={n="Ealyshia Dewwhisper",side="A",x=60.8,y=72,zone="Darnassus"}
+N[4181]={n="Fyrenna",side="A",x=69.4,y=44.4,zone="Darnassus"}
+N[4182]={n="Dalmond",side="A",x=37.4,y=40.4,zone="Darkshore"}
+N[4183]={n="Naram Longclaw",side="A",x=37.4,y=40.4,zone="Darkshore"}
+N[4184]={n="Geenia Sunshadow",side="B",x=51.8,y=33,zone="Moonglade"}
+N[4185]={n="Shaldyn",side="A",x=38,y=40.6,zone="Darkshore"}
+N[4186]={n="Mavralyn",side="A",x=37,y=41.2,zone="Darkshore"}
+N[4187]={n="Harlon Thornguard",side="A",x=37,y=41.2,zone="Darkshore"}
+N[4188]={n="Illyanie",side="A",x=35.4,y=7,zone="Stonetalon Mountains"}
+N[4189]={n="Valdaron",side="A",x=38,y=40.6,zone="Darkshore"}
+N[4190]={n="Kyndri",side="A",x=36.8,y=44.4,zone="Darkshore"}
+N[4191]={n="Allyndia",side="A",x=37,y=43.4,zone="Darkshore"}
+N[4192]={n="Taldan",side="A",x=36.8,y=43.8,zone="Darkshore"}
+N[4193]={n="Grondal Moonbreeze",side="A",x=38.2,y=40.4,zone="Darkshore"}
+N[4194]={n="Ullanna",side="A",x=43.8,y=76.4,zone="Darkshore"}
+N[4195]={n="Tiyani",side="A",x=43.6,y=76.4,zone="Darkshore"}
+N[4200]={n="Laird",side="A",x=36.8,y=44.2,zone="Darkshore"}
+N[4203]={n="Ariyell Skyshadow",side="A",x=58.4,y=44.4,zone="Darnassus"}
+N[4210]={n="Alegorn",side="A",x=48.4,y=21.2,zone="Darnassus"}
+N[4211]={n="Dannelor",side="A",x=51.4,y=12.4,zone="Darnassus"}
+N[4212]={n="Telonis",side="A",x=64.4,y=21.4,zone="Darnassus"}
+N[4213]={n="Taladan",side="A",x=58.4,y=13.2,zone="Darnassus"}
+N[4216]={n="Chardryn",side="A",x=47.8,y=69.8,zone="Darnassus"}
+N[4217]={n="Mathrengyl Bearwalker",side="A",x=34.8,y=7.4,zone="Darnassus"}
+N[4220]={n="Cyroen",side="A",x=34,y=9.4,zone="Darnassus"}
+N[4221]={n="Talaelar",side="A",x=47,y=56.2,zone="Darnassus"}
+N[4222]={n="Voloren",side="A",x=46.4,y=56,zone="Darnassus"}
+N[4223]={n="Fyldan",side="A",x=48.4,y=21.4,zone="Darnassus"}
+N[4225]={n="Saenorion",side="A",x=63.2,y=22.6,zone="Darnassus"}
+N[4226]={n="Ulthir",side="A",x=55.4,y=23.2,zone="Darnassus"}
+N[4228]={n="Vaean",side="A",x=58.4,y=14.4,zone="Darnassus"}
+N[4229]={n="Mythrin'dir",side="A",x=61,y=17.4,zone="Darnassus"}
+N[4230]={n="Yldan",side="A",x=65.4,y=52.8,zone="Darnassus"}
+N[4231]={n="Kieran",side="A",x=65.2,y=60,zone="Darnassus"}
+N[4232]={n="Glorandiir",side="A",x=63.4,y=58.4,zone="Darnassus"}
+N[4233]={n="Mythidan",side="A",x=64.4,y=59.8,zone="Darnassus"}
+N[4234]={n="Andrus",side="A",x=55.4,y=88.2,zone="Darnassus"}
+N[4235]={n="Turian",side="A",x=62.2,y=66.6,zone="Darnassus"}
+N[4236]={n="Cyridan",side="A",x=52.8,y=80.6,zone="Darnassus"}
+N[4240]={n="Caynrus",side="A",x=56.4,y=76,zone="Darnassus"}
+N[4241]={n="Mydrannul",side="A",x=70,y=44.4,zone="Darnassus"}
+N[4254]={n="Geofram Bouldertoe",side="A",x=50.2,y=26,zone="Ironforge"}
+N[4255]={n="Brogus Thunderbrew",side="A"}
+N[4256]={n="Golnir Bouldertoe",side="A",x=51,y=26,zone="Ironforge"}
+N[4257]={n="Lana Thunderbrew",side="A"}
+N[4258]={n="Bengus Deepforge",side="A",x=51.4,y=42.2,zone="Ironforge"}
+N[4259]={n="Thurgrum Deepforge",side="A",x=50.6,y=43.8,zone="Ironforge"}
+N[4265]={n="Nyoma",side="A",x=57.2,y=61.2,zone="Teldrassil"}
+N[4266]={n="Danlyia",side="A",x=55.4,y=57,zone="Teldrassil"}
+N[4305]={n="Kriggon Talsone",side="A",x=36.2,y=90,zone="Westfall"}
+N[4307]={n="Heldan Galesong",side="A",x=37,y=56.2,zone="Darkshore"}
+N[4453]={n="Wizzle Brassbolts",side="B",x=78,y=77,zone="Thousand Needles"}
+N[4552]={n="Eunice Burch",side="H",x=62.2,y=44.4,zone="Undercity"}
+N[4553]={n="Ronald Burch",side="H",x=62.4,y=43.4,zone="Undercity"}
+N[4554]={n="Tawny Grisette",side="H",x=62.2,y=42.4,zone="Undercity"}
+N[4555]={n="Eleanor Rusk",side="H",x=68.2,y=48.4,zone="Undercity"}
+N[4556]={n="Gordon Wendham",side="H",x=61.4,y=41.4,zone="Undercity"}
+N[4557]={n="Louis Warren",side="H",x=61.4,y=41.2,zone="Undercity"}
+N[4558]={n="Lauren Newcomb",side="H",x=64,y=38,zone="Undercity"}
+N[4559]={n="Timothy Weldon",side="H",x=62.4,y=41,zone="Undercity"}
+N[4560]={n="Walter Ellingson",side="H",x=62.4,y=39,zone="Undercity"}
+N[4561]={n="Daniel Bartlett",side="H",x=64,y=38.8,zone="Undercity"}
+N[4562]={n="Thomas Mordan",side="H",x=69.4,y=39.2,zone="Undercity"}
+N[4569]={n="Charles Seaton",side="H",x=77,y=49.2,zone="Undercity"}
+N[4570]={n="Sydney Upton",side="H",x=69.8,y=27.4,zone="Undercity"}
+N[4571]={n="Morley Bates",side="H",x=72.2,y=26.6,zone="Undercity"}
+N[4574]={n="Lizbeth Cromwell",side="H",x=81,y=29.2,zone="Undercity"}
+N[4575]={n="Hannah Akeley",side="H",x=82,y=16.8,zone="Undercity"}
+N[4576]={n="Josef Gregorian",side="H",x=70.4,y=30.4,zone="Undercity"}
+N[4577]={n="Millie Gregorian",side="H",x=70.4,y=29.4,zone="Undercity"}
+N[4580]={n="Lucille Castleton",side="H",x=71,y=29.2,zone="Undercity"}
+N[4581]={n="Salazar Bloch",side="H",x=77.2,y=38.4,zone="Undercity"}
+N[4585]={n="Ezekiel Graves",side="H",x=75.4,y=51.4,zone="Undercity"}
+N[4586]={n="Graham Van Talen",side="H",x=75.2,y=72.4,zone="Undercity"}
+N[4587]={n="Elizabeth Van Talen",side="H",x=75.4,y=73.4,zone="Undercity"}
+N[4588]={n="Arthur Moore",side="H",x=70.2,y=57.4,zone="Undercity"}
+N[4589]={n="Joseph Moore",side="H",x=70.2,y=58,zone="Undercity"}
+N[4590]={n="Jonathan Chambers",side="H",x=69.4,y=61,zone="Undercity"}
+N[4591]={n="Mary Edras",side="H",x=73.4,y=55.4,zone="Undercity"}
+N[4592]={n="Nathaniel Steenwick",side="H",x=77,y=50.8,zone="Undercity"}
+N[4596]={n="James Van Brunt",side="H",x=61.2,y=29.2,zone="Undercity"}
+N[4597]={n="Samuel Van Brunt",side="H",x=61.2,y=29.4,zone="Undercity"}
+N[4599]={n="Sarah Killian",side="H",x=56.2,y=36.4,zone="Undercity"}
+N[4600]={n="Geoffrey Hartwell",side="H",x=58.4,y=32.4,zone="Undercity"}
+N[4601]={n="Francis Eliot",side="H",x=58.4,y=32.4,zone="Undercity"}
+N[4602]={n="Benijah Fenner",side="H",x=58.4,y=32.4,zone="Undercity"}
+N[4603]={n="Nicholas Atwood",side="H",x=62,y=27.6,zone="Undercity"}
+N[4604]={n="Abigail Sawyer",side="H",x=54.8,y=38,zone="Undercity"}
+N[4605]={n="Basil Frye",side="H",x=59.2,y=29.4,zone="Undercity"}
+N[4609]={n="Doctor Marsh",side="H",x=51.2,y=75,zone="Undercity"}
+N[4610]={n="Algernon",side="H",x=51.4,y=74.4,zone="Undercity"}
+N[4611]={n="Doctor Herbert Halsey",side="H",x=47.4,y=72,zone="Undercity"}
+N[4612]={n="Boyle",side="H",x=54.4,y=64.4,zone="Undercity"}
+N[4615]={n="Katrina Alliestar",side="H",x=54.4,y=49.4,zone="Undercity"}
+N[4616]={n="Lavinia Crowe",side="H",x=62.2,y=61.6,zone="Undercity"}
+N[4617]={n="Thaddeus Webb",side="H",x=61.4,y=60.4,zone="Undercity"}
+N[4730]={n="Lelanai",side="A",x=38.2,y=15.4,zone="Darnassus"}
+N[4731]={n="Zachariah Post",side="H",x=59.8,y=52.6,zone="Tirisfal Glades"}
+N[4775]={n="Felicia Doan",side="H",x=63.8,y=49.2,zone="Undercity"}
+N[4782]={n="Truk Wildbeard",side="A",x=14.4,y=42.4,zone="The Hinterlands"}
+N[4875]={n="Turhaw",side="H",x=45.4,y=51,zone="Thousand Needles"}
+N[4876]={n="Jawn Highmesa",side="H",x=46,y=51.4,zone="Thousand Needles"}
+N[4877]={n="Jandia",side="H",x=46,y=51.4,zone="Thousand Needles"}
+N[4878]={n="Montarr",side="H",x=45,y=50.4,zone="Thousand Needles"}
+N[4879]={n="Ogg'marr",side="H",x=36.6,y=31,zone="Dustwallow Marsh"}
+N[4883]={n="Krak",side="H",x=36.4,y=30.8,zone="Dustwallow Marsh"}
+N[4884]={n="Zulrg",side="H",x=36.2,y=31.6,zone="Dustwallow Marsh"}
+N[4885]={n="Gregor MacVince",side="A",x=65.2,y=51.4,zone="Dustwallow Marsh"}
+N[4886]={n="Hans Weston",side="A",x=64.6,y=50.4,zone="Dustwallow Marsh"}
+N[4888]={n="Marie Holdston",side="A",x=64.6,y=50,zone="Dustwallow Marsh"}
+N[4889]={n="Torq Ironblast",side="A",x=67.4,y=48,zone="Dustwallow Marsh"}
+N[4890]={n="Piter Verance",side="A",x=67.4,y=47.8,zone="Dustwallow Marsh"}
+N[4891]={n="Dwane Wertle",side="A",x=68.2,y=47.4,zone="Dustwallow Marsh"}
+N[4892]={n="Jensen Farran",side="A",x=67.8,y=49.8,zone="Dustwallow Marsh"}
+N[4893]={n="Bartender Lillian",side="A",x=66.6,y=45.2,zone="Dustwallow Marsh"}
+N[4894]={n="Craig Nollward",side="A",x=66.8,y=45.2,zone="Dustwallow Marsh"}
+N[4896]={n="Charity Mipsy",side="A",x=67.4,y=51.4,zone="Dustwallow Marsh"}
+N[4897]={n="Helenia Olden",side="A",x=66.4,y=51.4,zone="Dustwallow Marsh"}
+N[4899]={n="Uma Bartulm",side="A",x=64,y=47.6,zone="Dustwallow Marsh"}
+N[4954]={n="Uttnar",side="H",x=74.2,y=33.8,zone="Arathi Highlands"}
+N[4981]={n="Ben Trias",side="A",x=60.4,y=63.4,zone="Stormwind City"}
+N[5049]={n="Lyesa Steelbrow",side="A",x=36,y=84.2,zone="Ironforge"}
+N[5100]={n="Fillius Fizzlespinner",side="A",x=38.4,y=73.4,zone="Ironforge"}
+N[5101]={n="Bryllia Ironbrand",side="A",x=39,y=73.4,zone="Ironforge"}
+N[5102]={n="Dolman Steelfury",side="A",x=36,y=66,zone="Ironforge"}
+N[5103]={n="Grenil Steelfury",side="A",x=36,y=65.4,zone="Ironforge"}
+N[5106]={n="Bromiir Ormsen",side="A",x=30.8,y=58.4,zone="Ironforge"}
+N[5107]={n="Mangorn Flinthammer",side="A",x=30.8,y=58.4,zone="Ironforge"}
+N[5108]={n="Raena Flinthammer",side="A",x=32,y=58.8,zone="Ironforge"}
+N[5109]={n="Myra Tyrngaarde",side="A",x=23.4,y=62.4,zone="Ironforge"}
+N[5110]={n="Barim Jurgenstaad",side="A",x=19.4,y=56.2,zone="Ironforge"}
+N[5111]={n="Innkeeper Firebrew",side="A",x=18.4,y=51.4,zone="Ironforge"}
+N[5112]={n="Gwenna Firebrew",side="A",x=18.4,y=51.4,zone="Ironforge"}
+N[5119]={n="Hegnar Swiftaxe",side="A",x=61.8,y=88.4,zone="Ironforge"}
+N[5120]={n="Brenwyn Wintersteel",side="A",x=61.2,y=89,zone="Ironforge"}
+N[5121]={n="Kelomir Ironhand",side="A",x=62,y=89,zone="Ironforge"}
+N[5122]={n="Skolmin Goldfury",side="A",x=71.2,y=67.6,zone="Ironforge"}
+N[5123]={n="Bretta Goldfury",side="A",x=72.2,y=65.8,zone="Ironforge"}
+N[5124]={n="Sognar Cliffbeard",side="A",x=55.4,y=81.4,zone="Ironforge"}
+N[5125]={n="Dolkin Craghelm",side="A",x=54,y=88.6,zone="Ironforge"}
+N[5126]={n="Olthran Craghelm",side="A",x=54.4,y=87.2,zone="Ironforge"}
+N[5127]={n="Fimble Finespindle",side="A",x=39.4,y=33,zone="Ironforge"}
+N[5128]={n="Bombus Finespindle",side="A",x=39.2,y=33.2,zone="Ironforge"}
+N[5129]={n="Lissyphus Finespindle",side="A",x=54.4,y=88.2,zone="Ironforge"}
+N[5132]={n="Pithwick",side="A",x=38.2,y=74.4,zone="Ironforge"}
+N[5133]={n="Harick Boulderdrum",side="A",x=22.2,y=16,zone="Ironforge"}
+N[5134]={n="Jonivera Farmountain",side="A"}
+N[5135]={n="Svalbrad Farmountain",side="A"}
+N[5138]={n="Gwina Stonebranch",side="A",x=55.2,y=57.6,zone="Ironforge"}
+N[5139]={n="Kurdrum Barleybeard",side="A"}
+N[5140]={n="Edris Barleybeard",side="A",x=72,y=75.4,zone="Ironforge"}
+N[5150]={n="Nissa Firestone",side="A",x=54.8,y=58.4,zone="Ironforge"}
+N[5151]={n="Ginny Longberry",side="A",x=30.4,y=26.4,zone="Ironforge"}
+N[5152]={n="Bingus",side="A",x=22.4,y=16,zone="Ironforge"}
+N[5153]={n="Jormund Stonebrow",side="A",x=43.2,y=28.4,zone="Ironforge"}
+N[5154]={n="Poranna Snowbraid",side="A",x=43.2,y=28.4,zone="Ironforge"}
+N[5155]={n="Ingrys Stonebrow",side="A",x=38.4,y=5.4,zone="Ironforge"}
+N[5156]={n="Maeva Snowbraid",side="A",x=38.4,y=5.4,zone="Ironforge"}
+N[5157]={n="Gimble Thistlefuzz",side="A",x=59,y=45.2,zone="Ironforge"}
+N[5158]={n="Tilli Thistlefuzz",side="A",x=60.4,y=44.2,zone="Ironforge"}
+N[5159]={n="Daryl Riknussun",side="A",x=60,y=36.8,zone="Ironforge"}
+N[5160]={n="Emrul Riknussun",side="A",x=58.8,y=37.2,zone="Ironforge"}
+N[5162]={n="Tansy Puddlefizz",side="A",x=47.8,y=6.4,zone="Ironforge"}
+N[5163]={n="Burbik Gearspanner",side="A",x=46.4,y=27.2,zone="Ironforge"}
+N[5169]={n="Tynnus Venomsprout",side="A",x=52.4,y=13.6,zone="Ironforge"}
+N[5170]={n="Hjoldir Stoneblade",side="A",x=45.2,y=6.4,zone="Ironforge"}
+N[5173]={n="Alexander Calder",side="A",x=50.2,y=6.2,zone="Ironforge"}
+N[5174]={n="Springspindle Fizzlegear",side="A",x=68.2,y=43.4,zone="Ironforge"}
+N[5175]={n="Gearcutter Cogspinner",side="A",x=67.8,y=43,zone="Ironforge"}
+N[5177]={n="Tally Berryfizz",side="A",x=66.4,y=55.2,zone="Ironforge"}
+N[5178]={n="Soolie Berryfizz",side="A",x=66.4,y=54.4,zone="Ironforge"}
+N[5188]={n="Garyl",side="H",x=43.8,y=74.4,zone="Orgrimmar"}
+N[5189]={n="Thrumn",side="H",x=37.4,y=62,zone="Thunder Bluff"}
+N[5190]={n="Merill Pleasance",side="H",x=68.4,y=44.2,zone="Undercity"}
+N[5191]={n="Shalumon",side="A",x=69.4,y=23.2,zone="Darnassus"}
+N[5193]={n="Rebecca Laughlin",side="A",x=57.2,y=68.6,zone="Stormwind City"}
+N[5411]={n="Krinkle Goodsteel",side="B",x=51.4,y=28.8,zone="Tanaris"}
+N[5482]={n="Stephen Ryback",side="A",x=75.4,y=37.2,zone="Stormwind City"}
+N[5483]={n="Erika Tate",side="A",x=75.4,y=37.2,zone="Stormwind City"}
+N[5494]={n="Catherine Leland",side="A",x=45.4,y=57.6,zone="Stormwind City"}
+N[5499]={n="Lilyssia Nightbreeze",side="A",x=46.4,y=79.4,zone="Stormwind City"}
+N[5500]={n="Tel'Athir",side="A",x=45.8,y=78.2,zone="Stormwind City"}
+N[5503]={n="Eldraeith",side="A",x=46.4,y=78.4,zone="Stormwind City"}
+N[5508]={n="Strumner Flintheel",side="A",x=66,y=17.2,zone="Blasted Lands"}
+N[5509]={n="Kathrum Axehand",side="A",x=51.4,y=12.4,zone="Stormwind City"}
+N[5510]={n="Thulman Flintcrag",side="A",x=54.4,y=15.2,zone="Stormwind City"}
+N[5511]={n="Therum Deepforge",side="A",x=56.4,y=15.4,zone="Stormwind City"}
+N[5512]={n="Kaita Deepforge",side="A",x=56.4,y=16.2,zone="Stormwind City"}
+N[5513]={n="Gelman Stonehand",side="A",x=51,y=17.2,zone="Stormwind City"}
+N[5514]={n="Brooke Stonebraid",side="A",x=51.2,y=16.8,zone="Stormwind City"}
+N[5518]={n="Lilliam Sparkspindle",side="A",x=54.8,y=7.8,zone="Stormwind City"}
+N[5519]={n="Billibub Cogspinner",side="A",x=55.2,y=7.4,zone="Stormwind City"}
+N[5520]={n="Spackle Thornberry",side="A",x=25.4,y=77.8,zone="Stormwind City"}
+N[5564]={n="Simon Tanner",side="A",x=67.2,y=49.4,zone="Stormwind City"}
+N[5565]={n="Jillian Tanner",side="A",x=67.2,y=49.4,zone="Stormwind City"}
+N[5567]={n="Sellandus",side="A",x=42,y=76.2,zone="Stormwind City"}
+N[5569]={n="Fizzlebang Booms",side="A",x=72.4,y=52.8,zone="Ironforge"}
+N[5570]={n="Bruuk Barleybeard",side="A",x=72,y=75.4,zone="Ironforge"}
+N[5594]={n="Alchemist Pestlezugg",side="B",x=50.8,y=27,zone="Tanaris"}
+N[5611]={n="Barkeep Morag",side="H",x=54.4,y=68,zone="Orgrimmar"}
+N[5620]={n="Bartender Wental",side="A",x=26.8,y=43.2,zone="Redridge Mountains"}
+N[5688]={n="Innkeeper Renee",side="H",x=61.6,y=52,zone="Tirisfal Glades"}
+N[5695]={n="Vance Undergloom",side="H",x=61.6,y=51.4,zone="Tirisfal Glades"}
+N[5698]={n="Joanna Whitehall",side="H",x=52.8,y=36.4,zone="Undercity"}
+N[5748]={n="Killian Sanatha",side="H",x=33,y=17.4,zone="Silverpine Forest"}
+N[5749]={n="Kayla Smithe",side="H",x=30.8,y=66.4,zone="Tirisfal Glades"}
+N[5750]={n="Gina Lang",side="H",x=61.6,y=52.4,zone="Tirisfal Glades"}
+N[5753]={n="Martha Strain",side="H",x=85.4,y=15.4,zone="Undercity"}
+N[5754]={n="Zane Bradford",side="H",x=70,y=27.2,zone="Undercity"}
+N[5757]={n="Lilly",side="H",x=43,y=50.8,zone="Silverpine Forest"}
+N[5758]={n="Leo Sarn",side="H",x=53.8,y=82.6,zone="Silverpine Forest"}
+N[5759]={n="Nurse Neela",side="H",x=61.8,y=52.8,zone="Tirisfal Glades"}
+N[5783]={n="Kalldan Felmoon",side="B",x=51.8,y=55.4,zone="Kalimdor"}
+N[5784]={n="Waldor",side="B",x=51.8,y=55.4,zone="Kalimdor"}
+N[5811]={n="Kamari",side="H",x=63,y=45,zone="Orgrimmar"}
+N[5812]={n="Tumi",side="H",x=82.4,y=23.4,zone="Orgrimmar"}
+N[5814]={n="Innkeeper Thulbek",side="H",x=31.4,y=29.6,zone="Stranglethorn Vale"}
+N[5815]={n="Kurgul",side="H",x=47.4,y=46.8,zone="Orgrimmar"}
+N[5816]={n="Katis",side="H",x=44.2,y=48.4,zone="Orgrimmar"}
+N[5817]={n="Shimra",side="H",x=47.8,y=80.6,zone="Orgrimmar"}
+N[5819]={n="Mirelle Tremayne",side="H",x=61.2,y=28.4,zone="Undercity"}
+N[5820]={n="Gillian Moore",side="H",x=70.4,y=58.4,zone="Undercity"}
+N[5821]={n="Sheldon Von Croy",side="H",x=70.4,y=28.4,zone="Undercity"}
+N[5848]={n="Malgin Barleybrew",x=49.2,y=84.6,zone="The Barrens"}
+N[5870]={n="Krond",side="H",x=46.2,y=58.4,zone="Stonetalon Mountains"}
+N[5871]={n="Larhka",side="H",x=52,y=29.6,zone="The Barrens"}
+N[5886]={n="Gwyn Farrow",side="H",x=44,y=39.8,zone="Silverpine Forest"}
+N[5939]={n="Vira Younghoof",side="H",x=46,y=63.8,zone="Mulgore"}
+N[5940]={n="Harn Longcast",side="H",x=46.6,y=59.2,zone="Mulgore"}
+N[5942]={n="Zansoa",side="H",x=56,y=73.4,zone="Durotar"}
+N[5943]={n="Rawrk",side="H",x=54,y=42,zone="Durotar"}
+N[5944]={n="Yonada",side="H",x=45,y=59.2,zone="The Barrens"}
+N[6027]={n="Kitha",side="H",x=54.4,y=41.4,zone="Durotar"}
+N[6028]={n="Burkrum",side="H",x=73.4,y=60.4,zone="Ashenvale"}
+N[6091]={n="Dellylah",side="A",x=59.4,y=40.8,zone="Teldrassil"}
+N[6094]={n="Byancie",side="A",x=55.2,y=56.8,zone="Teldrassil"}
+N[6272]={n="Innkeeper Janene",side="A",x=66.4,y=45.2,zone="Dustwallow Marsh"}
+N[6286]={n="Zarrin",side="A",x=57,y=61.2,zone="Teldrassil"}
+N[6298]={n="Thelgrum Stonehammer",side="A",x=38.2,y=41.2,zone="Darkshore"}
+N[6299]={n="Delfrum Flintbeard",side="A",x=38.2,y=41,zone="Darkshore"}
+N[6300]={n="Elisa Steelhand",side="A",x=38.2,y=41.2,zone="Darkshore"}
+N[6301]={n="Gorbold Steelhand",side="A",x=38,y=41.2,zone="Darkshore"}
+N[6328]={n="Dannie Fizzwizzle",side="A",x=47.2,y=53.4,zone="Dun Morogh"}
+N[6367]={n="Donni Anthania",side="A",x=44.2,y=53.2,zone="Elwynn Forest"}
+N[6373]={n="Dane Winslow",side="A",x=50,y=42.6,zone="Elwynn Forest"}
+N[6374]={n="Cylina Darkheart",side="A",x=44.4,y=66,zone="Elwynn Forest"}
+N[6376]={n="Wren Darkspring",side="A",x=28.8,y=66.2,zone="Dun Morogh"}
+N[6382]={n="Jubahl Corpseseeker",side="A",x=52.8,y=6,zone="Ironforge"}
+N[6495]={n="Riznek",side="B",x=79.2,y=75.4,zone="Thousand Needles"}
+N[6496]={n="Brivelthwerp",side="B",x=77.4,y=77,zone="Thousand Needles"}
+N[6548]={n="Magus Tirth",side="B",x=78.2,y=75.8,zone="Thousand Needles"}
+N[6567]={n="Ghok'kah",side="H",x=35.2,y=30.8,zone="Dustwallow Marsh"}
+N[6568]={n="Vizzklick",side="B",x=51,y=27.4,zone="Tanaris"}
+N[6574]={n="Jun'ha",side="H",x=72.6,y=36.4,zone="Arathi Highlands"}
+N[6576]={n="Brienna Starglow",side="A",x=89,y=45.8,zone="Feralas"}
+N[6727]={n="Innkeeper Brianna",side="A",x=26.8,y=44.2,zone="Redridge Mountains"}
+N[6730]={n="Jinky Twizzlefixxit",side="B",x=77.6,y=77.8,zone="Thousand Needles"}
+N[6731]={n="Harlown Darkweave",side="A",x=18.2,y=60,zone="Ashenvale"}
+N[6734]={n="Innkeeper Hearthstove",side="A",x=35.4,y=48.4,zone="Loch Modan"}
+N[6735]={n="Innkeeper Saelienne",side="A",x=67,y=16.8,zone="Darnassus"}
+N[6736]={n="Innkeeper Keldamyr",side="A",x=55.6,y=59.8,zone="Teldrassil"}
+N[6737]={n="Innkeeper Shaussiy",side="A",x=37,y=44,zone="Darkshore"}
+N[6738]={n="Innkeeper Kimlya",side="A",x=37,y=49.2,zone="Ashenvale"}
+N[6739]={n="Innkeeper Bates",side="H",x=43.2,y=41.2,zone="Silverpine Forest"}
+N[6740]={n="Innkeeper Allison",side="A",x=52.4,y=65.6,zone="Stormwind City"}
+N[6741]={n="Innkeeper Norman",side="H",x=66.8,y=38.6,zone="Undercity"}
+N[6746]={n="Innkeeper Pala",side="H",x=45.4,y=63.4,zone="Thunder Bluff"}
+N[6747]={n="Innkeeper Kauth",side="H",x=46,y=64,zone="Mulgore"}
+N[6777]={n="Zan Shivsproket",side="B",x=86,y=80,zone="Alterac Mountains"}
+end)()
+;(function()
+N[6779]={n="Smudge Thunderwood",side="B",x=86,y=79.4,zone="Alterac Mountains"}
+N[6790]={n="Innkeeper Trelayne",side="A",x=73.8,y=44.4,zone="Duskwood"}
+N[6791]={n="Innkeeper Wiley",side="B",x=62,y=39.4,zone="The Barrens"}
+N[6807]={n="Innkeeper Skindle",side="B",x=27,y=77.2,zone="Stranglethorn Vale"}
+N[6928]={n="Innkeeper Grosk",side="H",x=51.4,y=41.6,zone="Durotar"}
+N[6929]={n="Innkeeper Gryshka",side="H",x=54,y=68.6,zone="Orgrimmar"}
+N[6930]={n="Innkeeper Karakul",side="H",x=45,y=56.4,zone="Swamp of Sorrows"}
+N[7485]={n="Nargatt",side="H",x=32.2,y=29.2,zone="Stranglethorn Vale"}
+N[7564]={n="Marin Noggenfogger",side="B",x=51.8,y=28.4,zone="Tanaris"}
+N[7683]={n="Alessandro Luca",side="H",x=58.2,y=55.2,zone="Undercity"}
+N[7714]={n="Innkeeper Byula",side="H",x=45.4,y=59,zone="The Barrens"}
+N[7731]={n="Innkeeper Jayka",side="H",x=47.4,y=62,zone="Stonetalon Mountains"}
+N[7733]={n="Innkeeper Fizzgrimble",side="B",x=52.4,y=27.8,zone="Tanaris"}
+N[7736]={n="Innkeeper Shyria",side="A",x=31,y=43.4,zone="Feralas"}
+N[7737]={n="Innkeeper Greul",side="H",x=74.8,y=45,zone="Feralas"}
+N[7744]={n="Innkeeper Thulfram",side="A",x=13.4,y=41.8,zone="The Hinterlands"}
+N[7772]={n="Kalin Windflight",side="B",x=49.2,y=19.8,zone="Feralas"}
+N[7775]={n="Gregan Brewspewer",side="B",x=45,y=25.4,zone="Feralas"}
+N[7852]={n="Pratt McGrubben",side="A",x=30.4,y=42.8,zone="Feralas"}
+N[7854]={n="Jangdor Swiftstrider",side="H",x=74.4,y=42.8,zone="Feralas"}
+N[7867]={n="Thorkaf Dragoneye",side="H",x=62.4,y=57.4,zone="Badlands"}
+N[7879]={n="Quintis Jonespyre",side="A",x=32.4,y=43.8,zone="Feralas"}
+N[7940]={n="Darnall",side="B",x=51.4,y=33.2,zone="Moonglade"}
+N[7941]={n="Mardrack Greenwell",side="A",x=31,y=43.2,zone="Feralas"}
+N[7942]={n="Faralorn",side="A",x=30.6,y=43.4,zone="Feralas"}
+N[7943]={n="Harklane",side="A",x=31,y=46.2,zone="Feralas"}
+N[7945]={n="Savanne",side="A",x=31,y=46,zone="Feralas"}
+N[7947]={n="Vivianna",side="A",x=31.2,y=43.4,zone="Feralas"}
+N[7948]={n="Kylanna Windwhisper",side="A",x=32.4,y=43.8,zone="Feralas"}
+N[7952]={n="Zjolnir",side="H",x=55.2,y=75.4,zone="Durotar"}
+N[7955]={n="Milli Featherwhistle",side="A",x=49.2,y=48,zone="Dun Morogh"}
+N[7976]={n="Thalgus Thunderfist",side="A",x=60.8,y=89.8,zone="Ironforge"}
+N[7978]={n="Bimble Longberry",side="A",x=20.2,y=23.6,zone="Ironforge"}
+N[8116]={n="Ziggle Sparks",side="A",x=27.4,y=77.6,zone="Stranglethorn Vale"}
+N[8117]={n="Wizbang Booms",side="A",x=30.4,y=62,zone="Ironforge"}
+N[8118]={n="Lillian Singh",side="A",x=54.4,y=59.4,zone="Stormwind City"}
+N[8121]={n="Jaxxil Sparks",x=61.8,y=39.4,zone="The Barrens"}
+N[8122]={n="Kizzak Sparks",side="H",x=74,y=27.6,zone="Orgrimmar"}
+N[8125]={n="Dirge Quikcleave",side="B",x=52.6,y=28,zone="Tanaris"}
+N[8126]={n="Nixx Sprocketspring",side="B",x=52.4,y=27.2,zone="Tanaris"}
+N[8129]={n="Wrinkle Goodsteel",side="B",x=50.8,y=27.6,zone="Tanaris"}
+N[8131]={n="Blizrik Buckshot",side="B",x=50.8,y=27.4,zone="Tanaris"}
+N[8137]={n="Gikkix",side="B",x=66.6,y=22,zone="Tanaris"}
+N[8139]={n="Jabbey",side="B",x=67,y=22,zone="Tanaris"}
+N[8143]={n="Loorana",side="H",x=75.4,y=43.8,zone="Feralas"}
+N[8145]={n="Sheendra Tallgrass",side="H",x=74.4,y=42.8,zone="Feralas"}
+N[8150]={n="Janet Hommers",side="A",x=66.2,y=6.6,zone="Desolace"}
+N[8152]={n="Harnor",side="H",x=51.2,y=53.2,zone="Desolace"}
+N[8153]={n="Narv Hidecrafter",side="H",x=55.2,y=56.2,zone="Desolace"}
+N[8157]={n="Logannas",side="A",x=32.4,y=44,zone="Feralas"}
+N[8158]={n="Bronk",side="H",x=76,y=43.4,zone="Feralas"}
+N[8159]={n="Worb Strongstitch",side="H",x=74.6,y=42.6,zone="Feralas"}
+N[8160]={n="Nioma",side="A",x=13.4,y=43.4,zone="The Hinterlands"}
+N[8161]={n="Harggan",side="A",x=13.4,y=44,zone="The Hinterlands"}
+N[8176]={n="Gharash",side="H",x=45.4,y=51.4,zone="Swamp of Sorrows"}
+N[8177]={n="Rartar",side="H",x=45.4,y=57,zone="Swamp of Sorrows"}
+N[8178]={n="Nina Lightbrew",side="A",x=66.8,y=18.2,zone="Blasted Lands"}
+N[8305]={n="Kixxle",side="B",x=50.2,y=37.8,zone="Wetlands"}
+N[8306]={n="Duhng",side="H",x=55.2,y=31.8,zone="The Barrens"}
+N[8307]={n="Tarban Hearthgrain",side="H",x=55,y=32,zone="The Barrens"}
+N[8358]={n="Hewa",side="H",x=45,y=55.4,zone="Thunder Bluff"}
+N[8359]={n="Ahanu",side="H",x=45.2,y=55.4,zone="Thunder Bluff"}
+N[8360]={n="Elki",side="H",x=44.6,y=57.8,zone="Thunder Bluff"}
+N[8361]={n="Chepi",side="H",x=36.4,y=54.4,zone="Thunder Bluff"}
+N[8362]={n="Kuruk",side="H",x=39,y=64.2,zone="Thunder Bluff"}
+N[8363]={n="Shadi Mistrunner",side="H",x=40.4,y=63.4,zone="Thunder Bluff"}
+N[8364]={n="Pakwa",side="H",x=39.2,y=63.8,zone="Thunder Bluff"}
+N[8398]={n="Ohanko",side="H",x=53.2,y=57.2,zone="Thunder Bluff"}
+N[8401]={n="Halpa",side="H",x=62.2,y=58.4,zone="Thunder Bluff"}
+N[8403]={n="Jeremiah Payson",side="H",x=67.4,y=43.4,zone="Undercity"}
+N[8404]={n="Xan'tish",side="H",x=18.4,y=60.2,zone="Orgrimmar"}
+N[8508]={n="Gretta Ganter",side="A",x=31.4,y=44.6,zone="Dun Morogh"}
+N[8665]={n="Shylenai",side="A",x=69.4,y=45.4,zone="Darnassus"}
+N[8666]={n="Lil Timmy",side="A",x=50.4,y=34,zone="Stormwind City"}
+N[8678]={n="Jubie Gadgetspring",side="B",x=45.2,y=90.8,zone="Azshara"}
+N[8679]={n="Knaz Blunderflame",side="B",x=51,y=35.2,zone="Stranglethorn Vale"}
+N[8681]={n="Outfitter Eric",side="A",x=43.2,y=29.2,zone="Ironforge"}
+N[8736]={n="Buzzek Bracketswing",side="B",x=52.2,y=27.4,zone="Tanaris"}
+N[8737]={n="Linken",side="B",x=44.6,y=8.2,zone="Un'Goro Crater"}
+N[8878]={n="Muuran",side="H",x=55.6,y=56.4,zone="Desolace"}
+N[8931]={n="Innkeeper Heather",side="A",x=52.8,y=53.4,zone="Westfall"}
+N[8934]={n="Christopher Hewen",side="A",x=52.2,y=52.8,zone="Westfall"}
+N[9087]={n="Bashana Runetotem",side="H",x=70.4,y=33,zone="Thunder Bluff"}
+N[9099]={n="Sraaz",side="A",x=39.2,y=40.2,zone="Ironforge"}
+N[9179]={n="Jazzrik",side="B",x=42.4,y=52.4,zone="Badlands"}
+N[9356]={n="Innkeeper Shul'kar",side="H",x=2.8,y=45.8,zone="Badlands"}
+N[9499]={n="Plugger Spazzring"}
+N[9501]={n="Innkeeper Adegwa",side="H",x=73.8,y=32.4,zone="Arathi Highlands"}
+N[9544]={n="Yuka Screwspigot",side="B",x=66,y=22,zone="Burning Steppes"}
+N[9548]={n="Cawind Trueaim",side="H",x=74.8,y=45.4,zone="Feralas"}
+N[9549]={n="Borand",side="H",x=45.2,y=59.2,zone="Stonetalon Mountains"}
+N[9551]={n="Starn",side="H",x=45,y=50.4,zone="Thousand Needles"}
+N[9552]={n="Zanara",side="H",x=35.4,y=30.2,zone="Dustwallow Marsh"}
+N[9553]={n="Nadia Vernon",side="H",x=44.8,y=39.6,zone="Silverpine Forest"}
+N[9555]={n="Mu'uta",side="H",x=72.4,y=33.4,zone="Arathi Highlands"}
+N[9636]={n="Kireena",side="H",x=51,y=53.4,zone="Desolace"}
+N[9676]={n="Tink Sprocketwhistle",side="A"}
+N[10118]={n="Nessa Shadowsong",side="A",x=56.2,y=92.4,zone="Teldrassil"}
+N[10216]={n="Gubber Blump",side="A",x=36,y=44.8,zone="Darkshore"}
+N[10266]={n="Ug'thok",side="H",x=80.4,y=23.4,zone="Orgrimmar"}
+N[10276]={n="Rotgath Stonebeard",side="A",x=51.2,y=42.4,zone="Ironforge"}
+N[10277]={n="Groum Stonebeard",side="A",x=51.2,y=42.4,zone="Ironforge"}
+N[10278]={n="Thrag Stonehoof",side="H",x=39,y=57.8,zone="Thunder Bluff"}
+N[10293]={n="Dulciea Frostmoon",side="A",x=30.8,y=43.2,zone="Feralas"}
+N[10361]={n="Gruul Darkblade",side="H",x=22.2,y=51.2,zone="Azshara"}
+N[10364]={n="Yaelika Farclaw",side="H"}
+N[10367]={n="Shrye Ragefist",side="H"}
+N[10369]={n="Trayexir",side="H",x=56.4,y=73.2,zone="Durotar"}
+N[10379]={n="Altsoba Ragetotem",side="H",x=34.8,y=53,zone="Felwood"}
+N[10380]={n="Sanuye Runetotem",side="H",x=45,y=59,zone="The Barrens"}
+N[10618]={n="Rivern Frostwind",side="A",x=49.8,y=9.8,zone="Winterspring"}
+N[10667]={n="Chromie",side="B",x=39.4,y=66.8,zone="Western Plaguelands"}
+N[10856]={n="Argent Quartermaster Hasana",side="B",x=83.2,y=68.2,zone="Tirisfal Glades"}
+N[10857]={n="Argent Quartermaster Lightspark",side="B",x=42.8,y=83.8,zone="Western Plaguelands"}
+N[10993]={n="Twizwick Sprocketgrind",side="H",x=58.6,y=39.6,zone="Mulgore"}
+N[11017]={n="Roxxik",side="H",x=75.4,y=24.8,zone="Orgrimmar"}
+N[11025]={n="Mukdrak",side="H",x=52.2,y=40.8,zone="Durotar"}
+N[11026]={n="Sprite Jumpsprocket",side="A",x=54.6,y=8,zone="Stormwind City"}
+N[11028]={n="Jemma Quikswitch",side="A",x=67.4,y=43.8,zone="Ironforge"}
+N[11029]={n="Trixie Quikswitch",side="A",x=67.4,y=43.2,zone="Ironforge"}
+N[11031]={n="Franklin Lloyd",side="H",x=75.4,y=73,zone="Undercity"}
+N[11037]={n="Jenna Lemkenilli",side="A",x=38.2,y=41,zone="Darkshore"}
+N[11038]={n="Caretaker Alen",side="B",x=79.4,y=63.8,zone="Eastern Plaguelands"}
+N[11041]={n="Milla Fairancora",side="A",x=55.2,y=21.4,zone="Darnassus"}
+N[11042]={n="Sylvanna Forestmoon",side="A",x=55.6,y=23.4,zone="Darnassus"}
+N[11044]={n="Doctor Martin Felben",side="H",x=45.8,y=73.2,zone="Undercity"}
+N[11046]={n="Whuut",side="H",x=55.8,y=33.2,zone="Orgrimmar"}
+N[11047]={n="Kray",side="H",x=46.8,y=33.4,zone="Thunder Bluff"}
+N[11048]={n="Victor Ward",side="H",x=70.2,y=29.6,zone="Undercity"}
+N[11049]={n="Rhiannon Davis",side="H",x=70.2,y=30.2,zone="Undercity"}
+N[11050]={n="Trianna",side="A",x=63.4,y=21.4,zone="Darnassus"}
+N[11051]={n="Vhan",side="H",x=43.4,y=43.6,zone="Thunder Bluff"}
+N[11052]={n="Timothy Worthington",side="A",x=66.2,y=51.6,zone="Dustwallow Marsh"}
+N[11056]={n="Alchemist Arbington",side="A",x=42.6,y=83.8,zone="Western Plaguelands"}
+N[11057]={n="Apothecary Dithers",side="H",x=83.2,y=69.2,zone="Tirisfal Glades"}
+N[11065]={n="Thonys Pillarstone",side="A",x=59,y=45.2,zone="Ironforge"}
+N[11066]={n="Jhag",side="H",x=53.4,y=38.2,zone="Orgrimmar"}
+N[11067]={n="Malcomb Wynn",side="H",x=62.2,y=60.4,zone="Undercity"}
+N[11068]={n="Betty Quin",side="A",x=43.2,y=63.8,zone="Stormwind City"}
+N[11070]={n="Lalina Summermoon",side="A",x=58.4,y=13.2,zone="Darnassus"}
+N[11071]={n="Mot Dawnstrider",side="H",x=43.8,y=37.8,zone="Thunder Bluff"}
+N[11072]={n="Kitta Firewind",side="A",x=64.8,y=70.4,zone="Elwynn Forest"}
+N[11073]={n="Annora",side="B"}
+N[11074]={n="Hgarth",side="H",x=49.2,y=57.2,zone="Stonetalon Mountains"}
+N[11081]={n="Faldron",side="A",x=64.4,y=21.4,zone="Darnassus"}
+N[11083]={n="Darianna",side="A",x=64.2,y=21.6,zone="Darnassus"}
+N[11084]={n="Tarn",side="H",x=42.4,y=43,zone="Thunder Bluff"}
+N[11096]={n="Randal Worth",side="A",x=67.4,y=49.4,zone="Stormwind City"}
+N[11098]={n="Hahrana Ironhide",side="H",x=74.4,y=43,zone="Feralas"}
+N[11103]={n="Innkeeper Lyshaerya",side="A",x=66.2,y=6.6,zone="Desolace"}
+N[11106]={n="Innkeeper Sikewa",side="H",x=24,y=68.2,zone="Desolace"}
+N[11116]={n="Innkeeper Abeqwa",side="H",x=46,y=51.4,zone="Thousand Needles"}
+N[11118]={n="Innkeeper Vizzie",side="B",x=61.2,y=38.8,zone="Winterspring"}
+N[11137]={n="Xai'ander",side="A",x=35.8,y=52,zone="Ashenvale"}
+N[11182]={n="Nixxrak",side="B",x=61.6,y=37.8,zone="Winterspring"}
+N[11183]={n="Blixxrak",side="B",x=61.6,y=37.8,zone="Winterspring"}
+N[11184]={n="Wixxrak",side="B",x=61.6,y=38,zone="Winterspring"}
+N[11185]={n="Xizzer Fizzbolt",side="B",x=60.8,y=38.4,zone="Winterspring"}
+N[11186]={n="Lunnix Sprocketslip",side="B",x=61.6,y=38.4,zone="Winterspring"}
+N[11187]={n="Himmik",side="B",x=61.2,y=39,zone="Winterspring"}
+N[11188]={n="Evie Whirlbrew",side="B",x=60.8,y=37.8,zone="Winterspring"}
+N[11189]={n="Qia",side="B",x=61.2,y=37.2,zone="Winterspring"}
+N[11278]={n="Magnus Frostwake",side="B",x=68,y=77.4,zone="Western Plaguelands"}
+N[11287]={n="Baker Masterson",side="B",x=69.4,y=79.4,zone="Western Plaguelands"}
+N[11536]={n="Quartermaster Miranda Breechlock",side="B",x=81.4,y=60,zone="Eastern Plaguelands"}
+N[11555]={n="Gorn One Eye",x=65.2,y=2.6,zone="Felwood"}
+N[11557]={n="Meilosh",side="B",x=65.4,y=2.8,zone="Felwood"}
+N[11703]={n="Graw Cornerstone",side="A",x=41.4,y=74.4,zone="Searing Gorge"}
+N[11874]={n="Masat T'andr",side="B",x=26.2,y=31.4,zone="Swamp of Sorrows"}
+N[12019]={n="Dargon",side="B",x=48.4,y=38.8,zone="Moonglade"}
+N[12021]={n="Daeolyn Summerleaf",side="B",x=45.2,y=34.4,zone="Moonglade"}
+N[12022]={n="Lorelae Wintersong",side="B",x=48.2,y=40,zone="Moonglade"}
+N[12023]={n="Kharedon",side="B",x=56.4,y=30,zone="Moonglade"}
+N[12024]={n="Meliri",side="B",x=51.2,y=42.2,zone="Moonglade"}
+N[12026]={n="My'lanna",side="B",x=44.4,y=34,zone="Moonglade"}
+N[12027]={n="Tukk",side="H",x=25,y=71.8,zone="Desolace"}
+N[12028]={n="Lah'Mawhani",side="H",x=23,y=71.6,zone="Desolace"}
+N[12029]={n="Narianna",side="B",x=53.2,y=42.6,zone="Moonglade"}
+N[12031]={n="Mai'Lahii",side="H",x=22.6,y=72,zone="Desolace"}
+N[12033]={n="Wulan",side="H",x=26.2,y=69.8,zone="Desolace"}
+N[12043]={n="Kulwia",side="H",x=45.4,y=59.4,zone="Stonetalon Mountains"}
+N[12045]={n="Hae'Wilani",side="H",x=25.8,y=71,zone="Desolace"}
+N[12096]={n="Stormpike Quartermaster",side="A"}
+N[12097]={n="Frostwolf Quartermaster",side="H"}
+N[12196]={n="Innkeeper Kaylisk",side="H",x=74,y=60.6,zone="Ashenvale"}
+N[12245]={n="Vendor-Tron 1000",side="B",x=60.2,y=38.2,zone="Desolace"}
+N[12246]={n="Super-Seller 680",side="B",x=40.4,y=79.2,zone="Desolace"}
+N[12384]={n="Augustus the Touched",side="B",x=14.4,y=33.4,zone="Eastern Plaguelands"}
+N[12776]={n="Hraug",side="H",x=40.6,y=68.4,zone="Durotar"}
+N[12777]={n="Captain Dirgehammer",side="A"}
+N[12781]={n="Master Sergeant Biggins",side="A"}
+N[12782]={n="Captain O'Neal",side="A"}
+N[12783]={n="Lieutenant Karter",side="A"}
+N[12784]={n="Lieutenant Jackspring",side="A"}
+N[12785]={n="Sergeant Major Clate",side="A"}
+N[12792]={n="Lady Palanseer",side="H"}
+N[12793]={n="Brave Stonehide",side="H"}
+N[12794]={n="Stone Guard Zarg",side="H"}
+N[12795]={n="First Sergeant Hola'mahi"}
+N[12796]={n="Raider Bork",side="H"}
+N[12799]={n="Sergeant Ba'sha",side="H",x=41.4,y=68.4,zone="Orgrimmar"}
+N[12805]={n="Officer Areyn",side="A",x=73.4,y=52.6,zone="Stormwind City"}
+N[12807]={n="Greshka",side="H",x=48.4,y=55.4,zone="Swamp of Sorrows"}
+N[12919]={n="Nat Pagle",side="B",x=58.4,y=60,zone="Dustwallow Marsh"}
+N[12941]={n="Jase Farlane",side="B",x=80.4,y=57.6,zone="Eastern Plaguelands"}
+N[12942]={n="Leonard Porter",side="A",x=43,y=84.2,zone="Western Plaguelands"}
+N[12943]={n="Werg Thickblade",side="H",x=83.2,y=69.6,zone="Tirisfal Glades"}
+N[12944]={n="Lokhtos Darkbargainer",side="B"}
+N[12956]={n="Zannok Hidepiercer",side="B",x=81.8,y=17.8,zone="Silithus"}
+N[12957]={n="Blimo Gadgetspring",side="B",x=45.2,y=90.8,zone="Azshara"}
+N[12958]={n="Gigget Zipcoil",side="B",x=34.4,y=38.4,zone="The Hinterlands"}
+N[12959]={n="Nergal",side="B",x=43.2,y=7.8,zone="Un'Goro Crater"}
+N[12960]={n="Christi Galvanis",side="A",x=66.4,y=6.8,zone="Desolace"}
+N[12962]={n="Wik'Tar",side="H",x=11.8,y=34,zone="Ashenvale"}
+N[13018]={n="Nipsy",side="A",x=0,y=0,zone="Azeroth"}
+N[13216]={n="Gaelden Hammersmith",side="A"}
+N[13217]={n="Thanthaldis Snowgleam",side="A",x=39.4,y=81.4,zone="Alterac Mountains"}
+N[13218]={n="Grunnda Wolfheart",side="H"}
+N[13219]={n="Jekyll Flandring",side="H",x=62.8,y=59.4,zone="Alterac Mountains"}
+N[13278]={n="Duke Hydraxis",side="B",x=79.2,y=73.4,zone="Azshara"}
+N[13418]={n="Kaymard Copperpinch",side="H",x=53.2,y=66.4,zone="Orgrimmar"}
+N[13420]={n="Penney Copperpinch",side="H",x=52.8,y=66.6,zone="Orgrimmar"}
+N[13429]={n="Nardstrum Copperpinch",side="H",x=67.2,y=38.4,zone="Undercity"}
+N[13430]={n="Jaycrue Copperpinch",side="H",x=67.2,y=38.4,zone="Undercity"}
+N[13431]={n="Whulwert Copperpinch",side="H",x=43.4,y=57.6,zone="Thunder Bluff"}
+N[13432]={n="Seersa Copperpinch",side="H",x=43.4,y=57.8,zone="Thunder Bluff"}
+N[13433]={n="Wulmort Jinglepocket",side="A",x=33.4,y=65.4,zone="Ironforge"}
+N[13434]={n="Macey Jinglepocket",side="A",x=32.4,y=67.4,zone="Ironforge"}
+N[13435]={n="Khole Jinglepocket",side="A",x=55,y=59.2,zone="Stormwind City"}
+N[13436]={n="Guchie Jinglepocket",side="A",x=55,y=60,zone="Stormwind City"}
+N[13476]={n="Balai Lok'Wein",side="H",x=36.4,y=30.4,zone="Dustwallow Marsh"}
+N[13698]={n="Keeper Marandis",side="A",x=63.8,y=10.6,zone="Desolace"}
+N[13699]={n="Selendra",side="B",x=26.8,y=77.6,zone="Desolace"}
+N[14301]={n="Brinna Valanaar",side="A",x=12,y=78.2,zone="Azshara"}
+N[14322]={n="Stomper Kreeg",side="B"}
+N[14337]={n="Field Repair Bot 74A",side="B"}
+N[14371]={n="Shen'dralar Provisioner",side="B"}
+N[14437]={n="Gorzeeki Wildeyes",side="B",x=12.4,y=31.4,zone="Burning Steppes"}
+N[14450]={n="Orphan Matron Nightingale",side="A",x=47.2,y=38.4,zone="Stormwind City"}
+N[14480]={n="Alowicious Czervik",side="H",x=51.8,y=69.8,zone="Orgrimmar"}
+N[14481]={n="Emmithue Smails",side="A",x=53.8,y=65.2,zone="Stormwind City"}
+N[14522]={n="Ur'dan",side="A",x=36.2,y=44.4,zone="Felwood"}
+N[14581]={n="Sergeant Thunderhorn",side="H"}
+N[14624]={n="Master Smith Burninate",side="B",x=38.4,y=28.4,zone="Searing Gorge"}
+N[14637]={n="Zorbin Fandazzle",side="B",x=44.8,y=43.4,zone="Feralas"}
+N[14731]={n="Lard",side="H",x=78.2,y=81.2,zone="The Hinterlands"}
+N[14736]={n="Primal Torntusk",side="H",x=78.2,y=81.2,zone="The Hinterlands"}
+N[14737]={n="Smith Slagtree",side="H",x=77.4,y=80.2,zone="The Hinterlands"}
+N[14738]={n="Otho Moji'ko",side="H",x=79.2,y=79,zone="The Hinterlands"}
+N[14739]={n="Mystic Yayo'jin",side="H",x=78.8,y=78.4,zone="The Hinterlands"}
+N[14740]={n="Katoom the Angler",side="H",x=80.2,y=81.4,zone="The Hinterlands"}
+N[14753]={n="Illiyana Moonblaze",side="A",x=61.4,y=83.8,zone="Ashenvale"}
+N[14754]={n="Kelm Hargunth",side="H",x=46.6,y=8.4,zone="The Barrens"}
+N[14844]={n="Sylannia",side="B",x=36.6,y=38.2,zone="Mulgore"}
+N[14845]={n="Stamp Thunderhorn",side="B",x=36.6,y=38.2,zone="Mulgore"}
+N[14846]={n="Lhara",side="B",x=36.4,y=38,zone="Mulgore"}
+N[14847]={n="Professor Thaddeus Paleo",side="B",x=36.4,y=38,zone="Mulgore"}
+N[14860]={n="Flik",side="B",x=36.2,y=35.4,zone="Mulgore"}
+N[14921]={n="Rin'wosho the Trader",side="B",x=15,y=16,zone="Stranglethorn Vale"}
+N[14961]={n="Mirvyna Jinglepocket",side="B",x=40,y=80.2,zone="Alterac Mountains"}
+N[14962]={n="Dillord Copperpinch",side="B",x=62,y=58.6,zone="Alterac Mountains"}
+N[14963]={n="Gapp Jinglepocket",side="A",x=62,y=82.8,zone="Ashenvale"}
+N[14964]={n="Hecht Copperpinch",side="H",x=46.6,y=8.4,zone="The Barrens"}
+N[15006]={n="Deze Snowbane",side="H",x=79,y=29.6,zone="Orgrimmar"}
+N[15011]={n="Wagner Hammerstrike",side="A",x=52.4,y=36,zone="Dun Morogh"}
+N[15012]={n="Javnir Nashak",side="H",x=46,y=13.4,zone="Durotar"}
+N[15124]={n="Targot Jinglepocket",side="B",x=46.4,y=45.4,zone="Arathi Highlands"}
+N[15125]={n="Kosco Copperpinch",side="B",x=74,y=29.2,zone="Arathi Highlands"}
+N[15126]={n="Rutherford Twing",side="H",x=73.4,y=29.8,zone="Arathi Highlands"}
+N[15127]={n="Samuel Hawke",side="A",x=46,y=45.2,zone="Arathi Highlands"}
+N[15174]={n="Calandrath",side="B",x=51.8,y=39,zone="Silithus"}
+N[15175]={n="Khur Hornstriker",side="B",x=48.8,y=37,zone="Silithus"}
+N[15176]={n="Vargus",side="B",x=51.2,y=38.8,zone="Silithus"}
+N[15179]={n="Mishta",side="B",x=49.8,y=36.4,zone="Silithus"}
+N[15197]={n="Darkcaller Yanka",side="H",x=55.4,y=69.8,zone="Tirisfal Glades"}
+N[15199]={n="Sergeant Hartman",side="A",x=50,y=57.2,zone="Hillsbrad Foothills"}
+N[15315]={n="Mylini Frostmoon",side="A",x=62.4,y=25.8,zone="Felwood"}
+N[15353]={n="Katrina Shimmerstar",side="A",x=33,y=65.4,zone="Ironforge"}
+N[15354]={n="Rachelle Gothena",side="H",x=53,y=65.4,zone="Orgrimmar"}
+N[15419]={n="Kania",side="B",x=52,y=39.4,zone="Silithus"}
+N[15471]={n="Lieutenant General Andorov",side="B"}
+N[15864]={n="Valadar Starsong",side="B",x=53.4,y=35.2,zone="Moonglade"}
+N[15898]={n="Lunar Festival Vendor",side="B",x=36.4,y=58.4,zone="Moonglade"}
+N[16015]={n="Vi'el",side="B",x=58.8,y=78.4,zone="Winterspring"}
+N[16256]={n="Jessica Chambers",side="B",x=81.4,y=58.2,zone="Eastern Plaguelands"}
+N[16376]={n="Craftsman Wilhelm",side="B",x=81,y=59.4,zone="Eastern Plaguelands"}
+N[16458]={n="Innkeeper Faralia",side="A",x=35.6,y=5.8,zone="Stonetalon Mountains"}
+N[17068]={n="Chief Expeditionary Requisitioner Enkles",side="A",x=33.2,y=51,zone="Silithus"}
+N[17070]={n="Apothecary Quinard",side="H",x=50.8,y=69.4,zone="Silithus"}
+N[17598]={n="Renn'az",side="H",x=76.8,y=81.2,zone="The Hinterlands"}
+N[28694]={n="Alard Schmied",x=19.8,y=63.4,zone="Alterac Mountains"}
+N[28776]={n="Elizabeth Ross",x=15.8,y=69,zone="Alterac Mountains"}
+N[28989]={n="Aemara",side="A",x=17.2,y=71.4,zone="Alterac Mountains"}
+N[28990]={n="Anthony Durain",x=20,y=63.4,zone="Alterac Mountains"}
+N[29049]={n="Arille Azuregaze",side="A",x=18.4,y=65.8,zone="Alterac Mountains"}
+N[29491]={n="Karandonna",x=16,y=65.4,zone="Alterac Mountains"}
+N[29537]={n="Darahir",x=21.6,y=69,zone="Alterac Mountains"}
+N[29547]={n="Applebough",side="A",x=14.4,y=65.8,zone="Alterac Mountains"}
+N[32287]={n="Archmage Alvareaux",side="A",x=13.8,y=63.6,zone="Alterac Mountains"}
+N[32403]={n="Sandra Bartan",side="A",x=18,y=65.2,zone="Alterac Mountains"}
+N[32413]={n="Isirami Fairwind",side="A",x=12.2,y=66.2,zone="Alterac Mountains"}
+N[32424]={n="Laire Brewgold",x=10.4,y=66.4,zone="Alterac Mountains"}
+N[32426]={n="Coira Longrifle",x=10.4,y=65.6,zone="Alterac Mountains"}
+N[32631]={n="Alfred Copperworth",side="A",x=15,y=54.8,zone="Alterac Mountains"}
+N[43411]={n="Lenedil Moonwing",x=70.8,y=50.8,zone="Mount Hyjal"}
+N[203475]={n="Liv Bradford",side="A",x=22.4,y=64.4,zone="Stormwind City"}
+N[207743]={n="Netali Proudwind",side="H",x=28.4,y=18.2,zone="Thunder Bluff"}
+N[208920]={n="Penny Hawkins",side="H",x=61.8,y=52,zone="Tirisfal Glades"}
+N[211653]={n="Grizzby",side="B",x=61.8,y=39.4,zone="The Barrens"}
+N[213077]={n="Elaine Compton",side="A",x=54.4,y=60.2,zone="Stormwind City"}
+N[214070]={n="Jornah",side="H",x=51.4,y=63.8,zone="Orgrimmar"}
+N[214096]={n="Dokimi",side="H",x=39.4,y=53.4,zone="Thunder Bluff"}
+N[214098]={n="Gishah",side="H",x=64.4,y=38.4,zone="Undercity"}
+N[214099]={n="Tamelyn Aldridge",side="A",x=24.4,y=67.4,zone="Ironforge"}
+N[214101]={n="Marcy Baker",side="A",x=59.2,y=56.6,zone="Darnassus"}
+N[214954]={n="Rix Xizzix",side="B",x=28.4,y=75.8,zone="Stranglethorn Vale"}
+N[216672]={n="Namdo Bizzfizzle",side="A"}
+N[216902]={n="Wulmort Jinglepocket",side="A",x=32.4,y=67.4,zone="Ironforge"}
+N[216924]={n="Kaymard Copperpinch",side="H",x=53.2,y=66.4,zone="Orgrimmar"}
+N[217412]={n="Amaryllis Webb",side="B",x=25,y=53.4,zone="Swamp of Sorrows"}
+N[217689]={n="Ziri \"The Wrench\" Littlesprocket",side="B"}
+N[222684]={n="Quartermaster Falinar",side="B",x=45.6,y=51.2,zone="Duskwood"}
+N[222685]={n="Quartermaster Kyleen",side="B",x=89.4,y=40.4,zone="Ashenvale"}
+N[222686]={n="Quartermaster Alandra",side="B",x=61.4,y=34.4,zone="The Hinterlands"}
+N[222687]={n="Quartermaster Valdane",side="B",x=48.4,y=12.4,zone="Feralas"}
+N[230317]={n="Mokvar",side="H",x=34.4,y=37.4,zone="Orgrimmar"}
+N[230319]={n="Deliana",side="A",x=42.4,y=52.2,zone="Ironforge"}
+N[230565]={n="Ironforge Guard",side="A",x=42.4,y=53.8,zone="Ironforge"}
+N[230566]={n="Kor'kron Elite",side="H",x=34.8,y=38.4,zone="Orgrimmar"}
+N[233335]={n="Rune Broker",side="A",x=29.4,y=72,zone="Dun Morogh"}
+N[233428]={n="Rune Broker",side="H",x=42.8,y=68,zone="Durotar"}
+N[235164]={n="G00 DV-1B3 Generator",side="B",x=40.2,y=27,zone="Eastern Plaguelands"}
+N[240568]={n="Haunted Anvil",side="B",x=48.4,y=78,zone="Deadwind Pass"}
+N[240604]={n="Carrie Hearthfire",side="B",x=95.2,y=78.4,zone="Eastern Plaguelands"}
+N[240607]={n="Devon Woods",side="B",x=95.2,y=80.2,zone="Eastern Plaguelands"}
+N[240631]={n="Taylor Stitchings",side="B",x=94.6,y=83.4,zone="Eastern Plaguelands"}
+N[240632]={n="Tanya Hyde",side="B",x=94.2,y=93.2,zone="Eastern Plaguelands"}
+N[240633]={n="Smith",side="B",x=98.4,y=77,zone="Eastern Plaguelands"}
+N[240654]={n="Fizzlefuse",side="B",x=62.8,y=24.2,zone="Eastern Kingdoms"}
+N[241019]={n="Johnny",side="B",x=94.8,y=91.2,zone="Eastern Plaguelands"}
+N[241663]={n="Gerald",side="B",x=95.2,y=78.8,zone="Eastern Plaguelands"}
+N[241664]={n="Malorie",side="B",x=95.2,y=78.8,zone="Eastern Plaguelands"}
+N[242183]={n="Abatha Rainwater",side="B",x=93.4,y=79.4,zone="Eastern Plaguelands"}
+N[242498]={n="Reagent Bot",side="B",x=45.6,y=12.4,zone="Durotar"}
+N[243815]={n="Sebelia",x=70.8,y=51.4,zone="Mount Hyjal"}
+N[243855]={n="Toron Rockhoof",x=68.8,y=47.2,zone="Mount Hyjal"}
+N[246795]={n="Linzy Blackbolt",x=18.4,y=62.4,zone="Alterac Mountains"}
+N[247226]={n="Kelsey Fargo",side="A",x=47.2,y=32.2,zone="Elwynn Forest"}
+N[247227]={n="Riley Peltskinner",side="A",x=47,y=39.8,zone="Elwynn Forest"}
+N[248198]={n="Aza'bek",x=49.6,y=29.2,zone="The Barrens"}
+N[251364]={n="Destin Thriceforged",side="B",x=43.4,y=23.4,zone="Zephras Isle"}
+N[251365]={n="Jolee Brightmeadows",side="B",x=43.4,y=23.6,zone="Zephras Isle"}
+N[251537]={n="Uualia Suncrest",side="B",x=42.8,y=24.4,zone="Zephras Isle"}
+N[251684]={n="Strange Hermit",side="B",x=54,y=39,zone="Zephras Isle"}
+N[251905]={n="Zerril Softbreeze",side="B",x=43.8,y=43.8,zone="Zephras Isle"}
+N[251913]={n="Aedi Thriceforged",side="B",x=44.8,y=44.4,zone="Zephras Isle"}
+N[251955]={n="Lucian Trias",x=20.2,y=67.4,zone="Alterac Mountains"}
+N[251965]={n="Fevrath Skyhammer",side="B",x=43.2,y=23.4,zone="Zephras Isle"}
+N[251972]={n="Charles Worth",side="A",x=17.6,y=60.2,zone="Alterac Mountains"}
+N[251973]={n="Dominique Stefano",side="A",x=17.6,y=60.2,zone="Alterac Mountains"}
+N[251975]={n="Harold Winston",x=18,y=62,zone="Alterac Mountains"}
+N[251976]={n="Tiffany Cartier",x=18,y=62,zone="Alterac Mountains"}
+N[251977]={n="Angelique Butler",side="A",x=17.2,y=61,zone="Alterac Mountains"}
+N[251978]={n="Vanessa Sellers",side="A",x=16.8,y=62.2,zone="Alterac Mountains"}
+N[251980]={n="Rueben Lauren",x=15.8,y=65.2,zone="Alterac Mountains"}
+N[251981]={n="Sheddle Glossgleam",x=16.4,y=65.4,zone="Alterac Mountains"}
+N[251991]={n="Taleen Shimmerthread",side="B",x=44.8,y=44.2,zone="Zephras Isle"}
+N[251992]={n="Fenn Fairweather",side="B",x=45,y=48.4,zone="Zephras Isle"}
+N[251993]={n="Indari Sunseam",side="B",x=44.6,y=44.4,zone="Zephras Isle"}
+N[251997]={n="Norvin Alderman",x=16,y=65.4,zone="Alterac Mountains"}
+N[251999]={n="Debbi Moore",x=15.4,y=68.2,zone="Alterac Mountains"}
+N[252000]={n="Brammold Deepmine",x=15.8,y=68.8,zone="Alterac Mountains"}
+N[252019]={n="Abra Cadabra",x=12,y=70.2,zone="Alterac Mountains"}
+N[252020]={n="Jack Findle",side="A",x=13.2,y=71.2,zone="Alterac Mountains"}
+N[252040]={n="Hagatha Moorehead",x=14,y=63.4,zone="Alterac Mountains"}
+N[252080]={n="Stefan Cotter",side="A",x=12.8,y=66.6,zone="Alterac Mountains"}
+N[252083]={n="Derek Odds",side="A",x=12.4,y=66,zone="Alterac Mountains"}
+N[252084]={n="Katherine Lee",x=12.4,y=65.8,zone="Alterac Mountains"}
+N[252376]={n="Emerii Tallgust",side="B",x=63.8,y=80.6,zone="Zephras Isle"}
+N[252380]={n="Othesia Evengale",side="A",x=64.4,y=81,zone="Zephras Isle"}
+N[252388]={n="Halavuul Cragwind",side="B",x=65.4,y=80.4,zone="Zephras Isle"}
+N[252390]={n="Antelariaa Cloudgaze",side="B",x=63,y=77.8,zone="Zephras Isle"}
+N[252449]={n="Iallion Featherfall",side="B",x=58.8,y=75.4,zone="Zephras Isle"}
+N[252479]={n="Daeann Steelwind",side="B",x=65.4,y=80.2,zone="Zephras Isle"}
+N[253004]={n="Iaadaria Bitterwind",side="A",x=66.2,y=79.4,zone="Zephras Isle"}
+N[254089]={n="Coriella Calmbreeze",side="B",x=43,y=43.2,zone="Zephras Isle"}
+N[254358]={n="Veena Vericloud",side="B",x=44.6,y=45.4,zone="Zephras Isle"}
+N[254360]={n="Belandiel Farflight",side="B",x=44.8,y=45,zone="Zephras Isle"}
+N[255151]={n="Rhylin Stonethorn",x=70.6,y=51.2,zone="Mount Hyjal"}
+N[255894]={n="Innkeeper Zizplink",x=78.8,y=54,zone="Riverglades"}
+N[255895]={n="Grizzek",x=76.6,y=53.2,zone="Riverglades"}
+N[255897]={n="Friz Frazzlespark",x=77.2,y=52.8,zone="Riverglades"}
+N[255940]={n="Donaal Downbreeze",side="B",x=62.2,y=72.6,zone="Zephras Isle"}
+N[256372]={n="Windle Sparkshine",x=14.2,y=67,zone="Alterac Mountains"}
+N[256507]={n="Belann Windwood",side="B",x=62.8,y=77.4,zone="Zephras Isle"}
+N[256655]={n="Gorg",x=58.4,y=44.4,zone="Riverglades"}
+N[256731]={n="Kalsey Sanden",x=10.8,y=72.4,zone="Redridge Mountains"}
+N[257003]={n="Ishlee Breezewhisper",side="B",x=59.4,y=76,zone="Zephras Isle"}
+N[257004]={n="Eaysaa Brightgust",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
+N[257005]={n="Valiena Swiftgale",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
+end)()
+;(function()
+N[257006]={n="Nyalah Brightfire",side="B",x=60.6,y=72.6,zone="Zephras Isle"}
+N[257007]={n="Melasa Fairmend",side="B",x=63,y=72.4,zone="Zephras Isle"}
+N[257008]={n="Baelann Swiftcurrent",side="B",x=63.2,y=75.6,zone="Zephras Isle"}
+N[257018]={n="Naleeia Tattermend",side="B",x=43,y=46.2,zone="Zephras Isle"}
+N[257019]={n="Nyassa Swiftdraught",side="B",x=43.6,y=43.4,zone="Zephras Isle"}
+N[257020]={n="Nasalanna Windsinger",side="B",x=43.2,y=43.2,zone="Zephras Isle"}
+N[257022]={n="Messana Crestwind",side="B",x=44.6,y=44.6,zone="Zephras Isle"}
+N[257024]={n="Mendalass Tattermend",side="B",x=43.2,y=43.4,zone="Zephras Isle"}
+N[257421]={n="Tephri Thriceforged",side="B",x=44.8,y=44.2,zone="Zephras Isle"}
+N[257422]={n="Railee Thriceforged",side="B",x=58.8,y=75.4,zone="Zephras Isle"}
+N[257595]={n="Barracks Master Harlan",x=64.6,y=83.8,zone="Riverglades"}
+N[258306]={n="Granny Finespindle",side="A",x=39.2,y=33.2,zone="Ironforge"}
+N[258415]={n="Angela Ward",side="H",x=70.4,y=29.4,zone="Undercity"}
+N[258463]={n="Darah",side="H",x=63.4,y=50.4,zone="Orgrimmar"}
+N[258466]={n="Boramu",side="H",x=44,y=44.6,zone="Thunder Bluff"}
+N[258548]={n="Ellie Stonebrow",side="A",x=43.4,y=27.8,zone="Ironforge"}
+N[258568]={n="Antonio Bolero",side="A",x=53.4,y=81.8,zone="Stormwind City"}
+N[258572]={n="Dani'ill",x=64,y=21.2,zone="Darnassus"}
+N[259250]={n="Alphonse Dumas",x=64.4,y=82,zone="Riverglades"}
+N[259766]={n="Mika Darby",x=77.8,y=51.8,zone="Riverglades"}
+N[259860]={n="Martha Wellsworth",x=64.2,y=84,zone="Riverglades"}
+N[259863]={n="Cassandra Wheeler",x=64.6,y=82.8,zone="Riverglades"}
+N[259962]={n="Fimbo Greasemitz",x=78.8,y=54.2,zone="Riverglades"}
+N[260343]={n="Maka",x=58.4,y=45.8,zone="Riverglades"}
+N[260487]={n="Gritta Chumwater",x=78.4,y=55,zone="Riverglades"}
+N[260559]={n="Gilliwigs",x=79.2,y=54.6,zone="Riverglades"}
+N[260560]={n="Krikshank",x=76.8,y=51,zone="Riverglades"}
+N[260562]={n="Melbin Powderfuse",x=77.6,y=50.8,zone="Riverglades"}
+N[260565]={n="Kor'gar",x=77.6,y=50.8,zone="Riverglades"}
+N[260566]={n="Fizzix Boomshot",x=78.4,y=53.4,zone="Riverglades"}
+N[260570]={n="Stitch Pinwizzle",x=77.2,y=51.4,zone="Riverglades"}
+N[261313]={n="Naluk",x=58,y=45.8,zone="Riverglades"}
+N[262469]={n="Tuu'li"}
+N[262471]={n="Xaphod Bizznox",x=71.4,y=99.4,zone="Stonetalon Mountains"}
+N[263384]={n="Mister Graphed",x=78.2,y=51.8,zone="Riverglades"}
+N[263570]={n="Creeg Bothunk",x=65,y=34.6,zone="The Barrens"}
+N[264078]={n="Sutara Plainstalker",x=34.4,y=22.8,zone="Mulgore"}
+N[265574]={n="Winklespark",x=62.4,y=37.6,zone="The Barrens"}
+N[265575]={n="Gezzy Gunkgear",x=28.2,y=74.8,zone="Stranglethorn Vale"}
+N[265576]={n="Rettrick",x=51.6,y=28.6,zone="Tanaris"}
+N[265577]={n="Zippie Fizzbolt",x=61.4,y=38.6,zone="Winterspring"}
+N[265730]={n="Ajay Green",x=14.4,y=64.6,zone="Alterac Mountains"}
+N[265756]={n="Genn Fairweather",side="B",x=53.8,y=81.2,zone="Zephras Isle"}
+N[265944]={n="William Pickman",side="H",x=61.8,y=51.4,zone="Tirisfal Glades"}
+N[266881]={n="Pa'zula",side="H",x=56.6,y=73.6,zone="Durotar"}
+N[266901]={n="Pexmit",x=59.6,y=49.2,zone="Mount Hyjal"}
+N[267000]={n="Paige",x=20.8,y=74.6,zone="Alterac Mountains"}
+N[267001]={n="Cody",x=21.6,y=74,zone="Alterac Mountains"}
+N[267324]={n="Margaret Weaver",side="H",x=32.6,y=65.6,zone="Tirisfal Glades"}
+N[267325]={n="Walter Mason",side="H",x=32.2,y=65.8,zone="Tirisfal Glades"}
+N[267327]={n="Kagil",side="H",x=40.8,y=67.8,zone="Durotar"}
+N[267328]={n="Norzsh",side="H",x=40.4,y=68,zone="Durotar"}
+N[267330]={n="Nawka Wildsong",side="H",x=44.4,y=76.8,zone="Mulgore"}
+N[267331]={n="Vartha Rockmane",side="H",x=44.2,y=78.2,zone="Mulgore"}
+N[267333]={n="Terunne Bearshaper",side="A",x=59.4,y=38.6,zone="Teldrassil"}
+N[267334]={n="Fanorran Stilloak",side="A",x=58,y=41.4,zone="Teldrassil"}
+N[267336]={n="Brighid Stormflayer",side="A",x=29.2,y=67.6,zone="Dun Morogh"}
+N[267337]={n="Sally Swiftwrench",side="A",x=28.8,y=67.8,zone="Dun Morogh"}
+N[268238]={n="Nordun Steadysight",side="A",x=42,y=66.4,zone="Elwynn Forest"}
+N[268663]={n="Penny Pinderton",x=62,y=81,zone="Riverglades"}
+N[268745]={n="Mayhoa Skyhoof",side="H",x=39,y=29.2,zone="Orgrimmar"}
+N[270545]={n="Kenneth \"Kirby\" Millstead",x=65.4,y=89.8,zone="Riverglades"}
+N[271005]={n="Burt Lazlo",x=64.6,y=84.2,zone="Riverglades"}
+N[271006]={n="Christina Von Stavern",x=64.6,y=84.2,zone="Riverglades"}
+N[271465]={n="Falfaan Halfwind",side="B",x=59.4,y=75.8,zone="Zephras Isle"}
+N[271478]={n="Elaria Anvilwind",side="B",x=59.4,y=76,zone="Zephras Isle"}
+N[271480]={n="Taliaa Brightsky",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
+N[271483]={n="Ergaan Eastwind",side="B",x=59.6,y=75.8,zone="Zephras Isle"}
+N[272437]={n="Marla Bell",x=62.2,y=86,zone="Riverglades"}
+N[272646]={n="Miranda Turner",x=63.4,y=82.4,zone="Riverglades"}
+N[275322]={n="Patricia Egan",x=18.4,y=62.2,zone="Alterac Mountains"}
+N[275598]={n="Valerie Langrom",x=12.6,y=71,zone="Alterac Mountains"}
+N[275622]={n="Kerta the Bold",x=14.6,y=70.8,zone="Alterac Mountains"}
+N[275623]={n="Valaden Silverblade",x=14.6,y=71.2,zone="Alterac Mountains"}
+N[275625]={n="Bartram Haller",x=14.6,y=71.2,zone="Alterac Mountains"}
+N[276067]={n="Angus Hammerhand",side="H",x=21,y=45.8,zone="Tirisfal Glades"}
+end)()
+ns.Registry.Register("forever", D)
