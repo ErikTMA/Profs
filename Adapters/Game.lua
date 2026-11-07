@@ -164,9 +164,37 @@ function G.Faction()
   return ok and ns.Faction.Side(group) or nil
 end
 
+-- The active specialization (talent tree): { index, name } or nil before any is
+-- chosen (C_SpecializationInfo, forever: Camelot PaperDollFrame uses the same calls).
+local function specName(i)
+  local S = C_SpecializationInfo
+  if not (S and S.GetSpecializationInfo) then return nil end
+  local ok, _, name = pcall(S.GetSpecializationInfo, i, false, false, nil, UnitSex and UnitSex("player") or nil)
+  return ok and type(name) == "string" and name ~= "" and name or nil
+end
+
+function G.Spec()
+  local S = C_SpecializationInfo
+  if not (S and S.GetSpecialization) then return nil end
+  local ok, i = pcall(S.GetSpecialization)
+  if not ok or type(i) ~= "number" or i < 1 then return nil end
+  return { index = i, name = specName(i) }
+end
+
+-- Names of the class's specializations, by index (empty when the API is missing).
+function G.SpecNames()
+  local out = {}
+  for i = 1, 4 do
+    local n = specName(i)
+    if not n then break end
+    out[i] = n
+  end
+  return out
+end
+
 function G.PlayerInfo()
-  local class
-  if UnitClass then class = select(2, UnitClass("player")) end -- NOT `UnitClass and UnitClass(...)`: `and` keeps one value
-  return { key = G.PlayerKey(), name = UnitName and UnitName("player"), class = class,
+  local class, classId
+  if UnitClass then class, classId = select(2, UnitClass("player")) end -- NOT `UnitClass and UnitClass(...)`: `and` keeps one value
+  return { key = G.PlayerKey(), name = UnitName and UnitName("player"), class = class, classId = classId,
     level = UnitLevel and UnitLevel("player") or 1 }
 end

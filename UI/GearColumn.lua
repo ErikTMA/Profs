@@ -76,6 +76,7 @@ function GC.Build(cf)
   f.title = W.Text(f, "large"); f.title:SetPoint("TOPLEFT", 10, -10); f.title:SetText("Craftable upgrades")
   W.TitleIcon(f, f.title)
   f.scored = W.Text(f, "small"); f.scored:SetPoint("TOPLEFT", 10, -36)
+  f.scored:SetWidth(GC.COLUMN_WIDTH - 30); f.scored:SetWordWrap(false)
   f.body = CreateFrame("Frame", nil, f)
   f.body:SetPoint("TOPLEFT", 10, -54)
   f.body:SetPoint("BOTTOMRIGHT", -10, 26)
@@ -87,15 +88,20 @@ function GC.Build(cf)
   return f
 end
 
--- Rows for the list: one per upgrade (item icon, name, required level, gain on the
--- right), the item's own tooltip plus where to get the recipe; click opens the recipe.
+-- Rows for the list, grouped by slot (Gear.BySlot: a heading per slot, biggest
+-- upgrade first, the slot with the biggest upgrade on top). One row per upgrade: item
+-- icon, name, required level, gain on the right; the recipe's tooltip plus where to get
+-- it; click opens the recipe.
 function GC.Rows(ds, upgrades)
   local T = ns.Theme
   local rows = {}
-  for i, c in ipairs(upgrades) do
-    if i > GC.ROWS then break end
+  for _, g in ipairs(ns.Gear.BySlot(upgrades)) do
+   rows[#rows + 1] = { header = true, summary = true, text = T.Wrap("gold", g.name),
+     right = T.Wrap("muted", #g.items == 1 and "1 upgrade" or (#g.items .. " upgrades")) }
+   for _, c in ipairs(g.items) do
     local r = ds.recipes[c.recipe]
     rows[#rows + 1] = {
+      indent = 8,
       item = c.itemId,
       -- tooltip and Shift-click: the recipe itself, as a linked recipe shows it
       recipe = c.recipe, recipeProf = ns.Professions.Name(c.prof), recipeName = r and r.name,
@@ -103,12 +109,13 @@ function GC.Rows(ds, upgrades)
       text = ("%s %s%s%s"):format(ns.Sidecar.ItemName(ds, c.itemId), T.Wrap("muted", "req " .. c.reqLevel),
         c.usableNow and "" or ("  " .. T.Wrap("muted", "soon")),
         c.how and c.how.t == "drop" and ("  " .. T.Wrap("drop", "drop")) or ""),
-      right = ("+%.1f"):format(c.gain),
+      right = c.pct and ("+%.0f%%"):format(c.gain) or ("+%.1f"):format(c.gain),
       upgrade = c,
       onClick = function() ns.GearToast.OpenRecipe(c) end,
       tooltip = function()
         local t = { ns.Sidecar.ItemName(ds, c.itemId), ("Crafted with %s; requires level %d"):format(
-          ns.Professions.Name(c.prof), c.reqLevel), ("Upgrade score +%.1f"):format(c.gain) }
+          ns.Professions.Name(c.prof), c.reqLevel), c.pct and ("Pawn: %.0f%% better than what you wear"):format(c.gain)
+          or ("Upgrade score +%.1f"):format(c.gain) }
         if not c.usableNow then t[#t + 1] = "Not equippable yet." end
         -- how to get the recipe: trainer/vendor/currency, or which mobs drop the pattern
         if c.how and c.how.t ~= "known" then
@@ -119,6 +126,7 @@ function GC.Rows(ds, upgrades)
         return t
       end,
     }
+   end
   end
   return rows
 end
@@ -168,7 +176,8 @@ function GC.Update()
   GC.last = ups
   if #ups == 0 then GC.Restore(); return 0 end
   local f = GC.Build(cf)
-  f.scored:SetText(ns.Theme.Wrap("gold", pawn and "Scored by Pawn" or "Scored by built-in automatic weights"))
+  f.scored:SetText(ns.Theme.Wrap("gold", type(pawn) == "table" and pawn.label
+    or (pawn and "Scored by Pawn" or "Built-in automatic weights")))
   f.list:Set(GC.Rows(ds, ups))
   apply(cf, f)
   return #ups

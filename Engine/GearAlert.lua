@@ -74,7 +74,7 @@ end
 function GA.Evaluate(ds, ctx)
   local cfg = ns.Util.merge(GA.DEFAULTS, ctx.settings or {})
   if not cfg.enabled then return {} end
-  local weights = ctx.weights or ns.Gear.AutoWeights(ctx.class, ctx.equippedTotals)
+  local weights = ctx.weights or ns.Gear.AutoWeights(ctx.class, ctx.equippedTotals, ctx.spec)
   local pricer = ctx.pricer or ns.Pricing.New(ds)
   local out, best = {}, {}
   for prof, skill in pairs(ctx.profs or {}) do

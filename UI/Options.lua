@@ -42,6 +42,15 @@ function O.Definitions()
       type = "number", default = ns.GearAlert.DEFAULTS.minPct, min = 1, max = 50, step = 1,
       get = function() return alerts().minPct or ns.GearAlert.DEFAULTS.minPct end,
       set = function(v) alerts().minPct = v end },
+    { key = "gearSpec", label = "Score gear for",
+      tooltip = "Which specialization (or Pawn scale) rates craftable upgrades, for this character. "
+        .. "Active specialization follows your talents (/profs gearspec).",
+      type = "string", default = "auto", choicesFn = function() return ns.Pawn.Choices() end,
+      get = function() return ns.cdb.gearSpec or "auto" end,
+      set = function(v)
+        ns.cdb.gearSpec = v ~= "auto" and v or nil
+        if ns.GearColumn.RequestUpdate then ns.GearColumn.RequestUpdate() end
+      end },
     { key = "colorblind", label = "Colour-blind skill-up markers",
       tooltip = "Add +++ / ++ / + after orange / yellow / green route steps. Off by default "
         .. "unless the game's colour-blind mode is on.",
@@ -90,7 +99,7 @@ function O.Register()
     else
       local function options()
         local c = Settings.CreateControlTextContainer()
-        for _, ch in ipairs(d.choices) do c:Add(ch[1], ch[2]) end
+        for _, ch in ipairs(d.choicesFn and d.choicesFn() or d.choices) do c:Add(ch[1], ch[2]) end
         return c:GetData()
       end
       Settings.CreateDropdown(category, setting, options, d.tooltip)

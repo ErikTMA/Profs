@@ -56,10 +56,11 @@ function T.Context(level, prevLevel)
   local known = {}
   for _, set in pairs(ns.cdb.known or {}) do for id in pairs(set) do known[id] = true end end
   local equipped, totals = T.Equipped()
+  local scoring = ns.Pawn.Scoring()
   return ds, {
     level = level, prevLevel = prevLevel, class = me.class, profs = profs, known = known,
     equipped = equipped, equippedTotals = totals, stats = ns.Game.ItemStats,
-    scorer = ns.Pawn.Scorer(), pricer = ns.PriceSources.Pricer(ds),
+    scorer = scoring.scorer, spec = scoring.spec, pricer = ns.PriceSources.Pricer(ds),
     have = function(id) local h = ns.Inventory.Have(id); return (h.bags or 0) + (h.bank or 0) end,
     seen = charState().seen, settings = settings(), side = ns.Game.Faction(),
   }

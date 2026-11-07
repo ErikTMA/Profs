@@ -106,6 +106,16 @@ it: level, elite or boss, zone and coordinates (dungeon mobs: the dungeon), and 
 drop chance with how many kills it was measured on. World drops say how many mobs
 drop them and show the best chances. Drop patterns are often on the Auction House.
 
+Upgrades are grouped by slot (Feet, Chest, ...): each slot lists every craftable
+upgrade for it, biggest first, and the slot with the biggest upgrade comes first.
+
+Gear is scored for your active specialization: with Pawn, Pawn's scale for that
+specialization (for example "Shaman: Enhancement"), shown as percent better than what
+you wear; without Pawn, built-in weights for it (melee, caster or healer). The
+column's top line says which. To score for another specialization or a specific Pawn
+scale, use **Score gear for** in the options or `/profs gearspec 3`,
+`/profs gearspec pawn <scale>`, `/profs gearspec auto` (per character).
+
 Open your character window (C): when you can craft gear that beats what you wear,
 Profs! adds a **Craftable upgrades** column to it, right of your stats, listing each
 item with its icon, required level and how much better it is. Hover a row for the
@@ -127,6 +137,7 @@ window on that page (and tell you in chat when there are no upgrades).
 | `/profs resetui` | put every Profs! window back at its default place |
 | `/profs recommend` | profession pair recommendations |
 | `/profs gear` | craftable gear upgrades for your level |
+| `/profs gearspec auto` / `<n>` / `pawn <scale>` | which specialization scores gear |
 | `/profs save <name>` / `/profs load <name>` | save or load a route |
 | `/profs reset` | clear your excluded and locked recipes for this profession |
 | `/profs ah` | open the price panel (at the Auction House) |

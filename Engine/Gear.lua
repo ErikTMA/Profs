@@ -48,8 +48,52 @@ local function score(stats, w)
 end
 G.Score = score
 
--- Pick the class profile that best explains the equipped totals.
-function G.AutoWeights(class, equippedTotals)
+-- Equip slot (inventory type) -> slot group shown in the upgrade lists.
+G.SLOT_GROUP = {
+  [1] = "Head", [2] = "Neck", [3] = "Shoulder", [16] = "Back", [5] = "Chest", [20] = "Chest",
+  [4] = "Shirt", [19] = "Tabard", [9] = "Wrist", [10] = "Hands", [6] = "Waist", [7] = "Legs",
+  [8] = "Feet", [11] = "Finger", [12] = "Trinket", [13] = "One-hand", [21] = "Main hand",
+  [17] = "Two-hand", [14] = "Off hand", [22] = "Off hand", [23] = "Off hand", [15] = "Ranged",
+  [25] = "Ranged", [26] = "Ranged", [18] = "Bag",
+}
+
+-- Pure: upgrades grouped by slot: { { name, items = {...} } }, each group's items by
+-- gain (biggest first), groups ordered by their biggest upgrade.
+function G.BySlot(upgrades)
+  local byName, groups = {}, {}
+  for _, c in ipairs(upgrades) do
+    local name = G.SLOT_GROUP[c.slot] or "Other"
+    local g = byName[name]
+    if not g then g = { name = name, items = {} }; byName[name] = g; groups[#groups + 1] = g end
+    g.items[#g.items + 1] = c
+  end
+  for _, g in ipairs(groups) do
+    table.sort(g.items, function(a, b)
+      if a.gain ~= b.gain then return a.gain > b.gain end
+      return a.itemId < b.itemId
+    end)
+  end
+  table.sort(groups, function(a, b)
+    if a.items[1].gain ~= b.items[1].gain then return a.items[1].gain > b.items[1].gain end
+    return a.name < b.name
+  end)
+  return groups
+end
+
+-- Profile per specialization (talent tree) index, in the client's tree order, for the
+-- classes whose trees want different stats. Trees not listed use the class list.
+G.SPEC_PROFILES = {
+  PALADIN = { "healer", "melee_str", "melee_str" },   -- Holy, Protection, Retribution
+  SHAMAN  = { "caster", "melee_str", "healer" },      -- Elemental, Enhancement, Restoration
+  DRUID   = { "caster", "melee_agi", "healer" },      -- Balance, Feral, Restoration
+  PRIEST  = { "healer", "healer", "caster" },         -- Discipline, Holy, Shadow
+}
+
+-- The profile for the class: the specialization's when known (spec = tree index),
+-- else the class profile that best explains the equipped totals.
+function G.AutoWeights(class, equippedTotals, spec)
+  local bySpec = spec and G.SPEC_PROFILES[class] and G.SPEC_PROFILES[class][spec]
+  if bySpec then return PROFILES[bySpec], bySpec end
   local list = CLASS_PROFILES[class] or { "melee_str" }
   if #list == 1 or not equippedTotals then return PROFILES[list[1]], list[1] end
   local bestName, best = list[1], -1
@@ -113,7 +157,7 @@ end
 --       lookahead (levels above `level` to include, default 3),
 --       drops (true: also patterns that drop; candidates carry how = acquisition)
 function G.Candidates(ds, opts)
-  local w = opts.weights or G.AutoWeights(opts.class, opts.equippedTotals)
+  local w = opts.weights or G.AutoWeights(opts.class, opts.equippedTotals, opts.spec)
   local out = {}
   for profId, skill in pairs(opts.profs or {}) do
     for _, r in ipairs(ds.recipesByProf[profId] or {}) do
@@ -124,8 +168,8 @@ function G.Candidates(ds, opts)
       if how then
         local rl = it.rl or 0
         if rl <= (opts.level or 60) + (opts.lookahead or 3) and G.CanWear(opts.class, opts.level or 60, it) then
-          local sc
-          if opts.scorer then sc = opts.scorer(out_id) end
+          local sc, pct
+          if opts.scorer then sc = opts.scorer(out_id); pct = sc ~= nil end
           if sc == nil then
             local st = it.stats or (opts.stats and opts.stats(out_id))
             sc = st and score(st, w) or nil
@@ -133,7 +177,8 @@ function G.Candidates(ds, opts)
           if sc then
             local cur = opts.equipped and opts.equipped[it.slot] or 0
             out[#out + 1] = { itemId = out_id, recipe = r.id, prof = profId, slot = it.slot,
-              reqLevel = rl, score = sc, gain = sc - cur, usableNow = rl <= (opts.level or 60), how = how }
+              reqLevel = rl, score = sc, gain = sc - cur, usableNow = rl <= (opts.level or 60), how = how,
+              pct = pct or nil }   -- pct: gain is Pawn's upgrade percent
           end
         end
       end

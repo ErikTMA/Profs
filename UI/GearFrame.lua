@@ -12,20 +12,12 @@ GF.SLOT_TO_INV = SLOT_TO_INV
 
 function GF.Format(ds, upgrades, usingPawn)
   local T = ns.Theme
-  local rows = { { summary = true, text = T.Wrap("gold", usingPawn and "Scored by Pawn"
-    or "Scored by built-in automatic weights") } }
-  for i, c in ipairs(upgrades) do
-    if i > 20 then break end
-    local r = ds.recipes[c.recipe]
-    rows[#rows + 1] = { item = c.itemId, upgrade = c, recipe = c.recipe, linkRecipe = true,
-      recipeProf = ns.Professions.Name(c.prof), recipeName = r and r.name,
-      text = ("%s  %s%s%s"):format(ns.Sidecar.ItemName(ds, c.itemId),
-        T.Wrap("muted", ("%s, req %d"):format(ns.Professions.Name(c.prof), c.reqLevel)),
-        c.usableNow and "" or ("  " .. T.Wrap("muted", "soon")),
-        c.how and c.how.t == "drop" and ("  " .. T.Wrap("drop", "pattern drops")) or ""),
-      right = ("+%.1f"):format(c.gain),
-      onClick = function() ns.GearToast.OpenRecipe(c) end }
-  end
+  -- usingPawn: the scoring label (PW.Scoring().label), or true/false from older callers
+  local label = type(usingPawn) == "table" and usingPawn.label or type(usingPawn) == "string" and usingPawn
+    or (usingPawn and "Scored by Pawn" or "Scored by built-in automatic weights")
+  local rows = { { summary = true, text = T.Wrap("gold", label) } }
+  -- the same slot-grouped rows as the character-frame column
+  for _, row in ipairs(ns.GearColumn.Rows(ds, upgrades)) do rows[#rows + 1] = row end
   if #upgrades == 0 then rows[#rows + 1] = { text = "No craftable upgrades right now." } end
   return rows
 end
@@ -56,10 +48,11 @@ function GF.Compute(ds)
       if not profs[line] or rank > profs[line] then profs[line] = rank end
     end
   end
-  local scorer = ns.Pawn.Scorer()
+  local scoring = ns.Pawn.Scoring()
+  local scorer = scoring.scorer
   local equipped
   local _, totals = equippedScores(nil)
-  local weights = ns.Gear.AutoWeights(me.class, totals)
+  local weights = ns.Gear.AutoWeights(me.class, totals, scoring.spec)
   if not scorer then
     local byInv = equippedScores(weights)
     equipped = {}
@@ -70,7 +63,7 @@ function GF.Compute(ds)
   local ups = ns.Gear.Candidates(ds, { profs = profs, level = me.level, class = me.class, known = known,
     weights = weights, scorer = scorer, stats = ns.Game.ItemStats, equipped = equipped,
     side = ns.Game.Faction(), drops = true })
-  return ups, scorer ~= nil
+  return ups, scoring
 end
 
 function GF.Show()
