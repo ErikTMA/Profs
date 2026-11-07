@@ -400,6 +400,7 @@ end
 -- an addon cannot interrupt a queued craft). Shift-click queues every expected craft.
 function S.CraftNext()
   local n = S.state.next
+  if n and n.batch <= 0 and n.prep then return ns.Game.Craft(n.prep.recipe, n.prep.count) end
   if not n or n.batch <= 0 then return false end
   local count = (IsShiftKeyDown and IsShiftKeyDown()) and n.batch or (n.safe or n.batch)
   if count <= 0 then return false end
@@ -407,6 +408,13 @@ function S.CraftNext()
 end
 
 function S.CraftTooltip(n)
+  if n.batch <= 0 and n.prep then
+    local item = n.prep.name or tostring(n.prep.recipe)
+    return { ("Craft %s first"):format(item),
+      ("%s needs reagents this route makes itself. Queues %d %s from what is in your bags; "
+        .. "then the button moves on."):format(n.segment.name or tostring(n.segment.recipe), n.prep.count, item),
+      ns.Theme.Wrap("muted", "Esc stops a running craft.") }
+  end
   local t = { ("Craft %s"):format(n.segment.name or tostring(n.segment.recipe)) }
   if n.safe < n.batch then
     t[#t + 1] = ("Queues %d: one per skill point left before %d, so it stops by %d at the latest. "
@@ -715,9 +723,13 @@ function S.Render()
   local n = st.next
   if n then
     local missing = #n.missing > 0 and (" - missing " .. #n.missing .. " reagent(s)") or ""
+    if n.batch <= 0 and n.prep then
+      missing = (" - first make %s"):format(n.prep.name or n.prep.recipe)
+    end
     f.step:SetText(("Next: %s  ~%.0f crafts to %d%s"):format(n.segment.name or n.segment.recipe,
       n.remainingCrafts, n.segment.to, missing))
-    f.craft:SetText(n.batch > 0 and ("Craft " .. n.safe) or "Nothing craftable")
+    f.craft:SetText(n.batch > 0 and ("Craft " .. n.safe)
+      or n.prep and ("Make " .. n.prep.count) or "Nothing craftable")
     f.craft:Show()
   else
     f.step:SetText("No route."); f.craft:Hide()

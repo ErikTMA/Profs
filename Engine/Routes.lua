@@ -120,6 +120,37 @@ function RT.SafeCount(skill, stopAt, skillUps)
   return math.max(1, math.floor(left / math.max(1, skillUps or 1)))
 end
 
+-- Intermediates first: when a step lacks a reagent the route crafts itself (seg.via,
+-- e.g. Cured Light Hide for a leather pattern), the crafts that make it from what is
+-- in the bags. Follows the chain down (hide -> cured hide -> ...) when the
+-- intermediate's own reagent is itself an intermediate the route crafts.
+-- Returns { recipe, name, item, count, need } or nil.
+function RT.Prep(ds, via, missing, counts, depth)
+  depth = depth or 0
+  if not via or depth > 4 then return nil end
+  for _, m in ipairs(missing) do
+    local id, n = m[1], m[2]
+    local r = via[id] and ds.recipes[via[id]]
+    if r then
+      local per = ns.Optimizer.AvgQty(r)
+      local times = math.ceil(n / per - 1e-9)
+      local craftable, deeper = math.huge, {}
+      for _, rg in ipairs(r.reagents) do
+        local have = counts and counts(rg[1]) or 0
+        craftable = math.min(craftable, math.floor(have / rg[2]))
+        if have < rg[2] * times then deeper[#deeper + 1] = { rg[1], rg[2] * times - have } end
+      end
+      if craftable == math.huge then craftable = 0 end
+      if craftable > 0 then
+        return { recipe = r.id, name = r.name, item = id, need = n, count = math.min(craftable, times) }
+      end
+      local sub = RT.Prep(ds, via, deeper, counts, depth + 1)
+      if sub then return sub end
+    end
+  end
+  return nil
+end
+
 function RT.Next(ds, route, skill, counts, skillUps)
   for i, seg in ipairs(route.segments) do
     if skill < seg.to then
@@ -137,7 +168,9 @@ function RT.Next(ds, route, skill, counts, skillUps)
       if craftable == math.huge then craftable = 0 end
       local batch = math.max(0, math.min(craftable, math.ceil(remaining - 1e-9)))
       local ups = type(skillUps) == "function" and skillUps(seg.recipe) or nil
-      return { segment = seg, index = i, remainingCrafts = remaining,
+      -- nothing to craft yet, but an intermediate can be made: that is the next click
+      local prep = batch == 0 and #missing > 0 and RT.Prep(ds, seg.via, missing, counts) or nil
+      return { segment = seg, index = i, remainingCrafts = remaining, prep = prep,
         craftable = craftable, missing = missing, color = ns.SkillUp.Color(r, skill),
         batch = batch,
         -- what the Craft button queues: never past the step's end (seg.to <= target)

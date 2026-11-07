@@ -72,6 +72,9 @@ the route switches recipe, or your target). Addons cannot stop a craft once it i
 queued, so it queues at most one craft per skill point left: "Craft 9" at 50 of a
 step ending at 59, even if about 58 crafts are expected. Click it again after each
 batch. Shift-click queues all the expected crafts instead (may go past the step).
+When the step needs something the route makes itself (Cured Light Hide, Bolt of
+Linen Cloth, ...) and you have none, the button makes that first ("Make 4") from what
+is in your bags, down the chain if needed (hide, then cured hide, then leather).
 Esc stops a running craft.
 
 In the route list, click a step to select its recipe in Blizzard's list; right-click
