@@ -337,14 +337,20 @@ end
 
 -- Lists ----------------------------------------------------------------------
 --
--- A row is a table: { text, right?, item?, icon?, indent?, tooltip = fn|string,
+-- A row is a table: { text, right?, item?, icon?, indent?, tooltip = fn|string|{lines},
 -- onClick = fn(button, frame), menu = fn(rootDescription) }.
 
 local ROW_H = Theme.ROW_HEIGHT
 
+-- tooltip = "one line" | { "line", ... } | function() -> { "line", ... }
 local function tooltipLines(d)
-  if not d.tooltip then return nil end
-  return type(d.tooltip) == "function" and d.tooltip() or { d.tooltip }
+  local t = d.tooltip
+  if type(t) == "function" then t = t() end
+  if t == nil then return nil end
+  if type(t) ~= "table" then return { tostring(t) } end
+  local out = {}
+  for _, l in ipairs(t) do out[#out + 1] = tostring(l) end
+  return #out > 0 and out or nil
 end
 
 -- The recipe's own tooltip (what a linked recipe shows: profession and name, the
