@@ -11,6 +11,8 @@
 local _, ns = ...
 local PS = ns:NewModule("PriceSources")
 
+PS.epoch = 0   -- bumped when price settings change (cached routes re-plan)
+
 PS.TSM_PRICE = "dbmarket"   -- TSM price string for buying; dbminbuyout as fallback
 
 local function tsm()
@@ -125,6 +127,9 @@ ns.commands.prices = function(rest)
   elseif cmd == "reset" then
     s.pricePrecedence, s.priceMaxAge, s.pricePolicy = nil, nil, nil
   end
+  PS.epoch = PS.epoch + 1
+  -- the shown route was priced with the old settings: re-plan it now
+  if ns.Sidecar and ns.Sidecar.frame and ns.Sidecar.frame:IsShown() then ns.Sidecar.RequestRefresh() end
   local cfg = PS.Settings()
   ns.Log("info", ("price policy %s, order: %s"):format(cfg.policy, table.concat(cfg.precedence, " > ")))
   ns.Log("info", ("stale after: AH scan %.0f h, Auctionator %.0f h; TSM external, dataset historical"):format(

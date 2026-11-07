@@ -68,6 +68,44 @@ function RT.Delete(db, name) db.saved[name] = nil end
 
 function RT.List(db) return ns.Util.sortedKeys(db.saved) end
 
+-- The part of a planned route still ahead at `skill` (from <= skill <= reach): what a
+-- fresh plan from `skill` would show when you follow the route, without re-running the
+-- optimizer. Finished segments are dropped; the current one starts at `skill` with its
+-- expected crafts and gold recomputed for the rest of its range (its learn cost is
+-- dropped once you are past its start: you have the recipe). Training steps still
+-- ahead are recomputed. The input route is not modified.
+function RT.Remaining(ds, route, skill, charLevel)
+  if skill <= route.from then return route end
+  local out = {}
+  for k, v in pairs(route) do out[k] = v end
+  out.from, out.segments = skill, {}
+  out.totalCrafts, out.totalCost, out.acquireCost = 0, 0, 0
+  for _, seg in ipairs(route.segments) do
+    if seg.to > skill then
+      local s = seg
+      if seg.from < skill then
+        local r = ds.recipes[seg.recipe]
+        s = {}
+        for k, v in pairs(seg) do s[k] = v end
+        local crafts = ns.SkillUp.ExpectedCraftsRange(r, skill, seg.to)
+        local craftGold = seg.gold - (seg.acquire and seg.acquire.cost or 0)
+        s.from, s.crafts, s.acquire = skill, crafts, nil
+        s.gold = seg.crafts > 0 and craftGold * crafts / seg.crafts or 0
+        s.craftsCeil = math.ceil(crafts - 1e-9)
+        s.colorAtStart = ns.SkillUp.Color(r, skill)
+      end
+      out.segments[#out.segments + 1] = s
+      out.totalCrafts = out.totalCrafts + s.crafts
+      out.totalCost = out.totalCost + s.gold
+      if s.acquire then out.acquireCost = out.acquireCost + s.acquire.cost end
+    end
+  end
+  local reach = route.unreachable or route.to
+  out.training = ns.Optimizer.TrainingSteps(ds, route.prof, skill, reach, charLevel)
+  for _, st in ipairs(out.training) do out.totalCost = out.totalCost + st.cost end
+  return out
+end
+
 -- Guided crafting: where the player is on a route right now.
 -- counts(itemId) -> how many the player has in bags (craftable reagents).
 -- Returns nil when done, else { segment, index, remainingCrafts, craftable,

@@ -61,6 +61,17 @@ function W.Button(parent, text, w, onClick)
   return b
 end
 
+-- One button of a choice group shown as selected: highlight locked on (the native
+-- pushed-in look) and bright text; the others normal gold text.
+function W.SetSelected(b, on)
+  b.selected = on and true or false
+  if on then b:LockHighlight() else b:UnlockHighlight() end
+  local fs = b.GetFontString and b:GetFontString()
+  if fs and fs.SetTextColor then
+    if on then fs:SetTextColor(1, 1, 1) else fs:SetTextColor(1, 0.82, 0) end
+  end
+end
+
 function W.Input(parent, w, onEnter)
   local e = CreateFrame("EditBox", nil, parent, "InputBoxTemplate")
   e:SetSize(w or 40, 20)

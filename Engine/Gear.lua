@@ -89,22 +89,29 @@ function G.CanWear(class, level, item)
 end
 
 -- How the character can get recipe r: known, or a source the default route policy
--- allows (trainer, vendor, starter). nil = unobtainable for gear suggestions (drops,
--- quests, reputation, cooldown or specialization recipes).
+-- allows (trainer, vendor, starter), or a vendor selling it for a currency or items
+-- (token, e.g. Merchant's Favor: earned, not bought, so not in default leveling routes,
+-- but a real way to get one piece of gear). nil = unobtainable for gear suggestions
+-- (drops, quests, reputation, cooldown or specialization recipes).
+G.SOURCES = { trainer = true, vendor = true, starter = true, token = true }
+-- The upgrades column also lists patterns that drop (marked, with mob, zone and chance):
+-- farmable or on the Auction House. Level-up alerts keep G.SOURCES (act-now only).
+G.SOURCES_WITH_DROPS = { trainer = true, vendor = true, starter = true, token = true, drop = true }
 -- faction = { side = "A"|"H"|nil, npcs = ds.npcs }: sources only enemy NPCs offer
 -- are not obtainable (Engine/Faction.lua).
-function G.Obtainable(r, known, faction)
+function G.Obtainable(r, known, faction, sources)
   if known and known[r.id] then return { t = "known", cost = 0, crafts = 0, access = "ok" } end
   if ns.Cooldowns and ns.Cooldowns.Has(r.id) then return nil end
   if r.spec then return nil end
   faction = faction or {}
   return ns.Optimizer.Acquisition(r, ns.Util.merge(ns.Optimizer.DEFAULTS,
-    { known = known, side = faction.side, npcs = faction.npcs }))
+    { known = known, side = faction.side, npcs = faction.npcs, allowSources = sources or G.SOURCES }))
 end
 
 -- opts: profs={[profId]=skill}, level, class, weights|nil, scorer(itemId)|nil, known,
 --       stats(itemId)|nil (runtime stat lookup), equipped={[slot]=score},
---       lookahead (levels above `level` to include, default 3)
+--       lookahead (levels above `level` to include, default 3),
+--       drops (true: also patterns that drop; candidates carry how = acquisition)
 function G.Candidates(ds, opts)
   local w = opts.weights or G.AutoWeights(opts.class, opts.equippedTotals)
   local out = {}
@@ -112,7 +119,9 @@ function G.Candidates(ds, opts)
     for _, r in ipairs(ds.recipesByProf[profId] or {}) do
       local out_id = r.creates and r.creates[1]
       local it = out_id and ds.items[out_id]
-      if it and it.slot and it.slot > 0 and r.learn <= skill and G.Obtainable(r, opts.known, { side = opts.side, npcs = ds.npcs }) then
+      local how = it and it.slot and it.slot > 0 and r.learn <= skill
+        and G.Obtainable(r, opts.known, { side = opts.side, npcs = ds.npcs }, opts.drops and G.SOURCES_WITH_DROPS or nil)
+      if how then
         local rl = it.rl or 0
         if rl <= (opts.level or 60) + (opts.lookahead or 3) and G.CanWear(opts.class, opts.level or 60, it) then
           local sc
@@ -124,7 +133,7 @@ function G.Candidates(ds, opts)
           if sc then
             local cur = opts.equipped and opts.equipped[it.slot] or 0
             out[#out + 1] = { itemId = out_id, recipe = r.id, prof = profId, slot = it.slot,
-              reqLevel = rl, score = sc, gain = sc - cur, usableNow = rl <= (opts.level or 60) }
+              reqLevel = rl, score = sc, gain = sc - cur, usableNow = rl <= (opts.level or 60), how = how }
           end
         end
       end

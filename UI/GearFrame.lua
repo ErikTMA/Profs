@@ -1,6 +1,7 @@
--- Leveling gear helper (/profs gear): craftable upgrades from your professions (and
--- your alts' professions on this account). Pawn when installed, else automatic
--- built-in weights.
+-- Leveling gear helper: craftable upgrades from your professions (and your alts'
+-- professions on this account). Pawn when installed, else automatic built-in weights.
+-- GF.Compute/GF.Format feed the character-frame column (UI/GearColumn.lua, which owns
+-- /profs gear); GF.Show is the stand-alone list, used only without a character frame.
 local _, ns = ...
 local GF = ns:NewModule("GearFrame")
 
@@ -15,7 +16,8 @@ function GF.Format(ds, upgrades, usingPawn)
   for i, c in ipairs(upgrades) do
     if i > 20 then break end
     rows[#rows + 1] = { text = ("%s  (%s, req %d)  +%.1f%s"):format(ns.Sidecar.ItemName(ds, c.itemId),
-      ns.Professions.Name(c.prof), c.reqLevel, c.gain, c.usableNow and "" or "  |cffa0a0a0soon|r") }
+      ns.Professions.Name(c.prof), c.reqLevel, c.gain, (c.usableNow and "" or "  |cffa0a0a0soon|r")
+      .. (c.how and c.how.t == "drop" and "  |cffff9933pattern drops|r" or "")) }
   end
   if #upgrades == 0 then rows[#rows + 1] = { text = "No craftable upgrades right now." } end
   return rows
@@ -60,7 +62,7 @@ function GF.Compute(ds)
   for _, set in pairs(ns.cdb.known or {}) do for id in pairs(set) do known[id] = true end end
   local ups = ns.Gear.Candidates(ds, { profs = profs, level = me.level, class = me.class, known = known,
     weights = weights, scorer = scorer, stats = ns.Game.ItemStats, equipped = equipped,
-    side = ns.Game.Faction() })
+    side = ns.Game.Faction(), drops = true })
   return ups, scorer ~= nil
 end
 
@@ -85,4 +87,3 @@ function GF.Show()
   GF.frame:Show()
 end
 
-ns.commands.gear = GF.Show

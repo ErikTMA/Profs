@@ -26,7 +26,11 @@ function AH.Bucket(store, scope)
 end
 
 -- obs = { p, q, n } or { none = true }
+-- Bumped on every recorded observation: lets cached routes notice new prices.
+AH.epoch = 0
+
 function AH.Record(store, scope, itemId, obs, t, how)
+  AH.epoch = AH.epoch + 1
   local b = AH.Bucket(store, scope)
   if obs.none then
     b.items[itemId] = { none = true, t = t, how = how }

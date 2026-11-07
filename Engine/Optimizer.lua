@@ -61,7 +61,7 @@ O.AvgQty = avgQty
 -- Faction.lua). NPC-bound sources (trainer, vendor, reputation) whose every NPC is
 -- hostile or only in an enemy capital are unavailable; a trainer/vendor the data names
 -- no NPC for, or whose NPCs' faction is unknown, stays available as "unknown".
-local NPC_BOUND = { trainer = true, vendor = true, reputation = true }
+local NPC_BOUND = { trainer = true, vendor = true, reputation = true, token = true }
 local function sourceAccess(s, opts)
   local a = ns.Faction.Source(opts.npcs, s, opts.side)
   if a == "none" then return NPC_BOUND[s.t] and "unknown" or "ok" end

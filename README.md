@@ -8,7 +8,9 @@ extra column built into the profession window.
 ## Features
 
 - **Leveling routes** for every crafting profession, including Cooking and First
-  Aid. Modes: **Cheapest** (default), **Fastest**, **Balanced**.
+  Aid. Modes: **Cheapest** (default), **Fastest**, **Balanced**: three buttons in
+  the Profs! column, the active one shown pressed in; your choice is remembered per
+  profession.
 - **Expected craft counts** from the real skill-up chance at each skill level.
   Trainer and vendor recipes are preferred; drop, quest and reputation recipes are
   only used if you already know them or allow them.
@@ -56,7 +58,7 @@ Optional addons that Profs! uses when present: **TradeSkillMaster**, **Auctionat
 Open any profession window: it gets a third column on the right, after the recipe
 list and the recipe details, with the route, the shopping list and the next recipe
 to craft. The column is part of the window: it moves and closes with it, follows the
-profession tab you select, and leaves the profession tabs along the window's right
+profession tab you select (it is not shown on the professions overview), and leaves the profession tabs along the window's right
 edge free to click. `/profs show` hides or shows the column (remembered per
 character). You can also open Profs! from the
 addon button on the minimap (left-click: route, right-click: profession
@@ -64,11 +66,24 @@ recommendations, shift-click: gear upgrades).
 
 ### Craftable gear upgrades
 
-Click **Gear upgrades** at the top right of the Profs! column (in any profession
-window), shift-click the Profs! entry in the minimap's addon menu, or type
-`/profs gear`. No profession window is needed for the command or the minimap entry.
-The list shows gear you can craft with your professions (and your alts') that beats
-what you wear, scored with Pawn if you use it.
+Recipes bought with a currency (for example Merchant's Favor from the Azeroth
+Commerce Authority) count for gear suggestions; they are not used in leveling routes.
+
+Patterns that drop are listed too, marked **drop**. Hover one to see which mobs drop
+it: level, elite or boss, zone and coordinates (dungeon mobs: the dungeon), and the
+drop chance with how many kills it was measured on. World drops say how many mobs
+drop them and show the best chances. Drop patterns are often on the Auction House.
+
+Open your character window (C): when you can craft gear that beats what you wear,
+Profs! adds a **Craftable upgrades** column to it, right of your stats, listing each
+item with its profession and required level. Hover a row to see where to get the
+recipe; click it to open the recipe. When there
+is nothing to upgrade, the character window stays as it is. Your professions and your
+alts' count, scored with Pawn if you use it.
+
+The **Gear upgrades** button in the Profs! profession column, shift-click on the
+Profs! entry in the minimap's addon menu, and `/profs gear` all open the character
+window on that page (and tell you in chat when there are no upgrades).
 
 | Command | What it does |
 |---|---|

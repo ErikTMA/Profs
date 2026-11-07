@@ -30,6 +30,46 @@ local function npcText(ds, npcId)
   return ("%s - %s"):format(n.n or ("npc " .. npcId), where)
 end
 
+local CLASSIFICATION = { [1] = "elite", [2] = "rare elite", [3] = "boss", [4] = "rare" }
+
+local function pct(p)
+  if p >= 10 then return ("%.0f%%"):format(p) end
+  if p >= 1 then return ("%.1f%%"):format(p) end
+  return (("%.3f"):format(p):gsub("0+$", "")) .. "%"
+end
+
+-- Lines for a drop source: the best mobs (exporter order: well-sampled first, then the
+-- lower bound of the chance) with level, zone and spawn point, drop chance and sample.
+-- mobs = { {npcId, percent (-1 = not measured), kills, pickpocket?}, ... }, nmobs = mobs
+-- dropping it in all.
+function S.DropLines(ds, src, max)
+  local lines = {}
+  local mobs = src.mobs or {}
+  if #mobs == 0 then
+    lines[1] = color("a0a0a0", "  The data does not say which mob drops it.")
+    return lines
+  end
+  local n = src.nmobs or #mobs
+  if n > #mobs then
+    lines[1] = ("  Drops from %d mobs%s; best chances:"):format(n, n >= 30 and " (world drop)" or "")
+  end
+  for i, m in ipairs(mobs) do
+    if i > (max or 3) then break end
+    local npc = ds.npcs[m[1]] or {}
+    local tags = {}
+    if npc.lv then tags[#tags + 1] = npc.lv[1] == npc.lv[2] and tostring(npc.lv[1]) or (npc.lv[1] .. "-" .. npc.lv[2]) end
+    if npc.cl and CLASSIFICATION[npc.cl] then tags[#tags + 1] = CLASSIFICATION[npc.cl] end
+    local where = npc.zone or "zone unknown"
+    if npc.x and npc.y then where = ("%s (%.1f, %.1f)"):format(where, npc.x, npc.y)
+    elseif npc.zone then where = where .. " (instance)" end
+    lines[#lines + 1] = ("  %s%s%s - %s: %s"):format(m[4] == 1 and "Pick-pocket " or "",
+      npc.n or ("npc " .. m[1]), #tags > 0 and (" (" .. table.concat(tags, ", ") .. ")") or "", where,
+      m[2] < 0 and color("a0a0a0", "chance unknown")
+        or (pct(m[2]) .. color("a0a0a0", (" (%d kills seen)"):format(m[3]))))
+  end
+  return lines
+end
+
 -- Acquisition instructions for one recipe source. side = "A"/"H"/nil (player faction):
 -- only NPCs that faction can use are listed (Engine/Faction.lua); NPCs whose access the
 -- data does not establish are labelled, never presented as accessible.
@@ -52,9 +92,24 @@ function S.FormatAcquire(ds, recipeId, how, side)
       lines[#lines + 1] = ("Buy %s from a vendor, %s%s."):format(itemName(ds, src.item or 0),
         U.money(src.cost or how.cost), src.limited and " (limited stock)" or "")
     end
+  elseif how.t == "token" then
+    local parts = {}
+    for _, c in ipairs(src.currencies or {}) do
+      local n = ns.Game.CurrencyName and ns.Game.CurrencyName(c[1])
+      parts[#parts + 1] = ("%d %s"):format(c[2], n or ("of currency #" .. c[1]))
+    end
+    for _, c in ipairs(src.costItems or {}) do
+      parts[#parts + 1] = ("%d x %s"):format(c[2], itemName(ds, c[1]))
+    end
+    if (src.cost or 0) > 0 then parts[#parts + 1] = U.money(src.cost) end
+    lines[#lines + 1] = ("Buy %s from a vendor for %s%s."):format(itemName(ds, src.item or 0),
+      table.concat(parts, " + "), src.limited and " (limited stock)" or "")
   elseif how.t == "reputation" then
     lines[#lines + 1] = ("Reputation vendor (standing %s), %s."):format(tostring(src.standing),
       U.money(src.cost))
+  elseif how.t == "drop" then
+    lines[#lines + 1] = ("Pattern drops: %s."):format(itemName(ds, src.item or 0))
+    for _, l in ipairs(S.DropLines(ds, src)) do lines[#lines + 1] = l end
   elseif how.t == "locked" then
     lines[#lines + 1] = "You locked this recipe; source not in your allowed list."
   else
@@ -196,6 +251,38 @@ function S.Options(prof)
   }
 end
 
+-- Route cache (per session, per profession). Planning a full route costs 60-230 ms
+-- on Lua 5.1 with the forever dataset, and switching profession tabs fires several
+-- events, so routes are only re-planned when something that shapes them changes:
+-- everything in PlanKey. Gaining skill along the cached route is NOT such a change:
+-- the route is trimmed to the new skill (Routes.Remaining). Inventory changes only
+-- rebuild the shopping list and the next step, which are cheap.
+S.cache = {}
+S.stats = { plans = 0, hits = 0 }
+
+local function sortedIds(set)
+  local t = {}
+  for id, on in pairs(set or {}) do if on then t[#t + 1] = id end end
+  table.sort(t)
+  return table.concat(t, ",")
+end
+
+function S.PlanKey(ds, prof, target, opts)
+  local locks = {}
+  for _, l in ipairs(opts.locks or {}) do locks[#locks + 1] = l.from .. "-" .. l.to .. ":" .. l.recipe end
+  local manual = {}
+  for id, v in pairs(ns.db and ns.db.settings.manualPrices or {}) do manual[#manual + 1] = id .. "=" .. v end
+  table.sort(manual)
+  return table.concat({
+    tostring(ds.meta and ds.meta.generated), prof, target, opts.mode, tostring(opts.side),
+    tostring(opts.charLevel), tostring(opts.craftValue), sortedIds(opts.allowSources),
+    sortedIds(opts.known), sortedIds(opts.exclude), table.concat(locks, ","),
+    table.concat(manual, ","), ns.AHPrices.epoch, ns.PriceSources.epoch,
+  }, "|")
+end
+
+function S.ClearCache() S.cache = {} end
+
 -- Recompute the route for the open profession. Returns the state or nil.
 function S.Plan()
   local info = ns.Game.OpenProfession()
@@ -222,7 +309,17 @@ function S.Plan()
   st.mode = opts.mode
   if info.skill >= target then st.route = nil; st.done = true; return st end
   st.done = false
-  st.route = ns.Optimizer.Plan(ds, prof, info.skill, target, opts)
+  local key = S.PlanKey(ds, prof, target, opts)
+  local c = S.cache[prof]
+  if c and c.key == key and info.skill >= c.skill
+      and info.skill <= (c.route.unreachable or c.route.to) then
+    st.route = ns.Routes.Remaining(ds, c.route, info.skill, opts.charLevel)
+    S.stats.hits = S.stats.hits + 1
+  else
+    st.route = ns.Optimizer.Plan(ds, prof, info.skill, target, opts)
+    S.cache[prof] = { key = key, route = st.route, skill = info.skill }
+    S.stats.plans = S.stats.plans + 1
+  end
   local items = {}
   for _, seg in ipairs(st.route.segments) do
     for _, rg in ipairs(seg.reagents) do items[#items + 1] = rg[1] end
@@ -254,13 +351,17 @@ function S.SetTarget(to)
   S.Refresh()
 end
 
-function S.CycleMode()
+S.MODE_TIP = {
+  cheapest = "Lowest gold cost (default).",
+  fastest = "Fewest crafts, whatever the cost.",
+  balanced = "Trade gold against crafts (craftValue setting).",
+}
+
+-- Choose a route mode for the open profession (persisted per profession).
+function S.SetMode(mode)
   local st = S.state
-  if not st.info then return end
-  local cur = st.mode or "cheapest"
-  local nextMode = S.MODES[1]
-  for i, m in ipairs(S.MODES) do if m == cur then nextMode = S.MODES[i % #S.MODES + 1] end end
-  ns.Routes.SetTarget(ns.cdb, st.info.prof, st.target, nextMode)
+  if not st.info or not S.MODE_LABEL[mode] then return end
+  ns.Routes.SetTarget(ns.cdb, st.info.prof, st.target, mode)
   S.Refresh()
 end
 
@@ -290,7 +391,7 @@ end
 --            TradeSkillMaster) replaces the native window, so there is nothing to embed in.
 
 local PANEL_WIDTH, PANEL_HEIGHT = 340, 520
-local ROWS = 20
+local ROWS = 19
 
 -- Content laid out top-down in a host of the given inner width. rightInset leaves room
 -- for a host's own close button.
@@ -300,27 +401,43 @@ function S.BuildContent(f, width, rightInset)
   W.TitleIcon(f, f.title)
   -- always visible, whatever the column shows: craftable gear for your level from all
   -- your professions (needs no profession window; also /profs gear)
-  f.gear = W.Button(f, "Gear upgrades", 110, function() ns.GearFrame.Show() end)
+  f.gear = W.Button(f, "Gear upgrades", 110, function() ns.GearColumn.Open() end)
   f.gear:SetPoint("TOPRIGHT", -(rightInset or 10), -8)
   f.skill = W.Text(f); f.skill:SetPoint("TOPLEFT", 10, -34)
   f.targetLabel = W.Text(f, "small"); f.targetLabel:SetPoint("TOPLEFT", 10, -56); f.targetLabel:SetText("Target")
   f.target = W.Input(f, 40, function(v) if v and v > 0 then S.SetTarget(v) end end)
   f.target:SetPoint("LEFT", f.targetLabel, "RIGHT", 8, 0)
-  f.mode = W.Button(f, "Cheapest", 90, function() S.CycleMode() end)
-  f.mode:SetPoint("LEFT", f.target, "RIGHT", 8, 0)
-  f.step = W.Text(f); f.step:SetPoint("TOPLEFT", 10, -82); f.step:SetWidth(width - 20)
+  -- route mode: three buttons, the active one shown selected (not a cycling button
+  -- whose label could be read as the current or the next mode)
+  f.modeLabel = W.Text(f, "small"); f.modeLabel:SetPoint("TOPLEFT", 10, -84); f.modeLabel:SetText("Mode")
+  f.modes = {}
+  local mw = math.floor((width - 20 - 44 - 8) / 3)
+  for i, m in ipairs(S.MODES) do
+    local b = W.Button(f, S.MODE_LABEL[m], mw, function() S.SetMode(m) end)
+    b:SetPoint("TOPLEFT", 54 + (i - 1) * (mw + 4), -78)
+    b.mode = m
+    b:SetScript("OnEnter", function(self)
+      if not GameTooltip then return end
+      GameTooltip:SetOwner(self, "ANCHOR_TOP")
+      GameTooltip:SetText(S.MODE_LABEL[m]); GameTooltip:AddLine(S.MODE_TIP[m], 1, 1, 1, true)
+      GameTooltip:Show()
+    end)
+    b:SetScript("OnLeave", function() if GameTooltip then GameTooltip:Hide() end end)
+    f.modes[m] = b
+  end
+  f.step = W.Text(f); f.step:SetPoint("TOPLEFT", 10, -108); f.step:SetWidth(width - 20)
   f.craft = W.Button(f, "Craft", 120, function() S.CraftNext() end)
-  f.craft:SetPoint("TOPLEFT", 10, -118)
+  f.craft:SetPoint("TOPLEFT", 10, -144)
   f.tabs = {}
   local x, bw = 10, math.floor((width - 32) / 3)
   for _, t in ipairs({ { "route", "Route" }, { "shop", "Shopping" }, { "out", "Outputs" } }) do
     local b = W.Button(f, t[2], bw, function() S.tab = t[1]; S.Render() end)
-    b:SetPoint("TOPLEFT", x, -146)
+    b:SetPoint("TOPLEFT", x, -172)
     x = x + bw + 6
     f.tabs[t[1]] = b
   end
   f.body = CreateFrame("Frame", nil, f)
-  f.body:SetPoint("TOPLEFT", 10, -172)
+  f.body:SetPoint("TOPLEFT", 10, -198)
   f.body:SetSize(width - 20, ROWS * 15)
   f.list = W.List(f.body, ROWS, 15, width - 20)
   for i, row in ipairs(f.list.rows) do row:SetPoint("TOPLEFT", 0, -(i - 1) * 15) end
@@ -364,13 +481,14 @@ end
 -- Choose the host for the window that is actually showing.
 function S.Attach()
   local pf = ns.Embed.Frame()
-  if pf and pf:IsShown() and not S.collapsed then
+  if pf and pf:IsShown() and not S.collapsed and ns.Embed.ShowingRecipes(pf) then
     if S.panel then S.panel:Hide() end
     local f = S.BuildColumn()
     ns.Embed.Apply(f)
     S.frame, S.detached = f, false
   elseif pf and pf:IsShown() then
-    -- column collapsed by /profs show: native layout, nothing of ours on screen
+    -- overview page (no profession selected) or collapsed by /profs show: native
+    -- layout, nothing of ours on screen
     if S.column then ns.Embed.Restore(S.column) end
     if S.panel then S.panel:Hide() end
     S.frame, S.detached = nil, false
@@ -389,7 +507,8 @@ end
 -- Message-only state (no plannable route for what the window shows).
 local function message(f, text)
   f.skill:SetText(""); f.step:SetText(text); f.craft:Hide(); f.list:Set({})
-  f.target:Hide(); f.targetLabel:Hide(); f.mode:Hide()
+  f.target:Hide(); f.targetLabel:Hide(); f.modeLabel:Hide()
+  for _, b in pairs(f.modes) do b:Hide() end
   for _, b in pairs(f.tabs) do b:Hide() end
 end
 
@@ -416,10 +535,13 @@ function S.Render()
     f.skill:SetText(("%s %d / %d"):format(ns.Professions.Name(st.info.prof), st.info.skill, st.info.max))
     return
   end
-  f.target:Show(); f.targetLabel:Show(); f.mode:Show()
+  f.target:Show(); f.targetLabel:Show(); f.modeLabel:Show()
   for _, b in pairs(f.tabs) do b:Show() end
   f.target:SetNumber(st.target or 0)
-  f.mode:SetText(S.MODE_LABEL[st.mode or "cheapest"])
+  for m, b in pairs(f.modes) do
+    b:Show()
+    ns.Widgets.SetSelected(b, m == (st.mode or "cheapest"))
+  end
   if not ds then
     f.step:SetText("No recipe dataset for this client yet. See /profs status.")
     f.craft:Hide(); f.list:Set({}); return
@@ -473,6 +595,18 @@ function S.Refresh()
   S.Render()
 end
 
+-- Coalesce bursts (TRADE_SKILL_LIST_UPDATE, SKILL_LINES_CHANGED and bag updates often
+-- fire several times in a row) into one refresh on the next frame.
+function S.RequestRefresh()
+  if not (C_Timer and C_Timer.After) then return S.Refresh() end
+  if S.refreshPending then return end
+  S.refreshPending = true
+  C_Timer.After(0, function()
+    S.refreshPending = false
+    if S.frame and S.frame:IsShown() then S.Refresh() end
+  end)
+end
+
 function S.OnShow()
   S.Attach()
   S.Refresh()
@@ -491,6 +625,14 @@ local function hookNative()
   -- the column is a child of the frame, so hiding the frame hides it; these hooks only
   -- (re)apply the layout and refresh content when the shared window shows
   pf:HookScript("OnShow", function() S.OnNativeChange() end)
+  -- overview <-> profession: Blizzard shows the incoming page in both directions
+  -- (SelectBookPage: BookPage:Show() then CraftingPage:Hide(); ShowSelectedCraftingPage:
+  -- BookPage:Hide() then CraftingPage:Show()), so following each page's OnShow is enough
+  for _, page in ipairs({ pf.CraftingPage, pf.BookPage }) do
+    if page and page.HookScript then
+      page:HookScript("OnShow", function() if pf:IsShown() then S.OnNativeChange() end end)
+    end
+  end
 end
 
 -- wiring ---------------------------------------------------------------------
@@ -517,14 +659,14 @@ ns.Events.On("PROFS_LOADED", function()
       -- when the book page is shown); the column then shows the overview hint. The
       -- detached panel has no window to belong to and closes.
       if S.frame and S.frame.host == "panel" then S.frame:Hide()
-      elseif S.frame and S.frame:IsShown() then S.Refresh() end
+      elseif S.frame and S.frame:IsShown() then S.RequestRefresh() end
     elseif e == "MAIL_INBOX_UPDATE" then
       ns.Inventory.ScanMail()
     elseif e == "BANKFRAME_OPENED" or e == "BAG_UPDATE_DELAYED" then
       ns.Inventory.Snapshot()
-      if S.frame and S.frame:IsShown() then S.Refresh() end
+      if S.frame and S.frame:IsShown() then S.RequestRefresh() end
     elseif S.frame and S.frame:IsShown() then
-      S.Refresh()
+      S.RequestRefresh()
     end
   end)
   S.events = ev

@@ -15,7 +15,16 @@
 --                 sources  { {t="trainer", cost=copper, npcs={...}}
 --                          | {t="vendor", item=recipeItemId, cost=copper, npcs={...}, limited=bool}
 --                          | {t="reputation", item=, faction=, standing=}
---                          | {t="quest", quest=} | {t="drop", item=} | {t="other"}
+--                          | {t="token", item=recipeItemId, cost=copper (often 0),
+--                             currencies={{currencyId,n}}, costItems={{itemId,n}},
+--                             npcs={...}, limited=bool}  bought with a currency or
+--                             items (e.g. Merchant's Favor); never a gold price
+--                          | {t="quest", quest=} | {t="other"}
+--                          | {t="drop", item=recipeItemId, mobs={{npcId, percent, kills, 1=pickpocket|nil}},
+--                             nmobs=n}  mobs: the best DROP_MOBS of the n mobs dropping
+--                             it (well-sampled first); percent = drops / kills seen
+--                             on Wowhead, -1 = drops but the rate is not measured;
+--                             mobs absent = the data names none (containers, fishing)
 --                          | {t="starter"} granted with the Apprentice rank
 --                          ; unknownCost=true: the source is known, its price is not }
 --   professions [skillLine] = { ranks = { {name, max, cost, charLevel, learnAt}, ... } }
@@ -28,6 +37,9 @@
 --                            fa=1|0|-1, fh=1|0|-1 }  reaction to Alliance / Horde:
 --                            friendly / neutral / hostile; absent = not in the data
 --                            (Engine/Faction.lua decides access from these)
+--                            mobs (named by drop sources): mob=true, lv={min,max},
+--                            cl=1 elite|2 rare elite|3 boss|4 rare; instance mobs have
+--                            a zone but no x/y
 --
 -- Everything is keyed on ids; names are for display only.
 local _, ns = ...
@@ -37,6 +49,7 @@ S.VERSION = 1
 
 S.SOURCE_TYPES = {
   trainer = true, vendor = true, reputation = true, quest = true, drop = true, other = true,
+  token = true,
   starter = true, -- granted with the Apprentice rank
 }
 
@@ -87,7 +100,16 @@ function S.Validate(ds)
       err("%s: sources", where)
     else
       for i, s in ipairs(r.sources) do
-        if type(s) ~= "table" or not S.SOURCE_TYPES[s.t] then err("%s: source %d type", where, i) end
+        if type(s) ~= "table" or not S.SOURCE_TYPES[s.t] then err("%s: source %d type", where, i)
+        elseif s.mobs ~= nil then
+          if type(s.mobs) ~= "table" then err("%s: source %d mobs", where, i) else
+            for j, m in ipairs(s.mobs) do
+              if type(m) ~= "table" or not isInt(m[1]) or type(m[2]) ~= "number" or not isInt(m[3]) then
+                err("%s: source %d mob %d", where, i, j)
+              end
+            end
+          end
+        end
       end
     end
   end

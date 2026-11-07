@@ -34,6 +34,16 @@ function E.Layout(nativeWidth)
   return { frameWidth = nativeWidth + E.COLUMN_WIDTH, pageRightOffset = -E.COLUMN_WIDTH }
 end
 
+-- True while the window shows a profession's recipes (CraftingPage), false on the
+-- profession overview (BookPage, no profession selected). Decided by the pages Blizzard
+-- shows (SelectBookPage / TRADE_SKILL_SHOW / Professions.ShowSelectedCraftingPage flip
+-- them), not by the open trade skill, which can still name the last profession while
+-- the overview is shown.
+function E.ShowingRecipes(pf)
+  if not pf or not pf.CraftingPage or not pf.CraftingPage:IsShown() then return false end
+  return not (pf.BookPage and pf.BookPage:IsShown())
+end
+
 function E.Frame()
   local pf = _G.ProfessionsFrame
   if type(pf) == "table" and pf.GetWidth and pf.CraftingPage then return pf end

@@ -135,6 +135,14 @@ function G.PlayerKey()
   return (UnitName and UnitName("player")) or "player"
 end
 
+-- Currency name from the client (C_CurrencyInfo.GetCurrencyInfo, forever API docs);
+-- nil when unknown, never guessed.
+function G.CurrencyName(id)
+  if not (C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo) then return nil end
+  local ok, info = pcall(C_CurrencyInfo.GetCurrencyInfo, id)
+  return ok and type(info) == "table" and type(info.name) == "string" and info.name ~= "" and info.name or nil
+end
+
 -- "A" | "H" | nil (faction not readable, e.g. a neutral character): Engine/Faction.lua
 function G.Faction()
   if not UnitFactionGroup then return nil end
