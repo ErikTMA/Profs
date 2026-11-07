@@ -749,9 +749,17 @@ function S.Render()
   end
   f.skill:SetText(("%s %d / %d"):format(ns.Professions.Name(st.info.prof), st.info.skill, st.info.max))
   if st.gathering then
-    message(f, ns.Professions.Name(st.info.prof)
-      .. " is a gathering profession: Profs! plans crafting routes only.")
-    f.skill:SetText(("%s %d / %d"):format(ns.Professions.Name(st.info.prof), st.info.skill, st.info.max))
+    local name = ns.Professions.Name(st.info.prof)
+    message(f, name .. " is a gathering profession: Profs! has no guide for it yet.")
+    f.skill:SetText(("%s %d / %d"):format(name, st.info.skill, st.info.max))
+    if ns.Gathering.PROFS[st.info.prof] then
+      local ok, plan, ctx, gds = pcall(ns.GatherFrame.Compute, st.info.prof, st.info.skill)
+      if ok and plan then
+        f.step:SetText(ns.GatherFrame.HINT[st.info.prof] or ns.GatherFrame.HINT.default)
+        f.list:Set(ns.GatherFrame.Format(gds, plan, ctx), S.lastTab == "gather")
+        S.lastTab = "gather"
+      end
+    end
     return
   end
   f.target:Show(); f.targetLabel:Show(); f.modeLabel:Show()

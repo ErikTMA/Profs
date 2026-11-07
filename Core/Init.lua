@@ -43,7 +43,7 @@ commands.debug = function()
 end
 
 commands.help = function()
-  ns.Log("info", "/profs [show|options|status|recommend|gear|save|load|reset|ah|prices|alerts|minimap|resetui|debug|help]")
+  ns.Log("info", "/profs [show|options|status|recommend|gear|gather|save|load|reset|ah|prices|alerts|minimap|resetui|debug|help]")
 end
 
 commands.resetui = function()
@@ -84,11 +84,14 @@ ns.LAUNCHER_LINES = {
   "Shift-click: craftable gear upgrades",
   "Right-click: which profession fits you",
   "Ctrl-click: options",
+  "Alt-click: gathering guide",
 }
 
 function ns.LauncherClick(button)
   if IsControlKeyDown and IsControlKeyDown() then
     commands.options()
+  elseif IsAltKeyDown and IsAltKeyDown() and commands.gather then
+    commands.gather("")
   elseif IsShiftKeyDown and IsShiftKeyDown() then
     commands.gear()
   elseif button == "RightButton" then

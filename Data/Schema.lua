@@ -27,8 +27,17 @@
 --                             mobs absent = the data names none (containers, fishing)
 --                          | {t="starter"} granted with the Apprentice rank
 --                          ; unknownCost=true: the source is known, its price is not }
---   professions [skillLine] = { ranks = { {name, max, cost, charLevel, learnAt}, ... } }
---               }
+--   professions [skillLine] = { ranks = { {name, max, cost, charLevel, learnAt}, ... },
+--                               trainers = {npcId, ...} (gathering professions: who
+--                               teaches the ranks) }
+--   nodes       [objectId] = { n=name, prof=182 Herbalism | 186 Mining, skill=required,
+--                 (skinnable mobs: [-npcId] = { ..., prof=393 Skinning, lv={lo, hi}, skill
+--                 from the level; spawns one per 1% cell of the map })
+--                 yields = { {itemId, percent, min, max}, ... } most likely first,
+--                 spawns = { [uiMapId] = { xxxyyy, ... } } every spawn, x and y in
+--                 tenths of a percent (382333 = 38.2, 33.3) }   (optional)
+--   zones       [uiMapId] = { n=name, lv={lo, hi} level spread of its hostile mobs,
+--                 na/nh/nb = npcs friendly to the Alliance only / Horde only / both }
 --   items       [itemId] = { n=name, q=quality, il=itemLevel, rl=reqLevel,
 --                            vsell=copper, vbuy=copper (sold by a vendor, unlimited),
 --                            c=classId, sc=subclassId, slot=inventoryType,
@@ -113,6 +122,27 @@ function S.Validate(ds)
       end
     end
   end
+  if ds.nodes ~= nil and type(ds.nodes) ~= "table" then err("nodes not a table") end
+  for id, n in pairs(type(ds.nodes) == "table" and ds.nodes or {}) do
+    local where = "node " .. tostring(id)
+    if not isInt(id) then err("%s: key not an integer", where) end
+    if type(n) ~= "table" or not isInt(n.prof) or not isInt(n.skill) or type(n.spawns) ~= "table"
+        or type(n.yields) ~= "table" then
+      err("%s: needs prof, skill, yields, spawns", where)
+    else
+      for zone, list in pairs(n.spawns) do
+        if not isInt(zone) or type(list) ~= "table" then err("%s: spawns of %s", where, tostring(zone))
+        else
+          for _, v in ipairs(list) do
+            if not isInt(v) or v < 0 or v > 999999 then
+              err("%s: spawn %s", where, tostring(v)); break
+            end
+          end
+        end
+      end
+    end
+  end
+  if ds.zones ~= nil and type(ds.zones) ~= "table" then err("zones not a table") end
   for id, it in pairs(ds.items) do
     if not isInt(id) then err("item %s: key not an integer", tostring(id)) end
     if type(it) ~= "table" then err("item %s: not a table", tostring(id)) end

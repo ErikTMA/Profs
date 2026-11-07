@@ -4,8 +4,8 @@
 -- 1.x-derived client. The rank caps / training costs / character-level requirements
 -- below are the Classic Era values and are NOT verified for WoW Forever; a dataset's
 -- own `professions` table overrides them when it carries rank data.
--- `crafting=false` professions are listed so the UI can name them, but V1 builds no
--- gathering routes.
+-- `crafting=false` professions are listed so the UI can name them; Herbalism, Mining
+-- and Skinning get a gathering guide (Engine/Gathering.lua), Fishing nothing yet.
 local _, ns = ...
 local P = ns:NewModule("Professions")
 

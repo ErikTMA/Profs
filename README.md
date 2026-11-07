@@ -43,6 +43,12 @@ extra column built into the profession window.
   you use it, otherwise with built-in stat weights.
 - **Level-up alerts**: when you ding, a small notice lists craftable gear that just
   became an upgrade. Click a row to open the recipe.
+- **Gathering guide** for Herbalism, Mining and Skinning: where to gather at every
+  skill level, from every herb and ore spawn and every skinnable mob in the data
+  grouped into areas, the zone and coordinates for each step with a waypoint on click,
+  how many herbs, nodes or mobs to expect, and when to train the next rank. It stays
+  on your continent and avoids the other faction's zones and mobs above your level. With **GatherMate2**, the nodes you recorded join the guide,
+  and one button adds Profs!' node positions to GatherMate2's map pins.
 - **Auction House prices** from your own scans, TradeSkillMaster or Auctionator,
   whichever is freshest. Scans only run when you press a button at the Auction
   House.
@@ -66,7 +72,7 @@ From source instead: `git clone https://github.com/ErikTMA/Profs.git` inside the
 AddOns folder (or use **Code > Download ZIP** and rename `Profs-main` to `Profs`).
 
 Optional addons that Profs! uses when present: **TradeSkillMaster**, **Auctionator**,
-**Pawn**. None of them are required.
+**Pawn**, **GatherMate2**, **TomTom**. None of them are required.
 
 ## Usage
 
@@ -104,7 +110,8 @@ faction's NPC.
 
 The Profs! button sits on the minimap's edge; drag it to move it (saved per
 character). Click: route for the open profession. Shift-click: gear upgrades.
-Right-click: the Professions window. Ctrl-click: options. The same actions are on
+Right-click: the Professions window. Ctrl-click: options. Alt-click: the gathering
+guide. The same actions are on
 the Profs! entry in the minimap's addon menu. `/profs minimap` hides or shows the button.
 
 **Options** (Esc > Options > AddOns > Profs!, or `/profs options`): the profession
@@ -113,6 +120,17 @@ markers (+++ / ++ / + after orange / yellow / green steps; on by default when th
 game's colour-blind mode is on), how prices are chosen, the minimap button, and a reset
 for window positions. Profs! windows close with Esc, stay on screen, and remember where
 you put them; `/profs resetui` puts them back.
+
+### Gathering guide
+
+`/profs gather` (or alt-click the minimap button) opens it; `/profs gather mining`,
+`/profs gather herbalism` or `/profs gather skinning` picks the profession. Each row is
+a step: skill range, zone and coordinates, and about how many herbs, nodes or mobs it
+takes. Click a row for a waypoint (TomTom if you have it, else the map's own pin).
+Hover it for the nodes or mobs there in skill-up colours (mobs with their level), the
+level of the area and whose zone it is. Mining's own window shows the same guide in the
+Profs! column. With GatherMate2, **Add to GatherMate2** copies
+Profs!' node positions into it (it asks first; GatherMate2's options can clear them).
 
 ### Craftable gear upgrades
 

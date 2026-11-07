@@ -27,6 +27,8 @@ local function buildIndexes(ds)
   ds.recipesByProf = byProf
   ds.producers = producers
   ds.npcs = ds.npcs or {}
+  ds.nodes = ds.nodes or {}
+  ds.zones = ds.zones or {}
 end
 
 -- Register a dataset. Invalid data is refused loudly (returns false + errors),
