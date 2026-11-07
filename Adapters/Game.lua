@@ -164,21 +164,54 @@ function G.Faction()
   return ok and ns.Faction.Side(group) or nil
 end
 
--- The active specialization (talent tree): { index, name } or nil before any is
--- chosen (C_SpecializationInfo, forever: Camelot PaperDollFrame uses the same calls).
-local function specName(i)
+-- The active specialization (talent tree): { index, name } or nil when unknown.
+-- Forever has classic talent trees: nobody picks a specialization, and
+-- GetSpecialization() still answers 1 (the first tree) for everyone. Blizzard's own
+-- Camelot PaperDollFrame only trusts it when IsSpecSelectionEnabled(class) is true, so
+-- do the same; otherwise the tree with the most talent points spent is the spec
+-- (GetSpecializationInfo's 7th return, pointsSpent). No points, or a tie: unknown.
+local function specInfo(i)
   local S = C_SpecializationInfo
   if not (S and S.GetSpecializationInfo) then return nil end
-  local ok, _, name = pcall(S.GetSpecializationInfo, i, false, false, nil, UnitSex and UnitSex("player") or nil)
-  return ok and type(name) == "string" and name ~= "" and name or nil
+  local ok, _, name, _, _, _, _, points = pcall(S.GetSpecializationInfo, i, false, false, nil,
+    UnitSex and UnitSex("player") or nil)
+  if not ok or type(name) ~= "string" or name == "" then return nil end
+  return name, type(points) == "number" and points or nil
+end
+local function specName(i) return (specInfo(i)) end
+
+local function selectionEnabled(S)
+  if not S.IsSpecSelectionEnabled then return false end
+  local classId = UnitClass and select(3, UnitClass("player"))
+  local ok, on = pcall(S.IsSpecSelectionEnabled, classId)
+  return ok and on == true
+end
+
+-- Pure: the tree with the most points (> 0), nil on a tie or nothing spent.
+function G.MostPoints(points)
+  local best, bestN, tie = nil, 0, false
+  for i, n in pairs(points) do
+    if n > bestN then best, bestN, tie = i, n, false
+    elseif n == bestN and n > 0 then tie = true end
+  end
+  return (not tie) and best or nil
 end
 
 function G.Spec()
   local S = C_SpecializationInfo
-  if not (S and S.GetSpecialization) then return nil end
-  local ok, i = pcall(S.GetSpecialization)
-  if not ok or type(i) ~= "number" or i < 1 then return nil end
-  return { index = i, name = specName(i) }
+  if not S then return nil end
+  if selectionEnabled(S) and S.GetSpecialization then
+    local ok, i = pcall(S.GetSpecialization)
+    if ok and type(i) == "number" and i >= 1 then return { index = i, name = specName(i) } end
+  end
+  local points = {}
+  for i = 1, 4 do
+    local name, n = specInfo(i)
+    if not name then break end
+    points[i] = n or 0
+  end
+  local i = G.MostPoints(points)
+  return i and { index = i, name = specName(i), points = points[i] } or nil
 end
 
 -- Names of the class's specializations, by index (empty when the API is missing).

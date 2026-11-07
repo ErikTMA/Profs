@@ -221,7 +221,7 @@ ns.Events.On("PROFS_LOADED", function()
   if not CreateFrame then return end
   local ev = CreateFrame("Frame")
   for _, e in ipairs({ "PLAYER_LOGIN", "ADDON_LOADED", "PLAYER_EQUIPMENT_CHANGED", "PLAYER_LEVEL_UP",
-    "SKILL_LINES_CHANGED", "PLAYER_REGEN_ENABLED" }) do
+    "SKILL_LINES_CHANGED", "PLAYER_REGEN_ENABLED", "CHARACTER_POINTS_CHANGED", "PLAYER_TALENT_UPDATE" }) do
     ev:RegisterEvent(e)
   end
   ev:SetScript("OnEvent", function(_, e)
