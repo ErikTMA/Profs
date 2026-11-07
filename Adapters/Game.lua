@@ -164,12 +164,21 @@ function G.Faction()
   return ok and ns.Faction.Side(group) or nil
 end
 
--- The active specialization (talent tree): { index, name } or nil when unknown.
--- Forever has classic talent trees: nobody picks a specialization, and
--- GetSpecialization() still answers 1 (the first tree) for everyone. Blizzard's own
--- Camelot PaperDollFrame only trusts it when IsSpecSelectionEnabled(class) is true, so
--- do the same; otherwise the tree with the most talent points spent is the spec
--- (GetSpecializationInfo's 7th return, pointsSpent). No points, or a tie: unknown.
+-- The active specialization (talent tree): { index, name, points } or nil when unknown.
+-- Forever has classic talent trees and no spec selection; GetSpecialization() answers
+-- 1 (the first tree) for everyone, so it is trusted only when IsSpecSelectionEnabled
+-- (class) is true, as Blizzard's Camelot PaperDollFrame does. Otherwise the tree with
+-- the most talent points spent is the spec. No points, or a tie: unknown.
+--
+-- Points per tree, the way Forever's own talent window reads them (Blizzard_
+-- PlayerSpells/Camelot/ClassTalents RefreshTreeHeaders): talents are traits. The
+-- active config (C_ClassTalents.GetActiveConfigID, else C_SpecializationInfo.
+-- GetCombatConfigIDForSpecGroup(active group)) has one tree (C_Traits.GetConfigInfo
+-- .treeIDs[1]); each talent tree is a trait group of it (C_Traits.
+-- GetGroupDisplayInfoByTreeID, left to right = tree 1, 2, 3), and C_Traits.
+-- GetGroupCurrencyInfo(config, groups)[i].currencyInfos[1].spent is the "8" in the
+-- tree header. GetSpecializationInfo's pointsSpent stays as a fallback: on Forever it
+-- does not report them.
 local function specInfo(i)
   local S = C_SpecializationInfo
   if not (S and S.GetSpecializationInfo) then return nil end
@@ -179,6 +188,46 @@ local function specInfo(i)
   return name, type(points) == "number" and points or nil
 end
 local function specName(i) return (specInfo(i)) end
+
+local function call(t, f, ...)
+  if not (t and type(t[f]) == "function") then return nil end
+  local ok, a = pcall(t[f], ...)
+  if ok then return a end
+  return nil
+end
+
+local function activeConfigID()
+  local id = call(C_ClassTalents, "GetActiveConfigID")
+  if type(id) == "number" then return id end
+  local group = call(C_SpecializationInfo, "GetActiveSpecGroup", false, false) or 1
+  id = call(C_SpecializationInfo, "GetCombatConfigIDForSpecGroup", group)
+  return type(id) == "number" and id or nil
+end
+
+-- { points = {[tree] = n}, names = {[tree] = "Enhancement"} } from the trait config, or nil.
+function G.TalentTreePoints()
+  if not C_Traits then return nil end
+  local config = activeConfigID()
+  if not config then return nil end
+  local info = call(C_Traits, "GetConfigInfo", config)
+  local tree = type(info) == "table" and type(info.treeIDs) == "table" and info.treeIDs[1]
+  if not tree then return nil end
+  local groups = call(C_Traits, "GetGroupDisplayInfoByTreeID", tree)
+  if type(groups) ~= "table" or #groups == 0 then return nil end
+  local ids = {}
+  for i, g in ipairs(groups) do ids[i] = g.groupID end
+  local spent = {}
+  for _, gi in ipairs(call(C_Traits, "GetGroupCurrencyInfo", config, ids) or {}) do
+    local c = type(gi) == "table" and type(gi.currencyInfos) == "table" and gi.currencyInfos[1]
+    if c and gi.traitNodeGroupID then spent[gi.traitNodeGroupID] = tonumber(c.spent) or 0 end
+  end
+  local out = { points = {}, names = {} }
+  for i, g in ipairs(groups) do
+    out.points[i] = spent[g.groupID] or 0
+    out.names[i] = g.displayName
+  end
+  return out
+end
 
 local function selectionEnabled(S)
   if not S.IsSpecSelectionEnabled then return false end
@@ -199,10 +248,14 @@ end
 
 function G.Spec()
   local S = C_SpecializationInfo
-  if not S then return nil end
-  if selectionEnabled(S) and S.GetSpecialization then
+  if S and selectionEnabled(S) and S.GetSpecialization then
     local ok, i = pcall(S.GetSpecialization)
     if ok and type(i) == "number" and i >= 1 then return { index = i, name = specName(i) } end
+  end
+  local traits = G.TalentTreePoints()
+  if traits then
+    local i = G.MostPoints(traits.points)
+    if i then return { index = i, name = specName(i) or traits.names[i], points = traits.points[i] } end
   end
   local points = {}
   for i = 1, 4 do
@@ -212,6 +265,15 @@ function G.Spec()
   end
   local i = G.MostPoints(points)
   return i and { index = i, name = specName(i), points = points[i] } or nil
+end
+
+-- One line for /profs gearspec: what the detection saw.
+function G.SpecDebug()
+  local t = G.TalentTreePoints()
+  if not t then return "talent trees: not readable (no trait config)" end
+  local parts = {}
+  for i, n in ipairs(t.points) do parts[#parts + 1] = ("%s %d"):format(t.names[i] or ("tree " .. i), n) end
+  return "talent points: " .. table.concat(parts, ", ")
 end
 
 -- Names of the class's specializations, by index (empty when the API is missing).

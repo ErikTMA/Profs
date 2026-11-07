@@ -114,5 +114,6 @@ ns.commands.gearspec = function(rest)
   elseif rest:match("^pawn%s+.+") then ns.cdb.gearSpec = "pawn:" .. rest:match("^pawn%s+(.+)$")
   elseif rest ~= "" then ns.Log("warn", "/profs gearspec auto | <specialization number> | pawn <scale name>"); return end
   ns.Log("info", PW.Scoring().label)
+  ns.Log("info", ns.Game.SpecDebug())
   if ns.GearColumn and ns.GearColumn.RequestUpdate then ns.GearColumn.RequestUpdate() end
 end
