@@ -57,6 +57,7 @@ function P.Render()
   local lines = P.Format(status, ns.AHScan.state, now, ns.AHScan.Scope(), #items)
   f.text:SetText(table.concat(lines, "\n"))
   local running = ns.AHScan.state.running
+  if f.spinner then if running then f.spinner:Show() else f.spinner:Hide() end end
   if running then f.list:Disable(); f.full:Disable(); f.stop:Enable()
   else
     f.stop:Disable()
@@ -85,11 +86,10 @@ end
 function P.Build()
   if P.frame then return P.frame end
   local W = ns.Widgets
-  local f = W.Panel("ProfsAHPanel", UIParent, 300, 190)
-  f:Hide()
-  local t = W.Text(f, "large"); t:SetPoint("TOPLEFT", 10, -10); t:SetText("Profs! prices")
-  W.TitleIcon(f, t)
-  f.text = W.Text(f, "small"); f.text:SetPoint("TOPLEFT", 10, -34); f.text:SetWidth(280)
+  local f = W.Window("ProfsAHPanel", ns.displayName .. " prices", 320, 240, { point = { "CENTER", 0, 200 } })
+  f.text = W.Text(f, "small"); f.text:SetPoint("TOPLEFT", 12, f.top); f.text:SetWidth(296)
+  f.spinner = W.Spinner(f, 22)
+  if f.spinner then f.spinner:SetPoint("TOPRIGHT", -12, f.top + 4) end
   f.list = W.Button(f, "Scan shopping list", 130, P.ScanListClicked); f.list:SetPoint("BOTTOMLEFT", 10, 10)
   f.full = W.Button(f, "Full scan", 80, P.FullClicked); f.full:SetPoint("LEFT", f.list, "RIGHT", 4, 0)
   f.stop = W.Button(f, "Stop", 60, function() ns.AHScan.Stop("stopped by you"); P.Render() end)

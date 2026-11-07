@@ -60,6 +60,9 @@ local function hookSize(cf)
   hooksecurefunc(cf, "SetWidth", after)
 end
 
+GC.ART = "UI-Character-Info-Stat-BG"   -- the stats pane's own background (Camelot CharacterFrame.xml)
+GC.HINT = "Click: open the recipe. Shift-click: link. Hover: where to get it."
+
 function GC.Build(cf)
   if GC.column then return GC.column end
   local W = ns.Widgets
@@ -67,41 +70,52 @@ function GC.Build(cf)
   f:Hide()
   local inset = CreateFrame("Frame", nil, f, "InsetFrameTemplate")
   inset:SetAllPoints(f)
+  f.inset = inset
+  -- drawn like the stats pane beside it; the grey inset stays where the art is missing
+  if W.PaneArt(f, C_Texture and C_Texture.GetAtlasInfo and GC.ART or nil, 0.15) then inset:Hide() end
   f.title = W.Text(f, "large"); f.title:SetPoint("TOPLEFT", 10, -10); f.title:SetText("Craftable upgrades")
   W.TitleIcon(f, f.title)
   f.scored = W.Text(f, "small"); f.scored:SetPoint("TOPLEFT", 10, -36)
   f.body = CreateFrame("Frame", nil, f)
   f.body:SetPoint("TOPLEFT", 10, -54)
-  f.body:SetSize(GC.COLUMN_WIDTH - 30, GC.ROWS * 15)
-  f.list = W.List(f.body, GC.ROWS, 15, GC.COLUMN_WIDTH - 30)
-  for i, row in ipairs(f.list.rows) do row:SetPoint("TOPLEFT", 0, -(i - 1) * 15) end
+  f.body:SetPoint("BOTTOMRIGHT", -10, 26)
+  f.body:SetSize(GC.COLUMN_WIDTH - 30, GC.ROWS * ns.Theme.ROW_HEIGHT)
+  f.list = W.List(f.body, GC.ROWS, ns.Theme.ROW_HEIGHT, GC.COLUMN_WIDTH - 30)
   f.hint = W.Text(f, "small"); f.hint:SetPoint("BOTTOMLEFT", 10, 8); f.hint:SetWidth(GC.COLUMN_WIDTH - 30)
-  f.hint:SetText("Hover: where to get the recipe. Click: open it.")
+  f.hint:SetText(GC.HINT)
   GC.column = f
   return f
 end
 
--- Rows for the list: one per upgrade, item tooltip and click-to-open-recipe.
+-- Rows for the list: one per upgrade (item icon, name, required level, gain on the
+-- right), the item's own tooltip plus where to get the recipe; click opens the recipe.
 function GC.Rows(ds, upgrades)
+  local T = ns.Theme
   local rows = {}
   for i, c in ipairs(upgrades) do
     if i > GC.ROWS then break end
+    local r = ds.recipes[c.recipe]
     rows[#rows + 1] = {
-      text = ("%s  |cffa0a0a0%s, req %d|r  +%.1f%s%s"):format(ns.Sidecar.ItemName(ds, c.itemId),
-        ns.Professions.Name(c.prof), c.reqLevel, c.gain, c.usableNow and "" or "  |cffa0a0a0soon|r",
-        c.how and c.how.t == "drop" and "  |cffff9933drop|r" or ""),
+      item = c.itemId,
+      -- tooltip and Shift-click: the recipe itself, as a linked recipe shows it
+      recipe = c.recipe, recipeProf = ns.Professions.Name(c.prof), recipeName = r and r.name,
+      linkRecipe = true,
+      text = ("%s %s%s%s"):format(ns.Sidecar.ItemName(ds, c.itemId), T.Wrap("muted", "req " .. c.reqLevel),
+        c.usableNow and "" or ("  " .. T.Wrap("muted", "soon")),
+        c.how and c.how.t == "drop" and ("  " .. T.Wrap("drop", "drop")) or ""),
+      right = ("+%.1f"):format(c.gain),
       upgrade = c,
       onClick = function() ns.GearToast.OpenRecipe(c) end,
       tooltip = function()
-        local t = { ns.Sidecar.ItemName(ds, c.itemId), ("Requires level %d - %s"):format(c.reqLevel,
-          ns.Professions.Name(c.prof)) }
+        local t = { ns.Sidecar.ItemName(ds, c.itemId), ("Crafted with %s; requires level %d"):format(
+          ns.Professions.Name(c.prof), c.reqLevel), ("Upgrade score +%.1f"):format(c.gain) }
         if not c.usableNow then t[#t + 1] = "Not equippable yet." end
         -- how to get the recipe: trainer/vendor/currency, or which mobs drop the pattern
         if c.how and c.how.t ~= "known" then
           local how = ns.Sidecar.FormatAcquire(ds, c.recipe, c.how, ns.Game.Faction and ns.Game.Faction())
-          for i = 2, #how do t[#t + 1] = how[i] end
+          for j = 2, #how do t[#t + 1] = how[j] end
         end
-        t[#t + 1] = "Click: open the recipe."
+        t[#t + 1] = T.Wrap("muted", "Click: open the recipe.")
         return t
       end,
     }
@@ -140,16 +154,21 @@ function GC.Restore()
   setWidth(cf, GC.nativeWidth)
 end
 
+-- Turned off in the options (ProfsDB.settings.gearColumn = false).
+function GC.Disabled()
+  return ns.db and ns.db.settings and ns.db.settings.gearColumn == false
+end
+
 -- Show the column when the Character tab is up and there are upgrades; otherwise the
 -- native layout. Returns the number of upgrades shown.
 function GC.Update()
   local cf = GC.Frame()
-  if not cf or not cf:IsShown() or not onCharacterTab() then GC.Restore(); return 0 end
+  if not cf or not cf:IsShown() or not onCharacterTab() or GC.Disabled() then GC.Restore(); return 0 end
   local ups, pawn, ds = GC.Compute()
   GC.last = ups
   if #ups == 0 then GC.Restore(); return 0 end
   local f = GC.Build(cf)
-  f.scored:SetText(pawn and "|cffffd100Scored by Pawn|r" or "|cffffd100Scored by built-in automatic weights|r")
+  f.scored:SetText(ns.Theme.Wrap("gold", pawn and "Scored by Pawn" or "Scored by built-in automatic weights"))
   f.list:Set(GC.Rows(ds, ups))
   apply(cf, f)
   return #ups

@@ -43,7 +43,12 @@ commands.debug = function()
 end
 
 commands.help = function()
-  ns.Log("info", "/profs [show|status|recommend|gear|save|load|reset|ah|prices|alerts|debug|help]")
+  ns.Log("info", "/profs [show|options|status|recommend|gear|save|load|reset|ah|prices|alerts|minimap|resetui|debug|help]")
+end
+
+commands.resetui = function()
+  ns.Widgets.ResetPositions()
+  ns.Log("info", "window positions reset")
 end
 
 local function slash(input)
@@ -70,14 +75,21 @@ end
 
 ns.Slash = slash
 
--- Minimap addon compartment (Blizzard_Minimap, forever: the Mainline compartment
--- reads ## AddonCompartmentFunc / ...OnEnter / ...OnLeave and ## IconTexture from
--- Profs.toc and calls the named globals with (addonName, buttonName | button)).
---   left-click  sidecar for the open profession (else status)
---   right-click profession recommendation
---   shift-click craftable gear upgrades
-function Profs_OnAddonCompartmentClick(_, button)
-  if IsShiftKeyDown and IsShiftKeyDown() then
+-- Launchers: the minimap button (UI/MinimapButton.lua) and the addon compartment
+-- (Blizzard_Minimap on forever reads ## AddonCompartmentFunc / ...OnEnter / ...OnLeave
+-- and ## IconTexture from Profs.toc and calls the named globals with (addonName,
+-- buttonName | button)). Both share these actions.
+ns.LAUNCHER_LINES = {
+  "Click: route for the open profession",
+  "Shift-click: craftable gear upgrades",
+  "Right-click: which professions to pick",
+  "Ctrl-click: options",
+}
+
+function ns.LauncherClick(button)
+  if IsControlKeyDown and IsControlKeyDown() then
+    commands.options()
+  elseif IsShiftKeyDown and IsShiftKeyDown() then
     commands.gear()
   elseif button == "RightButton" then
     commands.recommend()
@@ -89,13 +101,15 @@ function Profs_OnAddonCompartmentClick(_, button)
   end
 end
 
+function Profs_OnAddonCompartmentClick(_, button)
+  ns.LauncherClick(button)
+end
+
 function Profs_OnAddonCompartmentEnter(_, owner)
   if not GameTooltip then return end
   GameTooltip:SetOwner(owner, "ANCHOR_LEFT")
   GameTooltip:SetText(ns.displayName)
-  GameTooltip:AddLine("Left-click: route for the open profession", 1, 1, 1)
-  GameTooltip:AddLine("Right-click: which professions to pick", 1, 1, 1)
-  GameTooltip:AddLine("Shift-click: craftable gear upgrades (also /profs gear)", 1, 1, 1)
+  for _, l in ipairs(ns.LAUNCHER_LINES) do GameTooltip:AddLine(l, 1, 1, 1) end
   GameTooltip:Show()
 end
 

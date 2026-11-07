@@ -5,13 +5,13 @@ local RF = ns:NewModule("RecommendFrame")
 local U = ns.Util
 
 function RF.Format(ds, res)
-  local rows = { { text = "|cffffd100Primary pairs (cost to max, after synergy)|r" } }
+  local rows = { { text = ns.Theme.Wrap("gold", "Primary pairs (cost to max, after synergy)") } }
   for i, p in ipairs(res.pairs) do
     if i > 10 then break end
     local name = ns.Professions.Name(p.a) .. " + " .. ns.Professions.Name(p.b)
     rows[#rows + 1] = { pair = p, text = ("%2d. %s  %s%s%s"):format(i, name, U.money(p.cost),
       p.synergy > 0 and ("  (synergy -" .. U.money(p.synergy) .. ")") or "",
-      p.complete and "" or "  |cffff4040incomplete data|r") }
+      p.complete and "" or "  " .. ns.Theme.Wrap("warn", "incomplete data")) }
     local shown = 0
     for _, w in ipairs(p.why) do
       if w.item and shown < 3 then
@@ -22,12 +22,12 @@ function RF.Format(ds, res)
       end
     end
   end
-  rows[#rows + 1] = { text = "|cffffd100Secondary|r" }
+  rows[#rows + 1] = { text = ns.Theme.Wrap("gold", "Secondary") }
   for _, s in ipairs(res.secondary) do
     rows[#rows + 1] = { text = ("    %s  %s%s"):format(ns.Professions.Name(s.prof), U.money(s.cost),
-      s.complete and "" or "  |cffff4040incomplete data|r") }
+      s.complete and "" or "  " .. ns.Theme.Wrap("warn", "incomplete data")) }
   end
-  rows[#rows + 1] = { text = "|cffa0a0a0Estimates from expected craft counts and current prices.|r" }
+  rows[#rows + 1] = { text = ns.Theme.Wrap("muted", "Estimates from expected craft counts and current prices.") }
   return rows
 end
 
@@ -36,15 +36,12 @@ function RF.Show()
   if not ds then ns.Log("warn", "no dataset; see /profs status"); return end
   local W = ns.Widgets
   if not RF.frame then
-    local f = W.Panel("ProfsRecommend", UIParent, 460, 420)
-    f:SetPoint("CENTER")
-    W.Movable(f)
-    local t = W.Text(f, "large"); t:SetPoint("TOPLEFT", 10, -10); t:SetText("Profs! - Which professions?")
-    W.TitleIcon(f, t)
-    local c = W.Button(f, "x", 22, function() f:Hide() end); c:SetPoint("TOPRIGHT", -6, -6)
-    local body = CreateFrame("Frame", nil, f); body:SetPoint("TOPLEFT", 10, -36); body:SetSize(440, 375)
-    f.list = W.List(body, 25, 15, 440)
-    for i, row in ipairs(f.list.rows) do row:SetPoint("TOPLEFT", 0, -(i - 1) * 15) end
+    local f = W.Window("ProfsRecommend", ns.displayName .. " - Which professions?", 480, 470, { point = { "CENTER", 0, 0 } })
+    local body = CreateFrame("Frame", nil, f)
+    body:SetPoint("TOPLEFT", 12, f.top)
+    body:SetPoint("BOTTOMRIGHT", -12, 12)
+    body:SetSize(450, 375)
+    f.list = W.List(body, 24, ns.Theme.ROW_HEIGHT, 450)
     RF.frame = f
   end
   local res = ns.Recommend.Rank(ds, { pricer = ns.PriceSources.Pricer(ds),

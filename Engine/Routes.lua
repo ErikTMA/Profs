@@ -110,7 +110,17 @@ end
 -- counts(itemId) -> how many the player has in bags (craftable reagents).
 -- Returns nil when done, else { segment, index, remainingCrafts, craftable,
 -- missing = {{itemId, n}}, color }.
-function RT.Next(ds, route, skill, counts)
+-- Crafts that can never carry the skill past `stopAt`: one per skill point left (or
+-- fewer when a craft can give several points), at least 1. A queued craft cannot be
+-- stopped by an addon (stopping a cast is protected), so the Craft button queues at
+-- most this many and is clicked again until the step is done.
+function RT.SafeCount(skill, stopAt, skillUps)
+  local left = (stopAt or 0) - (skill or 0)
+  if left <= 0 then return 0 end
+  return math.max(1, math.floor(left / math.max(1, skillUps or 1)))
+end
+
+function RT.Next(ds, route, skill, counts, skillUps)
   for i, seg in ipairs(route.segments) do
     if skill < seg.to then
       if skill < seg.from then skill = seg.from end
@@ -125,9 +135,13 @@ function RT.Next(ds, route, skill, counts)
         if have < want then missing[#missing + 1] = { rg[1], want - have } end
       end
       if craftable == math.huge then craftable = 0 end
+      local batch = math.max(0, math.min(craftable, math.ceil(remaining - 1e-9)))
+      local ups = type(skillUps) == "function" and skillUps(seg.recipe) or nil
       return { segment = seg, index = i, remainingCrafts = remaining,
         craftable = craftable, missing = missing, color = ns.SkillUp.Color(r, skill),
-        batch = math.max(0, math.min(craftable, math.ceil(remaining - 1e-9))) }
+        batch = batch,
+        -- what the Craft button queues: never past the step's end (seg.to <= target)
+        safe = math.min(batch, RT.SafeCount(skill, seg.to, ups)) }
     end
   end
   return nil

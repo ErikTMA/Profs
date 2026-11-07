@@ -59,10 +59,42 @@ Open any profession window: it gets a third column on the right, after the recip
 list and the recipe details, with the route, the shopping list and the next recipe
 to craft. The column is part of the window: it moves and closes with it, follows the
 profession tab you select (it is not shown on the professions overview), and leaves the profession tabs along the window's right
-edge free to click. `/profs show` hides or shows the column (remembered per
-character). You can also open Profs! from the
-addon button on the minimap (left-click: route, right-click: profession
-recommendations, shift-click: gear upgrades).
+edge free to click. It uses the same art and border as the recipe details beside it,
+so the window reads as one piece. `/profs show` hides or shows the column (remembered
+per character).
+
+The **Craft** button never crafts past the end of the current step (the skill where
+the route switches recipe, or your target). Addons cannot stop a craft once it is
+queued, so it queues at most one craft per skill point left: "Craft 9" at 50 of a
+step ending at 59, even if about 58 crafts are expected. Click it again after each
+batch. Shift-click queues all the expected crafts instead (may go past the step).
+Esc stops a running craft.
+
+In the route list, click a step to select its recipe in Blizzard's list; right-click
+it for options (never use this recipe, lock the skill range to it, unlock, clear all).
+Shift-, Ctrl- and Alt-click do the same without the menu. Rows with an item (shopping
+list, outputs, gear upgrades) show the item's tooltip; Shift-click links the item in
+chat, Ctrl-click previews it. **Route / Shopping / Outputs** are tabs above the list,
+which scrolls with a scrollbar when it is longer than the column. Route steps show
+the recipe's tooltip, then the expected crafts and where to learn it.
+
+Trainers and vendors of the other faction are left out: an NPC that the data marks
+friendly to one faction only (for example Chaw Stronghide in Mulgore) counts as that
+faction's NPC.
+
+### Minimap button and options
+
+The Profs! button sits on the minimap's edge; drag it to move it (saved per
+character). Click: route for the open profession. Shift-click: gear upgrades.
+Right-click: profession recommendations. Ctrl-click: options. The same actions are on
+the Profs! entry in the minimap's addon menu. `/profs minimap` hides or shows the button.
+
+**Options** (Esc > Options > AddOns > Profs!, or `/profs options`): the profession
+column, the character-frame column, level-up alerts and their threshold, colour-blind
+markers (+++ / ++ / + after orange / yellow / green steps; on by default when the
+game's colour-blind mode is on), how prices are chosen, the minimap button, and a reset
+for window positions. Profs! windows close with Esc, stay on screen, and remember where
+you put them; `/profs resetui` puts them back.
 
 ### Craftable gear upgrades
 
@@ -76,18 +108,23 @@ drop them and show the best chances. Drop patterns are often on the Auction Hous
 
 Open your character window (C): when you can craft gear that beats what you wear,
 Profs! adds a **Craftable upgrades** column to it, right of your stats, listing each
-item with its profession and required level. Hover a row to see where to get the
-recipe; click it to open the recipe. When there
+item with its icon, required level and how much better it is. Hover a row for the
+recipe's own tooltip (as when someone links the recipe: reagents, the ones you lack in
+red, and the item) followed by where to get the recipe; click it to open the recipe,
+Shift-click to link the recipe in chat. When there
 is nothing to upgrade, the character window stays as it is. Your professions and your
 alts' count, scored with Pawn if you use it.
 
 The **Gear upgrades** button in the Profs! profession column, shift-click on the
-Profs! entry in the minimap's addon menu, and `/profs gear` all open the character
+minimap button or the Profs! entry in the minimap's addon menu, and `/profs gear` all open the character
 window on that page (and tell you in chat when there are no upgrades).
 
 | Command | What it does |
 |---|---|
 | `/profs show` | hide or show the Profs! column in the profession window |
+| `/profs options` | open the Profs! options |
+| `/profs minimap` | hide or show the minimap button |
+| `/profs resetui` | put every Profs! window back at its default place |
 | `/profs recommend` | profession pair recommendations |
 | `/profs gear` | craftable gear upgrades for your level |
 | `/profs save <name>` / `/profs load <name>` | save or load a route |

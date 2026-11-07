@@ -85,6 +85,24 @@ local function hookWidth(pf)
   end)
 end
 
+E.TOP, E.BOTTOM = -60, 8
+
+-- Pure: the column's top and bottom offsets inside the frame. The column lines up with
+-- the recipe details pane (SchematicForm) when its edges are known and plausible,
+-- so the two panes read as one row; otherwise the fixed defaults.
+function E.Edges(frameTop, frameBottom, paneTop, paneBottom)
+  if not (frameTop and frameBottom and paneTop and paneBottom) then return E.TOP, E.BOTTOM end
+  local top, bottom = paneTop - frameTop, paneBottom - frameBottom
+  if top > -20 or top < -140 or bottom < 0 or bottom > 90 then return E.TOP, E.BOTTOM end
+  return top, bottom
+end
+
+function E.ColumnEdges(pf)
+  local sf = pf.CraftingPage and pf.CraftingPage.SchematicForm
+  if type(sf) ~= "table" or not (sf.GetTop and pf.GetTop) then return E.TOP, E.BOTTOM end
+  return E.Edges(pf:GetTop(), pf:GetBottom(), sf:GetTop(), sf:GetBottom())
+end
+
 function E.Apply(column)
   local pf = E.Frame()
   if not pf then return false end
@@ -106,10 +124,11 @@ function E.Apply(column)
   end
   if math.abs((pf:GetWidth() or 0) - layout.frameWidth) > 0.5 then setWidth(pf, layout.frameWidth) end
   if column then
+    local top, bottom = E.ColumnEdges(pf)
     column:SetParent(pf)
     column:ClearAllPoints()
-    column:SetPoint("TOPLEFT", pf, "TOPRIGHT", -E.COLUMN_WIDTH + 2, -60)
-    column:SetPoint("BOTTOMRIGHT", pf, "BOTTOMRIGHT", -8, 8)
+    column:SetPoint("TOPLEFT", pf, "TOPRIGHT", -E.COLUMN_WIDTH + 2, top)
+    column:SetPoint("BOTTOMRIGHT", pf, "BOTTOMRIGHT", -8, bottom)
     column:Show()
   end
   return true

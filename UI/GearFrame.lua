@@ -11,13 +11,20 @@ local SLOT_TO_INV = { [1] = 1, [2] = 2, [3] = 3, [4] = 4, [5] = 5, [20] = 5, [6]
 GF.SLOT_TO_INV = SLOT_TO_INV
 
 function GF.Format(ds, upgrades, usingPawn)
-  local rows = { { text = usingPawn and "|cffffd100Scored by Pawn|r"
-    or "|cffffd100Scored by built-in automatic weights|r" } }
+  local T = ns.Theme
+  local rows = { { summary = true, text = T.Wrap("gold", usingPawn and "Scored by Pawn"
+    or "Scored by built-in automatic weights") } }
   for i, c in ipairs(upgrades) do
     if i > 20 then break end
-    rows[#rows + 1] = { text = ("%s  (%s, req %d)  +%.1f%s"):format(ns.Sidecar.ItemName(ds, c.itemId),
-      ns.Professions.Name(c.prof), c.reqLevel, c.gain, (c.usableNow and "" or "  |cffa0a0a0soon|r")
-      .. (c.how and c.how.t == "drop" and "  |cffff9933pattern drops|r" or "")) }
+    local r = ds.recipes[c.recipe]
+    rows[#rows + 1] = { item = c.itemId, upgrade = c, recipe = c.recipe, linkRecipe = true,
+      recipeProf = ns.Professions.Name(c.prof), recipeName = r and r.name,
+      text = ("%s  %s%s%s"):format(ns.Sidecar.ItemName(ds, c.itemId),
+        T.Wrap("muted", ("%s, req %d"):format(ns.Professions.Name(c.prof), c.reqLevel)),
+        c.usableNow and "" or ("  " .. T.Wrap("muted", "soon")),
+        c.how and c.how.t == "drop" and ("  " .. T.Wrap("drop", "pattern drops")) or ""),
+      right = ("+%.1f"):format(c.gain),
+      onClick = function() ns.GearToast.OpenRecipe(c) end }
   end
   if #upgrades == 0 then rows[#rows + 1] = { text = "No craftable upgrades right now." } end
   return rows
@@ -71,15 +78,13 @@ function GF.Show()
   if not ds then ns.Log("warn", "no dataset; see /profs status"); return end
   local W = ns.Widgets
   if not GF.frame then
-    local f = W.Panel("ProfsGear", UIParent, 420, 380)
-    f:SetPoint("CENTER", -200, 0)
-    W.Movable(f)
-    local t = W.Text(f, "large"); t:SetPoint("TOPLEFT", 10, -10); t:SetText("Profs! - Craftable upgrades")
-    W.TitleIcon(f, t)
-    local c = W.Button(f, "x", 22, function() f:Hide() end); c:SetPoint("TOPRIGHT", -6, -6)
-    local body = CreateFrame("Frame", nil, f); body:SetPoint("TOPLEFT", 10, -36); body:SetSize(400, 330)
-    f.list = W.List(body, 22, 15, 400)
-    for i, row in ipairs(f.list.rows) do row:SetPoint("TOPLEFT", 0, -(i - 1) * 15) end
+    local f = W.Window("ProfsGear", ns.displayName .. " - Craftable upgrades", 440, 420, { point = { "CENTER", -200, 0 } })
+    local body = CreateFrame("Frame", nil, f)
+    body:SetPoint("TOPLEFT", 12, f.top)
+    body:SetPoint("BOTTOMRIGHT", -12, 12)
+    body:SetSize(410, 330)
+    f.list = W.List(body, 20, ns.Theme.ROW_HEIGHT, 410)
+    f.list:SetEmptyText("No craftable upgrades right now.")
     GF.frame = f
   end
   local ups, pawn = GF.Compute(ds)

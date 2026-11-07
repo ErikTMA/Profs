@@ -3,7 +3,8 @@
 -- DATA (audited 2026-11-07, forever dataset): each NPC carries its reaction to each
 -- faction, fa (Alliance) and fh (Horde): 1 friendly, 0 neutral (yellow; can be
 -- talked to, e.g. Steamwheedle and Thorium Brotherhood NPCs), -1 hostile, ABSENT when
--- the data does not say. Older datasets only have side = "A" | "H" | "B" (friendly to
+-- the data does not say; friendly to one faction with the other ABSENT means hostile
+-- to the other (see F.Reaction). Older datasets only have side = "A" | "H" | "B" (friendly to
 -- Alliance / Horde / both), which cannot tell neutral or unknown from hostile, so for
 -- them only "friendly" is ever concluded and everything else stays unknown.
 --
@@ -39,6 +40,12 @@ function F.Reaction(npc, side)
   if not npc or not side then return nil end
   local v = npc[side == "A" and "fa" or "fh"]
   if v ~= nil then return v end
+  local other = npc[side == "A" and "fh" or "fa"]
+  -- friendly to the other faction and silent about yours: that faction's own NPC.
+  -- Wowhead omits the second reaction for faction NPCs (808 of 1,308 trainers and
+  -- vendors in the forever data: all of Stormwind, Orgrimmar, Mulgore...), while
+  -- NPCs friendly to both list both (Booty Bay, Gadgetzan, Moonglade).
+  if other == 1 then return -1 end
   if npc.fa ~= nil or npc.fh ~= nil then return nil end   -- new data, this side unknown
   -- legacy side letter: only "friendly" can be concluded from it
   if npc.side == "B" or npc.side == side then return 1 end

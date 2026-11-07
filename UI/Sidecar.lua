@@ -46,7 +46,7 @@ function S.DropLines(ds, src, max)
   local lines = {}
   local mobs = src.mobs or {}
   if #mobs == 0 then
-    lines[1] = color("a0a0a0", "  The data does not say which mob drops it.")
+    lines[1] = color(ns.Theme.color.muted, "  The data does not say which mob drops it.")
     return lines
   end
   local n = src.nmobs or #mobs
@@ -64,8 +64,8 @@ function S.DropLines(ds, src, max)
     elseif npc.zone then where = where .. " (instance)" end
     lines[#lines + 1] = ("  %s%s%s - %s: %s"):format(m[4] == 1 and "Pick-pocket " or "",
       npc.n or ("npc " .. m[1]), #tags > 0 and (" (" .. table.concat(tags, ", ") .. ")") or "", where,
-      m[2] < 0 and color("a0a0a0", "chance unknown")
-        or (pct(m[2]) .. color("a0a0a0", (" (%d kills seen)"):format(m[3]))))
+      m[2] < 0 and color(ns.Theme.color.muted, "chance unknown")
+        or (pct(m[2]) .. color(ns.Theme.color.muted, (" (%d kills seen)"):format(m[3]))))
   end
   return lines
 end
@@ -126,53 +126,61 @@ function S.FormatAcquire(ds, recipeId, how, side)
       for i, e in ipairs(shown) do
         if i > 3 then break end
         lines[#lines + 1] = "  " .. npcText(ds, e.id)
-          .. (e.access == "unknown" and color("a0a0a0", "  (faction access unknown)") or "")
+          .. (e.access == "unknown" and color(ns.Theme.color.muted, "  (faction access unknown)") or "")
       end
     end
     if not side then
-      lines[#lines + 1] = color("a0a0a0", "  Your faction could not be read: access to these NPCs is not confirmed.")
+      lines[#lines + 1] = color(ns.Theme.color.muted, "  Your faction could not be read: access to these NPCs is not confirmed.")
     end
   elseif how.t == "trainer" or how.t == "vendor" then
-    lines[#lines + 1] = color("a0a0a0", "  The data names no NPC for this; check in game.")
+    lines[#lines + 1] = color(ns.Theme.color.muted, "  The data names no NPC for this; check in game.")
   end
   return lines
 end
 
--- Route rows: one per segment plus training steps, in skill order.
+-- Route rows: one per segment plus training steps, in skill order. Each row has the
+-- step text on the left and its gold cost on the right; iconItem is the crafted item.
 function S.FormatRoute(ds, route, overrides)
   local rows = {}
   local locks = overrides and overrides.locks or {}
+  local cb = ns.Theme.Colorblind()
   local function lockedAt(seg)
     for _, l in ipairs(locks) do
       if l.recipe == seg.recipe and l.from <= seg.from and l.to >= seg.to then return true end
     end
     return false
   end
+  local function trainRow(t)
+    return { kind = "train", text = color(ns.Theme.color.train, ("Train %s by %d"):format(t.rank, t.by)),
+      right = U.money(t.cost), step = t, icon = "Interface\\Icons\\INV_Misc_Book_09" }
+  end
   local training = {}
   for _, t in ipairs(route.training or {}) do training[#training + 1] = t end
   local ti = 1
   for _, seg in ipairs(route.segments) do
     while training[ti] and training[ti].by <= seg.from do
-      local t = training[ti]
-      rows[#rows + 1] = { kind = "train", text = color("80c0ff", ("Train %s by %d (%s)"):format(
-        t.rank, t.by, U.money(t.cost))), step = t }
+      rows[#rows + 1] = trainRow(training[ti])
       ti = ti + 1
     end
-    local c = (ns.Widgets and ns.Widgets.COLORS[seg.colorAtStart]) or "ffffff"
-    local est = ds.recipes[seg.recipe] and ds.recipes[seg.recipe].est
-    local text = ("%3d-%3d %s x%s%d  %s%s%s"):format(seg.from, seg.to,
-      color(c, seg.name or tostring(seg.recipe)), est and "~" or "", seg.craftsCeil, U.money(seg.gold),
-      seg.acquire and color("c0c0c0", "  [learn]") or "", lockedAt(seg) and color("ff6060", " [locked]") or "")
-    rows[#rows + 1] = { kind = "segment", text = text, segment = seg }
+    local c = ns.Theme.SKILL[seg.colorAtStart] or "ffffff"
+    local r = ds.recipes[seg.recipe]
+    local marker = cb and ns.Theme.SKILL_MARKER[seg.colorAtStart] or ""
+    local text = ("%3d-%3d %s%s x%s%d%s%s"):format(seg.from, seg.to,
+      color(c, seg.name or tostring(seg.recipe)), marker ~= "" and (" " .. marker) or "",
+      r and r.est and "~" or "", seg.craftsCeil,
+      seg.acquire and color(ns.Theme.color.learn, "  [learn]") or "",
+      lockedAt(seg) and color(ns.Theme.color.locked, " [locked]") or "")
+    rows[#rows + 1] = { kind = "segment", text = text, right = U.money(seg.gold), segment = seg,
+      recipe = seg.recipe, recipeName = r and r.name,
+      recipeProf = r and r.prof and ns.Professions.Name(r.prof) or nil,
+      iconItem = r and r.creates and r.creates[1] }
   end
   while training[ti] do
-    local t = training[ti]
-    rows[#rows + 1] = { kind = "train", text = color("80c0ff", ("Train %s by %d (%s)"):format(
-      t.rank, t.by, U.money(t.cost))), step = t }
+    rows[#rows + 1] = trainRow(training[ti])
     ti = ti + 1
   end
   for _, w in ipairs(route.warnings or {}) do
-    rows[#rows + 1] = { kind = "warning", text = color("ff4040", w) }
+    rows[#rows + 1] = { kind = "warning", text = color(ns.Theme.color.warn, w) }
   end
   return rows
 end
@@ -192,13 +200,15 @@ function S.FormatShopping(ds, list)
     for _, k in ipairs(WHERE_ORDER) do
       if l.have and l.have[k] and l.have[k] > 0 then have[#have + 1] = k .. " " .. l.have[k] end
     end
-    local status = l.done and color("40ff40", "done") or ("buy " .. l.buy)
-    rows[#rows + 1] = { item = l.itemId, text = ("%s  %d/%d  %s  %s%s"):format(itemName(ds, l.itemId),
-      l.owned, l.need, status, l.unit and (U.money(l.unit) .. " ea "
-        .. color("a0a0a0", "(" .. S.PriceLabel(l) .. ")")) or color("ff4040", "no price"),
-      #have > 0 and ("  (" .. table.concat(have, ", ") .. ")") or "") }
+    local status = l.done and color(ns.Theme.color.done, "done") or ("buy " .. l.buy)
+    local name = itemName(ds, l.itemId)
+    rows[#rows + 1] = { item = l.itemId,
+      text = ("%s  %d/%d  %s%s"):format(name, l.owned, l.need, status,
+        #have > 0 and color(ns.Theme.color.muted, "  (" .. table.concat(have, ", ") .. ")") or ""),
+      right = l.unit and (U.money(l.unit) .. " ea") or color(ns.Theme.color.warn, "no price"),
+      tooltip = { name, l.unit and ("Price: " .. S.PriceLabel(l)) or "No price from any source." } }
   end
-  rows[#rows + 1] = { text = ("Total to spend: %s"):format(U.money(list.total)) }
+  rows[#rows + 1] = { text = "Total to spend", right = U.money(list.total), summary = true }
   return rows
 end
 
@@ -211,20 +221,24 @@ function S.FormatOutputs(ds, route, pricer, ctx)
     if out and not seen[out] then
       seen[out] = true
       local v = ns.Recovery.Evaluate(ds, pricer, out, ctx)
-      local parts = { ("vendor %s"):format(U.money(v.vendor)) }
+      local parts = { ("Vendor %s"):format(U.money(v.vendor)) }
       if v.ah then
         parts[#parts + 1] = ("AH ~%s%s"):format(U.money(v.ah),
-          v.saleRate and (" @%d%%"):format(math.floor(v.saleRate * 100 + 0.5)) or "")
+          v.saleRate and (" (sells %d%% of the time)"):format(math.floor(v.saleRate * 100 + 0.5)) or "")
       end
       if v.deValue then
         parts[#parts + 1] = ("DE ~%s%s"):format(U.money(v.deValue), v.deEstimated and " (est.)" or "")
       end
-      rows[#rows + 1] = { item = out, action = v.action, text = ("%s: %s  [%s]"):format(
-        itemName(ds, out), color("ffd100", v.action), table.concat(parts, ", ")) }
+      local name = itemName(ds, out)
+      local tip = { name, "Best: " .. v.action }
+      for _, p in ipairs(parts) do tip[#tip + 1] = p end
+      rows[#rows + 1] = { item = out, action = v.action, text = name,
+        right = color(ns.Theme.color.gold, v.action), tooltip = tip }
     end
   end
   if #rows > 0 then
-    rows[#rows + 1] = { text = color("a0a0a0", "AH and DE values are speculative; Cheapest counts vendor value only.") }
+    rows[#rows + 1] = { summary = true,
+      text = color(ns.Theme.color.muted, "AH and DE values are speculative; Cheapest counts vendor value only.") }
   end
   return rows
 end
@@ -297,8 +311,10 @@ function S.Plan()
   -- remember learned recipes for this profession
   ns.cdb.known = ns.cdb.known or {}
   local known = ns.cdb.known[prof] or {}
+  local skillUps = {}
   for id, r in pairs(ns.Game.ScanRecipes()) do
     if r.learned then known[id] = true end
+    skillUps[id] = r.numSkillUps
   end
   ns.cdb.known[prof] = known
   local target = (ns.cdb.targets[prof] and ns.cdb.targets[prof].to) or ns.Professions.MaxSkill(prof, ds)
@@ -334,14 +350,32 @@ function S.Plan()
     if not (l.kind == "vendor" and l.unit) then scan[l.itemId] = math.max(l.buy, 1) end
   end
   ns.cdb.scanList[prof] = scan
-  st.next = ns.Routes.Next(ds, st.route, info.skill, function(id) return ns.Game.ItemCount(id, false) end)
+  st.next = ns.Routes.Next(ds, st.route, info.skill, function(id) return ns.Game.ItemCount(id, false) end,
+    function(id) return skillUps[id] end)
   return st
 end
 
+-- Craft button: queues the crafts that cannot overshoot the step's end (Routes.SafeCount;
+-- an addon cannot interrupt a queued craft). Shift-click queues every expected craft.
 function S.CraftNext()
   local n = S.state.next
   if not n or n.batch <= 0 then return false end
-  return ns.Game.Craft(n.segment.recipe, n.batch)
+  local count = (IsShiftKeyDown and IsShiftKeyDown()) and n.batch or (n.safe or n.batch)
+  if count <= 0 then return false end
+  return ns.Game.Craft(n.segment.recipe, count)
+end
+
+function S.CraftTooltip(n)
+  local t = { ("Craft %s"):format(n.segment.name or tostring(n.segment.recipe)) }
+  if n.safe < n.batch then
+    t[#t + 1] = ("Queues %d: one per skill point left before %d, so it stops by %d at the latest. "
+      .. "Click again after it finishes."):format(n.safe, n.segment.to, n.segment.to)
+    t[#t + 1] = ("Shift-click: queue all ~%d expected crafts (may craft past %d)."):format(n.batch, n.segment.to)
+  else
+    t[#t + 1] = ("Queues %d, enough to reach %d."):format(n.safe, n.segment.to)
+  end
+  t[#t + 1] = ns.Theme.Wrap("muted", "Esc stops a running craft.")
+  return t
 end
 
 function S.SetTarget(to)
@@ -375,11 +409,34 @@ function S.OnSegmentClick(seg, button)
   elseif IsAltKeyDown and IsAltKeyDown() then
     ns.Routes.Unlock(ns.cdb, prof, seg.from)
   elseif button == "RightButton" then
+    -- no context menu API: right-click keeps its old meaning
     ns.Routes.Exclude(ns.cdb, prof, seg.recipe, true)
   else
+    S.ShowRecipe(seg.recipe)
     return
   end
   S.Refresh()
+end
+
+-- Select the recipe in Blizzard's recipe list (left-click on a route step).
+function S.ShowRecipe(recipeId)
+  if C_TradeSkillUI and C_TradeSkillUI.OpenRecipe then pcall(C_TradeSkillUI.OpenRecipe, recipeId) end
+end
+
+-- Right-click menu of a route step: the same actions as the modifier clicks.
+function S.SegmentMenu(seg)
+  return function(root)
+    local prof = S.state.info and S.state.info.prof
+    if not prof then return end
+    local function act(fn) return function() fn(); S.Refresh() end end
+    root:CreateButton("Show the recipe", function() S.ShowRecipe(seg.recipe) end)
+    root:CreateButton("Never use this recipe (Shift-click)",
+      act(function() ns.Routes.Exclude(ns.cdb, prof, seg.recipe, true) end))
+    root:CreateButton(("Lock %d-%d to this recipe (Ctrl-click)"):format(seg.from, seg.to),
+      act(function() ns.Routes.Lock(ns.cdb, prof, seg.from, seg.to, seg.recipe) end))
+    root:CreateButton("Unlock this range (Alt-click)", act(function() ns.Routes.Unlock(ns.cdb, prof, seg.from) end))
+    root:CreateButton("Clear all exclusions and locks", act(function() ns.cdb.overrides[prof] = nil end))
+  end
 end
 
 -- View -------------------------------------------------------------------------
@@ -387,34 +444,44 @@ end
 -- Hosts (same content, built by S.BuildContent):
 --   column   ProfsColumn, the third column INSIDE the native ProfessionsFrame
 --            (UI/Embed.lua does the layout). Default whenever the native window is up.
---   panel    ProfsSidecar, a detached movable panel, only when another addon (e.g.
+--            Drawn like the recipe details pane beside it: the open profession's art
+--            card (cropped, not stretched) inside the same common-insideframe border.
+--   panel    ProfsSidecar, a detached window (W.Window), only when another addon (e.g.
 --            TradeSkillMaster) replaces the native window, so there is nothing to embed in.
 
-local PANEL_WIDTH, PANEL_HEIGHT = 340, 520
+local PANEL_WIDTH, PANEL_HEIGHT = 350, 560
 local ROWS = 19
+S.TABS = { { "route", "Route" }, { "shop", "Shopping" }, { "out", "Outputs" } }
+S.HINT = "Click a step: show the recipe. Right-click: options."
 
--- Content laid out top-down in a host of the given inner width. rightInset leaves room
--- for a host's own close button.
-function S.BuildContent(f, width, rightInset)
+-- Content laid out top-down in a host of the given inner width, starting at y = top.
+-- opts.noTitle: the host has its own title (the detached window).
+function S.BuildContent(f, width, opts)
+  opts = opts or {}
   local W = ns.Widgets
-  f.title = W.Text(f, "large"); f.title:SetPoint("TOPLEFT", 10, -10); f.title:SetText(ns.displayName)
-  W.TitleIcon(f, f.title)
+  local top = opts.top or 0
+  local function y(v) return top + v end
+  if not opts.noTitle then
+    f.title = W.Text(f, "large"); f.title:SetPoint("TOPLEFT", 10, y(-10)); f.title:SetText(ns.displayName)
+    W.TitleIcon(f, f.title)
+    f.logo:ClearAllPoints(); f.logo:SetPoint("TOPLEFT", 8, y(-8))
+  end
   -- always visible, whatever the column shows: craftable gear for your level from all
   -- your professions (needs no profession window; also /profs gear)
   f.gear = W.Button(f, "Gear upgrades", 110, function() ns.GearColumn.Open() end)
-  f.gear:SetPoint("TOPRIGHT", -(rightInset or 10), -8)
-  f.skill = W.Text(f); f.skill:SetPoint("TOPLEFT", 10, -34)
-  f.targetLabel = W.Text(f, "small"); f.targetLabel:SetPoint("TOPLEFT", 10, -56); f.targetLabel:SetText("Target")
+  f.gear:SetPoint("TOPRIGHT", -10, y(-8))
+  f.skill = W.Text(f); f.skill:SetPoint("TOPLEFT", 10, y(-34))
+  f.targetLabel = W.Text(f, "small"); f.targetLabel:SetPoint("TOPLEFT", 10, y(-56)); f.targetLabel:SetText("Target")
   f.target = W.Input(f, 40, function(v) if v and v > 0 then S.SetTarget(v) end end)
   f.target:SetPoint("LEFT", f.targetLabel, "RIGHT", 8, 0)
-  -- route mode: three buttons, the active one shown selected (not a cycling button
-  -- whose label could be read as the current or the next mode)
-  f.modeLabel = W.Text(f, "small"); f.modeLabel:SetPoint("TOPLEFT", 10, -84); f.modeLabel:SetText("Mode")
+  -- route mode: three buttons, the active one pushed in (not a cycling button whose
+  -- label could be read as the current or the next mode)
+  f.modeLabel = W.Text(f, "small"); f.modeLabel:SetPoint("TOPLEFT", 10, y(-84)); f.modeLabel:SetText("Mode")
   f.modes = {}
   local mw = math.floor((width - 20 - 44 - 8) / 3)
   for i, m in ipairs(S.MODES) do
     local b = W.Button(f, S.MODE_LABEL[m], mw, function() S.SetMode(m) end)
-    b:SetPoint("TOPLEFT", 54 + (i - 1) * (mw + 4), -78)
+    b:SetPoint("TOPLEFT", 54 + (i - 1) * (mw + 4), y(-78))
     b.mode = m
     b:SetScript("OnEnter", function(self)
       if not GameTooltip then return end
@@ -425,26 +492,72 @@ function S.BuildContent(f, width, rightInset)
     b:SetScript("OnLeave", function() if GameTooltip then GameTooltip:Hide() end end)
     f.modes[m] = b
   end
-  f.step = W.Text(f); f.step:SetPoint("TOPLEFT", 10, -108); f.step:SetWidth(width - 20)
+  f.step = W.Text(f); f.step:SetPoint("TOPLEFT", 10, y(-108)); f.step:SetWidth(width - 20)
   f.craft = W.Button(f, "Craft", 120, function() S.CraftNext() end)
-  f.craft:SetPoint("TOPLEFT", 10, -144)
+  f.craft:SetScript("OnEnter", function(self)
+    local n = S.state.next
+    if not (n and GameTooltip) then return end
+    GameTooltip:SetOwner(self, "ANCHOR_TOP")
+    local t = S.CraftTooltip(n)
+    GameTooltip:SetText(t[1])
+    for i = 2, #t do GameTooltip:AddLine(t[i], 1, 1, 1, true) end
+    GameTooltip:Show()
+  end)
+  f.craft:SetScript("OnLeave", function() if GameTooltip then GameTooltip:Hide() end end)
+  f.craft:SetPoint("TOPLEFT", 10, y(-140))
+  -- Route / Shopping / Outputs as tabs sitting on the list
   f.tabs = {}
-  local x, bw = 10, math.floor((width - 32) / 3)
-  for _, t in ipairs({ { "route", "Route" }, { "shop", "Shopping" }, { "out", "Outputs" } }) do
-    local b = W.Button(f, t[2], bw, function() S.tab = t[1]; S.Render() end)
-    b:SetPoint("TOPLEFT", x, -172)
-    x = x + bw + 6
+  local x, tabH = 10, 22
+  for _, t in ipairs(S.TABS) do
+    local b, h = W.Tab(f, t[2], function() S.tab = t[1]; S.Render() end)
+    tabH = h
     f.tabs[t[1]] = b
+    f.tabs[#f.tabs + 1] = b
+    b:SetPoint("BOTTOMLEFT", f, "TOPLEFT", x, y(-166 - h))
+    x = x + (b:GetWidth() or 90) + 2
   end
   f.body = CreateFrame("Frame", nil, f)
-  f.body:SetPoint("TOPLEFT", 10, -198)
-  f.body:SetSize(width - 20, ROWS * 15)
-  f.list = W.List(f.body, ROWS, 15, width - 20)
-  for i, row in ipairs(f.list.rows) do row:SetPoint("TOPLEFT", 0, -(i - 1) * 15) end
+  f.body:SetPoint("TOPLEFT", 10, y(-170 - tabH))
+  f.body:SetPoint("BOTTOMRIGHT", -10, 24)
+  f.body:SetSize(width - 20, ROWS * ns.Theme.ROW_HEIGHT)
+  f.list = W.List(f.body, ROWS, ns.Theme.ROW_HEIGHT, width - 20)
   f.hint = W.Text(f, "small"); f.hint:SetPoint("BOTTOMLEFT", 10, 8); f.hint:SetWidth(width - 20)
-  f.hint:SetText("Shift/right-click: exclude. Ctrl-click: lock range. Alt-click: unlock.")
+  f.hint:SetText(S.HINT)
   S.tab = S.tab or "route"
   return f
+end
+
+-- The column's background: the art card of the open profession, as Blizzard shows it
+-- behind the recipe details (Professions.GetProfessionBackgroundAtlas; on forever the
+-- format is "Profession-background-card-%s"). Read from the details pane itself when
+-- it has one, so the two always match.
+function S.ProfessionArt()
+  -- computed from the open profession first: on a profession switch Blizzard may update
+  -- the details pane after our refresh, so reading it could give the previous card
+  if Professions and Professions.GetProfessionBackgroundAtlas and C_TradeSkillUI
+      and C_TradeSkillUI.GetBaseProfessionInfo then
+    local ok, atlas = pcall(function()
+      return Professions.GetProfessionBackgroundAtlas(C_TradeSkillUI.GetBaseProfessionInfo())
+    end)
+    if ok and type(atlas) == "string" and atlas ~= "" then return atlas end
+  end
+  local pf = ns.Embed.Frame()
+  local sf = pf and pf.CraftingPage and pf.CraftingPage.SchematicForm
+  local bg = type(sf) == "table" and sf.Background
+  if type(bg) == "table" and type(bg.GetAtlas) == "function" then
+    local ok, atlas = pcall(bg.GetAtlas, bg)
+    if ok and type(atlas) == "string" and atlas ~= "" then return atlas end
+  end
+  return nil
+end
+
+-- Column background follows the open profession (called on every render: cheap when
+-- the atlas is unchanged).
+function S.UpdateArt(f)
+  if f.host ~= "column" then return end
+  local art = S.ProfessionArt()
+  ns.Widgets.PaneArt(f, art)
+  if f.inset then if art then f.inset:Hide() else f.inset:Show() end end
 end
 
 -- The third column (child of ProfessionsFrame once Embed.Apply runs).
@@ -452,7 +565,7 @@ function S.BuildColumn()
   if S.column then return S.column end
   local f = CreateFrame("Frame", "ProfsColumn", UIParent)
   f:Hide()
-  -- native inset look, like the recipe list and details panes beside it
+  -- grey inset until the profession art is known (and wherever it is not)
   local inset = CreateFrame("Frame", nil, f, "InsetFrameTemplate")
   inset:SetAllPoints(f)
   f.inset = inset
@@ -465,14 +578,16 @@ end
 function S.BuildPanel()
   if S.panel then return S.panel end
   local W = ns.Widgets
-  local f = W.Panel("ProfsSidecar", UIParent, PANEL_WIDTH, PANEL_HEIGHT)
-  f:Hide()
-  S.BuildContent(f, PANEL_WIDTH, 34)
-  f.close = W.Button(f, "x", 22, function() f:Hide() end)
-  f.close:SetPoint("TOPRIGHT", -6, -6)
-  local store = ns.db.settings.sidecarStore or {}
-  ns.db.settings.sidecarStore = store
-  W.Movable(f, store)
+  -- positions saved before W.Window existed
+  local old = ns.db.settings.sidecarStore and ns.db.settings.sidecarStore.point
+  if old then
+    ns.db.settings.frames = ns.db.settings.frames or {}
+    ns.db.settings.frames.ProfsSidecar = ns.db.settings.frames.ProfsSidecar or old
+    ns.db.settings.sidecarStore = nil
+  end
+  local f = W.Window("ProfsSidecar", ns.displayName, PANEL_WIDTH, PANEL_HEIGHT, { point = { "CENTER", 300, 0 } })
+  S.BuildContent(f, PANEL_WIDTH, { noTitle = true, top = f.top + 8 })
+  if f.native then f.gear:ClearAllPoints(); f.gear:SetPoint("TOPRIGHT", -10, -28) end
   f.host = "panel"
   S.panel = f
   return f
@@ -493,13 +608,9 @@ function S.Attach()
     if S.panel then S.panel:Hide() end
     S.frame, S.detached = nil, false
   else
-    -- native window not shown (replaced by another addon): detached panel
+    -- native window not shown (replaced by another addon): detached window
     if S.column then ns.Embed.Restore(S.column) end
-    local f = S.BuildPanel()
-    f:ClearAllPoints()
-    local p = ns.db.settings.sidecarStore.point
-    if p then f:SetPoint(p[1], UIParent, p[2] or p[1], p[3], p[4]) else f:SetPoint("CENTER", 300, 0) end
-    S.frame, S.detached = f, true
+    S.frame, S.detached = S.BuildPanel(), true
   end
   return S.frame
 end
@@ -507,10 +618,17 @@ end
 -- Message-only state (no plannable route for what the window shows).
 local function message(f, text)
   f.skill:SetText(""); f.step:SetText(text); f.craft:Hide(); f.list:Set({})
+  f.list:SetEmptyText(nil)
   f.target:Hide(); f.targetLabel:Hide(); f.modeLabel:Hide()
   for _, b in pairs(f.modes) do b:Hide() end
-  for _, b in pairs(f.tabs) do b:Hide() end
+  for _, b in ipairs(f.tabs) do b:Hide() end
 end
+
+local EMPTY = {
+  route = "Nothing to craft: the route is empty.",
+  shop = "Nothing to buy: you have every reagent.",
+  out = "The route makes nothing to sell or disenchant.",
+}
 
 function S.Render()
   local f = S.frame
@@ -518,6 +636,7 @@ function S.Render()
   local st = S.state
   local ds = st.ds
   f:Show()
+  S.UpdateArt(f)
   if not st.info then
     -- column stays in the shared window, e.g. on the profession overview page
     if f.host == "panel" then f:Hide(); return end
@@ -536,7 +655,9 @@ function S.Render()
     return
   end
   f.target:Show(); f.targetLabel:Show(); f.modeLabel:Show()
-  for _, b in pairs(f.tabs) do b:Show() end
+  for key, b in pairs(f.tabs) do
+    if type(key) == "string" then b:Show(); ns.Widgets.SetSelected(b, key == S.tab) end
+  end
   f.target:SetNumber(st.target or 0)
   for m, b in pairs(f.modes) do
     b:Show()
@@ -544,18 +665,18 @@ function S.Render()
   end
   if not ds then
     f.step:SetText("No recipe dataset for this client yet. See /profs status.")
-    f.craft:Hide(); f.list:Set({}); return
+    f.craft:Hide(); f.list:SetEmptyText(nil); f.list:Set({}); return
   end
   if st.done then
     f.step:SetText("Target reached.")
-    f.craft:Hide(); f.list:Set({}); return
+    f.craft:Hide(); f.list:SetEmptyText("Raise the target to plan further."); f.list:Set({}); return
   end
   local n = st.next
   if n then
     local missing = #n.missing > 0 and (" - missing " .. #n.missing .. " reagent(s)") or ""
     f.step:SetText(("Next: %s  ~%.0f crafts to %d%s"):format(n.segment.name or n.segment.recipe,
       n.remainingCrafts, n.segment.to, missing))
-    f.craft:SetText(n.batch > 0 and ("Craft " .. n.batch) or "Nothing craftable")
+    f.craft:SetText(n.batch > 0 and ("Craft " .. n.safe) or "Nothing craftable")
     f.craft:Show()
   else
     f.step:SetText("No route."); f.craft:Hide()
@@ -572,6 +693,8 @@ function S.Render()
       if row.segment then
         local seg = row.segment
         row.onClick = function(button) S.OnSegmentClick(seg, button) end
+        row.menu = S.SegmentMenu(seg)
+        row.menuTitle = seg.name or tostring(seg.recipe)
         row.tooltip = function()
           local t = { seg.name or tostring(seg.recipe),
             ("Expected crafts: %.1f (buy for %d)"):format(seg.crafts, seg.craftsCeil) }
@@ -581,12 +704,18 @@ function S.Render()
           for _, l in ipairs(S.FormatAcquire(ds, seg.recipe, seg.acquire or { t = "known" }, ns.Game.Faction())) do
             t[#t + 1] = l
           end
+          t[#t + 1] = ns.Theme.Wrap("muted", "Shift: never use. Ctrl: lock range. Alt: unlock.")
           return t
         end
       end
     end
   end
-  f.list:Set(rows)
+  -- the list ignores the summary row when deciding whether it is empty
+  local real = 0
+  for _, r in ipairs(rows) do if not r.summary then real = real + 1 end end
+  f.list:SetEmptyText(EMPTY[S.tab])
+  f.list:Set(real > 0 and rows or {}, S.lastTab == S.tab)
+  S.lastTab = S.tab
 end
 
 function S.Refresh()

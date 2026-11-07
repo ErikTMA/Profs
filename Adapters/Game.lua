@@ -111,6 +111,20 @@ function G.ItemCount(itemId, includeBank)
   return 0
 end
 
+-- Chat link of a recipe, like Shift-click in Blizzard's recipe list. The client's own
+-- link when it gives one (C_TradeSkillUI.GetRecipeLink, needs the profession data);
+-- else the trade-skill spell link built from the dataset: |Henchant:<spellId>|h
+-- [<Profession>: <Recipe>]|h, the same link the client makes for these recipes.
+function G.RecipeLink(recipeId, profName, recipeName)
+  if has(C_TradeSkillUI, "GetRecipeLink") then
+    local ok, link = pcall(C_TradeSkillUI.GetRecipeLink, recipeId)
+    if ok and type(link) == "string" and link ~= "" then return link end
+  end
+  if not recipeName then return nil end
+  return ("|cffffd000|Henchant:%d|h[%s%s]|h|r"):format(recipeId,
+    profName and (profName .. ": ") or "", recipeName)
+end
+
 function G.ItemName(itemId)
   if C_Item and C_Item.GetItemInfo then
     local ok, name, link = pcall(C_Item.GetItemInfo, itemId)

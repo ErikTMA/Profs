@@ -70,7 +70,7 @@ function T.FormatAlert(ds, a)
   local name = ns.Sidecar.ItemName(ds, a.itemId)
   local gain = a.scoredBy == "Pawn" and ("+%.0f%% (Pawn)"):format(a.pct)
     or (a.pct == math.huge and "empty slot" or ("+%.0f%%"):format(a.pct))
-  local text = ("%s  |cffa0a0a0%s|r  %s%s"):format(name, ns.Professions.Name(a.prof), gain,
+  local text = ("%s  %s  %s%s"):format(name, ns.Theme.Wrap("muted", ns.Professions.Name(a.prof)), gain,
     a.reason and a.reason ~= "" and ("  " .. a.reason) or "")
   local tip = { name, ("Requires level %d - %s"):format(a.reqLevel, ns.Professions.Name(a.prof)) }
   if a.replaces then tip[#tip + 1] = "Replaces: " .. a.replaces end
@@ -83,7 +83,7 @@ function T.FormatAlert(ds, a)
   if a.acquire and a.acquire.t ~= "known" then
     for _, l in ipairs(ns.Sidecar.FormatAcquire(ds, a.recipe, a.acquire, ns.Game.Faction())) do tip[#tip + 1] = l end
   end
-  tip[#tip + 1] = "|cff80c0ffClick: open the recipe. Right-click: dismiss.|r"
+  tip[#tip + 1] = ns.Theme.Wrap("train", "Click: open the recipe. Shift-click: link. Right-click: dismiss.")
   return text, tip
 end
 
@@ -121,13 +121,25 @@ function T.Build()
     b:RegisterForClicks("AnyUp")
     b.text = W.Text(b, "small"); b.text:SetAllPoints()
     b:SetScript("OnClick", function(self, button)
+      local a = self.alert
+      if a then
+        local ds = ns.ActiveDataset()
+        local r = ds and ds.recipes[a.recipe]
+        if ns.Widgets.ItemModifiedClick(a.itemId, { a.recipe, ns.Professions.Name(a.prof), r and r.name }) then return end
+      end
       if button == "RightButton" then T.Dismiss() elseif self.alert then T.OpenRecipe(self.alert) end
     end)
     b:SetScript("OnEnter", function(self)
       f.hovered = true
       if not self.tip or not GameTooltip then return end
       GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
-      if GameTooltip.SetItemByID then GameTooltip:SetItemByID(self.alert.itemId) else GameTooltip:SetText(self.tip[1]) end
+      local a = self.alert
+      local ds = ns.ActiveDataset()
+      local r = ds and ds.recipes[a.recipe]
+      if ns.Widgets.RecipeTooltip(GameTooltip, { recipe = a.recipe, recipeName = r and r.name,
+          recipeProf = ns.Professions.Name(a.prof) }) then
+        -- the recipe's own tooltip: reagents (missing ones in red) and the item
+      elseif GameTooltip.SetItemByID then GameTooltip:SetItemByID(a.itemId) else GameTooltip:SetText(self.tip[1]) end
       for j = 2, #self.tip do GameTooltip:AddLine(self.tip[j], 1, 1, 1, true) end
       GameTooltip:Show()
     end)
@@ -142,9 +154,9 @@ function T.Dismiss() if T.frame then T.frame:Hide() end end
 
 function T.Show(ds, alerts, level, preview)
   local f = T.Build()
-  f.title:SetText(("|cffd4a017Profs!|r %s at level %d"):format(
+  f.title:SetText((ns.Theme.Wrap("title", ns.displayName) .. " %s at level %d"):format(
     #alerts == 1 and "a craftable upgrade" or (#alerts .. " craftable upgrades"), level)
-    .. (preview and "  |cffa0a0a0(preview)|r" or ""))
+    .. (preview and ("  " .. ns.Theme.Wrap("muted", "(preview)")) or ""))
   for i, b in ipairs(f.rows) do
     local a = alerts[i]
     if a then
