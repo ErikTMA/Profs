@@ -1,0 +1,35 @@
+name: validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  addon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 5.1
+        run: sudo apt-get update -q && sudo apt-get install -y -q lua5.1
+      - name: Every Lua file parses
+        run: |
+          n=0
+          for f in $(find . -name '*.lua' -not -path './.git/*'); do luac5.1 -p "$f"; n=$((n+1)); done
+          echo "parsed $n files"
+      - name: TOC loads exactly the shipped code, in a valid order
+        run: |
+          set -eu
+          files=$(grep -v '^#' Profs.toc | sed 's/\r$//' | grep -v '^[[:space:]]*$')
+          for f in $files; do test -f "$f" || { echo "TOC loads a missing file: $f"; exit 1; }; done
+          test "$(echo "$files" | head -1)" = "Core/Namespace.lua"
+          test "$(echo "$files" | tail -1)" = "Core/Init.lua"
+          for f in $(find Core Data Engine Adapters UI -name '*.lua'); do
+            echo "$files" | grep -qx "$f" || { echo "not in the TOC: $f"; exit 1; }
+          done
+          for k in Interface Title Version IconTexture SavedVariables; do
+            grep -q "^## $k: ." Profs.toc || { echo "TOC lacks ## $k"; exit 1; }
+          done
+          if grep -q '@project-version@' Profs.toc; then echo "unstamped version"; exit 1; fi
+          for t in Media/ProfsIcon.tga Media/ProfsLogo.tga; do test -s "$t"; done
+          echo "TOC ok: $(echo "$files" | wc -l) files"

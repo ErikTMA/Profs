@@ -32,15 +32,21 @@ panel attached to the profession window.
 
 ## Installation
 
-1. Download the latest code: **Code > Download ZIP** on this page.
-2. Unzip it and rename the folder from `Profs-main` to **`Profs`**.
-3. Move the `Profs` folder into your AddOns folder:
+1. Download **`Profs-<version>.zip`** from the
+   [latest release](https://github.com/ErikTMA/Profs/releases/latest).
+2. Unzip it into your AddOns folder,
    `World of Warcraft/_forever_/Interface/AddOns/` (the exact game folder name may
-   differ on your install). The result must be `.../AddOns/Profs/Profs.toc`.
-4. Start the game and make sure **Profs!** is enabled in the AddOns list on the
-   character screen.
+   differ on your install). The zip already contains the `Profs` folder, so the
+   result is `.../AddOns/Profs/Profs.toc`.
+3. Start the game and make sure **Profs!** is enabled in the AddOns list on the
+   character screen (category: *Professions*).
 
-Or with git, from inside your AddOns folder: `git clone https://github.com/ErikTMA/Profs.git`
+To update, delete the old `Profs` folder and unzip the new release. Your settings
+and saved routes are kept (they live in the game's SavedVariables, not in the
+addon folder).
+
+From source instead: `git clone https://github.com/ErikTMA/Profs.git` inside the
+AddOns folder (or use **Code > Download ZIP** and rename `Profs-main` to `Profs`).
 
 Optional addons that Profs! uses when present: **TradeSkillMaster**, **Auctionator**,
 **Pawn**. None of them are required.

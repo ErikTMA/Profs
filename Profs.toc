@@ -1,6 +1,7 @@
 ## Interface: 16001
 ## Title: Profs!
 ## Notes: Profession leveling routes, shopping lists and guided crafting.
+## Category: Professions
 ## Author: Erik Andersen
 ## Version: 0.1.0
 ## SavedVariables: ProfsDB
@@ -10,7 +11,7 @@
 ## AddonCompartmentFunc: Profs_OnAddonCompartmentClick
 ## AddonCompartmentFuncOnEnter: Profs_OnAddonCompartmentEnter
 ## AddonCompartmentFuncOnLeave: Profs_OnAddonCompartmentLeave
-## X-Target: WoW Forever 1.60.x (interface 16001 as reported; verify in game with /dump select(4, GetBuildInfo()))
+## X-Target: WoW Forever 1.60.x
 
 # Core (pure Lua, no game API)
 Core/Namespace.lua
