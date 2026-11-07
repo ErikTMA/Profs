@@ -3,7 +3,7 @@
 ## Notes: Profession leveling routes, shopping lists and guided crafting.
 ## Category: Professions
 ## Author: Erik Andersen
-## Version: 0.1.9
+## Version: 0.2.0
 ## SavedVariables: ProfsDB
 ## SavedVariablesPerCharacter: ProfsCharDB
 ## OptionalDeps: TradeSkillMaster, Auctionator, Pawn
@@ -35,7 +35,7 @@ Engine/Recovery.lua
 Engine/Faction.lua
 Engine/Optimizer.lua
 Engine/Shopping.lua
-Engine/Recommend.lua
+Engine/Advisor.lua
 Engine/Gear.lua
 Engine/GearAlert.lua
 Engine/Routes.lua

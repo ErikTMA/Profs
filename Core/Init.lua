@@ -82,7 +82,7 @@ ns.Slash = slash
 ns.LAUNCHER_LINES = {
   "Click: route for the open profession",
   "Shift-click: craftable gear upgrades",
-  "Right-click: which professions to pick",
+  "Right-click: which profession fits you",
   "Ctrl-click: options",
 }
 

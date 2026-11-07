@@ -3,7 +3,7 @@
 -- recognise it by name (LibDBIcon10_<name>).
 --   click        route for the open profession
 --   shift-click  craftable gear upgrades
---   right-click  which professions to pick
+--   right-click  which profession fits you (Professions window)
 --   ctrl-click   options
 --   drag         move around the minimap (position saved per character)
 -- /profs minimap shows or hides it (per character; also in the options).

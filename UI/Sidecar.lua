@@ -197,6 +197,55 @@ function S.FormatRoute(ds, route, overrides)
   return rows
 end
 
+-- "Make now": every recipe you know that the bags can make right now, with what each
+-- is good for: a skill-up (its colour), gold (vendor or AH price of the output), or a
+-- gear upgrade for you. Skill-ups first (orange, yellow, green), then by value.
+-- recipes = Game.ScanRecipes(); counts(itemId) -> in bags; upgrades = { [itemId] = c }
+function S.FormatMakeNow(ds, recipes, skill, counts, pricer, upgrades)
+  local rows = {}
+  for id, info in pairs(recipes or {}) do
+    local r = ds.recipes[id]
+    if info.learned and r and #r.reagents > 0 then
+      local n = math.huge
+      for _, rg in ipairs(r.reagents) do n = math.min(n, math.floor((counts(rg[1]) or 0) / rg[2])) end
+      if n > 0 and n < math.huge then
+        local color = ns.SkillUp.Color(r, skill) or ns.SkillUp.GREY -- 1 orange .. 4 grey
+        local out = r.creates and r.creates[1]
+        local value = out and math.max(pricer:VendorSell(out) or 0, pricer:Market(out) or 0) or 0
+        local up = out and upgrades and upgrades[out]
+        rows[#rows + 1] = { recipe = id, recipeName = r.name, recipeProf = ns.Professions.Name(r.prof),
+          iconItem = out, linkRecipe = true, n = n, color = color, value = value, upgrade = up }
+      end
+    end
+  end
+  table.sort(rows, function(a, b)
+    if a.color ~= b.color then return a.color < b.color end
+    if (a.upgrade ~= nil) ~= (b.upgrade ~= nil) then return a.upgrade ~= nil end
+    if a.value ~= b.value then return a.value > b.value end
+    return a.recipe < b.recipe
+  end)
+  local cb = ns.Theme.Colorblind()
+  for _, row in ipairs(rows) do
+    local marker = cb and ns.Theme.SKILL_MARKER[row.color] or ""
+    local tags = {}
+    local grey = row.color == ns.SkillUp.GREY
+    if not grey then tags[#tags + 1] = "skill-up" end
+    if row.upgrade then tags[#tags + 1] = ns.Theme.Wrap("done", "upgrade for you") end
+    row.text = ("%s%s x%d%s"):format(color(ns.Theme.SKILL[row.color] or "ffffff", row.recipeName or tostring(row.recipe)),
+      marker ~= "" and (" " .. marker) or "", row.n, #tags > 0 and ("  " .. table.concat(tags, ", ")) or "")
+    row.right = row.value > 0 and (U.money(row.value) .. " ea") or ""
+    local tip = { grey and "No skill-up at your skill." or
+      ("Skill-up chance at %d: %d%%"):format(skill, math.floor(ns.SkillUp.Chance(ds.recipes[row.recipe], skill) * 100 + 0.5)) }
+    if row.upgrade then
+      tip[#tip + 1] = ("Gear upgrade for you: %s"):format(row.upgrade.pct and ("+%d%%"):format(math.floor(row.upgrade.gain + 0.5))
+        or ("+%.1f"):format(row.upgrade.gain))
+    end
+    if row.value > 0 then tip[#tip + 1] = ("Worth %s each (vendor or AH)."):format(U.money(row.value)) end
+    row.tooltip = tip
+  end
+  return rows
+end
+
 local WHERE_ORDER = { "bags", "bank", "mail", "alts" }
 
 -- "AH scan, 12 min ago" / "TSM (external)" / "Dataset (historical)" / "vendor"
@@ -352,7 +401,8 @@ function S.Plan()
   ns.cdb.known = ns.cdb.known or {}
   local known = ns.cdb.known[prof] or {}
   local skillUps = {}
-  for id, r in pairs(ns.Game.ScanRecipes()) do
+  st.recipes = ns.Game.ScanRecipes()
+  for id, r in pairs(st.recipes) do
     if r.learned then known[id] = true end
     skillUps[id] = r.numSkillUps
   end
@@ -500,7 +550,7 @@ end
 
 local PANEL_WIDTH, PANEL_HEIGHT = 350, 560
 local ROWS = 19
-S.TABS = { { "route", "Route" }, { "shop", "Shopping" }, { "out", "Outputs" } }
+S.TABS = { { "route", "Route" }, { "shop", "Shopping" }, { "out", "Outputs" }, { "make", "Make now" } }
 S.HINT = "Click a step: show the recipe. Right-click: options."
 
 -- Content laid out top-down in a host of the given inner width, starting at y = top.
@@ -677,6 +727,7 @@ local EMPTY = {
   route = "Nothing to craft: the route is empty.",
   shop = "Nothing to buy: you have every reagent.",
   out = "The route makes nothing to sell or disenchant.",
+  make = "Nothing you know can be made from what is in your bags.",
 }
 
 function S.Render()
@@ -740,6 +791,16 @@ function S.Render()
   elseif S.tab == "out" then
     rows = S.FormatOutputs(ds, st.route, st.pricer, { enchanting = ns.Inventory.EnchantingSkill(),
       minSaleRate = ns.db.settings.minSaleRate })
+  elseif S.tab == "make" then
+    local ups = {}
+    local ok, list = pcall(ns.GearFrame.Compute, ds, { [st.info.prof] = st.info.skill }, { drops = false })
+    if ok then for _, c in ipairs(list or {}) do if c.usableNow then ups[c.itemId] = c end end end
+    rows = S.FormatMakeNow(ds, st.recipes, st.info.skill, function(id) return ns.Game.ItemCount(id, false) end,
+      st.pricer, ups)
+    for _, row in ipairs(rows) do
+      local id = row.recipe
+      row.onClick = function() S.ShowRecipe(id) end
+    end
   else
     rows = S.FormatRoute(ds, st.route, ns.Routes.Overrides(ns.cdb, st.info.prof))
     for _, row in ipairs(rows) do

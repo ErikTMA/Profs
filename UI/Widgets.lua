@@ -198,7 +198,7 @@ function W.Tab(parent, text, onClick)
   if hasTemplate("MinimalTabTemplate") then
     local b = CreateFrame("Button", nil, parent, "MinimalTabTemplate")
     b.tabText = text
-    if b.Text then b.Text:SetText(text); b:SetWidth(b.Text:GetStringWidth() + 40) end
+    if b.Text then b.Text:SetText(text); b:SetWidth(b.Text:GetStringWidth() + 28) end
     b:SetScript("OnClick", function() onClick() end)
     b.isTab = true
     b.tabSelect = function(self, on)

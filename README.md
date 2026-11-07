@@ -26,8 +26,19 @@ extra column built into the profession window.
 - **What to do with the results**: sell, vendor, disenchant or keep.
 - **Your own choices**: exclude recipes, lock a skill range to a recipe, save and
   load named routes.
-- **Profession recommendations**: which pair of professions is cheapest to level
-  together (for example Tailoring + Enchanting).
+- **Which profession is right for you**: the Professions window compares every
+  crafting profession for your character. Each one shows the gear it makes for you
+  over the next 10 levels, by slot (scored for your spec, with Pawn if you use it);
+  the cost to max from your current skill, after what you already own; how much of
+  its materials a gathering profession supplies (Skinning for Leatherworking, Mining
+  for Blacksmithing, cloth drops for Tailoring) and whether you or an alt has it;
+  craft count and recipes you would have to find. A line at the top says which fits
+  you best and why, e.g. "Leatherworking fits you best: upgrades for Legs, Chest,
+  Head... Blacksmithing: Two-hand, One-hand." Sort by Best for you, Cheapest or
+  Fewest crafts. Your own and your alts' professions are listed first, with the next
+  rank to train.
+- **Make now**: a tab in the profession column listing everything you know that
+  your bags can make right now, skill-ups first, marking gear upgrades and value.
 - **Leveling gear helper**: craftable upgrades for your level, scored with Pawn if
   you use it, otherwise with built-in stat weights.
 - **Level-up alerts**: when you ding, a small notice lists craftable gear that just
@@ -93,7 +104,7 @@ faction's NPC.
 
 The Profs! button sits on the minimap's edge; drag it to move it (saved per
 character). Click: route for the open profession. Shift-click: gear upgrades.
-Right-click: profession recommendations. Ctrl-click: options. The same actions are on
+Right-click: the Professions window. Ctrl-click: options. The same actions are on
 the Profs! entry in the minimap's addon menu. `/profs minimap` hides or shows the button.
 
 **Options** (Esc > Options > AddOns > Profs!, or `/profs options`): the profession
@@ -142,7 +153,7 @@ window on that page (and tell you in chat when there are no upgrades).
 | `/profs options` | open the Profs! options |
 | `/profs minimap` | hide or show the minimap button |
 | `/profs resetui` | put every Profs! window back at its default place |
-| `/profs recommend` | profession pair recommendations |
+| `/profs recommend` | Professions window: which profession fits your character |
 | `/profs gear` | craftable gear upgrades for your level |
 | `/profs gearspec auto` / `<n>` / `pawn <scale>` | which specialization scores gear |
 | `/profs save <name>` / `/profs load <name>` | save or load a route |
