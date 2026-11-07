@@ -24,7 +24,10 @@
 --                            vsell=copper, vbuy=copper (sold by a vendor, unlimited),
 --                            c=classId, sc=subclassId, slot=inventoryType,
 --                            de={ {itemId, chance, min, max}, ... } measured DE yield }
---   npcs        [npcId]  = { n=name, zone=name, x=percent, y=percent, side="A"|"H"|"B" }
+--   npcs        [npcId]  = { n=name, zone=name, x=percent, y=percent, side="A"|"H"|"B",
+--                            fa=1|0|-1, fh=1|0|-1 }  reaction to Alliance / Horde:
+--                            friendly / neutral / hostile; absent = not in the data
+--                            (Engine/Faction.lua decides access from these)
 --
 -- Everything is keyed on ids; names are for display only.
 local _, ns = ...

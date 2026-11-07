@@ -48,7 +48,7 @@ function RF.Show()
     RF.frame = f
   end
   local res = ns.Recommend.Rank(ds, { pricer = ns.PriceSources.Pricer(ds),
-    allowSources = ns.db.settings.allowSources })
+    allowSources = ns.db.settings.allowSources, side = ns.Game.Faction() })
   RF.frame.list:Set(RF.Format(ds, res))
   RF.frame:Show()
 end

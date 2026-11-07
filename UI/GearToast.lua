@@ -61,7 +61,7 @@ function T.Context(level, prevLevel)
     equipped = equipped, equippedTotals = totals, stats = ns.Game.ItemStats,
     scorer = ns.Pawn.Scorer(), pricer = ns.PriceSources.Pricer(ds),
     have = function(id) local h = ns.Inventory.Have(id); return (h.bags or 0) + (h.bank or 0) end,
-    seen = charState().seen, settings = settings(),
+    seen = charState().seen, settings = settings(), side = ns.Game.Faction(),
   }
 end
 
@@ -81,7 +81,7 @@ function T.FormatAlert(ds, a)
       m.unit and ("  " .. U.money(m.unit) .. " ea") or "")
   end
   if a.acquire and a.acquire.t ~= "known" then
-    for _, l in ipairs(ns.Sidecar.FormatAcquire(ds, a.recipe, a.acquire)) do tip[#tip + 1] = l end
+    for _, l in ipairs(ns.Sidecar.FormatAcquire(ds, a.recipe, a.acquire, ns.Game.Faction())) do tip[#tip + 1] = l end
   end
   tip[#tip + 1] = "|cff80c0ffClick: open the recipe. Right-click: dismiss.|r"
   return text, tip

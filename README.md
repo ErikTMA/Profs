@@ -2,8 +2,8 @@
 
 A World of Warcraft addon for **WoW Forever** that levels your crafting professions
 for you: it plans the cheapest, fastest or a balanced route from your current skill
-to your target, builds the complete shopping list, and walks you through it from a
-panel attached to the profession window.
+to your target, builds the complete shopping list, and walks you through it from an
+extra column built into the profession window.
 
 ## Features
 
@@ -53,14 +53,26 @@ Optional addons that Profs! uses when present: **TradeSkillMaster**, **Auctionat
 
 ## Usage
 
-Open any profession window: the Profs! panel appears next to it with the route,
-the shopping list and the next recipe to craft. You can also open Profs! from the
+Open any profession window: it gets a third column on the right, after the recipe
+list and the recipe details, with the route, the shopping list and the next recipe
+to craft. The column is part of the window: it moves and closes with it, follows the
+profession tab you select, and leaves the profession tabs along the window's right
+edge free to click. `/profs show` hides or shows the column (remembered per
+character). You can also open Profs! from the
 addon button on the minimap (left-click: route, right-click: profession
 recommendations, shift-click: gear upgrades).
 
+### Craftable gear upgrades
+
+Click **Gear upgrades** at the top right of the Profs! column (in any profession
+window), shift-click the Profs! entry in the minimap's addon menu, or type
+`/profs gear`. No profession window is needed for the command or the minimap entry.
+The list shows gear you can craft with your professions (and your alts') that beats
+what you wear, scored with Pawn if you use it.
+
 | Command | What it does |
 |---|---|
-| `/profs` | show or hide the panel for the open profession |
+| `/profs show` | hide or show the Profs! column in the profession window |
 | `/profs recommend` | profession pair recommendations |
 | `/profs gear` | craftable gear upgrades for your level |
 | `/profs save <name>` / `/profs load <name>` | save or load a route |
@@ -70,6 +82,16 @@ recommendations, shift-click: gear upgrades).
 | `/profs prices order tsm,ahscan,auctionator,dataset` | change the source order |
 | `/profs alerts on` / `off` / `pct 10` / `test` | level-up gear alert settings |
 | `/profs help` | list all commands |
+
+### Trainers and your faction
+
+Profs! only suggests trainers and recipe vendors your faction can use: Alliance
+characters never get Horde-only trainers and vice versa. Neutral NPCs (for example in
+Booty Bay or Gadgetzan) are offered to both. NPCs in the other faction's capital
+cities are never suggested. Where the data does not say whether your faction can use
+an NPC, it is still listed but marked "faction access unknown", so check in game. A
+recipe that only the other faction's NPCs teach or sell is left out of your routes and
+gear suggestions.
 
 ### Where prices come from
 

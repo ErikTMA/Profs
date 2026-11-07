@@ -1,7 +1,7 @@
 -- GENERATED profession data for Profs!. Do not edit.
--- flavor forever, generated 2026-11-06T23:11:36Z
+-- flavor forever, generated 2026-11-07T01:35:34Z
 local _, ns = ...
-local D = { meta = {flavor="forever",generated="2026-11-06T23:11:36Z",schema=1,source="profession data export"}, recipes = {}, items = {}, npcs = {}, professions = {[164]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[165]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[171]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=45000,learnAt=200,max=300,name="Artisan"}}},[197]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[202]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[333]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}}} }
+local D = { meta = {flavor="forever",generated="2026-11-07T01:35:34Z",schema=1,source="profession data export"}, recipes = {}, items = {}, npcs = {}, professions = {[164]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[165]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[171]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=45000,learnAt=200,max=300,name="Artisan"}}},[197]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[202]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}},[333]={ranks={{charLevel=5,cost=10,learnAt=0,max=75,name="Apprentice"},{charLevel=10,cost=500,learnAt=50,max=150,name="Journeyman"},{charLevel=20,cost=5000,learnAt=125,max=225,name="Expert"},{charLevel=35,cost=50000,learnAt=200,max=300,name="Artisan"}}}} }
 local R, I, N = D.recipes, D.items, D.npcs
 ;(function()
 R[818]={colors={25,25,50,75},learn=25,name="Basic Campfire",prof=185,reagents={{4470,1}},sources={{t="other"}}}
@@ -5604,1229 +5604,1229 @@ I[285281]={c=2,il=54,n="Arcanite Blacksmith Hammer",q=3,rl=49,sc=16,slot=25,stat
 I[286152]={c=0,il=45,n="Plated Armorfish",q=1,rl=35,sc=5,slot=0,vsell=8}
 end)()
 ;(function()
-N[54]={n="Corina Steele",side="A",x=41.4,y=65.8,zone="Elwynn Forest"}
-N[66]={n="Tharynn Bouden",side="A",x=41.8,y=67,zone="Elwynn Forest"}
-N[74]={n="Kurran Steele",side="A",x=41.4,y=65.6,zone="Elwynn Forest"}
-N[78]={n="Janos Hammerknuckle",side="A",x=47.2,y=41.8,zone="Elwynn Forest"}
-N[151]={n="Brog Hamfist",side="A",x=43.8,y=66,zone="Elwynn Forest"}
-N[152]={n="Brother Danil",side="A",x=47.4,y=41.4,zone="Elwynn Forest"}
-N[167]={n="Morhan Coppertongue",side="A",x=34,y=46.6,zone="Loch Modan"}
-N[190]={n="Dermot Johns",side="A",x=47.4,y=41.6,zone="Elwynn Forest"}
-N[222]={n="Nillen Andemar",side="A",x=42.8,y=10,zone="Loch Modan"}
-N[223]={n="Dan Golthas",side="H",x=70.4,y=58.4,zone="Undercity"}
-N[225]={n="Gavin Gnarltree",side="A",x=73.4,y=49.8,zone="Duskwood"}
-N[226]={n="Morg Gnarltree",side="A",x=73.8,y=48.4,zone="Duskwood"}
-N[227]={n="Mabel Solaj",side="A",x=73.8,y=45.6,zone="Duskwood"}
-N[228]={n="Avette Fellwood",side="A",x=73,y=44.4,zone="Duskwood"}
-N[233]={n="Farmer Saldean",side="A",x=56,y=31.2,zone="Westfall"}
-N[258]={n="Joshua Maclure",side="A",x=42.4,y=89.2,zone="Elwynn Forest"}
-N[274]={n="Barkeep Hann",side="A",x=73.8,y=44.2,zone="Duskwood"}
-N[277]={n="Roberto Pupellyverbos",side="A",x=51.4,y=68.2,zone="Stormwind City"}
-N[295]={n="Innkeeper Farley",side="A",x=43.8,y=65.8,zone="Elwynn Forest"}
-N[340]={n="Kendor Kabonka",side="A",x=74.4,y=36.4,zone="Stormwind City"}
-N[372]={n="Karm Ironquill",side="A",x=37,y=47.2,zone="Loch Modan"}
-N[384]={n="Katie Hunter",side="A",x=84,y=65.4,zone="Elwynn Forest"}
-N[465]={n="Barkeep Dobbins",side="A",x=43.8,y=65.8,zone="Elwynn Forest"}
-N[483]={n="Elaine Trias",side="A",x=60.4,y=63.4,zone="Stormwind City"}
-N[491]={n="Quartermaster Lewis",side="A",x=56.8,y=47.2,zone="Westfall"}
-N[514]={n="Smith Argus",side="A",x=41.6,y=65.4,zone="Elwynn Forest"}
-N[734]={n="Corporal Bluth",side="A",x=38,y=3,zone="Stranglethorn Vale"}
-N[777]={n="Amy Davenport",side="A",x=29,y=47.4,zone="Redridge Mountains"}
-N[789]={n="Kimberly Hiett",side="A",x=27,y=45.4,zone="Redridge Mountains"}
-N[790]={n="Karen Taylor",side="A",x=29.8,y=47.4,zone="Redridge Mountains"}
-N[791]={n="Lindsay Ashlock",side="A",x=28.4,y=47.4,zone="Redridge Mountains"}
-N[793]={n="Kara Adams",side="A",x=30.6,y=46.4,zone="Redridge Mountains"}
-N[829]={n="Adlin Pridedrift",side="A",x=30,y=71.4,zone="Dun Morogh"}
-N[836]={n="Durnan Furcutter",side="A",x=28.8,y=66.4,zone="Dun Morogh"}
-N[843]={n="Gina MacGregor",side="A",x=57.4,y=54,zone="Westfall"}
-N[844]={n="Antonio Perelli",side="A",x=42.4,y=66.6,zone="Elwynn Forest"}
-N[894]={n="Homer Stonefield",side="A",x=33.6,y=83,zone="Elwynn Forest"}
-N[896]={n="Veldan Lightfoot",side="A",x=25.2,y=73.8,zone="Elwynn Forest"}
-N[945]={n="Rybrad Coldbank",side="A",x=28.6,y=67.8,zone="Dun Morogh"}
-N[954]={n="Kat Sampson",side="A",x=82.4,y=64,zone="Loch Modan"}
-N[955]={n="Sergeant De Vries",side="A",x=24,y=73,zone="Elwynn Forest"}
-N[956]={n="Dorin Songblade",side="A",x=30.8,y=46.4,zone="Redridge Mountains"}
-N[957]={n="Dane Lindgren",side="A",x=57,y=15.4,zone="Stormwind City"}
-N[958]={n="Dawn Brightstar",side="A",x=64.8,y=69.2,zone="Elwynn Forest"}
-N[959]={n="Morley Eberlein",side="A",x=64.6,y=69.6,zone="Elwynn Forest"}
-N[960]={n="Gunder Thornbush",side="A",x=73.8,y=45,zone="Duskwood"}
-N[980]={n="Grimnal",side="H",x=45,y=50.2,zone="Swamp of Sorrows"}
-N[981]={n="Hartash",side="H",x=45.4,y=51.2,zone="Swamp of Sorrows"}
-N[982]={n="Thultash",side="H",x=46.4,y=54.2,zone="Swamp of Sorrows"}
-N[983]={n="Thultazor",side="H",x=45.8,y=53,zone="Swamp of Sorrows"}
-N[984]={n="Thralosh",side="H",x=44.8,y=51.4,zone="Swamp of Sorrows"}
-N[989]={n="Banalash",side="H",x=44.4,y=57,zone="Swamp of Sorrows"}
-N[1103]={n="Eldrin",side="A",x=79.2,y=69,zone="Elwynn Forest"}
-N[1104]={n="Grundel Harkin",side="A",x=28.8,y=67.8,zone="Dun Morogh"}
-N[1146]={n="Vharr",side="H",x=32.2,y=28,zone="Stranglethorn Vale"}
-N[1147]={n="Hragran",side="H",x=31.4,y=29.2,zone="Stranglethorn Vale"}
-N[1148]={n="Nerrist",side="H",x=32.6,y=29.2,zone="Stranglethorn Vale"}
-N[1149]={n="Uthok",side="H",x=31.4,y=28,zone="Stranglethorn Vale"}
-N[1198]={n="Rallic Finn",side="A",x=83.2,y=66,zone="Elwynn Forest"}
-N[1213]={n="Godric Rothgar",side="A",x=47.6,y=41.4,zone="Elwynn Forest"}
-N[1214]={n="Aldren Cordon",side="A",x=64.8,y=66,zone="Loch Modan"}
-N[1215]={n="Alchemist Mallory",side="A",x=39.8,y=48.4,zone="Elwynn Forest"}
-N[1237]={n="Kazan Mogosh",side="A",x=68.4,y=54.4,zone="Dun Morogh"}
-N[1238]={n="Gamili Frosthide",side="A",x=45.2,y=51.8,zone="Dun Morogh"}
-N[1240]={n="Boran Ironclink",side="A",x=45.2,y=51.8,zone="Dun Morogh"}
-N[1241]={n="Tognus Flintfire",side="A",x=45.2,y=52,zone="Dun Morogh"}
-N[1243]={n="Hegnar Rumbleshot",side="A",x=40.6,y=65,zone="Dun Morogh"}
-N[1246]={n="Vosur Brakthel",side="A",x=66.4,y=55.2,zone="Ironforge"}
-N[1247]={n="Innkeeper Belm",side="A",x=47.4,y=52.4,zone="Dun Morogh"}
-N[1249]={n="Quartermaster Hudson",side="A",x=25.2,y=74,zone="Elwynn Forest"}
-N[1250]={n="Drake Lindgren",side="A",x=83,y=66.4,zone="Elwynn Forest"}
-N[1257]={n="Keldric Boucher",side="A",x=55,y=65.2,zone="Stormwind City"}
-N[1261]={n="Veron Amberstill",side="A",x=63.4,y=50.4,zone="Dun Morogh"}
-N[1263]={n="Yarlyn Amberstill",side="A",x=63.2,y=50.2,zone="Dun Morogh"}
-N[1273]={n="Grawn Thromwyn",side="A",x=45.2,y=52,zone="Dun Morogh"}
-N[1275]={n="Kyra Boucher",side="A",x=56.2,y=65,zone="Stormwind City"}
-N[1285]={n="Thurman Mullby",side="A",x=58,y=61.6,zone="Stormwind City"}
-N[1286]={n="Edna Mullby",side="A",x=58,y=60.6,zone="Stormwind City"}
-N[1287]={n="Marda Weller",side="A",x=57.2,y=57,zone="Stormwind City"}
-N[1289]={n="Gunther Weller",side="A",x=57.2,y=57.2,zone="Stormwind City"}
-N[1291]={n="Carla Granger",side="A",x=55,y=56,zone="Stormwind City"}
-N[1294]={n="Aldric Moore",side="A",x=54.8,y=55.2,zone="Stormwind City"}
-N[1295]={n="Lara Moore",side="A",x=54.8,y=55.4,zone="Stormwind City"}
-N[1296]={n="Felder Stover",side="A",x=85,y=68.4,zone="Burning Steppes"}
-N[1297]={n="Lina Stover",side="A",x=50.4,y=57.4,zone="Stormwind City"}
-N[1298]={n="Frederick Stover",side="A",x=50.2,y=57.4,zone="Stormwind City"}
-N[1299]={n="Lisbeth Schneider",side="A",x=49.4,y=54.4,zone="Stormwind City"}
-N[1300]={n="Lawrence Schneider",side="A",x=43.4,y=73.8,zone="Stormwind City"}
-N[1301]={n="Julia Gallina",side="A",x=51.8,y=68.4,zone="Stormwind City"}
-N[1302]={n="Bernard Gump",side="A",x=64.2,y=61,zone="Stormwind City"}
-N[1303]={n="Felicia Gump",side="A",x=64.2,y=60.4,zone="Stormwind City"}
-N[1304]={n="Darian Singh",side="A",x=29.4,y=67.8,zone="Stormwind City"}
-N[1305]={n="Jarel Moor",side="A",x=28.2,y=75.6,zone="Stormwind City"}
-N[1307]={n="Charys Yserian",side="A",x=32.4,y=80,zone="Stormwind City"}
-N[1308]={n="Owen Vaughn",side="A",x=36,y=74.4,zone="Stormwind City"}
-N[1309]={n="Wynne Larson",side="A",x=41.6,y=76.6,zone="Stormwind City"}
-N[1310]={n="Evan Larson",side="A",x=42.4,y=76.4,zone="Stormwind City"}
-N[1311]={n="Joachim Brenlow",side="A",x=40.4,y=90.2,zone="Stormwind City"}
-N[1312]={n="Ardwyn Cailen",side="A",x=42.8,y=65.4,zone="Stormwind City"}
-N[1313]={n="Maria Lumere",side="A",x=46.4,y=78.8,zone="Stormwind City"}
-N[1314]={n="Duncan Cullen",side="A",x=43.4,y=74.2,zone="Stormwind City"}
-N[1315]={n="Allan Hafgan",side="A",x=43,y=65.4,zone="Stormwind City"}
-N[1316]={n="Adair Gilroy",side="A",x=41.4,y=64.4,zone="Stormwind City"}
-N[1317]={n="Lucan Cordell",side="A",x=43,y=64.4,zone="Stormwind City"}
-N[1318]={n="Jessara Cordell",side="A",x=43,y=64.2,zone="Stormwind City"}
-N[1319]={n="Bryan Cross",side="A",x=64.2,y=42.8,zone="Stormwind City"}
-N[1320]={n="Seoman Griffith",side="A",x=67.4,y=48.8,zone="Stormwind City"}
-N[1321]={n="Alyssa Griffith",side="A",x=67.4,y=49,zone="Stormwind City"}
-N[1322]={n="Maxton Strang",side="A",x=67.8,y=8.4,zone="Desolace"}
-N[1323]={n="Osric Strang",side="A",x=74.2,y=47.4,zone="Stormwind City"}
-N[1324]={n="Heinrich Stone",side="A",x=74.2,y=42.8,zone="Stormwind City"}
-N[1325]={n="Jasper Fel",side="A",x=77.8,y=59.6,zone="Stormwind City"}
-N[1326]={n="Sloan McCoy",side="A",x=76.4,y=60,zone="Stormwind City"}
-N[1328]={n="Elly Langston",side="A",x=73.2,y=37.4,zone="Stormwind City"}
-N[1333]={n="Gerik Koen",side="A",x=69,y=42.4,zone="Stormwind City"}
-N[1339]={n="Mayda Thane",side="A",x=67,y=43.2,zone="Stormwind City"}
-N[1341]={n="Wilhelm Strang",side="A",x=74.4,y=47.8,zone="Stormwind City"}
-N[1346]={n="Georgio Bolero",side="A",x=43.2,y=73.4,zone="Stormwind City"}
-N[1347]={n="Alexandra Bolero",side="A",x=43.4,y=74,zone="Stormwind City"}
-N[1348]={n="Gregory Ardus",side="A",x=37,y=39.4,zone="Stormwind City"}
-N[1349]={n="Agustus Moulaine",side="A",x=43.8,y=43.2,zone="Stormwind City"}
-N[1350]={n="Theresa Moulaine",side="A",x=43.4,y=43.4,zone="Stormwind City"}
-N[1351]={n="Brother Cassius",side="A",x=43,y=26.4,zone="Stormwind City"}
-N[1355]={n="Cook Ghilm",side="A",x=68.4,y=54.4,zone="Dun Morogh"}
-N[1362]={n="Gothor Brumn",side="A",x=24,y=18,zone="Loch Modan"}
-N[1381]={n="Krakk",side="H",x=32.4,y=28,zone="Stranglethorn Vale"}
-N[1382]={n="Mudduk",side="H",x=31.4,y=28,zone="Stranglethorn Vale"}
-N[1383]={n="Snarl",side="H",x=79.2,y=22.4,zone="Orgrimmar"}
-N[1386]={n="Rogvar",side="H",x=48.2,y=55.4,zone="Swamp of Sorrows"}
-N[1407]={n="Sranda",side="H",x=3,y=47.4,zone="Badlands"}
-N[1430]={n="Tomas",side="A",x=44.2,y=66,zone="Elwynn Forest"}
-N[1440]={n="Milton Sheaf",side="A",x=74,y=7.4,zone="Stormwind City"}
-N[1441]={n="Brak Durnad",side="A",x=11.4,y=59.4,zone="Wetlands"}
-N[1448]={n="Neal Allen",side="A",x=10.6,y=56.8,zone="Wetlands"}
-N[1450]={n="Brahnmar",side="A",x=11.4,y=59.4,zone="Wetlands"}
-N[1452]={n="Gruham Rumdnul",side="A",x=12,y=57.8,zone="Wetlands"}
-N[1453]={n="Dewin Shimmerdawn",side="A",x=8,y=56.2,zone="Wetlands"}
-N[1454]={n="Jennabink Powerseam",side="A",x=8,y=55.8,zone="Wetlands"}
-N[1456]={n="Kersok Prond",side="A",x=10.4,y=60.4,zone="Wetlands"}
-N[1457]={n="Samor Festivus",side="A",x=10.4,y=60.2,zone="Wetlands"}
-N[1459]={n="Naela Trance",side="A",x=11.2,y=58.4,zone="Wetlands"}
-N[1460]={n="Unger Statforth",side="A",x=8.4,y=54.4,zone="Wetlands"}
-N[1461]={n="Murndan Derth",side="A",x=11.4,y=59.4,zone="Wetlands"}
-N[1462]={n="Edwina Monzor",side="A",x=11,y=58.4,zone="Wetlands"}
-N[1463]={n="Falkan Armonis",side="A",x=8.4,y=56.4,zone="Wetlands"}
-N[1464]={n="Innkeeper Helbrek",side="A",x=10.6,y=60.8,zone="Wetlands"}
-N[1465]={n="Drac Roughcut",side="A",x=35.4,y=48.8,zone="Loch Modan"}
-N[1466]={n="Gretta Finespindle",side="A",x=39,y=32.4,zone="Ironforge"}
-N[1469]={n="Vrok Blunderblast",side="A",x=35.2,y=42.6,zone="Loch Modan"}
-N[1470]={n="Ghak Healtouch",side="A",x=37,y=49.2,zone="Loch Modan"}
-N[1471]={n="Jannos Ironwill",side="A",x=46,y=47.4,zone="Arathi Highlands"}
-N[1474]={n="Rann Flamespinner",side="A",x=36,y=46,zone="Loch Modan"}
-N[1632]={n="Adele Fielder",side="A",x=46.4,y=62.2,zone="Elwynn Forest"}
-N[1645]={n="Quartermaster Hicks",side="A",x=25.2,y=73.8,zone="Elwynn Forest"}
-N[1650]={n="Terry Palin",side="A",x=82.8,y=63.4,zone="Elwynn Forest"}
-N[1668]={n="William MacGregor",side="A",x=57.4,y=53.8,zone="Westfall"}
-N[1669]={n="Defias Profiteer",side="B",x=43.4,y=66.8,zone="Westfall"}
-N[1670]={n="Mike Miller",side="A",x=57.4,y=53.6,zone="Westfall"}
-N[1671]={n="Lamar Veisilli",side="A",x=21,y=46.4,zone="Redridge Mountains"}
-N[1672]={n="Lohgan Eva",side="A",x=75.6,y=44.6,zone="Duskwood"}
-N[1673]={n="Alyssa Eva",side="A",x=76,y=45.2,zone="Duskwood"}
-N[1678]={n="Vernon Hale",side="A",x=27.4,y=47.4,zone="Redridge Mountains"}
-N[1681]={n="Brock Stoneseeker",side="A",x=37,y=47.8,zone="Loch Modan"}
-N[1682]={n="Yanni Stoutheart",side="A",x=34.8,y=48.4,zone="Loch Modan"}
-N[1684]={n="Khara Deepwater",side="A",x=39.4,y=39.2,zone="Loch Modan"}
-N[1685]={n="Xandar Goodbeard",side="A",x=82.4,y=63.4,zone="Loch Modan"}
-N[1686]={n="Irene Sureshot",side="A",x=83,y=63.4,zone="Loch Modan"}
-N[1687]={n="Cliff Hadin",side="A",x=83,y=63,zone="Loch Modan"}
-N[1690]={n="Thrawn Boltar",side="A",x=45.2,y=51.4,zone="Dun Morogh"}
-N[1691]={n="Kreg Bilmn",side="A",x=47.2,y=52.4,zone="Dun Morogh"}
-N[1692]={n="Golorn Frostbeard",side="A",x=46.6,y=53.4,zone="Dun Morogh"}
-N[1694]={n="Loslor Rudge",side="A",x=50,y=49.4,zone="Dun Morogh"}
-N[1695]={n="Rendow",side="A",x=89.4,y=45.8,zone="Feralas"}
-N[1697]={n="Keeg Gibn",side="A",x=30.4,y=46,zone="Dun Morogh"}
-N[1698]={n="Frast Dokner",side="A",x=68.8,y=55.8,zone="Dun Morogh"}
-N[1699]={n="Gremlock Pilsnor",side="A",x=47.6,y=52.4,zone="Dun Morogh"}
-N[1702]={n="Bronk Guzzlegear",side="A",x=50.2,y=50.4,zone="Dun Morogh"}
-N[1703]={n="Uthrar Threx",side="A",x=43.4,y=28.2,zone="Ironforge"}
-N[1937]={n="Apothecary Renferrel",side="H",x=42.8,y=40.8,zone="Silverpine Forest"}
-N[2046]={n="Andrew Krighton",side="A",x=41.6,y=65.6,zone="Elwynn Forest"}
-N[2084]={n="Natheril Raincaller",side="A",x=51.4,y=30.8,zone="Winterspring"}
-N[2113]={n="Archibald Kava",side="H",x=32.4,y=65.6,zone="Tirisfal Glades"}
-N[2115]={n="Joshua Kien",side="H",x=32.2,y=65.4,zone="Tirisfal Glades"}
-N[2116]={n="Blacksmith Rand",side="H",x=32.4,y=66.2,zone="Tirisfal Glades"}
-N[2117]={n="Harold Raims",side="H",x=32.4,y=66.4,zone="Tirisfal Glades"}
-N[2118]={n="Abigail Shiel",side="H",x=61,y=52.4,zone="Tirisfal Glades"}
-N[2132]={n="Carolai Anise",side="H",x=59.4,y=52.2,zone="Tirisfal Glades"}
-N[2134]={n="Mrs. Winters",side="H",x=61,y=52.4,zone="Tirisfal Glades"}
-N[2135]={n="Abe Winters",side="H",x=60.2,y=53,zone="Tirisfal Glades"}
-N[2136]={n="Oliver Dwor",side="H",x=60,y=53.6,zone="Tirisfal Glades"}
-N[2137]={n="Eliza Callen",side="H",x=60.4,y=52.8,zone="Tirisfal Glades"}
-N[2140]={n="Edwin Harly",side="H",x=44,y=40,zone="Silverpine Forest"}
-N[2225]={n="Zora Guthrek",side="H"}
-N[2264]={n="Hillsbrad Tailor",side="A",x=35.4,y=43.2,zone="Hillsbrad Foothills"}
-N[2265]={n="Hillsbrad Apprentice Blacksmith",side="A",x=31.8,y=46.8,zone="Hillsbrad Foothills"}
-N[2303]={n="Lyranne Feathersong",side="A",x=52,y=29.2,zone="Winterspring"}
-N[2326]={n="Thamner Pol",side="A",x=47.2,y=52.4,zone="Dun Morogh"}
-N[2327]={n="Shaina Fuller",side="A",x=42.4,y=26.8,zone="Stormwind City"}
-N[2329]={n="Michelle Belle",side="A",x=43.4,y=65.6,zone="Elwynn Forest"}
-N[2352]={n="Innkeeper Anderson",side="A",x=51,y=58.8,zone="Hillsbrad Foothills"}
-N[2357]={n="Merideth Carlson",side="A",x=52,y=55.6,zone="Hillsbrad Foothills"}
-N[2364]={n="Neema",side="A",x=51,y=59,zone="Hillsbrad Foothills"}
-N[2365]={n="Bront Coldcleave",side="A",x=48.8,y=57.2,zone="Hillsbrad Foothills"}
-N[2366]={n="Barkeep Kelly",side="A",x=51.4,y=58.4,zone="Hillsbrad Foothills"}
-N[2380]={n="Nandar Branson",side="A",x=50.8,y=57,zone="Hillsbrad Foothills"}
-N[2381]={n="Micha Yance",side="A",x=49,y=55,zone="Hillsbrad Foothills"}
-N[2383]={n="Lindea Rabonne",side="A",x=50.4,y=61,zone="Hillsbrad Foothills"}
-N[2388]={n="Innkeeper Shay",side="H",x=62.6,y=19,zone="Hillsbrad Foothills"}
-N[2391]={n="Serge Hinott",side="H",x=61.4,y=19.2,zone="Hillsbrad Foothills"}
-N[2393]={n="Christoph Jeffcoat",side="H",x=62.2,y=19,zone="Hillsbrad Foothills"}
-N[2394]={n="Mallen Swain",side="H",x=62,y=21,zone="Hillsbrad Foothills"}
-N[2397]={n="Derak Nightfall",side="H",x=63,y=19.4,zone="Hillsbrad Foothills"}
-N[2399]={n="Daryl Stack",side="H",x=63.4,y=20.8,zone="Hillsbrad Foothills"}
-N[2401]={n="Kayren Soothallow",side="H",x=62.4,y=19.8,zone="Hillsbrad Foothills"}
-N[2480]={n="Bro'kin",side="B",x=38.4,y=38.8,zone="Alterac Mountains"}
-N[2481]={n="Bliztik",side="B",x=18,y=54.4,zone="Duskwood"}
-N[2482]={n="Zarena Cromwind",side="B",x=28.4,y=75.4,zone="Stranglethorn Vale"}
-N[2483]={n="Jaquilina Dramet",side="B",x=35.6,y=10.6,zone="Stranglethorn Vale"}
-N[2622]={n="Sly Garrett",side="B",x=28.4,y=76.8,zone="Stranglethorn Vale"}
-N[2626]={n="Old Man Heming",side="B",x=27.4,y=77,zone="Stranglethorn Vale"}
-N[2627]={n="Grarnik Goodstitch",side="B",x=28.6,y=76.8,zone="Stranglethorn Vale"}
-N[2663]={n="Narkk",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
-N[2664]={n="Kelsey Yance",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
-N[2668]={n="Danielle Zipstitch",side="A",x=75.8,y=45.4,zone="Duskwood"}
-N[2669]={n="Sheri Zipstitch",side="A",x=75.6,y=45.4,zone="Duskwood"}
-N[2670]={n="Xizk Goodstitch",side="B",x=28.6,y=76.8,zone="Stranglethorn Vale"}
-N[2672]={n="Cowardly Crosby",side="B",x=27,y=82.4,zone="Stranglethorn Vale"}
-N[2679]={n="Wenna Silkbeard",side="A",x=25.6,y=25.8,zone="Wetlands"}
-N[2682]={n="Fradd Swiftgear",side="A",x=26.4,y=25.8,zone="Wetlands"}
-N[2683]={n="Namdo Bizzfizzle",side="A"}
-N[2684]={n="Rizz Loosebolt",side="B",x=47.2,y=35.2,zone="Alterac Mountains"}
-N[2685]={n="Mazk Snipeshot",side="B",x=28.4,y=75,zone="Stranglethorn Vale"}
-N[2687]={n="Gnaz Blunderflame",side="B",x=51,y=35.2,zone="Stranglethorn Vale"}
-N[2688]={n="Ruppo Zipcoil",side="B",x=34.2,y=37.8,zone="The Hinterlands"}
-N[2697]={n="Clyde Ranthal",side="A",x=88.8,y=71,zone="Redridge Mountains"}
-N[2698]={n="George Candarte",side="H",x=92,y=38.2,zone="Hillsbrad Foothills"}
-N[2699]={n="Rikqiz",side="B",x=28.4,y=76,zone="Stranglethorn Vale"}
-N[2786]={n="Gerrig Bonegrip",side="A",x=50.2,y=7,zone="Ironforge"}
-N[2798]={n="Pand Stonebinder",side="H",x=29.4,y=21.4,zone="Thunder Bluff"}
-N[2803]={n="Malygen",side="A",x=62.2,y=25.4,zone="Felwood"}
-N[2805]={n="Deneb Walker",side="A",x=27,y=58.8,zone="Arathi Highlands"}
-N[2806]={n="Bale",side="H",x=34.8,y=53.2,zone="Felwood"}
-N[2808]={n="Vikki Lonsav",side="A",x=46.4,y=47.4,zone="Arathi Highlands"}
-N[2810]={n="Hammon Karwn",side="A",x=46.4,y=47.4,zone="Arathi Highlands"}
-N[2812]={n="Drovnar Strongbrew",side="A",x=46.4,y=47,zone="Arathi Highlands"}
-N[2814]={n="Narj Deepslice",side="A",x=45.4,y=47.4,zone="Arathi Highlands"}
-N[2816]={n="Androd Fadran",side="A",x=45,y=46.8,zone="Arathi Highlands"}
-N[2818]={n="Slagg",side="H",x=73.8,y=33.4,zone="Arathi Highlands"}
-N[2819]={n="Tunkk",side="H",x=74.8,y=34.4,zone="Arathi Highlands"}
-N[2820]={n="Graud",side="H",x=74,y=32.4,zone="Arathi Highlands"}
-N[2821]={n="Keena",side="H",x=74,y=32.4,zone="Arathi Highlands"}
-N[2832]={n="Nixxrax Fillamug",side="B",x=27,y=77.2,zone="Stranglethorn Vale"}
-N[2836]={n="Brikk Keencraft",side="B",x=29,y=75.4,zone="Stranglethorn Vale"}
-N[2838]={n="Crazk Sparks",side="B",x=28.2,y=76.6,zone="Stranglethorn Vale"}
-N[2839]={n="Haren Kanmae",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
-N[2840]={n="Kizz Bluntstrike",side="B",x=28.2,y=75.2,zone="Stranglethorn Vale"}
-N[2842]={n="Wigcik",side="B",x=28,y=76.8,zone="Stranglethorn Vale"}
-N[2843]={n="Jutak",side="B",x=27.4,y=77.4,zone="Stranglethorn Vale"}
-N[2844]={n="Hurklor",side="B",x=29,y=75,zone="Stranglethorn Vale"}
-N[2845]={n="Fargon Mortalak",side="B",x=29,y=75,zone="Stranglethorn Vale"}
-N[2846]={n="Blixrez Goodstitch",side="B",x=28.2,y=77.4,zone="Stranglethorn Vale"}
-N[2847]={n="Jansen Underwood",side="B",x=29,y=75.4,zone="Stranglethorn Vale"}
-N[2848]={n="Glyx Brewright",side="B",x=28,y=78,zone="Stranglethorn Vale"}
-N[2849]={n="Qixdi Goodstitch",side="B",x=28.2,y=77.4,zone="Stranglethorn Vale"}
-N[2855]={n="Snang",side="H",x=62.4,y=49.8,zone="Orgrimmar"}
-N[2857]={n="Thund",side="H",x=75.4,y=24.6,zone="Orgrimmar"}
-N[2908]={n="Grawl",side="H",x=3,y=46,zone="Badlands"}
-N[2921]={n="Lotwil Veriatus",side="B",x=25.8,y=44.4,zone="Badlands"}
-N[2934]={n="Keeper Bel'dugur",side="H",x=53.4,y=53,zone="Undercity"}
-N[2997]={n="Jyn Stonehoof",side="H",x=41.2,y=62,zone="Thunder Bluff"}
-N[2998]={n="Karn Stonehoof",side="H",x=38.8,y=54,zone="Thunder Bluff"}
-N[2999]={n="Taur Stonehoof",side="H",x=39.4,y=55.4,zone="Thunder Bluff"}
-N[3000]={n="Gibbert",side="B",x=44,y=7.2,zone="Un'Goro Crater"}
-N[3002]={n="Kurm Stonehoof",side="H",x=34.4,y=57,zone="Thunder Bluff"}
-N[3003]={n="Fyr Mistrunner",side="H",x=41.2,y=53.4,zone="Thunder Bluff"}
-N[3004]={n="Tepa",side="H",x=43.8,y=44.4,zone="Thunder Bluff"}
-N[3005]={n="Mahu",side="H",x=43.4,y=43.8,zone="Thunder Bluff"}
-N[3007]={n="Una",side="H",x=41.4,y=42.6,zone="Thunder Bluff"}
-N[3008]={n="Mak",side="H",x=42.2,y=43.2,zone="Thunder Bluff"}
-N[3009]={n="Bena Winterhoof",side="H",x=46.8,y=33.4,zone="Thunder Bluff"}
-N[3010]={n="Mani Winterhoof",side="H",x=47,y=33.4,zone="Thunder Bluff"}
-N[3011]={n="Teg Dawnstrider",side="H",x=44.8,y=37.4,zone="Thunder Bluff"}
-N[3012]={n="Nata Dawnstrider",side="H",x=45,y=38.4,zone="Thunder Bluff"}
-N[3014]={n="Nida Winterhoof",side="H",x=49.2,y=39.6,zone="Thunder Bluff"}
-N[3015]={n="Kuna Thunderhorn",side="H",x=46.4,y=44.6,zone="Thunder Bluff"}
-N[3016]={n="Tand",side="H",x=49,y=34.4,zone="Thunder Bluff"}
-N[3017]={n="Nan Mistrunner",side="H",x=46.4,y=42.2,zone="Thunder Bluff"}
-N[3018]={n="Hogor Thunderhoof",side="H",x=55.4,y=56.4,zone="Thunder Bluff"}
-N[3019]={n="Delgo Ragetotem",side="H",x=53.4,y=57.2,zone="Thunder Bluff"}
-N[3020]={n="Etu Ragetotem",side="H",x=53.2,y=57.8,zone="Thunder Bluff"}
-N[3021]={n="Kard Ragetotem",side="H",x=53.2,y=56.8,zone="Thunder Bluff"}
-N[3022]={n="Sunn Ragetotem",side="H",x=49,y=49.6,zone="Thunder Bluff"}
-N[3023]={n="Sura Wildmane",side="H",x=51.4,y=53.8,zone="Thunder Bluff"}
-N[3025]={n="Kaga Mistrunner",side="H",x=52.2,y=47.4,zone="Thunder Bluff"}
-N[3026]={n="Aska Mistrunner",side="H",x=50.8,y=52.4,zone="Thunder Bluff"}
-N[3027]={n="Naal Mistrunner",side="H",x=50.2,y=51.6,zone="Thunder Bluff"}
-N[3029]={n="Sewa Mistrunner",side="H",x=55.2,y=48,zone="Thunder Bluff"}
-N[3044]={n="Miles Welsh",side="H",x=25.4,y=15.4,zone="Thunder Bluff"}
-N[3053]={n="Synge",side="B",x=80.4,y=76.8,zone="Thousand Needles"}
-N[3067]={n="Pyall Silentstride",side="H",x=45,y=61.6,zone="Mulgore"}
-N[3069]={n="Chaw Stronghide",side="H",x=45,y=61.4,zone="Mulgore"}
-N[3072]={n="Kawnie Softbreeze",side="H",x=45.2,y=76.4,zone="Mulgore"}
-N[3073]={n="Marjak Keenblade",side="H",x=43.8,y=77.8,zone="Mulgore"}
-N[3074]={n="Varia Hardhide",side="H",x=43.8,y=77.6,zone="Mulgore"}
-N[3075]={n="Bronk Steelrage",side="H",x=43.8,y=77.8,zone="Mulgore"}
-N[3076]={n="Moorat Longstride",side="H",x=45.2,y=61.4,zone="Mulgore"}
-N[3077]={n="Mahnott Roughwound",side="H",x=45.2,y=62,zone="Mulgore"}
-N[3078]={n="Kennah Hawkseye",side="H",x=45,y=61.8,zone="Mulgore"}
-N[3079]={n="Varg Windwhisper",side="H",x=45.2,y=62,zone="Mulgore"}
-N[3080]={n="Harant Ironbrace",side="H",x=45.4,y=62,zone="Mulgore"}
-N[3081]={n="Wunna Darkmane",side="H",x=45.4,y=61.8,zone="Mulgore"}
-N[3085]={n="Gloria Femmel",side="A",x=26.6,y=43.4,zone="Redridge Mountains"}
-N[3086]={n="Gretchen Vogel",side="A",x=22.6,y=44.2,zone="Redridge Mountains"}
-N[3087]={n="Crystal Boughman",side="A",x=22.8,y=43.4,zone="Redridge Mountains"}
-N[3088]={n="Henry Chapal",side="A",x=23.6,y=41.6,zone="Redridge Mountains"}
-N[3089]={n="Sherman Femmel",side="A",x=26.8,y=43.4,zone="Redridge Mountains"}
-N[3090]={n="Gerald Crawley",side="A",x=24.6,y=41.6,zone="Redridge Mountains"}
-N[3091]={n="Franklin Hamar",side="A",x=27.2,y=45.4,zone="Redridge Mountains"}
-N[3092]={n="Tagain",side="H",x=43.4,y=43.4,zone="Thunder Bluff"}
-N[3093]={n="Grod",side="H",x=42.4,y=43.2,zone="Thunder Bluff"}
-N[3095]={n="Fela",side="H",x=42.8,y=43.4,zone="Thunder Bluff"}
-N[3096]={n="Captured Servant of Azora",side="B",x=74.4,y=79.4,zone="Redridge Mountains"}
-N[3097]={n="Bernard Brubaker",side="A",x=88.2,y=71.2,zone="Redridge Mountains"}
-N[3133]={n="Herble Baubbletump",side="A",x=77.8,y=48.2,zone="Duskwood"}
-N[3134]={n="Kzixx",side="B",x=81.4,y=19.8,zone="Duskwood"}
-N[3135]={n="Malissa",side="A",x=79.4,y=44.4,zone="Duskwood"}
-N[3137]={n="Matt Johnson",side="A",x=74,y=49.4,zone="Duskwood"}
-N[3138]={n="Scott Carevin",side="A",x=75.4,y=48.4,zone="Duskwood"}
-N[3158]={n="Duokna",side="H",x=42.6,y=67.4,zone="Durotar"}
-N[3159]={n="Kzan Thornslash",side="H",x=40.4,y=68,zone="Durotar"}
-N[3160]={n="Huklah",side="H",x=40.6,y=67.8,zone="Durotar"}
-N[3161]={n="Rarc",side="H",x=40.4,y=67.8,zone="Durotar"}
-N[3162]={n="Burdrak Harglhelm",side="A",x=30.2,y=45.2,zone="Dun Morogh"}
-N[3163]={n="Uhgar",side="H",x=52,y=40.4,zone="Durotar"}
-N[3164]={n="Jark",side="H",x=54.2,y=42.2,zone="Durotar"}
-N[3165]={n="Ghrawt",side="H",x=53,y=41,zone="Durotar"}
-N[3166]={n="Cutac",side="H",x=53,y=40.8,zone="Durotar"}
-N[3167]={n="Wuark",side="H",x=52,y=41.2,zone="Durotar"}
-N[3168]={n="Flakk",side="H",x=52.8,y=42,zone="Durotar"}
-N[3174]={n="Dwukk",side="H",x=52,y=40.6,zone="Durotar"}
-N[3175]={n="Krunn",side="H",x=51.8,y=40.8,zone="Durotar"}
-N[3177]={n="Turuk Amberstill",side="A",x=63,y=49.8,zone="Dun Morogh"}
-N[3178]={n="Stuart Fleming",side="A",x=8,y=58.2,zone="Wetlands"}
-N[3180]={n="Dark Iron Entrepreneur",side="B",x=46.4,y=18.2,zone="Wetlands"}
-N[3181]={n="Fremal Doohickey",side="A",x=10.8,y=61.2,zone="Wetlands"}
-N[3184]={n="Miao'zan",side="H",x=55.4,y=74,zone="Durotar"}
-N[3186]={n="K'waii",side="H",x=56.2,y=73.4,zone="Durotar"}
-N[3187]={n="Tai'tasi",side="H",x=56.4,y=73.8,zone="Durotar"}
-N[3191]={n="Cook Torka",side="H",x=51.2,y=42.4,zone="Durotar"}
-N[3290]={n="Deek Fizzlebizz",side="A",x=45.8,y=13.4,zone="Loch Modan"}
-N[3291]={n="Greishan Ironstove",side="A",x=22.8,y=70.8,zone="Loch Modan"}
-N[3298]={n="Gabrielle Chase",side="A",x=84.2,y=67.8,zone="Burning Steppes"}
-N[3312]={n="Olvia",side="H",x=44.8,y=69.4,zone="Orgrimmar"}
-N[3313]={n="Trak'gen",side="H",x=48,y=80.2,zone="Orgrimmar"}
-N[3314]={n="Urtharo",side="H",x=47.4,y=68.4,zone="Orgrimmar"}
-N[3315]={n="Tor'phan",side="H",x=62.4,y=50.4,zone="Orgrimmar"}
-N[3316]={n="Handor",side="H",x=62.4,y=45.4,zone="Orgrimmar"}
-N[3317]={n="Ollanus",side="H",x=56.2,y=73.4,zone="Orgrimmar"}
-N[3319]={n="Sana",side="H",x=55.6,y=73.6,zone="Orgrimmar"}
-N[3321]={n="Morgum",side="H",x=55.6,y=73.6,zone="Orgrimmar"}
-N[3322]={n="Kaja",side="H",x=52.2,y=62.4,zone="Orgrimmar"}
-N[3323]={n="Horthus",side="H",x=45.4,y=56.4,zone="Orgrimmar"}
-N[3329]={n="Kor'jus",side="H",x=49,y=54,zone="Orgrimmar"}
-N[3330]={n="Muragus",side="H",x=44.4,y=48.4,zone="Orgrimmar"}
-N[3331]={n="Kareth",side="H",x=45.2,y=55.2,zone="Orgrimmar"}
-N[3333]={n="Shankys",side="H",x=69.4,y=29,zone="Orgrimmar"}
-N[3334]={n="Rekkul",side="H",x=42.2,y=49.4,zone="Orgrimmar"}
-N[3335]={n="Hagrus",side="H",x=46,y=46,zone="Orgrimmar"}
-N[3342]={n="Shan'ti",side="H",x=37.4,y=52.4,zone="Orgrimmar"}
-N[3343]={n="Grelkor",side="H"}
-N[3345]={n="Godan",side="H",x=53.8,y=38.4,zone="Orgrimmar"}
-N[3346]={n="Kithas",side="H",x=53.4,y=37.2,zone="Orgrimmar"}
-N[3347]={n="Yelmak",side="H",x=56.4,y=33.2,zone="Orgrimmar"}
-N[3348]={n="Kor'geld",side="H",x=56.2,y=34.2,zone="Orgrimmar"}
-N[3349]={n="Ukra'nor",side="H",x=29.8,y=74,zone="Orgrimmar"}
-N[3350]={n="Asoran",side="H",x=46,y=40.4,zone="Orgrimmar"}
-N[3351]={n="Magenius",side="H",x=45.8,y=40.4,zone="Orgrimmar"}
-N[3355]={n="Saru Steelfury",side="H",x=82.2,y=23,zone="Orgrimmar"}
-N[3356]={n="Sumi",side="H",x=82.4,y=23.4,zone="Orgrimmar"}
-N[3357]={n="Makaru",side="H",x=73,y=26.4,zone="Orgrimmar"}
-N[3358]={n="Gorina",side="H",x=73.2,y=26.4,zone="Orgrimmar"}
-N[3359]={n="Kiro",side="H",x=73,y=42,zone="Orgrimmar"}
-N[3360]={n="Koru",side="H",x=81.4,y=18.8,zone="Orgrimmar"}
-N[3361]={n="Shoma",side="H",x=81.2,y=19.6,zone="Orgrimmar"}
-N[3362]={n="Ogunaro Wolfrunner",side="H",x=69.2,y=12.6,zone="Orgrimmar"}
-N[3363]={n="Magar",side="H",x=63.2,y=50.6,zone="Orgrimmar"}
-N[3364]={n="Borya",side="H",x=63,y=51.2,zone="Orgrimmar"}
-N[3365]={n="Karolek",side="H",x=62.8,y=44.4,zone="Orgrimmar"}
-N[3366]={n="Tamar",side="H",x=62.4,y=45.4,zone="Orgrimmar"}
-N[3367]={n="Felika",side="H",x=51.2,y=36.2,zone="Orgrimmar"}
-N[3368]={n="Borstan",side="H",x=57.4,y=53.4,zone="Orgrimmar"}
-N[3369]={n="Gotri",side="H",x=58.8,y=53,zone="Orgrimmar"}
-N[3373]={n="Arnok",side="H",x=34,y=84.4,zone="Orgrimmar"}
-N[3399]={n="Zamja",side="H",x=57.4,y=53.4,zone="Orgrimmar"}
-N[3400]={n="Xen'to",side="H",x=57.4,y=53.2,zone="Orgrimmar"}
-N[3405]={n="Zeal'aya",side="H",x=55,y=39.4,zone="Orgrimmar"}
-N[3409]={n="Zendo'jian",side="H",x=81,y=19.6,zone="Orgrimmar"}
-N[3410]={n="Jin'sora",side="H",x=77.4,y=38.6,zone="Orgrimmar"}
-N[3411]={n="Denni'ka",side="H",x=73.4,y=95.4,zone="Stonetalon Mountains"}
-N[3412]={n="Nogg",side="H",x=75.4,y=24.8,zone="Orgrimmar"}
+N[54]={fa=1,n="Corina Steele",side="A",x=41.4,y=65.8,zone="Elwynn Forest"}
+N[66]={fa=1,fh=-1,n="Tharynn Bouden",side="A",x=41.8,y=67,zone="Elwynn Forest"}
+N[74]={fa=1,n="Kurran Steele",side="A",x=41.4,y=65.6,zone="Elwynn Forest"}
+N[78]={fa=1,n="Janos Hammerknuckle",side="A",x=47.2,y=41.8,zone="Elwynn Forest"}
+N[151]={fa=1,n="Brog Hamfist",side="A",x=43.8,y=66,zone="Elwynn Forest"}
+N[152]={fa=1,n="Brother Danil",side="A",x=47.4,y=41.4,zone="Elwynn Forest"}
+N[167]={fa=1,n="Morhan Coppertongue",side="A",x=34,y=46.6,zone="Loch Modan"}
+N[190]={fa=1,n="Dermot Johns",side="A",x=47.4,y=41.6,zone="Elwynn Forest"}
+N[222]={fa=1,fh=-1,n="Nillen Andemar",side="A",x=42.8,y=10,zone="Loch Modan"}
+N[223]={fh=1,n="Dan Golthas",side="H",x=70.4,y=58.4,zone="Undercity"}
+N[225]={fa=1,fh=-1,n="Gavin Gnarltree",side="A",x=73.4,y=49.8,zone="Duskwood"}
+N[226]={fa=1,n="Morg Gnarltree",side="A",x=73.8,y=48.4,zone="Duskwood"}
+N[227]={fa=1,n="Mabel Solaj",side="A",x=73.8,y=45.6,zone="Duskwood"}
+N[228]={fa=1,n="Avette Fellwood",side="A",x=73,y=44.4,zone="Duskwood"}
+N[233]={fa=1,fh=-1,n="Farmer Saldean",side="A",x=56,y=31.2,zone="Westfall"}
+N[258]={fa=1,fh=-1,n="Joshua Maclure",side="A",x=42.4,y=89.2,zone="Elwynn Forest"}
+N[274]={fa=1,n="Barkeep Hann",side="A",x=73.8,y=44.2,zone="Duskwood"}
+N[277]={fa=1,n="Roberto Pupellyverbos",side="A",x=51.4,y=68.2,zone="Stormwind City"}
+N[295]={fa=1,n="Innkeeper Farley",side="A",x=43.8,y=65.8,zone="Elwynn Forest"}
+N[340]={fa=1,n="Kendor Kabonka",side="A",x=74.4,y=36.4,zone="Stormwind City"}
+N[372]={fa=1,n="Karm Ironquill",side="A",x=37,y=47.2,zone="Loch Modan"}
+N[384]={fa=1,n="Katie Hunter",side="A",x=84,y=65.4,zone="Elwynn Forest"}
+N[465]={fa=1,n="Barkeep Dobbins",side="A",x=43.8,y=65.8,zone="Elwynn Forest"}
+N[483]={fa=1,n="Elaine Trias",side="A",x=60.4,y=63.4,zone="Stormwind City"}
+N[491]={fa=1,fh=-1,n="Quartermaster Lewis",side="A",x=56.8,y=47.2,zone="Westfall"}
+N[514]={fa=1,n="Smith Argus",side="A",x=41.6,y=65.4,zone="Elwynn Forest"}
+N[734]={fa=1,fh=-1,n="Corporal Bluth",side="A",x=38,y=3,zone="Stranglethorn Vale"}
+N[777]={fa=1,fh=-1,n="Amy Davenport",side="A",x=29,y=47.4,zone="Redridge Mountains"}
+N[789]={fa=1,n="Kimberly Hiett",side="A",x=27,y=45.4,zone="Redridge Mountains"}
+N[790]={fa=1,fh=-1,n="Karen Taylor",side="A",x=29.8,y=47.4,zone="Redridge Mountains"}
+N[791]={fa=1,fh=-1,n="Lindsay Ashlock",side="A",x=28.4,y=47.4,zone="Redridge Mountains"}
+N[793]={fa=1,n="Kara Adams",side="A",x=30.6,y=46.4,zone="Redridge Mountains"}
+N[829]={fa=1,n="Adlin Pridedrift",side="A",x=30,y=71.4,zone="Dun Morogh"}
+N[836]={fa=1,n="Durnan Furcutter",side="A",x=28.8,y=66.4,zone="Dun Morogh"}
+N[843]={fa=1,fh=-1,n="Gina MacGregor",side="A",x=57.4,y=54,zone="Westfall"}
+N[844]={fa=1,fh=-1,n="Antonio Perelli",side="A",x=42.4,y=66.6,zone="Elwynn Forest"}
+N[894]={fa=1,n="Homer Stonefield",side="A",x=33.6,y=83,zone="Elwynn Forest"}
+N[896]={fa=1,n="Veldan Lightfoot",side="A",x=25.2,y=73.8,zone="Elwynn Forest"}
+N[945]={fa=1,n="Rybrad Coldbank",side="A",x=28.6,y=67.8,zone="Dun Morogh"}
+N[954]={fa=1,n="Kat Sampson",side="A",x=82.4,y=64,zone="Loch Modan"}
+N[955]={fa=1,n="Sergeant De Vries",side="A",x=24,y=73,zone="Elwynn Forest"}
+N[956]={fa=1,n="Dorin Songblade",side="A",x=30.8,y=46.4,zone="Redridge Mountains"}
+N[957]={fa=1,n="Dane Lindgren",side="A",x=57,y=15.4,zone="Stormwind City"}
+N[958]={fa=1,n="Dawn Brightstar",side="A",x=64.8,y=69.2,zone="Elwynn Forest"}
+N[959]={fa=1,n="Morley Eberlein",side="A",x=64.6,y=69.6,zone="Elwynn Forest"}
+N[960]={fa=1,n="Gunder Thornbush",side="A",x=73.8,y=45,zone="Duskwood"}
+N[980]={fh=1,n="Grimnal",side="H",x=45,y=50.2,zone="Swamp of Sorrows"}
+N[981]={fh=1,n="Hartash",side="H",x=45.4,y=51.2,zone="Swamp of Sorrows"}
+N[982]={fh=1,n="Thultash",side="H",x=46.4,y=54.2,zone="Swamp of Sorrows"}
+N[983]={fh=1,n="Thultazor",side="H",x=45.8,y=53,zone="Swamp of Sorrows"}
+N[984]={fh=1,n="Thralosh",side="H",x=44.8,y=51.4,zone="Swamp of Sorrows"}
+N[989]={fh=1,n="Banalash",side="H",x=44.4,y=57,zone="Swamp of Sorrows"}
+N[1103]={fa=1,n="Eldrin",side="A",x=79.2,y=69,zone="Elwynn Forest"}
+N[1104]={fa=1,n="Grundel Harkin",side="A",x=28.8,y=67.8,zone="Dun Morogh"}
+N[1146]={fh=1,n="Vharr",side="H",x=32.2,y=28,zone="Stranglethorn Vale"}
+N[1147]={fh=1,n="Hragran",side="H",x=31.4,y=29.2,zone="Stranglethorn Vale"}
+N[1148]={fa=-1,fh=1,n="Nerrist",side="H",x=32.6,y=29.2,zone="Stranglethorn Vale"}
+N[1149]={fh=1,n="Uthok",side="H",x=31.4,y=28,zone="Stranglethorn Vale"}
+N[1198]={fa=1,n="Rallic Finn",side="A",x=83.2,y=66,zone="Elwynn Forest"}
+N[1213]={fa=1,n="Godric Rothgar",side="A",x=47.6,y=41.4,zone="Elwynn Forest"}
+N[1214]={fa=1,n="Aldren Cordon",side="A",x=64.8,y=66,zone="Loch Modan"}
+N[1215]={fa=1,n="Alchemist Mallory",side="A",x=39.8,y=48.4,zone="Elwynn Forest"}
+N[1237]={fa=1,n="Kazan Mogosh",side="A",x=68.4,y=54.4,zone="Dun Morogh"}
+N[1238]={fa=1,n="Gamili Frosthide",side="A",x=45.2,y=51.8,zone="Dun Morogh"}
+N[1240]={fa=1,n="Boran Ironclink",side="A",x=45.2,y=51.8,zone="Dun Morogh"}
+N[1241]={fa=1,n="Tognus Flintfire",side="A",x=45.2,y=52,zone="Dun Morogh"}
+N[1243]={fa=1,n="Hegnar Rumbleshot",side="A",x=40.6,y=65,zone="Dun Morogh"}
+N[1246]={fa=1,n="Vosur Brakthel",side="A",x=66.4,y=55.2,zone="Ironforge"}
+N[1247]={fa=1,n="Innkeeper Belm",side="A",x=47.4,y=52.4,zone="Dun Morogh"}
+N[1249]={fa=1,n="Quartermaster Hudson",side="A",x=25.2,y=74,zone="Elwynn Forest"}
+N[1250]={fa=1,n="Drake Lindgren",side="A",x=83,y=66.4,zone="Elwynn Forest"}
+N[1257]={fa=1,n="Keldric Boucher",side="A",x=55,y=65.2,zone="Stormwind City"}
+N[1261]={fa=1,n="Veron Amberstill",side="A",x=63.4,y=50.4,zone="Dun Morogh"}
+N[1263]={fa=1,n="Yarlyn Amberstill",side="A",x=63.2,y=50.2,zone="Dun Morogh"}
+N[1273]={fa=1,n="Grawn Thromwyn",side="A",x=45.2,y=52,zone="Dun Morogh"}
+N[1275]={fa=1,n="Kyra Boucher",side="A",x=56.2,y=65,zone="Stormwind City"}
+N[1285]={fa=1,n="Thurman Mullby",side="A",x=58,y=61.6,zone="Stormwind City"}
+N[1286]={fa=1,n="Edna Mullby",side="A",x=58,y=60.6,zone="Stormwind City"}
+N[1287]={fa=1,n="Marda Weller",side="A",x=57.2,y=57,zone="Stormwind City"}
+N[1289]={fa=1,n="Gunther Weller",side="A",x=57.2,y=57.2,zone="Stormwind City"}
+N[1291]={fa=1,n="Carla Granger",side="A",x=55,y=56,zone="Stormwind City"}
+N[1294]={fa=1,n="Aldric Moore",side="A",x=54.8,y=55.2,zone="Stormwind City"}
+N[1295]={fa=1,n="Lara Moore",side="A",x=54.8,y=55.4,zone="Stormwind City"}
+N[1296]={fa=1,fh=-1,n="Felder Stover",side="A",x=85,y=68.4,zone="Burning Steppes"}
+N[1297]={fa=1,n="Lina Stover",side="A",x=50.4,y=57.4,zone="Stormwind City"}
+N[1298]={fa=1,n="Frederick Stover",side="A",x=50.2,y=57.4,zone="Stormwind City"}
+N[1299]={fa=1,n="Lisbeth Schneider",side="A",x=49.4,y=54.4,zone="Stormwind City"}
+N[1300]={fa=1,n="Lawrence Schneider",side="A",x=43.4,y=73.8,zone="Stormwind City"}
+N[1301]={fa=1,n="Julia Gallina",side="A",x=51.8,y=68.4,zone="Stormwind City"}
+N[1302]={fa=1,n="Bernard Gump",side="A",x=64.2,y=61,zone="Stormwind City"}
+N[1303]={fa=1,n="Felicia Gump",side="A",x=64.2,y=60.4,zone="Stormwind City"}
+N[1304]={fa=1,n="Darian Singh",side="A",x=29.4,y=67.8,zone="Stormwind City"}
+N[1305]={fa=1,n="Jarel Moor",side="A",x=28.2,y=75.6,zone="Stormwind City"}
+N[1307]={fa=1,n="Charys Yserian",side="A",x=32.4,y=80,zone="Stormwind City"}
+N[1308]={fa=1,n="Owen Vaughn",side="A",x=36,y=74.4,zone="Stormwind City"}
+N[1309]={fa=1,n="Wynne Larson",side="A",x=41.6,y=76.6,zone="Stormwind City"}
+N[1310]={fa=1,n="Evan Larson",side="A",x=42.4,y=76.4,zone="Stormwind City"}
+N[1311]={fa=1,n="Joachim Brenlow",side="A",x=40.4,y=90.2,zone="Stormwind City"}
+N[1312]={fa=1,n="Ardwyn Cailen",side="A",x=42.8,y=65.4,zone="Stormwind City"}
+N[1313]={fa=1,n="Maria Lumere",side="A",x=46.4,y=78.8,zone="Stormwind City"}
+N[1314]={fa=1,n="Duncan Cullen",side="A",x=43.4,y=74.2,zone="Stormwind City"}
+N[1315]={fa=1,n="Allan Hafgan",side="A",x=43,y=65.4,zone="Stormwind City"}
+N[1316]={fa=1,n="Adair Gilroy",side="A",x=41.4,y=64.4,zone="Stormwind City"}
+N[1317]={fa=1,n="Lucan Cordell",side="A",x=43,y=64.4,zone="Stormwind City"}
+N[1318]={fa=1,n="Jessara Cordell",side="A",x=43,y=64.2,zone="Stormwind City"}
+N[1319]={fa=1,n="Bryan Cross",side="A",x=64.2,y=42.8,zone="Stormwind City"}
+N[1320]={fa=1,n="Seoman Griffith",side="A",x=67.4,y=48.8,zone="Stormwind City"}
+N[1321]={fa=1,n="Alyssa Griffith",side="A",x=67.4,y=49,zone="Stormwind City"}
+N[1322]={fa=1,n="Maxton Strang",side="A",x=67.8,y=8.4,zone="Desolace"}
+N[1323]={fa=1,n="Osric Strang",side="A",x=74.2,y=47.4,zone="Stormwind City"}
+N[1324]={fa=1,n="Heinrich Stone",side="A",x=74.2,y=42.8,zone="Stormwind City"}
+N[1325]={fa=1,n="Jasper Fel",side="A",x=77.8,y=59.6,zone="Stormwind City"}
+N[1326]={fa=1,n="Sloan McCoy",side="A",x=76.4,y=60,zone="Stormwind City"}
+N[1328]={fa=1,n="Elly Langston",side="A",x=73.2,y=37.4,zone="Stormwind City"}
+N[1333]={fa=1,n="Gerik Koen",side="A",x=69,y=42.4,zone="Stormwind City"}
+N[1339]={fa=1,n="Mayda Thane",side="A",x=67,y=43.2,zone="Stormwind City"}
+N[1341]={fa=1,n="Wilhelm Strang",side="A",x=74.4,y=47.8,zone="Stormwind City"}
+N[1346]={fa=1,n="Georgio Bolero",side="A",x=43.2,y=73.4,zone="Stormwind City"}
+N[1347]={fa=1,n="Alexandra Bolero",side="A",x=43.4,y=74,zone="Stormwind City"}
+N[1348]={fa=1,n="Gregory Ardus",side="A",x=37,y=39.4,zone="Stormwind City"}
+N[1349]={fa=1,n="Agustus Moulaine",side="A",x=43.8,y=43.2,zone="Stormwind City"}
+N[1350]={fa=1,n="Theresa Moulaine",side="A",x=43.4,y=43.4,zone="Stormwind City"}
+N[1351]={fa=1,n="Brother Cassius",side="A",x=43,y=26.4,zone="Stormwind City"}
+N[1355]={fa=1,n="Cook Ghilm",side="A",x=68.4,y=54.4,zone="Dun Morogh"}
+N[1362]={fa=1,n="Gothor Brumn",side="A",x=24,y=18,zone="Loch Modan"}
+N[1381]={fh=1,n="Krakk",side="H",x=32.4,y=28,zone="Stranglethorn Vale"}
+N[1382]={fh=1,n="Mudduk",side="H",x=31.4,y=28,zone="Stranglethorn Vale"}
+N[1383]={fh=1,n="Snarl",side="H",x=79.2,y=22.4,zone="Orgrimmar"}
+N[1386]={fh=1,n="Rogvar",side="H",x=48.2,y=55.4,zone="Swamp of Sorrows"}
+N[1407]={fa=-1,fh=1,n="Sranda",side="H",x=3,y=47.4,zone="Badlands"}
+N[1430]={fa=1,n="Tomas",side="A",x=44.2,y=66,zone="Elwynn Forest"}
+N[1440]={fa=1,n="Milton Sheaf",side="A",x=74,y=7.4,zone="Stormwind City"}
+N[1441]={fa=1,fh=-1,n="Brak Durnad",side="A",x=11.4,y=59.4,zone="Wetlands"}
+N[1448]={fa=1,n="Neal Allen",side="A",x=10.6,y=56.8,zone="Wetlands"}
+N[1450]={fa=1,n="Brahnmar",side="A",x=11.4,y=59.4,zone="Wetlands"}
+N[1452]={fa=1,n="Gruham Rumdnul",side="A",x=12,y=57.8,zone="Wetlands"}
+N[1453]={fa=1,n="Dewin Shimmerdawn",side="A",x=8,y=56.2,zone="Wetlands"}
+N[1454]={fa=1,n="Jennabink Powerseam",side="A",x=8,y=55.8,zone="Wetlands"}
+N[1456]={fa=1,n="Kersok Prond",side="A",x=10.4,y=60.4,zone="Wetlands"}
+N[1457]={fa=1,n="Samor Festivus",side="A",x=10.4,y=60.2,zone="Wetlands"}
+N[1459]={fa=1,fh=-1,n="Naela Trance",side="A",x=11.2,y=58.4,zone="Wetlands"}
+N[1460]={fa=1,n="Unger Statforth",side="A",x=8.4,y=54.4,zone="Wetlands"}
+N[1461]={fa=1,fh=-1,n="Murndan Derth",side="A",x=11.4,y=59.4,zone="Wetlands"}
+N[1462]={fa=1,fh=-1,n="Edwina Monzor",side="A",x=11,y=58.4,zone="Wetlands"}
+N[1463]={fa=1,n="Falkan Armonis",side="A",x=8.4,y=56.4,zone="Wetlands"}
+N[1464]={fa=1,n="Innkeeper Helbrek",side="A",x=10.6,y=60.8,zone="Wetlands"}
+N[1465]={fa=1,n="Drac Roughcut",side="A",x=35.4,y=48.8,zone="Loch Modan"}
+N[1466]={fa=1,n="Gretta Finespindle",side="A",x=39,y=32.4,zone="Ironforge"}
+N[1469]={fa=1,n="Vrok Blunderblast",side="A",x=35.2,y=42.6,zone="Loch Modan"}
+N[1470]={fa=1,n="Ghak Healtouch",side="A",x=37,y=49.2,zone="Loch Modan"}
+N[1471]={fa=1,fh=-1,n="Jannos Ironwill",side="A",x=46,y=47.4,zone="Arathi Highlands"}
+N[1474]={fa=1,n="Rann Flamespinner",side="A",x=36,y=46,zone="Loch Modan"}
+N[1632]={fa=1,n="Adele Fielder",side="A",x=46.4,y=62.2,zone="Elwynn Forest"}
+N[1645]={fa=1,n="Quartermaster Hicks",side="A",x=25.2,y=73.8,zone="Elwynn Forest"}
+N[1650]={fa=1,n="Terry Palin",side="A",x=82.8,y=63.4,zone="Elwynn Forest"}
+N[1668]={fa=1,fh=-1,n="William MacGregor",side="A",x=57.4,y=53.8,zone="Westfall"}
+N[1669]={fa=1,fh=1,n="Defias Profiteer",side="B",x=43.4,y=66.8,zone="Westfall"}
+N[1670]={fa=1,n="Mike Miller",side="A",x=57.4,y=53.6,zone="Westfall"}
+N[1671]={fa=1,fh=-1,n="Lamar Veisilli",side="A",x=21,y=46.4,zone="Redridge Mountains"}
+N[1672]={fa=1,n="Lohgan Eva",side="A",x=75.6,y=44.6,zone="Duskwood"}
+N[1673]={fa=1,n="Alyssa Eva",side="A",x=76,y=45.2,zone="Duskwood"}
+N[1678]={fa=1,fh=-1,n="Vernon Hale",side="A",x=27.4,y=47.4,zone="Redridge Mountains"}
+N[1681]={fa=1,n="Brock Stoneseeker",side="A",x=37,y=47.8,zone="Loch Modan"}
+N[1682]={fa=1,n="Yanni Stoutheart",side="A",x=34.8,y=48.4,zone="Loch Modan"}
+N[1684]={fa=1,n="Khara Deepwater",side="A",x=39.4,y=39.2,zone="Loch Modan"}
+N[1685]={fa=1,n="Xandar Goodbeard",side="A",x=82.4,y=63.4,zone="Loch Modan"}
+N[1686]={fa=1,n="Irene Sureshot",side="A",x=83,y=63.4,zone="Loch Modan"}
+N[1687]={fa=1,n="Cliff Hadin",side="A",x=83,y=63,zone="Loch Modan"}
+N[1690]={fa=1,n="Thrawn Boltar",side="A",x=45.2,y=51.4,zone="Dun Morogh"}
+N[1691]={fa=1,n="Kreg Bilmn",side="A",x=47.2,y=52.4,zone="Dun Morogh"}
+N[1692]={fa=1,n="Golorn Frostbeard",side="A",x=46.6,y=53.4,zone="Dun Morogh"}
+N[1694]={fa=1,n="Loslor Rudge",side="A",x=50,y=49.4,zone="Dun Morogh"}
+N[1695]={fa=1,fh=-1,n="Rendow",side="A",x=89.4,y=45.8,zone="Feralas"}
+N[1697]={fa=1,n="Keeg Gibn",side="A",x=30.4,y=46,zone="Dun Morogh"}
+N[1698]={fa=1,n="Frast Dokner",side="A",x=68.8,y=55.8,zone="Dun Morogh"}
+N[1699]={fa=1,n="Gremlock Pilsnor",side="A",x=47.6,y=52.4,zone="Dun Morogh"}
+N[1702]={fa=1,n="Bronk Guzzlegear",side="A",x=50.2,y=50.4,zone="Dun Morogh"}
+N[1703]={fa=1,n="Uthrar Threx",side="A",x=43.4,y=28.2,zone="Ironforge"}
+N[1937]={fh=1,n="Apothecary Renferrel",side="H",x=42.8,y=40.8,zone="Silverpine Forest"}
+N[2046]={fa=1,n="Andrew Krighton",side="A",x=41.6,y=65.6,zone="Elwynn Forest"}
+N[2084]={fa=1,fh=-1,n="Natheril Raincaller",side="A",x=51.4,y=30.8,zone="Winterspring"}
+N[2113]={fh=1,n="Archibald Kava",side="H",x=32.4,y=65.6,zone="Tirisfal Glades"}
+N[2115]={fh=1,n="Joshua Kien",side="H",x=32.2,y=65.4,zone="Tirisfal Glades"}
+N[2116]={fh=1,n="Blacksmith Rand",side="H",x=32.4,y=66.2,zone="Tirisfal Glades"}
+N[2117]={fh=1,n="Harold Raims",side="H",x=32.4,y=66.4,zone="Tirisfal Glades"}
+N[2118]={fh=1,n="Abigail Shiel",side="H",x=61,y=52.4,zone="Tirisfal Glades"}
+N[2132]={fh=1,n="Carolai Anise",side="H",x=59.4,y=52.2,zone="Tirisfal Glades"}
+N[2134]={fa=-1,fh=1,n="Mrs. Winters",side="H",x=61,y=52.4,zone="Tirisfal Glades"}
+N[2135]={fh=1,n="Abe Winters",side="H",x=60.2,y=53,zone="Tirisfal Glades"}
+N[2136]={fh=1,n="Oliver Dwor",side="H",x=60,y=53.6,zone="Tirisfal Glades"}
+N[2137]={fh=1,n="Eliza Callen",side="H",x=60.4,y=52.8,zone="Tirisfal Glades"}
+N[2140]={fh=1,n="Edwin Harly",side="H",x=44,y=40,zone="Silverpine Forest"}
+N[2225]={fa=-1,fh=1,n="Zora Guthrek",side="H"}
+N[2264]={fa=1,fh=-1,n="Hillsbrad Tailor",side="A",x=35.4,y=43.2,zone="Hillsbrad Foothills"}
+N[2265]={fa=1,fh=-1,n="Hillsbrad Apprentice Blacksmith",side="A",x=31.8,y=46.8,zone="Hillsbrad Foothills"}
+N[2303]={fa=1,fh=-1,n="Lyranne Feathersong",side="A",x=52,y=29.2,zone="Winterspring"}
+N[2326]={fa=1,n="Thamner Pol",side="A",x=47.2,y=52.4,zone="Dun Morogh"}
+N[2327]={fa=1,n="Shaina Fuller",side="A",x=42.4,y=26.8,zone="Stormwind City"}
+N[2329]={fa=1,n="Michelle Belle",side="A",x=43.4,y=65.6,zone="Elwynn Forest"}
+N[2352]={fa=1,fh=-1,n="Innkeeper Anderson",side="A",x=51,y=58.8,zone="Hillsbrad Foothills"}
+N[2357]={fa=1,fh=-1,n="Merideth Carlson",side="A",x=52,y=55.6,zone="Hillsbrad Foothills"}
+N[2364]={fa=1,fh=-1,n="Neema",side="A",x=51,y=59,zone="Hillsbrad Foothills"}
+N[2365]={fa=1,fh=-1,n="Bront Coldcleave",side="A",x=48.8,y=57.2,zone="Hillsbrad Foothills"}
+N[2366]={fa=1,fh=-1,n="Barkeep Kelly",side="A",x=51.4,y=58.4,zone="Hillsbrad Foothills"}
+N[2380]={fa=1,fh=-1,n="Nandar Branson",side="A",x=50.8,y=57,zone="Hillsbrad Foothills"}
+N[2381]={fa=1,fh=-1,n="Micha Yance",side="A",x=49,y=55,zone="Hillsbrad Foothills"}
+N[2383]={fa=1,fh=-1,n="Lindea Rabonne",side="A",x=50.4,y=61,zone="Hillsbrad Foothills"}
+N[2388]={fh=1,n="Innkeeper Shay",side="H",x=62.6,y=19,zone="Hillsbrad Foothills"}
+N[2391]={fh=1,n="Serge Hinott",side="H",x=61.4,y=19.2,zone="Hillsbrad Foothills"}
+N[2393]={fh=1,n="Christoph Jeffcoat",side="H",x=62.2,y=19,zone="Hillsbrad Foothills"}
+N[2394]={fa=-1,fh=1,n="Mallen Swain",side="H",x=62,y=21,zone="Hillsbrad Foothills"}
+N[2397]={fa=-1,fh=1,n="Derak Nightfall",side="H",x=63,y=19.4,zone="Hillsbrad Foothills"}
+N[2399]={fh=1,n="Daryl Stack",side="H",x=63.4,y=20.8,zone="Hillsbrad Foothills"}
+N[2401]={fa=-1,fh=1,n="Kayren Soothallow",side="H",x=62.4,y=19.8,zone="Hillsbrad Foothills"}
+N[2480]={fa=1,fh=1,n="Bro'kin",side="B",x=38.4,y=38.8,zone="Alterac Mountains"}
+N[2481]={fa=1,fh=1,n="Bliztik",side="B",x=18,y=54.4,zone="Duskwood"}
+N[2482]={fa=1,fh=1,n="Zarena Cromwind",side="B",x=28.4,y=75.4,zone="Stranglethorn Vale"}
+N[2483]={fa=1,fh=1,n="Jaquilina Dramet",side="B",x=35.6,y=10.6,zone="Stranglethorn Vale"}
+N[2622]={fa=1,fh=1,n="Sly Garrett",side="B",x=28.4,y=76.8,zone="Stranglethorn Vale"}
+N[2626]={fa=1,fh=1,n="Old Man Heming",side="B",x=27.4,y=77,zone="Stranglethorn Vale"}
+N[2627]={fa=1,fh=1,n="Grarnik Goodstitch",side="B",x=28.6,y=76.8,zone="Stranglethorn Vale"}
+N[2663]={fa=1,fh=1,n="Narkk",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
+N[2664]={fa=1,fh=1,n="Kelsey Yance",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
+N[2668]={fa=1,n="Danielle Zipstitch",side="A",x=75.8,y=45.4,zone="Duskwood"}
+N[2669]={fa=1,n="Sheri Zipstitch",side="A",x=75.6,y=45.4,zone="Duskwood"}
+N[2670]={fa=1,fh=1,n="Xizk Goodstitch",side="B",x=28.6,y=76.8,zone="Stranglethorn Vale"}
+N[2672]={fa=1,fh=1,n="Cowardly Crosby",side="B",x=27,y=82.4,zone="Stranglethorn Vale"}
+N[2679]={fa=1,n="Wenna Silkbeard",side="A",x=25.6,y=25.8,zone="Wetlands"}
+N[2682]={fa=1,fh=-1,n="Fradd Swiftgear",side="A",x=26.4,y=25.8,zone="Wetlands"}
+N[2683]={fa=1,fh=-1,n="Namdo Bizzfizzle",side="A"}
+N[2684]={fa=1,fh=1,n="Rizz Loosebolt",side="B",x=47.2,y=35.2,zone="Alterac Mountains"}
+N[2685]={fa=1,fh=1,n="Mazk Snipeshot",side="B",x=28.4,y=75,zone="Stranglethorn Vale"}
+N[2687]={fa=1,fh=1,n="Gnaz Blunderflame",side="B",x=51,y=35.2,zone="Stranglethorn Vale"}
+N[2688]={fa=1,fh=1,n="Ruppo Zipcoil",side="B",x=34.2,y=37.8,zone="The Hinterlands"}
+N[2697]={fa=1,fh=-1,n="Clyde Ranthal",side="A",x=88.8,y=71,zone="Redridge Mountains"}
+N[2698]={fa=-1,fh=1,n="George Candarte",side="H",x=92,y=38.2,zone="Hillsbrad Foothills"}
+N[2699]={fa=1,fh=1,n="Rikqiz",side="B",x=28.4,y=76,zone="Stranglethorn Vale"}
+N[2786]={fa=1,n="Gerrig Bonegrip",side="A",x=50.2,y=7,zone="Ironforge"}
+N[2798]={fh=1,n="Pand Stonebinder",side="H",x=29.4,y=21.4,zone="Thunder Bluff"}
+N[2803]={fa=1,fh=-1,n="Malygen",side="A",x=62.2,y=25.4,zone="Felwood"}
+N[2805]={fa=1,fh=-1,n="Deneb Walker",side="A",x=27,y=58.8,zone="Arathi Highlands"}
+N[2806]={fa=-1,fh=1,n="Bale",side="H",x=34.8,y=53.2,zone="Felwood"}
+N[2808]={fa=1,n="Vikki Lonsav",side="A",x=46.4,y=47.4,zone="Arathi Highlands"}
+N[2810]={fa=1,fh=-1,n="Hammon Karwn",side="A",x=46.4,y=47.4,zone="Arathi Highlands"}
+N[2812]={fa=1,fh=-1,n="Drovnar Strongbrew",side="A",x=46.4,y=47,zone="Arathi Highlands"}
+N[2814]={fa=1,fh=-1,n="Narj Deepslice",side="A",x=45.4,y=47.4,zone="Arathi Highlands"}
+N[2816]={fa=1,fh=-1,n="Androd Fadran",side="A",x=45,y=46.8,zone="Arathi Highlands"}
+N[2818]={fa=-1,fh=1,n="Slagg",side="H",x=73.8,y=33.4,zone="Arathi Highlands"}
+N[2819]={fh=1,n="Tunkk",side="H",x=74.8,y=34.4,zone="Arathi Highlands"}
+N[2820]={fh=1,n="Graud",side="H",x=74,y=32.4,zone="Arathi Highlands"}
+N[2821]={fh=1,n="Keena",side="H",x=74,y=32.4,zone="Arathi Highlands"}
+N[2832]={fa=1,fh=1,n="Nixxrax Fillamug",side="B",x=27,y=77.2,zone="Stranglethorn Vale"}
+N[2836]={fa=1,fh=1,n="Brikk Keencraft",side="B",x=29,y=75.4,zone="Stranglethorn Vale"}
+N[2838]={fa=1,fh=1,n="Crazk Sparks",side="B",x=28.2,y=76.6,zone="Stranglethorn Vale"}
+N[2839]={fa=1,fh=1,n="Haren Kanmae",side="B",x=28.2,y=74.4,zone="Stranglethorn Vale"}
+N[2840]={fa=1,fh=1,n="Kizz Bluntstrike",side="B",x=28.2,y=75.2,zone="Stranglethorn Vale"}
+N[2842]={fa=1,fh=1,n="Wigcik",side="B",x=28,y=76.8,zone="Stranglethorn Vale"}
+N[2843]={fa=1,fh=1,n="Jutak",side="B",x=27.4,y=77.4,zone="Stranglethorn Vale"}
+N[2844]={fa=1,fh=1,n="Hurklor",side="B",x=29,y=75,zone="Stranglethorn Vale"}
+N[2845]={fa=1,fh=1,n="Fargon Mortalak",side="B",x=29,y=75,zone="Stranglethorn Vale"}
+N[2846]={fa=1,fh=1,n="Blixrez Goodstitch",side="B",x=28.2,y=77.4,zone="Stranglethorn Vale"}
+N[2847]={fa=1,fh=1,n="Jansen Underwood",side="B",x=29,y=75.4,zone="Stranglethorn Vale"}
+N[2848]={fa=1,fh=1,n="Glyx Brewright",side="B",x=28,y=78,zone="Stranglethorn Vale"}
+N[2849]={fa=1,fh=1,n="Qixdi Goodstitch",side="B",x=28.2,y=77.4,zone="Stranglethorn Vale"}
+N[2855]={fh=1,n="Snang",side="H",x=62.4,y=49.8,zone="Orgrimmar"}
+N[2857]={fh=1,n="Thund",side="H",x=75.4,y=24.6,zone="Orgrimmar"}
+N[2908]={fa=-1,fh=1,n="Grawl",side="H",x=3,y=46,zone="Badlands"}
+N[2921]={fa=1,fh=1,n="Lotwil Veriatus",side="B",x=25.8,y=44.4,zone="Badlands"}
+N[2934]={fh=1,n="Keeper Bel'dugur",side="H",x=53.4,y=53,zone="Undercity"}
+N[2997]={fh=1,n="Jyn Stonehoof",side="H",x=41.2,y=62,zone="Thunder Bluff"}
+N[2998]={fh=1,n="Karn Stonehoof",side="H",x=38.8,y=54,zone="Thunder Bluff"}
+N[2999]={fh=1,n="Taur Stonehoof",side="H",x=39.4,y=55.4,zone="Thunder Bluff"}
+N[3000]={fa=1,fh=1,n="Gibbert",side="B",x=44,y=7.2,zone="Un'Goro Crater"}
+N[3002]={fh=1,n="Kurm Stonehoof",side="H",x=34.4,y=57,zone="Thunder Bluff"}
+N[3003]={fh=1,n="Fyr Mistrunner",side="H",x=41.2,y=53.4,zone="Thunder Bluff"}
+N[3004]={fh=1,n="Tepa",side="H",x=43.8,y=44.4,zone="Thunder Bluff"}
+N[3005]={fh=1,n="Mahu",side="H",x=43.4,y=43.8,zone="Thunder Bluff"}
+N[3007]={fh=1,n="Una",side="H",x=41.4,y=42.6,zone="Thunder Bluff"}
+N[3008]={fh=1,n="Mak",side="H",x=42.2,y=43.2,zone="Thunder Bluff"}
+N[3009]={fh=1,n="Bena Winterhoof",side="H",x=46.8,y=33.4,zone="Thunder Bluff"}
+N[3010]={fh=1,n="Mani Winterhoof",side="H",x=47,y=33.4,zone="Thunder Bluff"}
+N[3011]={fh=1,n="Teg Dawnstrider",side="H",x=44.8,y=37.4,zone="Thunder Bluff"}
+N[3012]={fh=1,n="Nata Dawnstrider",side="H",x=45,y=38.4,zone="Thunder Bluff"}
+N[3014]={fh=1,n="Nida Winterhoof",side="H",x=49.2,y=39.6,zone="Thunder Bluff"}
+N[3015]={fh=1,n="Kuna Thunderhorn",side="H",x=46.4,y=44.6,zone="Thunder Bluff"}
+N[3016]={fh=1,n="Tand",side="H",x=49,y=34.4,zone="Thunder Bluff"}
+N[3017]={fh=1,n="Nan Mistrunner",side="H",x=46.4,y=42.2,zone="Thunder Bluff"}
+N[3018]={fh=1,n="Hogor Thunderhoof",side="H",x=55.4,y=56.4,zone="Thunder Bluff"}
+N[3019]={fh=1,n="Delgo Ragetotem",side="H",x=53.4,y=57.2,zone="Thunder Bluff"}
+N[3020]={fh=1,n="Etu Ragetotem",side="H",x=53.2,y=57.8,zone="Thunder Bluff"}
+N[3021]={fh=1,n="Kard Ragetotem",side="H",x=53.2,y=56.8,zone="Thunder Bluff"}
+N[3022]={fh=1,n="Sunn Ragetotem",side="H",x=49,y=49.6,zone="Thunder Bluff"}
+N[3023]={fh=1,n="Sura Wildmane",side="H",x=51.4,y=53.8,zone="Thunder Bluff"}
+N[3025]={fh=1,n="Kaga Mistrunner",side="H",x=52.2,y=47.4,zone="Thunder Bluff"}
+N[3026]={fh=1,n="Aska Mistrunner",side="H",x=50.8,y=52.4,zone="Thunder Bluff"}
+N[3027]={fh=1,n="Naal Mistrunner",side="H",x=50.2,y=51.6,zone="Thunder Bluff"}
+N[3029]={fh=1,n="Sewa Mistrunner",side="H",x=55.2,y=48,zone="Thunder Bluff"}
+N[3044]={fh=1,n="Miles Welsh",side="H",x=25.4,y=15.4,zone="Thunder Bluff"}
+N[3053]={fa=1,fh=1,n="Synge",side="B",x=80.4,y=76.8,zone="Thousand Needles"}
+N[3067]={fh=1,n="Pyall Silentstride",side="H",x=45,y=61.6,zone="Mulgore"}
+N[3069]={fh=1,n="Chaw Stronghide",side="H",x=45,y=61.4,zone="Mulgore"}
+N[3072]={fh=1,n="Kawnie Softbreeze",side="H",x=45.2,y=76.4,zone="Mulgore"}
+N[3073]={fh=1,n="Marjak Keenblade",side="H",x=43.8,y=77.8,zone="Mulgore"}
+N[3074]={fh=1,n="Varia Hardhide",side="H",x=43.8,y=77.6,zone="Mulgore"}
+N[3075]={fh=1,n="Bronk Steelrage",side="H",x=43.8,y=77.8,zone="Mulgore"}
+N[3076]={fh=1,n="Moorat Longstride",side="H",x=45.2,y=61.4,zone="Mulgore"}
+N[3077]={fh=1,n="Mahnott Roughwound",side="H",x=45.2,y=62,zone="Mulgore"}
+N[3078]={fh=1,n="Kennah Hawkseye",side="H",x=45,y=61.8,zone="Mulgore"}
+N[3079]={fh=1,n="Varg Windwhisper",side="H",x=45.2,y=62,zone="Mulgore"}
+N[3080]={fh=1,n="Harant Ironbrace",side="H",x=45.4,y=62,zone="Mulgore"}
+N[3081]={fh=1,n="Wunna Darkmane",side="H",x=45.4,y=61.8,zone="Mulgore"}
+N[3085]={fa=1,n="Gloria Femmel",side="A",x=26.6,y=43.4,zone="Redridge Mountains"}
+N[3086]={fa=1,n="Gretchen Vogel",side="A",x=22.6,y=44.2,zone="Redridge Mountains"}
+N[3087]={fa=1,n="Crystal Boughman",side="A",x=22.8,y=43.4,zone="Redridge Mountains"}
+N[3088]={fa=1,n="Henry Chapal",side="A",x=23.6,y=41.6,zone="Redridge Mountains"}
+N[3089]={fa=1,n="Sherman Femmel",side="A",x=26.8,y=43.4,zone="Redridge Mountains"}
+N[3090]={fa=1,n="Gerald Crawley",side="A",x=24.6,y=41.6,zone="Redridge Mountains"}
+N[3091]={fa=1,n="Franklin Hamar",side="A",x=27.2,y=45.4,zone="Redridge Mountains"}
+N[3092]={fh=1,n="Tagain",side="H",x=43.4,y=43.4,zone="Thunder Bluff"}
+N[3093]={fh=1,n="Grod",side="H",x=42.4,y=43.2,zone="Thunder Bluff"}
+N[3095]={fh=1,n="Fela",side="H",x=42.8,y=43.4,zone="Thunder Bluff"}
+N[3096]={fa=1,fh=1,n="Captured Servant of Azora",side="B",x=74.4,y=79.4,zone="Redridge Mountains"}
+N[3097]={fa=1,fh=-1,n="Bernard Brubaker",side="A",x=88.2,y=71.2,zone="Redridge Mountains"}
+N[3133]={fa=1,fh=-1,n="Herble Baubbletump",side="A",x=77.8,y=48.2,zone="Duskwood"}
+N[3134]={fa=1,fh=1,n="Kzixx",side="B",x=81.4,y=19.8,zone="Duskwood"}
+N[3135]={fa=1,fh=-1,n="Malissa",side="A",x=79.4,y=44.4,zone="Duskwood"}
+N[3137]={fa=1,fh=-1,n="Matt Johnson",side="A",x=74,y=49.4,zone="Duskwood"}
+N[3138]={fa=1,n="Scott Carevin",side="A",x=75.4,y=48.4,zone="Duskwood"}
+N[3158]={fh=1,n="Duokna",side="H",x=42.6,y=67.4,zone="Durotar"}
+N[3159]={fh=1,n="Kzan Thornslash",side="H",x=40.4,y=68,zone="Durotar"}
+N[3160]={fh=1,n="Huklah",side="H",x=40.6,y=67.8,zone="Durotar"}
+N[3161]={fh=1,n="Rarc",side="H",x=40.4,y=67.8,zone="Durotar"}
+N[3162]={fa=1,n="Burdrak Harglhelm",side="A",x=30.2,y=45.2,zone="Dun Morogh"}
+N[3163]={fh=1,n="Uhgar",side="H",x=52,y=40.4,zone="Durotar"}
+N[3164]={fh=1,n="Jark",side="H",x=54.2,y=42.2,zone="Durotar"}
+N[3165]={fh=1,n="Ghrawt",side="H",x=53,y=41,zone="Durotar"}
+N[3166]={fh=1,n="Cutac",side="H",x=53,y=40.8,zone="Durotar"}
+N[3167]={fh=1,n="Wuark",side="H",x=52,y=41.2,zone="Durotar"}
+N[3168]={fh=1,n="Flakk",side="H",x=52.8,y=42,zone="Durotar"}
+N[3174]={fh=1,n="Dwukk",side="H",x=52,y=40.6,zone="Durotar"}
+N[3175]={fh=1,n="Krunn",side="H",x=51.8,y=40.8,zone="Durotar"}
+N[3177]={fa=1,n="Turuk Amberstill",side="A",x=63,y=49.8,zone="Dun Morogh"}
+N[3178]={fa=1,fh=-1,n="Stuart Fleming",side="A",x=8,y=58.2,zone="Wetlands"}
+N[3180]={fa=1,fh=1,n="Dark Iron Entrepreneur",side="B",x=46.4,y=18.2,zone="Wetlands"}
+N[3181]={fa=1,n="Fremal Doohickey",side="A",x=10.8,y=61.2,zone="Wetlands"}
+N[3184]={fh=1,n="Miao'zan",side="H",x=55.4,y=74,zone="Durotar"}
+N[3186]={fh=1,n="K'waii",side="H",x=56.2,y=73.4,zone="Durotar"}
+N[3187]={fh=1,n="Tai'tasi",side="H",x=56.4,y=73.8,zone="Durotar"}
+N[3191]={fh=1,n="Cook Torka",side="H",x=51.2,y=42.4,zone="Durotar"}
+N[3290]={fa=1,fh=-1,n="Deek Fizzlebizz",side="A",x=45.8,y=13.4,zone="Loch Modan"}
+N[3291]={fa=1,fh=-1,n="Greishan Ironstove",side="A",x=22.8,y=70.8,zone="Loch Modan"}
+N[3298]={fa=1,fh=-1,n="Gabrielle Chase",side="A",x=84.2,y=67.8,zone="Burning Steppes"}
+N[3312]={fh=1,n="Olvia",side="H",x=44.8,y=69.4,zone="Orgrimmar"}
+N[3313]={fh=1,n="Trak'gen",side="H",x=48,y=80.2,zone="Orgrimmar"}
+N[3314]={fh=1,n="Urtharo",side="H",x=47.4,y=68.4,zone="Orgrimmar"}
+N[3315]={fh=1,n="Tor'phan",side="H",x=62.4,y=50.4,zone="Orgrimmar"}
+N[3316]={fh=1,n="Handor",side="H",x=62.4,y=45.4,zone="Orgrimmar"}
+N[3317]={fh=1,n="Ollanus",side="H",x=56.2,y=73.4,zone="Orgrimmar"}
+N[3319]={fh=1,n="Sana",side="H",x=55.6,y=73.6,zone="Orgrimmar"}
+N[3321]={fh=1,n="Morgum",side="H",x=55.6,y=73.6,zone="Orgrimmar"}
+N[3322]={fa=-1,fh=1,n="Kaja",side="H",x=52.2,y=62.4,zone="Orgrimmar"}
+N[3323]={fh=1,n="Horthus",side="H",x=45.4,y=56.4,zone="Orgrimmar"}
+N[3329]={fh=1,n="Kor'jus",side="H",x=49,y=54,zone="Orgrimmar"}
+N[3330]={fh=1,n="Muragus",side="H",x=44.4,y=48.4,zone="Orgrimmar"}
+N[3331]={fh=1,n="Kareth",side="H",x=45.2,y=55.2,zone="Orgrimmar"}
+N[3333]={fh=1,n="Shankys",side="H",x=69.4,y=29,zone="Orgrimmar"}
+N[3334]={fh=1,n="Rekkul",side="H",x=42.2,y=49.4,zone="Orgrimmar"}
+N[3335]={fh=1,n="Hagrus",side="H",x=46,y=46,zone="Orgrimmar"}
+N[3342]={fh=1,n="Shan'ti",side="H",x=37.4,y=52.4,zone="Orgrimmar"}
+N[3343]={fa=-1,fh=1,n="Grelkor",side="H"}
+N[3345]={fh=1,n="Godan",side="H",x=53.8,y=38.4,zone="Orgrimmar"}
+N[3346]={fh=1,n="Kithas",side="H",x=53.4,y=37.2,zone="Orgrimmar"}
+N[3347]={fh=1,n="Yelmak",side="H",x=56.4,y=33.2,zone="Orgrimmar"}
+N[3348]={fh=1,n="Kor'geld",side="H",x=56.2,y=34.2,zone="Orgrimmar"}
+N[3349]={fh=1,n="Ukra'nor",side="H",x=29.8,y=74,zone="Orgrimmar"}
+N[3350]={fh=1,n="Asoran",side="H",x=46,y=40.4,zone="Orgrimmar"}
+N[3351]={fh=1,n="Magenius",side="H",x=45.8,y=40.4,zone="Orgrimmar"}
+N[3355]={fh=1,n="Saru Steelfury",side="H",x=82.2,y=23,zone="Orgrimmar"}
+N[3356]={fh=1,n="Sumi",side="H",x=82.4,y=23.4,zone="Orgrimmar"}
+N[3357]={fh=1,n="Makaru",side="H",x=73,y=26.4,zone="Orgrimmar"}
+N[3358]={fh=1,n="Gorina",side="H",x=73.2,y=26.4,zone="Orgrimmar"}
+N[3359]={fh=1,n="Kiro",side="H",x=73,y=42,zone="Orgrimmar"}
+N[3360]={fh=1,n="Koru",side="H",x=81.4,y=18.8,zone="Orgrimmar"}
+N[3361]={fh=1,n="Shoma",side="H",x=81.2,y=19.6,zone="Orgrimmar"}
+N[3362]={fh=1,n="Ogunaro Wolfrunner",side="H",x=69.2,y=12.6,zone="Orgrimmar"}
+N[3363]={fh=1,n="Magar",side="H",x=63.2,y=50.6,zone="Orgrimmar"}
+N[3364]={fh=1,n="Borya",side="H",x=63,y=51.2,zone="Orgrimmar"}
+N[3365]={fh=1,n="Karolek",side="H",x=62.8,y=44.4,zone="Orgrimmar"}
+N[3366]={fh=1,n="Tamar",side="H",x=62.4,y=45.4,zone="Orgrimmar"}
+N[3367]={fa=-1,fh=1,n="Felika",side="H",x=51.2,y=36.2,zone="Orgrimmar"}
+N[3368]={fh=1,n="Borstan",side="H",x=57.4,y=53.4,zone="Orgrimmar"}
+N[3369]={fh=1,n="Gotri",side="H",x=58.8,y=53,zone="Orgrimmar"}
+N[3373]={fh=1,n="Arnok",side="H",x=34,y=84.4,zone="Orgrimmar"}
+N[3399]={fh=1,n="Zamja",side="H",x=57.4,y=53.4,zone="Orgrimmar"}
+N[3400]={fh=1,n="Xen'to",side="H",x=57.4,y=53.2,zone="Orgrimmar"}
+N[3405]={fh=1,n="Zeal'aya",side="H",x=55,y=39.4,zone="Orgrimmar"}
+N[3409]={fh=1,n="Zendo'jian",side="H",x=81,y=19.6,zone="Orgrimmar"}
+N[3410]={fh=1,n="Jin'sora",side="H",x=77.4,y=38.6,zone="Orgrimmar"}
+N[3411]={fh=1,n="Denni'ka",side="H",x=73.4,y=95.4,zone="Stonetalon Mountains"}
+N[3412]={fh=1,n="Nogg",side="H",x=75.4,y=24.8,zone="Orgrimmar"}
 end)()
 ;(function()
-N[3413]={n="Sovik",side="H",x=75,y=24.4,zone="Orgrimmar"}
-N[3477]={n="Hraq",side="H",x=51.2,y=29,zone="The Barrens"}
-N[3478]={n="Traugh",side="H",x=51.2,y=28.8,zone="The Barrens"}
-N[3479]={n="Nargal Deatheye",side="H",x=51.2,y=29.2,zone="The Barrens"}
-N[3480]={n="Moorane Hearthgrain",side="H",x=52.2,y=30.4,zone="The Barrens"}
-N[3481]={n="Barg",side="H",x=51.6,y=30,zone="The Barrens"}
-N[3482]={n="Tari'qa",side="H",x=51.6,y=30,zone="The Barrens"}
-N[3483]={n="Jahan Hawkwing",side="H",x=51.2,y=29,zone="The Barrens"}
-N[3484]={n="Kil'hala",side="H",x=52.2,y=31.6,zone="The Barrens"}
-N[3485]={n="Wrahk",side="H",x=52.2,y=31.6,zone="The Barrens"}
-N[3486]={n="Halija Whitestrider",side="H",x=52.2,y=31.8,zone="The Barrens"}
-N[3487]={n="Kalyimah Stormcloud",side="H",x=52.2,y=32,zone="The Barrens"}
-N[3488]={n="Uthrok",side="H",x=51,y=29,zone="The Barrens"}
-N[3489]={n="Zargh",side="H",x=52.4,y=29.8,zone="The Barrens"}
-N[3490]={n="Hula'mahi",side="H",x=51.4,y=30.2,zone="The Barrens"}
-N[3491]={n="Ironzar",side="B",x=62.2,y=37.4,zone="The Barrens"}
-N[3492]={n="Vexspindle",side="B",x=62.2,y=38.4,zone="The Barrens"}
-N[3493]={n="Grazlix",side="B",x=62.2,y=38.4,zone="The Barrens"}
-N[3494]={n="Tinkerwiz",side="B",x=62.6,y=36.2,zone="The Barrens"}
-N[3495]={n="Gagsprocket",side="B",x=62.6,y=36.2,zone="The Barrens"}
-N[3497]={n="Kilxx",side="B",x=62.8,y=38.2,zone="The Barrens"}
-N[3498]={n="Jazzik",side="B",x=61.8,y=38.8,zone="The Barrens"}
-N[3499]={n="Ranik",side="B",x=61.8,y=38.6,zone="The Barrens"}
-N[3500]={n="Tarhus",side="H",x=74.6,y=44.8,zone="Feralas"}
-N[3518]={n="Thomas Miller",side="A",x=52.8,y=62.2,zone="Stormwind City"}
-N[3522]={n="Constance Brisboise",side="H",x=52.4,y=55.6,zone="Tirisfal Glades"}
-N[3523]={n="Bowen Brisboise",side="H",x=52.4,y=55.6,zone="Tirisfal Glades"}
-N[3528]={n="Pyrewood Armorer",side="A",x=46.2,y=71.4,zone="Silverpine Forest"}
-N[3529]={n="Moonrage Armorer",side="A",x=45.4,y=74,zone="Silverpine Forest"}
-N[3530]={n="Pyrewood Tailor",side="A",x=46,y=71.4,zone="Silverpine Forest"}
-N[3531]={n="Moonrage Tailor",x=46,y=71.4,zone="Silverpine Forest"}
-N[3532]={n="Pyrewood Leatherworker",side="A",x=44,y=73.8,zone="Silverpine Forest"}
-N[3533]={n="Moonrage Leatherworker",x=44,y=73.8,zone="Silverpine Forest"}
-N[3534]={n="Wallace the Blind",side="B",x=43.8,y=84.4,zone="Silverpine Forest"}
-N[3536]={n="Kris Legace",side="B",x=80,y=39,zone="Hillsbrad Foothills"}
-N[3537]={n="Zixil",side="B",x=50.4,y=50.8,zone="Hillsbrad Foothills"}
-N[3539]={n="Ott",side="H",x=60.4,y=26,zone="Hillsbrad Foothills"}
-N[3540]={n="Hal McAllister",side="A",x=49.8,y=62.2,zone="Hillsbrad Foothills"}
-N[3541]={n="Sarah Raycroft",side="A",x=49,y=55.2,zone="Hillsbrad Foothills"}
-N[3542]={n="Jaysin Lanyda",side="A",x=50.8,y=59,zone="Hillsbrad Foothills"}
-N[3543]={n="Robert Aebischer",side="A",x=51.2,y=57,zone="Hillsbrad Foothills"}
-N[3544]={n="Jason Lemieux",side="H",x=59,y=20.2,zone="Hillsbrad Foothills"}
-N[3546]={n="Bernie Heisten",side="A",x=63.4,y=16.8,zone="Blasted Lands"}
-N[3547]={n="Hamlin Atkins",side="H",x=56.4,y=52.2,zone="Tirisfal Glades"}
-N[3548]={n="Selina Weston",side="H",x=61.8,y=50,zone="Tirisfal Glades"}
-N[3549]={n="Shelene Rhobart",side="H",x=65.4,y=60,zone="Tirisfal Glades"}
-N[3550]={n="Martine Tramblay",side="H",x=65.8,y=59.4,zone="Tirisfal Glades"}
-N[3551]={n="Patrice Dwyer",side="H",x=43,y=41.8,zone="Silverpine Forest"}
-N[3552]={n="Alexandre Lefevre",side="H",x=44.6,y=39.2,zone="Silverpine Forest"}
-N[3553]={n="Sebastian Meloche",side="H",x=43.2,y=41.2,zone="Silverpine Forest"}
-N[3554]={n="Andrea Boynton",side="H",x=44.6,y=39.2,zone="Silverpine Forest"}
-N[3555]={n="Johan Focht",side="H",x=43.4,y=40.4,zone="Silverpine Forest"}
-N[3556]={n="Andrew Hilbert",side="H",x=43.2,y=40.6,zone="Silverpine Forest"}
-N[3557]={n="Guillaume Sorouy",side="H",x=43.2,y=41,zone="Silverpine Forest"}
-N[3561]={n="Kyrai",side="A",x=32.4,y=20,zone="Darnassus"}
-N[3562]={n="Alaindia",side="A",x=29.4,y=70,zone="Darnassus"}
-N[3572]={n="Zizzek",side="B",x=62,y=39,zone="The Barrens"}
-N[3577]={n="Dalaran Brewmaster",side="A",x=62.4,y=64.4,zone="Silverpine Forest"}
-N[3578]={n="Dalaran Miner",side="A",x=62.4,y=62.6,zone="Silverpine Forest"}
-N[3587]={n="Lyrai",side="A",x=59.4,y=41,zone="Teldrassil"}
-N[3588]={n="Khardan Proudblade",side="A",x=58.8,y=39.6,zone="Teldrassil"}
-N[3589]={n="Keina",side="A",x=59.4,y=41.2,zone="Teldrassil"}
-N[3590]={n="Janna Brightmoon",side="A",x=59.4,y=41,zone="Teldrassil"}
-N[3591]={n="Freja Nightwing",side="A",x=59,y=39.6,zone="Teldrassil"}
-N[3592]={n="Andiss",side="A",x=58.6,y=39.8,zone="Teldrassil"}
-N[3603]={n="Cyndra Kindwhisper",side="A",x=57.6,y=60.6,zone="Teldrassil"}
-N[3605]={n="Nadyia Maneweaver",side="A",x=41.8,y=49.4,zone="Teldrassil"}
-N[3606]={n="Alanna Raveneye",side="A",x=36.8,y=34.2,zone="Teldrassil"}
-N[3608]={n="Aldia",side="A",x=55.4,y=57.2,zone="Teldrassil"}
-N[3609]={n="Shalomon",side="A",x=56.2,y=59.4,zone="Teldrassil"}
-N[3610]={n="Jeena Featherbow",side="A",x=55.8,y=59.2,zone="Teldrassil"}
-N[3611]={n="Brannol Eaglemoon",side="A",x=56.2,y=60.2,zone="Teldrassil"}
-N[3612]={n="Sinda",side="A",x=56.2,y=59.4,zone="Teldrassil"}
-N[3613]={n="Meri Ironweave",side="A",x=56.2,y=59.4,zone="Teldrassil"}
-N[3614]={n="Narret Shadowgrove",side="A",x=55.2,y=57,zone="Teldrassil"}
-N[3621]={n="Kurll",side="H",x=21.8,y=52,zone="Azshara"}
-N[3625]={n="Rarck",side="H"}
-N[3658]={n="Lizzarik",side="B",x=52.4,y=30.6,zone="The Barrens"}
-N[3682]={n="Vrang Wildgore",side="H",x=43.8,y=12.2,zone="The Barrens"}
-N[3683]={n="Kiknikle",side="B",x=41.8,y=38.6,zone="The Barrens"}
-N[3684]={n="Pizznukle",side="B",x=41.8,y=38.4,zone="The Barrens"}
-N[3685]={n="Harb Clawhoof",side="H",x=47.4,y=58.4,zone="Mulgore"}
-N[3689]={n="Laer Stepperunner",side="H",x=21,y=31.8,zone="Thousand Needles"}
-N[3700]={n="Jadenvis Seawatcher",side="A",x=30.8,y=42,zone="Feralas"}
-N[3703]={n="Krulmoo Fullmoon",side="H",x=44.8,y=59.4,zone="The Barrens"}
-N[3704]={n="Mahani",side="H",x=44.8,y=59.4,zone="The Barrens"}
-N[3705]={n="Gahroot",side="H",x=44.8,y=59.4,zone="The Barrens"}
-N[3708]={n="Gruna",side="H",x=65.4,y=24,zone="Burning Steppes"}
-N[3779]={n="Syurana",side="A",x=51.4,y=29.8,zone="Winterspring"}
-N[3881]={n="Grimtak",side="H",x=51.2,y=42.4,zone="Durotar"}
-N[3882]={n="Zlagk",side="H",x=42.6,y=67.2,zone="Durotar"}
-N[3883]={n="Moodan Sungrain",side="H",x=44.2,y=78,zone="Mulgore"}
-N[3884]={n="Jhawna Oatwind",side="H",x=47.4,y=61.4,zone="Mulgore"}
-N[3933]={n="Hai'zan",side="H",x=55.4,y=73.6,zone="Durotar"}
-N[3934]={n="Innkeeper Boorand Plainswind",side="H",x=52,y=29.8,zone="The Barrens"}
-N[3935]={n="Toddrick",side="A",x=44.2,y=66,zone="Elwynn Forest"}
-N[3937]={n="Kira Songshine",side="A",x=33,y=51.2,zone="Elwynn Forest"}
-N[3948]={n="Honni Goldenoat",side="A",x=35.2,y=49.4,zone="Loch Modan"}
-N[3951]={n="Bhaldaran Ravenshade",side="A",x=50.2,y=67.2,zone="Ashenvale"}
-N[3952]={n="Aeolynn",side="A",x=34.4,y=49.4,zone="Ashenvale"}
-N[3953]={n="Tandaan Lightmane",side="A",x=34.4,y=49.8,zone="Ashenvale"}
-N[3954]={n="Dalria",side="A",x=35,y=52,zone="Ashenvale"}
-N[3955]={n="Shandrina",side="A",x=49.4,y=67,zone="Ashenvale"}
-N[3956]={n="Harklan Moongrove",side="A",x=50.8,y=67,zone="Ashenvale"}
-N[3958]={n="Lardan",side="A",x=34.8,y=49.8,zone="Ashenvale"}
-N[3959]={n="Nantar",side="A",x=37,y=49.8,zone="Ashenvale"}
-N[3960]={n="Ulthaan",side="A",x=50,y=66.4,zone="Ashenvale"}
-N[3961]={n="Maliynn",side="A",x=36.6,y=49.8,zone="Ashenvale"}
-N[3962]={n="Haljan Oakheart",side="A",x=34.8,y=50.8,zone="Ashenvale"}
-N[3967]={n="Aayndia Floralwind",side="A",x=35.8,y=52,zone="Ashenvale"}
-N[3969]={n="Fahran Silentblade",side="A",x=36.4,y=49.4,zone="Ashenvale"}
-N[3970]={n="Llana",side="A",x=35,y=48.4,zone="Ashenvale"}
-N[4043]={n="Galthuk",side="H",x=82,y=18.4,zone="Orgrimmar"}
-N[4047]={n="Zor Lonetree",side="H",x=38.2,y=38.2,zone="Orgrimmar"}
-N[4082]={n="Grawnal",side="H",x=45.8,y=58.6,zone="Stonetalon Mountains"}
-N[4083]={n="Jeeda",side="H",x=47.4,y=61.8,zone="Stonetalon Mountains"}
-N[4084]={n="Chylina",side="A",x=35.4,y=6.2,zone="Stonetalon Mountains"}
-N[4085]={n="Nizzik",side="B",x=62.6,y=40.2,zone="Stonetalon Mountains"}
-N[4086]={n="Veenix",side="B",x=58.2,y=51.6,zone="Stonetalon Mountains"}
-N[4160]={n="Ainethil",side="A",x=55,y=23.4,zone="Darnassus"}
-N[4164]={n="Cylania",side="A",x=58.4,y=45.8,zone="Darnassus"}
-N[4165]={n="Elissa Dumas",side="A",x=40,y=81.2,zone="Darnassus"}
-N[4167]={n="Dendrythis",side="A",x=33.8,y=15.6,zone="Darnassus"}
-N[4168]={n="Elynna",side="A",x=64.2,y=21.4,zone="Darnassus"}
-N[4169]={n="Jaeana",side="A",x=59.8,y=66.6,zone="Darnassus"}
-N[4170]={n="Ellandrieth",side="A",x=64.4,y=53,zone="Darnassus"}
-N[4171]={n="Merelyssa",side="A",x=64.4,y=59.8,zone="Darnassus"}
-N[4172]={n="Anadyia",side="A",x=55.6,y=89.4,zone="Darnassus"}
-N[4173]={n="Landria",side="A",x=63,y=67.6,zone="Darnassus"}
-N[4175]={n="Vinasia",side="A",x=60.4,y=72.2,zone="Darnassus"}
-N[4177]={n="Melea",side="A",x=56.4,y=77.8,zone="Darnassus"}
-N[4180]={n="Ealyshia Dewwhisper",side="A",x=60.8,y=72,zone="Darnassus"}
-N[4181]={n="Fyrenna",side="A",x=69.4,y=44.4,zone="Darnassus"}
-N[4182]={n="Dalmond",side="A",x=37.4,y=40.4,zone="Darkshore"}
-N[4183]={n="Naram Longclaw",side="A",x=37.4,y=40.4,zone="Darkshore"}
-N[4184]={n="Geenia Sunshadow",side="B",x=51.8,y=33,zone="Moonglade"}
-N[4185]={n="Shaldyn",side="A",x=38,y=40.6,zone="Darkshore"}
-N[4186]={n="Mavralyn",side="A",x=37,y=41.2,zone="Darkshore"}
-N[4187]={n="Harlon Thornguard",side="A",x=37,y=41.2,zone="Darkshore"}
-N[4188]={n="Illyanie",side="A",x=35.4,y=7,zone="Stonetalon Mountains"}
-N[4189]={n="Valdaron",side="A",x=38,y=40.6,zone="Darkshore"}
-N[4190]={n="Kyndri",side="A",x=36.8,y=44.4,zone="Darkshore"}
-N[4191]={n="Allyndia",side="A",x=37,y=43.4,zone="Darkshore"}
-N[4192]={n="Taldan",side="A",x=36.8,y=43.8,zone="Darkshore"}
-N[4193]={n="Grondal Moonbreeze",side="A",x=38.2,y=40.4,zone="Darkshore"}
-N[4194]={n="Ullanna",side="A",x=43.8,y=76.4,zone="Darkshore"}
-N[4195]={n="Tiyani",side="A",x=43.6,y=76.4,zone="Darkshore"}
-N[4200]={n="Laird",side="A",x=36.8,y=44.2,zone="Darkshore"}
-N[4203]={n="Ariyell Skyshadow",side="A",x=58.4,y=44.4,zone="Darnassus"}
-N[4210]={n="Alegorn",side="A",x=48.4,y=21.2,zone="Darnassus"}
-N[4211]={n="Dannelor",side="A",x=51.4,y=12.4,zone="Darnassus"}
-N[4212]={n="Telonis",side="A",x=64.4,y=21.4,zone="Darnassus"}
-N[4213]={n="Taladan",side="A",x=58.4,y=13.2,zone="Darnassus"}
-N[4216]={n="Chardryn",side="A",x=47.8,y=69.8,zone="Darnassus"}
-N[4217]={n="Mathrengyl Bearwalker",side="A",x=34.8,y=7.4,zone="Darnassus"}
-N[4220]={n="Cyroen",side="A",x=34,y=9.4,zone="Darnassus"}
-N[4221]={n="Talaelar",side="A",x=47,y=56.2,zone="Darnassus"}
-N[4222]={n="Voloren",side="A",x=46.4,y=56,zone="Darnassus"}
-N[4223]={n="Fyldan",side="A",x=48.4,y=21.4,zone="Darnassus"}
-N[4225]={n="Saenorion",side="A",x=63.2,y=22.6,zone="Darnassus"}
-N[4226]={n="Ulthir",side="A",x=55.4,y=23.2,zone="Darnassus"}
-N[4228]={n="Vaean",side="A",x=58.4,y=14.4,zone="Darnassus"}
-N[4229]={n="Mythrin'dir",side="A",x=61,y=17.4,zone="Darnassus"}
-N[4230]={n="Yldan",side="A",x=65.4,y=52.8,zone="Darnassus"}
-N[4231]={n="Kieran",side="A",x=65.2,y=60,zone="Darnassus"}
-N[4232]={n="Glorandiir",side="A",x=63.4,y=58.4,zone="Darnassus"}
-N[4233]={n="Mythidan",side="A",x=64.4,y=59.8,zone="Darnassus"}
-N[4234]={n="Andrus",side="A",x=55.4,y=88.2,zone="Darnassus"}
-N[4235]={n="Turian",side="A",x=62.2,y=66.6,zone="Darnassus"}
-N[4236]={n="Cyridan",side="A",x=52.8,y=80.6,zone="Darnassus"}
-N[4240]={n="Caynrus",side="A",x=56.4,y=76,zone="Darnassus"}
-N[4241]={n="Mydrannul",side="A",x=70,y=44.4,zone="Darnassus"}
-N[4254]={n="Geofram Bouldertoe",side="A",x=50.2,y=26,zone="Ironforge"}
-N[4255]={n="Brogus Thunderbrew",side="A"}
-N[4256]={n="Golnir Bouldertoe",side="A",x=51,y=26,zone="Ironforge"}
-N[4257]={n="Lana Thunderbrew",side="A"}
-N[4258]={n="Bengus Deepforge",side="A",x=51.4,y=42.2,zone="Ironforge"}
-N[4259]={n="Thurgrum Deepforge",side="A",x=50.6,y=43.8,zone="Ironforge"}
-N[4265]={n="Nyoma",side="A",x=57.2,y=61.2,zone="Teldrassil"}
-N[4266]={n="Danlyia",side="A",x=55.4,y=57,zone="Teldrassil"}
-N[4305]={n="Kriggon Talsone",side="A",x=36.2,y=90,zone="Westfall"}
-N[4307]={n="Heldan Galesong",side="A",x=37,y=56.2,zone="Darkshore"}
-N[4453]={n="Wizzle Brassbolts",side="B",x=78,y=77,zone="Thousand Needles"}
-N[4552]={n="Eunice Burch",side="H",x=62.2,y=44.4,zone="Undercity"}
-N[4553]={n="Ronald Burch",side="H",x=62.4,y=43.4,zone="Undercity"}
-N[4554]={n="Tawny Grisette",side="H",x=62.2,y=42.4,zone="Undercity"}
-N[4555]={n="Eleanor Rusk",side="H",x=68.2,y=48.4,zone="Undercity"}
-N[4556]={n="Gordon Wendham",side="H",x=61.4,y=41.4,zone="Undercity"}
-N[4557]={n="Louis Warren",side="H",x=61.4,y=41.2,zone="Undercity"}
-N[4558]={n="Lauren Newcomb",side="H",x=64,y=38,zone="Undercity"}
-N[4559]={n="Timothy Weldon",side="H",x=62.4,y=41,zone="Undercity"}
-N[4560]={n="Walter Ellingson",side="H",x=62.4,y=39,zone="Undercity"}
-N[4561]={n="Daniel Bartlett",side="H",x=64,y=38.8,zone="Undercity"}
-N[4562]={n="Thomas Mordan",side="H",x=69.4,y=39.2,zone="Undercity"}
-N[4569]={n="Charles Seaton",side="H",x=77,y=49.2,zone="Undercity"}
-N[4570]={n="Sydney Upton",side="H",x=69.8,y=27.4,zone="Undercity"}
-N[4571]={n="Morley Bates",side="H",x=72.2,y=26.6,zone="Undercity"}
-N[4574]={n="Lizbeth Cromwell",side="H",x=81,y=29.2,zone="Undercity"}
-N[4575]={n="Hannah Akeley",side="H",x=82,y=16.8,zone="Undercity"}
-N[4576]={n="Josef Gregorian",side="H",x=70.4,y=30.4,zone="Undercity"}
-N[4577]={n="Millie Gregorian",side="H",x=70.4,y=29.4,zone="Undercity"}
-N[4580]={n="Lucille Castleton",side="H",x=71,y=29.2,zone="Undercity"}
-N[4581]={n="Salazar Bloch",side="H",x=77.2,y=38.4,zone="Undercity"}
-N[4585]={n="Ezekiel Graves",side="H",x=75.4,y=51.4,zone="Undercity"}
-N[4586]={n="Graham Van Talen",side="H",x=75.2,y=72.4,zone="Undercity"}
-N[4587]={n="Elizabeth Van Talen",side="H",x=75.4,y=73.4,zone="Undercity"}
-N[4588]={n="Arthur Moore",side="H",x=70.2,y=57.4,zone="Undercity"}
-N[4589]={n="Joseph Moore",side="H",x=70.2,y=58,zone="Undercity"}
-N[4590]={n="Jonathan Chambers",side="H",x=69.4,y=61,zone="Undercity"}
-N[4591]={n="Mary Edras",side="H",x=73.4,y=55.4,zone="Undercity"}
-N[4592]={n="Nathaniel Steenwick",side="H",x=77,y=50.8,zone="Undercity"}
-N[4596]={n="James Van Brunt",side="H",x=61.2,y=29.2,zone="Undercity"}
-N[4597]={n="Samuel Van Brunt",side="H",x=61.2,y=29.4,zone="Undercity"}
-N[4599]={n="Sarah Killian",side="H",x=56.2,y=36.4,zone="Undercity"}
-N[4600]={n="Geoffrey Hartwell",side="H",x=58.4,y=32.4,zone="Undercity"}
-N[4601]={n="Francis Eliot",side="H",x=58.4,y=32.4,zone="Undercity"}
-N[4602]={n="Benijah Fenner",side="H",x=58.4,y=32.4,zone="Undercity"}
-N[4603]={n="Nicholas Atwood",side="H",x=62,y=27.6,zone="Undercity"}
-N[4604]={n="Abigail Sawyer",side="H",x=54.8,y=38,zone="Undercity"}
-N[4605]={n="Basil Frye",side="H",x=59.2,y=29.4,zone="Undercity"}
-N[4609]={n="Doctor Marsh",side="H",x=51.2,y=75,zone="Undercity"}
-N[4610]={n="Algernon",side="H",x=51.4,y=74.4,zone="Undercity"}
-N[4611]={n="Doctor Herbert Halsey",side="H",x=47.4,y=72,zone="Undercity"}
-N[4612]={n="Boyle",side="H",x=54.4,y=64.4,zone="Undercity"}
-N[4615]={n="Katrina Alliestar",side="H",x=54.4,y=49.4,zone="Undercity"}
-N[4616]={n="Lavinia Crowe",side="H",x=62.2,y=61.6,zone="Undercity"}
-N[4617]={n="Thaddeus Webb",side="H",x=61.4,y=60.4,zone="Undercity"}
-N[4730]={n="Lelanai",side="A",x=38.2,y=15.4,zone="Darnassus"}
-N[4731]={n="Zachariah Post",side="H",x=59.8,y=52.6,zone="Tirisfal Glades"}
-N[4775]={n="Felicia Doan",side="H",x=63.8,y=49.2,zone="Undercity"}
-N[4782]={n="Truk Wildbeard",side="A",x=14.4,y=42.4,zone="The Hinterlands"}
-N[4875]={n="Turhaw",side="H",x=45.4,y=51,zone="Thousand Needles"}
-N[4876]={n="Jawn Highmesa",side="H",x=46,y=51.4,zone="Thousand Needles"}
-N[4877]={n="Jandia",side="H",x=46,y=51.4,zone="Thousand Needles"}
-N[4878]={n="Montarr",side="H",x=45,y=50.4,zone="Thousand Needles"}
-N[4879]={n="Ogg'marr",side="H",x=36.6,y=31,zone="Dustwallow Marsh"}
-N[4883]={n="Krak",side="H",x=36.4,y=30.8,zone="Dustwallow Marsh"}
-N[4884]={n="Zulrg",side="H",x=36.2,y=31.6,zone="Dustwallow Marsh"}
-N[4885]={n="Gregor MacVince",side="A",x=65.2,y=51.4,zone="Dustwallow Marsh"}
-N[4886]={n="Hans Weston",side="A",x=64.6,y=50.4,zone="Dustwallow Marsh"}
-N[4888]={n="Marie Holdston",side="A",x=64.6,y=50,zone="Dustwallow Marsh"}
-N[4889]={n="Torq Ironblast",side="A",x=67.4,y=48,zone="Dustwallow Marsh"}
-N[4890]={n="Piter Verance",side="A",x=67.4,y=47.8,zone="Dustwallow Marsh"}
-N[4891]={n="Dwane Wertle",side="A",x=68.2,y=47.4,zone="Dustwallow Marsh"}
-N[4892]={n="Jensen Farran",side="A",x=67.8,y=49.8,zone="Dustwallow Marsh"}
-N[4893]={n="Bartender Lillian",side="A",x=66.6,y=45.2,zone="Dustwallow Marsh"}
-N[4894]={n="Craig Nollward",side="A",x=66.8,y=45.2,zone="Dustwallow Marsh"}
-N[4896]={n="Charity Mipsy",side="A",x=67.4,y=51.4,zone="Dustwallow Marsh"}
-N[4897]={n="Helenia Olden",side="A",x=66.4,y=51.4,zone="Dustwallow Marsh"}
-N[4899]={n="Uma Bartulm",side="A",x=64,y=47.6,zone="Dustwallow Marsh"}
-N[4954]={n="Uttnar",side="H",x=74.2,y=33.8,zone="Arathi Highlands"}
-N[4981]={n="Ben Trias",side="A",x=60.4,y=63.4,zone="Stormwind City"}
-N[5049]={n="Lyesa Steelbrow",side="A",x=36,y=84.2,zone="Ironforge"}
-N[5100]={n="Fillius Fizzlespinner",side="A",x=38.4,y=73.4,zone="Ironforge"}
-N[5101]={n="Bryllia Ironbrand",side="A",x=39,y=73.4,zone="Ironforge"}
-N[5102]={n="Dolman Steelfury",side="A",x=36,y=66,zone="Ironforge"}
-N[5103]={n="Grenil Steelfury",side="A",x=36,y=65.4,zone="Ironforge"}
-N[5106]={n="Bromiir Ormsen",side="A",x=30.8,y=58.4,zone="Ironforge"}
-N[5107]={n="Mangorn Flinthammer",side="A",x=30.8,y=58.4,zone="Ironforge"}
-N[5108]={n="Raena Flinthammer",side="A",x=32,y=58.8,zone="Ironforge"}
-N[5109]={n="Myra Tyrngaarde",side="A",x=23.4,y=62.4,zone="Ironforge"}
-N[5110]={n="Barim Jurgenstaad",side="A",x=19.4,y=56.2,zone="Ironforge"}
-N[5111]={n="Innkeeper Firebrew",side="A",x=18.4,y=51.4,zone="Ironforge"}
-N[5112]={n="Gwenna Firebrew",side="A",x=18.4,y=51.4,zone="Ironforge"}
-N[5119]={n="Hegnar Swiftaxe",side="A",x=61.8,y=88.4,zone="Ironforge"}
-N[5120]={n="Brenwyn Wintersteel",side="A",x=61.2,y=89,zone="Ironforge"}
-N[5121]={n="Kelomir Ironhand",side="A",x=62,y=89,zone="Ironforge"}
-N[5122]={n="Skolmin Goldfury",side="A",x=71.2,y=67.6,zone="Ironforge"}
-N[5123]={n="Bretta Goldfury",side="A",x=72.2,y=65.8,zone="Ironforge"}
-N[5124]={n="Sognar Cliffbeard",side="A",x=55.4,y=81.4,zone="Ironforge"}
-N[5125]={n="Dolkin Craghelm",side="A",x=54,y=88.6,zone="Ironforge"}
-N[5126]={n="Olthran Craghelm",side="A",x=54.4,y=87.2,zone="Ironforge"}
-N[5127]={n="Fimble Finespindle",side="A",x=39.4,y=33,zone="Ironforge"}
-N[5128]={n="Bombus Finespindle",side="A",x=39.2,y=33.2,zone="Ironforge"}
-N[5129]={n="Lissyphus Finespindle",side="A",x=54.4,y=88.2,zone="Ironforge"}
-N[5132]={n="Pithwick",side="A",x=38.2,y=74.4,zone="Ironforge"}
-N[5133]={n="Harick Boulderdrum",side="A",x=22.2,y=16,zone="Ironforge"}
-N[5134]={n="Jonivera Farmountain",side="A"}
-N[5135]={n="Svalbrad Farmountain",side="A"}
-N[5138]={n="Gwina Stonebranch",side="A",x=55.2,y=57.6,zone="Ironforge"}
-N[5139]={n="Kurdrum Barleybeard",side="A"}
-N[5140]={n="Edris Barleybeard",side="A",x=72,y=75.4,zone="Ironforge"}
-N[5150]={n="Nissa Firestone",side="A",x=54.8,y=58.4,zone="Ironforge"}
-N[5151]={n="Ginny Longberry",side="A",x=30.4,y=26.4,zone="Ironforge"}
-N[5152]={n="Bingus",side="A",x=22.4,y=16,zone="Ironforge"}
-N[5153]={n="Jormund Stonebrow",side="A",x=43.2,y=28.4,zone="Ironforge"}
-N[5154]={n="Poranna Snowbraid",side="A",x=43.2,y=28.4,zone="Ironforge"}
-N[5155]={n="Ingrys Stonebrow",side="A",x=38.4,y=5.4,zone="Ironforge"}
-N[5156]={n="Maeva Snowbraid",side="A",x=38.4,y=5.4,zone="Ironforge"}
-N[5157]={n="Gimble Thistlefuzz",side="A",x=59,y=45.2,zone="Ironforge"}
-N[5158]={n="Tilli Thistlefuzz",side="A",x=60.4,y=44.2,zone="Ironforge"}
-N[5159]={n="Daryl Riknussun",side="A",x=60,y=36.8,zone="Ironforge"}
-N[5160]={n="Emrul Riknussun",side="A",x=58.8,y=37.2,zone="Ironforge"}
-N[5162]={n="Tansy Puddlefizz",side="A",x=47.8,y=6.4,zone="Ironforge"}
-N[5163]={n="Burbik Gearspanner",side="A",x=46.4,y=27.2,zone="Ironforge"}
-N[5169]={n="Tynnus Venomsprout",side="A",x=52.4,y=13.6,zone="Ironforge"}
-N[5170]={n="Hjoldir Stoneblade",side="A",x=45.2,y=6.4,zone="Ironforge"}
-N[5173]={n="Alexander Calder",side="A",x=50.2,y=6.2,zone="Ironforge"}
-N[5174]={n="Springspindle Fizzlegear",side="A",x=68.2,y=43.4,zone="Ironforge"}
-N[5175]={n="Gearcutter Cogspinner",side="A",x=67.8,y=43,zone="Ironforge"}
-N[5177]={n="Tally Berryfizz",side="A",x=66.4,y=55.2,zone="Ironforge"}
-N[5178]={n="Soolie Berryfizz",side="A",x=66.4,y=54.4,zone="Ironforge"}
-N[5188]={n="Garyl",side="H",x=43.8,y=74.4,zone="Orgrimmar"}
-N[5189]={n="Thrumn",side="H",x=37.4,y=62,zone="Thunder Bluff"}
-N[5190]={n="Merill Pleasance",side="H",x=68.4,y=44.2,zone="Undercity"}
-N[5191]={n="Shalumon",side="A",x=69.4,y=23.2,zone="Darnassus"}
-N[5193]={n="Rebecca Laughlin",side="A",x=57.2,y=68.6,zone="Stormwind City"}
-N[5411]={n="Krinkle Goodsteel",side="B",x=51.4,y=28.8,zone="Tanaris"}
-N[5482]={n="Stephen Ryback",side="A",x=75.4,y=37.2,zone="Stormwind City"}
-N[5483]={n="Erika Tate",side="A",x=75.4,y=37.2,zone="Stormwind City"}
-N[5494]={n="Catherine Leland",side="A",x=45.4,y=57.6,zone="Stormwind City"}
-N[5499]={n="Lilyssia Nightbreeze",side="A",x=46.4,y=79.4,zone="Stormwind City"}
-N[5500]={n="Tel'Athir",side="A",x=45.8,y=78.2,zone="Stormwind City"}
-N[5503]={n="Eldraeith",side="A",x=46.4,y=78.4,zone="Stormwind City"}
-N[5508]={n="Strumner Flintheel",side="A",x=66,y=17.2,zone="Blasted Lands"}
-N[5509]={n="Kathrum Axehand",side="A",x=51.4,y=12.4,zone="Stormwind City"}
-N[5510]={n="Thulman Flintcrag",side="A",x=54.4,y=15.2,zone="Stormwind City"}
-N[5511]={n="Therum Deepforge",side="A",x=56.4,y=15.4,zone="Stormwind City"}
-N[5512]={n="Kaita Deepforge",side="A",x=56.4,y=16.2,zone="Stormwind City"}
-N[5513]={n="Gelman Stonehand",side="A",x=51,y=17.2,zone="Stormwind City"}
-N[5514]={n="Brooke Stonebraid",side="A",x=51.2,y=16.8,zone="Stormwind City"}
-N[5518]={n="Lilliam Sparkspindle",side="A",x=54.8,y=7.8,zone="Stormwind City"}
-N[5519]={n="Billibub Cogspinner",side="A",x=55.2,y=7.4,zone="Stormwind City"}
-N[5520]={n="Spackle Thornberry",side="A",x=25.4,y=77.8,zone="Stormwind City"}
-N[5564]={n="Simon Tanner",side="A",x=67.2,y=49.4,zone="Stormwind City"}
-N[5565]={n="Jillian Tanner",side="A",x=67.2,y=49.4,zone="Stormwind City"}
-N[5567]={n="Sellandus",side="A",x=42,y=76.2,zone="Stormwind City"}
-N[5569]={n="Fizzlebang Booms",side="A",x=72.4,y=52.8,zone="Ironforge"}
-N[5570]={n="Bruuk Barleybeard",side="A",x=72,y=75.4,zone="Ironforge"}
-N[5594]={n="Alchemist Pestlezugg",side="B",x=50.8,y=27,zone="Tanaris"}
-N[5611]={n="Barkeep Morag",side="H",x=54.4,y=68,zone="Orgrimmar"}
-N[5620]={n="Bartender Wental",side="A",x=26.8,y=43.2,zone="Redridge Mountains"}
-N[5688]={n="Innkeeper Renee",side="H",x=61.6,y=52,zone="Tirisfal Glades"}
-N[5695]={n="Vance Undergloom",side="H",x=61.6,y=51.4,zone="Tirisfal Glades"}
-N[5698]={n="Joanna Whitehall",side="H",x=52.8,y=36.4,zone="Undercity"}
-N[5748]={n="Killian Sanatha",side="H",x=33,y=17.4,zone="Silverpine Forest"}
-N[5749]={n="Kayla Smithe",side="H",x=30.8,y=66.4,zone="Tirisfal Glades"}
-N[5750]={n="Gina Lang",side="H",x=61.6,y=52.4,zone="Tirisfal Glades"}
-N[5753]={n="Martha Strain",side="H",x=85.4,y=15.4,zone="Undercity"}
-N[5754]={n="Zane Bradford",side="H",x=70,y=27.2,zone="Undercity"}
-N[5757]={n="Lilly",side="H",x=43,y=50.8,zone="Silverpine Forest"}
-N[5758]={n="Leo Sarn",side="H",x=53.8,y=82.6,zone="Silverpine Forest"}
-N[5759]={n="Nurse Neela",side="H",x=61.8,y=52.8,zone="Tirisfal Glades"}
-N[5783]={n="Kalldan Felmoon",side="B",x=51.8,y=55.4,zone="Kalimdor"}
-N[5784]={n="Waldor",side="B",x=51.8,y=55.4,zone="Kalimdor"}
-N[5811]={n="Kamari",side="H",x=63,y=45,zone="Orgrimmar"}
-N[5812]={n="Tumi",side="H",x=82.4,y=23.4,zone="Orgrimmar"}
-N[5814]={n="Innkeeper Thulbek",side="H",x=31.4,y=29.6,zone="Stranglethorn Vale"}
-N[5815]={n="Kurgul",side="H",x=47.4,y=46.8,zone="Orgrimmar"}
-N[5816]={n="Katis",side="H",x=44.2,y=48.4,zone="Orgrimmar"}
-N[5817]={n="Shimra",side="H",x=47.8,y=80.6,zone="Orgrimmar"}
-N[5819]={n="Mirelle Tremayne",side="H",x=61.2,y=28.4,zone="Undercity"}
-N[5820]={n="Gillian Moore",side="H",x=70.4,y=58.4,zone="Undercity"}
-N[5821]={n="Sheldon Von Croy",side="H",x=70.4,y=28.4,zone="Undercity"}
-N[5848]={n="Malgin Barleybrew",x=49.2,y=84.6,zone="The Barrens"}
-N[5870]={n="Krond",side="H",x=46.2,y=58.4,zone="Stonetalon Mountains"}
-N[5871]={n="Larhka",side="H",x=52,y=29.6,zone="The Barrens"}
-N[5886]={n="Gwyn Farrow",side="H",x=44,y=39.8,zone="Silverpine Forest"}
-N[5939]={n="Vira Younghoof",side="H",x=46,y=63.8,zone="Mulgore"}
-N[5940]={n="Harn Longcast",side="H",x=46.6,y=59.2,zone="Mulgore"}
-N[5942]={n="Zansoa",side="H",x=56,y=73.4,zone="Durotar"}
-N[5943]={n="Rawrk",side="H",x=54,y=42,zone="Durotar"}
-N[5944]={n="Yonada",side="H",x=45,y=59.2,zone="The Barrens"}
-N[6027]={n="Kitha",side="H",x=54.4,y=41.4,zone="Durotar"}
-N[6028]={n="Burkrum",side="H",x=73.4,y=60.4,zone="Ashenvale"}
-N[6091]={n="Dellylah",side="A",x=59.4,y=40.8,zone="Teldrassil"}
-N[6094]={n="Byancie",side="A",x=55.2,y=56.8,zone="Teldrassil"}
-N[6272]={n="Innkeeper Janene",side="A",x=66.4,y=45.2,zone="Dustwallow Marsh"}
-N[6286]={n="Zarrin",side="A",x=57,y=61.2,zone="Teldrassil"}
-N[6298]={n="Thelgrum Stonehammer",side="A",x=38.2,y=41.2,zone="Darkshore"}
-N[6299]={n="Delfrum Flintbeard",side="A",x=38.2,y=41,zone="Darkshore"}
-N[6300]={n="Elisa Steelhand",side="A",x=38.2,y=41.2,zone="Darkshore"}
-N[6301]={n="Gorbold Steelhand",side="A",x=38,y=41.2,zone="Darkshore"}
-N[6328]={n="Dannie Fizzwizzle",side="A",x=47.2,y=53.4,zone="Dun Morogh"}
-N[6367]={n="Donni Anthania",side="A",x=44.2,y=53.2,zone="Elwynn Forest"}
-N[6373]={n="Dane Winslow",side="A",x=50,y=42.6,zone="Elwynn Forest"}
-N[6374]={n="Cylina Darkheart",side="A",x=44.4,y=66,zone="Elwynn Forest"}
-N[6376]={n="Wren Darkspring",side="A",x=28.8,y=66.2,zone="Dun Morogh"}
-N[6382]={n="Jubahl Corpseseeker",side="A",x=52.8,y=6,zone="Ironforge"}
-N[6495]={n="Riznek",side="B",x=79.2,y=75.4,zone="Thousand Needles"}
-N[6496]={n="Brivelthwerp",side="B",x=77.4,y=77,zone="Thousand Needles"}
-N[6548]={n="Magus Tirth",side="B",x=78.2,y=75.8,zone="Thousand Needles"}
-N[6567]={n="Ghok'kah",side="H",x=35.2,y=30.8,zone="Dustwallow Marsh"}
-N[6568]={n="Vizzklick",side="B",x=51,y=27.4,zone="Tanaris"}
-N[6574]={n="Jun'ha",side="H",x=72.6,y=36.4,zone="Arathi Highlands"}
-N[6576]={n="Brienna Starglow",side="A",x=89,y=45.8,zone="Feralas"}
-N[6727]={n="Innkeeper Brianna",side="A",x=26.8,y=44.2,zone="Redridge Mountains"}
-N[6730]={n="Jinky Twizzlefixxit",side="B",x=77.6,y=77.8,zone="Thousand Needles"}
-N[6731]={n="Harlown Darkweave",side="A",x=18.2,y=60,zone="Ashenvale"}
-N[6734]={n="Innkeeper Hearthstove",side="A",x=35.4,y=48.4,zone="Loch Modan"}
-N[6735]={n="Innkeeper Saelienne",side="A",x=67,y=16.8,zone="Darnassus"}
-N[6736]={n="Innkeeper Keldamyr",side="A",x=55.6,y=59.8,zone="Teldrassil"}
-N[6737]={n="Innkeeper Shaussiy",side="A",x=37,y=44,zone="Darkshore"}
-N[6738]={n="Innkeeper Kimlya",side="A",x=37,y=49.2,zone="Ashenvale"}
-N[6739]={n="Innkeeper Bates",side="H",x=43.2,y=41.2,zone="Silverpine Forest"}
-N[6740]={n="Innkeeper Allison",side="A",x=52.4,y=65.6,zone="Stormwind City"}
-N[6741]={n="Innkeeper Norman",side="H",x=66.8,y=38.6,zone="Undercity"}
-N[6746]={n="Innkeeper Pala",side="H",x=45.4,y=63.4,zone="Thunder Bluff"}
-N[6747]={n="Innkeeper Kauth",side="H",x=46,y=64,zone="Mulgore"}
-N[6777]={n="Zan Shivsproket",side="B",x=86,y=80,zone="Alterac Mountains"}
+N[3413]={fh=1,n="Sovik",side="H",x=75,y=24.4,zone="Orgrimmar"}
+N[3477]={fa=-1,fh=1,n="Hraq",side="H",x=51.2,y=29,zone="The Barrens"}
+N[3478]={fa=-1,fh=1,n="Traugh",side="H",x=51.2,y=28.8,zone="The Barrens"}
+N[3479]={fa=-1,fh=1,n="Nargal Deatheye",side="H",x=51.2,y=29.2,zone="The Barrens"}
+N[3480]={fa=-1,fh=1,n="Moorane Hearthgrain",side="H",x=52.2,y=30.4,zone="The Barrens"}
+N[3481]={fa=-1,fh=1,n="Barg",side="H",x=51.6,y=30,zone="The Barrens"}
+N[3482]={fa=-1,fh=1,n="Tari'qa",side="H",x=51.6,y=30,zone="The Barrens"}
+N[3483]={fa=-1,fh=1,n="Jahan Hawkwing",side="H",x=51.2,y=29,zone="The Barrens"}
+N[3484]={fa=-1,fh=1,n="Kil'hala",side="H",x=52.2,y=31.6,zone="The Barrens"}
+N[3485]={fh=1,n="Wrahk",side="H",x=52.2,y=31.6,zone="The Barrens"}
+N[3486]={fa=-1,fh=1,n="Halija Whitestrider",side="H",x=52.2,y=31.8,zone="The Barrens"}
+N[3487]={fa=-1,fh=1,n="Kalyimah Stormcloud",side="H",x=52.2,y=32,zone="The Barrens"}
+N[3488]={fa=-1,fh=1,n="Uthrok",side="H",x=51,y=29,zone="The Barrens"}
+N[3489]={fh=1,n="Zargh",side="H",x=52.4,y=29.8,zone="The Barrens"}
+N[3490]={fa=-1,fh=1,n="Hula'mahi",side="H",x=51.4,y=30.2,zone="The Barrens"}
+N[3491]={fa=1,fh=1,n="Ironzar",side="B",x=62.2,y=37.4,zone="The Barrens"}
+N[3492]={fa=1,fh=1,n="Vexspindle",side="B",x=62.2,y=38.4,zone="The Barrens"}
+N[3493]={fa=1,fh=1,n="Grazlix",side="B",x=62.2,y=38.4,zone="The Barrens"}
+N[3494]={fa=1,fh=1,n="Tinkerwiz",side="B",x=62.6,y=36.2,zone="The Barrens"}
+N[3495]={fa=1,fh=1,n="Gagsprocket",side="B",x=62.6,y=36.2,zone="The Barrens"}
+N[3497]={fa=1,fh=1,n="Kilxx",side="B",x=62.8,y=38.2,zone="The Barrens"}
+N[3498]={fa=1,fh=1,n="Jazzik",side="B",x=61.8,y=38.8,zone="The Barrens"}
+N[3499]={fa=1,fh=1,n="Ranik",side="B",x=61.8,y=38.6,zone="The Barrens"}
+N[3500]={fh=1,n="Tarhus",side="H",x=74.6,y=44.8,zone="Feralas"}
+N[3518]={fa=1,fh=-1,n="Thomas Miller",side="A",x=52.8,y=62.2,zone="Stormwind City"}
+N[3522]={fh=1,n="Constance Brisboise",side="H",x=52.4,y=55.6,zone="Tirisfal Glades"}
+N[3523]={fh=1,n="Bowen Brisboise",side="H",x=52.4,y=55.6,zone="Tirisfal Glades"}
+N[3528]={fa=1,fh=-1,n="Pyrewood Armorer",side="A",x=46.2,y=71.4,zone="Silverpine Forest"}
+N[3529]={fa=1,fh=-1,n="Moonrage Armorer",side="A",x=45.4,y=74,zone="Silverpine Forest"}
+N[3530]={fa=1,fh=-1,n="Pyrewood Tailor",side="A",x=46,y=71.4,zone="Silverpine Forest"}
+N[3531]={fa=-1,fh=-1,n="Moonrage Tailor",x=46,y=71.4,zone="Silverpine Forest"}
+N[3532]={fa=1,fh=-1,n="Pyrewood Leatherworker",side="A",x=44,y=73.8,zone="Silverpine Forest"}
+N[3533]={fh=-1,n="Moonrage Leatherworker",x=44,y=73.8,zone="Silverpine Forest"}
+N[3534]={fa=1,fh=1,n="Wallace the Blind",side="B",x=43.8,y=84.4,zone="Silverpine Forest"}
+N[3536]={fa=1,fh=1,n="Kris Legace",side="B",x=80,y=39,zone="Hillsbrad Foothills"}
+N[3537]={fa=1,fh=1,n="Zixil",side="B",x=50.4,y=50.8,zone="Hillsbrad Foothills"}
+N[3539]={fa=-1,fh=1,n="Ott",side="H",x=60.4,y=26,zone="Hillsbrad Foothills"}
+N[3540]={fa=1,fh=-1,n="Hal McAllister",side="A",x=49.8,y=62.2,zone="Hillsbrad Foothills"}
+N[3541]={fa=1,n="Sarah Raycroft",side="A",x=49,y=55.2,zone="Hillsbrad Foothills"}
+N[3542]={fa=1,fh=-1,n="Jaysin Lanyda",side="A",x=50.8,y=59,zone="Hillsbrad Foothills"}
+N[3543]={fa=1,fh=-1,n="Robert Aebischer",side="A",x=51.2,y=57,zone="Hillsbrad Foothills"}
+N[3544]={fa=-1,fh=1,n="Jason Lemieux",side="H",x=59,y=20.2,zone="Hillsbrad Foothills"}
+N[3546]={fa=1,n="Bernie Heisten",side="A",x=63.4,y=16.8,zone="Blasted Lands"}
+N[3547]={fa=-1,fh=1,n="Hamlin Atkins",side="H",x=56.4,y=52.2,zone="Tirisfal Glades"}
+N[3548]={fa=-1,fh=1,n="Selina Weston",side="H",x=61.8,y=50,zone="Tirisfal Glades"}
+N[3549]={fa=-1,fh=1,n="Shelene Rhobart",side="H",x=65.4,y=60,zone="Tirisfal Glades"}
+N[3550]={fa=-1,fh=1,n="Martine Tramblay",side="H",x=65.8,y=59.4,zone="Tirisfal Glades"}
+N[3551]={fh=1,n="Patrice Dwyer",side="H",x=43,y=41.8,zone="Silverpine Forest"}
+N[3552]={fh=1,n="Alexandre Lefevre",side="H",x=44.6,y=39.2,zone="Silverpine Forest"}
+N[3553]={fh=1,n="Sebastian Meloche",side="H",x=43.2,y=41.2,zone="Silverpine Forest"}
+N[3554]={fh=1,n="Andrea Boynton",side="H",x=44.6,y=39.2,zone="Silverpine Forest"}
+N[3555]={fh=1,n="Johan Focht",side="H",x=43.4,y=40.4,zone="Silverpine Forest"}
+N[3556]={fh=1,n="Andrew Hilbert",side="H",x=43.2,y=40.6,zone="Silverpine Forest"}
+N[3557]={fh=1,n="Guillaume Sorouy",side="H",x=43.2,y=41,zone="Silverpine Forest"}
+N[3561]={fa=1,n="Kyrai",side="A",x=32.4,y=20,zone="Darnassus"}
+N[3562]={fa=1,n="Alaindia",side="A",x=29.4,y=70,zone="Darnassus"}
+N[3572]={fa=1,fh=1,n="Zizzek",side="B",x=62,y=39,zone="The Barrens"}
+N[3577]={fa=1,fh=0,n="Dalaran Brewmaster",side="A",x=62.4,y=64.4,zone="Silverpine Forest"}
+N[3578]={fa=1,fh=0,n="Dalaran Miner",side="A",x=62.4,y=62.6,zone="Silverpine Forest"}
+N[3587]={fa=1,n="Lyrai",side="A",x=59.4,y=41,zone="Teldrassil"}
+N[3588]={fa=1,n="Khardan Proudblade",side="A",x=58.8,y=39.6,zone="Teldrassil"}
+N[3589]={fa=1,n="Keina",side="A",x=59.4,y=41.2,zone="Teldrassil"}
+N[3590]={fa=1,n="Janna Brightmoon",side="A",x=59.4,y=41,zone="Teldrassil"}
+N[3591]={fa=1,n="Freja Nightwing",side="A",x=59,y=39.6,zone="Teldrassil"}
+N[3592]={fa=1,n="Andiss",side="A",x=58.6,y=39.8,zone="Teldrassil"}
+N[3603]={fa=1,n="Cyndra Kindwhisper",side="A",x=57.6,y=60.6,zone="Teldrassil"}
+N[3605]={fa=1,n="Nadyia Maneweaver",side="A",x=41.8,y=49.4,zone="Teldrassil"}
+N[3606]={fa=1,n="Alanna Raveneye",side="A",x=36.8,y=34.2,zone="Teldrassil"}
+N[3608]={fa=1,n="Aldia",side="A",x=55.4,y=57.2,zone="Teldrassil"}
+N[3609]={fa=1,n="Shalomon",side="A",x=56.2,y=59.4,zone="Teldrassil"}
+N[3610]={fa=1,n="Jeena Featherbow",side="A",x=55.8,y=59.2,zone="Teldrassil"}
+N[3611]={fa=1,n="Brannol Eaglemoon",side="A",x=56.2,y=60.2,zone="Teldrassil"}
+N[3612]={fa=1,n="Sinda",side="A",x=56.2,y=59.4,zone="Teldrassil"}
+N[3613]={fa=1,n="Meri Ironweave",side="A",x=56.2,y=59.4,zone="Teldrassil"}
+N[3614]={fa=1,n="Narret Shadowgrove",side="A",x=55.2,y=57,zone="Teldrassil"}
+N[3621]={fa=-1,fh=1,n="Kurll",side="H",x=21.8,y=52,zone="Azshara"}
+N[3625]={fa=-1,fh=1,n="Rarck",side="H"}
+N[3658]={fa=1,fh=1,n="Lizzarik",side="B",x=52.4,y=30.6,zone="The Barrens"}
+N[3682]={fh=1,n="Vrang Wildgore",side="H",x=43.8,y=12.2,zone="The Barrens"}
+N[3683]={fa=1,fh=1,n="Kiknikle",side="B",x=41.8,y=38.6,zone="The Barrens"}
+N[3684]={fa=1,fh=1,n="Pizznukle",side="B",x=41.8,y=38.4,zone="The Barrens"}
+N[3685]={fh=1,n="Harb Clawhoof",side="H",x=47.4,y=58.4,zone="Mulgore"}
+N[3689]={fa=-1,fh=1,n="Laer Stepperunner",side="H",x=21,y=31.8,zone="Thousand Needles"}
+N[3700]={fa=1,fh=-1,n="Jadenvis Seawatcher",side="A",x=30.8,y=42,zone="Feralas"}
+N[3703]={fh=1,n="Krulmoo Fullmoon",side="H",x=44.8,y=59.4,zone="The Barrens"}
+N[3704]={fh=1,n="Mahani",side="H",x=44.8,y=59.4,zone="The Barrens"}
+N[3705]={fh=1,n="Gahroot",side="H",x=44.8,y=59.4,zone="The Barrens"}
+N[3708]={fa=-1,fh=1,n="Gruna",side="H",x=65.4,y=24,zone="Burning Steppes"}
+N[3779]={fa=1,fh=-1,n="Syurana",side="A",x=51.4,y=29.8,zone="Winterspring"}
+N[3881]={fh=1,n="Grimtak",side="H",x=51.2,y=42.4,zone="Durotar"}
+N[3882]={fh=1,n="Zlagk",side="H",x=42.6,y=67.2,zone="Durotar"}
+N[3883]={fh=1,n="Moodan Sungrain",side="H",x=44.2,y=78,zone="Mulgore"}
+N[3884]={fh=1,n="Jhawna Oatwind",side="H",x=47.4,y=61.4,zone="Mulgore"}
+N[3933]={fh=1,n="Hai'zan",side="H",x=55.4,y=73.6,zone="Durotar"}
+N[3934]={fa=-1,fh=1,n="Innkeeper Boorand Plainswind",side="H",x=52,y=29.8,zone="The Barrens"}
+N[3935]={fa=1,n="Toddrick",side="A",x=44.2,y=66,zone="Elwynn Forest"}
+N[3937]={fa=1,fh=-1,n="Kira Songshine",side="A",x=33,y=51.2,zone="Elwynn Forest"}
+N[3948]={fa=1,n="Honni Goldenoat",side="A",x=35.2,y=49.4,zone="Loch Modan"}
+N[3951]={fa=1,fh=-1,n="Bhaldaran Ravenshade",side="A",x=50.2,y=67.2,zone="Ashenvale"}
+N[3952]={fa=1,n="Aeolynn",side="A",x=34.4,y=49.4,zone="Ashenvale"}
+N[3953]={fa=1,n="Tandaan Lightmane",side="A",x=34.4,y=49.8,zone="Ashenvale"}
+N[3954]={fa=1,fh=-1,n="Dalria",side="A",x=35,y=52,zone="Ashenvale"}
+N[3955]={fa=1,n="Shandrina",side="A",x=49.4,y=67,zone="Ashenvale"}
+N[3956]={fa=1,n="Harklan Moongrove",side="A",x=50.8,y=67,zone="Ashenvale"}
+N[3958]={fa=1,n="Lardan",side="A",x=34.8,y=49.8,zone="Ashenvale"}
+N[3959]={fa=1,n="Nantar",side="A",x=37,y=49.8,zone="Ashenvale"}
+N[3960]={fa=1,fh=-1,n="Ulthaan",side="A",x=50,y=66.4,zone="Ashenvale"}
+N[3961]={fa=1,n="Maliynn",side="A",x=36.6,y=49.8,zone="Ashenvale"}
+N[3962]={fa=1,n="Haljan Oakheart",side="A",x=34.8,y=50.8,zone="Ashenvale"}
+N[3967]={fa=1,n="Aayndia Floralwind",side="A",x=35.8,y=52,zone="Ashenvale"}
+N[3969]={fa=1,n="Fahran Silentblade",side="A",x=36.4,y=49.4,zone="Ashenvale"}
+N[3970]={fa=1,n="Llana",side="A",x=35,y=48.4,zone="Ashenvale"}
+N[4043]={fh=1,n="Galthuk",side="H",x=82,y=18.4,zone="Orgrimmar"}
+N[4047]={fa=-1,fh=1,n="Zor Lonetree",side="H",x=38.2,y=38.2,zone="Orgrimmar"}
+N[4082]={fh=1,n="Grawnal",side="H",x=45.8,y=58.6,zone="Stonetalon Mountains"}
+N[4083]={fh=1,n="Jeeda",side="H",x=47.4,y=61.8,zone="Stonetalon Mountains"}
+N[4084]={fa=1,fh=-1,n="Chylina",side="A",x=35.4,y=6.2,zone="Stonetalon Mountains"}
+N[4085]={fa=1,fh=1,n="Nizzik",side="B",x=62.6,y=40.2,zone="Stonetalon Mountains"}
+N[4086]={fa=1,fh=1,n="Veenix",side="B",x=58.2,y=51.6,zone="Stonetalon Mountains"}
+N[4160]={fa=1,n="Ainethil",side="A",x=55,y=23.4,zone="Darnassus"}
+N[4164]={fa=1,n="Cylania",side="A",x=58.4,y=45.8,zone="Darnassus"}
+N[4165]={fa=1,n="Elissa Dumas",side="A",x=40,y=81.2,zone="Darnassus"}
+N[4167]={fa=1,n="Dendrythis",side="A",x=33.8,y=15.6,zone="Darnassus"}
+N[4168]={fa=1,n="Elynna",side="A",x=64.2,y=21.4,zone="Darnassus"}
+N[4169]={fa=1,n="Jaeana",side="A",x=59.8,y=66.6,zone="Darnassus"}
+N[4170]={fa=1,n="Ellandrieth",side="A",x=64.4,y=53,zone="Darnassus"}
+N[4171]={fa=1,n="Merelyssa",side="A",x=64.4,y=59.8,zone="Darnassus"}
+N[4172]={fa=1,n="Anadyia",side="A",x=55.6,y=89.4,zone="Darnassus"}
+N[4173]={fa=1,n="Landria",side="A",x=63,y=67.6,zone="Darnassus"}
+N[4175]={fa=1,n="Vinasia",side="A",x=60.4,y=72.2,zone="Darnassus"}
+N[4177]={fa=1,n="Melea",side="A",x=56.4,y=77.8,zone="Darnassus"}
+N[4180]={fa=1,n="Ealyshia Dewwhisper",side="A",x=60.8,y=72,zone="Darnassus"}
+N[4181]={fa=1,n="Fyrenna",side="A",x=69.4,y=44.4,zone="Darnassus"}
+N[4182]={fa=1,n="Dalmond",side="A",x=37.4,y=40.4,zone="Darkshore"}
+N[4183]={fa=1,n="Naram Longclaw",side="A",x=37.4,y=40.4,zone="Darkshore"}
+N[4184]={fa=1,fh=1,n="Geenia Sunshadow",side="B",x=51.8,y=33,zone="Moonglade"}
+N[4185]={fa=1,n="Shaldyn",side="A",x=38,y=40.6,zone="Darkshore"}
+N[4186]={fa=1,n="Mavralyn",side="A",x=37,y=41.2,zone="Darkshore"}
+N[4187]={fa=1,n="Harlon Thornguard",side="A",x=37,y=41.2,zone="Darkshore"}
+N[4188]={fa=1,fh=-1,n="Illyanie",side="A",x=35.4,y=7,zone="Stonetalon Mountains"}
+N[4189]={fa=1,n="Valdaron",side="A",x=38,y=40.6,zone="Darkshore"}
+N[4190]={fa=1,fh=-1,n="Kyndri",side="A",x=36.8,y=44.4,zone="Darkshore"}
+N[4191]={fa=1,fh=-1,n="Allyndia",side="A",x=37,y=43.4,zone="Darkshore"}
+N[4192]={fa=1,fh=-1,n="Taldan",side="A",x=36.8,y=43.8,zone="Darkshore"}
+N[4193]={fa=1,n="Grondal Moonbreeze",side="A",x=38.2,y=40.4,zone="Darkshore"}
+N[4194]={fa=1,fh=-1,n="Ullanna",side="A",x=43.8,y=76.4,zone="Darkshore"}
+N[4195]={fa=1,fh=-1,n="Tiyani",side="A",x=43.6,y=76.4,zone="Darkshore"}
+N[4200]={fa=1,fh=-1,n="Laird",side="A",x=36.8,y=44.2,zone="Darkshore"}
+N[4203]={fa=1,n="Ariyell Skyshadow",side="A",x=58.4,y=44.4,zone="Darnassus"}
+N[4210]={fa=1,n="Alegorn",side="A",x=48.4,y=21.2,zone="Darnassus"}
+N[4211]={fa=1,n="Dannelor",side="A",x=51.4,y=12.4,zone="Darnassus"}
+N[4212]={fa=1,n="Telonis",side="A",x=64.4,y=21.4,zone="Darnassus"}
+N[4213]={fa=1,n="Taladan",side="A",x=58.4,y=13.2,zone="Darnassus"}
+N[4216]={fa=1,n="Chardryn",side="A",x=47.8,y=69.8,zone="Darnassus"}
+N[4217]={fa=1,n="Mathrengyl Bearwalker",side="A",x=34.8,y=7.4,zone="Darnassus"}
+N[4220]={fa=1,n="Cyroen",side="A",x=34,y=9.4,zone="Darnassus"}
+N[4221]={fa=1,n="Talaelar",side="A",x=47,y=56.2,zone="Darnassus"}
+N[4222]={fa=1,n="Voloren",side="A",x=46.4,y=56,zone="Darnassus"}
+N[4223]={fa=1,n="Fyldan",side="A",x=48.4,y=21.4,zone="Darnassus"}
+N[4225]={fa=1,n="Saenorion",side="A",x=63.2,y=22.6,zone="Darnassus"}
+N[4226]={fa=1,n="Ulthir",side="A",x=55.4,y=23.2,zone="Darnassus"}
+N[4228]={fa=1,n="Vaean",side="A",x=58.4,y=14.4,zone="Darnassus"}
+N[4229]={fa=1,n="Mythrin'dir",side="A",x=61,y=17.4,zone="Darnassus"}
+N[4230]={fa=1,n="Yldan",side="A",x=65.4,y=52.8,zone="Darnassus"}
+N[4231]={fa=1,n="Kieran",side="A",x=65.2,y=60,zone="Darnassus"}
+N[4232]={fa=1,n="Glorandiir",side="A",x=63.4,y=58.4,zone="Darnassus"}
+N[4233]={fa=1,n="Mythidan",side="A",x=64.4,y=59.8,zone="Darnassus"}
+N[4234]={fa=1,n="Andrus",side="A",x=55.4,y=88.2,zone="Darnassus"}
+N[4235]={fa=1,n="Turian",side="A",x=62.2,y=66.6,zone="Darnassus"}
+N[4236]={fa=1,n="Cyridan",side="A",x=52.8,y=80.6,zone="Darnassus"}
+N[4240]={fa=1,n="Caynrus",side="A",x=56.4,y=76,zone="Darnassus"}
+N[4241]={fa=1,n="Mydrannul",side="A",x=70,y=44.4,zone="Darnassus"}
+N[4254]={fa=1,n="Geofram Bouldertoe",side="A",x=50.2,y=26,zone="Ironforge"}
+N[4255]={fa=1,fh=-1,n="Brogus Thunderbrew",side="A"}
+N[4256]={fa=1,n="Golnir Bouldertoe",side="A",x=51,y=26,zone="Ironforge"}
+N[4257]={fa=1,fh=-1,n="Lana Thunderbrew",side="A"}
+N[4258]={fa=1,fh=-1,n="Bengus Deepforge",side="A",x=51.4,y=42.2,zone="Ironforge"}
+N[4259]={fa=1,fh=-1,n="Thurgrum Deepforge",side="A",x=50.6,y=43.8,zone="Ironforge"}
+N[4265]={fa=1,n="Nyoma",side="A",x=57.2,y=61.2,zone="Teldrassil"}
+N[4266]={fa=1,n="Danlyia",side="A",x=55.4,y=57,zone="Teldrassil"}
+N[4305]={fa=1,fh=-1,n="Kriggon Talsone",side="A",x=36.2,y=90,zone="Westfall"}
+N[4307]={fa=1,fh=-1,n="Heldan Galesong",side="A",x=37,y=56.2,zone="Darkshore"}
+N[4453]={fa=1,fh=1,n="Wizzle Brassbolts",side="B",x=78,y=77,zone="Thousand Needles"}
+N[4552]={fh=1,n="Eunice Burch",side="H",x=62.2,y=44.4,zone="Undercity"}
+N[4553]={fh=1,n="Ronald Burch",side="H",x=62.4,y=43.4,zone="Undercity"}
+N[4554]={fh=1,n="Tawny Grisette",side="H",x=62.2,y=42.4,zone="Undercity"}
+N[4555]={fh=1,n="Eleanor Rusk",side="H",x=68.2,y=48.4,zone="Undercity"}
+N[4556]={fh=1,n="Gordon Wendham",side="H",x=61.4,y=41.4,zone="Undercity"}
+N[4557]={fh=1,n="Louis Warren",side="H",x=61.4,y=41.2,zone="Undercity"}
+N[4558]={fh=1,n="Lauren Newcomb",side="H",x=64,y=38,zone="Undercity"}
+N[4559]={fh=1,n="Timothy Weldon",side="H",x=62.4,y=41,zone="Undercity"}
+N[4560]={fh=1,n="Walter Ellingson",side="H",x=62.4,y=39,zone="Undercity"}
+N[4561]={fh=1,n="Daniel Bartlett",side="H",x=64,y=38.8,zone="Undercity"}
+N[4562]={fh=1,n="Thomas Mordan",side="H",x=69.4,y=39.2,zone="Undercity"}
+N[4569]={fh=1,n="Charles Seaton",side="H",x=77,y=49.2,zone="Undercity"}
+N[4570]={fh=1,n="Sydney Upton",side="H",x=69.8,y=27.4,zone="Undercity"}
+N[4571]={fa=-1,fh=1,n="Morley Bates",side="H",x=72.2,y=26.6,zone="Undercity"}
+N[4574]={fh=1,n="Lizbeth Cromwell",side="H",x=81,y=29.2,zone="Undercity"}
+N[4575]={fh=1,n="Hannah Akeley",side="H",x=82,y=16.8,zone="Undercity"}
+N[4576]={fh=1,n="Josef Gregorian",side="H",x=70.4,y=30.4,zone="Undercity"}
+N[4577]={fh=1,n="Millie Gregorian",side="H",x=70.4,y=29.4,zone="Undercity"}
+N[4580]={fh=1,n="Lucille Castleton",side="H",x=71,y=29.2,zone="Undercity"}
+N[4581]={fa=-1,fh=1,n="Salazar Bloch",side="H",x=77.2,y=38.4,zone="Undercity"}
+N[4585]={fh=1,n="Ezekiel Graves",side="H",x=75.4,y=51.4,zone="Undercity"}
+N[4586]={fh=1,n="Graham Van Talen",side="H",x=75.2,y=72.4,zone="Undercity"}
+N[4587]={fh=1,n="Elizabeth Van Talen",side="H",x=75.4,y=73.4,zone="Undercity"}
+N[4588]={fh=1,n="Arthur Moore",side="H",x=70.2,y=57.4,zone="Undercity"}
+N[4589]={fh=1,n="Joseph Moore",side="H",x=70.2,y=58,zone="Undercity"}
+N[4590]={fh=1,n="Jonathan Chambers",side="H",x=69.4,y=61,zone="Undercity"}
+N[4591]={fh=1,n="Mary Edras",side="H",x=73.4,y=55.4,zone="Undercity"}
+N[4592]={fh=1,n="Nathaniel Steenwick",side="H",x=77,y=50.8,zone="Undercity"}
+N[4596]={fh=1,n="James Van Brunt",side="H",x=61.2,y=29.2,zone="Undercity"}
+N[4597]={fh=1,n="Samuel Van Brunt",side="H",x=61.2,y=29.4,zone="Undercity"}
+N[4599]={fh=1,n="Sarah Killian",side="H",x=56.2,y=36.4,zone="Undercity"}
+N[4600]={fh=1,n="Geoffrey Hartwell",side="H",x=58.4,y=32.4,zone="Undercity"}
+N[4601]={fh=1,n="Francis Eliot",side="H",x=58.4,y=32.4,zone="Undercity"}
+N[4602]={fh=1,n="Benijah Fenner",side="H",x=58.4,y=32.4,zone="Undercity"}
+N[4603]={fh=1,n="Nicholas Atwood",side="H",x=62,y=27.6,zone="Undercity"}
+N[4604]={fh=1,n="Abigail Sawyer",side="H",x=54.8,y=38,zone="Undercity"}
+N[4605]={fh=1,n="Basil Frye",side="H",x=59.2,y=29.4,zone="Undercity"}
+N[4609]={fh=1,n="Doctor Marsh",side="H",x=51.2,y=75,zone="Undercity"}
+N[4610]={fh=1,n="Algernon",side="H",x=51.4,y=74.4,zone="Undercity"}
+N[4611]={fh=1,n="Doctor Herbert Halsey",side="H",x=47.4,y=72,zone="Undercity"}
+N[4612]={fh=1,n="Boyle",side="H",x=54.4,y=64.4,zone="Undercity"}
+N[4615]={fh=1,n="Katrina Alliestar",side="H",x=54.4,y=49.4,zone="Undercity"}
+N[4616]={fh=1,n="Lavinia Crowe",side="H",x=62.2,y=61.6,zone="Undercity"}
+N[4617]={fh=1,n="Thaddeus Webb",side="H",x=61.4,y=60.4,zone="Undercity"}
+N[4730]={fa=1,n="Lelanai",side="A",x=38.2,y=15.4,zone="Darnassus"}
+N[4731]={fh=1,n="Zachariah Post",side="H",x=59.8,y=52.6,zone="Tirisfal Glades"}
+N[4775]={fh=1,n="Felicia Doan",side="H",x=63.8,y=49.2,zone="Undercity"}
+N[4782]={fa=1,n="Truk Wildbeard",side="A",x=14.4,y=42.4,zone="The Hinterlands"}
+N[4875]={fh=1,n="Turhaw",side="H",x=45.4,y=51,zone="Thousand Needles"}
+N[4876]={fh=1,n="Jawn Highmesa",side="H",x=46,y=51.4,zone="Thousand Needles"}
+N[4877]={fh=1,n="Jandia",side="H",x=46,y=51.4,zone="Thousand Needles"}
+N[4878]={fh=1,n="Montarr",side="H",x=45,y=50.4,zone="Thousand Needles"}
+N[4879]={fh=1,n="Ogg'marr",side="H",x=36.6,y=31,zone="Dustwallow Marsh"}
+N[4883]={fh=1,n="Krak",side="H",x=36.4,y=30.8,zone="Dustwallow Marsh"}
+N[4884]={fh=1,n="Zulrg",side="H",x=36.2,y=31.6,zone="Dustwallow Marsh"}
+N[4885]={fa=1,n="Gregor MacVince",side="A",x=65.2,y=51.4,zone="Dustwallow Marsh"}
+N[4886]={fa=1,n="Hans Weston",side="A",x=64.6,y=50.4,zone="Dustwallow Marsh"}
+N[4888]={fa=1,n="Marie Holdston",side="A",x=64.6,y=50,zone="Dustwallow Marsh"}
+N[4889]={fa=1,n="Torq Ironblast",side="A",x=67.4,y=48,zone="Dustwallow Marsh"}
+N[4890]={fa=1,n="Piter Verance",side="A",x=67.4,y=47.8,zone="Dustwallow Marsh"}
+N[4891]={fa=1,n="Dwane Wertle",side="A",x=68.2,y=47.4,zone="Dustwallow Marsh"}
+N[4892]={fa=1,n="Jensen Farran",side="A",x=67.8,y=49.8,zone="Dustwallow Marsh"}
+N[4893]={fa=1,n="Bartender Lillian",side="A",x=66.6,y=45.2,zone="Dustwallow Marsh"}
+N[4894]={fa=1,n="Craig Nollward",side="A",x=66.8,y=45.2,zone="Dustwallow Marsh"}
+N[4896]={fa=1,fh=-1,n="Charity Mipsy",side="A",x=67.4,y=51.4,zone="Dustwallow Marsh"}
+N[4897]={fa=1,n="Helenia Olden",side="A",x=66.4,y=51.4,zone="Dustwallow Marsh"}
+N[4899]={fa=1,n="Uma Bartulm",side="A",x=64,y=47.6,zone="Dustwallow Marsh"}
+N[4954]={fh=1,n="Uttnar",side="H",x=74.2,y=33.8,zone="Arathi Highlands"}
+N[4981]={fa=1,n="Ben Trias",side="A",x=60.4,y=63.4,zone="Stormwind City"}
+N[5049]={fa=1,n="Lyesa Steelbrow",side="A",x=36,y=84.2,zone="Ironforge"}
+N[5100]={fa=1,n="Fillius Fizzlespinner",side="A",x=38.4,y=73.4,zone="Ironforge"}
+N[5101]={fa=1,n="Bryllia Ironbrand",side="A",x=39,y=73.4,zone="Ironforge"}
+N[5102]={fa=1,n="Dolman Steelfury",side="A",x=36,y=66,zone="Ironforge"}
+N[5103]={fa=1,n="Grenil Steelfury",side="A",x=36,y=65.4,zone="Ironforge"}
+N[5106]={fa=1,n="Bromiir Ormsen",side="A",x=30.8,y=58.4,zone="Ironforge"}
+N[5107]={fa=1,n="Mangorn Flinthammer",side="A",x=30.8,y=58.4,zone="Ironforge"}
+N[5108]={fa=1,n="Raena Flinthammer",side="A",x=32,y=58.8,zone="Ironforge"}
+N[5109]={fa=1,fh=-1,n="Myra Tyrngaarde",side="A",x=23.4,y=62.4,zone="Ironforge"}
+N[5110]={fa=1,n="Barim Jurgenstaad",side="A",x=19.4,y=56.2,zone="Ironforge"}
+N[5111]={fa=1,n="Innkeeper Firebrew",side="A",x=18.4,y=51.4,zone="Ironforge"}
+N[5112]={fa=1,fh=-1,n="Gwenna Firebrew",side="A",x=18.4,y=51.4,zone="Ironforge"}
+N[5119]={fa=1,n="Hegnar Swiftaxe",side="A",x=61.8,y=88.4,zone="Ironforge"}
+N[5120]={fa=1,n="Brenwyn Wintersteel",side="A",x=61.2,y=89,zone="Ironforge"}
+N[5121]={fa=1,n="Kelomir Ironhand",side="A",x=62,y=89,zone="Ironforge"}
+N[5122]={fa=1,n="Skolmin Goldfury",side="A",x=71.2,y=67.6,zone="Ironforge"}
+N[5123]={fa=1,n="Bretta Goldfury",side="A",x=72.2,y=65.8,zone="Ironforge"}
+N[5124]={fa=1,fh=-1,n="Sognar Cliffbeard",side="A",x=55.4,y=81.4,zone="Ironforge"}
+N[5125]={fa=1,n="Dolkin Craghelm",side="A",x=54,y=88.6,zone="Ironforge"}
+N[5126]={fa=1,n="Olthran Craghelm",side="A",x=54.4,y=87.2,zone="Ironforge"}
+N[5127]={fa=1,n="Fimble Finespindle",side="A",x=39.4,y=33,zone="Ironforge"}
+N[5128]={fa=1,n="Bombus Finespindle",side="A",x=39.2,y=33.2,zone="Ironforge"}
+N[5129]={fa=1,n="Lissyphus Finespindle",side="A",x=54.4,y=88.2,zone="Ironforge"}
+N[5132]={fa=1,n="Pithwick",side="A",x=38.2,y=74.4,zone="Ironforge"}
+N[5133]={fa=1,n="Harick Boulderdrum",side="A",x=22.2,y=16,zone="Ironforge"}
+N[5134]={fa=1,fh=-1,n="Jonivera Farmountain",side="A"}
+N[5135]={fa=1,fh=-1,n="Svalbrad Farmountain",side="A"}
+N[5138]={fa=1,n="Gwina Stonebranch",side="A",x=55.2,y=57.6,zone="Ironforge"}
+N[5139]={fa=1,fh=-1,n="Kurdrum Barleybeard",side="A"}
+N[5140]={fa=1,n="Edris Barleybeard",side="A",x=72,y=75.4,zone="Ironforge"}
+N[5150]={fa=1,n="Nissa Firestone",side="A",x=54.8,y=58.4,zone="Ironforge"}
+N[5151]={fa=1,fh=-1,n="Ginny Longberry",side="A",x=30.4,y=26.4,zone="Ironforge"}
+N[5152]={fa=1,n="Bingus",side="A",x=22.4,y=16,zone="Ironforge"}
+N[5153]={fa=1,n="Jormund Stonebrow",side="A",x=43.2,y=28.4,zone="Ironforge"}
+N[5154]={fa=1,n="Poranna Snowbraid",side="A",x=43.2,y=28.4,zone="Ironforge"}
+N[5155]={fa=1,n="Ingrys Stonebrow",side="A",x=38.4,y=5.4,zone="Ironforge"}
+N[5156]={fa=1,n="Maeva Snowbraid",side="A",x=38.4,y=5.4,zone="Ironforge"}
+N[5157]={fa=1,n="Gimble Thistlefuzz",side="A",x=59,y=45.2,zone="Ironforge"}
+N[5158]={fa=1,n="Tilli Thistlefuzz",side="A",x=60.4,y=44.2,zone="Ironforge"}
+N[5159]={fa=1,n="Daryl Riknussun",side="A",x=60,y=36.8,zone="Ironforge"}
+N[5160]={fa=1,n="Emrul Riknussun",side="A",x=58.8,y=37.2,zone="Ironforge"}
+N[5162]={fa=1,n="Tansy Puddlefizz",side="A",x=47.8,y=6.4,zone="Ironforge"}
+N[5163]={fa=1,n="Burbik Gearspanner",side="A",x=46.4,y=27.2,zone="Ironforge"}
+N[5169]={fa=1,fh=-1,n="Tynnus Venomsprout",side="A",x=52.4,y=13.6,zone="Ironforge"}
+N[5170]={fa=1,n="Hjoldir Stoneblade",side="A",x=45.2,y=6.4,zone="Ironforge"}
+N[5173]={fa=1,n="Alexander Calder",side="A",x=50.2,y=6.2,zone="Ironforge"}
+N[5174]={fa=1,n="Springspindle Fizzlegear",side="A",x=68.2,y=43.4,zone="Ironforge"}
+N[5175]={fa=1,n="Gearcutter Cogspinner",side="A",x=67.8,y=43,zone="Ironforge"}
+N[5177]={fa=1,n="Tally Berryfizz",side="A",x=66.4,y=55.2,zone="Ironforge"}
+N[5178]={fa=1,n="Soolie Berryfizz",side="A",x=66.4,y=54.4,zone="Ironforge"}
+N[5188]={fh=1,n="Garyl",side="H",x=43.8,y=74.4,zone="Orgrimmar"}
+N[5189]={fh=1,n="Thrumn",side="H",x=37.4,y=62,zone="Thunder Bluff"}
+N[5190]={fh=1,n="Merill Pleasance",side="H",x=68.4,y=44.2,zone="Undercity"}
+N[5191]={fa=1,n="Shalumon",side="A",x=69.4,y=23.2,zone="Darnassus"}
+N[5193]={fa=1,n="Rebecca Laughlin",side="A",x=57.2,y=68.6,zone="Stormwind City"}
+N[5411]={fa=1,fh=1,n="Krinkle Goodsteel",side="B",x=51.4,y=28.8,zone="Tanaris"}
+N[5482]={fa=1,n="Stephen Ryback",side="A",x=75.4,y=37.2,zone="Stormwind City"}
+N[5483]={fa=1,n="Erika Tate",side="A",x=75.4,y=37.2,zone="Stormwind City"}
+N[5494]={fa=1,fh=-1,n="Catherine Leland",side="A",x=45.4,y=57.6,zone="Stormwind City"}
+N[5499]={fa=1,n="Lilyssia Nightbreeze",side="A",x=46.4,y=79.4,zone="Stormwind City"}
+N[5500]={fa=1,n="Tel'Athir",side="A",x=45.8,y=78.2,zone="Stormwind City"}
+N[5503]={fa=1,n="Eldraeith",side="A",x=46.4,y=78.4,zone="Stormwind City"}
+N[5508]={fa=1,n="Strumner Flintheel",side="A",x=66,y=17.2,zone="Blasted Lands"}
+N[5509]={fa=1,n="Kathrum Axehand",side="A",x=51.4,y=12.4,zone="Stormwind City"}
+N[5510]={fa=1,n="Thulman Flintcrag",side="A",x=54.4,y=15.2,zone="Stormwind City"}
+N[5511]={fa=1,n="Therum Deepforge",side="A",x=56.4,y=15.4,zone="Stormwind City"}
+N[5512]={fa=1,n="Kaita Deepforge",side="A",x=56.4,y=16.2,zone="Stormwind City"}
+N[5513]={fa=1,n="Gelman Stonehand",side="A",x=51,y=17.2,zone="Stormwind City"}
+N[5514]={fa=1,n="Brooke Stonebraid",side="A",x=51.2,y=16.8,zone="Stormwind City"}
+N[5518]={fa=1,n="Lilliam Sparkspindle",side="A",x=54.8,y=7.8,zone="Stormwind City"}
+N[5519]={fa=1,n="Billibub Cogspinner",side="A",x=55.2,y=7.4,zone="Stormwind City"}
+N[5520]={fa=1,n="Spackle Thornberry",side="A",x=25.4,y=77.8,zone="Stormwind City"}
+N[5564]={fa=1,n="Simon Tanner",side="A",x=67.2,y=49.4,zone="Stormwind City"}
+N[5565]={fa=1,n="Jillian Tanner",side="A",x=67.2,y=49.4,zone="Stormwind City"}
+N[5567]={fa=1,n="Sellandus",side="A",x=42,y=76.2,zone="Stormwind City"}
+N[5569]={fa=1,n="Fizzlebang Booms",side="A",x=72.4,y=52.8,zone="Ironforge"}
+N[5570]={fa=1,n="Bruuk Barleybeard",side="A",x=72,y=75.4,zone="Ironforge"}
+N[5594]={fa=1,fh=1,n="Alchemist Pestlezugg",side="B",x=50.8,y=27,zone="Tanaris"}
+N[5611]={fh=1,n="Barkeep Morag",side="H",x=54.4,y=68,zone="Orgrimmar"}
+N[5620]={fa=1,n="Bartender Wental",side="A",x=26.8,y=43.2,zone="Redridge Mountains"}
+N[5688]={fh=1,n="Innkeeper Renee",side="H",x=61.6,y=52,zone="Tirisfal Glades"}
+N[5695]={fh=1,n="Vance Undergloom",side="H",x=61.6,y=51.4,zone="Tirisfal Glades"}
+N[5698]={fh=1,n="Joanna Whitehall",side="H",x=52.8,y=36.4,zone="Undercity"}
+N[5748]={fh=1,n="Killian Sanatha",side="H",x=33,y=17.4,zone="Silverpine Forest"}
+N[5749]={fh=1,n="Kayla Smithe",side="H",x=30.8,y=66.4,zone="Tirisfal Glades"}
+N[5750]={fh=1,n="Gina Lang",side="H",x=61.6,y=52.4,zone="Tirisfal Glades"}
+N[5753]={fh=1,n="Martha Strain",side="H",x=85.4,y=15.4,zone="Undercity"}
+N[5754]={fh=1,n="Zane Bradford",side="H",x=70,y=27.2,zone="Undercity"}
+N[5757]={fh=1,n="Lilly",side="H",x=43,y=50.8,zone="Silverpine Forest"}
+N[5758]={fa=-1,fh=1,n="Leo Sarn",side="H",x=53.8,y=82.6,zone="Silverpine Forest"}
+N[5759]={fh=1,n="Nurse Neela",side="H",x=61.8,y=52.8,zone="Tirisfal Glades"}
+N[5783]={fa=1,fh=1,n="Kalldan Felmoon",side="B",x=51.8,y=55.4,zone="Kalimdor"}
+N[5784]={fa=1,fh=1,n="Waldor",side="B",x=51.8,y=55.4,zone="Kalimdor"}
+N[5811]={fh=1,n="Kamari",side="H",x=63,y=45,zone="Orgrimmar"}
+N[5812]={fh=1,n="Tumi",side="H",x=82.4,y=23.4,zone="Orgrimmar"}
+N[5814]={fa=-1,fh=1,n="Innkeeper Thulbek",side="H",x=31.4,y=29.6,zone="Stranglethorn Vale"}
+N[5815]={fh=1,n="Kurgul",side="H",x=47.4,y=46.8,zone="Orgrimmar"}
+N[5816]={fh=1,n="Katis",side="H",x=44.2,y=48.4,zone="Orgrimmar"}
+N[5817]={fh=1,n="Shimra",side="H",x=47.8,y=80.6,zone="Orgrimmar"}
+N[5819]={fh=1,n="Mirelle Tremayne",side="H",x=61.2,y=28.4,zone="Undercity"}
+N[5820]={fh=1,n="Gillian Moore",side="H",x=70.4,y=58.4,zone="Undercity"}
+N[5821]={fh=1,n="Sheldon Von Croy",side="H",x=70.4,y=28.4,zone="Undercity"}
+N[5848]={fh=-1,n="Malgin Barleybrew",x=49.2,y=84.6,zone="The Barrens"}
+N[5870]={fh=1,n="Krond",side="H",x=46.2,y=58.4,zone="Stonetalon Mountains"}
+N[5871]={fh=1,n="Larhka",side="H",x=52,y=29.6,zone="The Barrens"}
+N[5886]={fh=1,n="Gwyn Farrow",side="H",x=44,y=39.8,zone="Silverpine Forest"}
+N[5939]={fh=1,n="Vira Younghoof",side="H",x=46,y=63.8,zone="Mulgore"}
+N[5940]={fh=1,n="Harn Longcast",side="H",x=46.6,y=59.2,zone="Mulgore"}
+N[5942]={fh=1,n="Zansoa",side="H",x=56,y=73.4,zone="Durotar"}
+N[5943]={fh=1,n="Rawrk",side="H",x=54,y=42,zone="Durotar"}
+N[5944]={fh=1,n="Yonada",side="H",x=45,y=59.2,zone="The Barrens"}
+N[6027]={fh=1,n="Kitha",side="H",x=54.4,y=41.4,zone="Durotar"}
+N[6028]={fh=1,n="Burkrum",side="H",x=73.4,y=60.4,zone="Ashenvale"}
+N[6091]={fa=1,n="Dellylah",side="A",x=59.4,y=40.8,zone="Teldrassil"}
+N[6094]={fa=1,n="Byancie",side="A",x=55.2,y=56.8,zone="Teldrassil"}
+N[6272]={fa=1,n="Innkeeper Janene",side="A",x=66.4,y=45.2,zone="Dustwallow Marsh"}
+N[6286]={fa=1,n="Zarrin",side="A",x=57,y=61.2,zone="Teldrassil"}
+N[6298]={fa=1,n="Thelgrum Stonehammer",side="A",x=38.2,y=41.2,zone="Darkshore"}
+N[6299]={fa=1,n="Delfrum Flintbeard",side="A",x=38.2,y=41,zone="Darkshore"}
+N[6300]={fa=1,n="Elisa Steelhand",side="A",x=38.2,y=41.2,zone="Darkshore"}
+N[6301]={fa=1,n="Gorbold Steelhand",side="A",x=38,y=41.2,zone="Darkshore"}
+N[6328]={fa=1,n="Dannie Fizzwizzle",side="A",x=47.2,y=53.4,zone="Dun Morogh"}
+N[6367]={fa=1,n="Donni Anthania",side="A",x=44.2,y=53.2,zone="Elwynn Forest"}
+N[6373]={fa=1,n="Dane Winslow",side="A",x=50,y=42.6,zone="Elwynn Forest"}
+N[6374]={fa=1,n="Cylina Darkheart",side="A",x=44.4,y=66,zone="Elwynn Forest"}
+N[6376]={fa=1,n="Wren Darkspring",side="A",x=28.8,y=66.2,zone="Dun Morogh"}
+N[6382]={fa=1,n="Jubahl Corpseseeker",side="A",x=52.8,y=6,zone="Ironforge"}
+N[6495]={fa=1,fh=1,n="Riznek",side="B",x=79.2,y=75.4,zone="Thousand Needles"}
+N[6496]={fa=1,fh=1,n="Brivelthwerp",side="B",x=77.4,y=77,zone="Thousand Needles"}
+N[6548]={fa=1,fh=1,n="Magus Tirth",side="B",x=78.2,y=75.8,zone="Thousand Needles"}
+N[6567]={fh=1,n="Ghok'kah",side="H",x=35.2,y=30.8,zone="Dustwallow Marsh"}
+N[6568]={fa=1,fh=1,n="Vizzklick",side="B",x=51,y=27.4,zone="Tanaris"}
+N[6574]={fh=1,n="Jun'ha",side="H",x=72.6,y=36.4,zone="Arathi Highlands"}
+N[6576]={fa=1,fh=-1,n="Brienna Starglow",side="A",x=89,y=45.8,zone="Feralas"}
+N[6727]={fa=1,n="Innkeeper Brianna",side="A",x=26.8,y=44.2,zone="Redridge Mountains"}
+N[6730]={fa=1,fh=1,n="Jinky Twizzlefixxit",side="B",x=77.6,y=77.8,zone="Thousand Needles"}
+N[6731]={fa=1,n="Harlown Darkweave",side="A",x=18.2,y=60,zone="Ashenvale"}
+N[6734]={fa=1,n="Innkeeper Hearthstove",side="A",x=35.4,y=48.4,zone="Loch Modan"}
+N[6735]={fa=1,n="Innkeeper Saelienne",side="A",x=67,y=16.8,zone="Darnassus"}
+N[6736]={fa=1,n="Innkeeper Keldamyr",side="A",x=55.6,y=59.8,zone="Teldrassil"}
+N[6737]={fa=1,n="Innkeeper Shaussiy",side="A",x=37,y=44,zone="Darkshore"}
+N[6738]={fa=1,n="Innkeeper Kimlya",side="A",x=37,y=49.2,zone="Ashenvale"}
+N[6739]={fh=1,n="Innkeeper Bates",side="H",x=43.2,y=41.2,zone="Silverpine Forest"}
+N[6740]={fa=1,fh=-1,n="Innkeeper Allison",side="A",x=52.4,y=65.6,zone="Stormwind City"}
+N[6741]={fh=1,n="Innkeeper Norman",side="H",x=66.8,y=38.6,zone="Undercity"}
+N[6746]={fh=1,n="Innkeeper Pala",side="H",x=45.4,y=63.4,zone="Thunder Bluff"}
+N[6747]={fh=1,n="Innkeeper Kauth",side="H",x=46,y=64,zone="Mulgore"}
+N[6777]={fa=1,fh=1,n="Zan Shivsproket",side="B",x=86,y=80,zone="Alterac Mountains"}
 end)()
 ;(function()
-N[6779]={n="Smudge Thunderwood",side="B",x=86,y=79.4,zone="Alterac Mountains"}
-N[6790]={n="Innkeeper Trelayne",side="A",x=73.8,y=44.4,zone="Duskwood"}
-N[6791]={n="Innkeeper Wiley",side="B",x=62,y=39.4,zone="The Barrens"}
-N[6807]={n="Innkeeper Skindle",side="B",x=27,y=77.2,zone="Stranglethorn Vale"}
-N[6928]={n="Innkeeper Grosk",side="H",x=51.4,y=41.6,zone="Durotar"}
-N[6929]={n="Innkeeper Gryshka",side="H",x=54,y=68.6,zone="Orgrimmar"}
-N[6930]={n="Innkeeper Karakul",side="H",x=45,y=56.4,zone="Swamp of Sorrows"}
-N[7485]={n="Nargatt",side="H",x=32.2,y=29.2,zone="Stranglethorn Vale"}
-N[7564]={n="Marin Noggenfogger",side="B",x=51.8,y=28.4,zone="Tanaris"}
-N[7683]={n="Alessandro Luca",side="H",x=58.2,y=55.2,zone="Undercity"}
-N[7714]={n="Innkeeper Byula",side="H",x=45.4,y=59,zone="The Barrens"}
-N[7731]={n="Innkeeper Jayka",side="H",x=47.4,y=62,zone="Stonetalon Mountains"}
-N[7733]={n="Innkeeper Fizzgrimble",side="B",x=52.4,y=27.8,zone="Tanaris"}
-N[7736]={n="Innkeeper Shyria",side="A",x=31,y=43.4,zone="Feralas"}
-N[7737]={n="Innkeeper Greul",side="H",x=74.8,y=45,zone="Feralas"}
-N[7744]={n="Innkeeper Thulfram",side="A",x=13.4,y=41.8,zone="The Hinterlands"}
-N[7772]={n="Kalin Windflight",side="B",x=49.2,y=19.8,zone="Feralas"}
-N[7775]={n="Gregan Brewspewer",side="B",x=45,y=25.4,zone="Feralas"}
-N[7852]={n="Pratt McGrubben",side="A",x=30.4,y=42.8,zone="Feralas"}
-N[7854]={n="Jangdor Swiftstrider",side="H",x=74.4,y=42.8,zone="Feralas"}
-N[7867]={n="Thorkaf Dragoneye",side="H",x=62.4,y=57.4,zone="Badlands"}
-N[7879]={n="Quintis Jonespyre",side="A",x=32.4,y=43.8,zone="Feralas"}
-N[7940]={n="Darnall",side="B",x=51.4,y=33.2,zone="Moonglade"}
-N[7941]={n="Mardrack Greenwell",side="A",x=31,y=43.2,zone="Feralas"}
-N[7942]={n="Faralorn",side="A",x=30.6,y=43.4,zone="Feralas"}
-N[7943]={n="Harklane",side="A",x=31,y=46.2,zone="Feralas"}
-N[7945]={n="Savanne",side="A",x=31,y=46,zone="Feralas"}
-N[7947]={n="Vivianna",side="A",x=31.2,y=43.4,zone="Feralas"}
-N[7948]={n="Kylanna Windwhisper",side="A",x=32.4,y=43.8,zone="Feralas"}
-N[7952]={n="Zjolnir",side="H",x=55.2,y=75.4,zone="Durotar"}
-N[7955]={n="Milli Featherwhistle",side="A",x=49.2,y=48,zone="Dun Morogh"}
-N[7976]={n="Thalgus Thunderfist",side="A",x=60.8,y=89.8,zone="Ironforge"}
-N[7978]={n="Bimble Longberry",side="A",x=20.2,y=23.6,zone="Ironforge"}
-N[8116]={n="Ziggle Sparks",side="A",x=27.4,y=77.6,zone="Stranglethorn Vale"}
-N[8117]={n="Wizbang Booms",side="A",x=30.4,y=62,zone="Ironforge"}
-N[8118]={n="Lillian Singh",side="A",x=54.4,y=59.4,zone="Stormwind City"}
+N[6779]={fa=1,fh=1,n="Smudge Thunderwood",side="B",x=86,y=79.4,zone="Alterac Mountains"}
+N[6790]={fa=1,n="Innkeeper Trelayne",side="A",x=73.8,y=44.4,zone="Duskwood"}
+N[6791]={fa=1,fh=1,n="Innkeeper Wiley",side="B",x=62,y=39.4,zone="The Barrens"}
+N[6807]={fa=1,fh=1,n="Innkeeper Skindle",side="B",x=27,y=77.2,zone="Stranglethorn Vale"}
+N[6928]={fh=1,n="Innkeeper Grosk",side="H",x=51.4,y=41.6,zone="Durotar"}
+N[6929]={fa=-1,fh=1,n="Innkeeper Gryshka",side="H",x=54,y=68.6,zone="Orgrimmar"}
+N[6930]={fh=1,n="Innkeeper Karakul",side="H",x=45,y=56.4,zone="Swamp of Sorrows"}
+N[7485]={fh=1,n="Nargatt",side="H",x=32.2,y=29.2,zone="Stranglethorn Vale"}
+N[7564]={fa=1,fh=1,n="Marin Noggenfogger",side="B",x=51.8,y=28.4,zone="Tanaris"}
+N[7683]={fh=1,n="Alessandro Luca",side="H",x=58.2,y=55.2,zone="Undercity"}
+N[7714]={fh=1,n="Innkeeper Byula",side="H",x=45.4,y=59,zone="The Barrens"}
+N[7731]={fh=1,n="Innkeeper Jayka",side="H",x=47.4,y=62,zone="Stonetalon Mountains"}
+N[7733]={fa=1,fh=1,n="Innkeeper Fizzgrimble",side="B",x=52.4,y=27.8,zone="Tanaris"}
+N[7736]={fa=1,n="Innkeeper Shyria",side="A",x=31,y=43.4,zone="Feralas"}
+N[7737]={fh=1,n="Innkeeper Greul",side="H",x=74.8,y=45,zone="Feralas"}
+N[7744]={fa=1,n="Innkeeper Thulfram",side="A",x=13.4,y=41.8,zone="The Hinterlands"}
+N[7772]={fa=1,fh=1,n="Kalin Windflight",side="B",x=49.2,y=19.8,zone="Feralas"}
+N[7775]={fa=1,fh=1,n="Gregan Brewspewer",side="B",x=45,y=25.4,zone="Feralas"}
+N[7852]={fa=1,fh=-1,n="Pratt McGrubben",side="A",x=30.4,y=42.8,zone="Feralas"}
+N[7854]={fh=1,n="Jangdor Swiftstrider",side="H",x=74.4,y=42.8,zone="Feralas"}
+N[7867]={fa=-1,fh=1,n="Thorkaf Dragoneye",side="H",x=62.4,y=57.4,zone="Badlands"}
+N[7879]={fa=1,n="Quintis Jonespyre",side="A",x=32.4,y=43.8,zone="Feralas"}
+N[7940]={fa=1,fh=1,n="Darnall",side="B",x=51.4,y=33.2,zone="Moonglade"}
+N[7941]={fa=1,fh=-1,n="Mardrack Greenwell",side="A",x=31,y=43.2,zone="Feralas"}
+N[7942]={fa=1,fh=-1,n="Faralorn",side="A",x=30.6,y=43.4,zone="Feralas"}
+N[7943]={fa=1,n="Harklane",side="A",x=31,y=46.2,zone="Feralas"}
+N[7945]={fa=1,n="Savanne",side="A",x=31,y=46,zone="Feralas"}
+N[7947]={fa=1,fh=-1,n="Vivianna",side="A",x=31.2,y=43.4,zone="Feralas"}
+N[7948]={fa=1,n="Kylanna Windwhisper",side="A",x=32.4,y=43.8,zone="Feralas"}
+N[7952]={fh=1,n="Zjolnir",side="H",x=55.2,y=75.4,zone="Durotar"}
+N[7955]={fa=1,fh=-1,n="Milli Featherwhistle",side="A",x=49.2,y=48,zone="Dun Morogh"}
+N[7976]={fa=1,n="Thalgus Thunderfist",side="A",x=60.8,y=89.8,zone="Ironforge"}
+N[7978]={fa=1,fh=-1,n="Bimble Longberry",side="A",x=20.2,y=23.6,zone="Ironforge"}
+N[8116]={fa=1,n="Ziggle Sparks",side="A",x=27.4,y=77.6,zone="Stranglethorn Vale"}
+N[8117]={fa=1,n="Wizbang Booms",side="A",x=30.4,y=62,zone="Ironforge"}
+N[8118]={fa=1,n="Lillian Singh",side="A",x=54.4,y=59.4,zone="Stormwind City"}
 N[8121]={n="Jaxxil Sparks",x=61.8,y=39.4,zone="The Barrens"}
-N[8122]={n="Kizzak Sparks",side="H",x=74,y=27.6,zone="Orgrimmar"}
-N[8125]={n="Dirge Quikcleave",side="B",x=52.6,y=28,zone="Tanaris"}
-N[8126]={n="Nixx Sprocketspring",side="B",x=52.4,y=27.2,zone="Tanaris"}
-N[8129]={n="Wrinkle Goodsteel",side="B",x=50.8,y=27.6,zone="Tanaris"}
-N[8131]={n="Blizrik Buckshot",side="B",x=50.8,y=27.4,zone="Tanaris"}
-N[8137]={n="Gikkix",side="B",x=66.6,y=22,zone="Tanaris"}
-N[8139]={n="Jabbey",side="B",x=67,y=22,zone="Tanaris"}
-N[8143]={n="Loorana",side="H",x=75.4,y=43.8,zone="Feralas"}
-N[8145]={n="Sheendra Tallgrass",side="H",x=74.4,y=42.8,zone="Feralas"}
-N[8150]={n="Janet Hommers",side="A",x=66.2,y=6.6,zone="Desolace"}
-N[8152]={n="Harnor",side="H",x=51.2,y=53.2,zone="Desolace"}
-N[8153]={n="Narv Hidecrafter",side="H",x=55.2,y=56.2,zone="Desolace"}
-N[8157]={n="Logannas",side="A",x=32.4,y=44,zone="Feralas"}
-N[8158]={n="Bronk",side="H",x=76,y=43.4,zone="Feralas"}
-N[8159]={n="Worb Strongstitch",side="H",x=74.6,y=42.6,zone="Feralas"}
-N[8160]={n="Nioma",side="A",x=13.4,y=43.4,zone="The Hinterlands"}
-N[8161]={n="Harggan",side="A",x=13.4,y=44,zone="The Hinterlands"}
-N[8176]={n="Gharash",side="H",x=45.4,y=51.4,zone="Swamp of Sorrows"}
-N[8177]={n="Rartar",side="H",x=45.4,y=57,zone="Swamp of Sorrows"}
-N[8178]={n="Nina Lightbrew",side="A",x=66.8,y=18.2,zone="Blasted Lands"}
-N[8305]={n="Kixxle",side="B",x=50.2,y=37.8,zone="Wetlands"}
-N[8306]={n="Duhng",side="H",x=55.2,y=31.8,zone="The Barrens"}
-N[8307]={n="Tarban Hearthgrain",side="H",x=55,y=32,zone="The Barrens"}
-N[8358]={n="Hewa",side="H",x=45,y=55.4,zone="Thunder Bluff"}
-N[8359]={n="Ahanu",side="H",x=45.2,y=55.4,zone="Thunder Bluff"}
-N[8360]={n="Elki",side="H",x=44.6,y=57.8,zone="Thunder Bluff"}
-N[8361]={n="Chepi",side="H",x=36.4,y=54.4,zone="Thunder Bluff"}
-N[8362]={n="Kuruk",side="H",x=39,y=64.2,zone="Thunder Bluff"}
-N[8363]={n="Shadi Mistrunner",side="H",x=40.4,y=63.4,zone="Thunder Bluff"}
-N[8364]={n="Pakwa",side="H",x=39.2,y=63.8,zone="Thunder Bluff"}
-N[8398]={n="Ohanko",side="H",x=53.2,y=57.2,zone="Thunder Bluff"}
-N[8401]={n="Halpa",side="H",x=62.2,y=58.4,zone="Thunder Bluff"}
-N[8403]={n="Jeremiah Payson",side="H",x=67.4,y=43.4,zone="Undercity"}
-N[8404]={n="Xan'tish",side="H",x=18.4,y=60.2,zone="Orgrimmar"}
-N[8508]={n="Gretta Ganter",side="A",x=31.4,y=44.6,zone="Dun Morogh"}
-N[8665]={n="Shylenai",side="A",x=69.4,y=45.4,zone="Darnassus"}
-N[8666]={n="Lil Timmy",side="A",x=50.4,y=34,zone="Stormwind City"}
-N[8678]={n="Jubie Gadgetspring",side="B",x=45.2,y=90.8,zone="Azshara"}
-N[8679]={n="Knaz Blunderflame",side="B",x=51,y=35.2,zone="Stranglethorn Vale"}
-N[8681]={n="Outfitter Eric",side="A",x=43.2,y=29.2,zone="Ironforge"}
-N[8736]={n="Buzzek Bracketswing",side="B",x=52.2,y=27.4,zone="Tanaris"}
-N[8737]={n="Linken",side="B",x=44.6,y=8.2,zone="Un'Goro Crater"}
-N[8878]={n="Muuran",side="H",x=55.6,y=56.4,zone="Desolace"}
-N[8931]={n="Innkeeper Heather",side="A",x=52.8,y=53.4,zone="Westfall"}
-N[8934]={n="Christopher Hewen",side="A",x=52.2,y=52.8,zone="Westfall"}
-N[9087]={n="Bashana Runetotem",side="H",x=70.4,y=33,zone="Thunder Bluff"}
-N[9099]={n="Sraaz",side="A",x=39.2,y=40.2,zone="Ironforge"}
-N[9179]={n="Jazzrik",side="B",x=42.4,y=52.4,zone="Badlands"}
-N[9356]={n="Innkeeper Shul'kar",side="H",x=2.8,y=45.8,zone="Badlands"}
-N[9499]={n="Plugger Spazzring"}
-N[9501]={n="Innkeeper Adegwa",side="H",x=73.8,y=32.4,zone="Arathi Highlands"}
-N[9544]={n="Yuka Screwspigot",side="B",x=66,y=22,zone="Burning Steppes"}
-N[9548]={n="Cawind Trueaim",side="H",x=74.8,y=45.4,zone="Feralas"}
-N[9549]={n="Borand",side="H",x=45.2,y=59.2,zone="Stonetalon Mountains"}
-N[9551]={n="Starn",side="H",x=45,y=50.4,zone="Thousand Needles"}
-N[9552]={n="Zanara",side="H",x=35.4,y=30.2,zone="Dustwallow Marsh"}
-N[9553]={n="Nadia Vernon",side="H",x=44.8,y=39.6,zone="Silverpine Forest"}
-N[9555]={n="Mu'uta",side="H",x=72.4,y=33.4,zone="Arathi Highlands"}
-N[9636]={n="Kireena",side="H",x=51,y=53.4,zone="Desolace"}
-N[9676]={n="Tink Sprocketwhistle",side="A"}
-N[10118]={n="Nessa Shadowsong",side="A",x=56.2,y=92.4,zone="Teldrassil"}
-N[10216]={n="Gubber Blump",side="A",x=36,y=44.8,zone="Darkshore"}
-N[10266]={n="Ug'thok",side="H",x=80.4,y=23.4,zone="Orgrimmar"}
-N[10276]={n="Rotgath Stonebeard",side="A",x=51.2,y=42.4,zone="Ironforge"}
-N[10277]={n="Groum Stonebeard",side="A",x=51.2,y=42.4,zone="Ironforge"}
-N[10278]={n="Thrag Stonehoof",side="H",x=39,y=57.8,zone="Thunder Bluff"}
-N[10293]={n="Dulciea Frostmoon",side="A",x=30.8,y=43.2,zone="Feralas"}
-N[10361]={n="Gruul Darkblade",side="H",x=22.2,y=51.2,zone="Azshara"}
-N[10364]={n="Yaelika Farclaw",side="H"}
-N[10367]={n="Shrye Ragefist",side="H"}
-N[10369]={n="Trayexir",side="H",x=56.4,y=73.2,zone="Durotar"}
-N[10379]={n="Altsoba Ragetotem",side="H",x=34.8,y=53,zone="Felwood"}
-N[10380]={n="Sanuye Runetotem",side="H",x=45,y=59,zone="The Barrens"}
-N[10618]={n="Rivern Frostwind",side="A",x=49.8,y=9.8,zone="Winterspring"}
-N[10667]={n="Chromie",side="B",x=39.4,y=66.8,zone="Western Plaguelands"}
-N[10856]={n="Argent Quartermaster Hasana",side="B",x=83.2,y=68.2,zone="Tirisfal Glades"}
-N[10857]={n="Argent Quartermaster Lightspark",side="B",x=42.8,y=83.8,zone="Western Plaguelands"}
-N[10993]={n="Twizwick Sprocketgrind",side="H",x=58.6,y=39.6,zone="Mulgore"}
-N[11017]={n="Roxxik",side="H",x=75.4,y=24.8,zone="Orgrimmar"}
-N[11025]={n="Mukdrak",side="H",x=52.2,y=40.8,zone="Durotar"}
-N[11026]={n="Sprite Jumpsprocket",side="A",x=54.6,y=8,zone="Stormwind City"}
-N[11028]={n="Jemma Quikswitch",side="A",x=67.4,y=43.8,zone="Ironforge"}
-N[11029]={n="Trixie Quikswitch",side="A",x=67.4,y=43.2,zone="Ironforge"}
-N[11031]={n="Franklin Lloyd",side="H",x=75.4,y=73,zone="Undercity"}
-N[11037]={n="Jenna Lemkenilli",side="A",x=38.2,y=41,zone="Darkshore"}
-N[11038]={n="Caretaker Alen",side="B",x=79.4,y=63.8,zone="Eastern Plaguelands"}
-N[11041]={n="Milla Fairancora",side="A",x=55.2,y=21.4,zone="Darnassus"}
-N[11042]={n="Sylvanna Forestmoon",side="A",x=55.6,y=23.4,zone="Darnassus"}
-N[11044]={n="Doctor Martin Felben",side="H",x=45.8,y=73.2,zone="Undercity"}
-N[11046]={n="Whuut",side="H",x=55.8,y=33.2,zone="Orgrimmar"}
-N[11047]={n="Kray",side="H",x=46.8,y=33.4,zone="Thunder Bluff"}
-N[11048]={n="Victor Ward",side="H",x=70.2,y=29.6,zone="Undercity"}
-N[11049]={n="Rhiannon Davis",side="H",x=70.2,y=30.2,zone="Undercity"}
-N[11050]={n="Trianna",side="A",x=63.4,y=21.4,zone="Darnassus"}
-N[11051]={n="Vhan",side="H",x=43.4,y=43.6,zone="Thunder Bluff"}
-N[11052]={n="Timothy Worthington",side="A",x=66.2,y=51.6,zone="Dustwallow Marsh"}
-N[11056]={n="Alchemist Arbington",side="A",x=42.6,y=83.8,zone="Western Plaguelands"}
-N[11057]={n="Apothecary Dithers",side="H",x=83.2,y=69.2,zone="Tirisfal Glades"}
-N[11065]={n="Thonys Pillarstone",side="A",x=59,y=45.2,zone="Ironforge"}
-N[11066]={n="Jhag",side="H",x=53.4,y=38.2,zone="Orgrimmar"}
-N[11067]={n="Malcomb Wynn",side="H",x=62.2,y=60.4,zone="Undercity"}
-N[11068]={n="Betty Quin",side="A",x=43.2,y=63.8,zone="Stormwind City"}
-N[11070]={n="Lalina Summermoon",side="A",x=58.4,y=13.2,zone="Darnassus"}
-N[11071]={n="Mot Dawnstrider",side="H",x=43.8,y=37.8,zone="Thunder Bluff"}
-N[11072]={n="Kitta Firewind",side="A",x=64.8,y=70.4,zone="Elwynn Forest"}
-N[11073]={n="Annora",side="B"}
-N[11074]={n="Hgarth",side="H",x=49.2,y=57.2,zone="Stonetalon Mountains"}
-N[11081]={n="Faldron",side="A",x=64.4,y=21.4,zone="Darnassus"}
-N[11083]={n="Darianna",side="A",x=64.2,y=21.6,zone="Darnassus"}
-N[11084]={n="Tarn",side="H",x=42.4,y=43,zone="Thunder Bluff"}
-N[11096]={n="Randal Worth",side="A",x=67.4,y=49.4,zone="Stormwind City"}
-N[11098]={n="Hahrana Ironhide",side="H",x=74.4,y=43,zone="Feralas"}
-N[11103]={n="Innkeeper Lyshaerya",side="A",x=66.2,y=6.6,zone="Desolace"}
-N[11106]={n="Innkeeper Sikewa",side="H",x=24,y=68.2,zone="Desolace"}
-N[11116]={n="Innkeeper Abeqwa",side="H",x=46,y=51.4,zone="Thousand Needles"}
-N[11118]={n="Innkeeper Vizzie",side="B",x=61.2,y=38.8,zone="Winterspring"}
-N[11137]={n="Xai'ander",side="A",x=35.8,y=52,zone="Ashenvale"}
-N[11182]={n="Nixxrak",side="B",x=61.6,y=37.8,zone="Winterspring"}
-N[11183]={n="Blixxrak",side="B",x=61.6,y=37.8,zone="Winterspring"}
-N[11184]={n="Wixxrak",side="B",x=61.6,y=38,zone="Winterspring"}
-N[11185]={n="Xizzer Fizzbolt",side="B",x=60.8,y=38.4,zone="Winterspring"}
-N[11186]={n="Lunnix Sprocketslip",side="B",x=61.6,y=38.4,zone="Winterspring"}
-N[11187]={n="Himmik",side="B",x=61.2,y=39,zone="Winterspring"}
-N[11188]={n="Evie Whirlbrew",side="B",x=60.8,y=37.8,zone="Winterspring"}
-N[11189]={n="Qia",side="B",x=61.2,y=37.2,zone="Winterspring"}
-N[11278]={n="Magnus Frostwake",side="B",x=68,y=77.4,zone="Western Plaguelands"}
-N[11287]={n="Baker Masterson",side="B",x=69.4,y=79.4,zone="Western Plaguelands"}
-N[11536]={n="Quartermaster Miranda Breechlock",side="B",x=81.4,y=60,zone="Eastern Plaguelands"}
-N[11555]={n="Gorn One Eye",x=65.2,y=2.6,zone="Felwood"}
-N[11557]={n="Meilosh",side="B",x=65.4,y=2.8,zone="Felwood"}
-N[11703]={n="Graw Cornerstone",side="A",x=41.4,y=74.4,zone="Searing Gorge"}
-N[11874]={n="Masat T'andr",side="B",x=26.2,y=31.4,zone="Swamp of Sorrows"}
-N[12019]={n="Dargon",side="B",x=48.4,y=38.8,zone="Moonglade"}
-N[12021]={n="Daeolyn Summerleaf",side="B",x=45.2,y=34.4,zone="Moonglade"}
-N[12022]={n="Lorelae Wintersong",side="B",x=48.2,y=40,zone="Moonglade"}
-N[12023]={n="Kharedon",side="B",x=56.4,y=30,zone="Moonglade"}
-N[12024]={n="Meliri",side="B",x=51.2,y=42.2,zone="Moonglade"}
-N[12026]={n="My'lanna",side="B",x=44.4,y=34,zone="Moonglade"}
-N[12027]={n="Tukk",side="H",x=25,y=71.8,zone="Desolace"}
-N[12028]={n="Lah'Mawhani",side="H",x=23,y=71.6,zone="Desolace"}
-N[12029]={n="Narianna",side="B",x=53.2,y=42.6,zone="Moonglade"}
-N[12031]={n="Mai'Lahii",side="H",x=22.6,y=72,zone="Desolace"}
-N[12033]={n="Wulan",side="H",x=26.2,y=69.8,zone="Desolace"}
-N[12043]={n="Kulwia",side="H",x=45.4,y=59.4,zone="Stonetalon Mountains"}
-N[12045]={n="Hae'Wilani",side="H",x=25.8,y=71,zone="Desolace"}
-N[12096]={n="Stormpike Quartermaster",side="A"}
-N[12097]={n="Frostwolf Quartermaster",side="H"}
-N[12196]={n="Innkeeper Kaylisk",side="H",x=74,y=60.6,zone="Ashenvale"}
-N[12245]={n="Vendor-Tron 1000",side="B",x=60.2,y=38.2,zone="Desolace"}
-N[12246]={n="Super-Seller 680",side="B",x=40.4,y=79.2,zone="Desolace"}
-N[12384]={n="Augustus the Touched",side="B",x=14.4,y=33.4,zone="Eastern Plaguelands"}
-N[12776]={n="Hraug",side="H",x=40.6,y=68.4,zone="Durotar"}
-N[12777]={n="Captain Dirgehammer",side="A"}
-N[12781]={n="Master Sergeant Biggins",side="A"}
-N[12782]={n="Captain O'Neal",side="A"}
-N[12783]={n="Lieutenant Karter",side="A"}
-N[12784]={n="Lieutenant Jackspring",side="A"}
-N[12785]={n="Sergeant Major Clate",side="A"}
-N[12792]={n="Lady Palanseer",side="H"}
-N[12793]={n="Brave Stonehide",side="H"}
-N[12794]={n="Stone Guard Zarg",side="H"}
-N[12795]={n="First Sergeant Hola'mahi"}
-N[12796]={n="Raider Bork",side="H"}
-N[12799]={n="Sergeant Ba'sha",side="H",x=41.4,y=68.4,zone="Orgrimmar"}
-N[12805]={n="Officer Areyn",side="A",x=73.4,y=52.6,zone="Stormwind City"}
-N[12807]={n="Greshka",side="H",x=48.4,y=55.4,zone="Swamp of Sorrows"}
-N[12919]={n="Nat Pagle",side="B",x=58.4,y=60,zone="Dustwallow Marsh"}
-N[12941]={n="Jase Farlane",side="B",x=80.4,y=57.6,zone="Eastern Plaguelands"}
-N[12942]={n="Leonard Porter",side="A",x=43,y=84.2,zone="Western Plaguelands"}
-N[12943]={n="Werg Thickblade",side="H",x=83.2,y=69.6,zone="Tirisfal Glades"}
-N[12944]={n="Lokhtos Darkbargainer",side="B"}
-N[12956]={n="Zannok Hidepiercer",side="B",x=81.8,y=17.8,zone="Silithus"}
-N[12957]={n="Blimo Gadgetspring",side="B",x=45.2,y=90.8,zone="Azshara"}
-N[12958]={n="Gigget Zipcoil",side="B",x=34.4,y=38.4,zone="The Hinterlands"}
-N[12959]={n="Nergal",side="B",x=43.2,y=7.8,zone="Un'Goro Crater"}
-N[12960]={n="Christi Galvanis",side="A",x=66.4,y=6.8,zone="Desolace"}
-N[12962]={n="Wik'Tar",side="H",x=11.8,y=34,zone="Ashenvale"}
-N[13018]={n="Nipsy",side="A",x=0,y=0,zone="Azeroth"}
-N[13216]={n="Gaelden Hammersmith",side="A"}
-N[13217]={n="Thanthaldis Snowgleam",side="A",x=39.4,y=81.4,zone="Alterac Mountains"}
-N[13218]={n="Grunnda Wolfheart",side="H"}
-N[13219]={n="Jekyll Flandring",side="H",x=62.8,y=59.4,zone="Alterac Mountains"}
-N[13278]={n="Duke Hydraxis",side="B",x=79.2,y=73.4,zone="Azshara"}
-N[13418]={n="Kaymard Copperpinch",side="H",x=53.2,y=66.4,zone="Orgrimmar"}
-N[13420]={n="Penney Copperpinch",side="H",x=52.8,y=66.6,zone="Orgrimmar"}
-N[13429]={n="Nardstrum Copperpinch",side="H",x=67.2,y=38.4,zone="Undercity"}
-N[13430]={n="Jaycrue Copperpinch",side="H",x=67.2,y=38.4,zone="Undercity"}
-N[13431]={n="Whulwert Copperpinch",side="H",x=43.4,y=57.6,zone="Thunder Bluff"}
-N[13432]={n="Seersa Copperpinch",side="H",x=43.4,y=57.8,zone="Thunder Bluff"}
-N[13433]={n="Wulmort Jinglepocket",side="A",x=33.4,y=65.4,zone="Ironforge"}
-N[13434]={n="Macey Jinglepocket",side="A",x=32.4,y=67.4,zone="Ironforge"}
-N[13435]={n="Khole Jinglepocket",side="A",x=55,y=59.2,zone="Stormwind City"}
-N[13436]={n="Guchie Jinglepocket",side="A",x=55,y=60,zone="Stormwind City"}
-N[13476]={n="Balai Lok'Wein",side="H",x=36.4,y=30.4,zone="Dustwallow Marsh"}
-N[13698]={n="Keeper Marandis",side="A",x=63.8,y=10.6,zone="Desolace"}
-N[13699]={n="Selendra",side="B",x=26.8,y=77.6,zone="Desolace"}
-N[14301]={n="Brinna Valanaar",side="A",x=12,y=78.2,zone="Azshara"}
-N[14322]={n="Stomper Kreeg",side="B"}
-N[14337]={n="Field Repair Bot 74A",side="B"}
-N[14371]={n="Shen'dralar Provisioner",side="B"}
-N[14437]={n="Gorzeeki Wildeyes",side="B",x=12.4,y=31.4,zone="Burning Steppes"}
-N[14450]={n="Orphan Matron Nightingale",side="A",x=47.2,y=38.4,zone="Stormwind City"}
-N[14480]={n="Alowicious Czervik",side="H",x=51.8,y=69.8,zone="Orgrimmar"}
-N[14481]={n="Emmithue Smails",side="A",x=53.8,y=65.2,zone="Stormwind City"}
-N[14522]={n="Ur'dan",side="A",x=36.2,y=44.4,zone="Felwood"}
-N[14581]={n="Sergeant Thunderhorn",side="H"}
-N[14624]={n="Master Smith Burninate",side="B",x=38.4,y=28.4,zone="Searing Gorge"}
-N[14637]={n="Zorbin Fandazzle",side="B",x=44.8,y=43.4,zone="Feralas"}
-N[14731]={n="Lard",side="H",x=78.2,y=81.2,zone="The Hinterlands"}
-N[14736]={n="Primal Torntusk",side="H",x=78.2,y=81.2,zone="The Hinterlands"}
-N[14737]={n="Smith Slagtree",side="H",x=77.4,y=80.2,zone="The Hinterlands"}
-N[14738]={n="Otho Moji'ko",side="H",x=79.2,y=79,zone="The Hinterlands"}
-N[14739]={n="Mystic Yayo'jin",side="H",x=78.8,y=78.4,zone="The Hinterlands"}
-N[14740]={n="Katoom the Angler",side="H",x=80.2,y=81.4,zone="The Hinterlands"}
-N[14753]={n="Illiyana Moonblaze",side="A",x=61.4,y=83.8,zone="Ashenvale"}
-N[14754]={n="Kelm Hargunth",side="H",x=46.6,y=8.4,zone="The Barrens"}
-N[14844]={n="Sylannia",side="B",x=36.6,y=38.2,zone="Mulgore"}
-N[14845]={n="Stamp Thunderhorn",side="B",x=36.6,y=38.2,zone="Mulgore"}
-N[14846]={n="Lhara",side="B",x=36.4,y=38,zone="Mulgore"}
-N[14847]={n="Professor Thaddeus Paleo",side="B",x=36.4,y=38,zone="Mulgore"}
-N[14860]={n="Flik",side="B",x=36.2,y=35.4,zone="Mulgore"}
-N[14921]={n="Rin'wosho the Trader",side="B",x=15,y=16,zone="Stranglethorn Vale"}
-N[14961]={n="Mirvyna Jinglepocket",side="B",x=40,y=80.2,zone="Alterac Mountains"}
-N[14962]={n="Dillord Copperpinch",side="B",x=62,y=58.6,zone="Alterac Mountains"}
-N[14963]={n="Gapp Jinglepocket",side="A",x=62,y=82.8,zone="Ashenvale"}
-N[14964]={n="Hecht Copperpinch",side="H",x=46.6,y=8.4,zone="The Barrens"}
-N[15006]={n="Deze Snowbane",side="H",x=79,y=29.6,zone="Orgrimmar"}
-N[15011]={n="Wagner Hammerstrike",side="A",x=52.4,y=36,zone="Dun Morogh"}
-N[15012]={n="Javnir Nashak",side="H",x=46,y=13.4,zone="Durotar"}
-N[15124]={n="Targot Jinglepocket",side="B",x=46.4,y=45.4,zone="Arathi Highlands"}
-N[15125]={n="Kosco Copperpinch",side="B",x=74,y=29.2,zone="Arathi Highlands"}
-N[15126]={n="Rutherford Twing",side="H",x=73.4,y=29.8,zone="Arathi Highlands"}
-N[15127]={n="Samuel Hawke",side="A",x=46,y=45.2,zone="Arathi Highlands"}
-N[15174]={n="Calandrath",side="B",x=51.8,y=39,zone="Silithus"}
-N[15175]={n="Khur Hornstriker",side="B",x=48.8,y=37,zone="Silithus"}
-N[15176]={n="Vargus",side="B",x=51.2,y=38.8,zone="Silithus"}
-N[15179]={n="Mishta",side="B",x=49.8,y=36.4,zone="Silithus"}
-N[15197]={n="Darkcaller Yanka",side="H",x=55.4,y=69.8,zone="Tirisfal Glades"}
-N[15199]={n="Sergeant Hartman",side="A",x=50,y=57.2,zone="Hillsbrad Foothills"}
-N[15315]={n="Mylini Frostmoon",side="A",x=62.4,y=25.8,zone="Felwood"}
-N[15353]={n="Katrina Shimmerstar",side="A",x=33,y=65.4,zone="Ironforge"}
-N[15354]={n="Rachelle Gothena",side="H",x=53,y=65.4,zone="Orgrimmar"}
-N[15419]={n="Kania",side="B",x=52,y=39.4,zone="Silithus"}
-N[15471]={n="Lieutenant General Andorov",side="B"}
-N[15864]={n="Valadar Starsong",side="B",x=53.4,y=35.2,zone="Moonglade"}
-N[15898]={n="Lunar Festival Vendor",side="B",x=36.4,y=58.4,zone="Moonglade"}
-N[16015]={n="Vi'el",side="B",x=58.8,y=78.4,zone="Winterspring"}
-N[16256]={n="Jessica Chambers",side="B",x=81.4,y=58.2,zone="Eastern Plaguelands"}
-N[16376]={n="Craftsman Wilhelm",side="B",x=81,y=59.4,zone="Eastern Plaguelands"}
-N[16458]={n="Innkeeper Faralia",side="A",x=35.6,y=5.8,zone="Stonetalon Mountains"}
-N[17068]={n="Chief Expeditionary Requisitioner Enkles",side="A",x=33.2,y=51,zone="Silithus"}
-N[17070]={n="Apothecary Quinard",side="H",x=50.8,y=69.4,zone="Silithus"}
-N[17598]={n="Renn'az",side="H",x=76.8,y=81.2,zone="The Hinterlands"}
+N[8122]={fh=1,n="Kizzak Sparks",side="H",x=74,y=27.6,zone="Orgrimmar"}
+N[8125]={fa=1,fh=1,n="Dirge Quikcleave",side="B",x=52.6,y=28,zone="Tanaris"}
+N[8126]={fa=1,fh=1,n="Nixx Sprocketspring",side="B",x=52.4,y=27.2,zone="Tanaris"}
+N[8129]={fa=1,fh=1,n="Wrinkle Goodsteel",side="B",x=50.8,y=27.6,zone="Tanaris"}
+N[8131]={fa=1,fh=1,n="Blizrik Buckshot",side="B",x=50.8,y=27.4,zone="Tanaris"}
+N[8137]={fa=1,fh=1,n="Gikkix",side="B",x=66.6,y=22,zone="Tanaris"}
+N[8139]={fa=1,fh=1,n="Jabbey",side="B",x=67,y=22,zone="Tanaris"}
+N[8143]={fa=-1,fh=1,n="Loorana",side="H",x=75.4,y=43.8,zone="Feralas"}
+N[8145]={fh=1,n="Sheendra Tallgrass",side="H",x=74.4,y=42.8,zone="Feralas"}
+N[8150]={fa=1,n="Janet Hommers",side="A",x=66.2,y=6.6,zone="Desolace"}
+N[8152]={fh=1,n="Harnor",side="H",x=51.2,y=53.2,zone="Desolace"}
+N[8153]={fh=1,n="Narv Hidecrafter",side="H",x=55.2,y=56.2,zone="Desolace"}
+N[8157]={fa=1,n="Logannas",side="A",x=32.4,y=44,zone="Feralas"}
+N[8158]={fa=-1,fh=1,n="Bronk",side="H",x=76,y=43.4,zone="Feralas"}
+N[8159]={fh=1,n="Worb Strongstitch",side="H",x=74.6,y=42.6,zone="Feralas"}
+N[8160]={fa=1,n="Nioma",side="A",x=13.4,y=43.4,zone="The Hinterlands"}
+N[8161]={fa=1,n="Harggan",side="A",x=13.4,y=44,zone="The Hinterlands"}
+N[8176]={fh=1,n="Gharash",side="H",x=45.4,y=51.4,zone="Swamp of Sorrows"}
+N[8177]={fh=1,n="Rartar",side="H",x=45.4,y=57,zone="Swamp of Sorrows"}
+N[8178]={fa=1,n="Nina Lightbrew",side="A",x=66.8,y=18.2,zone="Blasted Lands"}
+N[8305]={fa=1,fh=1,n="Kixxle",side="B",x=50.2,y=37.8,zone="Wetlands"}
+N[8306]={fa=-1,fh=1,n="Duhng",side="H",x=55.2,y=31.8,zone="The Barrens"}
+N[8307]={fa=-1,fh=1,n="Tarban Hearthgrain",side="H",x=55,y=32,zone="The Barrens"}
+N[8358]={fh=1,n="Hewa",side="H",x=45,y=55.4,zone="Thunder Bluff"}
+N[8359]={fh=1,n="Ahanu",side="H",x=45.2,y=55.4,zone="Thunder Bluff"}
+N[8360]={fh=1,n="Elki",side="H",x=44.6,y=57.8,zone="Thunder Bluff"}
+N[8361]={fh=1,n="Chepi",side="H",x=36.4,y=54.4,zone="Thunder Bluff"}
+N[8362]={fh=1,n="Kuruk",side="H",x=39,y=64.2,zone="Thunder Bluff"}
+N[8363]={fh=1,n="Shadi Mistrunner",side="H",x=40.4,y=63.4,zone="Thunder Bluff"}
+N[8364]={fh=1,n="Pakwa",side="H",x=39.2,y=63.8,zone="Thunder Bluff"}
+N[8398]={fh=1,n="Ohanko",side="H",x=53.2,y=57.2,zone="Thunder Bluff"}
+N[8401]={fh=1,n="Halpa",side="H",x=62.2,y=58.4,zone="Thunder Bluff"}
+N[8403]={fh=1,n="Jeremiah Payson",side="H",x=67.4,y=43.4,zone="Undercity"}
+N[8404]={fa=-1,fh=1,n="Xan'tish",side="H",x=18.4,y=60.2,zone="Orgrimmar"}
+N[8508]={fa=1,n="Gretta Ganter",side="A",x=31.4,y=44.6,zone="Dun Morogh"}
+N[8665]={fa=1,n="Shylenai",side="A",x=69.4,y=45.4,zone="Darnassus"}
+N[8666]={fa=1,n="Lil Timmy",side="A",x=50.4,y=34,zone="Stormwind City"}
+N[8678]={fa=1,fh=1,n="Jubie Gadgetspring",side="B",x=45.2,y=90.8,zone="Azshara"}
+N[8679]={fa=1,fh=1,n="Knaz Blunderflame",side="B",x=51,y=35.2,zone="Stranglethorn Vale"}
+N[8681]={fa=1,n="Outfitter Eric",side="A",x=43.2,y=29.2,zone="Ironforge"}
+N[8736]={fa=1,fh=1,n="Buzzek Bracketswing",side="B",x=52.2,y=27.4,zone="Tanaris"}
+N[8737]={fa=1,fh=1,n="Linken",side="B",x=44.6,y=8.2,zone="Un'Goro Crater"}
+N[8878]={fa=-1,fh=1,n="Muuran",side="H",x=55.6,y=56.4,zone="Desolace"}
+N[8931]={fa=1,n="Innkeeper Heather",side="A",x=52.8,y=53.4,zone="Westfall"}
+N[8934]={fa=1,n="Christopher Hewen",side="A",x=52.2,y=52.8,zone="Westfall"}
+N[9087]={fh=1,n="Bashana Runetotem",side="H",x=70.4,y=33,zone="Thunder Bluff"}
+N[9099]={fa=1,fh=-1,n="Sraaz",side="A",x=39.2,y=40.2,zone="Ironforge"}
+N[9179]={fa=1,fh=1,n="Jazzrik",side="B",x=42.4,y=52.4,zone="Badlands"}
+N[9356]={fa=-1,fh=1,n="Innkeeper Shul'kar",side="H",x=2.8,y=45.8,zone="Badlands"}
+N[9499]={fa=0,fh=0,n="Plugger Spazzring"}
+N[9501]={fh=1,n="Innkeeper Adegwa",side="H",x=73.8,y=32.4,zone="Arathi Highlands"}
+N[9544]={fa=1,fh=1,n="Yuka Screwspigot",side="B",x=66,y=22,zone="Burning Steppes"}
+N[9548]={fh=1,n="Cawind Trueaim",side="H",x=74.8,y=45.4,zone="Feralas"}
+N[9549]={fh=1,n="Borand",side="H",x=45.2,y=59.2,zone="Stonetalon Mountains"}
+N[9551]={fh=1,n="Starn",side="H",x=45,y=50.4,zone="Thousand Needles"}
+N[9552]={fh=1,n="Zanara",side="H",x=35.4,y=30.2,zone="Dustwallow Marsh"}
+N[9553]={fh=1,n="Nadia Vernon",side="H",x=44.8,y=39.6,zone="Silverpine Forest"}
+N[9555]={fh=1,n="Mu'uta",side="H",x=72.4,y=33.4,zone="Arathi Highlands"}
+N[9636]={fh=1,n="Kireena",side="H",x=51,y=53.4,zone="Desolace"}
+N[9676]={fa=1,fh=-1,n="Tink Sprocketwhistle",side="A"}
+N[10118]={fa=1,fh=-1,n="Nessa Shadowsong",side="A",x=56.2,y=92.4,zone="Teldrassil"}
+N[10216]={fa=1,fh=-1,n="Gubber Blump",side="A",x=36,y=44.8,zone="Darkshore"}
+N[10266]={fh=1,n="Ug'thok",side="H",x=80.4,y=23.4,zone="Orgrimmar"}
+N[10276]={fa=1,n="Rotgath Stonebeard",side="A",x=51.2,y=42.4,zone="Ironforge"}
+N[10277]={fa=1,n="Groum Stonebeard",side="A",x=51.2,y=42.4,zone="Ironforge"}
+N[10278]={fh=1,n="Thrag Stonehoof",side="H",x=39,y=57.8,zone="Thunder Bluff"}
+N[10293]={fa=1,fh=-1,n="Dulciea Frostmoon",side="A",x=30.8,y=43.2,zone="Feralas"}
+N[10361]={fa=-1,fh=1,n="Gruul Darkblade",side="H",x=22.2,y=51.2,zone="Azshara"}
+N[10364]={fa=-1,fh=1,n="Yaelika Farclaw",side="H"}
+N[10367]={fa=-1,fh=1,n="Shrye Ragefist",side="H"}
+N[10369]={fh=1,n="Trayexir",side="H",x=56.4,y=73.2,zone="Durotar"}
+N[10379]={fa=-1,fh=1,n="Altsoba Ragetotem",side="H",x=34.8,y=53,zone="Felwood"}
+N[10380]={fh=1,n="Sanuye Runetotem",side="H",x=45,y=59,zone="The Barrens"}
+N[10618]={fa=1,fh=-1,n="Rivern Frostwind",side="A",x=49.8,y=9.8,zone="Winterspring"}
+N[10667]={fa=1,fh=1,n="Chromie",side="B",x=39.4,y=66.8,zone="Western Plaguelands"}
+N[10856]={fa=1,fh=1,n="Argent Quartermaster Hasana",side="B",x=83.2,y=68.2,zone="Tirisfal Glades"}
+N[10857]={fa=1,fh=1,n="Argent Quartermaster Lightspark",side="B",x=42.8,y=83.8,zone="Western Plaguelands"}
+N[10993]={fh=1,n="Twizwick Sprocketgrind",side="H",x=58.6,y=39.6,zone="Mulgore"}
+N[11017]={fh=1,n="Roxxik",side="H",x=75.4,y=24.8,zone="Orgrimmar"}
+N[11025]={fh=1,n="Mukdrak",side="H",x=52.2,y=40.8,zone="Durotar"}
+N[11026]={fa=1,n="Sprite Jumpsprocket",side="A",x=54.6,y=8,zone="Stormwind City"}
+N[11028]={fa=1,n="Jemma Quikswitch",side="A",x=67.4,y=43.8,zone="Ironforge"}
+N[11029]={fa=1,n="Trixie Quikswitch",side="A",x=67.4,y=43.2,zone="Ironforge"}
+N[11031]={fh=1,n="Franklin Lloyd",side="H",x=75.4,y=73,zone="Undercity"}
+N[11037]={fa=1,n="Jenna Lemkenilli",side="A",x=38.2,y=41,zone="Darkshore"}
+N[11038]={fa=1,fh=1,n="Caretaker Alen",side="B",x=79.4,y=63.8,zone="Eastern Plaguelands"}
+N[11041]={fa=1,n="Milla Fairancora",side="A",x=55.2,y=21.4,zone="Darnassus"}
+N[11042]={fa=1,n="Sylvanna Forestmoon",side="A",x=55.6,y=23.4,zone="Darnassus"}
+N[11044]={fh=1,n="Doctor Martin Felben",side="H",x=45.8,y=73.2,zone="Undercity"}
+N[11046]={fh=1,n="Whuut",side="H",x=55.8,y=33.2,zone="Orgrimmar"}
+N[11047]={fh=1,n="Kray",side="H",x=46.8,y=33.4,zone="Thunder Bluff"}
+N[11048]={fh=1,n="Victor Ward",side="H",x=70.2,y=29.6,zone="Undercity"}
+N[11049]={fh=1,n="Rhiannon Davis",side="H",x=70.2,y=30.2,zone="Undercity"}
+N[11050]={fa=1,n="Trianna",side="A",x=63.4,y=21.4,zone="Darnassus"}
+N[11051]={fh=1,n="Vhan",side="H",x=43.4,y=43.6,zone="Thunder Bluff"}
+N[11052]={fa=1,n="Timothy Worthington",side="A",x=66.2,y=51.6,zone="Dustwallow Marsh"}
+N[11056]={fa=1,fh=-1,n="Alchemist Arbington",side="A",x=42.6,y=83.8,zone="Western Plaguelands"}
+N[11057]={fa=-1,fh=1,n="Apothecary Dithers",side="H",x=83.2,y=69.2,zone="Tirisfal Glades"}
+N[11065]={fa=1,n="Thonys Pillarstone",side="A",x=59,y=45.2,zone="Ironforge"}
+N[11066]={fh=1,n="Jhag",side="H",x=53.4,y=38.2,zone="Orgrimmar"}
+N[11067]={fh=1,n="Malcomb Wynn",side="H",x=62.2,y=60.4,zone="Undercity"}
+N[11068]={fa=1,n="Betty Quin",side="A",x=43.2,y=63.8,zone="Stormwind City"}
+N[11070]={fa=1,n="Lalina Summermoon",side="A",x=58.4,y=13.2,zone="Darnassus"}
+N[11071]={fh=1,n="Mot Dawnstrider",side="H",x=43.8,y=37.8,zone="Thunder Bluff"}
+N[11072]={fa=1,n="Kitta Firewind",side="A",x=64.8,y=70.4,zone="Elwynn Forest"}
+N[11073]={fa=1,fh=1,n="Annora",side="B"}
+N[11074]={fh=1,n="Hgarth",side="H",x=49.2,y=57.2,zone="Stonetalon Mountains"}
+N[11081]={fa=1,n="Faldron",side="A",x=64.4,y=21.4,zone="Darnassus"}
+N[11083]={fa=1,n="Darianna",side="A",x=64.2,y=21.6,zone="Darnassus"}
+N[11084]={fh=1,n="Tarn",side="H",x=42.4,y=43,zone="Thunder Bluff"}
+N[11096]={fa=1,n="Randal Worth",side="A",x=67.4,y=49.4,zone="Stormwind City"}
+N[11098]={fh=1,n="Hahrana Ironhide",side="H",x=74.4,y=43,zone="Feralas"}
+N[11103]={fa=1,n="Innkeeper Lyshaerya",side="A",x=66.2,y=6.6,zone="Desolace"}
+N[11106]={fh=1,n="Innkeeper Sikewa",side="H",x=24,y=68.2,zone="Desolace"}
+N[11116]={fh=1,n="Innkeeper Abeqwa",side="H",x=46,y=51.4,zone="Thousand Needles"}
+N[11118]={fa=1,fh=1,n="Innkeeper Vizzie",side="B",x=61.2,y=38.8,zone="Winterspring"}
+N[11137]={fa=1,n="Xai'ander",side="A",x=35.8,y=52,zone="Ashenvale"}
+N[11182]={fa=1,fh=1,n="Nixxrak",side="B",x=61.6,y=37.8,zone="Winterspring"}
+N[11183]={fa=1,fh=1,n="Blixxrak",side="B",x=61.6,y=37.8,zone="Winterspring"}
+N[11184]={fa=1,fh=1,n="Wixxrak",side="B",x=61.6,y=38,zone="Winterspring"}
+N[11185]={fa=1,fh=1,n="Xizzer Fizzbolt",side="B",x=60.8,y=38.4,zone="Winterspring"}
+N[11186]={fa=1,fh=1,n="Lunnix Sprocketslip",side="B",x=61.6,y=38.4,zone="Winterspring"}
+N[11187]={fa=1,fh=1,n="Himmik",side="B",x=61.2,y=39,zone="Winterspring"}
+N[11188]={fa=1,fh=1,n="Evie Whirlbrew",side="B",x=60.8,y=37.8,zone="Winterspring"}
+N[11189]={fa=1,fh=1,n="Qia",side="B",x=61.2,y=37.2,zone="Winterspring"}
+N[11278]={fa=1,fh=1,n="Magnus Frostwake",side="B",x=68,y=77.4,zone="Western Plaguelands"}
+N[11287]={fa=1,fh=1,n="Baker Masterson",side="B",x=69.4,y=79.4,zone="Western Plaguelands"}
+N[11536]={fa=1,fh=1,n="Quartermaster Miranda Breechlock",side="B",x=81.4,y=60,zone="Eastern Plaguelands"}
+N[11555]={fa=-1,fh=-1,n="Gorn One Eye",x=65.2,y=2.6,zone="Felwood"}
+N[11557]={fa=1,fh=1,n="Meilosh",side="B",x=65.4,y=2.8,zone="Felwood"}
+N[11703]={fa=1,fh=-1,n="Graw Cornerstone",side="A",x=41.4,y=74.4,zone="Searing Gorge"}
+N[11874]={fa=1,fh=1,n="Masat T'andr",side="B",x=26.2,y=31.4,zone="Swamp of Sorrows"}
+N[12019]={fa=1,fh=1,n="Dargon",side="B",x=48.4,y=38.8,zone="Moonglade"}
+N[12021]={fa=1,fh=1,n="Daeolyn Summerleaf",side="B",x=45.2,y=34.4,zone="Moonglade"}
+N[12022]={fa=1,fh=1,n="Lorelae Wintersong",side="B",x=48.2,y=40,zone="Moonglade"}
+N[12023]={fa=1,fh=1,n="Kharedon",side="B",x=56.4,y=30,zone="Moonglade"}
+N[12024]={fa=1,fh=1,n="Meliri",side="B",x=51.2,y=42.2,zone="Moonglade"}
+N[12026]={fa=1,fh=1,n="My'lanna",side="B",x=44.4,y=34,zone="Moonglade"}
+N[12027]={fh=1,n="Tukk",side="H",x=25,y=71.8,zone="Desolace"}
+N[12028]={fh=1,n="Lah'Mawhani",side="H",x=23,y=71.6,zone="Desolace"}
+N[12029]={fa=1,fh=1,n="Narianna",side="B",x=53.2,y=42.6,zone="Moonglade"}
+N[12031]={fh=1,n="Mai'Lahii",side="H",x=22.6,y=72,zone="Desolace"}
+N[12033]={fh=1,n="Wulan",side="H",x=26.2,y=69.8,zone="Desolace"}
+N[12043]={fh=1,n="Kulwia",side="H",x=45.4,y=59.4,zone="Stonetalon Mountains"}
+N[12045]={fh=1,n="Hae'Wilani",side="H",x=25.8,y=71,zone="Desolace"}
+N[12096]={fa=1,fh=-1,n="Stormpike Quartermaster",side="A"}
+N[12097]={fa=-1,fh=1,n="Frostwolf Quartermaster",side="H"}
+N[12196]={fh=1,n="Innkeeper Kaylisk",side="H",x=74,y=60.6,zone="Ashenvale"}
+N[12245]={fa=1,fh=1,n="Vendor-Tron 1000",side="B",x=60.2,y=38.2,zone="Desolace"}
+N[12246]={fa=1,fh=1,n="Super-Seller 680",side="B",x=40.4,y=79.2,zone="Desolace"}
+N[12384]={fa=1,fh=1,n="Augustus the Touched",side="B",x=14.4,y=33.4,zone="Eastern Plaguelands"}
+N[12776]={fh=1,n="Hraug",side="H",x=40.6,y=68.4,zone="Durotar"}
+N[12777]={fa=1,n="Captain Dirgehammer",side="A"}
+N[12781]={fa=1,n="Master Sergeant Biggins",side="A"}
+N[12782]={fa=1,n="Captain O'Neal",side="A"}
+N[12783]={fa=1,n="Lieutenant Karter",side="A"}
+N[12784]={fa=1,n="Lieutenant Jackspring",side="A"}
+N[12785]={fa=1,n="Sergeant Major Clate",side="A"}
+N[12792]={fh=1,n="Lady Palanseer",side="H"}
+N[12793]={fh=1,n="Brave Stonehide",side="H"}
+N[12794]={fh=1,n="Stone Guard Zarg",side="H"}
+N[12795]={fh=0,n="First Sergeant Hola'mahi"}
+N[12796]={fh=1,n="Raider Bork",side="H"}
+N[12799]={fa=-1,fh=1,n="Sergeant Ba'sha",side="H",x=41.4,y=68.4,zone="Orgrimmar"}
+N[12805]={fa=1,n="Officer Areyn",side="A",x=73.4,y=52.6,zone="Stormwind City"}
+N[12807]={fh=1,n="Greshka",side="H",x=48.4,y=55.4,zone="Swamp of Sorrows"}
+N[12919]={fa=1,fh=1,n="Nat Pagle",side="B",x=58.4,y=60,zone="Dustwallow Marsh"}
+N[12941]={fa=1,fh=1,n="Jase Farlane",side="B",x=80.4,y=57.6,zone="Eastern Plaguelands"}
+N[12942]={fa=1,fh=-1,n="Leonard Porter",side="A",x=43,y=84.2,zone="Western Plaguelands"}
+N[12943]={fa=-1,fh=1,n="Werg Thickblade",side="H",x=83.2,y=69.6,zone="Tirisfal Glades"}
+N[12944]={fa=1,fh=1,n="Lokhtos Darkbargainer",side="B"}
+N[12956]={fa=1,fh=1,n="Zannok Hidepiercer",side="B",x=81.8,y=17.8,zone="Silithus"}
+N[12957]={fa=1,fh=1,n="Blimo Gadgetspring",side="B",x=45.2,y=90.8,zone="Azshara"}
+N[12958]={fa=1,fh=1,n="Gigget Zipcoil",side="B",x=34.4,y=38.4,zone="The Hinterlands"}
+N[12959]={fa=1,fh=1,n="Nergal",side="B",x=43.2,y=7.8,zone="Un'Goro Crater"}
+N[12960]={fa=1,n="Christi Galvanis",side="A",x=66.4,y=6.8,zone="Desolace"}
+N[12962]={fa=-1,fh=1,n="Wik'Tar",side="H",x=11.8,y=34,zone="Ashenvale"}
+N[13018]={fa=1,fh=-1,n="Nipsy",side="A",x=0,y=0,zone="Azeroth"}
+N[13216]={fa=1,fh=-1,n="Gaelden Hammersmith",side="A"}
+N[13217]={fa=1,fh=-1,n="Thanthaldis Snowgleam",side="A",x=39.4,y=81.4,zone="Alterac Mountains"}
+N[13218]={fa=-1,fh=1,n="Grunnda Wolfheart",side="H"}
+N[13219]={fa=-1,fh=1,n="Jekyll Flandring",side="H",x=62.8,y=59.4,zone="Alterac Mountains"}
+N[13278]={fa=1,fh=1,n="Duke Hydraxis",side="B",x=79.2,y=73.4,zone="Azshara"}
+N[13418]={fh=1,n="Kaymard Copperpinch",side="H",x=53.2,y=66.4,zone="Orgrimmar"}
+N[13420]={fh=1,n="Penney Copperpinch",side="H",x=52.8,y=66.6,zone="Orgrimmar"}
+N[13429]={fh=1,n="Nardstrum Copperpinch",side="H",x=67.2,y=38.4,zone="Undercity"}
+N[13430]={fh=1,n="Jaycrue Copperpinch",side="H",x=67.2,y=38.4,zone="Undercity"}
+N[13431]={fh=1,n="Whulwert Copperpinch",side="H",x=43.4,y=57.6,zone="Thunder Bluff"}
+N[13432]={fh=1,n="Seersa Copperpinch",side="H",x=43.4,y=57.8,zone="Thunder Bluff"}
+N[13433]={fa=1,n="Wulmort Jinglepocket",side="A",x=33.4,y=65.4,zone="Ironforge"}
+N[13434]={fa=1,n="Macey Jinglepocket",side="A",x=32.4,y=67.4,zone="Ironforge"}
+N[13435]={fa=1,n="Khole Jinglepocket",side="A",x=55,y=59.2,zone="Stormwind City"}
+N[13436]={fa=1,n="Guchie Jinglepocket",side="A",x=55,y=60,zone="Stormwind City"}
+N[13476]={fh=1,n="Balai Lok'Wein",side="H",x=36.4,y=30.4,zone="Dustwallow Marsh"}
+N[13698]={fa=1,n="Keeper Marandis",side="A",x=63.8,y=10.6,zone="Desolace"}
+N[13699]={fa=1,fh=1,n="Selendra",side="B",x=26.8,y=77.6,zone="Desolace"}
+N[14301]={fa=1,fh=-1,n="Brinna Valanaar",side="A",x=12,y=78.2,zone="Azshara"}
+N[14322]={fa=1,fh=1,n="Stomper Kreeg",side="B"}
+N[14337]={fa=1,fh=1,n="Field Repair Bot 74A",side="B"}
+N[14371]={fa=1,fh=1,n="Shen'dralar Provisioner",side="B"}
+N[14437]={fa=1,fh=1,n="Gorzeeki Wildeyes",side="B",x=12.4,y=31.4,zone="Burning Steppes"}
+N[14450]={fa=1,n="Orphan Matron Nightingale",side="A",x=47.2,y=38.4,zone="Stormwind City"}
+N[14480]={fh=1,n="Alowicious Czervik",side="H",x=51.8,y=69.8,zone="Orgrimmar"}
+N[14481]={fa=1,n="Emmithue Smails",side="A",x=53.8,y=65.2,zone="Stormwind City"}
+N[14522]={fa=1,fh=-1,n="Ur'dan",side="A",x=36.2,y=44.4,zone="Felwood"}
+N[14581]={fh=1,n="Sergeant Thunderhorn",side="H"}
+N[14624]={fa=1,fh=1,n="Master Smith Burninate",side="B",x=38.4,y=28.4,zone="Searing Gorge"}
+N[14637]={fa=1,fh=1,n="Zorbin Fandazzle",side="B",x=44.8,y=43.4,zone="Feralas"}
+N[14731]={fh=1,n="Lard",side="H",x=78.2,y=81.2,zone="The Hinterlands"}
+N[14736]={fh=1,n="Primal Torntusk",side="H",x=78.2,y=81.2,zone="The Hinterlands"}
+N[14737]={fh=1,n="Smith Slagtree",side="H",x=77.4,y=80.2,zone="The Hinterlands"}
+N[14738]={fh=1,n="Otho Moji'ko",side="H",x=79.2,y=79,zone="The Hinterlands"}
+N[14739]={fa=-1,fh=1,n="Mystic Yayo'jin",side="H",x=78.8,y=78.4,zone="The Hinterlands"}
+N[14740]={fh=1,n="Katoom the Angler",side="H",x=80.2,y=81.4,zone="The Hinterlands"}
+N[14753]={fa=1,n="Illiyana Moonblaze",side="A",x=61.4,y=83.8,zone="Ashenvale"}
+N[14754]={fh=1,n="Kelm Hargunth",side="H",x=46.6,y=8.4,zone="The Barrens"}
+N[14844]={fa=1,fh=1,n="Sylannia",side="B",x=36.6,y=38.2,zone="Mulgore"}
+N[14845]={fa=1,fh=1,n="Stamp Thunderhorn",side="B",x=36.6,y=38.2,zone="Mulgore"}
+N[14846]={fa=1,fh=1,n="Lhara",side="B",x=36.4,y=38,zone="Mulgore"}
+N[14847]={fa=1,fh=1,n="Professor Thaddeus Paleo",side="B",x=36.4,y=38,zone="Mulgore"}
+N[14860]={fa=1,fh=1,n="Flik",side="B",x=36.2,y=35.4,zone="Mulgore"}
+N[14921]={fa=1,fh=1,n="Rin'wosho the Trader",side="B",x=15,y=16,zone="Stranglethorn Vale"}
+N[14961]={fa=1,fh=1,n="Mirvyna Jinglepocket",side="B",x=40,y=80.2,zone="Alterac Mountains"}
+N[14962]={fa=1,fh=1,n="Dillord Copperpinch",side="B",x=62,y=58.6,zone="Alterac Mountains"}
+N[14963]={fa=1,n="Gapp Jinglepocket",side="A",x=62,y=82.8,zone="Ashenvale"}
+N[14964]={fh=1,n="Hecht Copperpinch",side="H",x=46.6,y=8.4,zone="The Barrens"}
+N[15006]={fh=1,n="Deze Snowbane",side="H",x=79,y=29.6,zone="Orgrimmar"}
+N[15011]={fa=1,n="Wagner Hammerstrike",side="A",x=52.4,y=36,zone="Dun Morogh"}
+N[15012]={fh=1,n="Javnir Nashak",side="H",x=46,y=13.4,zone="Durotar"}
+N[15124]={fa=1,fh=1,n="Targot Jinglepocket",side="B",x=46.4,y=45.4,zone="Arathi Highlands"}
+N[15125]={fa=1,fh=1,n="Kosco Copperpinch",side="B",x=74,y=29.2,zone="Arathi Highlands"}
+N[15126]={fa=-1,fh=1,n="Rutherford Twing",side="H",x=73.4,y=29.8,zone="Arathi Highlands"}
+N[15127]={fa=1,n="Samuel Hawke",side="A",x=46,y=45.2,zone="Arathi Highlands"}
+N[15174]={fa=1,fh=1,n="Calandrath",side="B",x=51.8,y=39,zone="Silithus"}
+N[15175]={fa=1,fh=1,n="Khur Hornstriker",side="B",x=48.8,y=37,zone="Silithus"}
+N[15176]={fa=1,fh=1,n="Vargus",side="B",x=51.2,y=38.8,zone="Silithus"}
+N[15179]={fa=1,fh=1,n="Mishta",side="B",x=49.8,y=36.4,zone="Silithus"}
+N[15197]={fa=-1,fh=1,n="Darkcaller Yanka",side="H",x=55.4,y=69.8,zone="Tirisfal Glades"}
+N[15199]={fa=1,fh=-1,n="Sergeant Hartman",side="A",x=50,y=57.2,zone="Hillsbrad Foothills"}
+N[15315]={fa=1,fh=-1,n="Mylini Frostmoon",side="A",x=62.4,y=25.8,zone="Felwood"}
+N[15353]={fa=1,n="Katrina Shimmerstar",side="A",x=33,y=65.4,zone="Ironforge"}
+N[15354]={fh=1,n="Rachelle Gothena",side="H",x=53,y=65.4,zone="Orgrimmar"}
+N[15419]={fa=1,fh=1,n="Kania",side="B",x=52,y=39.4,zone="Silithus"}
+N[15471]={fa=1,fh=1,n="Lieutenant General Andorov",side="B"}
+N[15864]={fa=1,fh=1,n="Valadar Starsong",side="B",x=53.4,y=35.2,zone="Moonglade"}
+N[15898]={fa=1,fh=1,n="Lunar Festival Vendor",side="B",x=36.4,y=58.4,zone="Moonglade"}
+N[16015]={fa=1,fh=1,n="Vi'el",side="B",x=58.8,y=78.4,zone="Winterspring"}
+N[16256]={fa=1,fh=1,n="Jessica Chambers",side="B",x=81.4,y=58.2,zone="Eastern Plaguelands"}
+N[16376]={fa=1,fh=1,n="Craftsman Wilhelm",side="B",x=81,y=59.4,zone="Eastern Plaguelands"}
+N[16458]={fa=1,fh=-1,n="Innkeeper Faralia",side="A",x=35.6,y=5.8,zone="Stonetalon Mountains"}
+N[17068]={fa=1,n="Chief Expeditionary Requisitioner Enkles",side="A",x=33.2,y=51,zone="Silithus"}
+N[17070]={fh=1,n="Apothecary Quinard",side="H",x=50.8,y=69.4,zone="Silithus"}
+N[17598]={fh=1,n="Renn'az",side="H",x=76.8,y=81.2,zone="The Hinterlands"}
 N[28694]={n="Alard Schmied",x=19.8,y=63.4,zone="Alterac Mountains"}
 N[28776]={n="Elizabeth Ross",x=15.8,y=69,zone="Alterac Mountains"}
-N[28989]={n="Aemara",side="A",x=17.2,y=71.4,zone="Alterac Mountains"}
+N[28989]={fa=1,n="Aemara",side="A",x=17.2,y=71.4,zone="Alterac Mountains"}
 N[28990]={n="Anthony Durain",x=20,y=63.4,zone="Alterac Mountains"}
-N[29049]={n="Arille Azuregaze",side="A",x=18.4,y=65.8,zone="Alterac Mountains"}
+N[29049]={fa=1,n="Arille Azuregaze",side="A",x=18.4,y=65.8,zone="Alterac Mountains"}
 N[29491]={n="Karandonna",x=16,y=65.4,zone="Alterac Mountains"}
 N[29537]={n="Darahir",x=21.6,y=69,zone="Alterac Mountains"}
-N[29547]={n="Applebough",side="A",x=14.4,y=65.8,zone="Alterac Mountains"}
-N[32287]={n="Archmage Alvareaux",side="A",x=13.8,y=63.6,zone="Alterac Mountains"}
-N[32403]={n="Sandra Bartan",side="A",x=18,y=65.2,zone="Alterac Mountains"}
-N[32413]={n="Isirami Fairwind",side="A",x=12.2,y=66.2,zone="Alterac Mountains"}
+N[29547]={fa=1,n="Applebough",side="A",x=14.4,y=65.8,zone="Alterac Mountains"}
+N[32287]={fa=1,n="Archmage Alvareaux",side="A",x=13.8,y=63.6,zone="Alterac Mountains"}
+N[32403]={fa=1,n="Sandra Bartan",side="A",x=18,y=65.2,zone="Alterac Mountains"}
+N[32413]={fa=1,n="Isirami Fairwind",side="A",x=12.2,y=66.2,zone="Alterac Mountains"}
 N[32424]={n="Laire Brewgold",x=10.4,y=66.4,zone="Alterac Mountains"}
 N[32426]={n="Coira Longrifle",x=10.4,y=65.6,zone="Alterac Mountains"}
-N[32631]={n="Alfred Copperworth",side="A",x=15,y=54.8,zone="Alterac Mountains"}
+N[32631]={fa=1,n="Alfred Copperworth",side="A",x=15,y=54.8,zone="Alterac Mountains"}
 N[43411]={n="Lenedil Moonwing",x=70.8,y=50.8,zone="Mount Hyjal"}
-N[203475]={n="Liv Bradford",side="A",x=22.4,y=64.4,zone="Stormwind City"}
-N[207743]={n="Netali Proudwind",side="H",x=28.4,y=18.2,zone="Thunder Bluff"}
-N[208920]={n="Penny Hawkins",side="H",x=61.8,y=52,zone="Tirisfal Glades"}
-N[211653]={n="Grizzby",side="B",x=61.8,y=39.4,zone="The Barrens"}
-N[213077]={n="Elaine Compton",side="A",x=54.4,y=60.2,zone="Stormwind City"}
-N[214070]={n="Jornah",side="H",x=51.4,y=63.8,zone="Orgrimmar"}
-N[214096]={n="Dokimi",side="H",x=39.4,y=53.4,zone="Thunder Bluff"}
-N[214098]={n="Gishah",side="H",x=64.4,y=38.4,zone="Undercity"}
-N[214099]={n="Tamelyn Aldridge",side="A",x=24.4,y=67.4,zone="Ironforge"}
-N[214101]={n="Marcy Baker",side="A",x=59.2,y=56.6,zone="Darnassus"}
-N[214954]={n="Rix Xizzix",side="B",x=28.4,y=75.8,zone="Stranglethorn Vale"}
-N[216672]={n="Namdo Bizzfizzle",side="A"}
-N[216902]={n="Wulmort Jinglepocket",side="A",x=32.4,y=67.4,zone="Ironforge"}
-N[216924]={n="Kaymard Copperpinch",side="H",x=53.2,y=66.4,zone="Orgrimmar"}
-N[217412]={n="Amaryllis Webb",side="B",x=25,y=53.4,zone="Swamp of Sorrows"}
-N[217689]={n="Ziri \"The Wrench\" Littlesprocket",side="B"}
-N[222684]={n="Quartermaster Falinar",side="B",x=45.6,y=51.2,zone="Duskwood"}
-N[222685]={n="Quartermaster Kyleen",side="B",x=89.4,y=40.4,zone="Ashenvale"}
-N[222686]={n="Quartermaster Alandra",side="B",x=61.4,y=34.4,zone="The Hinterlands"}
-N[222687]={n="Quartermaster Valdane",side="B",x=48.4,y=12.4,zone="Feralas"}
-N[230317]={n="Mokvar",side="H",x=34.4,y=37.4,zone="Orgrimmar"}
-N[230319]={n="Deliana",side="A",x=42.4,y=52.2,zone="Ironforge"}
-N[230565]={n="Ironforge Guard",side="A",x=42.4,y=53.8,zone="Ironforge"}
-N[230566]={n="Kor'kron Elite",side="H",x=34.8,y=38.4,zone="Orgrimmar"}
-N[233335]={n="Rune Broker",side="A",x=29.4,y=72,zone="Dun Morogh"}
-N[233428]={n="Rune Broker",side="H",x=42.8,y=68,zone="Durotar"}
-N[235164]={n="G00 DV-1B3 Generator",side="B",x=40.2,y=27,zone="Eastern Plaguelands"}
-N[240568]={n="Haunted Anvil",side="B",x=48.4,y=78,zone="Deadwind Pass"}
-N[240604]={n="Carrie Hearthfire",side="B",x=95.2,y=78.4,zone="Eastern Plaguelands"}
-N[240607]={n="Devon Woods",side="B",x=95.2,y=80.2,zone="Eastern Plaguelands"}
-N[240631]={n="Taylor Stitchings",side="B",x=94.6,y=83.4,zone="Eastern Plaguelands"}
-N[240632]={n="Tanya Hyde",side="B",x=94.2,y=93.2,zone="Eastern Plaguelands"}
-N[240633]={n="Smith",side="B",x=98.4,y=77,zone="Eastern Plaguelands"}
-N[240654]={n="Fizzlefuse",side="B",x=62.8,y=24.2,zone="Eastern Kingdoms"}
-N[241019]={n="Johnny",side="B",x=94.8,y=91.2,zone="Eastern Plaguelands"}
-N[241663]={n="Gerald",side="B",x=95.2,y=78.8,zone="Eastern Plaguelands"}
-N[241664]={n="Malorie",side="B",x=95.2,y=78.8,zone="Eastern Plaguelands"}
-N[242183]={n="Abatha Rainwater",side="B",x=93.4,y=79.4,zone="Eastern Plaguelands"}
-N[242498]={n="Reagent Bot",side="B",x=45.6,y=12.4,zone="Durotar"}
+N[203475]={fa=1,n="Liv Bradford",side="A",x=22.4,y=64.4,zone="Stormwind City"}
+N[207743]={fh=1,n="Netali Proudwind",side="H",x=28.4,y=18.2,zone="Thunder Bluff"}
+N[208920]={fh=1,n="Penny Hawkins",side="H",x=61.8,y=52,zone="Tirisfal Glades"}
+N[211653]={fa=1,fh=1,n="Grizzby",side="B",x=61.8,y=39.4,zone="The Barrens"}
+N[213077]={fa=1,n="Elaine Compton",side="A",x=54.4,y=60.2,zone="Stormwind City"}
+N[214070]={fh=1,n="Jornah",side="H",x=51.4,y=63.8,zone="Orgrimmar"}
+N[214096]={fh=1,n="Dokimi",side="H",x=39.4,y=53.4,zone="Thunder Bluff"}
+N[214098]={fh=1,n="Gishah",side="H",x=64.4,y=38.4,zone="Undercity"}
+N[214099]={fa=1,n="Tamelyn Aldridge",side="A",x=24.4,y=67.4,zone="Ironforge"}
+N[214101]={fa=1,n="Marcy Baker",side="A",x=59.2,y=56.6,zone="Darnassus"}
+N[214954]={fa=1,fh=1,n="Rix Xizzix",side="B",x=28.4,y=75.8,zone="Stranglethorn Vale"}
+N[216672]={fa=1,fh=-1,n="Namdo Bizzfizzle",side="A"}
+N[216902]={fa=1,n="Wulmort Jinglepocket",side="A",x=32.4,y=67.4,zone="Ironforge"}
+N[216924]={fh=1,n="Kaymard Copperpinch",side="H",x=53.2,y=66.4,zone="Orgrimmar"}
+N[217412]={fa=1,fh=1,n="Amaryllis Webb",side="B",x=25,y=53.4,zone="Swamp of Sorrows"}
+N[217689]={fa=1,fh=1,n="Ziri \"The Wrench\" Littlesprocket",side="B"}
+N[222684]={fa=1,fh=1,n="Quartermaster Falinar",side="B",x=45.6,y=51.2,zone="Duskwood"}
+N[222685]={fa=1,fh=1,n="Quartermaster Kyleen",side="B",x=89.4,y=40.4,zone="Ashenvale"}
+N[222686]={fa=1,fh=1,n="Quartermaster Alandra",side="B",x=61.4,y=34.4,zone="The Hinterlands"}
+N[222687]={fa=1,fh=1,n="Quartermaster Valdane",side="B",x=48.4,y=12.4,zone="Feralas"}
+N[230317]={fh=1,n="Mokvar",side="H",x=34.4,y=37.4,zone="Orgrimmar"}
+N[230319]={fa=1,fh=-1,n="Deliana",side="A",x=42.4,y=52.2,zone="Ironforge"}
+N[230565]={fa=1,n="Ironforge Guard",side="A",x=42.4,y=53.8,zone="Ironforge"}
+N[230566]={fh=1,n="Kor'kron Elite",side="H",x=34.8,y=38.4,zone="Orgrimmar"}
+N[233335]={fa=1,n="Rune Broker",side="A",x=29.4,y=72,zone="Dun Morogh"}
+N[233428]={fh=1,n="Rune Broker",side="H",x=42.8,y=68,zone="Durotar"}
+N[235164]={fa=1,fh=1,n="G00 DV-1B3 Generator",side="B",x=40.2,y=27,zone="Eastern Plaguelands"}
+N[240568]={fa=1,fh=1,n="Haunted Anvil",side="B",x=48.4,y=78,zone="Deadwind Pass"}
+N[240604]={fa=1,fh=1,n="Carrie Hearthfire",side="B",x=95.2,y=78.4,zone="Eastern Plaguelands"}
+N[240607]={fa=1,fh=1,n="Devon Woods",side="B",x=95.2,y=80.2,zone="Eastern Plaguelands"}
+N[240631]={fa=1,fh=1,n="Taylor Stitchings",side="B",x=94.6,y=83.4,zone="Eastern Plaguelands"}
+N[240632]={fa=1,fh=1,n="Tanya Hyde",side="B",x=94.2,y=93.2,zone="Eastern Plaguelands"}
+N[240633]={fa=1,fh=1,n="Smith",side="B",x=98.4,y=77,zone="Eastern Plaguelands"}
+N[240654]={fa=1,fh=1,n="Fizzlefuse",side="B",x=62.8,y=24.2,zone="Eastern Kingdoms"}
+N[241019]={fa=1,fh=1,n="Johnny",side="B",x=94.8,y=91.2,zone="Eastern Plaguelands"}
+N[241663]={fa=1,fh=1,n="Gerald",side="B",x=95.2,y=78.8,zone="Eastern Plaguelands"}
+N[241664]={fa=1,fh=1,n="Malorie",side="B",x=95.2,y=78.8,zone="Eastern Plaguelands"}
+N[242183]={fa=1,fh=1,n="Abatha Rainwater",side="B",x=93.4,y=79.4,zone="Eastern Plaguelands"}
+N[242498]={fa=1,fh=1,n="Reagent Bot",side="B",x=45.6,y=12.4,zone="Durotar"}
 N[243815]={n="Sebelia",x=70.8,y=51.4,zone="Mount Hyjal"}
 N[243855]={n="Toron Rockhoof",x=68.8,y=47.2,zone="Mount Hyjal"}
 N[246795]={n="Linzy Blackbolt",x=18.4,y=62.4,zone="Alterac Mountains"}
-N[247226]={n="Kelsey Fargo",side="A",x=47.2,y=32.2,zone="Elwynn Forest"}
-N[247227]={n="Riley Peltskinner",side="A",x=47,y=39.8,zone="Elwynn Forest"}
-N[248198]={n="Aza'bek",x=49.6,y=29.2,zone="The Barrens"}
-N[251364]={n="Destin Thriceforged",side="B",x=43.4,y=23.4,zone="Zephras Isle"}
-N[251365]={n="Jolee Brightmeadows",side="B",x=43.4,y=23.6,zone="Zephras Isle"}
-N[251537]={n="Uualia Suncrest",side="B",x=42.8,y=24.4,zone="Zephras Isle"}
-N[251684]={n="Strange Hermit",side="B",x=54,y=39,zone="Zephras Isle"}
-N[251905]={n="Zerril Softbreeze",side="B",x=43.8,y=43.8,zone="Zephras Isle"}
-N[251913]={n="Aedi Thriceforged",side="B",x=44.8,y=44.4,zone="Zephras Isle"}
+N[247226]={fa=1,n="Kelsey Fargo",side="A",x=47.2,y=32.2,zone="Elwynn Forest"}
+N[247227]={fa=1,n="Riley Peltskinner",side="A",x=47,y=39.8,zone="Elwynn Forest"}
+N[248198]={fh=0,n="Aza'bek",x=49.6,y=29.2,zone="The Barrens"}
+N[251364]={fa=1,fh=1,n="Destin Thriceforged",side="B",x=43.4,y=23.4,zone="Zephras Isle"}
+N[251365]={fa=1,fh=1,n="Jolee Brightmeadows",side="B",x=43.4,y=23.6,zone="Zephras Isle"}
+N[251537]={fa=1,fh=1,n="Uualia Suncrest",side="B",x=42.8,y=24.4,zone="Zephras Isle"}
+N[251684]={fa=1,fh=1,n="Strange Hermit",side="B",x=54,y=39,zone="Zephras Isle"}
+N[251905]={fa=1,fh=1,n="Zerril Softbreeze",side="B",x=43.8,y=43.8,zone="Zephras Isle"}
+N[251913]={fa=1,fh=1,n="Aedi Thriceforged",side="B",x=44.8,y=44.4,zone="Zephras Isle"}
 N[251955]={n="Lucian Trias",x=20.2,y=67.4,zone="Alterac Mountains"}
-N[251965]={n="Fevrath Skyhammer",side="B",x=43.2,y=23.4,zone="Zephras Isle"}
-N[251972]={n="Charles Worth",side="A",x=17.6,y=60.2,zone="Alterac Mountains"}
-N[251973]={n="Dominique Stefano",side="A",x=17.6,y=60.2,zone="Alterac Mountains"}
+N[251965]={fa=1,fh=1,n="Fevrath Skyhammer",side="B",x=43.2,y=23.4,zone="Zephras Isle"}
+N[251972]={fa=1,n="Charles Worth",side="A",x=17.6,y=60.2,zone="Alterac Mountains"}
+N[251973]={fa=1,n="Dominique Stefano",side="A",x=17.6,y=60.2,zone="Alterac Mountains"}
 N[251975]={n="Harold Winston",x=18,y=62,zone="Alterac Mountains"}
 N[251976]={n="Tiffany Cartier",x=18,y=62,zone="Alterac Mountains"}
-N[251977]={n="Angelique Butler",side="A",x=17.2,y=61,zone="Alterac Mountains"}
-N[251978]={n="Vanessa Sellers",side="A",x=16.8,y=62.2,zone="Alterac Mountains"}
+N[251977]={fa=1,n="Angelique Butler",side="A",x=17.2,y=61,zone="Alterac Mountains"}
+N[251978]={fa=1,n="Vanessa Sellers",side="A",x=16.8,y=62.2,zone="Alterac Mountains"}
 N[251980]={n="Rueben Lauren",x=15.8,y=65.2,zone="Alterac Mountains"}
 N[251981]={n="Sheddle Glossgleam",x=16.4,y=65.4,zone="Alterac Mountains"}
-N[251991]={n="Taleen Shimmerthread",side="B",x=44.8,y=44.2,zone="Zephras Isle"}
-N[251992]={n="Fenn Fairweather",side="B",x=45,y=48.4,zone="Zephras Isle"}
-N[251993]={n="Indari Sunseam",side="B",x=44.6,y=44.4,zone="Zephras Isle"}
+N[251991]={fa=1,fh=1,n="Taleen Shimmerthread",side="B",x=44.8,y=44.2,zone="Zephras Isle"}
+N[251992]={fa=1,fh=1,n="Fenn Fairweather",side="B",x=45,y=48.4,zone="Zephras Isle"}
+N[251993]={fa=1,fh=1,n="Indari Sunseam",side="B",x=44.6,y=44.4,zone="Zephras Isle"}
 N[251997]={n="Norvin Alderman",x=16,y=65.4,zone="Alterac Mountains"}
 N[251999]={n="Debbi Moore",x=15.4,y=68.2,zone="Alterac Mountains"}
 N[252000]={n="Brammold Deepmine",x=15.8,y=68.8,zone="Alterac Mountains"}
 N[252019]={n="Abra Cadabra",x=12,y=70.2,zone="Alterac Mountains"}
-N[252020]={n="Jack Findle",side="A",x=13.2,y=71.2,zone="Alterac Mountains"}
+N[252020]={fa=1,n="Jack Findle",side="A",x=13.2,y=71.2,zone="Alterac Mountains"}
 N[252040]={n="Hagatha Moorehead",x=14,y=63.4,zone="Alterac Mountains"}
-N[252080]={n="Stefan Cotter",side="A",x=12.8,y=66.6,zone="Alterac Mountains"}
-N[252083]={n="Derek Odds",side="A",x=12.4,y=66,zone="Alterac Mountains"}
+N[252080]={fa=1,n="Stefan Cotter",side="A",x=12.8,y=66.6,zone="Alterac Mountains"}
+N[252083]={fa=1,n="Derek Odds",side="A",x=12.4,y=66,zone="Alterac Mountains"}
 N[252084]={n="Katherine Lee",x=12.4,y=65.8,zone="Alterac Mountains"}
-N[252376]={n="Emerii Tallgust",side="B",x=63.8,y=80.6,zone="Zephras Isle"}
-N[252380]={n="Othesia Evengale",side="A",x=64.4,y=81,zone="Zephras Isle"}
-N[252388]={n="Halavuul Cragwind",side="B",x=65.4,y=80.4,zone="Zephras Isle"}
-N[252390]={n="Antelariaa Cloudgaze",side="B",x=63,y=77.8,zone="Zephras Isle"}
-N[252449]={n="Iallion Featherfall",side="B",x=58.8,y=75.4,zone="Zephras Isle"}
-N[252479]={n="Daeann Steelwind",side="B",x=65.4,y=80.2,zone="Zephras Isle"}
-N[253004]={n="Iaadaria Bitterwind",side="A",x=66.2,y=79.4,zone="Zephras Isle"}
-N[254089]={n="Coriella Calmbreeze",side="B",x=43,y=43.2,zone="Zephras Isle"}
-N[254358]={n="Veena Vericloud",side="B",x=44.6,y=45.4,zone="Zephras Isle"}
-N[254360]={n="Belandiel Farflight",side="B",x=44.8,y=45,zone="Zephras Isle"}
+N[252376]={fa=1,fh=1,n="Emerii Tallgust",side="B",x=63.8,y=80.6,zone="Zephras Isle"}
+N[252380]={fa=1,n="Othesia Evengale",side="A",x=64.4,y=81,zone="Zephras Isle"}
+N[252388]={fa=1,fh=1,n="Halavuul Cragwind",side="B",x=65.4,y=80.4,zone="Zephras Isle"}
+N[252390]={fa=1,fh=1,n="Antelariaa Cloudgaze",side="B",x=63,y=77.8,zone="Zephras Isle"}
+N[252449]={fa=1,fh=1,n="Iallion Featherfall",side="B",x=58.8,y=75.4,zone="Zephras Isle"}
+N[252479]={fa=1,fh=1,n="Daeann Steelwind",side="B",x=65.4,y=80.2,zone="Zephras Isle"}
+N[253004]={fa=1,n="Iaadaria Bitterwind",side="A",x=66.2,y=79.4,zone="Zephras Isle"}
+N[254089]={fa=1,fh=1,n="Coriella Calmbreeze",side="B",x=43,y=43.2,zone="Zephras Isle"}
+N[254358]={fa=1,fh=1,n="Veena Vericloud",side="B",x=44.6,y=45.4,zone="Zephras Isle"}
+N[254360]={fa=1,fh=1,n="Belandiel Farflight",side="B",x=44.8,y=45,zone="Zephras Isle"}
 N[255151]={n="Rhylin Stonethorn",x=70.6,y=51.2,zone="Mount Hyjal"}
 N[255894]={n="Innkeeper Zizplink",x=78.8,y=54,zone="Riverglades"}
 N[255895]={n="Grizzek",x=76.6,y=53.2,zone="Riverglades"}
 N[255897]={n="Friz Frazzlespark",x=77.2,y=52.8,zone="Riverglades"}
-N[255940]={n="Donaal Downbreeze",side="B",x=62.2,y=72.6,zone="Zephras Isle"}
+N[255940]={fa=1,fh=1,n="Donaal Downbreeze",side="B",x=62.2,y=72.6,zone="Zephras Isle"}
 N[256372]={n="Windle Sparkshine",x=14.2,y=67,zone="Alterac Mountains"}
-N[256507]={n="Belann Windwood",side="B",x=62.8,y=77.4,zone="Zephras Isle"}
+N[256507]={fa=1,fh=1,n="Belann Windwood",side="B",x=62.8,y=77.4,zone="Zephras Isle"}
 N[256655]={n="Gorg",x=58.4,y=44.4,zone="Riverglades"}
-N[256731]={n="Kalsey Sanden",x=10.8,y=72.4,zone="Redridge Mountains"}
-N[257003]={n="Ishlee Breezewhisper",side="B",x=59.4,y=76,zone="Zephras Isle"}
-N[257004]={n="Eaysaa Brightgust",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
-N[257005]={n="Valiena Swiftgale",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
+N[256731]={fa=0,n="Kalsey Sanden",x=10.8,y=72.4,zone="Redridge Mountains"}
+N[257003]={fa=1,fh=1,n="Ishlee Breezewhisper",side="B",x=59.4,y=76,zone="Zephras Isle"}
+N[257004]={fa=1,fh=1,n="Eaysaa Brightgust",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
+N[257005]={fa=1,fh=1,n="Valiena Swiftgale",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
 end)()
 ;(function()
-N[257006]={n="Nyalah Brightfire",side="B",x=60.6,y=72.6,zone="Zephras Isle"}
-N[257007]={n="Melasa Fairmend",side="B",x=63,y=72.4,zone="Zephras Isle"}
-N[257008]={n="Baelann Swiftcurrent",side="B",x=63.2,y=75.6,zone="Zephras Isle"}
-N[257018]={n="Naleeia Tattermend",side="B",x=43,y=46.2,zone="Zephras Isle"}
-N[257019]={n="Nyassa Swiftdraught",side="B",x=43.6,y=43.4,zone="Zephras Isle"}
-N[257020]={n="Nasalanna Windsinger",side="B",x=43.2,y=43.2,zone="Zephras Isle"}
-N[257022]={n="Messana Crestwind",side="B",x=44.6,y=44.6,zone="Zephras Isle"}
-N[257024]={n="Mendalass Tattermend",side="B",x=43.2,y=43.4,zone="Zephras Isle"}
-N[257421]={n="Tephri Thriceforged",side="B",x=44.8,y=44.2,zone="Zephras Isle"}
-N[257422]={n="Railee Thriceforged",side="B",x=58.8,y=75.4,zone="Zephras Isle"}
+N[257006]={fa=1,fh=1,n="Nyalah Brightfire",side="B",x=60.6,y=72.6,zone="Zephras Isle"}
+N[257007]={fa=1,fh=1,n="Melasa Fairmend",side="B",x=63,y=72.4,zone="Zephras Isle"}
+N[257008]={fa=1,fh=1,n="Baelann Swiftcurrent",side="B",x=63.2,y=75.6,zone="Zephras Isle"}
+N[257018]={fa=1,fh=1,n="Naleeia Tattermend",side="B",x=43,y=46.2,zone="Zephras Isle"}
+N[257019]={fa=1,fh=1,n="Nyassa Swiftdraught",side="B",x=43.6,y=43.4,zone="Zephras Isle"}
+N[257020]={fa=1,fh=1,n="Nasalanna Windsinger",side="B",x=43.2,y=43.2,zone="Zephras Isle"}
+N[257022]={fa=1,fh=1,n="Messana Crestwind",side="B",x=44.6,y=44.6,zone="Zephras Isle"}
+N[257024]={fa=1,fh=1,n="Mendalass Tattermend",side="B",x=43.2,y=43.4,zone="Zephras Isle"}
+N[257421]={fa=1,fh=1,n="Tephri Thriceforged",side="B",x=44.8,y=44.2,zone="Zephras Isle"}
+N[257422]={fa=1,fh=1,n="Railee Thriceforged",side="B",x=58.8,y=75.4,zone="Zephras Isle"}
 N[257595]={n="Barracks Master Harlan",x=64.6,y=83.8,zone="Riverglades"}
-N[258306]={n="Granny Finespindle",side="A",x=39.2,y=33.2,zone="Ironforge"}
-N[258415]={n="Angela Ward",side="H",x=70.4,y=29.4,zone="Undercity"}
-N[258463]={n="Darah",side="H",x=63.4,y=50.4,zone="Orgrimmar"}
-N[258466]={n="Boramu",side="H",x=44,y=44.6,zone="Thunder Bluff"}
-N[258548]={n="Ellie Stonebrow",side="A",x=43.4,y=27.8,zone="Ironforge"}
-N[258568]={n="Antonio Bolero",side="A",x=53.4,y=81.8,zone="Stormwind City"}
+N[258306]={fa=1,n="Granny Finespindle",side="A",x=39.2,y=33.2,zone="Ironforge"}
+N[258415]={fh=1,n="Angela Ward",side="H",x=70.4,y=29.4,zone="Undercity"}
+N[258463]={fh=1,n="Darah",side="H",x=63.4,y=50.4,zone="Orgrimmar"}
+N[258466]={fh=1,n="Boramu",side="H",x=44,y=44.6,zone="Thunder Bluff"}
+N[258548]={fa=1,n="Ellie Stonebrow",side="A",x=43.4,y=27.8,zone="Ironforge"}
+N[258568]={fa=1,n="Antonio Bolero",side="A",x=53.4,y=81.8,zone="Stormwind City"}
 N[258572]={n="Dani'ill",x=64,y=21.2,zone="Darnassus"}
 N[259250]={n="Alphonse Dumas",x=64.4,y=82,zone="Riverglades"}
 N[259766]={n="Mika Darby",x=77.8,y=51.8,zone="Riverglades"}
@@ -6842,42 +6842,42 @@ N[260565]={n="Kor'gar",x=77.6,y=50.8,zone="Riverglades"}
 N[260566]={n="Fizzix Boomshot",x=78.4,y=53.4,zone="Riverglades"}
 N[260570]={n="Stitch Pinwizzle",x=77.2,y=51.4,zone="Riverglades"}
 N[261313]={n="Naluk",x=58,y=45.8,zone="Riverglades"}
-N[262469]={n="Tuu'li"}
-N[262471]={n="Xaphod Bizznox",x=71.4,y=99.4,zone="Stonetalon Mountains"}
+N[262469]={fh=0,n="Tuu'li"}
+N[262471]={fh=0,n="Xaphod Bizznox",x=71.4,y=99.4,zone="Stonetalon Mountains"}
 N[263384]={n="Mister Graphed",x=78.2,y=51.8,zone="Riverglades"}
-N[263570]={n="Creeg Bothunk",x=65,y=34.6,zone="The Barrens"}
-N[264078]={n="Sutara Plainstalker",x=34.4,y=22.8,zone="Mulgore"}
-N[265574]={n="Winklespark",x=62.4,y=37.6,zone="The Barrens"}
+N[263570]={fh=0,n="Creeg Bothunk",x=65,y=34.6,zone="The Barrens"}
+N[264078]={fh=0,n="Sutara Plainstalker",x=34.4,y=22.8,zone="Mulgore"}
+N[265574]={fa=0,fh=0,n="Winklespark",x=62.4,y=37.6,zone="The Barrens"}
 N[265575]={n="Gezzy Gunkgear",x=28.2,y=74.8,zone="Stranglethorn Vale"}
 N[265576]={n="Rettrick",x=51.6,y=28.6,zone="Tanaris"}
 N[265577]={n="Zippie Fizzbolt",x=61.4,y=38.6,zone="Winterspring"}
 N[265730]={n="Ajay Green",x=14.4,y=64.6,zone="Alterac Mountains"}
-N[265756]={n="Genn Fairweather",side="B",x=53.8,y=81.2,zone="Zephras Isle"}
-N[265944]={n="William Pickman",side="H",x=61.8,y=51.4,zone="Tirisfal Glades"}
-N[266881]={n="Pa'zula",side="H",x=56.6,y=73.6,zone="Durotar"}
+N[265756]={fa=1,fh=1,n="Genn Fairweather",side="B",x=53.8,y=81.2,zone="Zephras Isle"}
+N[265944]={fh=1,n="William Pickman",side="H",x=61.8,y=51.4,zone="Tirisfal Glades"}
+N[266881]={fh=1,n="Pa'zula",side="H",x=56.6,y=73.6,zone="Durotar"}
 N[266901]={n="Pexmit",x=59.6,y=49.2,zone="Mount Hyjal"}
 N[267000]={n="Paige",x=20.8,y=74.6,zone="Alterac Mountains"}
 N[267001]={n="Cody",x=21.6,y=74,zone="Alterac Mountains"}
-N[267324]={n="Margaret Weaver",side="H",x=32.6,y=65.6,zone="Tirisfal Glades"}
-N[267325]={n="Walter Mason",side="H",x=32.2,y=65.8,zone="Tirisfal Glades"}
-N[267327]={n="Kagil",side="H",x=40.8,y=67.8,zone="Durotar"}
-N[267328]={n="Norzsh",side="H",x=40.4,y=68,zone="Durotar"}
-N[267330]={n="Nawka Wildsong",side="H",x=44.4,y=76.8,zone="Mulgore"}
-N[267331]={n="Vartha Rockmane",side="H",x=44.2,y=78.2,zone="Mulgore"}
-N[267333]={n="Terunne Bearshaper",side="A",x=59.4,y=38.6,zone="Teldrassil"}
-N[267334]={n="Fanorran Stilloak",side="A",x=58,y=41.4,zone="Teldrassil"}
-N[267336]={n="Brighid Stormflayer",side="A",x=29.2,y=67.6,zone="Dun Morogh"}
-N[267337]={n="Sally Swiftwrench",side="A",x=28.8,y=67.8,zone="Dun Morogh"}
-N[268238]={n="Nordun Steadysight",side="A",x=42,y=66.4,zone="Elwynn Forest"}
+N[267324]={fh=1,n="Margaret Weaver",side="H",x=32.6,y=65.6,zone="Tirisfal Glades"}
+N[267325]={fh=1,n="Walter Mason",side="H",x=32.2,y=65.8,zone="Tirisfal Glades"}
+N[267327]={fh=1,n="Kagil",side="H",x=40.8,y=67.8,zone="Durotar"}
+N[267328]={fh=1,n="Norzsh",side="H",x=40.4,y=68,zone="Durotar"}
+N[267330]={fh=1,n="Nawka Wildsong",side="H",x=44.4,y=76.8,zone="Mulgore"}
+N[267331]={fh=1,n="Vartha Rockmane",side="H",x=44.2,y=78.2,zone="Mulgore"}
+N[267333]={fa=1,n="Terunne Bearshaper",side="A",x=59.4,y=38.6,zone="Teldrassil"}
+N[267334]={fa=1,n="Fanorran Stilloak",side="A",x=58,y=41.4,zone="Teldrassil"}
+N[267336]={fa=1,n="Brighid Stormflayer",side="A",x=29.2,y=67.6,zone="Dun Morogh"}
+N[267337]={fa=1,n="Sally Swiftwrench",side="A",x=28.8,y=67.8,zone="Dun Morogh"}
+N[268238]={fa=1,n="Nordun Steadysight",side="A",x=42,y=66.4,zone="Elwynn Forest"}
 N[268663]={n="Penny Pinderton",x=62,y=81,zone="Riverglades"}
-N[268745]={n="Mayhoa Skyhoof",side="H",x=39,y=29.2,zone="Orgrimmar"}
+N[268745]={fh=1,n="Mayhoa Skyhoof",side="H",x=39,y=29.2,zone="Orgrimmar"}
 N[270545]={n="Kenneth \"Kirby\" Millstead",x=65.4,y=89.8,zone="Riverglades"}
 N[271005]={n="Burt Lazlo",x=64.6,y=84.2,zone="Riverglades"}
 N[271006]={n="Christina Von Stavern",x=64.6,y=84.2,zone="Riverglades"}
-N[271465]={n="Falfaan Halfwind",side="B",x=59.4,y=75.8,zone="Zephras Isle"}
-N[271478]={n="Elaria Anvilwind",side="B",x=59.4,y=76,zone="Zephras Isle"}
-N[271480]={n="Taliaa Brightsky",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
-N[271483]={n="Ergaan Eastwind",side="B",x=59.6,y=75.8,zone="Zephras Isle"}
+N[271465]={fa=1,fh=1,n="Falfaan Halfwind",side="B",x=59.4,y=75.8,zone="Zephras Isle"}
+N[271478]={fa=1,fh=1,n="Elaria Anvilwind",side="B",x=59.4,y=76,zone="Zephras Isle"}
+N[271480]={fa=1,fh=1,n="Taliaa Brightsky",side="B",x=59.2,y=76.2,zone="Zephras Isle"}
+N[271483]={fa=1,fh=1,n="Ergaan Eastwind",side="B",x=59.6,y=75.8,zone="Zephras Isle"}
 N[272437]={n="Marla Bell",x=62.2,y=86,zone="Riverglades"}
 N[272646]={n="Miranda Turner",x=63.4,y=82.4,zone="Riverglades"}
 N[275322]={n="Patricia Egan",x=18.4,y=62.2,zone="Alterac Mountains"}
@@ -6885,6 +6885,6 @@ N[275598]={n="Valerie Langrom",x=12.6,y=71,zone="Alterac Mountains"}
 N[275622]={n="Kerta the Bold",x=14.6,y=70.8,zone="Alterac Mountains"}
 N[275623]={n="Valaden Silverblade",x=14.6,y=71.2,zone="Alterac Mountains"}
 N[275625]={n="Bartram Haller",x=14.6,y=71.2,zone="Alterac Mountains"}
-N[276067]={n="Angus Hammerhand",side="H",x=21,y=45.8,zone="Tirisfal Glades"}
+N[276067]={fh=1,n="Angus Hammerhand",side="H",x=21,y=45.8,zone="Tirisfal Glades"}
 end)()
 ns.Registry.Register("forever", D)

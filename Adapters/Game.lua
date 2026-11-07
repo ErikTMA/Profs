@@ -135,6 +135,13 @@ function G.PlayerKey()
   return (UnitName and UnitName("player")) or "player"
 end
 
+-- "A" | "H" | nil (faction not readable, e.g. a neutral character): Engine/Faction.lua
+function G.Faction()
+  if not UnitFactionGroup then return nil end
+  local ok, group = pcall(UnitFactionGroup, "player")
+  return ok and ns.Faction.Side(group) or nil
+end
+
 function G.PlayerInfo()
   local class
   if UnitClass then class = select(2, UnitClass("player")) end -- NOT `UnitClass and UnitClass(...)`: `and` keeps one value

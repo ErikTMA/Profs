@@ -82,7 +82,7 @@ function Profs_OnAddonCompartmentClick(_, button)
   elseif button == "RightButton" then
     commands.recommend()
   elseif ns.Game and ns.Game.OpenProfession and ns.Game.OpenProfession() then
-    commands.show()
+    ns.Sidecar.Open()
   else
     commands.status()
     ns.Log("info", "open a profession window to see its route")
@@ -95,7 +95,7 @@ function Profs_OnAddonCompartmentEnter(_, owner)
   GameTooltip:SetText(ns.displayName)
   GameTooltip:AddLine("Left-click: route for the open profession", 1, 1, 1)
   GameTooltip:AddLine("Right-click: which professions to pick", 1, 1, 1)
-  GameTooltip:AddLine("Shift-click: craftable gear upgrades", 1, 1, 1)
+  GameTooltip:AddLine("Shift-click: craftable gear upgrades (also /profs gear)", 1, 1, 1)
   GameTooltip:Show()
 end
 

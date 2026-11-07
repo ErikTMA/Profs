@@ -63,12 +63,14 @@ function GA.Reason(newStats, oldStats, weights)
   return table.concat(parts, ", ")
 end
 
-local function obtainable(r, known) return ns.Gear.Obtainable(r, known) end
+local function obtainable(r, known, ds, side)
+  return ns.Gear.Obtainable(r, known, { side = side, npcs = ds.npcs })
+end
 
 -- ctx: level, prevLevel, class, profs={[prof]=skill}, known={[recipe]=true},
 --      equipped={[invSlot]={score?, stats?, name?}}, stats(itemId)->table|nil,
 --      scorer(itemId)->pawn percent|nil, pricer, have(itemId)->n, seen={[itemId]=true},
---      settings (GA.DEFAULTS overrides)
+--      settings (GA.DEFAULTS overrides), side ("A"/"H"/nil: faction for trainer access)
 function GA.Evaluate(ds, ctx)
   local cfg = ns.Util.merge(GA.DEFAULTS, ctx.settings or {})
   if not cfg.enabled then return {} end
@@ -84,7 +86,7 @@ function GA.Evaluate(ds, ctx)
         and rl > (ctx.prevLevel or 0) and rl <= ctx.level
         and not (ctx.seen and ctx.seen[itemId])
         and ns.Gear.CanWear(ctx.class, ctx.level, it) then
-        local acq = obtainable(r, ctx.known)
+        local acq = obtainable(r, ctx.known, ds, ctx.side)
         if acq then
           local old = replaces(ctx.equipped, it.slot, weights)
           local alert

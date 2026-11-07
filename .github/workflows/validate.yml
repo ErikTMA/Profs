@@ -5,6 +5,10 @@ on:
   pull_request:
 permissions:
   contents: read
+
+defaults:
+  run:
+    shell: bash  # -eo pipefail: a failing command inside a pipe fails the step
 jobs:
   addon:
     runs-on: ubuntu-latest
@@ -14,9 +18,8 @@ jobs:
         run: sudo apt-get update -q && sudo apt-get install -y -q lua5.1
       - name: Every Lua file parses
         run: |
-          n=0
-          for f in $(find . -name '*.lua' -not -path './.git/*'); do luac5.1 -p "$f"; n=$((n+1)); done
-          echo "parsed $n files"
+          find . -name '*.lua' -not -path './.git/*' -print0 | xargs -0 -n1 luac5.1 -p
+          echo "parsed $(find . -name '*.lua' -not -path './.git/*' | wc -l) files"
       - name: TOC loads exactly the shipped code, in a valid order
         run: |
           set -eu
@@ -24,7 +27,7 @@ jobs:
           for f in $files; do test -f "$f" || { echo "TOC loads a missing file: $f"; exit 1; }; done
           test "$(echo "$files" | head -1)" = "Core/Namespace.lua"
           test "$(echo "$files" | tail -1)" = "Core/Init.lua"
-          for f in $(find Core Data Engine Adapters UI -name '*.lua'); do
+          find Core Data Engine Adapters UI -name '*.lua' | while read -r f; do
             echo "$files" | grep -qx "$f" || { echo "not in the TOC: $f"; exit 1; }
           done
           for k in Interface Title Version IconTexture SavedVariables; do

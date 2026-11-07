@@ -59,7 +59,8 @@ function GF.Compute(ds)
   local known = {}
   for _, set in pairs(ns.cdb.known or {}) do for id in pairs(set) do known[id] = true end end
   local ups = ns.Gear.Candidates(ds, { profs = profs, level = me.level, class = me.class, known = known,
-    weights = weights, scorer = scorer, stats = ns.Game.ItemStats, equipped = equipped })
+    weights = weights, scorer = scorer, stats = ns.Game.ItemStats, equipped = equipped,
+    side = ns.Game.Faction() })
   return ups, scorer ~= nil
 end
 

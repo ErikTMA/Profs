@@ -57,13 +57,28 @@ local function avgQty(r)
 end
 O.AvgQty = avgQty
 
+-- Faction access of a source for opts.side ("A"/"H"/nil) over opts.npcs (Engine/
+-- Faction.lua). NPC-bound sources (trainer, vendor, reputation) whose every NPC is
+-- hostile or only in an enemy capital are unavailable; a trainer/vendor the data names
+-- no NPC for, or whose NPCs' faction is unknown, stays available as "unknown".
+local NPC_BOUND = { trainer = true, vendor = true, reputation = true }
+local function sourceAccess(s, opts)
+  local a = ns.Faction.Source(opts.npcs, s, opts.side)
+  if a == "none" then return NPC_BOUND[s.t] and "unknown" or "ok" end
+  if a == "hostile" or a == "territory" then return nil end
+  return a
+end
+
 -- Cheapest way to obtain a recipe, or nil when no allowed source exists.
--- Returns { t=sourceType, cost=copper, crafts=time-cost, source=src }.
+-- Returns { t=sourceType, cost=copper, crafts=time-cost, source=src,
+--           access="ok"|"unknown" }. Sources with confirmed access win over unknown
+-- ones; then the cheapest.
 function O.Acquisition(r, opts)
-  if opts.known and opts.known[r.id] then return { t = "known", cost = 0, crafts = 0 } end
+  if opts.known and opts.known[r.id] then return { t = "known", cost = 0, crafts = 0, access = "ok" } end
   local best
   for _, s in ipairs(r.sources or {}) do
-    if opts.allowSources[s.t] or opts.forced == r.id then
+    local access = (opts.allowSources[s.t] or opts.forced == r.id) and sourceAccess(s, opts)
+    if access then
       local cost, crafts = s.cost or 0, 0
       if s.unknownCost and s.t == "vendor" then cost = opts.unknownRecipeCost end
       if s.t == "starter" then
@@ -77,8 +92,10 @@ function O.Acquisition(r, opts)
       elseif s.t ~= "trainer" and s.t ~= "starter" then
         crafts = 5 -- drops, quests, reputation: real effort even when allowed
       end
-      if not best or cost < best.cost or (cost == best.cost and crafts < best.crafts) then
-        best = { t = s.t, cost = cost, crafts = crafts, source = s }
+      local rank = ns.Faction.RANK[access]
+      if not best or rank < best.rank or (rank == best.rank and (cost < best.cost
+          or (cost == best.cost and crafts < best.crafts))) then
+        best = { t = s.t, cost = cost, crafts = crafts, source = s, access = access, rank = rank }
       end
     end
   end
@@ -90,6 +107,7 @@ Planner.__index = Planner
 
 function O.NewPlanner(ds, profId, opts)
   opts = ns.Util.merge(O.DEFAULTS, opts or {})
+  opts.npcs = opts.npcs or ds.npcs
   assert(O.MODES[opts.mode], "unknown mode " .. tostring(opts.mode))
   local self = setmetatable({
     ds = ds,

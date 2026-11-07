@@ -91,11 +91,15 @@ end
 -- How the character can get recipe r: known, or a source the default route policy
 -- allows (trainer, vendor, starter). nil = unobtainable for gear suggestions (drops,
 -- quests, reputation, cooldown or specialization recipes).
-function G.Obtainable(r, known)
-  if known and known[r.id] then return { t = "known", cost = 0, crafts = 0 } end
+-- faction = { side = "A"|"H"|nil, npcs = ds.npcs }: sources only enemy NPCs offer
+-- are not obtainable (Engine/Faction.lua).
+function G.Obtainable(r, known, faction)
+  if known and known[r.id] then return { t = "known", cost = 0, crafts = 0, access = "ok" } end
   if ns.Cooldowns and ns.Cooldowns.Has(r.id) then return nil end
   if r.spec then return nil end
-  return ns.Optimizer.Acquisition(r, ns.Util.merge(ns.Optimizer.DEFAULTS, { known = known }))
+  faction = faction or {}
+  return ns.Optimizer.Acquisition(r, ns.Util.merge(ns.Optimizer.DEFAULTS,
+    { known = known, side = faction.side, npcs = faction.npcs }))
 end
 
 -- opts: profs={[profId]=skill}, level, class, weights|nil, scorer(itemId)|nil, known,
@@ -108,7 +112,7 @@ function G.Candidates(ds, opts)
     for _, r in ipairs(ds.recipesByProf[profId] or {}) do
       local out_id = r.creates and r.creates[1]
       local it = out_id and ds.items[out_id]
-      if it and it.slot and it.slot > 0 and r.learn <= skill and G.Obtainable(r, opts.known) then
+      if it and it.slot and it.slot > 0 and r.learn <= skill and G.Obtainable(r, opts.known, { side = opts.side, npcs = ds.npcs }) then
         local rl = it.rl or 0
         if rl <= (opts.level or 60) + (opts.lookahead or 3) and G.CanWear(opts.class, opts.level or 60, it) then
           local sc

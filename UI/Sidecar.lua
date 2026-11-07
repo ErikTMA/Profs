@@ -1,7 +1,8 @@
--- The sidecar: a panel attached to the right of the native ProfessionsFrame (or a
--- detached, movable panel when another addon such as TradeSkillMaster replaces the
--- native window). Shows the route to the persistent target, the next guided step
--- with a Craft button, the consolidated shopping list and output recommendations.
+-- The Profs! route view: a third column INSIDE the native ProfessionsFrame, right of
+-- the recipe details (UI/Embed.lua; or a detached, movable panel when another addon
+-- such as TradeSkillMaster replaces the native window). Shows the route to the
+-- persistent target, the next guided step with a Craft button, the consolidated
+-- shopping list and output recommendations, for whichever profession is selected.
 --
 -- The text builders (Sidecar.Format*) are pure and unit tested; the frame code only
 -- renders their output.
@@ -29,8 +30,10 @@ local function npcText(ds, npcId)
   return ("%s - %s"):format(n.n or ("npc " .. npcId), where)
 end
 
--- Acquisition instructions for one recipe source.
-function S.FormatAcquire(ds, recipeId, how)
+-- Acquisition instructions for one recipe source. side = "A"/"H"/nil (player faction):
+-- only NPCs that faction can use are listed (Engine/Faction.lua); NPCs whose access the
+-- data does not establish are labelled, never presented as accessible.
+function S.FormatAcquire(ds, recipeId, how, side)
   local r = ds.recipes[recipeId]
   local lines = { ("Learn %s (skill %d)"):format(r.name or ("recipe " .. recipeId), r.learn) }
   if not how then return lines end
@@ -57,9 +60,25 @@ function S.FormatAcquire(ds, recipeId, how)
   else
     lines[#lines + 1] = ("Source: %s%s."):format(how.t, src.item and (" (" .. itemName(ds, src.item) .. ")") or "")
   end
-  for i, npc in ipairs(src.npcs or {}) do
-    if i > 3 then break end
-    lines[#lines + 1] = "  " .. npcText(ds, npc)
+  local F = ns.Faction
+  if src.npcs and #src.npcs > 0 then
+    local best, shown = F.Source(ds.npcs, src, side)
+    local who = how.t == "trainer" and "trainer" or "vendor"
+    if #shown == 0 then
+      lines[#lines + 1] = ("  No %s for the %s in the data (only %s)."):format(who,
+        side and F.NAME[side] or "your faction", best == "territory" and "in enemy cities" or "for the other faction")
+    else
+      for i, e in ipairs(shown) do
+        if i > 3 then break end
+        lines[#lines + 1] = "  " .. npcText(ds, e.id)
+          .. (e.access == "unknown" and color("a0a0a0", "  (faction access unknown)") or "")
+      end
+    end
+    if not side then
+      lines[#lines + 1] = color("a0a0a0", "  Your faction could not be read: access to these NPCs is not confirmed.")
+    end
+  elseif how.t == "trainer" or how.t == "vendor" then
+    lines[#lines + 1] = color("a0a0a0", "  The data names no NPC for this; check in game.")
   end
   return lines
 end
@@ -173,6 +192,7 @@ function S.Options(prof)
     charLevel = UnitLevel and UnitLevel("player") or nil,
     allowSources = settings.allowSources,
     craftValue = settings.craftValue,
+    side = ns.Game.Faction(),
   }
 end
 
@@ -182,8 +202,11 @@ function S.Plan()
   local ds = ns.ActiveDataset()
   local st = S.state
   st.info, st.ds = info, ds
+  st.gathering = false
   if not info or not info.own or not ds then st.route = nil; return st end
   local prof = info.prof
+  local meta = ns.Professions.list[prof]
+  if not meta or meta.crafting == false then st.route = nil; st.gathering = true; return st end
   -- remember learned recipes for this profession
   ns.cdb.known = ns.cdb.known or {}
   local known = ns.cdb.known[prof] or {}
@@ -259,65 +282,115 @@ function S.OnSegmentClick(seg, button)
 end
 
 -- View -------------------------------------------------------------------------
+--
+-- Hosts (same content, built by S.BuildContent):
+--   column   ProfsColumn, the third column INSIDE the native ProfessionsFrame
+--            (UI/Embed.lua does the layout). Default whenever the native window is up.
+--   panel    ProfsSidecar, a detached movable panel, only when another addon (e.g.
+--            TradeSkillMaster) replaces the native window, so there is nothing to embed in.
 
-local WIDTH, HEIGHT, ROWS = 340, 520, 22
+local PANEL_WIDTH, PANEL_HEIGHT = 340, 520
+local ROWS = 20
 
-function S.Build()
-  if S.frame then return S.frame end
+-- Content laid out top-down in a host of the given inner width. rightInset leaves room
+-- for a host's own close button.
+function S.BuildContent(f, width, rightInset)
   local W = ns.Widgets
-  local f = W.Panel("ProfsSidecar", UIParent, WIDTH, HEIGHT)
-  f:Hide()
   f.title = W.Text(f, "large"); f.title:SetPoint("TOPLEFT", 10, -10); f.title:SetText(ns.displayName)
   W.TitleIcon(f, f.title)
-  f.skill = W.Text(f); f.skill:SetPoint("TOPLEFT", 10, -32)
-  f.targetLabel = W.Text(f, "small"); f.targetLabel:SetPoint("TOPLEFT", 10, -54); f.targetLabel:SetText("Target")
+  -- always visible, whatever the column shows: craftable gear for your level from all
+  -- your professions (needs no profession window; also /profs gear)
+  f.gear = W.Button(f, "Gear upgrades", 110, function() ns.GearFrame.Show() end)
+  f.gear:SetPoint("TOPRIGHT", -(rightInset or 10), -8)
+  f.skill = W.Text(f); f.skill:SetPoint("TOPLEFT", 10, -34)
+  f.targetLabel = W.Text(f, "small"); f.targetLabel:SetPoint("TOPLEFT", 10, -56); f.targetLabel:SetText("Target")
   f.target = W.Input(f, 40, function(v) if v and v > 0 then S.SetTarget(v) end end)
   f.target:SetPoint("LEFT", f.targetLabel, "RIGHT", 8, 0)
   f.mode = W.Button(f, "Cheapest", 90, function() S.CycleMode() end)
   f.mode:SetPoint("LEFT", f.target, "RIGHT", 8, 0)
-  f.close = W.Button(f, "x", 22, function() f:Hide() end)
-  f.close:SetPoint("TOPRIGHT", -6, -6)
-
-  f.step = W.Text(f); f.step:SetPoint("TOPLEFT", 10, -80); f.step:SetWidth(WIDTH - 20)
+  f.step = W.Text(f); f.step:SetPoint("TOPLEFT", 10, -82); f.step:SetWidth(width - 20)
   f.craft = W.Button(f, "Craft", 120, function() S.CraftNext() end)
   f.craft:SetPoint("TOPLEFT", 10, -118)
-
   f.tabs = {}
-  local x = 10
+  local x, bw = 10, math.floor((width - 32) / 3)
   for _, t in ipairs({ { "route", "Route" }, { "shop", "Shopping" }, { "out", "Outputs" } }) do
-    local b = W.Button(f, t[2], 90, function() S.tab = t[1]; S.Render() end)
+    local b = W.Button(f, t[2], bw, function() S.tab = t[1]; S.Render() end)
     b:SetPoint("TOPLEFT", x, -146)
-    x = x + 96
+    x = x + bw + 6
     f.tabs[t[1]] = b
   end
   f.body = CreateFrame("Frame", nil, f)
   f.body:SetPoint("TOPLEFT", 10, -172)
-  f.body:SetSize(WIDTH - 20, ROWS * 15)
-  f.list = W.List(f.body, ROWS, 15, WIDTH - 20)
+  f.body:SetSize(width - 20, ROWS * 15)
+  f.list = W.List(f.body, ROWS, 15, width - 20)
   for i, row in ipairs(f.list.rows) do row:SetPoint("TOPLEFT", 0, -(i - 1) * 15) end
-  f.hint = W.Text(f, "small"); f.hint:SetPoint("BOTTOMLEFT", 10, 8); f.hint:SetWidth(WIDTH - 20)
+  f.hint = W.Text(f, "small"); f.hint:SetPoint("BOTTOMLEFT", 10, 8); f.hint:SetWidth(width - 20)
   f.hint:SetText("Shift/right-click: exclude. Ctrl-click: lock range. Alt-click: unlock.")
-  S.frame = f
-  S.tab = "route"
+  S.tab = S.tab or "route"
   return f
 end
 
+-- The third column (child of ProfessionsFrame once Embed.Apply runs).
+function S.BuildColumn()
+  if S.column then return S.column end
+  local f = CreateFrame("Frame", "ProfsColumn", UIParent)
+  f:Hide()
+  -- native inset look, like the recipe list and details panes beside it
+  local inset = CreateFrame("Frame", nil, f, "InsetFrameTemplate")
+  inset:SetAllPoints(f)
+  f.inset = inset
+  S.BuildContent(f, ns.Embed.COLUMN_WIDTH - 10)
+  f.host = "column"
+  S.column = f
+  return f
+end
+
+function S.BuildPanel()
+  if S.panel then return S.panel end
+  local W = ns.Widgets
+  local f = W.Panel("ProfsSidecar", UIParent, PANEL_WIDTH, PANEL_HEIGHT)
+  f:Hide()
+  S.BuildContent(f, PANEL_WIDTH, 34)
+  f.close = W.Button(f, "x", 22, function() f:Hide() end)
+  f.close:SetPoint("TOPRIGHT", -6, -6)
+  local store = ns.db.settings.sidecarStore or {}
+  ns.db.settings.sidecarStore = store
+  W.Movable(f, store)
+  f.host = "panel"
+  S.panel = f
+  return f
+end
+
+-- Choose the host for the window that is actually showing.
 function S.Attach()
-  local f = S.Build()
-  f:ClearAllPoints()
-  local pf = _G.ProfessionsFrame
-  if pf and pf.IsShown and pf:IsShown() then
-    f:SetPoint("TOPLEFT", pf, "TOPRIGHT", 2, 0)
-    S.detached = false
+  local pf = ns.Embed.Frame()
+  if pf and pf:IsShown() and not S.collapsed then
+    if S.panel then S.panel:Hide() end
+    local f = S.BuildColumn()
+    ns.Embed.Apply(f)
+    S.frame, S.detached = f, false
+  elseif pf and pf:IsShown() then
+    -- column collapsed by /profs show: native layout, nothing of ours on screen
+    if S.column then ns.Embed.Restore(S.column) end
+    if S.panel then S.panel:Hide() end
+    S.frame, S.detached = nil, false
   else
-    -- native window not shown (e.g. replaced by TradeSkillMaster): detached panel
-    local store = ns.db.settings.sidecarStore or {}
-    ns.db.settings.sidecarStore = store
-    local p = store.point
+    -- native window not shown (replaced by another addon): detached panel
+    if S.column then ns.Embed.Restore(S.column) end
+    local f = S.BuildPanel()
+    f:ClearAllPoints()
+    local p = ns.db.settings.sidecarStore.point
     if p then f:SetPoint(p[1], UIParent, p[2] or p[1], p[3], p[4]) else f:SetPoint("CENTER", 300, 0) end
-    S.detached = true
-    if not S.movable then ns.Widgets.Movable(f, store); S.movable = true end
+    S.frame, S.detached = f, true
   end
+  return S.frame
+end
+
+-- Message-only state (no plannable route for what the window shows).
+local function message(f, text)
+  f.skill:SetText(""); f.step:SetText(text); f.craft:Hide(); f.list:Set({})
+  f.target:Hide(); f.targetLabel:Hide(); f.mode:Hide()
+  for _, b in pairs(f.tabs) do b:Hide() end
 end
 
 function S.Render()
@@ -325,9 +398,26 @@ function S.Render()
   if not f then return end
   local st = S.state
   local ds = st.ds
-  if not st.info or not st.info.own then f:Hide(); return end
   f:Show()
+  if not st.info then
+    -- column stays in the shared window, e.g. on the profession overview page
+    if f.host == "panel" then f:Hide(); return end
+    message(f, "Select a crafting profession tab to see its leveling route.")
+    return
+  end
+  if not st.info.own then
+    message(f, "Viewing someone else's recipes: routes are planned for your own professions.")
+    return
+  end
   f.skill:SetText(("%s %d / %d"):format(ns.Professions.Name(st.info.prof), st.info.skill, st.info.max))
+  if st.gathering then
+    message(f, ns.Professions.Name(st.info.prof)
+      .. " is a gathering profession: Profs! plans crafting routes only.")
+    f.skill:SetText(("%s %d / %d"):format(ns.Professions.Name(st.info.prof), st.info.skill, st.info.max))
+    return
+  end
+  f.target:Show(); f.targetLabel:Show(); f.mode:Show()
+  for _, b in pairs(f.tabs) do b:Show() end
   f.target:SetNumber(st.target or 0)
   f.mode:SetText(S.MODE_LABEL[st.mode or "cheapest"])
   if not ds then
@@ -366,7 +456,9 @@ function S.Render()
           if ds.recipes[seg.recipe].est then
             t[#t + 1] = "Skill bands estimated: the source data lacks them for this recipe."
           end
-          for _, l in ipairs(S.FormatAcquire(ds, seg.recipe, seg.acquire or { t = "known" })) do t[#t + 1] = l end
+          for _, l in ipairs(S.FormatAcquire(ds, seg.recipe, seg.acquire or { t = "known" }, ns.Game.Faction())) do
+            t[#t + 1] = l
+          end
           return t
         end
       end
@@ -386,20 +478,46 @@ function S.OnShow()
   S.Refresh()
 end
 
+-- The native window opened, switched profession tab, or showed the overview page.
+function S.OnNativeChange()
+  if S.collapsed then return end
+  S.OnShow()
+end
+
+local function hookNative()
+  local pf = ns.Embed.Frame()
+  if not pf or S.nativeHooked then return end
+  S.nativeHooked = true
+  -- the column is a child of the frame, so hiding the frame hides it; these hooks only
+  -- (re)apply the layout and refresh content when the shared window shows
+  pf:HookScript("OnShow", function() S.OnNativeChange() end)
+end
+
 -- wiring ---------------------------------------------------------------------
 
 ns.Events.On("PROFS_LOADED", function()
+  S.collapsed = ns.cdb.columnCollapsed == true
   if not CreateFrame then return end
   local ev = CreateFrame("Frame")
   for _, e in ipairs({ "TRADE_SKILL_SHOW", "TRADE_SKILL_CLOSE", "TRADE_SKILL_LIST_UPDATE",
-    "SKILL_LINES_CHANGED", "BAG_UPDATE_DELAYED", "BANKFRAME_OPENED", "MAIL_INBOX_UPDATE" }) do
+    "SKILL_LINES_CHANGED", "BAG_UPDATE_DELAYED", "BANKFRAME_OPENED", "MAIL_INBOX_UPDATE",
+    "ADDON_LOADED", "PLAYER_REGEN_ENABLED" }) do
     ev:RegisterEvent(e)
   end
-  ev:SetScript("OnEvent", function(_, e)
-    if e == "TRADE_SKILL_SHOW" then
+  ev:SetScript("OnEvent", function(_, e, arg1)
+    if e == "ADDON_LOADED" then
+      if arg1 == "Blizzard_Professions" then hookNative() end
+    elseif e == "PLAYER_REGEN_ENABLED" then
+      ns.Embed.OnCombatEnded()
+    elseif e == "TRADE_SKILL_SHOW" then
+      hookNative()
       S.OnShow()
     elseif e == "TRADE_SKILL_CLOSE" then
-      if S.frame then S.frame:Hide() end
+      -- the shared window may stay open on its overview page (Blizzard keeps it open
+      -- when the book page is shown); the column then shows the overview hint. The
+      -- detached panel has no window to belong to and closes.
+      if S.frame and S.frame.host == "panel" then S.frame:Hide()
+      elseif S.frame and S.frame:IsShown() then S.Refresh() end
     elseif e == "MAIL_INBOX_UPDATE" then
       ns.Inventory.ScanMail()
     elseif e == "BANKFRAME_OPENED" or e == "BAG_UPDATE_DELAYED" then
@@ -412,8 +530,25 @@ ns.Events.On("PROFS_LOADED", function()
   S.events = ev
 end)
 
+-- Bring the route view up (minimap/compartment left-click): expands a collapsed column.
+function S.Open()
+  if S.collapsed then S.collapsed = false; ns.cdb.columnCollapsed = nil end
+  S.OnShow()
+end
+
+-- /profs show: collapse or restore the column (or toggle the detached panel).
 ns.commands.show = function()
-  if S.frame and S.frame:IsShown() then S.frame:Hide() else S.OnShow() end
+  local pf = ns.Embed.Frame()
+  if pf and pf:IsShown() then
+    S.collapsed = not S.collapsed
+    ns.cdb.columnCollapsed = S.collapsed or nil
+    S.OnShow()
+    ns.Log("info", S.collapsed and "Profs! column hidden (/profs show to bring it back)" or "Profs! column shown")
+  elseif S.frame and S.frame:IsShown() then
+    S.frame:Hide()
+  else
+    S.OnShow()
+  end
 end
 
 ns.commands.save = function(name)
