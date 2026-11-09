@@ -48,7 +48,9 @@
 --                            (Engine/Faction.lua decides access from these)
 --                            mobs (named by drop sources): mob=true, lv={min,max},
 --                            cl=1 elite|2 rare elite|3 boss|4 rare; instance mobs have
---                            a zone but no x/y
+--                            a zone but no x/y; m = the uiMap of x/y (vendors)
+--   sold        [itemId] = { npcId, ... }  every vendor (located, in npcs) selling the
+--                            item for gold with no reputation needed (optional)
 --
 -- Everything is keyed on ids; names are for display only.
 local _, ns = ...
@@ -121,6 +123,10 @@ function S.Validate(ds)
         end
       end
     end
+  end
+  if ds.sold ~= nil and type(ds.sold) ~= "table" then err("sold not a table") end
+  for id, list in pairs(type(ds.sold) == "table" and ds.sold or {}) do
+    if not isInt(id) or type(list) ~= "table" then err("sold %s", tostring(id)) end
   end
   if ds.nodes ~= nil and type(ds.nodes) ~= "table" then err("nodes not a table") end
   for id, n in pairs(type(ds.nodes) == "table" and ds.nodes or {}) do

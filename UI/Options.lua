@@ -51,6 +51,12 @@ function O.Definitions()
         ns.cdb.gearSpec = v ~= "auto" and v or nil
         if ns.GearColumn.RequestUpdate then ns.GearColumn.RequestUpdate() end
       end },
+    { key = "vendorTooltip", label = "Nearest vendor in item tooltips",
+      tooltip = "On items a vendor sells: the nearest friendly or neutral vendor, its "
+        .. "coordinates and how far it is.",
+      type = "boolean", default = true,
+      get = function() return settings().vendorTooltip ~= false end,
+      set = function(v) settings().vendorTooltip = v and nil or false end },
     { key = "colorblind", label = "Colour-blind skill-up markers",
       tooltip = "Add +++ / ++ / + after orange / yellow / green route steps. Off by default "
         .. "unless the game's colour-blind mode is on.",

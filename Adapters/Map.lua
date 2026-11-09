@@ -91,3 +91,33 @@ function M.SetWaypoint(uiMapID, x, y, title)
   end
   return nil
 end
+
+-- World position of x, y (percent) on a uiMap: continentId, worldX, worldY (yards), or
+-- nil. C_Map.GetWorldPosFromMapPos (MapDocumentation.lua); cached per point, since
+-- vendors never move.
+local world = {}
+function M.WorldPos(uiMapID, x, y)
+  local key = uiMapID .. ":" .. x .. ":" .. y
+  local c = world[key]
+  if c == nil then
+    c = false
+    if C_Map and C_Map.GetWorldPosFromMapPos and CreateVector2D then
+      local ok, cont, pos = pcall(C_Map.GetWorldPosFromMapPos, uiMapID, CreateVector2D(x / 100, y / 100))
+      if ok and cont and type(pos) == "table" and pos.x and pos.y then c = { cont, pos.x, pos.y } end
+    end
+    world[key] = c
+  end
+  if c then return c[1], c[2], c[3] end
+  return nil
+end
+
+-- Where you stand: { continent, x, y } in world yards, else nil (instances, no C_Map).
+function M.PlayerWorldPos()
+  local map = M.PlayerMap()
+  if not (map and C_Map and C_Map.GetPlayerMapPosition and C_Map.GetWorldPosFromMapPos) then return nil end
+  local ok, p = pcall(C_Map.GetPlayerMapPosition, map, "player")
+  if not (ok and type(p) == "table" and p.x and p.y) then return nil end
+  local ok2, cont, pos = pcall(C_Map.GetWorldPosFromMapPos, map, p)
+  if not (ok2 and cont and type(pos) == "table" and pos.x and pos.y) then return nil end
+  return { continent = cont, x = pos.x, y = pos.y }
+end

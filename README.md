@@ -49,6 +49,9 @@ extra column built into the profession window.
   how many herbs, nodes or mobs to expect, and when to train the next rank. It stays
   on your continent and avoids the other faction's zones and mobs above your level. With **GatherMate2**, the nodes you recorded join the guide,
   and one button adds Profs!' node positions to GatherMate2's map pins.
+- **Nearest vendor in item tooltips**: hover anything a vendor sells (thread, vials,
+  flux, food, ammo...) to see the nearest friendly or neutral vendor, its
+  coordinates and how many yards away it is. Turn it off in the options.
 - **Auction House prices** from your own scans, TradeSkillMaster or Auctionator,
   whichever is freshest. Scans only run when you press a button at the Auction
   House.
