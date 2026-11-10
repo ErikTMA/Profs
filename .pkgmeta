@@ -1,0 +1,8 @@
+package-as: Profs
+
+enable-nolib-creation: no
+
+ignore:
+  - .github
+  - .gitattributes
+  - .pkgmeta
