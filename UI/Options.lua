@@ -57,6 +57,12 @@ function O.Definitions()
       type = "boolean", default = true,
       get = function() return settings().vendorTooltip ~= false end,
       set = function(v) settings().vendorTooltip = v and nil or false end },
+    { key = "trainerPrompt", label = "Offer route recipes at trainers",
+      tooltip = "At a profession trainer: offer to learn the recipes and ranks your routes "
+        .. "need that you can learn now, with the price (Yes / No).",
+      type = "boolean", default = true,
+      get = function() return settings().trainerPrompt ~= false end,
+      set = function(v) settings().trainerPrompt = v and nil or false end },
     { key = "colorblind", label = "Colour-blind skill-up markers",
       tooltip = "Add +++ / ++ / + after orange / yellow / green route steps. Off by default "
         .. "unless the game's colour-blind mode is on.",

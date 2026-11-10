@@ -413,7 +413,11 @@ function S.Plan()
   st.pricer = ns.PriceSources.Pricer(ds)
   opts.pricer = st.pricer
   st.mode = opts.mode
-  if info.skill >= target then st.route = nil; st.done = true; return st end
+  ns.cdb.trainList = ns.cdb.trainList or {}
+  if info.skill >= target then
+    st.route = nil; st.done = true; ns.cdb.trainList[prof] = nil
+    return st
+  end
   st.done = false
   opts.owned = S.Owned(ds, prof)
   local key = S.PlanKey(ds, prof, target, opts)
@@ -427,6 +431,8 @@ function S.Plan()
     S.cache[prof] = { key = key, route = st.route, skill = info.skill, owned = opts.owned }
     S.stats.plans = S.stats.plans + 1
   end
+  -- what a trainer visit should offer (UI/TrainerPrompt.lua)
+  ns.cdb.trainList[prof] = ns.Training.Wanted(ds, st.route, prof)
   local items = {}
   for _, seg in ipairs(st.route.segments) do
     for _, rg in ipairs(seg.reagents) do items[#items + 1] = rg[1] end
