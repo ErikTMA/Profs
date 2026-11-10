@@ -3,10 +3,10 @@
 ## Notes: Profession leveling routes, shopping lists and guided crafting.
 ## Category: Professions
 ## Author: Erik Andersen
-## Version: 0.5.0
+## Version: 0.6.0
 ## SavedVariables: ProfsDB
 ## SavedVariablesPerCharacter: ProfsCharDB
-## OptionalDeps: TradeSkillMaster, Auctionator, Pawn, GatherMate2, TomTom
+## OptionalDeps: TradeSkillMaster, Auctionator, Pawn, GatherMate2
 ## IconTexture: Interface\AddOns\Profs\Media\ProfsIcon
 ## AddonCompartmentFunc: Profs_OnAddonCompartmentClick
 ## AddonCompartmentFuncOnEnter: Profs_OnAddonCompartmentEnter
@@ -19,12 +19,16 @@ Core/Util.lua
 Core/Events.lua
 Core/Media.lua
 
+# Libs (shared with Lvls!, embedded: the newest copy loaded runs)
+Libs/WaypointArrow.lua
+
 # Data: schema, registry, static tables, generated datasets
 Data/Schema.lua
 Data/Registry.lua
 Data/Professions.lua
 Data/Disenchant.lua
 Data/Cooldowns.lua
+Data/PawnWeights.lua
 Data/forever/Dataset.lua
 
 # Engine (pure Lua, unit tested headless)

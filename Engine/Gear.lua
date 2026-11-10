@@ -1,37 +1,23 @@
 -- Character leveling gear helper: craftable items the character can make (or have
 -- made by an alt's profession) that beat what is equipped.
 --
--- Scoring: Pawn when it is installed (Adapters/Pawn.lua supplies `scorer`), else the
--- built-in AUTOMATIC weights below — picked from the class, and for hybrid classes
--- from whichever role profile best matches the primary stats already equipped. There
--- is deliberately no manual weight editor.
+-- Scoring: Pawn when it is installed (Adapters/Pawn.lua supplies `scorer`), else
+-- Pawn's own weights built in (Data/PawnWeights.lua, generated from Pawn's Forever
+-- scales by `make pawn-weights`) and Pawn's own formula: the upgrade is
+-- (new - current) / current in percent, an empty slot is a big upgrade, under 0.5%
+-- is none. The scale is the specialization's; without one, the class scale that best
+-- matches the stats already equipped. There is deliberately no manual weight editor.
 local _, ns = ...
 local G = ns:NewModule("Gear")
 
-local STR, AGI, STA, INT, SPI = "ITEM_MOD_STRENGTH_SHORT", "ITEM_MOD_AGILITY_SHORT",
-  "ITEM_MOD_STAMINA_SHORT", "ITEM_MOD_INTELLECT_SHORT", "ITEM_MOD_SPIRIT_SHORT"
-local ARMOR, DPS = "RESISTANCE0_NAME", "ITEM_MOD_DAMAGE_PER_SECOND_SHORT"
+G.EMPTY_SLOT = 10000 -- percent: Pawn's "big upgrade" (PawnBigUpgradeThreshold, 100 = 10,000%)
+G.MIN_PCT = 0.5      -- Pawn counts only upgrades at least 0.5% better
 
-local PROFILES = {
-  melee_str = { [STR] = 1.0, [AGI] = 0.5, [STA] = 0.5, [ARMOR] = 0.01, [DPS] = 3.0 },
-  melee_agi = { [AGI] = 1.0, [STR] = 0.4, [STA] = 0.5, [ARMOR] = 0.01, [DPS] = 3.0 },
-  ranged    = { [AGI] = 1.0, [INT] = 0.3, [STA] = 0.5, [ARMOR] = 0.01, [DPS] = 2.0 },
-  caster    = { [INT] = 1.0, [SPI] = 0.6, [STA] = 0.5, [ARMOR] = 0.005 },
-  healer    = { [INT] = 1.0, [SPI] = 0.8, [STA] = 0.4, [ARMOR] = 0.005 },
-}
-G.PROFILES = PROFILES
+local DPS = "ITEM_MOD_DAMAGE_PER_SECOND_SHORT"
+local RANGED = { [15] = true, [25] = true, [26] = true } -- inventory types of ranged weapons
 
-local CLASS_PROFILES = {
-  WARRIOR = { "melee_str" },
-  ROGUE   = { "melee_agi" },
-  HUNTER  = { "ranged" },
-  MAGE    = { "caster" },
-  WARLOCK = { "caster" },
-  PRIEST  = { "caster", "healer" },
-  PALADIN = { "melee_str", "healer" },
-  SHAMAN  = { "melee_str", "caster", "healer" },
-  DRUID   = { "melee_agi", "caster", "healer" },
-}
+-- The client's specialization name -> Pawn's scale name, where they differ.
+local SPEC_ALIAS = { guardian = "feral (tank)", feral = "feral (damage)" }
 
 -- armor subclass (1 cloth, 2 leather, 3 mail, 4 plate) -> minimum character level
 local ARMOR_PROF = {
@@ -41,12 +27,33 @@ local ARMOR_PROF = {
   MAGE = { [1] = 0 }, WARLOCK = { [1] = 0 }, PRIEST = { [1] = 0 },
 }
 
-local function score(stats, w)
+-- An item's value on a scale (Data/PawnWeights.lua entry, or a plain { [stat] = w }).
+-- invType decides melee or ranged weapon DPS.
+local function score(stats, scale, invType)
+  local w = scale.weights or scale
   local s = 0
-  for k, v in pairs(stats or {}) do s = s + (w[k] or 0) * v end
+  for k, v in pairs(stats or {}) do
+    if k == DPS and scale.weights then
+      s = s + (RANGED[invType] and scale.rangedDps or scale.meleeDps or 0) * v
+    else
+      s = s + (w[k] or 0) * v
+    end
+  end
   return s
 end
 G.Score = score
+
+-- Upgrade percent of a score over the current one, Pawn's way.
+function G.Percent(new, cur)
+  if not cur or cur <= 0 then return new > 0 and G.EMPTY_SLOT or 0 end
+  return (new - cur) / cur * 100
+end
+
+-- "+12%", or "empty slot" for an item that fills one.
+function G.GainText(gain)
+  if gain >= G.EMPTY_SLOT then return "empty slot" end
+  return ("+%.0f%%"):format(gain)
+end
 
 -- Equip slot (inventory type) -> slot group shown in the upgrade lists.
 G.SLOT_GROUP = {
@@ -70,38 +77,48 @@ function G.BySlot(upgrades)
   for _, g in ipairs(groups) do
     table.sort(g.items, function(a, b)
       if a.gain ~= b.gain then return a.gain > b.gain end
+      if (a.score or 0) ~= (b.score or 0) then return (a.score or 0) > (b.score or 0) end
       return a.itemId < b.itemId
     end)
   end
   table.sort(groups, function(a, b)
-    if a.items[1].gain ~= b.items[1].gain then return a.items[1].gain > b.items[1].gain end
+    local x, y = a.items[1], b.items[1]
+    if x.gain ~= y.gain then return x.gain > y.gain end
+    if (x.score or 0) ~= (y.score or 0) then return (x.score or 0) > (y.score or 0) end
     return a.name < b.name
   end)
   return groups
 end
 
--- Profile per specialization (talent tree) index, in the client's tree order, for the
--- classes whose trees want different stats. Trees not listed use the class list.
-G.SPEC_PROFILES = {
-  PALADIN = { "healer", "melee_str", "melee_str" },   -- Holy, Protection, Retribution
-  SHAMAN  = { "caster", "melee_str", "healer" },      -- Elemental, Enhancement, Restoration
-  DRUID   = { "caster", "melee_agi", "healer" },      -- Balance, Feral, Restoration
-  PRIEST  = { "healer", "healer", "caster" },         -- Discipline, Holy, Shadow
-}
+-- Pawn's scales for a class ({} for an unknown class).
+function G.Scales(class)
+  return ns.PawnWeights and ns.PawnWeights[class] or {}
+end
 
--- The profile for the class: the specialization's when known (spec = tree index),
--- else the class profile that best explains the equipped totals.
-function G.AutoWeights(class, equippedTotals, spec)
-  local bySpec = spec and G.SPEC_PROFILES[class] and G.SPEC_PROFILES[class][spec]
-  if bySpec then return PROFILES[bySpec], bySpec end
-  local list = CLASS_PROFILES[class] or { "melee_str" }
-  if #list == 1 or not equippedTotals then return PROFILES[list[1]], list[1] end
-  local bestName, best = list[1], -1
-  for _, name in ipairs(list) do
-    local s = score(equippedTotals, PROFILES[name])
-    if s > best then best, bestName = s, name end
+-- The scale for the class: the specialization's when known (by the client's name for
+-- it, else its tree index), else the class scale that best explains the equipped
+-- totals. Returns the scale and its name ("Arms").
+function G.AutoWeights(class, equippedTotals, spec, specName)
+  local list = G.Scales(class)
+  if #list == 0 then list = G.Scales("WARRIOR") end
+  if specName then
+    local want = specName:lower()
+    want = SPEC_ALIAS[want] or want
+    for _, sc in ipairs(list) do if sc.name:lower() == want then return sc, sc.name end end
+    for _, sc in ipairs(list) do
+      if sc.name:lower():match("^(.-) %(") == want then return sc, sc.name end
+    end
   end
-  return PROFILES[bestName], bestName
+  if spec then
+    for _, sc in ipairs(list) do if sc.spec == spec then return sc, sc.name end end
+  end
+  if #list == 1 or not equippedTotals or not next(equippedTotals) then return list[1], list[1].name end
+  local best, bestScore = list[1], -1
+  for _, sc in ipairs(list) do
+    local v = score(equippedTotals, sc)
+    if v > bestScore then best, bestScore = sc, v end
+  end
+  return best, best.name
 end
 
 -- weapon subclass -> classes that can train it (Classic Era proficiencies; unverified
@@ -158,7 +175,7 @@ end
 --       drops (true: also patterns that drop; candidates carry how = acquisition),
 --       pending = {} (filled with items the scorer could not rate yet)
 function G.Candidates(ds, opts)
-  local w = opts.weights or G.AutoWeights(opts.class, opts.equippedTotals, opts.spec)
+  local w = opts.weights or G.AutoWeights(opts.class, opts.equippedTotals, opts.spec, opts.specName)
   local out = {}
   for profId, skill in pairs(opts.profs or {}) do
     for _, r in ipairs(ds.recipesByProf[profId] or {}) do
@@ -169,23 +186,24 @@ function G.Candidates(ds, opts)
       if how then
         local rl = it.rl or 0
         if rl <= (opts.level or 60) + (opts.lookahead or 3) and G.CanWear(opts.class, opts.level or 60, it) then
-          local sc, pct
+          -- gain: upgrade percent over what is worn, Pawn's or by Pawn's weights. An
+          -- item Pawn cannot rate yet (its data is not loaded) is left out and noted
+          -- in opts.pending, and the caller re-runs on arrival.
+          local sc, gain
           if opts.scorer then
-            -- Pawn rates in percent; built-in weights in stat points. Never mix the two
-            -- in one list: an item Pawn cannot rate yet (its data is not loaded) is
-            -- left out and noted in opts.pending, and the caller re-runs on arrival.
-            sc = opts.scorer(out_id)
-            pct = sc ~= nil
-            if sc == nil and opts.pending then opts.pending[out_id] = true end
+            gain = opts.scorer(out_id)
+            sc = gain
+            if gain == nil and opts.pending then opts.pending[out_id] = true end
           else
-            local st = it.stats or (opts.stats and opts.stats(out_id))
-            sc = st and score(st, w) or nil
+            -- the client's stats first: the equipped item is scored from them too
+            local st = (opts.stats and opts.stats(out_id)) or it.stats
+            sc = st and score(st, w, it.slot) or nil
+            if sc then gain = G.Percent(sc, opts.equipped and opts.equipped[it.slot] or 0) end
           end
-          if sc then
-            local cur = opts.equipped and opts.equipped[it.slot] or 0
+          if gain then
             out[#out + 1] = { itemId = out_id, recipe = r.id, prof = profId, slot = it.slot,
-              reqLevel = rl, score = sc, gain = sc - cur, usableNow = rl <= (opts.level or 60), how = how,
-              pct = pct or nil }   -- pct: gain is Pawn's upgrade percent
+              reqLevel = rl, score = sc, gain = gain, usableNow = rl <= (opts.level or 60), how = how,
+              pct = true }
           end
         end
       end
@@ -193,9 +211,11 @@ function G.Candidates(ds, opts)
   end
   table.sort(out, function(a, b)
     if a.gain ~= b.gain then return a.gain > b.gain end
+    -- equal gains (empty slots): the better item first
+    if (a.score or 0) ~= (b.score or 0) then return (a.score or 0) > (b.score or 0) end
     return a.itemId < b.itemId
   end)
   local upgrades = {}
-  for _, c in ipairs(out) do if c.gain > 0 then upgrades[#upgrades + 1] = c end end
+  for _, c in ipairs(out) do if c.gain >= G.MIN_PCT then upgrades[#upgrades + 1] = c end end
   return upgrades, out
 end

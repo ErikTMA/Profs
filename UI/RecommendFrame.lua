@@ -32,10 +32,7 @@ function RF.WhoGathers(src, mine, alts)
   return nil
 end
 
-local function pctText(c)
-  if c.pct then return ("+%d%%"):format(math.floor(c.gain + 0.5)) end
-  return ("+%.1f"):format(c.gain)
-end
+local function pctText(c) return ns.Gear.GainText(c.gain) end
 
 local function gearTooltip(ds, card)
   local t = { card.name .. ": upgrades for you" }

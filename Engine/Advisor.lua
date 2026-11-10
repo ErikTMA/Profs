@@ -63,16 +63,10 @@ A.NOTES = {
   [129] = "Bandages: healing between fights for any class.",
 }
 
--- Pure: how much an upgrade counts for ranking, 0..A.SLOT_CAP. Pawn gives a percent;
--- built-in scores are made relative to what is worn (an empty slot counts fully).
+-- Pure: how much an upgrade counts for ranking, 0..A.SLOT_CAP: its upgrade percent
+-- (an empty slot counts fully).
 function A.Relative(c)
-  local v
-  if c.pct then v = c.gain
-  else
-    local cur = (c.score or 0) - (c.gain or 0)
-    v = cur > 0 and (c.gain / cur * 100) or A.SLOT_CAP
-  end
-  return math.max(0, math.min(A.SLOT_CAP, v))
+  return math.max(0, math.min(A.SLOT_CAP, c.gain or 0))
 end
 
 -- Gear summary from upgrade candidates: { value, slots = { {name, best, items} } }.

@@ -237,8 +237,7 @@ function S.FormatMakeNow(ds, recipes, skill, counts, pricer, upgrades)
     local tip = { grey and "No skill-up at your skill." or
       ("Skill-up chance at %d: %d%%"):format(skill, math.floor(ns.SkillUp.Chance(ds.recipes[row.recipe], skill) * 100 + 0.5)) }
     if row.upgrade then
-      tip[#tip + 1] = ("Gear upgrade for you: %s"):format(row.upgrade.pct and ("+%d%%"):format(math.floor(row.upgrade.gain + 0.5))
-        or ("+%.1f"):format(row.upgrade.gain))
+      tip[#tip + 1] = ("Gear upgrade for you: %s"):format(ns.Gear.GainText(row.upgrade.gain))
     end
     if row.value > 0 then tip[#tip + 1] = ("Worth %s each (vendor or AH)."):format(U.money(row.value)) end
     row.tooltip = tip

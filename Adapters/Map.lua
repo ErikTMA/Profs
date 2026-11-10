@@ -2,7 +2,8 @@
 -- GetBestMapForUnit / GetWorldPosFromMapPos / CanSetUserWaypointOnMap / SetUserWaypoint
 -- (Blizzard_APIDocumentationGenerated/MapDocumentation.lua), C_SuperTrack.
 -- SetSuperTrackedUserWaypoint, UiMapPoint.CreateFromCoordinates (Blizzard_ObjectAPI/
--- Mainline), CreateVector2D (Blizzard_SharedXML). TomTom is used when installed.
+-- Mainline), CreateVector2D (Blizzard_SharedXML). The arrow is Libs/WaypointArrow.lua, shared
+-- with Lvls! (one arrow whichever of the two is installed).
 local _, ns = ...
 local M = ns:NewModule("Map")
 
@@ -72,25 +73,45 @@ function M.PlayerMap()
   return ok and id or nil
 end
 
--- A waypoint at x, y (percent) on a uiMap. Returns "tomtom", "map" or nil.
-function M.SetWaypoint(uiMapID, x, y, title)
-  local tt = _G.TomTom
-  if type(tt) == "table" and type(tt.AddWaypoint) == "function" then
-    local ok = pcall(tt.AddWaypoint, tt, uiMapID, x / 100, y / 100, { title = title, from = ns.displayName })
-    if ok then return "tomtom" end
+-- The map's own pin at x, y (percent); supertracked only when there is no arrow (the
+-- client would draw a second one). True when set.
+local function mapPin(uiMapID, x, y, track)
+  if not (C_Map and C_Map.SetUserWaypoint and UiMapPoint and UiMapPoint.CreateFromCoordinates) then return false end
+  if C_Map.CanSetUserWaypointOnMap and not C_Map.CanSetUserWaypointOnMap(uiMapID) then return false end
+  local ok, set = pcall(C_Map.SetUserWaypoint, UiMapPoint.CreateFromCoordinates(uiMapID, x / 100, y / 100))
+  if not ok or set == false then return false end
+  if track and C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
+    pcall(C_SuperTrack.SetSuperTrackedUserWaypoint, true)
   end
-  if C_Map and C_Map.SetUserWaypoint and UiMapPoint and UiMapPoint.CreateFromCoordinates then
-    if C_Map.CanSetUserWaypointOnMap and not C_Map.CanSetUserWaypointOnMap(uiMapID) then return nil end
-    local ok, set = pcall(C_Map.SetUserWaypoint, UiMapPoint.CreateFromCoordinates(uiMapID, x / 100, y / 100))
-    if ok and set ~= false then
-      if C_SuperTrack and C_SuperTrack.SetSuperTrackedUserWaypoint then
-        pcall(C_SuperTrack.SetSuperTrackedUserWaypoint, true)
-      end
-      return "map"
-    end
-  end
-  return nil
+  return true
 end
+
+-- A waypoint at x, y (percent) on a uiMap: the shared arrow points there (until you
+-- reach it and walk on, or right-click it), and the map gets a pin. Returns "arrow",
+-- "map" or nil.
+function M.SetWaypoint(uiMapID, x, y, title)
+  local WA = _G.WaypointArrow
+  if WA and WA.frame then
+    WA.Set(ns.displayName or "Profs!", { map = uiMapID, x = x, y = y, title = title },
+      { manual = true, fresh = true, clearOnLeave = true, clearable = true })
+    mapPin(uiMapID, x, y, false)
+    return "arrow"
+  end
+  return mapPin(uiMapID, x, y, true) and "map" or nil
+end
+
+-- The shared arrow goes where it was dragged (ns.db.settings.frames.WaypointArrow).
+ns.Events.On("PROFS_LOADED", function()
+  local WA = _G.WaypointArrow
+  if not WA then return end
+  WA.Register(ns.displayName or "Profs!", {
+    load = function() return ns.db.settings.frames and ns.db.settings.frames.WaypointArrow end,
+    save = function(pos)
+      ns.db.settings.frames = ns.db.settings.frames or {}
+      ns.db.settings.frames.WaypointArrow = pos
+    end,
+  })
+end)
 
 -- World position of x, y (percent) on a uiMap: continentId, worldX, worldY (yards), or
 -- nil. C_Map.GetWorldPosFromMapPos (MapDocumentation.lua); cached per point, since

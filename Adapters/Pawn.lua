@@ -11,8 +11,9 @@
 -- maximum made an Enhancement shaman's list a healer's list. The scale is:
 --   the character's choice (ProfsCharDB.gearSpec: "spec:<n>" or "pawn:<scale>"), else
 --   Pawn's scale for the active specialization (PawnFindScaleForSpec(class, tree)).
--- A chosen scale Pawn does not show (hidden in Pawn) has no values: the built-in
--- weights for that specialization score instead, and the label says so.
+-- A chosen scale Pawn does not show (hidden in Pawn) has no values: Pawn's weights
+-- built into Profs! (Data/PawnWeights.lua) for that specialization score instead, and
+-- the label says so. Without Pawn the same built-in weights score, in percent too.
 local _, ns = ...
 local PW = ns:NewModule("Pawn")
 
@@ -85,15 +86,15 @@ function PW.Scoring()
     scale = scale or PW.ScaleForSpec(me.classId, specIdx)
     local info = scale and scaleInfo(scale)
     if scale and info and not info.visible then
-      return { spec = specIdx, label = ("Built-in weights for %s (Pawn scale \"%s\" is hidden in Pawn)"):format(
+      return { spec = specIdx, specName = specLabel, label = ("Pawn's weights for %s, built in (Pawn scale \"%s\" is hidden in Pawn)"):format(
         specLabel or "your class", info.label) }
     end
     local label = info and info.label or scale
     return { scorer = PW.Scorer(scale), spec = specIdx, pawn = true, scale = scale,
       label = label and ("Scored by Pawn: " .. label) or "Scored by Pawn (best of your visible scales)" }
   end
-  return { spec = specIdx, label = specLabel and ("Built-in weights for " .. specLabel)
-    or "Built-in automatic weights" }
+  return { spec = specIdx, specName = specLabel, label = specLabel and ("Pawn's weights for " .. specLabel .. ", built in")
+    or "Pawn's weights for your class, built in" }
 end
 
 -- Choices for "Score gear for": auto, each specialization, each Pawn scale.

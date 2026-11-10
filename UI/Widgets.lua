@@ -342,14 +342,15 @@ end
 
 local ROW_H = Theme.ROW_HEIGHT
 
--- tooltip = "one line" | { "line", ... } | function() -> { "line", ... }
+-- tooltip = "one line" | { "line" | { left, right }, ... } | function() -> { ... }
 local function tooltipLines(d)
   local t = d.tooltip
   if type(t) == "function" then t = t() end
   if t == nil then return nil end
   if type(t) ~= "table" then return { tostring(t) } end
   local out = {}
-  for _, l in ipairs(t) do out[#out + 1] = tostring(l) end
+  -- a line is a string, or { left, right } for a two-column line
+  for _, l in ipairs(t) do out[#out + 1] = type(l) == "table" and l or tostring(l) end
   return #out > 0 and out or nil
 end
 
@@ -379,7 +380,14 @@ local function showTooltip(row)
     GameTooltip:SetText(lines[1])
     first = 2
   end
-  for j = first, #(lines or {}) do GameTooltip:AddLine(lines[j], 1, 1, 1, true) end
+  for j = first, #(lines or {}) do
+    local l = lines[j]
+    if type(l) == "table" then
+      GameTooltip:AddDoubleLine(tostring(l[1]), tostring(l[2] or ""), 1, 1, 1, 0.63, 0.63, 0.63)
+    else
+      GameTooltip:AddLine(l, 1, 1, 1, true)
+    end
+  end
   if d.menu and MenuUtil then GameTooltip:AddLine(Theme.Wrap("muted", "Right-click: options"), 1, 1, 1) end
   GameTooltip:Show()
 end

@@ -1,5 +1,5 @@
 -- Leveling gear helper: craftable upgrades from your professions (and your alts'
--- professions on this account). Pawn when installed, else automatic built-in weights.
+-- professions on this account). Pawn when installed, else Pawn's weights built in.
 -- GF.Compute/GF.Format feed the character-frame column (UI/GearColumn.lua, which owns
 -- /profs gear); GF.Show is the stand-alone list, used only without a character frame.
 local _, ns = ...
@@ -14,7 +14,7 @@ function GF.Format(ds, upgrades, usingPawn)
   local T = ns.Theme
   -- usingPawn: the scoring label (PW.Scoring().label), or true/false from older callers
   local label = type(usingPawn) == "table" and usingPawn.label or type(usingPawn) == "string" and usingPawn
-    or (usingPawn and "Scored by Pawn" or "Scored by built-in automatic weights")
+    or (usingPawn and "Scored by Pawn" or "Scored by Pawn's weights (built in)")
   local rows = { { summary = true, text = T.Wrap("gold", label) } }
   -- the same slot-grouped rows as the character-frame column
   for _, row in ipairs(ns.GearColumn.Rows(ds, upgrades)) do rows[#rows + 1] = row end
@@ -32,7 +32,7 @@ local function equippedScores(weights)
       local ok, st = pcall(fn, link)
       if ok and st then
         for k, v in pairs(st) do totals[k] = (totals[k] or 0) + v end
-        if weights then scores[inv] = ns.Gear.Score(st, weights) end
+        if weights then scores[inv] = ns.Gear.Score(st, weights, inv == 18 and 15 or nil) end
       end
     end
   end
@@ -45,7 +45,7 @@ function GF.Context()
   local scoring = ns.Pawn.Scoring()
   local equipped
   local _, totals = equippedScores(nil)
-  local weights = ns.Gear.AutoWeights(me.class, totals, scoring.spec)
+  local weights = ns.Gear.AutoWeights(me.class, totals, scoring.spec, scoring.specName)
   if not scoring.scorer then
     local byInv = equippedScores(weights)
     equipped = {}

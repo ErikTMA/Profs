@@ -2,15 +2,14 @@
 -- gear that just became equippable, that this character can make now (skill, and a
 -- recipe that is known or obtainable from a trainer/vendor/starter source), that it
 -- can wear (armor and weapon proficiency) and that is a MEANINGFUL upgrade over what
--- is equipped. Scoring: Pawn's upgrade percent when available, else Engine/Gear.lua's
--- automatic weights. Each item is announced once per character.
+-- is equipped. Scoring: Pawn's upgrade percent when available, else the same percent
+-- by Pawn's weights built in (Engine/Gear.lua). Each item is announced once per character.
 local _, ns = ...
 local GA = ns:NewModule("GearAlert")
 
 GA.DEFAULTS = {
   enabled = true,
-  minPct = 5,        -- percent better than the equipped item (Pawn: its upgrade %)
-  minGain = 1,       -- absolute score points (built-in weights)
+  minPct = 5,        -- percent better than the equipped item (Pawn's upgrade %)
   maxPerLevel = 3,   -- rows in one notification
 }
 
@@ -40,7 +39,7 @@ local function replaces(equipped, invType, weights)
   for _, inv in ipairs(GA.INV_SLOTS[invType] or {}) do
     local e = equipped and equipped[inv] or { score = 0 }
     if e.unknown then return e end -- one unreadable candidate slot: do not guess
-    local sc = e.score or (e.stats and ns.Gear.Score(e.stats, weights)) or 0
+    local sc = e.score or (e.stats and ns.Gear.Score(e.stats, weights, inv == 18 and 15 or nil)) or 0
     if not best or sc < bestScore then best, bestScore = e, sc end
   end
   return best
@@ -48,7 +47,8 @@ end
 GA.Replaces = replaces
 
 -- "+3 Stamina, +2 Intellect" (top 3 weighted improvements over the replaced item)
-function GA.Reason(newStats, oldStats, weights)
+function GA.Reason(newStats, oldStats, scale)
+  local weights = scale.weights or scale
   local diffs = {}
   for k, v in pairs(newStats or {}) do
     local d = v - ((oldStats or {})[k] or 0)
@@ -74,7 +74,7 @@ end
 function GA.Evaluate(ds, ctx)
   local cfg = ns.Util.merge(GA.DEFAULTS, ctx.settings or {})
   if not cfg.enabled then return {} end
-  local weights = ctx.weights or ns.Gear.AutoWeights(ctx.class, ctx.equippedTotals, ctx.spec)
+  local weights = ctx.weights or ns.Gear.AutoWeights(ctx.class, ctx.equippedTotals, ctx.spec, ctx.specName)
   local pricer = ctx.pricer or ns.Pricing.New(ds)
   local out, best = {}, {}
   for prof, skill in pairs(ctx.profs or {}) do
@@ -99,12 +99,11 @@ function GA.Evaluate(ds, ctx)
           else
             local st = it.stats or (ctx.stats and ctx.stats(itemId))
             if st then
-              local s = ns.Gear.Score(st, weights)
-              local cur = old.score or (old.stats and ns.Gear.Score(old.stats, weights)) or 0
-              local gain = s - cur
-              local pct = cur > 0 and gain / cur * 100 or math.huge
-              if gain >= cfg.minGain and pct >= cfg.minPct then
-                alert = { gain = gain, pct = pct, scoredBy = "Profs! weights",
+              local s = ns.Gear.Score(st, weights, it.slot)
+              local cur = old.score or (old.stats and ns.Gear.Score(old.stats, weights, it.slot)) or 0
+              local pct = cur > 0 and (s - cur) / cur * 100 or (s > 0 and math.huge or 0)
+              if pct >= cfg.minPct then
+                alert = { gain = pct, pct = pct, scoredBy = "Pawn's weights",
                   reason = GA.Reason(st, old.stats, weights) }
               end
             end

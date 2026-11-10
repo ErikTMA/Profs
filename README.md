@@ -39,8 +39,9 @@ extra column built into the profession window.
   rank to train.
 - **Make now**: a tab in the profession column listing everything you know that
   your bags can make right now, skill-ups first, marking gear upgrades and value.
-- **Leveling gear helper**: craftable upgrades for your level, scored with Pawn if
-  you use it, otherwise with built-in stat weights.
+- **Leveling gear helper**: craftable upgrades for your level, shown as percent
+  better than what you wear: scored by Pawn if you use it, otherwise by Pawn's own
+  weights built into Profs!.
 - **Level-up alerts**: when you ding, a small notice lists craftable gear that just
   became an upgrade. Click a row to open the recipe.
 - **Gathering guide** for Herbalism, Mining and Skinning: where to gather at every
@@ -75,7 +76,7 @@ From source instead: `git clone https://github.com/ErikTMA/Profs.git` inside the
 AddOns folder (or use **Code > Download ZIP** and rename `Profs-main` to `Profs`).
 
 Optional addons that Profs! uses when present: **TradeSkillMaster**, **Auctionator**,
-**Pawn**, **GatherMate2**, **TomTom**. None of them are required.
+**Pawn**, **GatherMate2**. None of them are required.
 
 ## Usage
 
@@ -129,7 +130,8 @@ you put them; `/profs resetui` puts them back.
 `/profs gather` (or alt-click the minimap button) opens it; `/profs gather mining`,
 `/profs gather herbalism` or `/profs gather skinning` picks the profession. Each row is
 a step: skill range, zone and coordinates, and about how many herbs, nodes or mobs it
-takes. Click a row for a waypoint (TomTom if you have it, else the map's own pin).
+takes. Click a row for a waypoint: an arrow on screen points the way (the same arrow as
+Lvls!, if you have that too) and the map gets a pin. Right-click the arrow to clear it.
 Hover it for the nodes or mobs there in skill-up colours (mobs with their level), the
 level of the area and whose zone it is. Mining's own window shows the same guide in the
 Profs! column. With GatherMate2, **Add to GatherMate2** copies
@@ -150,7 +152,8 @@ upgrade for it, biggest first, and the slot with the biggest upgrade comes first
 
 Gear is scored for your active specialization: with Pawn, Pawn's scale for that
 specialization (for example "Shaman: Enhancement"), shown as percent better than what
-you wear; without Pawn, built-in weights for it (melee, caster or healer). The
+you wear; without Pawn, the same percent from Pawn's own weights for that
+specialization, built into Profs!. The
 column's top line says which. To score for another specialization or a specific Pawn
 scale, use **Score gear for** in the options or `/profs gearspec 3`,
 `/profs gearspec pawn <scale>`, `/profs gearspec auto` (per character).
