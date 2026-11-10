@@ -108,7 +108,8 @@ function S.FormatAcquire(ds, recipeId, how, side)
     lines[#lines + 1] = ("Reputation vendor (standing %s), %s."):format(tostring(src.standing),
       U.money(src.cost))
   elseif how.t == "drop" then
-    lines[#lines + 1] = ("Pattern drops: %s."):format(itemName(ds, src.item or 0))
+    lines[#lines + 1] = src.item and ("Pattern drops: %s."):format(itemName(ds, src.item))
+      or "The pattern drops; the data does not name it."
     for _, l in ipairs(S.DropLines(ds, src)) do lines[#lines + 1] = l end
   elseif how.t == "locked" then
     lines[#lines + 1] = "You locked this recipe; source not in your allowed list."

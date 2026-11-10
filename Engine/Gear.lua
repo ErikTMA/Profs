@@ -166,7 +166,8 @@ function G.Obtainable(r, known, faction, sources)
   if r.spec then return nil end
   faction = faction or {}
   return ns.Optimizer.Acquisition(r, ns.Util.merge(ns.Optimizer.DEFAULTS,
-    { known = known, side = faction.side, npcs = faction.npcs, allowSources = sources or G.SOURCES }))
+    { known = known, side = faction.side, npcs = faction.npcs, allowSources = sources or G.SOURCES,
+      dropNeedsMobs = true }))
 end
 
 -- opts: profs={[profId]=skill}, level, class, weights|nil, scorer(itemId)|nil, known,

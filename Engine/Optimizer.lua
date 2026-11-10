@@ -82,12 +82,15 @@ end
 -- Cheapest way to obtain a recipe, or nil when no allowed source exists.
 -- Returns { t=sourceType, cost=copper, crafts=time-cost, source=src,
 --           access="ok"|"unknown" }. Sources with confirmed access win over unknown
--- ones; then the cheapest.
+-- ones; then the cheapest. opts.dropNeedsMobs: a drop whose mobs the data does not
+-- name is not a source (nothing to farm); it becomes one once the data has them.
 function O.Acquisition(r, opts)
   if opts.known and opts.known[r.id] then return { t = "known", cost = 0, crafts = 0, access = "ok" } end
   local best
   for _, s in ipairs(r.sources or {}) do
-    local access = (opts.allowSources[s.t] or opts.forced == r.id) and sourceAccess(s, opts)
+    local access = (opts.allowSources[s.t] or opts.forced == r.id)
+      and not (opts.dropNeedsMobs and s.t == "drop" and not (s.mobs and #s.mobs > 0))
+      and sourceAccess(s, opts)
     if access then
       local cost, crafts = s.cost or 0, 0
       if s.unknownCost and s.t == "vendor" then cost = opts.unknownRecipeCost end

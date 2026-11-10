@@ -3,7 +3,7 @@
 ## Notes: Profession leveling routes, shopping lists and guided crafting.
 ## Category: Professions
 ## Author: Erik Andersen
-## Version: 0.6.0
+## Version: 0.6.1
 ## SavedVariables: ProfsDB
 ## SavedVariablesPerCharacter: ProfsCharDB
 ## OptionalDeps: TradeSkillMaster, Auctionator, Pawn, GatherMate2
