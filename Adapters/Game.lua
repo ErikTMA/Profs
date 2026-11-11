@@ -157,6 +157,14 @@ function G.CurrencyName(id)
   return ok and type(info) == "table" and type(info.name) == "string" and info.name ~= "" and info.name or nil
 end
 
+-- How much of a currency the character holds (C_CurrencyInfo.GetCurrencyInfo .quantity);
+-- 0 when unreadable.
+function G.CurrencyQuantity(id)
+  if not (C_CurrencyInfo and C_CurrencyInfo.GetCurrencyInfo) then return 0 end
+  local ok, info = pcall(C_CurrencyInfo.GetCurrencyInfo, id)
+  return ok and type(info) == "table" and type(info.quantity) == "number" and info.quantity or 0
+end
+
 -- "A" | "H" | nil (faction not readable, e.g. a neutral character): Engine/Faction.lua
 function G.Faction()
   if not UnitFactionGroup then return nil end

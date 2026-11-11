@@ -43,7 +43,7 @@ commands.debug = function()
 end
 
 commands.help = function()
-  ns.Log("info", "/profs [show|options|status|recommend|gear|gather|save|load|reset|ah|prices|alerts|minimap|resetui|debug|help]")
+  ns.Log("info", "/profs [show|options|status|recommend|gear|gather|crates|save|load|reset|ah|prices|alerts|minimap|resetui|debug|help]")
 end
 
 commands.resetui = function()

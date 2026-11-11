@@ -196,9 +196,12 @@ function RF.Context(ds)
     if key ~= me and c.profs and next(c.profs) then alts[#alts + 1] = { name = c.name or key, profs = c.profs } end
   end
   table.sort(alts, function(a, b) return a.name < b.name end)
+  local pricer = ns.PriceSources.Pricer(ds)
+  local crate = ns.Sidecar.CrateOptions({ charLevel = gctx.me.level }, pricer)
   return {
-    pricer = ns.PriceSources.Pricer(ds), have = ns.Inventory.Have, known = known,
+    pricer = pricer, have = ns.Inventory.Have, known = known,
     side = ns.Game.Faction(), charLevel = gctx.me.level, allowSources = ns.db.settings.allowSources,
+    currencies = crate.currencies, favorPrice = crate.favorPrice,
     skills = skills, mine = mine, alts = alts,
     gear = function(profId)
       return (ns.GearFrame.Compute(ds, { [profId] = ns.Professions.MaxSkill(profId, ds) },

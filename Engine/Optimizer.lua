@@ -47,6 +47,8 @@ O.DEFAULTS = {
   intermediates = true,        -- craft a reagent yourself when that is cheaper
   allowSources = { trainer = true, vendor = true, starter = true },
   unknownRecipeCost = 5000,    -- copper assumed for a vendor recipe whose price is unknown
+  currencies = nil,            -- { [currencyId] = balance } the character holds (token sources)
+  favorPrice = nil,            -- copper one Merchant's Favor is worth (Engine/Crates.FavorPrice)
   speculativeRecovery = false, -- count AH resale in the objective (never by default)
   allowCooldowns = false,      -- cooldown crafts (Mooncloth, transmutes) cannot be spammed
   specs = nil,                 -- { [specializationId] = true } the character has
@@ -79,16 +81,44 @@ local function sourceAccess(s, opts)
   return a
 end
 
+-- A token source the character can pay now from opts.currencies (no item costs).
+local function affordable(s, opts)
+  local bal = opts.currencies
+  if not (bal and s.currencies and #s.currencies > 0) or (s.costItems and #s.costItems > 0) then return false end
+  for _, c in ipairs(s.currencies) do
+    if (bal[c[1]] or 0) < (c[2] or 0) then return false end
+  end
+  return true
+end
+O.Affordable = affordable
+
+-- Copper a token source costs: its gold part plus Merchant's Favor at opts.favorPrice.
+-- Favor you already hold costs 0 when no price is known; Favor still to be earned
+-- without a price costs opts.unknownRecipeCost. Other currencies count 0 (flagged by
+-- the source being a token).
+local function tokenCost(s, opts, owned)
+  local favor = ns.Crates and ns.Crates.SourceFavor(s) or 0
+  local cost = s.cost or 0
+  if favor > 0 then
+    if opts.favorPrice then cost = cost + favor * opts.favorPrice
+    elseif not owned then cost = cost + opts.unknownRecipeCost end
+  end
+  return cost
+end
+
 -- Cheapest way to obtain a recipe, or nil when no allowed source exists.
 -- Returns { t=sourceType, cost=copper, crafts=time-cost, source=src,
---           access="ok"|"unknown" }. Sources with confirmed access win over unknown
+--           access="ok"|"unknown", owned=true when a token source is paid from
+--           currency you hold }. Token sources are allowed by allowSources.token or
+--           when opts.currencies covers them. Sources with confirmed access win over unknown
 -- ones; then the cheapest. opts.dropNeedsMobs: a drop whose mobs the data does not
 -- name is not a source (nothing to farm); it becomes one once the data has them.
 function O.Acquisition(r, opts)
   if opts.known and opts.known[r.id] then return { t = "known", cost = 0, crafts = 0, access = "ok" } end
   local best
   for _, s in ipairs(r.sources or {}) do
-    local access = (opts.allowSources[s.t] or opts.forced == r.id)
+    local owned = s.t == "token" and affordable(s, opts)
+    local access = (opts.allowSources[s.t] or opts.forced == r.id or owned)
       and not (opts.dropNeedsMobs and s.t == "drop" and not (s.mobs and #s.mobs > 0))
       and sourceAccess(s, opts)
     if access then
@@ -96,6 +126,9 @@ function O.Acquisition(r, opts)
       if s.unknownCost and s.t == "vendor" then cost = opts.unknownRecipeCost end
       if s.t == "starter" then
         cost, crafts = 0, 0
+      elseif s.t == "token" then
+        cost = tokenCost(s, opts, owned)
+        crafts = owned and 1 or 5 -- Favor in hand: a vendor visit; else crates to fill
       elseif s.t == "vendor" then
         crafts = 1
         if s.limited then
@@ -108,7 +141,8 @@ function O.Acquisition(r, opts)
       local rank = ns.Faction.RANK[access]
       if not best or rank < best.rank or (rank == best.rank and (cost < best.cost
           or (cost == best.cost and crafts < best.crafts))) then
-        best = { t = s.t, cost = cost, crafts = crafts, source = s, access = access, rank = rank }
+        best = { t = s.t, cost = cost, crafts = crafts, source = s, access = access, rank = rank,
+          owned = owned or nil }
       end
     end
   end

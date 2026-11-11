@@ -53,6 +53,11 @@ extra column built into the profession window.
 - **Nearest vendor in item tooltips**: hover anything a vendor sells (thread, vials,
   flux, food, ammo...) to see the nearest friendly or neutral vendor, its
   coordinates and how many yards away it is. Turn it off in the options.
+- **Waylaid Crates**: hover a crate to see which bundle you can fill it with from
+  your bags, what the rest costs, the Merchant's Favor it pays and where to turn it
+  in. `/profs crates` lists the crates you carry and points the arrow at Marcy Baker
+  or Dokimi. Recipes bought with Merchant's Favor join your routes once you hold
+  enough Favor, priced at what that Favor costs to earn.
 - **Auction House prices** from your own scans, TradeSkillMaster or Auctionator,
   whichever is freshest. Scans only run when you press a button at the Auction
   House.

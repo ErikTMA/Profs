@@ -57,6 +57,12 @@ function O.Definitions()
       type = "boolean", default = true,
       get = function() return settings().vendorTooltip ~= false end,
       set = function(v) settings().vendorTooltip = v and nil or false end },
+    { key = "crateTooltip", label = "Waylaid Crates in item tooltips",
+      tooltip = "On Waylaid Crates: which bundle fills it from your bags, what the rest costs, "
+        .. "the Merchant's Favor it pays and where to turn it in (/profs crates).",
+      type = "boolean", default = true,
+      get = function() return settings().crateTooltip ~= false end,
+      set = function(v) settings().crateTooltip = v and nil or false end },
     { key = "trainerPrompt", label = "Offer route recipes at trainers",
       tooltip = "At a profession trainer: offer to learn the recipes and ranks your routes "
         .. "need that you can learn now, with the price (Yes / No).",

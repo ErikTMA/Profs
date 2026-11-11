@@ -104,6 +104,16 @@ function S.FormatAcquire(ds, recipeId, how, side)
     if (src.cost or 0) > 0 then parts[#parts + 1] = U.money(src.cost) end
     lines[#lines + 1] = ("Buy %s from a vendor for %s%s."):format(itemName(ds, src.item or 0),
       table.concat(parts, " + "), src.limited and " (limited stock)" or "")
+    local favor = ns.Crates.SourceFavor(src)
+    if favor > 0 then
+      local have = ns.Game.CurrencyQuantity and ns.Game.CurrencyQuantity(ns.Crates.CURRENCY) or 0
+      local note = have >= favor and ("You have %d Merchant's Favor."):format(have)
+        or ("You have %d Merchant's Favor; fill Waylaid Crates for the other %d."):format(have, favor - have)
+      if not how.owned and how.cost and how.cost > (src.cost or 0) then
+        note = note .. color(ns.Theme.color.muted, (" Counted as %s."):format(U.money(how.cost)))
+      end
+      lines[#lines + 1] = "  " .. note
+    end
   elseif how.t == "reputation" then
     lines[#lines + 1] = ("Reputation vendor (standing %s), %s."):format(tostring(src.standing),
       U.money(src.cost))
@@ -326,6 +336,15 @@ function S.Options(prof)
   }
 end
 
+-- Merchant's Favor for token recipes (Engine/Crates): what you hold, and its gold value
+-- from the cheapest Waylaid Crate bundle you could buy, so Favor recipes are priced.
+function S.CrateOptions(opts, pricer)
+  local C = ns.Crates
+  opts.currencies = { [C.CURRENCY] = ns.Game.CurrencyQuantity and ns.Game.CurrencyQuantity(C.CURRENCY) or 0 }
+  opts.favorPrice = C.FavorPrice(pricer, { charLevel = opts.charLevel })
+  return opts
+end
+
 -- Route cache (per session, per profession). Planning a full route costs 60-230 ms
 -- on Lua 5.1 with the forever dataset, and switching profession tabs fires several
 -- events, so routes are only re-planned when something that shapes them changes:
@@ -353,6 +372,7 @@ function S.PlanKey(ds, prof, target, opts)
     tostring(opts.charLevel), tostring(opts.craftValue), sortedIds(opts.allowSources),
     sortedIds(opts.known), sortedIds(opts.exclude), table.concat(locks, ","),
     table.concat(manual, ","), ns.AHPrices.epoch, ns.PriceSources.epoch,
+    tostring(opts.currencies and opts.currencies[ns.Crates.CURRENCY]), tostring(opts.favorPrice),
   }, "|")
 end
 
@@ -412,6 +432,7 @@ function S.Plan()
   local opts = S.Options(prof)
   st.pricer = ns.PriceSources.Pricer(ds)
   opts.pricer = st.pricer
+  S.CrateOptions(opts, st.pricer)
   st.mode = opts.mode
   ns.cdb.trainList = ns.cdb.trainList or {}
   if info.skill >= target then

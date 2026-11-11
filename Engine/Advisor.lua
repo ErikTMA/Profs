@@ -82,13 +82,14 @@ function A.GearSummary(ds, upgrades)
 end
 
 -- Cost side of a card: route from the current skill to max, netted against stock.
--- ctx: pricer, have(itemId)->{bags,...}, known, side, charLevel, allowSources
+-- ctx: pricer, have(itemId)->{bags,...}, known, side, charLevel, allowSources,
+--      currencies, favorPrice (Optimizer token sources)
 function A.Cost(ds, profId, skill, ctx)
   local max = ns.Professions.MaxSkill(profId, ds)
   if skill >= max then return { done = true, max = max, cost = 0, crafts = 0, find = 0, gather = {} } end
   local route = ns.Optimizer.Plan(ds, profId, math.max(1, skill), max, {
     pricer = ctx.pricer, known = ctx.known, side = ctx.side, charLevel = ctx.charLevel,
-    allowSources = ctx.allowSources })
+    allowSources = ctx.allowSources, currencies = ctx.currencies, favorPrice = ctx.favorPrice })
   local list = ns.Shopping.Build(ds, route, { pricer = ctx.pricer, have = ctx.have })
   local gather, materials = {}, 0
   for _, l in ipairs(list.items) do
