@@ -13,6 +13,7 @@ local MB = ns:NewModule("MinimapButton")
 MB.NAME = "LibDBIcon10_Profs"
 MB.DEFAULT_ANGLE = 200
 MB.RADIUS_PAD = 5      -- LibDBIcon lib.radius
+MB.SIZE = 26           -- the badge, as Lvls!'s
 
 -- Which quadrants of each minimap shape are round (LibDBIcon's table). Quadrant q, as
 -- LibDBIcon counts them: 1 bottom-right, 2 bottom-left, 3 top-right, 4 top-left.
@@ -86,25 +87,23 @@ end
 function MB.Build()
   if MB.button or not _G.Minimap then return MB.button end
   local b = CreateFrame("Button", MB.NAME, _G.Minimap)
-  b:SetSize(31, 31)
+  b:SetSize(MB.SIZE, MB.SIZE)
   b:SetFrameStrata("MEDIUM")
   b:SetFrameLevel(8)
   b:RegisterForClicks("AnyUp")
   b:RegisterForDrag("LeftButton")
-  b:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
-  local overlay = b:CreateTexture(nil, "OVERLAY")
-  overlay:SetSize(50, 50)
-  overlay:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
-  overlay:SetPoint("TOPLEFT")
-  local bg = b:CreateTexture(nil, "BACKGROUND")
-  bg:SetSize(24, 24)
-  bg:SetTexture("Interface\\Minimap\\UI-Minimap-Background")
-  bg:SetPoint("CENTER")
+  -- its own round badge (Media/MinimapIcon, drawn for this size; the painted logo
+  -- blurs here), filling the button: no client tracking border round it, as Lvls!
   local icon = b:CreateTexture(nil, "ARTWORK")
-  icon:SetSize(18, 18)
-  icon:SetPoint("CENTER")
-  ns.Media.Apply(icon, "ICON")
+  icon:SetAllPoints(b)
+  ns.Media.Apply(icon, "MINIMAP")
   b.icon = icon
+  local hl = b:CreateTexture(nil, "HIGHLIGHT")
+  hl:SetAllPoints(b)
+  ns.Media.Apply(hl, "MINIMAP")
+  hl:SetBlendMode("ADD")
+  hl:SetAlpha(0.35)
+  b.highlight = hl
   b:SetScript("OnClick", function(_, button) ns.LauncherClick(button) end)
   b:SetScript("OnDragStart", function(self)
     self.dragging = true

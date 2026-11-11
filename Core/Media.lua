@@ -8,9 +8,11 @@ local M = ns:NewModule("Media")
 
 M.ICON = "Interface\\AddOns\\Profs\\Media\\ProfsIcon"
 M.LOGO = "Interface\\AddOns\\Profs\\Media\\ProfsLogo"
+-- the minimap button badge, drawn for the 26 px button
+M.MINIMAP = "Interface\\AddOns\\Profs\\Media\\MinimapIcon"
 M.FALLBACK = "Interface\\Icons\\Trade_BlackSmithing"   -- stock icon, NOT the Profs! logo
 
--- Set `which` ("ICON" | "LOGO") on a texture; returns the path actually shown.
+-- Set `which` ("ICON" | "LOGO" | "MINIMAP") on a texture; returns the path actually shown.
 function M.Apply(texture, which)
   local path = M[which or "ICON"] or M.ICON
   local ok = texture:SetTexture(path)
